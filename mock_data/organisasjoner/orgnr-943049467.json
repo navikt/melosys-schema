@@ -1,0 +1,28 @@
+{
+  "orgnr": "943049467",
+  "navn": "SKANSKA NORGE AS",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : 53,
+      "gatenavn": "Lakkegata 53"
+    },
+    "postnr": "0187",
+    "poststed": "OSLO",
+    "land": "NO"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 1175 Oslo Sentrum"
+    },
+    "postnr": "0107",
+    "poststed": "OSLO",
+    "land": "NO"
+  }
+}

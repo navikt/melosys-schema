@@ -1,0 +1,28 @@
+{
+  "orgnr": "967032271",
+  "navn": "SWECO NORGE AS",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : 260,
+      "gatenavn": "Drammensveien 260"
+    },
+    "postnr": "0283",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 80   Skøyen"
+    },
+    "postnr": "0212",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  }
+}

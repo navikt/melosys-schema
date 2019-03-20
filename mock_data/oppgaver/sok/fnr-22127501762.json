@@ -1,0 +1,95 @@
+[
+  {
+    "oppgaveID": "1",
+    "sammensattNavn": "RASK KAFFI",
+    "saksnummer": "7",
+    "aktivTil": "2019-04-25",
+    "soknadsperiode": {
+      "fom": "2016-01-01",
+      "tom": "2016-10-01"
+    },
+    "sakstype": {
+      "kode": "EU_EOS",
+      "term": "EU/EØS"
+    },
+    "behandling": {
+      "behandlingID": 7,
+      "behandlingstype": {
+        "kode": "SOEKNAD",
+        "term": "Søknad"
+      },
+      "behandlingsstatus": {
+        "kode": "OPPRETTET",
+        "term": "Opprettet"
+      },
+      "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+      "erUnderOppdatering": false
+    },
+    "land": ["GB"],
+    "prioritet": "HOY",
+    "versjon": 1,
+    "ansvarligID": "Z991001"
+  },
+  {
+    "oppgaveID": "2",
+    "sammensattNavn": "RASK KAFFI",
+    "saksnummer": "7",
+    "aktivTil": "2019-04-25",
+    "soknadsperiode": {
+      "fom": "2017-01-01",
+      "tom": "2018-01-01"
+    },
+    "sakstype": {
+      "kode": "EU_EOS",
+      "term": "EU/EØS"
+    },
+    "behandling": {
+      "behandlingID": 7,
+      "behandlingstype": {
+        "kode": "SOEKNAD",
+        "term": "Søknad"
+      },
+      "behandlingsstatus": {
+        "kode": "OPPRETTET",
+        "term": "Opprettet"
+      },
+      "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+      "erUnderOppdatering": false
+    },
+    "land": ["GB"],
+    "prioritet": "HOY",
+    "versjon": 1,
+    "ansvarligID": "Z991001"
+  },
+  {
+    "oppgaveID": "3",
+    "sammensattNavn": "RASK KAFFI",
+    "saksnummer": "7",
+    "aktivTil": "2019-04-25",
+    "soknadsperiode": {
+      "fom": "2017-01-01",
+      "tom": "2018-01-01"
+    },
+    "sakstype": {
+      "kode": "EU_EOS",
+      "term": "EU/EØS"
+    },
+    "behandling": {
+      "behandlingID": 7,
+      "behandlingstype": {
+        "kode": "SOEKNAD",
+        "term": "Søknad"
+      },
+      "behandlingsstatus": {
+        "kode": "OPPRETTET",
+        "term": "Opprettet"
+      },
+      "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+      "erUnderOppdatering": false
+    },
+    "land": ["GB"],
+    "prioritet": "HOY",
+    "versjon": 1,
+    "ansvarligID": "Z991001"
+  }
+]

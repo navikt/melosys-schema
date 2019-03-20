@@ -1,0 +1,138 @@
+{
+  "journalforing": [
+    {
+      "oppgaveID": "174464932",
+      "journalpostID": "DOK_321",
+      "aktivTil": "2016-01-26",
+      "prioritet": "HOY",
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    }
+  ],
+  "saksbehandling": [
+    {
+      "oppgaveID": "174562068",
+      "sammensattNavn": "GLITRENDE HATT",
+      "saksnummer": "4",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Trygdeavtale"
+      },
+      "behandling": {
+        "behandlingID": 4,
+        "behandlingstype": {
+          "kode": "SOEKNAD",
+          "term": "Søknad"
+        },
+        "behandlingsstatus": {
+          "kode": "UBEH",
+          "term": "Under behandling"
+        },
+        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false
+      },
+      "aktivTil": "2018-01-28",
+      "soknadsperiode": {
+        "fom": "2018-10-01",
+        "tom": "2019-08-31"
+      },
+      "prioritet": "HOY",
+      "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "176701002",
+      "sammensattNavn": "LILLA HEST",
+      "saksnummer": "3",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Trygdeavtale"
+      },
+      "behandling": {
+        "behandlingID": 3,
+        "behandlingstype": {
+          "kode": "PAASTAND_UTL",
+          "term": "Melding fra utenlandsk myndighet"
+        },
+        "behandlingsstatus": {
+          "kode": "OPPRETTET",
+          "term": "Opprettet"
+        },
+        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false
+      },
+      "aktivTil": "2016-03-22",
+      "soknadsperiode": {
+        "fom": "2016-05-12",
+        "tom": "2018-01-01"
+      },
+      "prioritet": "HOY",
+      "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "176314229",
+      "sammensattNavn": "KAKE ARTIG",
+      "saksnummer": "5",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Folketrygd"
+      },
+      "behandling": {
+        "behandlingID": 5,
+        "behandlingstype": {
+          "kode": "UFM",
+          "term": "Unntak medlemskap"
+        },
+        "behandlingsstatus": {
+          "kode": "FORL",
+          "term": "Foreløpig lovvalg"
+        },
+        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false
+      },
+      "aktivTil": "2016-03-03",
+      "soknadsperiode": {
+        "fom": "2016-05-12",
+        "tom": "2018-01-01"
+      },
+      "prioritet": "HOY",
+      "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "176741739",
+      "sammensattNavn": "MASKIN ARTIG",
+      "saksnummer": "4",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Folketrygd"
+      },
+      "behandling": {
+        "behandlingID": 4,
+        "behandlingstype": {
+          "kode": "SOEKNAD",
+          "term": "Søknad"
+        },
+        "behandlingsstatus": {
+          "kode": "UBEH",
+          "term": "Under behandling"
+        },
+        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false
+      },
+      "aktivTil": "2016-03-23",
+      "soknadsperiode": {
+        "fom": "2016-05-12",
+        "tom": "2018-01-01"
+      },
+      "prioritet": "HOY",
+      "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    }
+  ]
+}

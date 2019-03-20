@@ -1,0 +1,61 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/journalforing-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "brukerID",
+    "avsenderID",
+    "erBrukerAvsender",
+    "mottattDato",
+    "hoveddokument",
+    "vedlegg"
+  ],
+  "properties": {
+    "brukerID": {
+      "$id": "#/properties/brukerID",
+      "type": "string",
+      "title": "The Brukerid Schema",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ]
+    },
+    "avsenderID": {
+      "$id": "#/properties/avsenderID",
+      "type": ["string","null"],
+      "title": "The Avsenderid Schema",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ]
+    },
+    "erBrukerAvsender": {
+      "$id": "#/properties/erBrukerAvsender",
+      "type": "boolean",
+      "title": "The Erbrukeravsender Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "mottattDato": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+    },
+    "hoveddokument": {
+      "$id": "#/properties/dokument",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokument"
+    },
+    "vedlegg": {
+      "$id": "#/items/properties/vedlegg",
+      "type": "array",
+      "title": "The Vedlegg Schema",
+      "items": {
+        "$id": "#/items/properties/vedlegg/items",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+      }
+    }
+  }
+}

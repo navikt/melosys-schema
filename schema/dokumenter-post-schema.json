@@ -1,0 +1,60 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-post-schema.json",
+  "type": [
+    "object",
+    "null"
+  ],
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "mottaker",
+    "begrunnelseKode",
+    "fritekst"
+  ],
+  "properties": {
+    "mottaker": {
+      "$id": "#/properties/mottaker",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Mottaker Schema",
+      "description": "",
+      "default": "",
+      "examples": [
+        "ARBEIDSGIVER",
+        "BRUKER",
+        "REPRESENTANT",
+        "MYNDIGHET"
+      ],
+      "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"],
+      "pattern": "^(.*)$"
+    },
+    "fritekst": {
+      "$id": "#/properties/fritekst",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Fritekst Schema",
+      "default": "",
+      "examples": ["Fritekst"],
+      "pattern": "^(.*)$"
+    },
+    "begrunnelseKode": {
+      "$id": "#/properties/begrunnelseKode",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The BegrunnelseKode Schema",
+      "default": "",
+      "examples": [
+        "IKKE_VESENTLIG_VIRKSOMHET"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

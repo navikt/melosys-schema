@@ -1,0 +1,449 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/definitions-schema.json",
+  "title": "The Definitions Schema",
+  "definitions": {
+    "aarmaaned": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}$",
+      "examples": [
+        "2016-12"
+      ]
+    },
+    "adresse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adressetype"
+      ],
+      "oneOf": [
+        {
+          "properties": {
+            "adressetype": {"const": "STRUKTURERT"}
+          },
+          "required": ["strukturertAdresse"]
+        },
+        {
+          "properties": {
+            "adressetype": {"const": "USTRUKTURERT"}
+          },
+          "required": ["ustrukturertAdresse"]
+        }
+      ],
+      "properties": {
+        "adressetype": {
+          "type": "string",
+          "enum": ["STRUKTURERT", "USTRUKTURERT"]
+        },
+        "strukturertAdresse": {
+          "$ref": "#/definitions/strukturertAdresse"
+        },
+        "ustrukturertAdresse": {
+          "$ref": "#/definitions/ustrukturertAdresse"
+        }
+      }
+    },
+    "behandlingID": {
+      "type": "integer",
+      "title": "The BehandlingID Schema",
+      "default": 0,
+      "examples": [
+        1000023948
+      ]
+    },
+    "periodeID": {
+      "type": "integer",
+      "title": "The PeriodeID Schema",
+      "default": 0,
+      "examples": [
+        400110740
+      ]
+    },
+    "dato":  {
+      "type": "string",
+      "format": "date",
+      "examples": ["2018-08-27"]
+    },
+    "nullable-dato":  {
+      "type": ["string","null"],
+      "format": "date",
+      "examples": ["2018-08-27"]
+    },
+    "dato-tid": {
+      "type": "string",
+      "format": "date-time",
+      "examples": [
+        "2018-08-27T07:16:03.273Z"
+      ]
+    },
+    "nullable-dato-tid": {
+      "type": ["string","null"],
+      "format": "date-time",
+      "examples": [
+        "2018-08-27T07:16:03.273Z", null
+      ]
+    },
+    "dokument":  {
+      "type": "object",
+      "title": "Dokument type definisjon",
+      "additionalProperties": false,
+      "required": [
+        "dokumentID",
+        "tittel"
+      ],
+      "properties": {
+        "dokumentID": {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
+        },
+        "tittel": {
+          "type": ["string", "null"],
+          "title": "Tittel Schema",
+          "examples": ["Tittelen her"]
+        }
+      }
+    },
+    "nullable-dokument":  {
+      "type": "object",
+      "title": "Nullable Dokument type definisjon",
+      "additionalProperties": false,
+      "required": [
+        "dokumentID",
+        "tittel"
+      ],
+      "properties": {
+        "dokumentID": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokumentID"
+        },
+        "tittel": {
+          "type": "string",
+          "title": "Tittel Schema",
+          "examples": ["Tittelen her"]
+        }
+      }
+    },
+    "dokumentID": {
+      "$id": "#/properties/dokumentID",
+      "type": ["string"],
+      "title": "The DokumentID Schema",
+      "default": "",
+      "examples": [
+        "DOK_ID_4"
+      ]
+    },
+    "nullable-dokumentID": {
+      "$id": "#/properties/dokumentID",
+      "type": ["string","null"],
+      "title": "The Nullable DokumentID Schema",
+      "default": "",
+      "examples": [
+        "DOK_ID_4", null
+      ]
+    },
+    "journalpostID": {
+      "$id": "#/properties/journalpostID",
+      "type": ["string"],
+      "title": "The JournalpostID Schema",
+      "default": "",
+      "examples": [
+        "DOK_321"
+      ]
+    },
+    "kodeverk": {
+      "type": "object",
+      "title": "The Kodeverk Schema",
+      "additionalProperties": false,
+      "required": [
+        "kode",
+        "term"
+      ],
+      "properties": {
+        "kode": {
+          "type": "string",
+          "title": "The Kode Schema",
+          "default": "",
+          "examples": [
+            "OPPRETTET"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "term": {
+          "type": "string",
+          "title": "The Term Schema",
+          "default": "",
+          "examples": [
+            "Opprettet"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "orgnr": {
+      "type": "string",
+      "default": "",
+      "examples": [
+        "810072512"
+      ],
+      "pattern": "^\\d{9}$"
+    },
+    "nullable-orgnr": {
+      "type": ["string", "null"],
+      "default": "",
+      "examples": [
+        "810072512"
+      ],
+      "pattern": "^\\d{9}$"
+    },
+    "fnr": {
+      "type": "string",
+      "default": "",
+      "examples": [
+        "81007251212"
+      ],
+      "pattern": "^\\d{11}$"
+    },
+    "nullable-fnr": {
+      "type": ["string", "null"],
+      "default": "",
+      "examples": [
+        "81007251212"
+      ],
+      "pattern": "^\\d{11}$"
+    },
+    "periode": {
+      "title": "Periode med fom tom",
+      "type": "object",
+      "required": [
+        "fom",
+        "tom"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "fom": {
+          "type": ["string"],
+          "format": "date",
+          "examples": ["2014-03-12"]
+        },
+        "tom": {
+          "type": ["string","null"],
+          "format": "date",
+          "examples": ["2014-03-12", null]
+        }
+      }
+    },
+    "nullable-periode": {
+      "title": "Periode med fom tom",
+      "type": "object",
+      "required": [
+        "fom",
+        "tom"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "fom": {
+          "type": ["string", "null"],
+          "format": "date",
+          "examples": ["2014-03-12"]
+        },
+        "tom": {
+          "type": ["string","null"],
+          "format": "date",
+          "examples": ["2014-03-12", null]
+        }
+      }
+    },
+    "registerAdresse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gateadresse",
+        "postnr",
+        "poststed",
+        "land"
+      ],
+      "properties": {
+        "gateadresse": {
+          "$id": "#/properties/registerAdresse/properties/gateadresse",
+          "type": "object",
+          "title": "The Gateadresse Schema",
+          "additionalProperties": false,
+          "required": [
+            "gatenummer",
+            "husbokstav",
+            "husnummer",
+            "gatenavn"
+          ],
+          "properties": {
+            "gatenummer": {
+              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/gatenummer",
+              "type": [
+                "integer",
+                "null"
+              ],
+              "title": "The Gatenummer Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "husbokstav": {
+              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/husbokstav",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Husbokstav Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "husnummer": {
+              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/husnummer",
+              "type": [
+                "integer",
+                "null"
+              ],
+              "title": "The Husnummer Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "gatenavn": {
+              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/gatenavn",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Gatenavn Schema",
+              "default": "",
+              "examples": [
+                "Olav Kyrres gate 9"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "postnr": {
+          "$id": "#/properties/registerAdresse/properties/postnr",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Postnr Schema",
+          "default": "",
+          "examples": [
+            "3936"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "poststed": {
+          "$id": "#/properties/registerAdresse/properties/poststed",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Poststed Schema",
+          "default": "",
+          "examples": [
+            "PORSGRUNN"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "land": {
+          "$id": "#/properties/registerAdresse/properties/land",
+          "type": [
+            "string",
+            "object",
+            "null"
+          ],
+          "title": "The Land Schema",
+          "default": "",
+          "examples": [
+            "NORGE"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "strukturertAdresse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gatenavn",
+        "husnummer",
+        "region",
+        "postnummer",
+        "poststed",
+        "landKode"
+      ],
+      "properties": {
+        "gatenavn": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "Waldemar Thranes gate"
+          ]
+        },
+        "husnummer": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "98"
+          ]
+        },
+        "region": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "Bydel Sagene"
+          ]
+        },
+        "postnummer": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "0175"
+          ]
+        },
+        "poststed": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "OSLO"
+          ]
+        },
+        "landKode": {
+          "type": "string",
+          "minLength": 2,
+          "examples": [
+            "NO"
+          ]
+        }
+      }
+    },
+    "ustrukturertAdresse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "landKode"
+      ],
+      "properties": {
+        "adresselinjer": {
+          "type": "array",
+          "additionalItems": false,
+          "maxItems": 5,
+          "items": {
+            "type": "string"
+          }
+        },
+        "landKode": {
+          "type": "string",
+          "minLength": 2,
+          "examples": [
+            "NO"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "behandlingID": 3,
+  "soeknadDokument": {
+    "personOpplysninger": {
+      "utenlandskIdent": [],
+      "medfolgendeFamilie": [],
+      "medfolgendeAndre": null
+    },
+    "arbeidUtland": [{
+      "adresse": {
+        "gatenavn": "Adresseveien 123",
+        "husnummer": null,
+        "region": null,
+        "postnummer": "1234",
+        "poststed": "Poststedet",
+        "landKode": "DE"
+      },
+      "foretakNavn": "EQUINOR",
+      "foretakOrgnr": "372384726",
+      "arbeidUtlandHjemmekontor": null
+    }],
+    "foretakUtland": [],
+    "oppholdUtland": {
+      "oppholdslandKoder": ["GB"],
+      "oppholdsPeriode": {
+        "fom": "2018-01-01",
+        "tom": "2019-05-31"
+      },
+      "ektefelleEllerBarnINorge": null,
+      "forutgaendeBostedINorge": true,
+      "sammeAdresseSomArbeidsgiver": null,
+      "studentFinansieringKode": null,
+      "studentSemester": null
+    },
+    "bosted": {
+      "intensjonOmRetur": true,
+      "familiesBostedLandKode": null,
+      "antallMaanederINorge": null,
+      "adresseIUtlandet": true,
+      "oppgittAdresse": {
+        "gatenavn": "Waldemar Thranes gate",
+        "husnummer": "98",
+        "region": null,
+        "postnummer": "O175",
+        "poststed": "Oslo",
+        "landKode": "NO"
+      }
+    },
+    "arbeidNorge": {
+      "arbeidsforholdOpprettholdIHelePerioden": null,
+      "arbeidsforholdVikarNavn": null,
+      "vikarOrgnr": null,
+      "flyendePersonellHjemmebase": null,
+      "kontaktNavn": null,
+      "kontaktEpost": null,
+      "fullmektigFirma": null,
+      "fullmektigGateadresse": null,
+      "fullmektigPostnr": null,
+      "fullmektigPoststed": null,
+      "fullmektigRegion": null,
+      "fullmektigLandKode": null
+    },
+    "selvstendigArbeid": {
+      "erSelvstendig": false,
+      "selvstendigForetak": []
+    },
+    "juridiskArbeidsgiverNorge": {
+      "utsendteNeste12Mnd": null,
+      "antallAdmAnsatte": null,
+      "antallAnsatte": null,
+      "andelOmsetningINorge": null,
+      "andelOppdragINorge": null,
+      "andelKontrakterINorge": null,
+      "arbeidstakereRekruttertILand": null,
+      "oppdragsKontrakterIHovedsakInngaattILand": null,
+      "ekstraArbeidsgivere": []
+    },
+    "arbeidsinntekt": {
+      "inntektNorskIPerioden": null,
+      "inntektUtenlandskIPerioden": null,
+      "inntektNaeringIPerioden": null,
+      "inntektNaturalYtelser": [],
+      "inntektErInnrapporteringspliktig": null,
+      "inntektTrygdeavgiftBlirTrukket": null
+    },
+    "arbeidsgiversBekreftelse": {
+      "arbeidsgiverBekrefterUtsendelse": null,
+      "arbeidstakerAnsattUnderUtsendelsen": null,
+      "erstatterArbeidstakerenUtsendte": null,
+      "arbeidstakerTidligereUtsendt24Mnd": null,
+      "arbeidsgiverBetalerArbeidsgiveravgift": null,
+      "trygdeavgiftTrukketGjennomSkatt": null,
+      "trygdeavgiftTrukketGjennomSkattDato": null
+    },
+    "maritimtArbeid": []
+  },
+  "tilleggsData": {
+    "organisasjoner": [],
+    "personer": []
+  }
+}

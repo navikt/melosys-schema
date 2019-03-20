@@ -1,0 +1,35 @@
+{
+  "fnr": "30098000492",
+  "sivilstand": {
+    "kode": "GIFT",
+    "term" : "Gift"
+  },
+  "statsborgerskap": {
+    "kode": "NO",
+    "term": "Norge"
+  },
+  "sammensattNavn": "HEST LILLA",
+  "personstatus": {
+    "kode": "BOSA",
+    "term": "Bosatt"
+  },
+  "kjoenn": {
+    "kode": "K",
+    "term": "Kvinne"
+  },
+  "foedselsdato": "1963-05-05",
+  "bostedsadresse" : {
+    "gateadresse": {
+      "gatenavn": "Waldemar Thranses gate",
+      "gatenummer": 98,
+      "husnummer": null,
+      "husbokstav": "C"
+    },
+    "postnr": "0175",
+    "poststed": "OSLO",
+    "land": {
+      "kode": "NO",
+      "term": "Norge"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/lovvalgsperioder.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "description": "An explanation about the purpose of this instance.",
+  "additionalProperties": false,
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "fomDato",
+      "tomDato",
+      "lovvalgBestemmelse",
+      "tilleggBestemmelse",
+      "unntakFraBestemmelse",
+      "innvilgelsesResultat",
+      "lovvalgsland",
+      "unntakFraLovvalgsland",
+      "trygdeDekning",
+      "medlemskapstype"
+    ],
+    "properties": {
+      "fomDato": {
+        "$id": "#/items/properties/fomDato",
+        "type": "string",
+        "title": "The FomDato Schema",
+        "default": "",
+        "examples": [
+          "2019-02-01"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "tomDato": {
+        "$id": "#/items/properties/tomDato",
+        "type": "string",
+        "title": "The TomDato Schema",
+        "default": "",
+        "examples": [
+          "2019-02-01"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "lovvalgBestemmelse": {
+        "$id": "#/items/properties/lovvalgBestemmelse",
+        "type": ["string", "null"],
+        "title": "The LovvalgBestemmelse Schema",
+        "default": "",
+        "examples": [
+          "ART16_1"
+        ]
+      },
+      "tilleggBestemmelse": {
+        "$id": "#/items/properties/tilleggBestemmelse",
+        "type": ["string", "null"],
+        "title": "The tilleggBestemmelse Schema",
+        "default": "",
+        "examples": [
+          "FO_883_2004_ART13_4"
+        ]
+      },
+      "unntakFraBestemmelse": {
+        "$id": "#/items/properties/unntakFraBestemmelse",
+        "type": ["string", "null"],
+        "title": "The UnntakFraBestemmelse Schema",
+        "default": "",
+        "examples": [
+          "ART12_1"
+        ]
+      },
+      "lovvalgsland": {
+        "$id": "#/items/properties/lovvalgsland",
+        "type": ["string", "null"],
+        "title": "The Lovvalgsland Schema",
+        "default": "",
+        "examples": [
+          "NO"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "unntakFraLovvalgsland": {
+        "$id": "#/items/properties/unntakFraLovvalgsland",
+        "type": ["string", "null"],
+        "title": "The UnntakFraLovvalgsland Schema",
+        "default": "",
+        "examples": [
+          "DE"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "trygdeDekning": {
+        "$id": "#/items/properties/trygdeDekning",
+        "type": ["string", "null"],
+        "title": "The TrygdeDekning Schema",
+        "default": "",
+        "examples": [
+          "FULL"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "medlemskapstype": {
+        "$id": "#/items/properties/medlemskapstype",
+        "type": ["string", "null"],
+        "title": "The Medlemskapstype Schema",
+        "default": "",
+        "examples": [
+          "PLIKTIG"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}

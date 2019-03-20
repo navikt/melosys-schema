@@ -1,0 +1,103 @@
+[
+  {
+    "mottaksretning": {
+      "kode": "UT",
+      "term": "Utgående dokument"
+    },
+    "avsenderEllerMottaker": "Peter Christen Asbjørnsen",
+    "journalpostID": "4",
+    "mottattDato": null,
+    "journalforingDato": "2017-06-03T15:15:25.622Z",
+    "hoveddokument": {
+      "dokumentID": "DOK_ID_4",
+      "tittel": "Vedtaksbrev"
+    },
+    "vedlegg": [
+      {
+        "tittel": "A1",
+        "dokumentID": "DOK_ID_4"
+      }
+    ]
+  },
+  {
+    "mottaksretning": {
+      "kode": "INN",
+      "term": "Inngående dokument"
+    },
+    "avsenderEllerMottaker": "Svensk trygdemyndighet",
+    "journalpostID": "5",
+    "mottattDato": "2017-05-30T15:15:25.622Z",
+    "journalforingDato": null,
+    "hoveddokument": {
+      "dokumentID": "DOK",
+      "tittel": "Inntektsmelding"
+    },
+    "vedlegg": []
+  },
+  {
+    "mottaksretning": {
+      "kode": "UT",
+      "term": "Utgående dokument"
+    },
+    "avsenderEllerMottaker": "Clemens Bonifacius",
+    "journalpostID": "4",
+    "mottattDato": null,
+    "journalforingDato": "2018-05-04T15:15:25.622Z",
+    "hoveddokument": {
+      "dokumentID": "DOK_ID_5",
+      "tittel": "Manglende dokumentasjon"
+    },
+    "vedlegg": []
+  },
+  {
+    "mottaksretning": {
+      "kode": "INN",
+      "term": "Inngående dokument"
+    },
+    "avsenderEllerMottaker": "Thorine Elisabeth Bruun",
+    "journalpostID": "5",
+    "mottattDato": "2017-05-24T15:15:25.622Z",
+    "journalforingDato": null,
+    "hoveddokument": {
+      "dokumentID": "DOK",
+      "tittel": "Endring av søknad"
+    },
+    "vedlegg": [{
+      "dokumentID": null,
+      "tittel": "Fullmakt"
+    }]
+  },
+  {
+    "mottaksretning": {
+      "kode": "UT",
+      "term": "Utgående dokument"
+    },
+    "avsenderEllerMottaker": "Peter Christen Asbjørnsen",
+    "journalpostID": "4",
+    "mottattDato": null,
+    "journalforingDato": "2017-05-12T15:15:25.622Z",
+    "hoveddokument": {
+      "dokumentID": "DOK_ID_4",
+      "tittel": "Forvaltningsmelding"
+    },
+    "vedlegg": []
+  },
+  {
+    "mottaksretning": {
+      "kode": "INN",
+      "term": "Inngående dokument"
+    },
+    "avsenderEllerMottaker": "Peter Christen Asbjørnsen",
+    "journalpostID": "5",
+    "mottattDato": "2017-05-24T15:15:25.622Z",
+    "journalforingDato": null,
+    "hoveddokument": {
+      "dokumentID": "DOK",
+      "tittel": "Søknad"
+    },
+    "vedlegg": [{
+      "dokumentID": null,
+      "tittel": "Fremtidig arbeidskontrakt"
+    }]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "orgnr": "873152362",
+  "navn": "EQUINOR ASA AVD KONTOR BERGEN",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Sandslivegen 90"
+    },
+    "postnr": "5254",
+    "poststed": "BERGEN",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 7200 BERGEN"
+    },
+    "postnr": "5254",
+    "poststed": "BERGEN",
+    "land": "NORGE"
+  }
+}

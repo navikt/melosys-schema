@@ -1,0 +1,18 @@
+{
+  "saksnummer": "MELTEST-1",
+  "avsenderID": "30098000492",
+  "avsenderNavn": "PEN FUL",
+  "behandlingstypeKode": "KLAGE",
+  "brukerID": "30098000492",
+  "dokumentID": "Dok_ID",
+  "hoveddokumentTittel": "Søknad om medlemskap",
+  "ingenVurdering": false,
+  "journalpostID": "DOK_321",
+  "oppgaveID": "177057928",
+  "vedlegg": [
+    {
+      "dokumentID": null,
+      "tittel": "Vedleggstittel 1"
+    }
+  ]
+}

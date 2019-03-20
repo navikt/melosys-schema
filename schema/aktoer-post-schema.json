@@ -1,0 +1,78 @@
+{
+  "definitions": {
+    "representererEnum": {
+      "type": "string",
+      "enum": ["BRUKER", "ARBEIDSGIVER", "BEGGE"]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://http://melosys.nav.no/schemas/aktoer",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "aktoerID",
+    "institusjonsID",
+    "orgnr",
+    "rolleKode",
+    "utenlandskPersonID",
+    "representererKode"
+  ],
+  "properties": {
+    "aktoerID": {
+      "$id": "#/items/properties/aktoerID",
+      "type": ["string", "null"],
+      "title": "The Aktoerid Schema",
+      "default": "",
+      "examples": [
+        "1167540096033"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "orgnr": {
+      "title": "The Orgnr Schema",
+      "$id": "#/items/properties/orgnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+    },
+    "institusjonsID": {
+      "$id": "#/items/properties/institusjonsID",
+      "type": ["string", "null"],
+      "title": "The Institusjonsid Schema",
+      "default": null,
+      "examples": [
+        "NO:NAVT001"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "rolleKode": {
+      "$id": "#/items/properties/rolleKode",
+      "type": "string",
+      "enum": ["BRUKER", "ARBEIDSGIVER", "REPRESENTANT", "MYNDIGHET"],
+      "title": "The Rollekode Schema",
+      "default": "",
+      "examples": [
+        "BRUKER", "ARBEIDSGIVER", "REPRESENTANT", "MYNDIGHET"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "utenlandskPersonID": {
+      "$id": "#/items/properties/utenlandskPersonID",
+      "type": ["string", "null"],
+      "title": "The UtenlandskPersonID Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "representererKode": {
+      "$id": "#/items/properties/representerer",
+      "title": "The Representerer Schema",
+      "default": null,
+      "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE"],
+      "oneOf": [
+        { "$ref": "#/definitions/representererEnum"},
+        { "type": ["null"] }
+      ]
+    }
+  }
+}

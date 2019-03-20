@@ -1,0 +1,123 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/sok-fagsaker-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "uniqueItems": true,
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "additionalProperties": false,
+    "required": [
+      "saksnummer",
+      "sammensattNavn",
+      "saksstatus",
+      "sakstype",
+      "opprettetDato",
+      "behandlingOversikter"
+    ],
+    "properties": {
+      "saksnummer": {
+        "$id": "#/items/properties/saksnummer",
+        "type": "string",
+        "title": "The Saksnummer Schema",
+        "default": "",
+        "examples": [
+          "4"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "sammensattNavn": {
+        "$id": "#/items/properties/sammensattNavn",
+        "type": "string",
+        "title": "The sammensattNavn Schema",
+        "default": "",
+        "examples": [
+          "FørstNavn EtterNavn"
+        ]
+      },
+      "saksstatus": {
+        "$id": "#/items/properties/saksstatus",
+        "title": "The Saksstatus Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      },
+      "sakstype": {
+        "$id": "#/items/properties/sakstype",
+        "title": "The Sakstype Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      },
+      "opprettetDato": {
+        "title": "The Opprettetdato Schema",
+        "$id": "#/items/properties/opprettetDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+      },
+      "behandlingOversikter": {
+        "$id": "#/properties/behandlingOversikter",
+        "type": "array",
+        "title": "The behandlingOversikter Schema",
+        "uniqueItems": true,
+        "items": {
+          "$id": "#/properties/behandlingOversikter/items",
+          "type": "object",
+          "title": "The Items Schema",
+          "additionalProperties": false,
+          "required": [
+            "behandlingID",
+            "behandlingsstatus",
+            "behandlingstype",
+            "opprettetDato",
+            "soknadsperiode",
+            "land"
+          ],
+          "properties": {
+              "behandlingID": {
+                "$id": "#/items/properties/behandlingID",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+              },
+            "behandlingstype": {
+              "$id": "#/items/properties/behandlingstype",
+              "title": "The Behandlingstype Schema",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            },
+            "behandlingsstatus": {
+              "$id": "#/items/properties/behandlingsstatus",
+              "title": "The Behandlingsstatus Schema",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            },
+            "opprettetDato": {
+              "title": "The opprettetDato Schema",
+              "$id": "#/items/properties/opprettetDato",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+            },
+            "soknadsperiode": {
+              "title": "The Soknadsperiode Schema",
+              "$id": "#/properties/behandlingOversikter/properties/soknadsperiode",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+            },
+            "land": {
+              "$id": "#/properties/behandlingOversikter/items/properties/land",
+              "type": "array",
+              "title": "The Land Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/behandlingOversikter/properties/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "GB"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

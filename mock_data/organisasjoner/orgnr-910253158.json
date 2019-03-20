@@ -1,0 +1,28 @@
+{
+  "orgnr": "910253158",
+  "navn": "MULTICONSULT ASA",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Nedre Skøyen vei 2"
+    },
+    "postnr": "0276",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 265  Skøyen"
+    },
+    "postnr": "0213",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  }
+}

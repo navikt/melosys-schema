@@ -1,0 +1,28 @@
+{
+  "orgnr": "982683955",
+  "navn": "EXPERIS AS",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Lakkegata 53"
+    },
+    "postnr": "0187",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 2506 Solli"
+    },
+    "postnr": "0202",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  }
+}

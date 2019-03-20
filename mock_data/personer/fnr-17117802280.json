@@ -1,0 +1,44 @@
+{
+  "fnr": "17117802280",
+  "sivilstand": {
+    "kode": "GIFT",
+    "term" : "Gift"
+  },
+  "statsborgerskap": {
+    "kode": "NO",
+    "term": "Norge"
+  },
+  "sammensattNavn": "KAKE ARTIG",
+  "personstatus": {
+    "kode": "BOSA",
+    "term": "Bosatt"
+  },
+  "kjoenn": {
+    "kode": "K",
+    "term": "Kvinne"
+  },
+  "foedselsdato": "1978-11-17",
+  "postadresse": {
+    "adresselinjer": [
+      "Ardenham Court",
+      "Oxford Road",
+      "AYLESBURY",
+      "BUCKINGHAMSHIRE",
+      "HP19 3EQ"
+    ],
+    "landKode": "UK"
+  },
+  "midlertidigPostadresse": {
+    "adressetype": "USTRUKTURERT",
+    "ustrukturertAdresse": {
+      "adresselinjer": [
+        "Ardenham Court",
+        "Oxford Road",
+        "AYLESBURY",
+        "BUCKINGHAMSHIRE",
+        "HP19 3EQ"
+      ],
+      "landKode": "UK"
+    }
+  }
+}

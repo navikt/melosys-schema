@@ -1,0 +1,25 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/henlegg-fagsak-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "begrunnelseKode",
+    "fritekst"
+  ],
+  "properties": {
+    "begrunnelseKode": {
+      "$id": "#/properties/begrunnelseKode",
+      "title": "The BegrunnelseKode Schema",
+      "type": ["string"],
+      "enum": ["SOEKNADEN_TRUKKET", "OPPHOLD_UTL_AVLYST"]
+    },
+    "fritekst": {
+      "$id": "#/properties/fritekst",
+      "title": "The Fritekst Schema",
+      "type": ["string", "null"]
+    }
+  }
+}

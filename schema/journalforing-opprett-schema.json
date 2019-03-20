@@ -1,0 +1,192 @@
+{
+  "definitions": {
+    "periode": {
+      "title": "Periode med fom tom",
+      "type": "object",
+      "required": [
+        "fom",
+        "tom"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "fom": {
+          "type": ["string"],
+          "format": "date",
+          "examples": ["2014-03-12"]
+        },
+        "tom": {
+          "type": ["string","null"],
+          "format": "date",
+          "examples": ["2014-03-12", null]
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/journalforing-opprett-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "journalpostID",
+    "oppgaveID",
+    "behandlingstypeKode",
+    "brukerID",
+    "avsenderID",
+    "avsenderNavn",
+    "arbeidsgiverID",
+    "representantID",
+    "representantKontaktPerson",
+    "dokumentID",
+    "hoveddokumentTittel",
+    "vedlegg",
+    "fagsak"
+  ],
+  "properties": {
+    "journalpostID": {
+      "$id": "#/properties/journalpostID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+    },
+    "oppgaveID": {
+      "$id": "#/properties/oppgaveID",
+      "type": "string",
+      "title": "The Oppgaveid Schema",
+      "default": "",
+      "examples": [
+        "177057928"
+      ],
+      "pattern": "^(.*)$"
+    },
+
+    "behandlingstypeKode": {
+      "title": "The Behandlingsype Schema",
+      "$id": "#/properties/behandlingstypeKode",
+      "type": "string",
+      "default": "",
+      "pattern": "^(.*)$"
+    },
+    "brukerID": {
+      "$id": "#/properties/brukerID",
+      "type": "string",
+      "title": "The Brukerid Schema",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "avsenderID": {
+      "$id": "#/properties/avsenderID",
+      "type": "string",
+      "title": "The Avsenderid Schema",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "avsenderNavn": {
+      "$id": "#/properties/avsenderNavn",
+      "type": "string",
+      "title": "The Avsendernavn Schema",
+      "default": "",
+      "examples": [
+        "PEN FUL"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "arbeidsgiverID": {
+      "$id": "#/properties/arbeidsgiverID",
+      "type": ["string","null"],
+      "title": "The Arbeidsgiverid Schema",
+      "default": "",
+      "examples": [
+        "171178022"
+      ],
+      "pattern": "^[0-9]{0,9}$"
+    },
+    "representantID": {
+      "$id": "#/properties/representantID",
+      "type": ["string","null"],
+      "title": "The Representantid Schema",
+      "default": "",
+      "examples": [
+        "300980004"
+      ],
+      "pattern": "^[0-9]{0,9}$"
+    },
+    "representantKontaktPerson": {
+      "$id": "#/properties/representantKontaktPerson",
+      "type": ["string","null"],
+      "title": "The RepresentantKontaktPerson Schema",
+      "default": ""
+    },
+    "dokumentID": {
+      "$id": "#/properties/dokumentID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
+    },
+    "hoveddokumentTittel": {
+      "$id": "/properties/hoveddokumentTittel",
+      "type": "string",
+      "title": "The HoveddokumentTittel Schema ",
+      "default": "",
+      "examples": [
+        "Søknad om medlemskap"
+      ]
+    },
+    "vedlegg": {
+      "$id": "#/items/properties/vedlegg",
+      "type": "array",
+      "title": "The Vedlegg Schema",
+      "items": {
+        "$id": "#/items/properties/vedlegg/items",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+      }
+    },
+    "fagsak": {
+      "$id": "#/properties/fagsak",
+      "type": "object",
+      "title": "The Fagsak Schema",
+      "additionalProperties": false,
+      "required": [
+        "sakstype",
+        "soknadsperiode",
+        "land"
+      ],
+      "properties": {
+        "sakstype": {
+          "$id": "#/properties/fagsak/properties/sakstype",
+          "type": "string",
+          "title": "The Sakstype Schema",
+          "default": "",
+          "examples": [
+            "EU_EOS"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "soknadsperiode": {
+          "title": "The Soknadsperiode Schema",
+          "$id": "#/properties/fagsak/properties/soknadsperiode",
+          "$ref": "#/definitions/periode"
+        },
+        "land": {
+          "$id": "#/properties/fagsak/properties/land",
+          "type": "array",
+          "title": "The Land Schema",
+          "uniqueItems": true,
+          "items": {
+            "$id": "#/properties/fagsak/properties/land/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "NO",
+              "ES"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

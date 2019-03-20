@@ -1,0 +1,65 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/organisasjoner-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "orgnr",
+    "oppstartdato",
+    "postadresse",
+    "organisasjonsform",
+    "navn",
+    "forretningsadresse"
+  ],
+  "properties": {
+    "orgnr": {
+      "$id": "#/properties/orgnr",
+      "type": "string",
+      "title": "The Orgnr Schema",
+      "default": "",
+      "examples": [
+        "910099035"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "oppstartdato": {
+      "$id": "#/properties/oppstartdato",
+      "title": "The Oppstartdato Schema",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+    },
+    "postadresse": {
+      "$id": "#/properties/postadresse",
+      "title": "The Postadresse Schema",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+    },
+    "organisasjonsform": {
+      "$id": "#/properties/organisasjonsform",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Organisasjonsform Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "navn": {
+      "$id": "#/properties/navn",
+      "type": "string",
+      "title": "The Navn Schema",
+      "default": "",
+      "examples": [
+        "SKARSVÅG OG VANSE"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "forretningsadresse": {
+      "$id": "#/properties/forretningsadresse",
+      "title": "The Forretningsadresse Schema",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+    }
+  }
+}

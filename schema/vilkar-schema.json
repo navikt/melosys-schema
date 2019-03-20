@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/vilkar.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "additionalProperties": false,
+    "required": [
+      "vilkaar",
+      "oppfylt",
+      "begrunnelseKoder",
+      "begrunnelseFritekst"
+    ],
+    "properties": {
+      "vilkaar": {
+        "$id": "#/items/properties/vilkaar",
+        "type": "string",
+        "title": "The Vilkaar Schema",
+        "default": "",
+        "examples": [
+          "BOSATTINORGE"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "oppfylt": {
+        "$id": "#/items/properties/oppfylt",
+        "type": "boolean",
+        "title": "The Oppfylt Schema",
+        "default": false,
+        "examples": [
+          true
+        ]
+      },
+      "begrunnelseKoder": {
+        "$id": "#/items/properties/begrunnelseKoder",
+        "type": "array",
+        "title": "The Begrunnelsekoder Schema",
+        "items": {
+          "$id": "#/items/properties/begrunnelseKoder/items",
+          "type": "string",
+          "title": "The Items Schema",
+          "default": "",
+          "examples": [
+            "BEGRUNNELSE"
+          ],
+          "pattern": "^(.*)$"
+        }
+      },
+      "begrunnelseFritekst": {
+        "$id": "#/items/properties/begrunnelseFritekst",
+        "type": ["string", "null"],
+        "title": "The Begrunnelsefritekst Schema",
+        "default": "",
+        "examples": [
+          "En begrunnelsestekst"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}

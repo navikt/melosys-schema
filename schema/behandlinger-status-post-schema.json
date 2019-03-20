@@ -1,0 +1,25 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/behandlinger-status-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "behandlingsstatus"
+  ],
+  "properties": {
+    "behandlingsstatus": {
+      "$id": "#/properties/behandlingsstatus",
+      "type": "string",
+      "enum": [
+        "OPPRETTET", "UNDER_BEHANDLING", "AVSLUTTET", "AVVENT_DOK_UTL", "AVVENT_DOK_PART"
+      ],
+      "title": "The Behandlingsstatus Schema",
+      "default": "AVVENT_DOK_UTL",
+      "examples": [
+        "FASTSATT_LOVVALGSLAND"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

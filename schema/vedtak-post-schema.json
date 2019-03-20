@@ -1,0 +1,25 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/vedtak-post.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "behandlingsresultattype"
+  ],
+  "properties": {
+    "behandlingsresultat": {
+      "$id": "#/properties/behandlingsresultattype",
+      "type": "string",
+      "enum": [
+        "FASTSATT_LOVVALGSLAND", "FORELOEPIG_FASTSATT_LOVVALGSLAND", "HENLEGGELSE", "ANMODNING_OM_UNNTAK"
+      ],
+      "title": "The Behandlingsresultat Schema",
+      "default": "FASTSATT_LOVVALGSLAND",
+      "examples": [
+        "FASTSATT_LOVVALGSLAND"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

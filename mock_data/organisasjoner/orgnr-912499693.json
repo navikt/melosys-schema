@@ -1,0 +1,28 @@
+{
+  "orgnr": "912499693",
+  "navn": "TOP-TOY NORGE AS AVD HOVEDKONTOR",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : "C",
+      "husnummer" : 1,
+      "gatenavn": "Pindsleveien 1C"
+    },
+    "postnr": "3221",
+    "poststed": "SANDEFJORD",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 2044 SANDEFJORD"
+    },
+    "postnr": "3221",
+    "poststed": "SANDEFJORD",
+    "land": "NORGE"
+  }
+}

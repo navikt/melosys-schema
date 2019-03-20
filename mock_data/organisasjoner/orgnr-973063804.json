@@ -1,0 +1,28 @@
+{
+  "orgnr": "973063804",
+  "navn": "ADECCO NORGE AS AVD OSLO",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Rosenkrantz' gate 16"
+    },
+    "postnr": "0160",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Postboks 2013 Vika"
+    },
+    "postnr": "0125",
+    "poststed": "OSLO",
+    "land": "NORGE"
+  }
+}

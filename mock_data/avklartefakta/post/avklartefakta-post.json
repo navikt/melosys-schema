@@ -1,0 +1,26 @@
+[
+  {
+    "referanse": "TJENESTESTED_NORSKSTATSFORVALTNING",
+    "avklartefaktaKode": null,
+    "subjektID": null,
+    "fakta": ["TRUE"],
+    "begrunnelseKoder": [],
+    "begrunnelseFritekst": null
+  },
+  {
+    "referanse": "TJENESTESTED_ARBEIDSPROSENT",
+    "avklartefaktaKode": null,
+    "subjektID": null,
+    "fakta": ["MER_ENN_5_PROSENT"],
+    "begrunnelseKoder": [],
+    "begrunnelseFritekst": null
+  },
+  {
+      "subjektID": "NO",
+      "fakta": ["UT"],
+      "referanse": "nyeopplysninger_fakta",
+      "avklartefaktaKode": "BOSTEDSLAND",
+      "begrunnelseKoder": ["Opphold", "FamilieE"],
+      "begrunnelseFritekst": null
+  }
+]

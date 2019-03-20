@@ -1,0 +1,62 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-oversikt-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "mottaksretning",
+      "avsenderEllerMottaker",
+      "mottattDato",
+      "journalforingDato",
+      "journalpostID",
+      "hoveddokument",
+      "vedlegg"
+    ],
+    "properties": {
+      "mottaksretning": {
+        "$id": "#/items/properties/mottaksretning",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      },
+      "mottattDato": {
+        "$id": "#/items/properties/mottattDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+      },
+      "journalforingDato": {
+        "$id": "#/items/properties/journalforingDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+      },
+      "avsenderEllerMottaker": {
+        "$id": "#/items/properties/avsenderEllerMottaker",
+        "type": "string",
+        "title": "The avsenderEllerMottaker Schema",
+        "default": "",
+        "examples": [
+          "Ole Hermanrud"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "journalpostID": {
+        "$id": "/properties/journalpostID",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+      },
+      "hoveddokument": {
+        "$id": "#/items/properties/hoveddokument",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokument"
+      },
+      "vedlegg": {
+        "$id": "#/items/properties/vedlegg",
+        "type": "array",
+        "title": "The Vedlegg Schema",
+        "items": {
+          "$id": "#/items/properties/vedlegg/items",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/oppgaver-tilbakelegg-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "behandlingID",
+    "begrunnelse",
+    "venterPaaDokumentasjon"
+  ],
+  "properties": {
+    "behandlingID": {
+      "$id": "#/properties/behandlingID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+    },
+    "begrunnelse": {
+      "$id": "#/properties/begrunnelse",
+      "type": ["string", "null"],
+      "title": "The begrunnelse Schema",
+      "default": "",
+      "examples": [
+        "KODE_FOR_BEGRUNNELSE_ER_PT_IKKE_DEFINERT"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "venterPaaDokumentasjon": {
+      "$id": "#/items/properties/venterPaaDokumentasjon",
+      "type": "boolean",
+      "title": "The venterPaaDokumentasjon Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  }
+}

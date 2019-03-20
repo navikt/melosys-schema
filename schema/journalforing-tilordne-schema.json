@@ -1,0 +1,111 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/journalforing-tilordne-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "avsenderID",
+    "avsenderNavn",
+    "behandlingstypeKode",
+    "brukerID",
+    "dokumentID",
+    "hoveddokumentTittel",
+    "ingenVurdering",
+    "journalpostID",
+    "oppgaveID",
+    "saksnummer",
+    "vedlegg"
+  ],
+  "properties": {
+    "avsenderID": {
+      "$id": "/properties/avsenderID",
+      "type": "string",
+      "title": "The Avsenderid Schema ",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "avsenderNavn": {
+      "$id": "#/properties/avsenderNavn",
+      "type": "string",
+      "title": "The avsenderNavn Schema",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "behandlingstypeKode": {
+      "$id": "/properties/behandlingstypeKode",
+      "type": ["string","null"],
+      "title": "The BehandlingstypeKode Schema ",
+      "default": "",
+      "examples": [
+        "SOEKNAD", "KLAGE"
+      ]
+    },
+    "brukerID": {
+      "$id": "/properties/brukerID",
+      "type": "string",
+      "title": "The Brukerid Schema ",
+      "default": "",
+      "examples": [
+        "30098000492"
+      ]
+    },
+    "dokumentID": {
+      "$id": "#/properties/dokumentID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
+    },
+    "hoveddokumentTittel": {
+      "$id": "/properties/hoveddokumentTittel",
+      "type": "string",
+      "title": "The HoveddokumentTittel Schema ",
+      "default": "",
+      "examples": [
+        "Søknad om medlemskap"
+      ]
+    },
+    "ingenVurdering": {
+      "$id": "#/properties/ingenVurdering",
+      "type": "boolean",
+      "title": "The Dokumentet trenger ingen vurdering Schema",
+      "default": false
+    },
+    "journalpostID": {
+      "$id": "/properties/journalpostID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+    },
+    "oppgaveID": {
+      "$id": "/properties/oppgaveID",
+      "type": "string",
+      "title": "The Oppgaveid Schema ",
+      "default": "",
+      "examples": [
+        "192121803"
+      ]
+    },
+    "saksnummer": {
+      "$id": "/properties/saksnummer",
+      "type": "string",
+      "title": "The Saksnummer Schema ",
+      "default": 0,
+      "examples": [
+        44
+      ]
+    },
+    "vedlegg": {
+      "$id": "#/items/properties/vedlegg",
+      "type": "array",
+      "title": "The Vedlegg Schema",
+      "items": {
+        "$id": "#/items/properties/vedlegg/items",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+      }
+    }
+  }
+}

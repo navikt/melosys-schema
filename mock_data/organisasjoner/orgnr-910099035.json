@@ -1,0 +1,28 @@
+{
+  "orgnr": "910099035",
+  "navn": "SKARSVÅG OG VANSE",
+  "oppstartdato" : null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Olav Kyrres gate 9"
+    },
+    "postnr": "3936",
+    "poststed": "TRONDHEIM",
+    "land": "NORGE"
+  },
+  "organisasjonsform" : null,
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer" : null,
+      "husbokstav" : null,
+      "husnummer" : null,
+      "gatenavn": "Olav Kyrres gate 9"
+    },
+    "postnr": "3936",
+    "poststed": "TRONDHEIM",
+    "land": "NORGE"
+  }
+}

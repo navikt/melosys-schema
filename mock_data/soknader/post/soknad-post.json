@@ -1,0 +1,137 @@
+{
+  "behandlingID" : 4,
+  "soeknadDokument" : {
+    "bosted" : {
+      "adresseIUtlandet" : true,
+      "intensjonOmRetur" : true,
+      "antallMaanederINorge" : 8,
+      "oppgittAdresse" : {
+        "poststed" : "Poststeder",
+        "postnummer" : "12345",
+        "landKode" : "DE",
+        "husnummer": "1",
+        "region": null,
+        "gatenavn" : "Gateadressen"
+      },
+      "familiesBostedLandKode" : "SE"
+    },
+    "foretakUtland" : [
+      {
+        "navn" : "EQUINOR DEUTSCHLAND",
+        "orgnr" : "372384726",
+        "adresse" : {
+          "landKode" : "DE",
+          "region" : "Brandenburger",
+          "husnummer" : "123",
+          "postnummer" : "3388",
+          "poststed" : "Berlin",
+          "gatenavn" : "Deutschlandstrasse"
+        }
+      }
+    ],
+    "arbeidNorge" : {
+      "fullmektigFirma" : "Advokatfullmektig AS",
+      "kontaktEpost" : "ola.nordmann@fullmektigfirma.no",
+      "arbeidsforholdVikarNavn" : "Vikarbyrået AS",
+      "flyendePersonellHjemmebase" : "Flybasen Int. Airport, ....",
+      "fullmektigGateadresse" : "Adresseveien 123",
+      "arbeidsforholdOpprettholdIHelePerioden" : true,
+      "vikarOrgnr" : "22334455",
+      "fullmektigPostnr" : "1234",
+      "kontaktNavn" : "Ola Nordmann",
+      "fullmektigPoststed" : "Byensvik",
+      "fullmektigRegion" : "Østlandsregionen",
+      "fullmektigLandKode" : "NO"
+    },
+    "juridiskArbeidsgiverNorge" : {
+      "utsendteNeste12Mnd": 10,
+      "antallAdmAnsatte": 35,
+      "antallAnsatte": 350,
+      "andelOmsetningINorge": 78.5,
+      "andelOppdragINorge": 50.5,
+      "andelKontrakterINorge": 30.5,
+      "arbeidstakereRekruttertILand": "SE",
+      "oppdragsKontrakterIHovedsakInngaattILand": "NO",
+      "ekstraArbeidsgivere": []
+    },
+    "arbeidsinntekt" : {
+      "inntektNaeringIPerioden" : 0,
+      "inntektTrygdeavgiftBlirTrukket" : true,
+      "inntektUtenlandskIPerioden" : 2000,
+      "inntektNaturalYtelser" : [
+        "Fri bolig",
+        "Fri bil"
+      ],
+      "inntektErInnrapporteringspliktig" : true,
+      "inntektNorskIPerioden" : 5500
+    },
+    "arbeidsgiversBekreftelse" : {
+      "arbeidsgiverBetalerArbeidsgiveravgift" : true,
+      "arbeidstakerAnsattUnderUtsendelsen" : true,
+      "arbeidsgiverBekrefterUtsendelse" : true,
+      "erstatterArbeidstakerenUtsendte" : false,
+      "trygdeavgiftTrukketGjennomSkatt" : true,
+      "arbeidstakerTidligereUtsendt24Mnd" : false,
+      "trygdeavgiftTrukketGjennomSkattDato" : "2018-01-01"
+    },
+    "maritimtArbeid" : [
+      {
+        "installasjonsLandKode" : "GB",
+        "flaggLandKode" : "GB",
+        "navn" : "Snorre Dunfjæder",
+        "fartsomradeKode" : "INNENRIKS",
+        "territorialfarvann": "GB"
+      }
+    ],
+    "arbeidUtland" : [
+      {
+        "foretakNavn" : "BMW AG",
+        "foretakOrgnr": "123456789",
+        "adresse" : {
+          "landKode" : "DE",
+          "region" : "Brandenburger",
+          "husnummer" : "123",
+          "postnummer" : "1234",
+          "poststed" : "Poststedet",
+          "gatenavn" : "Adresseveien 123"
+        },
+        "arbeidUtlandHjemmekontor" : false
+      }
+    ],
+    "selvstendigArbeid" : {
+      "selvstendigForetak" : [
+        {
+          "orgnr" : "910253158",
+          "fortsetterEtterArbeidIUtlandet" : true
+        }
+      ],
+      "erSelvstendig" : true
+    },
+    "oppholdUtland" : {
+      "oppholdslandKoder" : [
+        "DK"
+      ],
+      "sammeAdresseSomArbeidsgiver" : true,
+      "studentSemester" : "2018/2019",
+      "studentFinansieringKode" : "LAANEKASSEN",
+      "forutgaendeBostedINorge": true,
+      "oppholdsPeriode" : {
+        "fom" : "2018-01-01",
+        "tom" : "2018-06-01"
+      },
+      "ektefelleEllerBarnINorge" : true
+    },
+    "personOpplysninger" : {
+      "utenlandskIdent" : [
+        {
+          "ident" : "123456789",
+          "landKode" : "DK"
+        }
+      ],
+      "medfolgendeFamilie" : [
+        "30098000492"
+      ],
+      "medfolgendeAndre" : "28106600300"
+    }
+  }
+}

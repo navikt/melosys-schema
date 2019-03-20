@@ -1,0 +1,24 @@
+{
+  "arbeidsgiverID": null,
+  "representantID": "",
+  "behandlingstypeKode": "SOEKNAD",
+  "representantKontaktPerson": null,
+  "avsenderID": "30098000492",
+  "avsenderNavn": "HEST LILLA",
+  "dokumentID": "Dok_ID",
+  "brukerID": "30098000492",
+  "hoveddokumentTittel": "Søknad om medlemskap",
+  "journalpostID": "DOK_321",
+  "oppgaveID": "201377338",
+  "vedlegg": [],
+  "fagsak": {
+    "sakstype": "EU_EOS",
+    "soknadsperiode": {
+      "fom": "2018-01-01",
+      "tom": "2019-03-02"
+    },
+    "land": [
+      "NO"
+    ]
+  }
+}

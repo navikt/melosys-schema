@@ -1,0 +1,30 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/behandlinger-status-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "henleggelsegrunnKode",
+    "henleggelseFritekst"
+  ],
+  "properties": {
+    "henleggelsegrunnKode": {
+      "$id": "#/properties/henleggelsegrunnKode",
+      "oneOf": [
+        { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"},
+        { "type": ["null"] }
+      ]
+    },
+    "henleggelseFritekst": {
+      "$id": "#/properties/henleggelseFritekst",
+      "type": ["string", "null"],
+      "title": "The henleggelseFritekst Schema",
+      "examples": [
+        "Bruker har fått flyskrekk"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
