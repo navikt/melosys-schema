@@ -5,8 +5,7 @@
   "main": "index.js",
   "files": [
     "schema",
-    "mock_data",
-    "lib"
+    "mock_data"
   ],
   "repository": {
     "type": "git",
