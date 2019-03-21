@@ -12,7 +12,7 @@
   "properties": {
     "kontaktnavn": {
       "$id": "#/properties/kontaktnavn",
-      "type": "string",
+      "type": ["string", "null"],
       "title": "The Kontaktnavn Schema",
       "default": "",
       "examples": [
@@ -23,7 +23,7 @@
     "kontaktorgnr": {
       "title": "The Kontaktorgnr Schema",
       "$id": "#/properties/kontaktorgnr",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     }
   }
 }
