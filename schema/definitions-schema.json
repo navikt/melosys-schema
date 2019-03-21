@@ -190,7 +190,7 @@
       "examples": [
         "810072512"
       ],
-      "pattern": "^\\d{9}$"
+      "pattern": "^\\d{9}$|^$"
     },
     "fnr": {
       "type": "string",
