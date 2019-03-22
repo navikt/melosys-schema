@@ -93,7 +93,10 @@
       "trygdeavgiftTrukketGjennomSkattDato": null
     },
     "maritimtArbeid": [
-    ]
+    ],
+    "soeknadsland": {
+      "landkode": "DE"
+    }
   },
   "tilleggsData": {
     "organisasjoner": [],

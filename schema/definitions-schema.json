@@ -413,11 +413,7 @@
           ]
         },
         "landKode": {
-          "type": "string",
-          "minLength": 2,
-          "examples": [
-            "NO"
-          ]
+          "$ref": "#/definitions/landKode"
         }
       }
     },
@@ -437,13 +433,16 @@
           }
         },
         "landKode": {
-          "type": "string",
-          "minLength": 2,
-          "examples": [
-            "NO"
-          ]
+          "$ref": "#/definitions/landKode"
         }
       }
+    },
+    "landKode": {
+      "type": "string",
+      "minLength": 2,
+      "examples": [
+        "NO"
+      ]
     }
   }
 }

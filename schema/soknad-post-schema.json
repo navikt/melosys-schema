@@ -879,16 +879,7 @@
             "properties": {
               "landKode": {
                 "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKode",
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "title": "The landKode Schema",
-                "default": "",
-                "examples": [
-                  "GB"
-                ],
-                "pattern": "^(.*)$"
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landKode"
               }
             }
           }
