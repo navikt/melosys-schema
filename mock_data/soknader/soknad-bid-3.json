@@ -6,22 +6,26 @@
       "medfolgendeFamilie": [],
       "medfolgendeAndre": null
     },
-    "arbeidUtland": [{
-      "adresse": {
-        "gatenavn": "Adresseveien 123",
-        "husnummer": null,
-        "region": null,
-        "postnummer": "1234",
-        "poststed": "Poststedet",
-        "landKode": "DE"
-      },
-      "foretakNavn": "EQUINOR",
-      "foretakOrgnr": "372384726",
-      "arbeidUtlandHjemmekontor": null
-    }],
+    "arbeidUtland": [
+      {
+        "adresse": {
+          "gatenavn": "Adresseveien 123",
+          "husnummer": null,
+          "region": null,
+          "postnummer": "1234",
+          "poststed": "Poststedet",
+          "landKode": "DE"
+        },
+        "foretakNavn": "EQUINOR",
+        "foretakOrgnr": "372384726",
+        "arbeidUtlandHjemmekontor": null
+      }
+    ],
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandKoder": ["GB"],
+      "oppholdslandKoder": [
+        "GB"
+      ],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2019-05-31"
@@ -92,7 +96,10 @@
       "trygdeavgiftTrukketGjennomSkatt": null,
       "trygdeavgiftTrukketGjennomSkattDato": null
     },
-    "maritimtArbeid": []
+    "maritimtArbeid": [],
+    "soeknadsland": {
+      "landKode": "DK"
+    }
   },
   "tilleggsData": {
     "organisasjoner": [],

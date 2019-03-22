@@ -132,6 +132,9 @@
         "30098000492"
       ],
       "medfolgendeAndre" : "28106600300"
+    },
+    "soeknadsland": {
+      "landKode": "DK"
     }
   }
 }

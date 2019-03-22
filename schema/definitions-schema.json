@@ -51,14 +51,6 @@
         1000023948
       ]
     },
-    "periodeID": {
-      "type": "integer",
-      "title": "The PeriodeID Schema",
-      "default": 0,
-      "examples": [
-        400110740
-      ]
-    },
     "dato":  {
       "type": "string",
       "format": "date",
@@ -138,6 +130,22 @@
         "DOK_ID_4", null
       ]
     },
+    "fnr": {
+      "type": "string",
+      "default": "",
+      "examples": [
+        "81007251212"
+      ],
+      "pattern": "^\\d{11}$"
+    },
+    "nullable-fnr": {
+      "type": ["string", "null"],
+      "default": "",
+      "examples": [
+        "81007251212"
+      ],
+      "pattern": "^\\d{11}$"
+    },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
       "type": ["string"],
@@ -176,6 +184,13 @@
         }
       }
     },
+    "landKode": {
+      "type": "string",
+      "minLength": 2,
+      "examples": [
+        "NO"
+      ]
+    },
     "orgnr": {
       "type": "string",
       "default": "",
@@ -192,21 +207,13 @@
       ],
       "pattern": "^\\d{9}$|^$"
     },
-    "fnr": {
-      "type": "string",
-      "default": "",
+    "periodeID": {
+      "type": "integer",
+      "title": "The PeriodeID Schema",
+      "default": 0,
       "examples": [
-        "81007251212"
-      ],
-      "pattern": "^\\d{11}$"
-    },
-    "nullable-fnr": {
-      "type": ["string", "null"],
-      "default": "",
-      "examples": [
-        "81007251212"
-      ],
-      "pattern": "^\\d{11}$"
+        400110740
+      ]
     },
     "periode": {
       "title": "Periode med fom tom",
@@ -413,11 +420,7 @@
           ]
         },
         "landKode": {
-          "type": "string",
-          "minLength": 2,
-          "examples": [
-            "NO"
-          ]
+          "$ref": "#/definitions/landKode"
         }
       }
     },
@@ -437,11 +440,7 @@
           }
         },
         "landKode": {
-          "type": "string",
-          "minLength": 2,
-          "examples": [
-            "NO"
-          ]
+          "$ref": "#/definitions/landKode"
         }
       }
     }

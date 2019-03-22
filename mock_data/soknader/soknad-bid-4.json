@@ -120,7 +120,10 @@
         "installasjonsLandKode": "GB",
         "territorialfarvann": "GB"
       }
-    ]
+    ],
+    "soeknadsland": {
+      "landKode": "GB"
+    }
   },
   "tilleggsData": {
     "organisasjoner": [
