@@ -867,20 +867,20 @@
                 "pattern": "^(.*)$"
               }
             }
-          },
-          "soeknadsland": {
-            "$id": "#/properties/soeknadDokument/properties/soeknadsland",
-            "type": "object",
-            "title": "The Soeknadsland Schema",
-            "additionalProperties": false,
-            "required": [
-              "landKode"
-            ],
-            "properties": {
-              "landKode": {
-                "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKode",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landKode"
-              }
+          }
+        },
+        "soeknadsland": {
+          "$id": "#/properties/soeknadDokument/properties/soeknadsland",
+          "type": "object",
+          "title": "The Soeknadsland Schema",
+          "additionalProperties": false,
+          "required": [
+            "landKode"
+          ],
+          "properties": {
+            "landKode": {
+              "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKode",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landKode"
             }
           }
         }
