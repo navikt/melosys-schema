@@ -31,7 +31,8 @@
         "juridiskArbeidsgiverNorge",
         "arbeidsinntekt",
         "arbeidsgiversBekreftelse",
-        "maritimtArbeid"
+        "maritimtArbeid",
+        "soeknadsland"
       ],
       "properties": {
         "personOpplysninger": {
@@ -876,6 +877,30 @@
                 ],
                 "pattern": "^(.*)$"
               }
+            }
+          }
+        },
+        "soeknadsland": {
+          "$id": "#/properties/soeknadDokument/properties/soeknadsland",
+          "type": "object",
+          "title": "The Soeknadsland Schema",
+          "additionalProperties": false,
+          "required": [
+            "landKode"
+          ],
+          "properties": {
+            "landKode": {
+              "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKode",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The landKode Schema",
+              "default": "",
+              "examples": [
+                "GB"
+              ],
+              "pattern": "^(.*)$"
             }
           }
         }
