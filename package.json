@@ -4,8 +4,9 @@
   "description": "MelosSys Schema Mock data",
   "main": "index.js",
   "files": [
+    "mock_data",
     "schema",
-    "mock_data"
+    "scripts"
   ],
   "repository": {
     "type": "git",
