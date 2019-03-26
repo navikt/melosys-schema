@@ -58,10 +58,11 @@
       "inntektNaeringIPerioden" : 0,
       "inntektTrygdeavgiftBlirTrukket" : true,
       "inntektUtenlandskIPerioden" : 2000,
-      "inntektNaturalYtelser" : [
-        "Fri bolig",
-        "Fri bil"
-      ],
+      "inntektNaturalytelser": {
+        "friBolig": true,
+        "friBil": null,
+        "friAnnet": null
+      },
       "inntektErInnrapporteringspliktig" : true,
       "inntektNorskIPerioden" : 5500
     },
