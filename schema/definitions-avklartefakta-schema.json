@@ -105,13 +105,5 @@
         }
       }
     }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/avklartefakta-schema.json",
-  "title": "The Root Schema",
-  "type": "array",
-  "items": {
-    "$id": "#/items",
-    "$ref": "#/definitions/avklartefakta"
   }
 }
