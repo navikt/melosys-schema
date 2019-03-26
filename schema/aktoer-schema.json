@@ -1,10 +1,5 @@
 {
-  "definitions": {
-    "representererEnum": {
-      "type": "string",
-      "enum": ["BRUKER", "ARBEIDSGIVER", "BEGGE"]
-    }
-  },
+  "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://http://melosys.nav.no/schemas/aktoer",
   "type": "array",
@@ -25,14 +20,9 @@
     ],
     "properties": {
       "databaseID": {
-        "$id": "#/items/properties/databaseID",
-        "type": "integer",
         "title": "The databaseID Schema",
-        "default": "",
-        "examples": [
-          1234
-        ],
-        "pattern": "^(.*)$"
+        "$id": "#/items/properties/databaseID",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/databaseID"
       },
       "aktoerID": {
         "$id": "#/items/properties/aktoerID",
@@ -83,10 +73,7 @@
         "title": "The Representerer Schema",
         "$id": "#/items/properties/representerer",
         "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE", null],
-        "oneOf": [
-          { "$ref": "#/definitions/representererEnum"},
-          { "type": ["null"] }
-        ]
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/representererKode"
       }
     }
   }
