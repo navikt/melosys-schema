@@ -20,6 +20,7 @@ I melosys-web-mock testes schema med:
 ```
 npm run eslint
 npm run schema
+npm run mock (Forutsetter at mocken kjører(npm run happycase) allerede på port 3002)
 ```
 
 
