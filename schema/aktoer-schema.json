@@ -15,6 +15,7 @@
     "title": "The Items Schema",
     "additionalProperties": false,
     "required": [
+      "id",
       "aktoerID",
       "institusjonsID",
       "orgnr",
@@ -23,6 +24,16 @@
       "representererKode"
     ],
     "properties": {
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "string",
+        "title": "The id Schema",
+        "default": "",
+        "examples": [
+          "1234"
+        ],
+        "pattern": "^(.*)$"
+      },
       "aktoerID": {
         "$id": "#/items/properties/aktoerID",
         "type": ["string", "null"],
