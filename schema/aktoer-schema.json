@@ -26,11 +26,11 @@
     "properties": {
       "databaseID": {
         "$id": "#/items/properties/databaseID",
-        "type": "string",
+        "type": "integer",
         "title": "The databaseID Schema",
         "default": "",
         "examples": [
-          "1234"
+          1234
         ],
         "pattern": "^(.*)$"
       },
