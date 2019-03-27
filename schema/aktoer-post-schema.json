@@ -6,7 +6,7 @@
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://http://melosys.nav.no/schemas/aktoer",
+  "$id": "http://http://melosys.nav.no/schemas/aktoer-post",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
