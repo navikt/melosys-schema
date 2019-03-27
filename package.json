@@ -1,6 +1,6 @@
 {
   "name": "melosys-schema",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "MelosSys Schema Mock data",
   "main": "index.js",
   "files": [
