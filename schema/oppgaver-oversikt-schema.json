@@ -139,7 +139,7 @@
             "pattern": "^(.*)$"
           },
           "fnr": {
-            "$id": "#/properties/saksbehandling/items/properties/sammensattNavn",
+            "$id": "#/properties/saksbehandling/items/properties/fnr",
             "type": "string",
             "title": "The Fnr Schema",
             "default": "",
