@@ -165,7 +165,8 @@
               "behandlingstype",
               "behandlingsstatus",
               "sisteOpplysningerHentetDato",
-              "erUnderOppdatering"
+              "erUnderOppdatering",
+              "registrertDato"
             ],
             "properties": {
               "behandlingID": {
@@ -199,6 +200,11 @@
                   false,
                   true
                 ]
+              },
+              "registrertDato": {
+                "$id": "#/properties/saksbehandling/items/properties/behandling/properties/registrertDato",
+                "title": "The RegistrertDato Schema",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
               }
             }
           },
