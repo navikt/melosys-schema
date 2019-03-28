@@ -13,6 +13,7 @@
     {
       "oppgaveID": "174562068",
       "sammensattNavn": "GLITRENDE HATT",
+      "fnr": "28106600300",
       "saksnummer": "4",
       "sakstype": {
         "kode": "TRYGDEAVTALE",
@@ -45,6 +46,7 @@
     {
       "oppgaveID": "176701002",
       "sammensattNavn": "LILLA HEST",
+      "fnr": "30098000492",
       "saksnummer": "3",
       "sakstype": {
         "kode": "TRYGDEAVTALE",
@@ -77,6 +79,7 @@
     {
       "oppgaveID": "176314229",
       "sammensattNavn": "KAKE ARTIG",
+      "fnr": "28106600300",
       "saksnummer": "5",
       "sakstype": {
         "kode": "TRYGDEAVTALE",
@@ -109,6 +112,7 @@
     {
       "oppgaveID": "176741739",
       "sammensattNavn": "MASKIN ARTIG",
+      "fnr": "17117802280",
       "saksnummer": "4",
       "sakstype": {
         "kode": "TRYGDEAVTALE",

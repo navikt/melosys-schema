@@ -104,6 +104,7 @@
         "required": [
           "oppgaveID",
           "sammensattNavn",
+          "fnr",
           "saksnummer",
           "sakstype",
           "behandling",
@@ -134,6 +135,16 @@
             "default": "",
             "examples": [
               "GLITRENDE HATT"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "fnr": {
+            "$id": "#/properties/saksbehandling/items/properties/sammensattNavn",
+            "type": "string",
+            "title": "The Fnr Schema",
+            "default": "",
+            "examples": [
+              "19117220349"
             ],
             "pattern": "^(.*)$"
           },
