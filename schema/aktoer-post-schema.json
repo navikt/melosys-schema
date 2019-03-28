@@ -7,6 +7,7 @@
   "additionalProperties": false,
   "required": [
     "aktoerID",
+    "databaseID",
     "institusjonsID",
     "orgnr",
     "rolleKode",
@@ -18,6 +19,11 @@
       "title": "The Aktoerid Schema",
       "$id": "#/items/properties/aktoerID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-aktoerID"
+    },
+    "databaseID": {
+      "title": "The DatabaseID schema",
+      "id": "#/items/properties/aktoerID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-databaseID"
     },
     "orgnr": {
       "title": "The Orgnr Schema",
