@@ -57,9 +57,17 @@
     },
     "databaseID": {
       "type": "integer",
-      "title": "The databaseID Schema",
+      "title": "The DatabaseID Schema",
       "examples": [
         1234
+      ]
+    },
+    "nullable-databaseID": {
+      "type": ["integer", "null"],
+      "title": "The Nullable-databaseID Schema",
+      "examples": [
+        1234,
+        null
       ]
     },
     "dato":  {
