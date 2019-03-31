@@ -16,7 +16,8 @@
     "journalpostID",
     "oppgaveID",
     "saksnummer",
-    "vedlegg"
+    "vedlegg",
+    "roar"
   ],
   "properties": {
     "avsenderID": {
@@ -106,6 +107,15 @@
         "$id": "#/items/properties/vedlegg/items",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
       }
+    },
+    "roar": {
+      "$id": "#/items/properties/roar",
+      "type": "boolean",
+      "title": "The Roar Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
     }
   }
 }

@@ -40,7 +40,8 @@
     "dokumentID",
     "hoveddokumentTittel",
     "vedlegg",
-    "fagsak"
+    "fagsak",
+    "roar"
   ],
   "properties": {
     "journalpostID": {
@@ -187,6 +188,15 @@
           }
         }
       }
+    },
+    "roar": {
+      "$id": "#/items/properties/roar",
+      "type": "boolean",
+      "title": "The Roar Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
     }
   }
 }
