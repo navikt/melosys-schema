@@ -41,7 +41,7 @@
     "hoveddokumentTittel",
     "vedlegg",
     "fagsak",
-    "roar"
+    "skalTilordnes"
   ],
   "properties": {
     "journalpostID": {
@@ -189,10 +189,10 @@
         }
       }
     },
-    "roar": {
-      "$id": "#/items/properties/roar",
+    "skalTilordnes": {
+      "$id": "#/items/properties/skalTilordnes",
       "type": "boolean",
-      "title": "The Roar Schema",
+      "title": "The SkalTilordnes Schema",
       "default": false,
       "examples": [
         true

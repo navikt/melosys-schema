@@ -17,7 +17,7 @@
     "oppgaveID",
     "saksnummer",
     "vedlegg",
-    "roar"
+    "skalTilordnes"
   ],
   "properties": {
     "avsenderID": {
@@ -108,10 +108,10 @@
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
       }
     },
-    "roar": {
-      "$id": "#/items/properties/roar",
+    "skalTilordnes": {
+      "$id": "#/items/properties/skalTilordnes",
       "type": "boolean",
-      "title": "The Roar Schema",
+      "title": "The SkalTilordnes Schema",
       "default": false,
       "examples": [
         true
