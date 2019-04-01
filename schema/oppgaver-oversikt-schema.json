@@ -119,7 +119,7 @@
       "items": {
         "$id": "#/properties/saksbehandling/items",
         "title": "The Saksbehandlingitem Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/saksbehandlingitem"
+        "$ref": "http://melosys.nav.no/schemas/definitions-oppgaver-schema.json#/definitions/saksbehandlingitem"
       }
     }
   }
