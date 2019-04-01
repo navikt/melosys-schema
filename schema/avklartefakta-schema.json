@@ -6,6 +6,6 @@
   "type": "array",
   "items": {
     "$id": "#/items",
-    "$ref": "http://melosys.nav.no/schemas/definitions-avklartefakta-schema.json#/definitions/avklartefakta"
+    "$ref": "http://melosys.nav.no/schemas/avklartefakta-definitions.json#/definitions/avklartefakta"
   }
 }
