@@ -1,5 +1,6 @@
 [
   {
+    "databaseID": 2547247167442559,
     "aktoerID": "1167540096033",
     "orgnr": "810072512",
     "utenlandskPersonID": null,
@@ -8,6 +9,7 @@
     "representererKode": "BRUKER"
   },
   {
+    "databaseID": 5258868766397238,
     "aktoerID": "1167540096033",
     "orgnr": "810072512",
     "utenlandskPersonID": null,
@@ -16,6 +18,7 @@
     "representererKode": "BRUKER"
   },
   {
+    "databaseID": 9018884658752588,
     "aktoerID": "1167540096033",
     "orgnr": "810072512",
     "utenlandskPersonID": null,
@@ -24,6 +27,7 @@
     "representererKode": "BRUKER"
   },
   {
+    "databaseID": 1360987048849034,
     "aktoerID": null,
     "orgnr": "810072512",
     "utenlandskPersonID": null,

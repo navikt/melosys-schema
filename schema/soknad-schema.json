@@ -665,7 +665,7 @@
             "inntektNorskIPerioden",
             "inntektUtenlandskIPerioden",
             "inntektNaeringIPerioden",
-            "inntektNaturalYtelser",
+            "inntektNaturalytelser",
             "inntektErInnrapporteringspliktig",
             "inntektTrygdeavgiftBlirTrukket"
           ],
@@ -697,21 +697,38 @@
                 0
               ]
             },
-            "inntektNaturalYtelser": {
-              "$id": "#/properties/soeknadDokument/properties/arbeidsinntekt/properties/inntektNaturalYtelser",
-              "type": "array",
+            "inntektNaturalytelser": {
+              "$id": "#/properties/soeknadDokument/properties/arbeidsinntekt/properties/inntektNaturalytelser",
+              "type": "object",
               "title": "The Inntektnaturalytelser Schema",
-              "uniqueItems": true,
-              "items": {
-                "$id": "#/properties/soeknadDokument/properties/arbeidsinntekt/properties/inntektNaturalYtelser/items",
-                "type": ["string","null"],
-                "title": "The Items Schema",
-                "default": "",
-                "examples": [
-                  "Fri bolig",
-                  "Fri bil"
-                ],
-                "pattern": "^(.*)$"
+              "additionalProperties": false,
+              "required": [
+                "friBil",
+                "friBolig",
+                "friAnnet"
+              ],
+              "properties": {
+                "friBil": {
+                  "$id": "#/properties/soeknadDokument/properties/arbeidsinntekt/properties/inntektNaturalYtelser/properties/friBil",
+                  "type": ["boolean","null"],
+                  "title": "The friBil Schema",
+                  "default": false,
+                  "examples": [true]
+                },
+                "friBolig": {
+                  "$id": "#/properties/soeknadDokument/properties/arbeidsinntekt/properties/inntektNaturalYtelser/properties/friBolig",
+                  "type": ["boolean","null"],
+                  "title": "The friBolig Schema",
+                  "default": false,
+                  "examples": [true]
+                },
+                "friAnnet": {
+                  "$id": "#/properties/soeknadDokument/properties/arbeidsinntekt/properties/inntektNaturalYtelser/properties/friAnnet",
+                  "type": ["string","null"],
+                  "title": "The friAnnet Schema",
+                  "default": false,
+                  "examples": [true]
+                }
               }
             },
             "inntektErInnrapporteringspliktig": {

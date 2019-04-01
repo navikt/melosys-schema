@@ -25,6 +25,8 @@
         "description": "An explanation about the purpose of this instance.",
         "additionalProperties": false,
         "required": [
+          "fnr",
+          "sammensattNavn",
           "oppgaveID",
           "journalpostID",
           "aktivTil",
@@ -33,6 +35,25 @@
           "ansvarligID"
         ],
         "properties": {
+          "fnr": {
+            "$id": "#/properties/journalforing/items/properties/fnr",
+            "type": "string",
+            "title": "The Fnr Schema",
+            "default": "",
+            "examples": [
+              "19117220349"
+            ]
+          },
+          "sammensattNavn": {
+            "$id": "#/properties/journalforing/items/properties/sammensattNavn",
+            "type": "string",
+            "title": "The Sammensattnavn Schema",
+            "default": "",
+            "examples": [
+              "GLITRENDE HATT"
+            ],
+            "pattern": "^(.*)$"
+          },
           "oppgaveID": {
             "$id": "#/properties/journalforing/items/properties/oppgaveID",
             "type": "string",
@@ -104,6 +125,7 @@
         "required": [
           "oppgaveID",
           "sammensattNavn",
+          "fnr",
           "saksnummer",
           "sakstype",
           "behandling",
@@ -137,6 +159,16 @@
             ],
             "pattern": "^(.*)$"
           },
+          "fnr": {
+            "$id": "#/properties/saksbehandling/items/properties/fnr",
+            "type": "string",
+            "title": "The Fnr Schema",
+            "default": "",
+            "examples": [
+              "19117220349"
+            ],
+            "pattern": "^(.*)$"
+          },
           "saksnummer": {
             "$id": "#/properties/saksbehandling/items/properties/saksnummer",
             "type": "string",
@@ -165,7 +197,8 @@
               "behandlingstype",
               "behandlingsstatus",
               "sisteOpplysningerHentetDato",
-              "erUnderOppdatering"
+              "erUnderOppdatering",
+              "registrertDato"
             ],
             "properties": {
               "behandlingID": {
@@ -199,6 +232,11 @@
                   false,
                   true
                 ]
+              },
+              "registrertDato": {
+                "$id": "#/properties/saksbehandling/items/properties/behandling/properties/registrertDato",
+                "title": "The RegistrertDato Schema",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
               }
             }
           },
