@@ -5,7 +5,6 @@
   "definitions": {
     "nullable-aktoerID": {
       "type": ["string", "null"]
-
     },
     "aarmaaned": {
       "type": "string",
@@ -44,6 +43,60 @@
         },
         "ustrukturertAdresse": {
           "$ref": "#/definitions/ustrukturertAdresse"
+        }
+      }
+    },
+    "behandling": {
+      "$id": "#/definitions/behandling",
+      "type": "object",
+      "title": "The Behandling Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "additionalProperties": false,
+      "required": [
+        "behandlingID",
+        "behandlingstype",
+        "behandlingsstatus",
+        "sisteOpplysningerHentetDato",
+        "erUnderOppdatering",
+        "registrertDato"
+      ],
+      "properties": {
+        "behandlingID": {
+          "$id": "#/definitions/behandling/properties/behandlingID",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+        },
+        "behandlingstype": {
+          "$id": "#/definitions/behandling/properties/behandlingstype",
+          "title": "The behandlingstype Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandlingsstatus": {
+          "$id": "#/definitions/behandling/properties/behandlingsstatus",
+          "title": "The behandlingsstatus Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "sisteOpplysningerHentetDato":{
+          "title": "The sisteOpplysningerHentetDato Schema",
+          "$id": "#/definitions/behandling/properties/sisteOpplysningerHentetDato",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "erUnderOppdatering": {
+          "$id": "#/definitions/behandling/properties/erUnderOppdatering",
+          "type": "boolean",
+          "title": "The erUnderOppdatering Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            false,
+            true
+          ]
+        },
+        "registrertDato": {
+          "$id": "#/definitions/behandling/properties/registrertDato",
+          "title": "The RegistrertDato Schema",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
         }
       }
     },
@@ -399,6 +452,140 @@
           "default": "",
           "examples": [
             "NORGE"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "saksbehandlingitem": {
+      "$id": "#/definitions/saksbehandlingitem",
+      "type": "object",
+      "title": "The Saksbehandlingitem Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "additionalProperties": false,
+      "required": [
+        "oppgaveID",
+        "sammensattNavn",
+        "fnr",
+        "saksnummer",
+        "sakstype",
+        "behandling",
+        "aktivTil",
+        "soknadsperiode",
+        "prioritet",
+        "land",
+        "versjon",
+        "ansvarligID"
+      ],
+      "properties": {
+        "oppgaveID": {
+          "$id": "#/definitions/saksbehandlingitem/properties/oppgaveID",
+          "type": "string",
+          "title": "The Oppgaveid Schema",
+          "default": "",
+          "examples": [
+            "174562068"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sammensattNavn": {
+          "$id": "#/definitions/saksbehandlingitem/properties/sammensattNavn",
+          "type": "string",
+          "title": "The Sammensattnavn Schema",
+          "default": "",
+          "examples": [
+            "GLITRENDE HATT"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "fnr": {
+          "$id": "#/definitions/saksbehandlingitem/properties/fnr",
+          "type": "string",
+          "title": "The Fnr Schema",
+          "default": "",
+          "examples": [
+            "19117220349"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "saksnummer": {
+          "$id": "#/definitions/saksbehandlingitem/properties/saksnummer",
+          "type": "string",
+          "title": "The Saksnummer Schema",
+          "default": "",
+          "examples": [
+            "4"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sakstype": {
+          "$id": "#/definitions/saksbehandlingitem/properties/sakstype",
+          "title": "The Sakstypekode Schema",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandling": {
+          "$id": "#/definitions/saksbehandlingitem/properties/behandling",
+          "title": "The Behandling Schema",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandling"
+        },
+        "aktivTil": {
+          "$id": "#/definitions/saksbehandlingitem/properties/aktivTil",
+          "type": "string",
+          "format": "date",
+          "title": "The Aktivtil Schema",
+          "default": "",
+          "examples": [
+            "2018-01-28"
+          ]
+        },
+        "soknadsperiode": {
+          "title": "The Soknadsperiode Schema",
+          "$id": "#/definitions/saksbehandlingitem/properties/soknadsperiode",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+        },
+        "prioritet": {
+          "$id": "#/definitions/saksbehandlingitem/properties/prioritet",
+          "type": "string",
+          "title": "The Prioritet Schema",
+          "default": "",
+          "examples": [
+            "HOY"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "land": {
+          "$id": "#/definitions/saksbehandlingitem/properties/land",
+          "type": "array",
+          "title": "The Land Schema",
+          "uniqueItems": true,
+          "additionalItems": false,
+          "items": {
+            "$id": "",
+            "type": "string",
+            "title": "The LandKode item Schema",
+            "default": "",
+            "examples": [
+              "NO"
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "versjon": {
+          "$id": "#/definitions/saksbehandlingitem/properties/versjon",
+          "type": "integer",
+          "title": "The Versjon Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "ansvarligID": {
+          "$id": "#/definitions/saksbehandlingitem/properties/ansvarligID",
+          "type": "string",
+          "title": "The Ansvarligid Schema",
+          "default": "",
+          "examples": [
+            "Z991001"
           ],
           "pattern": "^(.*)$"
         }
