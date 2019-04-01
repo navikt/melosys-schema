@@ -99,7 +99,7 @@
     "maritimtArbeid": [
     ],
     "soeknadsland": {
-      "landKode": "DE"
+      "landKoder": ["DE"]
     }
   },
   "tilleggsData": {

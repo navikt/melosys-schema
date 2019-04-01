@@ -98,7 +98,7 @@
     },
     "maritimtArbeid": [],
     "soeknadsland": {
-      "landKode": "FR"
+      "landKoder": ["FR"]
     }
   },
   "tilleggsData": {

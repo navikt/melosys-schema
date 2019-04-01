@@ -98,7 +98,7 @@
     },
     "maritimtArbeid": [],
     "soeknadsland": {
-      "landKode": "SE"
+      "landKoder": ["SE"]
     }
   },
   "tilleggsData": {

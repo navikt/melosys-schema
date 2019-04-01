@@ -126,7 +126,7 @@
       }
     ],
     "soeknadsland": {
-      "landKode": "GB"
+      "landKoder": []
     }
   },
   "tilleggsData": {

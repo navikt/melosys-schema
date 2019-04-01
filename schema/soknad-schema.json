@@ -903,12 +903,24 @@
           "title": "The Soeknadsland Schema",
           "additionalProperties": false,
           "required": [
-            "landKode"
+            "landKoder"
           ],
           "properties": {
-            "landKode": {
-              "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKode",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landKode"
+            "landKoder": {
+              "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKoder",
+              "type": "array",
+              "title": "The LandKoder Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKoder/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "NO",
+                  "ES"
+                ]
+              }
             }
           }
         }
