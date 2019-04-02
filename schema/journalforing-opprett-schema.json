@@ -40,7 +40,8 @@
     "dokumentID",
     "hoveddokumentTittel",
     "vedlegg",
-    "fagsak"
+    "fagsak",
+    "skalTilordnes"
   ],
   "properties": {
     "journalpostID": {
@@ -187,6 +188,15 @@
           }
         }
       }
+    },
+    "skalTilordnes": {
+      "$id": "#/items/properties/skalTilordnes",
+      "type": "boolean",
+      "title": "The SkalTilordnes Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
     }
   }
 }
