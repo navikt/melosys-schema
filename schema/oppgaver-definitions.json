@@ -1,4 +1,7 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/oppgaver-definitions.json",
+  "title": "The Definitions Schema",
   "definitions": {
     "behandling": {
       "$id": "#/definitions/behandling",
@@ -187,15 +190,5 @@
         }
       }
     }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/oppgaver-sok-schema.json",
-  "type": ["array","null"],
-  "title": "The Root Schema",
-  "items": {
-    "$id": "#/items",
-    "title": "The Saksbehandlingitem Schema",
-    "$ref": "http://melosys.nav.no/schemas/oppgaver-definitions.json#/definitions/saksbehandlingitem"
   }
 }
-
