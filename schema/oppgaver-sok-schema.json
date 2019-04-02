@@ -1,19 +1,68 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/oppgaver-sok-schema.json",
-  "type": ["array","null"],
-  "title": "The Root Schema",
-  "items": {
-    "$id": "#/items",
-    "$ref": "#/definitions/saksbehandling"
-  },
   "definitions": {
-    "saksbehandling": {
-      "type": ["object","null"],
+    "behandling": {
+      "$id": "#/definitions/behandling",
+      "type": "object",
+      "title": "The Behandling Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "additionalProperties": false,
+      "required": [
+        "behandlingID",
+        "behandlingstype",
+        "behandlingsstatus",
+        "sisteOpplysningerHentetDato",
+        "erUnderOppdatering",
+        "registrertDato"
+      ],
+      "properties": {
+        "behandlingID": {
+          "$id": "#/definitions/behandling/properties/behandlingID",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+        },
+        "behandlingstype": {
+          "$id": "#/definitions/behandling/properties/behandlingstype",
+          "title": "The behandlingstype Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandlingsstatus": {
+          "$id": "#/definitions/behandling/properties/behandlingsstatus",
+          "title": "The behandlingsstatus Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "sisteOpplysningerHentetDato":{
+          "title": "The sisteOpplysningerHentetDato Schema",
+          "$id": "#/definitions/behandling/properties/sisteOpplysningerHentetDato",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "erUnderOppdatering": {
+          "$id": "#/definitions/behandling/properties/erUnderOppdatering",
+          "type": "boolean",
+          "title": "The erUnderOppdatering Schema",
+          "default": "",
+          "examples": [
+            false,
+            true
+          ]
+        },
+        "registrertDato": {
+          "$id": "#/definitions/behandling/properties/registrertDato",
+          "title": "The RegistrertDato Schema",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        }
+      }
+    },
+    "saksbehandlingitem": {
+      "$id": "#/definitions/saksbehandlingitem",
+      "type": "object",
+      "title": "The Saksbehandlingitem Schema",
+      "description": "An explanation about the purpose of this instance.",
       "additionalProperties": false,
       "required": [
         "oppgaveID",
         "sammensattNavn",
+        "fnr",
         "saksnummer",
         "sakstype",
         "behandling",
@@ -26,10 +75,9 @@
       ],
       "properties": {
         "oppgaveID": {
-          "$id": "#/properties/saksbehandling/items/properties/oppgaveID",
+          "$id": "#/definitions/saksbehandlingitem/properties/oppgaveID",
           "type": "string",
           "title": "The Oppgaveid Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": "",
           "examples": [
             "174562068"
@@ -37,21 +85,29 @@
           "pattern": "^(.*)$"
         },
         "sammensattNavn": {
-          "$id": "#/properties/saksbehandling/items/properties/sammensattNavn",
+          "$id": "#/definitions/saksbehandlingitem/properties/sammensattNavn",
           "type": "string",
           "title": "The Sammensattnavn Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": "",
           "examples": [
             "GLITRENDE HATT"
           ],
           "pattern": "^(.*)$"
         },
+        "fnr": {
+          "$id": "#/definitions/saksbehandlingitem/properties/fnr",
+          "type": "string",
+          "title": "The Fnr Schema",
+          "default": "",
+          "examples": [
+            "19117220349"
+          ],
+          "pattern": "^(.*)$"
+        },
         "saksnummer": {
-          "$id": "#/properties/saksbehandling/items/properties/saksnummer",
+          "$id": "#/definitions/saksbehandlingitem/properties/saksnummer",
           "type": "string",
           "title": "The Saksnummer Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": "",
           "examples": [
             "4"
@@ -59,65 +115,20 @@
           "pattern": "^(.*)$"
         },
         "sakstype": {
-          "$id": "#/properties/saksbehandling/items/properties/sakstype",
+          "$id": "#/definitions/saksbehandlingitem/properties/sakstype",
           "title": "The Sakstypekode Schema",
-          "description": "An explanation about the purpose of this instance.",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         },
         "behandling": {
-          "$id": "#/properties/saksbehandling/items/properties/behandling",
-          "type": "object",
+          "$id": "#/definitions/saksbehandlingitem/properties/behandling",
           "title": "The Behandling Schema",
-          "description": "An explanation about the purpose of this instance.",
-          "additionalProperties": false,
-          "required": [
-            "behandlingID",
-            "behandlingstype",
-            "behandlingsstatus",
-            "sisteOpplysningerHentetDato",
-            "erUnderOppdatering"
-          ],
-          "properties": {
-            "behandlingID": {
-              "$id": "#/properties/saksbehandling/items/properties/behandling/properties/behandlingID",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
-            },
-            "behandlingstype": {
-              "$id": "#/properties/saksbehandling/items/properties/behandling/properties/behandlingstype",
-              "title": "The behandlingstype Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-            },
-            "behandlingsstatus": {
-              "$id": "#/properties/saksbehandling/items/properties/behandling/properties/behandlingsstatus",
-              "title": "The behandlingsstatus Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-            },
-            "sisteOpplysningerHentetDato": {
-              "title": "The sisteOpplysningerHentetDato Schema",
-              "$id": "#/properties/saksbehandling/items/properties/behandling/properties/sisteOpplysningerHentetDato",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
-            },
-            "erUnderOppdatering": {
-              "$id": "#/properties/saksbehandling/items/properties/behandling/properties/erUnderOppdatering",
-              "type": "boolean",
-              "title": "The erUnderOppdatering Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "default": "",
-              "examples": [
-                false,
-                true
-              ]
-            }
-          }
+          "$ref": "#/definitions/behandling"
         },
         "aktivTil": {
-          "$id": "#/properties/saksbehandling/items/properties/aktivTil",
+          "$id": "#/definitions/saksbehandlingitem/properties/aktivTil",
           "type": "string",
           "format": "date",
           "title": "The Aktivtil Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": "",
           "examples": [
             "2018-01-28"
@@ -125,15 +136,13 @@
         },
         "soknadsperiode": {
           "title": "The Soknadsperiode Schema",
-          "description": "An explanation about the purpose of this instance.",
-          "$id": "#/properties/saksbehandling/items/properties/soknadsperiode",
+          "$id": "#/definitions/saksbehandlingitem/properties/soknadsperiode",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         },
         "prioritet": {
-          "$id": "#/properties/saksbehandling/items/properties/prioritet",
+          "$id": "#/definitions/saksbehandlingitem/properties/prioritet",
           "type": "string",
           "title": "The Prioritet Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": "",
           "examples": [
             "HOY"
@@ -141,10 +150,9 @@
           "pattern": "^(.*)$"
         },
         "land": {
-          "$id": "#/properties/saksbehandling/items/properties/land",
+          "$id": "#/definitions/saksbehandlingitem/properties/land",
           "type": "array",
           "title": "The Land Schema",
-          "description": "An explanation about the purpose of this instance.",
           "uniqueItems": true,
           "additionalItems": false,
           "items": {
@@ -159,20 +167,18 @@
           }
         },
         "versjon": {
-          "$id": "#/properties/saksbehandling/items/properties/versjon",
+          "$id": "#/definitions/saksbehandlingitem/properties/versjon",
           "type": "integer",
           "title": "The Versjon Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": 0,
           "examples": [
             1
           ]
         },
         "ansvarligID": {
-          "$id": "#/properties/saksbehandling/items/properties/ansvarligID",
+          "$id": "#/definitions/saksbehandlingitem/properties/ansvarligID",
           "type": "string",
           "title": "The Ansvarligid Schema",
-          "description": "An explanation about the purpose of this instance.",
           "default": "",
           "examples": [
             "Z991001"
@@ -181,6 +187,15 @@
         }
       }
     }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/oppgaver-sok-schema.json",
+  "type": ["array","null"],
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "title": "The Saksbehandlingitem Schema",
+    "$ref": "#/definitions/saksbehandlingitem"
   }
 }
 

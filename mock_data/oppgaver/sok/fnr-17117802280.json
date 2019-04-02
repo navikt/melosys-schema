@@ -2,6 +2,7 @@
   {
     "oppgaveID": "1",
     "sammensattNavn": "ARTIG KAKE",
+    "fnr": "28106600300",
     "saksnummer": "5",
     "aktivTil": "2019-04-25",
     "soknadsperiode": {
@@ -23,7 +24,8 @@
         "term": "Opprettet"
       },
       "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-      "erUnderOppdatering": false
+      "erUnderOppdatering": false,
+      "registrertDato": "2018-08-10T15:00:00.622Z"
     },
     "land": ["GB"],
     "prioritet": "HOY",
