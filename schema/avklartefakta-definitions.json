@@ -16,7 +16,7 @@
       ],
       "properties": {
         "referanse": {
-          "$id": "#/items/properties/referanse",
+          "$id": "#/definitions/avklartefakta/properties/referanse",
           "type": [
             "string",
             "null"
@@ -29,7 +29,7 @@
           "pattern": "^(.*)$"
         },
         "avklartefaktaKode": {
-          "$id": "#/items/properties/avklartefaktaKode",
+          "$id": "#/definitions/avklartefakta/properties/avklartefaktaKode",
           "type": [
             "string",
             "null"
@@ -42,14 +42,14 @@
           "pattern": "^(.*)$"
         },
         "fakta": {
-          "$id": "#/items/properties/fakta",
+          "$id": "#/definitions/avklartefakta/properties/fakta",
           "type": [
             "array",
             "null"
           ],
           "title": "The Fakta Schema",
           "items": {
-            "$id": "#/items/properties/fakta/items",
+            "$id": "#/definitions/avklartefakta/properties/fakta/items",
             "type": [
               "string",
               "null"
@@ -64,7 +64,7 @@
           }
         },
         "subjektID": {
-          "$id": "#/items/properties/subjektID",
+          "$id": "#/definitions/avklartefakta/properties/subjektID",
           "type": ["string","null"],
           "title": "The Subjektid Schema",
           "default": null,
@@ -73,14 +73,14 @@
           ]
         },
         "begrunnelseKoder": {
-          "$id": "#/items/properties/begrunnelseKoder",
+          "$id": "#/definitions/avklartefakta/properties/begrunnelseKoder",
           "type": [
             "array",
             "null"
           ],
           "title": "The Begrunnelsekoder Schema",
           "items": {
-            "$id": "#/items/properties/begrunnelseKoder/items",
+            "$id": "#/definitions/avklartefakta/properties/begrunnelseKoder/items",
             "type": [
               "string",
               "null"
@@ -94,7 +94,7 @@
           }
         },
         "begrunnelseFritekst": {
-          "$id": "#/items/properties/begrunnelseFritekst",
+          "$id": "#/definitions/avklartefakta/properties/begrunnelseFritekst",
           "type": [
             "string",
             "null"
