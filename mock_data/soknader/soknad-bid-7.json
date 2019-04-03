@@ -79,7 +79,11 @@
       "inntektNorskIPerioden": 20000,
       "inntektUtenlandskIPerioden": 32334,
       "inntektNaeringIPerioden": 0,
-      "inntektNaturalYtelser": [],
+      "inntektNaturalytelser": {
+        "friBolig": true,
+        "friBil": null,
+        "friAnnet": null
+      },
       "inntektErInnrapporteringspliktig": null,
       "inntektTrygdeavgiftBlirTrukket": null
     },

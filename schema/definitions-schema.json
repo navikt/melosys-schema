@@ -3,6 +3,9 @@
   "$id": "http://melosys.nav.no/schemas/definitions-schema.json",
   "title": "The Definitions Schema",
   "definitions": {
+    "nullable-aktoerID": {
+      "type": ["string", "null"]
+    },
     "aarmaaned": {
       "type": "string",
       "pattern": "^\\d{4}-\\d{2}$",
@@ -49,6 +52,21 @@
       "default": 0,
       "examples": [
         1000023948
+      ]
+    },
+    "databaseID": {
+      "type": "integer",
+      "title": "The DatabaseID Schema",
+      "examples": [
+        1234
+      ]
+    },
+    "nullable-databaseID": {
+      "type": ["integer", "null"],
+      "title": "The Nullable-databaseID Schema",
+      "examples": [
+        1234,
+        null
       ]
     },
     "dato":  {
@@ -256,6 +274,19 @@
           "examples": ["2014-03-12", null]
         }
       }
+    },
+    "enum-representerer": {
+      "type": "string",
+      "enum": ["BRUKER", "ARBEIDSGIVER", "BEGGE"]
+    },
+    "representererKode": {
+      "title": "The Representerer Schema",
+      "default": null,
+      "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE", null],
+      "oneOf": [
+        { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/enum-representerer"},
+        { "type": ["null"] }
+      ]
     },
     "registerAdresse": {
       "type": "object",

@@ -16,7 +16,8 @@
     "journalpostID",
     "oppgaveID",
     "saksnummer",
-    "vedlegg"
+    "vedlegg",
+    "skalTilordnes"
   ],
   "properties": {
     "avsenderID": {
@@ -106,6 +107,15 @@
         "$id": "#/items/properties/vedlegg/items",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
       }
+    },
+    "skalTilordnes": {
+      "$id": "#/items/properties/skalTilordnes",
+      "type": "boolean",
+      "title": "The SkalTilordnes Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
     }
   }
 }
