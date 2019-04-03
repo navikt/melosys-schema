@@ -103,6 +103,10 @@
     "maritimtArbeid": [],
     "soeknadsland": {
       "landKoder": ["DK", "SE"]
+    },
+    "periode": {
+      "fom": "2018-01-02",
+      "tom": "2019-05-30"
     }
   },
   "tilleggsData": {

@@ -100,6 +100,10 @@
     ],
     "soeknadsland": {
       "landKoder": ["DE"]
+    },
+    "periode": {
+      "fom": null,
+      "tom": null
     }
   },
   "tilleggsData": {

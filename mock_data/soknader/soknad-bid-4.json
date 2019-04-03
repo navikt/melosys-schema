@@ -127,6 +127,10 @@
     ],
     "soeknadsland": {
       "landKoder": []
+    },
+    "periode": {
+      "fom": "2018-01-02",
+      "tom": null
     }
   },
   "tilleggsData": {

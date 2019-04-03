@@ -32,7 +32,8 @@
         "arbeidsinntekt",
         "arbeidsgiversBekreftelse",
         "maritimtArbeid",
-        "soeknadsland"
+        "soeknadsland",
+        "periode"
       ],
       "properties": {
         "personOpplysninger": {
@@ -923,6 +924,11 @@
               }
             }
           }
+        },
+        "periode": {
+          "title": "The Soknadsperiode Schema",
+          "$id": "#/properties/soeknadDokument/properties/periode",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
         }
       }
     },
