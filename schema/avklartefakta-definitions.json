@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/avklartefakta-definitions.json",
+  "title": "The Avklartefakta Definitions Schema",
+  "definitions": {
+    "avklartefakta": {
+      "type": ["object","null"],
+      "additionalProperties": false,
+      "required": [
+        "referanse",
+        "avklartefaktaKode",
+        "fakta",
+        "subjektID",
+        "begrunnelseKoder",
+        "begrunnelseFritekst"
+      ],
+      "properties": {
+        "referanse": {
+          "$id": "#/definitions/avklartefakta/properties/referanse",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Referanse Schema",
+          "default": "",
+          "examples": [
+            "BOSTEDSLAND"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "avklartefaktaKode": {
+          "$id": "#/definitions/avklartefakta/properties/avklartefaktaKode",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The AvklartefaktaKode Schema",
+          "default": "",
+          "examples": [
+            "BOSTEDSLAND"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "fakta": {
+          "$id": "#/definitions/avklartefakta/properties/fakta",
+          "type": [
+            "array",
+            "null"
+          ],
+          "title": "The Fakta Schema",
+          "items": {
+            "$id": "#/definitions/avklartefakta/properties/fakta/items",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "SOKKEL",
+              "NO"
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "subjektID": {
+          "$id": "#/definitions/avklartefakta/properties/subjektID",
+          "type": ["string","null"],
+          "title": "The Subjektid Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "begrunnelseKoder": {
+          "$id": "#/definitions/avklartefakta/properties/begrunnelseKoder",
+          "type": [
+            "array",
+            "null"
+          ],
+          "title": "The Begrunnelsekoder Schema",
+          "items": {
+            "$id": "#/definitions/avklartefakta/properties/begrunnelseKoder/items",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "OPPHOLD_MER_ENN_12_MND"
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "begrunnelseFritekst": {
+          "$id": "#/definitions/avklartefakta/properties/begrunnelseFritekst",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Begrunnelsefritekst Schema",
+          "default": "",
+          "examples": [
+            "En egen fritekstbegrunnelse som ikke finnes i kodeverket"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}
