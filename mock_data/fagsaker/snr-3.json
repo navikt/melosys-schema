@@ -87,7 +87,7 @@
               "BUCKINGHAMSHIRE",
               "HP19 3EQ"
             ],
-            "landKode": "UK"
+            "landkode": "UK"
           },
           "midlertidigPostadresse": {
             "adressetype": "USTRUKTURERT",
@@ -99,7 +99,7 @@
                 "BUCKINGHAMSHIRE",
                 "HP19 3EQ"
               ],
-              "landKode": "UK"
+              "landkode": "UK"
             }
           }
         },
