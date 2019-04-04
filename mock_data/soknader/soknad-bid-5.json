@@ -102,8 +102,8 @@
       "landKoder": ["DE"]
     },
     "periode": {
-      "fom": null,
-      "tom": null
+      "fom": "2019-04-04",
+      "tom": "2020-05-17"
     }
   },
   "tilleggsData": {

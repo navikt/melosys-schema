@@ -126,11 +126,11 @@
       }
     ],
     "soeknadsland": {
-      "landKoder": []
+      "landKoder": ["DK"]
     },
     "periode": {
       "fom": "2018-01-02",
-      "tom": null
+      "tom": "2019-01-02"
     }
   },
   "tilleggsData": {

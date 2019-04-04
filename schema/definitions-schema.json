@@ -207,7 +207,15 @@
       "minLength": 2,
       "examples": [
         "NO"
-      ]
+      ],
+      "pattern": "^(.*)$"
+    },
+    "landKoder": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/definitions/landKode"
+      }
     },
     "orgnr": {
       "type": "string",
