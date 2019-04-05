@@ -32,7 +32,8 @@
         "arbeidsinntekt",
         "arbeidsgiversBekreftelse",
         "maritimtArbeid",
-        "soeknadsland"
+        "soeknadsland",
+        "periode"
       ],
       "properties": {
         "personOpplysninger": {
@@ -58,7 +59,7 @@
                 "additionalProperties": false,
                 "required": [
                   "ident",
-                  "landKode"
+                  "landkode"
                 ],
                 "properties": {
                   "ident": {
@@ -71,8 +72,8 @@
                     ],
                     "pattern": "^(.*)$"
                   },
-                  "landKode": {
-                    "$id": "#/properties/soeknadDokument/properties/personOpplysninger/properties/utenlandskIdent/items/properties/landKode",
+                  "landkode": {
+                    "$id": "#/properties/soeknadDokument/properties/personOpplysninger/properties/utenlandskIdent/items/properties/landkode",
                     "type": ["string","null"],
                     "title": "The Landkode Schema",
                     "default": "",
@@ -214,7 +215,7 @@
           "title": "The Oppholdutland Schema",
           "additionalProperties": false,
           "required": [
-            "oppholdslandKoder",
+            "oppholdslandkoder",
             "oppholdsPeriode",
             "ektefelleEllerBarnINorge",
             "sammeAdresseSomArbeidsgiver",
@@ -223,13 +224,13 @@
             "studentSemester"
           ],
           "properties": {
-            "oppholdslandKoder": {
-              "$id": "#/properties/soeknadDokument/properties/oppholdUtland/properties/oppholdslandKoder",
+            "oppholdslandkoder": {
+              "$id": "#/properties/soeknadDokument/properties/oppholdUtland/properties/oppholdslandkoder",
               "type": "array",
               "title": "The Oppholdslandkoder Schema",
               "uniqueItems": true,
               "items": {
-                "$id": "#/properties/soeknadDokument/properties/oppholdUtland/properties/oppholdslandKoder/items",
+                "$id": "#/properties/soeknadDokument/properties/oppholdUtland/properties/oppholdslandkoder/items",
                 "type": ["string","null"],
                 "title": "The Items Schema",
                 "default": "",
@@ -301,7 +302,7 @@
           "additionalProperties": false,
           "required": [
             "intensjonOmRetur",
-            "familiesBostedLandKode",
+            "familiesBostedLandkode",
             "antallMaanederINorge",
             "adresseIUtlandet",
             "oppgittAdresse"
@@ -316,8 +317,8 @@
                 true
               ]
             },
-            "familiesBostedLandKode": {
-              "$id": "#/properties/soeknadDokument/properties/bosted/properties/familiesBostedLandKode",
+            "familiesBostedLandkode": {
+              "$id": "#/properties/soeknadDokument/properties/bosted/properties/familiesBostedLandkode",
               "type": ["string","null"],
               "title": "The Familiesbostedlandkode Schema",
               "default": "",
@@ -367,7 +368,7 @@
             "fullmektigPostnr",
             "fullmektigPoststed",
             "fullmektigRegion",
-            "fullmektigLandKode"
+            "fullmektigLandkode"
           ],
           "properties": {
             "arbeidsforholdOpprettholdIHelePerioden": {
@@ -479,8 +480,8 @@
               ],
               "pattern": "^(.*)$"
             },
-            "fullmektigLandKode": {
-              "$id": "#/properties/soeknadDokument/properties/arbeidNorge/properties/fullmektigLandKode",
+            "fullmektigLandkode": {
+              "$id": "#/properties/soeknadDokument/properties/arbeidNorge/properties/fullmektigLandkode",
               "type": ["string","null"],
               "title": "The Fullmektiglandkode Schema",
               "default": "",
@@ -839,8 +840,8 @@
             "required": [
               "navn",
               "fartsomradeKode",
-              "flaggLandKode",
-              "installasjonsLandKode",
+              "flaggLandkode",
+              "installasjonsLandkode",
               "territorialfarvann"
             ],
             "properties": {
@@ -864,8 +865,8 @@
                 ],
                 "pattern": "^(.*)$"
               },
-              "flaggLandKode": {
-                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/flaggLandKode",
+              "flaggLandkode": {
+                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/flaggLandkode",
                 "type": ["string","null"],
                 "title": "The Flagglandkode Schema",
                 "default": "",
@@ -874,8 +875,8 @@
                 ],
                 "pattern": "^(.*)$"
               },
-              "installasjonsLandKode": {
-                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/installasjonsLandKode",
+              "installasjonsLandkode": {
+                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/installasjonsLandkode",
                 "type": ["string","null"],
                 "title": "The Installasjonslandkode Schema",
                 "default": "",
@@ -903,14 +904,19 @@
           "title": "The Soeknadsland Schema",
           "additionalProperties": false,
           "required": [
-            "landKode"
+            "landkoder"
           ],
           "properties": {
-            "landKode": {
-              "$id": "#/properties/soeknadDokument/properties/soeknadsland/landKode",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landKode"
+            "landkoder": {
+              "$id": "#/properties/soeknadDokument/properties/soeknadsland/landkoder",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkoder"
             }
           }
+        },
+        "periode": {
+          "title": "The Soknadsperiode Schema",
+          "$id": "#/properties/soeknadDokument/properties/periode",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
         }
       }
     },

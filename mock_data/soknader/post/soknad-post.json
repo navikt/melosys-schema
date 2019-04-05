@@ -8,19 +8,19 @@
       "oppgittAdresse" : {
         "poststed" : "Poststeder",
         "postnummer" : "12345",
-        "landKode" : "DE",
+        "landkode" : "DE",
         "husnummer": "1",
         "region": null,
         "gatenavn" : "Gateadressen"
       },
-      "familiesBostedLandKode" : "SE"
+      "familiesBostedLandkode" : "SE"
     },
     "foretakUtland" : [
       {
         "navn" : "EQUINOR DEUTSCHLAND",
         "orgnr" : "372384726",
         "adresse" : {
-          "landKode" : "DE",
+          "landkode" : "DE",
           "region" : "Brandenburger",
           "husnummer" : "123",
           "postnummer" : "3388",
@@ -41,7 +41,7 @@
       "kontaktNavn" : "Ola Nordmann",
       "fullmektigPoststed" : "Byensvik",
       "fullmektigRegion" : "Østlandsregionen",
-      "fullmektigLandKode" : "NO"
+      "fullmektigLandkode" : "NO"
     },
     "juridiskArbeidsgiverNorge" : {
       "utsendteNeste12Mnd": 10,
@@ -77,8 +77,8 @@
     },
     "maritimtArbeid" : [
       {
-        "installasjonsLandKode" : "GB",
-        "flaggLandKode" : "GB",
+        "installasjonsLandkode" : "GB",
+        "flaggLandkode" : "GB",
         "navn" : "Snorre Dunfjæder",
         "fartsomradeKode" : "INNENRIKS",
         "territorialfarvann": "GB"
@@ -89,7 +89,7 @@
         "foretakNavn" : "BMW AG",
         "foretakOrgnr": "123456789",
         "adresse" : {
-          "landKode" : "DE",
+          "landkode" : "DE",
           "region" : "Brandenburger",
           "husnummer" : "123",
           "postnummer" : "1234",
@@ -109,7 +109,7 @@
       "erSelvstendig" : true
     },
     "oppholdUtland" : {
-      "oppholdslandKoder" : [
+      "oppholdslandkoder" : [
         "DK"
       ],
       "sammeAdresseSomArbeidsgiver" : true,
@@ -126,7 +126,7 @@
       "utenlandskIdent" : [
         {
           "ident" : "123456789",
-          "landKode" : "DK"
+          "landkode" : "DK"
         }
       ],
       "medfolgendeFamilie" : [
@@ -135,7 +135,7 @@
       "medfolgendeAndre" : "28106600300"
     },
     "soeknadsland": {
-      "landKode": "DK"
+      "landkode": "DK"
     }
   }
 }

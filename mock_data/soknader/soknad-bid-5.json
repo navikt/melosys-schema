@@ -13,7 +13,7 @@
         "region": null,
         "postnummer": "1234",
         "poststed": "Poststedet",
-        "landKode": "DE"
+        "landkode": "DE"
       },
       "foretakNavn": "EQUINOR",
       "foretakOrgnr": "372384726",
@@ -21,7 +21,7 @@
     }],
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandKoder": ["DE"],
+      "oppholdslandkoder": ["DE"],
       "oppholdsPeriode": {
         "fom": "2017-01-01",
         "tom": "2018-05-31"
@@ -34,7 +34,7 @@
     },
     "bosted": {
       "intensjonOmRetur": true,
-      "familiesBostedLandKode": null,
+      "familiesBostedLandkode": null,
       "antallMaanederINorge": 8,
       "adresseIUtlandet": true,
       "oppgittAdresse": {
@@ -43,7 +43,7 @@
         "region": null,
         "postnummer": "O175",
         "poststed": "Oslo",
-        "landKode": "NO"
+        "landkode": "NO"
       }
     },
     "arbeidNorge": {
@@ -58,7 +58,7 @@
       "fullmektigPostnr": null,
       "fullmektigPoststed": null,
       "fullmektigRegion": null,
-      "fullmektigLandKode": null
+      "fullmektigLandkode": null
     },
     "selvstendigArbeid": {
       "erSelvstendig": false,
@@ -99,7 +99,11 @@
     "maritimtArbeid": [
     ],
     "soeknadsland": {
-      "landKode": "DE"
+      "landkoder": ["DE"]
+    },
+    "periode": {
+      "fom": "2019-04-04",
+      "tom": "2020-05-17"
     }
   },
   "tilleggsData": {

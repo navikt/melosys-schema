@@ -23,7 +23,7 @@
       "Sannergata 2",
       "0557 OSLO"
     ],
-    "landKode": "NO"
+    "landkode": "NO"
   },
   "midlertidigPostadresse": {
     "adressetype": "STRUKTURERT",
@@ -33,7 +33,7 @@
       "region": null,
       "postnummer": "0557",
       "poststed": "OSLO",
-      "landKode": "NO"
+      "landkode": "NO"
     }
   }
 }
