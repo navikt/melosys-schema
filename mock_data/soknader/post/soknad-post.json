@@ -78,6 +78,7 @@
     "maritimtArbeid" : [
       {
         "installasjonsLandKode" : "GB",
+        "installasjonsNavn": "Mariner",
         "flaggLandKode" : "GB",
         "navn" : "Snorre Dunfjæder",
         "fartsomradeKode" : "INNENRIKS",

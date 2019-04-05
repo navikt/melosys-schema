@@ -827,6 +827,7 @@
             "additionalProperties": false,
             "required": [
               "navn",
+              "installasjonsNavn",
               "fartsomradeKode",
               "flaggLandKode",
               "installasjonsLandKode",
@@ -841,6 +842,13 @@
                 "examples": [
                   "Navn på skipet"
                 ],
+                "pattern": "^(.*)$"
+              },
+              "installasjonsNavn":{
+                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/installasjonsNavn",
+                "type": ["string","null"],
+                "title": "The InstallasjonsNavn Schema",
+                "default": "",
                 "pattern": "^(.*)$"
               },
               "fartsomradeKode": {

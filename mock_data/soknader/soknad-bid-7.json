@@ -96,7 +96,16 @@
       "trygdeavgiftTrukketGjennomSkatt": true,
       "trygdeavgiftTrukketGjennomSkattDato": "2018-06-01"
     },
-    "maritimtArbeid": [],
+    "maritimtArbeid": [
+      {
+        "navn": "Dunfjæder",
+        "installasjonsNavn": "Mariner",
+        "fartsomradeKode": "INNENRIKS",
+        "flaggLandKode": "GB",
+        "installasjonsLandKode": "GB",
+        "territorialfarvann": "GB"
+      }
+    ],
     "soeknadsland": {
       "landKode": "FR"
     }
