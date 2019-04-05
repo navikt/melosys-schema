@@ -837,7 +837,7 @@
             "title": "The Maritimtarbeid Schema",
             "additionalProperties": false,
             "required": [
-              "navn",
+              "skipsNavn",
               "installasjonsNavn",
               "fartsomradeKode",
               "flaggLandKode",
@@ -845,7 +845,7 @@
               "territorialfarvann"
             ],
             "properties": {
-              "navn": {
+              "skipsNavn": {
                 "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/navn",
                 "type": ["string","null"],
                 "title": "The Navn Schema",

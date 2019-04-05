@@ -98,7 +98,7 @@
     },
     "maritimtArbeid": [
       {
-        "navn": "Dunfjæder",
+        "skipsNavn": "Dunfjæder",
         "installasjonsNavn": "Mariner",
         "fartsomradeKode": "INNENRIKS",
         "flaggLandKode": "GB",
