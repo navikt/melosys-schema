@@ -835,9 +835,9 @@
             ],
             "properties": {
               "skipsNavn": {
-                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/navn",
+                "$id": "#/properties/soeknadDokument/properties/maritimtArbeid/items/properties/skipsNavn",
                 "type": ["string","null"],
-                "title": "The Navn Schema",
+                "title": "The SkipsNavn Schema",
                 "default": "",
                 "examples": [
                   "Navn på skipet"
