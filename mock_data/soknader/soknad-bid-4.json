@@ -5,7 +5,7 @@
       "utenlandskIdent": [
         {
           "ident": "123456789",
-          "landKode": "DK"
+          "landkode": "DK"
         }
       ],
       "medfolgendeFamilie": ["30098000492"],
@@ -18,7 +18,7 @@
         "region": "Brandenburger",
         "postnummer": "1234",
         "poststed": "Poststedet",
-        "landKode": "DE"
+        "landkode": "DE"
       },
       "foretakNavn": "EQUINOR",
       "foretakOrgnr": "372384726",
@@ -34,12 +34,12 @@
           "region": "Brandenburger",
           "postnummer": "3388",
           "poststed": "Berlin",
-          "landKode": "DE"
+          "landkode": "DE"
         }
       }
     ],
     "oppholdUtland": {
-      "oppholdslandKoder": ["DK"],
+      "oppholdslandkoder": ["DK"],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2018-06-01"
@@ -52,7 +52,7 @@
     },
     "bosted": {
       "intensjonOmRetur": true,
-      "familiesBostedLandKode": "SE",
+      "familiesBostedLandkode": "SE",
       "antallMaanederINorge": 8,
       "adresseIUtlandet": true,
       "oppgittAdresse": {
@@ -61,7 +61,7 @@
         "region": "St.Hanshaugen Distrikt",
         "postnummer": "12345",
         "poststed": "Poststeder",
-        "landKode": "DE"
+        "landkode": "DE"
       }
     },
     "arbeidNorge": {
@@ -76,7 +76,7 @@
       "fullmektigPostnr": "1234",
       "fullmektigPoststed": "Byensvik",
       "fullmektigRegion": "Østlandsregionen",
-      "fullmektigLandKode": "NO"
+      "fullmektigLandkode": "NO"
     },
     "selvstendigArbeid": {
       "erSelvstendig": true,
@@ -121,13 +121,17 @@
         "skipsNavn": "Dunfjæder",
         "installasjonsNavn": "Mariner",
         "fartsomradeKode": "INNENRIKS",
-        "flaggLandKode": "GB",
-        "installasjonsLandKode": "GB",
+        "flaggLandkode": "GB",
+        "installasjonsLandkode": "GB",
         "territorialfarvann": "GB"
       }
     ],
     "soeknadsland": {
-      "landKode": "GB"
+      "landkoder": ["DK"]
+    },
+    "periode": {
+      "fom": "2018-01-02",
+      "tom": "2019-01-02"
     }
   },
   "tilleggsData": {
