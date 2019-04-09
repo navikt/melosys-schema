@@ -223,7 +223,7 @@
       "examples": [
         "810072512"
       ],
-      "pattern": "^\\d{9}$"
+      "pattern": "^(.*)$"
     },
     "nullable-orgnr": {
       "type": ["string", "null"],
@@ -231,7 +231,7 @@
       "examples": [
         "810072512"
       ],
-      "pattern": "^\\d{9}$|^$"
+      "pattern": "^(.*)$"
     },
     "periodeID": {
       "type": "integer",
