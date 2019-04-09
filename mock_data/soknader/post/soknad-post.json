@@ -135,7 +135,11 @@
       "medfolgendeAndre" : "28106600300"
     },
     "soeknadsland": {
-      "landkode": "DK"
+      "landkoder": ["DK"]
+    },
+    "periode": {
+      "fom": "2018-01-02",
+      "tom": "2019-05-30"
     }
   }
 }
