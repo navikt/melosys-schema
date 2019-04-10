@@ -151,10 +151,11 @@
     "fnr": {
       "type": "string",
       "default": "",
+      "minLength": 11,
+      "maxLength": 11,
       "examples": [
         "81007251212"
-      ],
-      "pattern": "^\\d{11}$"
+      ]
     },
     "nullable-fnr": {
       "type": ["string", "null"],
