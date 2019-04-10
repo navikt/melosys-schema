@@ -24,24 +24,14 @@
     ],
     "properties": {
       "fomDato": {
-        "$id": "#/items/properties/fomDato",
-        "type": "string",
         "title": "The FomDato Schema",
-        "default": "",
-        "examples": [
-          "2019-02-01"
-        ],
-        "pattern": "^(.*)$"
+        "$id": "#/items/properties/fomDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
       },
       "tomDato": {
-        "$id": "#/items/properties/tomDato",
-        "type": "string",
         "title": "The TomDato Schema",
-        "default": "",
-        "examples": [
-          "2019-02-01"
-        ],
-        "pattern": "^(.*)$"
+        "$id": "#/items/properties/tomDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
       },
       "lovvalgBestemmelse": {
         "$id": "#/items/properties/lovvalgBestemmelse",

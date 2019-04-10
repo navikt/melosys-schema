@@ -21,7 +21,7 @@
   ],
   "properties": {
     "avsenderID": {
-      "$id": "/properties/avsenderID",
+      "$id": "#/properties/avsenderID",
       "type": "string",
       "title": "The Avsenderid Schema ",
       "default": "",
@@ -41,7 +41,7 @@
       "pattern": "^(.*)$"
     },
     "behandlingstypeKode": {
-      "$id": "/properties/behandlingstypeKode",
+      "$id": "#/properties/behandlingstypeKode",
       "type": ["string","null"],
       "title": "The BehandlingstypeKode Schema ",
       "default": "",
@@ -50,7 +50,7 @@
       ]
     },
     "brukerID": {
-      "$id": "/properties/brukerID",
+      "$id": "#/properties/brukerID",
       "type": "string",
       "title": "The Brukerid Schema ",
       "default": "",
@@ -63,7 +63,7 @@
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
     },
     "hoveddokumentTittel": {
-      "$id": "/properties/hoveddokumentTittel",
+      "$id": "#/properties/hoveddokumentTittel",
       "type": "string",
       "title": "The HoveddokumentTittel Schema ",
       "default": "",
@@ -78,20 +78,16 @@
       "default": false
     },
     "journalpostID": {
-      "$id": "/properties/journalpostID",
+      "$id": "#/properties/journalpostID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
     },
     "oppgaveID": {
-      "$id": "/properties/oppgaveID",
-      "type": "string",
       "title": "The Oppgaveid Schema ",
-      "default": "",
-      "examples": [
-        "192121803"
-      ]
+      "$id": "#/properties/oppgaveID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
     },
     "saksnummer": {
-      "$id": "/properties/saksnummer",
+      "$id": "#/properties/saksnummer",
       "type": "string",
       "title": "The Saksnummer Schema ",
       "default": 0,

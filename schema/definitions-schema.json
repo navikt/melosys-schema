@@ -167,7 +167,7 @@
     },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
-      "type": ["string"],
+      "type": "string",
       "title": "The JournalpostID Schema",
       "default": "",
       "examples": [
@@ -235,6 +235,14 @@
         "810072512"
       ],
       "pattern": "\\d{9}$|^$"
+    },
+    "oppgaveID": {
+      "type": "string",
+      "default": "",
+      "examples": [
+        "177057928"
+      ],
+      "pattern": "^(.*)$"
     },
     "periodeID": {
       "type": "integer",
