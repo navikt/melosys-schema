@@ -321,14 +321,9 @@
             ],
             "properties": {
               "fnr": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/fnr",
-                "type": "string",
                 "title": "The Fnr Schema",
-                "default": "",
-                "examples": [
-                  "28106600300"
-                ],
-                "pattern": "^(.*)$"
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/fnr",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
               },
               "sivilstand": {
                 "$id": "#/definitions/tilleggsData/properties/personer/items/properties/sivilstand",

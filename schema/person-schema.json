@@ -15,14 +15,9 @@
   ],
   "properties": {
     "fnr": {
-      "$id": "#/properties/fnr",
-      "type": "string",
       "title": "The Fnr Schema",
-      "default": "",
-      "examples": [
-        "19117220349"
-      ],
-      "pattern": "^(.*)$"
+      "$id": "#/properties/fnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
     },
     "sivilstand": {
       "$id": "#/properties/sivilstand",

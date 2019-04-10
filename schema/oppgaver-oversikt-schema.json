@@ -36,13 +36,9 @@
         ],
         "properties": {
           "fnr": {
-            "$id": "#/properties/journalforing/items/properties/fnr",
-            "type": "string",
             "title": "The Fnr Schema",
-            "default": "",
-            "examples": [
-              "19117220349"
-            ]
+            "$id": "#/properties/journalforing/items/properties/fnr",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
           },
           "sammensattNavn": {
             "$id": "#/properties/journalforing/items/properties/sammensattNavn",
