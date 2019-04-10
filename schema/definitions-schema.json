@@ -162,7 +162,7 @@
       "examples": [
         "81007251212"
       ],
-      "pattern": "^\\d{11}$"
+      "pattern": "^\\d{11}$|^$"
     },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
@@ -219,7 +219,9 @@
     },
     "orgnr": {
       "type": "string",
-      "default": "",
+      "default": "999999999",
+      "minLength": 9,
+      "maxLength": 9,
       "examples": [
         "810072512"
       ],
@@ -231,7 +233,7 @@
       "examples": [
         "810072512"
       ],
-      "pattern": "^(.*)$"
+      "pattern": "\\d{9}$|^$"
     },
     "periodeID": {
       "type": "integer",
