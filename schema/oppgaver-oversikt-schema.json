@@ -36,13 +36,9 @@
         ],
         "properties": {
           "fnr": {
-            "$id": "#/properties/journalforing/items/properties/fnr",
-            "type": "string",
             "title": "The Fnr Schema",
-            "default": "",
-            "examples": [
-              "19117220349"
-            ]
+            "$id": "#/properties/journalforing/items/properties/fnr",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
           },
           "sammensattNavn": {
             "$id": "#/properties/journalforing/items/properties/sammensattNavn",
@@ -55,15 +51,9 @@
             "pattern": "^(.*)$"
           },
           "oppgaveID": {
-            "$id": "#/properties/journalforing/items/properties/oppgaveID",
-            "type": "string",
             "title": "The Oppgaveid Schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": "",
-            "examples": [
-              "177057928"
-            ],
-            "pattern": "^(.*)$"
+            "$id": "#/properties/journalforing/items/properties/oppgaveID",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
           },
           "journalpostID": {
             "$id": "#/properties/journalforing/items/properties/journalpostID",

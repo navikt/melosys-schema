@@ -49,14 +49,9 @@
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
     },
     "oppgaveID": {
-      "$id": "#/properties/oppgaveID",
-      "type": "string",
       "title": "The Oppgaveid Schema",
-      "default": "",
-      "examples": [
-        "177057928"
-      ],
-      "pattern": "^(.*)$"
+      "$id": "#/properties/oppgaveID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
     },
 
     "behandlingstypeKode": {

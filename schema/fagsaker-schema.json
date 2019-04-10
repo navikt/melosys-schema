@@ -517,14 +517,9 @@
                   ],
                   "properties": {
                     "orgnr": {
-                      "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
-                      "type": "string",
                       "title": "The Orgnr Schema",
-                      "default": "",
-                      "examples": [
-                        "910099035"
-                      ],
-                      "pattern": "^(.*)$"
+                      "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
                     },
                     "oppstartdato": {
                       "title": "The Oppstartdato Schema",
@@ -1279,14 +1274,9 @@
                     "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                   },
                   "fnr": {
-                    "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/person/properties/fnr",
-                    "type": "string",
                     "title": "The Fnr Schema",
-                    "default": "",
-                    "examples": [
-                      "19117220349"
-                    ],
-                    "pattern": "^(.*)$"
+                    "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/person/properties/fnr",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
                   },
                   "foedselsdato": {
                     "title": "The Foedselsdato Schema",
@@ -1324,13 +1314,9 @@
                       ],
                       "properties": {
                         "fnr": {
+                          "title": "The Fnr Schema",
                           "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/fnr",
-                          "type": "string",
-                          "title": "The Fnr schema",
-                          "description": "",
-                          "examples": [
-                            "10100638274"
-                          ]
+                          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
                         },
                         "sammensattNavn": {
                           "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/sammensattNavn",
