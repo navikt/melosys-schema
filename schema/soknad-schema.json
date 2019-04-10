@@ -9,11 +9,11 @@
       ],
       "properties": {
         "organisasjoner": {
-          "$id": "#/properties/tilleggsData/properties/organisasjoner",
+          "$id": "#/definitions/tilleggsData/properties/organisasjoner",
           "type": "array",
           "title": "The Organisasjoner Schema",
           "items": {
-            "$id": "#/properties/tilleggsData/properties/organisasjoner/items",
+            "$id": "#/definitions/tilleggsData/properties/organisasjoner/items",
             "definitions": {},
             "$schema": "http://json-schema.org/draft-07/schema#",
             "type": "object",
@@ -29,17 +29,12 @@
             ],
             "properties": {
               "orgnr": {
-                "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/orgnr",
-                "type": "string",
                 "title": "The Orgnr Schema",
-                "default": "",
-                "examples": [
-                  "910099035"
-                ],
-                "pattern": "^(.*)$"
+                "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/orgnr",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
               },
               "oppstartdato": {
-                "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/oppstartdato",
+                "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/oppstartdato",
                 "title": "The Oppstartdato Schema",
                 "type": ["string", "null"],
                 "default": "",
@@ -49,7 +44,7 @@
                 "pattern": "^(.*)$"
               },
               "postadresse": {
-                "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse",
+                "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse",
                 "type": "object",
                 "title": "The Postadresse Schema",
                 "additionalProperties": false,
@@ -61,7 +56,7 @@
                 ],
                 "properties": {
                   "gateadresse": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
                     "type": "object",
                     "title": "The Gateadresse Schema",
                     "additionalProperties": false,
@@ -73,7 +68,7 @@
                     ],
                     "properties": {
                       "gatenummer": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/gatenummer",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/gatenummer",
                         "type": [
                           "string",
                           "null"
@@ -85,7 +80,7 @@
                         ]
                       },
                       "husbokstav": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/husbokstav",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/husbokstav",
                         "type": [
                           "string",
                           "null"
@@ -97,7 +92,7 @@
                         ]
                       },
                       "husnummer": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/husnummer",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/husnummer",
                         "type": [
                           "string",
                           "null"
@@ -109,7 +104,7 @@
                         ]
                       },
                       "gatenavn": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/gatenavn",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/gatenavn",
                         "type": [
                           "string",
                           "null"
@@ -124,7 +119,7 @@
                     }
                   },
                   "postnr": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/postnr",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/postnr",
                     "type": [
                       "string",
                       "null"
@@ -137,7 +132,7 @@
                     "pattern": "^(.*)$"
                   },
                   "poststed": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/poststed",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/poststed",
                     "type": [
                       "string",
                       "null"
@@ -150,7 +145,7 @@
                     "pattern": "^(.*)$"
                   },
                   "land": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/land",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/postadresse/properties/land",
                     "type": [
                       "string",
                       "null"
@@ -165,7 +160,7 @@
                 }
               },
               "organisasjonsform": {
-                "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/organisasjonsform",
+                "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/organisasjonsform",
                 "type": [
                   "string",
                   "null"
@@ -187,7 +182,7 @@
                 "pattern": "^(.*)$"
               },
               "forretningsadresse": {
-                "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse",
+                "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse",
                 "type": "object",
                 "title": "The Forretningsadresse Schema",
                 "additionalProperties": false,
@@ -199,7 +194,7 @@
                 ],
                 "properties": {
                   "gateadresse": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse",
                     "type": "object",
                     "title": "The Gateadresse Schema",
                     "additionalProperties": false,
@@ -211,7 +206,7 @@
                     ],
                     "properties": {
                       "gatenummer": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenummer",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenummer",
                         "type": [
                           "string",
                           "null"
@@ -223,7 +218,7 @@
                         ]
                       },
                       "husbokstav": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husbokstav",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husbokstav",
                         "type": [
                           "string",
                           "null"
@@ -235,7 +230,7 @@
                         ]
                       },
                       "husnummer": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husnummer",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husnummer",
                         "type": [
                           "string",
                           "null"
@@ -247,7 +242,7 @@
                         ]
                       },
                       "gatenavn": {
-                        "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenavn",
+                        "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenavn",
                         "type": [
                           "string",
                           "null"
@@ -262,7 +257,7 @@
                     }
                   },
                   "postnr": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/postnr",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/postnr",
                     "type": [
                       "string",
                       "null"
@@ -275,7 +270,7 @@
                     "pattern": "^(.*)$"
                   },
                   "poststed": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/poststed",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/poststed",
                     "type": [
                       "string",
                       "null"
@@ -288,7 +283,7 @@
                     "pattern": "^(.*)$"
                   },
                   "land": {
-                    "$id": "#/properties/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/land",
+                    "$id": "#/definitions/tilleggsData/properties/organisasjoner/items/properties/forretningsadresse/properties/land",
                     "type": [
                       "string",
                       "null"
@@ -306,11 +301,11 @@
           }
         },
         "personer": {
-          "$id": "#/properties/tilleggsData/properties/personer",
+          "$id": "#/definitions/tilleggsData/properties/personer",
           "type": "array",
           "title": "The Personer Schema",
           "items": {
-            "$id": "#/properties/tilleggsData/properties/personer/items",
+            "$id": "#/definitions/tilleggsData/properties/personer/items",
             "type": "object",
             "title": "The Items Schema",
             "additionalProperties": false,
@@ -326,7 +321,7 @@
             ],
             "properties": {
               "fnr": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/fnr",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/fnr",
                 "type": "string",
                 "title": "The Fnr Schema",
                 "default": "",
@@ -336,17 +331,17 @@
                 "pattern": "^(.*)$"
               },
               "sivilstand": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/sivilstand",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/sivilstand",
                 "title": "The Sivilstand Schema",
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
               },
               "statsborgerskap": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/statsborgerskap",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/statsborgerskap",
                 "title": "The Statsborgerskap Schema",
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
               },
               "sammensattNavn": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/sammensattNavn",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/sammensattNavn",
                 "type": "string",
                 "title": "The Sammensattnavn Schema",
                 "default": "",
@@ -356,17 +351,17 @@
                 "pattern": "^(.*)$"
               },
               "personstatus": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/personstatus",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/personstatus",
                 "title": "The Personstatus Schema",
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
               },
               "kjoenn": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/kjoenn",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/kjoenn",
                 "title": "The Kjoenn Schema",
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
               },
               "foedselsdato": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/foedselsdato",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/foedselsdato",
                 "type": "string",
                 "title": "The Foedselsdato Schema",
                 "default": "",
@@ -376,7 +371,7 @@
                 "pattern": "^(.*)$"
               },
               "bostedsadresse": {
-                "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse",
+                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse",
                 "type": "object",
                 "title": "The Bostedsadresse Schema",
                 "additionalProperties": false,
@@ -388,7 +383,7 @@
                 ],
                 "properties": {
                   "gateadresse": {
-                    "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse",
+                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse",
                     "type": "object",
                     "title": "The Gateadresse Schema",
                     "additionalProperties": false,
@@ -400,7 +395,7 @@
                     ],
                     "properties": {
                       "gatenavn": {
-                        "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/gatenavn",
+                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/gatenavn",
                         "type": "string",
                         "title": "The Gatenavn Schema",
                         "default": "",
@@ -410,7 +405,7 @@
                         "pattern": "^(.*)$"
                       },
                       "gatenummer": {
-                        "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/gatenummer",
+                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/gatenummer",
                         "type": ["integer", "null"],
                         "title": "The Gatenummer Schema",
                         "default": 0,
@@ -419,7 +414,7 @@
                         ]
                       },
                       "husnummer": {
-                        "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/husnummer",
+                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/husnummer",
                         "type": ["integer", "null"],
                         "title": "The Husnummer Schema",
                         "default": null,
@@ -428,7 +423,7 @@
                         ]
                       },
                       "husbokstav": {
-                        "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/husbokstav",
+                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/husbokstav",
                         "type": ["string", "null"],
                         "title": "The Husbokstav Schema",
                         "default": "",
@@ -440,7 +435,7 @@
                     }
                   },
                   "postnr": {
-                    "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/postnr",
+                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/postnr",
                     "type": "string",
                     "title": "The Postnr Schema",
                     "default": "",
@@ -450,7 +445,7 @@
                     "pattern": "^(.*)$"
                   },
                   "poststed": {
-                    "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/poststed",
+                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/poststed",
                     "type": "string",
                     "title": "The Poststed Schema",
                     "default": "",
@@ -460,7 +455,7 @@
                     "pattern": "^(.*)$"
                   },
                   "land": {
-                    "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land",
+                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land",
                     "type": "object",
                     "title": "The Land Schema",
                     "required": [
@@ -469,7 +464,7 @@
                     ],
                     "properties": {
                       "kode": {
-                        "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land/properties/kode",
+                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land/properties/kode",
                         "type": "string",
                         "title": "The Kode Schema",
                         "default": "",
@@ -479,7 +474,7 @@
                         "pattern": "^(.*)$"
                       },
                       "term": {
-                        "$id": "#/properties/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land/properties/term",
+                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land/properties/term",
                         "type": "string",
                         "title": "The Term Schema",
                         "default": "",

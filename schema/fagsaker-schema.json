@@ -517,14 +517,9 @@
                   ],
                   "properties": {
                     "orgnr": {
-                      "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
-                      "type": "string",
                       "title": "The Orgnr Schema",
-                      "default": "",
-                      "examples": [
-                        "910099035"
-                      ],
-                      "pattern": "^(.*)$"
+                      "$id": "#/properties/behandlinger/items/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
                     },
                     "oppstartdato": {
                       "title": "The Oppstartdato Schema",
