@@ -17,14 +17,13 @@
     "properties": {
       "fom": {
         "title": "The Fom Schema",
-        "$id": "#/items/properties/fomDato",
+        "$id": "#/items/properties/fom",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
       },
       "tom": {
         "title": "The Tom Schema",
-        "$id": "#/items/properties/tomDato",
+        "$id": "#/items/properties/tom",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
-      }
       }
     }
   }

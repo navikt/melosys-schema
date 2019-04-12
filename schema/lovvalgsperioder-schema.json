@@ -21,7 +21,7 @@
       "unntakFraLovvalgsland",
       "trygdeDekning",
       "medlemskapstype",
-      "medlemskapsperiodeId"
+      "medlemskapsperiodeID"
     ],
     "properties": {
       "fomDato": {
@@ -101,8 +101,8 @@
         ],
         "pattern": "^(.*)$"
       },
-      "medlemskapsperiodeId": {
-        "$id": "#/items/properties/medlemskapsperiodeId",
+      "medlemskapsperiodeID": {
+        "$id": "#/items/properties/medlemskapsperiodeID",
         "type": ["string", "null"],
         "title": "The MedlemskapsperiodeId Schema",
         "default": "",
