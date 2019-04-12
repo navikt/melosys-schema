@@ -20,7 +20,8 @@
       "lovvalgsland",
       "unntakFraLovvalgsland",
       "trygdeDekning",
-      "medlemskapstype"
+      "medlemskapstype",
+      "medlemskapsperiodeId"
     ],
     "properties": {
       "fomDato": {
@@ -97,6 +98,16 @@
         "default": "",
         "examples": [
           "PLIKTIG"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "medlemskapsperiodeId": {
+        "$id": "#/items/properties/medlemskapsperiodeId",
+        "type": ["string", "null"],
+        "title": "The MedlemskapsperiodeId Schema",
+        "default": "",
+        "examples": [
+          "100111203"
         ],
         "pattern": "^(.*)$"
       }
