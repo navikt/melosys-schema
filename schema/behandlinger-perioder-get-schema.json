@@ -4,6 +4,7 @@
   "$id": "http://nav.no/behandlinger-perioder-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
+  "additionalProperties": false,
   "required": [
     "tidligere_medlemsperiode_ids"
   ],
