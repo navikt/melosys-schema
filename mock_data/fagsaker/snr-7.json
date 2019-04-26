@@ -13,9 +13,9 @@
   "gsakSaksnummer": null,
   "behandlinger": [
     {
+      "behandlingID": 7,
       "redigerbart": true,
       "oppsummering": {
-        "behandlingID": 7,
         "behandlingstype": {
           "kode": "SOEKNAD",
           "term": "Søknad"

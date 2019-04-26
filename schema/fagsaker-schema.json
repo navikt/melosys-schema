@@ -86,23 +86,28 @@
         "title": "The Items Schema",
         "additionalProperties": false,
         "required": [
+          "behandlingID",
           "saksopplysninger",
           "behandlingshistorikk",
           "oppsummering",
           "redigerbart"
         ],
         "properties": {
-        "redigerbart": {
-          "$id": "#/properties/behandlinger/items/properties/redigerbart",
-          "type": "boolean",
-          "title": "The behandlinger Schema",
-          "description": "An explanation about the purpose of this instance.",
-          "default": "",
-          "examples": [
-            false,
-            true
-          ]
-        },
+          "behandlingID": {
+            "$id": "#/properties/behandlinger/items/properties/behandlingID",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+          },
+          "redigerbart": {
+            "$id": "#/properties/behandlinger/items/properties/redigerbart",
+            "type": "boolean",
+            "title": "The behandlinger Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              false,
+              true
+            ]
+          },
           "saksopplysninger": {
             "$id": "#/properties/behandlinger/items/properties/saksopplysninger",
             "type": "object",
@@ -1359,7 +1364,6 @@
             "title": "The Oppsummering Schema",
             "additionalProperties": false,
             "required": [
-              "behandlingID",
               "behandlingsstatus",
               "behandlingstype",
               "endretDato",
@@ -1367,10 +1371,6 @@
               "sisteOpplysningerHentetDato"
             ],
             "properties": {
-              "behandlingID": {
-                "$id": "#/properties/behandlinger/items/properties/oppsummering/properties/behandlingID",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
-              },
               "behandlingsstatus": {
                 "title": "The BehandlingsStatus Schema",
                 "$id": "#/properties/behandlinger/items/properties/oppsummering/properties/behandlingsstatus",

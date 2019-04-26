@@ -13,9 +13,9 @@
   "gsakSaksnummer" : 131063977,
   "behandlinger": [
     {
+      "behandlingID": 3,
       "redigerbart": true,
       "oppsummering": {
-        "behandlingID": 3,
         "behandlingstype":{
           "kode":"SOEKNAD",
           "term":"Søknad"

@@ -13,6 +13,7 @@
   "gsakSaksnummer" : 131063977,
   "behandlinger" : [
     {
+      "behandlingID" : 4,
       "redigerbart": true,
       "saksopplysninger" : {
         "arbeidsforhold" : [
@@ -687,7 +688,6 @@
 
       ],
       "oppsummering" : {
-        "behandlingID" : 4,
         "behandlingsstatus" : {
           "kode" : "OPPRETTET",
           "term" : "Opprettet"
