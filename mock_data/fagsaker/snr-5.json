@@ -11,7 +11,7 @@
   "registrertDato": "2018-03-06T12:05:59.031Z",
   "endretDato": null,
   "gsakSaksnummer" : null,
-  "behandlinger": {
+  "behandling": {
     "redigerbart": true,
     "oppsummering": {
       "behandlingstype":{

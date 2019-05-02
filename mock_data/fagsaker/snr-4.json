@@ -11,8 +11,7 @@
   "registrertDato" : "2018-08-27T07:16:03.273Z",
   "endretDato" : "2018-08-27T07:16:03.273Z",
   "gsakSaksnummer" : 131063977,
-  "behandlinger" : {
-    "behandlingID" : 4,
+  "behandling" : {
     "redigerbart": true,
     "saksopplysninger" : {
       "arbeidsforhold" : [
