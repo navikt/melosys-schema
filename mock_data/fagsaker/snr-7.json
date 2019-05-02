@@ -11,512 +11,509 @@
   "registrertDato": "2018-03-12T16:23:42.122Z",
   "endretDato": "2018-03-15T16:31:35.845Z",
   "gsakSaksnummer": null,
-  "behandlinger": [
-    {
-      "behandlingID": 7,
-      "redigerbart": true,
-      "oppsummering": {
-        "behandlingstype": {
-          "kode": "SOEKNAD",
-          "term": "Søknad"
-        },
-        "behandlingsstatus": {
-          "kode": "OPPRETTET",
-          "term": "Opprettet"
-        },
-        "registrertDato": "2018-03-12T16:23:42.122Z",
-        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-        "endretDato": "2018-03-15T16:31:35.845Z"
+  "behandlinger": {
+    "redigerbart": true,
+    "oppsummering": {
+      "behandlingstype": {
+        "kode": "SOEKNAD",
+        "term": "Søknad"
       },
-      "saksopplysninger": {
-        "person": {
-          "fnr": "22127501762",
-          "sivilstand": {
-            "kode": "UGIF",
-            "term": "Ugift"
+      "behandlingsstatus": {
+        "kode": "OPPRETTET",
+        "term": "Opprettet"
+      },
+      "registrertDato": "2018-03-12T16:23:42.122Z",
+      "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+      "endretDato": "2018-03-15T16:31:35.845Z"
+    },
+    "saksopplysninger": {
+      "person": {
+        "fnr": "22127501762",
+        "sivilstand": {
+          "kode": "UGIF",
+          "term": "Ugift"
+        },
+        "statsborgerskap": {
+          "kode": "NO",
+          "term": "Norge"
+        },
+        "statsborgerskapDato": "2018-01-01",
+        "sammensattNavn": "KAFFI RASK",
+        "personStatus": {
+          "kode": "BOSA",
+          "term": "Bosatt"
+        },
+        "kjoenn": {
+          "kode": "M",
+          "term": "Mann"
+        },
+        "bostedsadresse": {
+          "gateadresse": {
+            "gatenummer": null,
+            "husbokstav": null,
+            "husnummer": null,
+            "gatenavn": "Lunderhaugen 1"
           },
-          "statsborgerskap": {
+          "postnr": "3202",
+          "poststed":"SANDEFJORD",
+          "land": {
             "kode": "NO",
             "term": "Norge"
+          }
+        },
+        "foedselsdato": "1975-12-22",
+        "erEgenAnsatt": true,
+        "familiemedlemmer": [
+          {"fnr": "10100638274", "sammensattNavn": "GIRAFF MAGER", "relasjonstype": {
+            "kode": "BARN",
+            "term": "Barn Av"
+          }},
+          {"fnr": "26030537263", "sammensattNavn": "BUKSE LURVETE", "relasjonstype": {
+            "kode": "BARN",
+            "term": "Barn Av"
+          }},
+          {"fnr": "08029828362", "sammensattNavn": "UTVIKLER OPTIMISTISK", "relasjonstype": {
+            "kode": "EKTE",
+            "term": "Ektefelle"
+          }}
+        ]
+      },
+      "arbeidsforhold": [
+        {
+          "arbeidsforholdID": "",
+          "arbeidsforholdIDnav": 44137903,
+          "ansettelsesPeriode": {
+            "fom": "2016-01-01",
+            "tom": null
           },
-          "statsborgerskapDato": "2018-01-01",
-          "sammensattNavn": "KAFFI RASK",
-          "personStatus": {
-            "kode": "BOSA",
-            "term": "Bosatt"
-          },
-          "kjoenn": {
-            "kode": "M",
-            "term": "Mann"
-          },
-          "bostedsadresse": {
+          "arbeidsforholdstype": "Ordinært arbeidsforhold",
+          "arbeidsavtaler": [
+            {
+              "arbeidstidsordning": {
+                "kode": "ikkeSkift",
+                "term": "Ikke skift"
+              },
+              "avloenningstype": "Fastlønn",
+              "yrke": {
+                "kode": "0020091",
+                "term": "KONSULENT"
+              },
+              "antallTimerGammeltAa": null,
+              "avtaltArbeidstimerPerUke": 37.5,
+              "endringsdatoStillingsprosent": "2016-01-01",
+              "stillingsprosent": 100.0,
+              "beregnetAntallTimerPrUke": 37.5,
+              "beregnetStillingsprosent": 100,
+              "maritimArbeidsavtale": false,
+              "skipsregister": {
+                "kode": null,
+                "term": null
+              },
+              "skipstype": {
+                "kode": null,
+                "term": null
+              },
+              "fartsomraade": {
+                "kode": null,
+                "term": null
+              },
+              "gyldighetsperiode": {
+                "fom": "2018-01-01",
+                "tom": "2019-01-01"
+              }
+            }
+          ],
+          "permisjonOgPermittering": [],
+          "timerTimelonnet": [],
+          "utenlandsopphold": [],
+          "arbeidsgivertype": "Organisasjon",
+          "arbeidsgiverID": "873152362",
+          "arbeidstakerID": "22127501762",
+          "opplysningspliktigtype": "Organisasjon",
+          "opplysningspliktigID": "923609016",
+          "opprettelsestidspunkt": "2018-01-30T13:17:21.952+01:00",
+          "sistBekreftet": "2018-01-30T13:17:21+01:00",
+          "Aordning": true
+        }
+      ],
+      "organisasjoner": [
+        {
+          "orgnr": "873152362",
+          "navn": "STATOIL ASA",
+          "oppstartdato": "1977-01-01",
+          "organisasjonsform": "Allmennaksjeselskap (ASA)",
+          "forretningsadresse": {
             "gateadresse": {
               "gatenummer": null,
               "husbokstav": null,
               "husnummer": null,
               "gatenavn": "Lunderhaugen 1"
             },
-            "postnr": "3202",
-            "poststed":"SANDEFJORD",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
+            "postnr": "5254",
+            "poststed": "OSLO",
+            "land": "NO"
           },
-          "foedselsdato": "1975-12-22",
-          "erEgenAnsatt": true,
-          "familiemedlemmer": [
-            {"fnr": "10100638274", "sammensattNavn": "GIRAFF MAGER", "relasjonstype": {
-              "kode": "BARN",
-              "term": "Barn Av"
-            }},
-            {"fnr": "26030537263", "sammensattNavn": "BUKSE LURVETE", "relasjonstype": {
-              "kode": "BARN",
-              "term": "Barn Av"
-            }},
-            {"fnr": "08029828362", "sammensattNavn": "UTVIKLER OPTIMISTISK", "relasjonstype": {
-              "kode": "EKTE",
-              "term": "Ektefelle"
-            }}
-          ]
-        },
-        "arbeidsforhold": [
-          {
-            "arbeidsforholdID": "",
-            "arbeidsforholdIDnav": 44137903,
-            "ansettelsesPeriode": {
-              "fom": "2016-01-01",
-              "tom": null
+          "postadresse": {
+            "gateadresse": {
+              "gatenummer": null,
+              "husbokstav": null,
+              "husnummer": null,
+              "gatenavn": "Lunderhaugen 1"
             },
-            "arbeidsforholdstype": "Ordinært arbeidsforhold",
-            "arbeidsavtaler": [
-              {
-                "arbeidstidsordning": {
-                  "kode": "ikkeSkift",
-                  "term": "Ikke skift"
-                },
-                "avloenningstype": "Fastlønn",
-                "yrke": {
-                  "kode": "0020091",
-                  "term": "KONSULENT"
-                },
-                "antallTimerGammeltAa": null,
-                "avtaltArbeidstimerPerUke": 37.5,
-                "endringsdatoStillingsprosent": "2016-01-01",
-                "stillingsprosent": 100.0,
-                "beregnetAntallTimerPrUke": 37.5,
-                "beregnetStillingsprosent": 100,
-                "maritimArbeidsavtale": false,
-                "skipsregister": {
-                  "kode": null,
-                  "term": null
-                },
-                "skipstype": {
-                  "kode": null,
-                  "term": null
-                },
-                "fartsomraade": {
-                  "kode": null,
-                  "term": null
-                },
-                "gyldighetsperiode": {
-                  "fom": "2018-01-01",
-                  "tom": "2019-01-01"
-                }
-              }
-            ],
-            "permisjonOgPermittering": [],
-            "timerTimelonnet": [],
-            "utenlandsopphold": [],
-            "arbeidsgivertype": "Organisasjon",
-            "arbeidsgiverID": "873152362",
-            "arbeidstakerID": "22127501762",
-            "opplysningspliktigtype": "Organisasjon",
-            "opplysningspliktigID": "923609016",
-            "opprettelsestidspunkt": "2018-01-30T13:17:21.952+01:00",
-            "sistBekreftet": "2018-01-30T13:17:21+01:00",
-            "Aordning": true
+            "postnr": "5020",
+            "poststed": "OSLO",
+            "land": "NO"
           }
-        ],
-        "organisasjoner": [
-          {
-            "orgnr": "873152362",
-            "navn": "STATOIL ASA",
-            "oppstartdato": "1977-01-01",
-            "organisasjonsform": "Allmennaksjeselskap (ASA)",
-            "forretningsadresse": {
-              "gateadresse": {
-                "gatenummer": null,
-                "husbokstav": null,
-                "husnummer": null,
-                "gatenavn": "Lunderhaugen 1"
-              },
-              "postnr": "5254",
-              "poststed": "OSLO",
-              "land": "NO"
+        },
+        {
+          "orgnr": "923609016",
+          "navn": "STATOIL ASA",
+          "oppstartdato": "1977-01-01",
+          "organisasjonsform": "Allmennaksjeselskap (ASA)",
+          "forretningsadresse": {
+            "gateadresse": {
+              "gatenummer": null,
+              "husbokstav": null,
+              "husnummer": null,
+              "gatenavn": "Lunderhaugen 1"
             },
-            "postadresse": {
-              "gateadresse": {
-                "gatenummer": null,
-                "husbokstav": null,
-                "husnummer": null,
-                "gatenavn": "Lunderhaugen 1"
-              },
-              "postnr": "5020",
-              "poststed": "OSLO",
-              "land": "NO"
-            }
+            "postnr": "4035",
+            "poststed": "OSLO",
+            "land": "NO"
           },
-          {
-            "orgnr": "923609016",
-            "navn": "STATOIL ASA",
-            "oppstartdato": "1977-01-01",
-            "organisasjonsform": "Allmennaksjeselskap (ASA)",
-            "forretningsadresse": {
-              "gateadresse": {
-                "gatenummer": null,
-                "husbokstav": null,
-                "husnummer": null,
-                "gatenavn": "Lunderhaugen 1"
-              },
-              "postnr": "4035",
-              "poststed": "OSLO",
-              "land": "NO"
+          "postadresse": {
+            "gateadresse": {
+              "gatenummer": null,
+              "husbokstav": null,
+              "husnummer": null,
+              "gatenavn": "Lunderhaugen 1"
             },
-            "postadresse": {
-              "gateadresse": {
-                "gatenummer": null,
-                "husbokstav": null,
-                "husnummer": null,
-                "gatenavn": "Lunderhaugen 1"
-              },
-              "postnr": "4035",
-              "poststed": "OSLO",
-              "land": "NO"
-            }
+            "postnr": "4035",
+            "poststed": "OSLO",
+            "land": "NO"
           }
-        ],
-        "medlemskap": {
-          "medlemsperiode": []
-        },
-        "inntekt": {
-          "arbeidsInntektMaanedListe": [
-            {
-              "aarMaaned": "2018-01",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.349",
-                    "utbetaltIPeriode": "2018-01",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-12",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.369",
-                    "utbetaltIPeriode": "2017-12",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-11",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.358",
-                    "utbetaltIPeriode": "2017-11",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-03",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.364",
-                    "utbetaltIPeriode": "2017-03",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-05",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.364",
-                    "utbetaltIPeriode": "2017-05",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-04",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.354",
-                    "utbetaltIPeriode": "2017-04",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-06",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.37",
-                    "utbetaltIPeriode": "2017-06",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-07",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.353",
-                    "utbetaltIPeriode": "2017-07",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-08",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.371",
-                    "utbetaltIPeriode": "2017-08",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-10",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.372",
-                    "utbetaltIPeriode": "2017-10",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            },
-            {
-              "aarMaaned": "2017-09",
-              "arbeidsInntektInformasjon": {
-                "inntektListe": [
-                  {
-                    "beloep": 25000,
-                    "fordel": "kontantytelse",
-                    "inntektskilde": "A-ordningen",
-                    "inntektsperiodetype": "Maaned",
-                    "inntektsstatus": "LoependeInnrapportert",
-                    "levereringstidspunkt": "2018-03-12T16:23:41.363",
-                    "utbetaltIPeriode": "2017-09",
-                    "opplysningspliktigID": "873152362",
-                    "virksomhetID": "873152362",
-                    "inntektsmottakerID": "22127501762",
-                    "inngaarIGrunnlagForTrekk": true,
-                    "utloeserArbeidsgiveravgift": true,
-                    "opptjeningsland": null,
-                    "opptjeningsperiode": {
-                      "fom": null,
-                      "tom": null
-                    },
-                    "informasjonsstatus": "InngaarAlltid",
-                    "beskrivelse": "fastloenn"
-                  }
-                ]
-              }
-            }
-          ],
-          "frilansInntektMaanedListe": []
-        },
-        "sakOgBehandling": {
-          "eosBarnetrygd": false
         }
+      ],
+      "medlemskap": {
+        "medlemsperiode": []
       },
-      "behandlingshistorikk": []
-    }
-  ]
+      "inntekt": {
+        "arbeidsInntektMaanedListe": [
+          {
+            "aarMaaned": "2018-01",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.349",
+                  "utbetaltIPeriode": "2018-01",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-12",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.369",
+                  "utbetaltIPeriode": "2017-12",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-11",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.358",
+                  "utbetaltIPeriode": "2017-11",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-03",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.364",
+                  "utbetaltIPeriode": "2017-03",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-05",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.364",
+                  "utbetaltIPeriode": "2017-05",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-04",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.354",
+                  "utbetaltIPeriode": "2017-04",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-06",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.37",
+                  "utbetaltIPeriode": "2017-06",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-07",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.353",
+                  "utbetaltIPeriode": "2017-07",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-08",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.371",
+                  "utbetaltIPeriode": "2017-08",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-10",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.372",
+                  "utbetaltIPeriode": "2017-10",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          },
+          {
+            "aarMaaned": "2017-09",
+            "arbeidsInntektInformasjon": {
+              "inntektListe": [
+                {
+                  "beloep": 25000,
+                  "fordel": "kontantytelse",
+                  "inntektskilde": "A-ordningen",
+                  "inntektsperiodetype": "Maaned",
+                  "inntektsstatus": "LoependeInnrapportert",
+                  "levereringstidspunkt": "2018-03-12T16:23:41.363",
+                  "utbetaltIPeriode": "2017-09",
+                  "opplysningspliktigID": "873152362",
+                  "virksomhetID": "873152362",
+                  "inntektsmottakerID": "22127501762",
+                  "inngaarIGrunnlagForTrekk": true,
+                  "utloeserArbeidsgiveravgift": true,
+                  "opptjeningsland": null,
+                  "opptjeningsperiode": {
+                    "fom": null,
+                    "tom": null
+                  },
+                  "informasjonsstatus": "InngaarAlltid",
+                  "beskrivelse": "fastloenn"
+                }
+              ]
+            }
+          }
+        ],
+        "frilansInntektMaanedListe": []
+      },
+      "sakOgBehandling": {
+        "eosBarnetrygd": false
+      }
+    },
+    "behandlingshistorikk": []
+  }
 }
