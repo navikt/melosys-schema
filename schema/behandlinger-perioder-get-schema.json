@@ -1,0 +1,22 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/behandlinger-perioder-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "tidligere_medlemsperiode_ids"
+  ],
+  "properties": {
+    "tidligere_medlemsperiode_ids": {
+      "$id": "#/properties/tidligere_medlemsperiode_ids",
+      "type": "array",
+      "title": "The Tidligere_medlemsperiode_ids Schema",
+      "items": {
+        "$id": "#/properties/tidligere_medlemsperiode_ids/items",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periodeID"
+      }
+    }
+  }
+}
