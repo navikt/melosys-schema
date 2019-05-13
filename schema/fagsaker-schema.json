@@ -1,97 +1,4 @@
 {
-  "definitions": {
-    "nullable-kodeverk": {
-      "type": "object",
-      "title": "The Kodeverk Schema",
-      "additionalProperties": false,
-      "required": [
-        "kode",
-        "term"
-      ],
-      "properties": {
-        "kode": {
-          "type": ["string", "null"],
-          "title": "The Kode Schema",
-          "default": "",
-          "examples": [
-            "OPPRETTET"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "term": {
-          "type": ["string", "null"],
-          "title": "The Term Schema",
-          "default": "",
-          "examples": [
-            "Opprettet"
-          ],
-          "pattern": "^(.*)$"
-        }
-      }
-    },
-    "behandlingOversikter": {
-      "$id": "#/definitions/behandlingOversikter",
-      "type": "array",
-      "title": "The behandlingOversikter Schema",
-      "uniqueItems": true,
-      "items": {
-        "$id": "#/definitions/behandlingOversikter/items",
-        "type": "object",
-        "title": "The Items Schema",
-        "additionalProperties": false,
-        "required": [
-          "behandlingID",
-          "behandlingsstatus",
-          "behandlingstype",
-          "opprettetDato",
-          "soknadsperiode",
-          "land"
-        ],
-        "properties": {
-          "behandlingID": {
-            "$id": "#/definitions/behandlingOversikter/items/properties/behandlingID",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
-          },
-          "behandlingstype": {
-            "$id": "#/definitions/behandlingOversikter/items/properties/behandlingstype",
-            "title": "The Behandlingstype Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-          },
-          "behandlingsstatus": {
-            "$id": "#/definitions/behandlingOversikter/items/properties/behandlingsstatus",
-            "title": "The Behandlingsstatus Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-          },
-          "opprettetDato": {
-            "title": "The opprettetDato Schema",
-            "$id": "#/definitions/behandlingOversikter/items/properties/opprettetDato",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
-          },
-          "soknadsperiode": {
-            "title": "The Soknadsperiode Schema",
-            "$id": "#/definitions/behandlingOversikter#/properties/behandlingOversikter/properties/soknadsperiode",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-          },
-          "land": {
-            "$id": "#/definitions/behandlingOversikter/items/properties/land",
-            "type": "array",
-            "title": "The Land Schema",
-            "uniqueItems": true,
-            "items": {
-              "$id": "#/definitions/behandlingOversikter/items/properties/land/items",
-              "type": "string",
-              "title": "The Items Schema",
-              "default": "",
-              "examples": [
-                "GB"
-              ],
-              "pattern": "^(.*)$"
-            }
-          }
-        }
-      }
-    }
-  },
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/fagsaker-schema.json",
   "type": "object",
@@ -150,7 +57,7 @@
     "behandlingOversikter": {
       "title": "The behandlingOversikter Schema",
       "$id": "#/properties/behandlingOversikter",
-      "$ref": "#/definitions/behandlingOversikter"
+      "$ref": "http://melosys.nav.no/schemas/behandlingOversikter-definitions.json#/definitions/behandlingOversikter"
     }
   }
 }

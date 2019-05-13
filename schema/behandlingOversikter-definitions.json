@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/avklartefakta-definitions.json",
+  "$id": "http://melosys.nav.no/schemas/behandlingOversikter-definitions.json",
   "title": "The behandlingOversikter Schema",
   "definitions": {
     "behandlingOversikter": {
