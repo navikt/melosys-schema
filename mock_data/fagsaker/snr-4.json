@@ -13,7 +13,7 @@
   "gsakSaksnummer" : 131063977,
   "behandlingOversikter": [
     {
-      "behandlingID": 1234,
+      "behandlingID": 4,
       "opprettetDato": "2017-10-01T12:31:36.123Z",
       "behandlingstype": {
         "kode": "SOEKNAD",
@@ -30,7 +30,39 @@
       "land": [
         "GB"
       ]
+    },
+    {
+      "behandlingID": 10,
+      "behandlingsstatus": {
+        "kode": "AVVENT_DOK_UTL",
+        "term": "Avventer svar fra utenlandsk trygdemyndighet"
+      },
+      "behandlingstype": {
+        "kode": "SOEKNAD",
+        "term": "Søknad"
+      },
+      "land": [
+        "PL"
+      ],
+      "opprettetDato": "2019-04-23T07:48:04.676Z",
+      "soknadsperiode": {
+        "fom": "2019-02-01",
+        "tom": "2020-03-02"
+      }
+    },
+    {
+      "behandlingID": 228,
+      "behandlingsstatus": {
+        "kode": "AVSLUTTET",
+        "term": "Behandlingen er avsluttet"
+      },
+      "behandlingstype": {
+        "kode": "UNNTAK_FRA_MEDLEMSKAP",
+        "term": "Registrering av unntak"
+      },
+      "land": null,
+      "opprettetDato": "2019-05-08T10:26:45.498Z",
+      "soknadsperiode": null
     }
-
   ]
 }
