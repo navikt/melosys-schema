@@ -1,7 +1,6 @@
 {
-  "behandlingshistorikk": null,
+  "behandlingshistorikk": [],
   "oppsummering": {
-    "behandlingID": 10,
     "behandlingsstatus": {
       "kode": "AVVENT_DOK_UTL",
       "term": "Avventer svar fra utenlandsk trygdemyndighet"
@@ -35,7 +34,10 @@
             "beregnetAntallTimerPrUke": 37.5,
             "beregnetStillingsprosent": null,
             "endringsdatoStillingsprosent": null,
-            "fartsomraade": null,
+            "fartsomraade": {
+              "kode": null,
+              "term": null
+            },
             "gyldighetsperiode": {
               "fom": "2017-02-01",
               "tom": null
@@ -88,7 +90,10 @@
             "beregnetAntallTimerPrUke": 0.0,
             "beregnetStillingsprosent": null,
             "endringsdatoStillingsprosent": null,
-            "fartsomraade": null,
+            "fartsomraade": {
+              "kode": null,
+              "term": null
+            },
             "gyldighetsperiode": {
               "fom": "2018-10-01",
               "tom": null
@@ -168,7 +173,10 @@
             "kode": "FS22",
             "term": "Gosys"
           },
-          "kildedokumenttype": null,
+          "kildedokumenttype": {
+            "kode": "Henv_Soknad",
+            "term": "Henvendelse/søknad"
+          },
           "land": {
             "kode": "NOR",
             "term": "NORGE"

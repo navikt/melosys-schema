@@ -60,9 +60,12 @@
           "kode": "UNNTAK_FRA_MEDLEMSKAP",
           "term": "Registrering av unntak"
         },
-        "land": null,
+        "land": [],
         "opprettetDato": "2019-05-08T10:26:45.498Z",
-        "soknadsperiode": null
+        "soknadsperiode": {
+          "fom": "2018-02-01",
+          "tom": "2018-03-02"
+        }
       }
     ]
    }
