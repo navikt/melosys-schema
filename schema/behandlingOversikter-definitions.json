@@ -1,34 +1,8 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/avklartefakta-definitions.json",
+  "title": "The behandlingOversikter Schema",
   "definitions": {
-    "nullable-kodeverk": {
-      "type": "object",
-      "title": "The Kodeverk Schema",
-      "additionalProperties": false,
-      "required": [
-        "kode",
-        "term"
-      ],
-      "properties": {
-        "kode": {
-          "type": ["string", "null"],
-          "title": "The Kode Schema",
-          "default": "",
-          "examples": [
-            "OPPRETTET"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "term": {
-          "type": ["string", "null"],
-          "title": "The Term Schema",
-          "default": "",
-          "examples": [
-            "Opprettet"
-          ],
-          "pattern": "^(.*)$"
-        }
-      }
-    },
     "behandlingOversikter": {
       "$id": "#/definitions/behandlingOversikter",
       "type": "array",
@@ -90,67 +64,6 @@
           }
         }
       }
-    }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/fagsaker-schema.json",
-  "type": "object",
-  "title": "The Root Schema",
-  "additionalProperties": false,
-  "required": [
-    "saksstatus",
-    "sakstype",
-    "endretDato",
-    "gsakSaksnummer",
-    "registrertDato",
-    "saksnummer",
-    "behandlingOversikter"
-  ],
-  "properties": {
-    "saksstatus": {
-      "title": "The Saksstatus Schema",
-      "$id": "#/properties/status",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-    },
-    "sakstype": {
-      "$id": "#/properties/sakstype",
-      "title": "The Sakstype Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-    },
-    "endretDato": {
-      "title": "The Endretdato Schema",
-      "$id": "#/properties/endretDato",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
-    },
-    "gsakSaksnummer": {
-      "$id": "#/properties/gsakSaksnummer",
-      "type": ["integer", "null"],
-      "title": "The Gsaksaksnummer Schema",
-      "default": null,
-      "examples": [
-        null,
-        131063977
-      ]
-    },
-    "registrertDato": {
-      "title": "The Registrertdato Schema",
-      "$id": "#/properties/registrertDato",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
-    },
-    "saksnummer": {
-      "$id": "#/properties/saksnummer",
-      "type": "string",
-      "title": "The Saksnummer Schema",
-      "default": "",
-      "examples": [
-        "MEL-1"
-      ],
-      "pattern": "^(.*)$"
-    },
-    "behandlingOversikter": {
-      "title": "The behandlingOversikter Schema",
-      "$id": "#/properties/behandlingOversikter",
-      "$ref": "#/definitions/behandlingOversikter"
     }
   }
 }
