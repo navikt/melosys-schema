@@ -36,6 +36,7 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "behandlingID",
     "redigerbart",
     "saksopplysninger",
     "behandlingshistorikk",
@@ -43,6 +44,10 @@
   ],
 
   "properties": {
+    "behandlingID": {
+      "$id": "#/definitions/behandlingOversikter/items/properties/behandlingID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+    },
     "redigerbart": {
       "$id": "#/properties/redigerbart",
       "type": "boolean",

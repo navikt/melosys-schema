@@ -1,4 +1,6 @@
 {
+  "behandlingID": 10,
+  "redigerbart": false,
   "behandlingshistorikk": [],
   "oppsummering": {
     "behandlingsstatus": {
@@ -13,7 +15,6 @@
     "registrertDato": "2019-04-23T09:58:23.899Z",
     "sisteOpplysningerHentetDato": "2019-04-23T09:58:39.751Z"
   },
-  "redigerbart": false,
   "saksopplysninger": {
     "arbeidsforhold": [
       {
