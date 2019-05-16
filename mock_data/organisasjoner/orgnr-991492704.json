@@ -1,28 +1,28 @@
 {
   "orgnr": "991492704",
-  "navn": "HVETIKKE AS",
-  "oppstartdato" : null,
+  "navn": "TOP-TOY NORGE AS",
+  "oppstartdato": null,
   "forretningsadresse": {
     "gateadresse": {
-      "gatenummer" : null,
-      "husbokstav" : null,
-      "husnummer" : null,
-      "gatenavn": "Lakkegata 53"
+      "gatenummer": null,
+      "husbokstav": null,
+      "husnummer": null,
+      "gatenavn": "Klokkergårdveien 32"
     },
-    "postnr": "0187",
-    "poststed": "OSLO",
+    "postnr": "1711",
+    "poststed": "SARPSBORG",
     "land": "NORGE"
   },
-  "organisasjonsform" : null,
+  "organisasjonsform": "Aksjeselskap",
   "postadresse": {
     "gateadresse": {
-      "gatenummer" : null,
-      "husbokstav" : null,
-      "husnummer" : null,
-      "gatenavn": "Postboks 2506 Solli"
+      "gatenummer": null,
+      "husbokstav": null,
+      "husnummer": null,
+      "gatenavn": null
     },
-    "postnr": "0202",
-    "poststed": "OSLO",
-    "land": "NORGE"
+    "postnr": null,
+    "poststed": null,
+    "land": null
   }
 }
