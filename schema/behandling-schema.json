@@ -39,7 +39,6 @@
     "behandlingID",
     "redigerbart",
     "saksopplysninger",
-    "behandlingshistorikk",
     "oppsummering"
   ],
 
@@ -1302,12 +1301,6 @@
           }
         }
       }
-    },
-    "behandlingshistorikk": {
-      "$id": "#/properties/behandlingshistorikk",
-      "type": "array",
-      "title": "The Behandlingshistorikk Schema",
-      "uniqueItems": true
     },
     "oppsummering": {
       "$id": "#/properties/oppsummering",

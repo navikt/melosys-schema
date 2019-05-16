@@ -1,7 +1,6 @@
 {
   "behandlingID": 10,
   "redigerbart": false,
-  "behandlingshistorikk": [],
   "oppsummering": {
     "behandlingsstatus": {
       "kode": "AVVENT_DOK_UTL",

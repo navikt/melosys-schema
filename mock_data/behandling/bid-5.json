@@ -3,7 +3,7 @@
   "redigerbart": true,
   "oppsummering": {
     "behandlingstype": {
-      "kode": "SOEKNAD",
+      "kode": "ENDRET_PERIODE",
       "term": "Søknad"
     },
     "behandlingsstatus": {
@@ -689,6 +689,5 @@
     "sakOgBehandling": {
       "eosBarnetrygd": false
     }
-  },
-  "behandlingshistorikk": []
+  }
 }

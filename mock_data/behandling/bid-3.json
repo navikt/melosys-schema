@@ -839,21 +839,5 @@
     "sakOgBehandling": {
       "eosBarnetrygd": false
     }
-  },
-  "behandlingshistorikk": [
-    {
-      "dato": "2017-10-31T13:58:10",
-      "status": "UNDER_BEHANDLING",
-      "steg": "KLARGJORT",
-      "ident": "A150244",
-      "kommentar": "......."
-    },
-    {
-      "dato": "2017-10-31T13:58:10",
-      "status": "OPPRETTET",
-      "steg": "NY",
-      "ident": "A150244",
-      "kommentar": "..."
-    }
-  ]
+  }
 }
