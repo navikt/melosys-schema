@@ -1,4 +1,4 @@
 {
-  "begrunnelser" : [ "ANNET" ],
+  "begrunnelseKoder" : ["ANNET"],
   "begrunnelseFritekst" : "Brukeren har fått flyskrekk"
 }

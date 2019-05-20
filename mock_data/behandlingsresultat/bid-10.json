@@ -1,7 +1,4 @@
 {
-  "henleggelsegrunnKode": {
-    "kode": "OPPHOLD_UTL_AVLYST",
-    "term": "Utlandsopphold avlyst"
-  },
-  "henleggelseFritekst": null
+  "begrunnelseKoder": ["OPPHOLD_UTL_AVLYST"],
+  "begrunnelseFritekst": null
 }
