@@ -6,19 +6,16 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "henleggelsegrunnKode",
-    "henleggelseFritekst"
+    "begrunnelser",
+    "begrunnelseFritekst"
   ],
   "properties": {
-    "henleggelsegrunnKode": {
-      "$id": "#/properties/henleggelsegrunnKode",
-      "oneOf": [
-        { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"},
-        { "type": ["null"] }
-      ]
+    "begrunnelser": {
+      "$id": "#/properties/begrunnelser",
+      "type": ["array", "null"]
     },
-    "henleggelseFritekst": {
-      "$id": "#/properties/henleggelseFritekst",
+    "begrunnelseFritekst": {
+      "$id": "#/properties/begrunnelseFritekst",
       "type": ["string", "null"],
       "title": "The henleggelseFritekst Schema",
       "examples": [
