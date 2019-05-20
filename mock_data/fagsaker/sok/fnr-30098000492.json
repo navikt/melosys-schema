@@ -1,7 +1,7 @@
 [
   {
-    "saksnummer": "MELTEST-1",
-    "sammensattNavn" : "Joe Moe",
+    "saksnummer": "3",
+    "sammensattNavn" : "LILLA HEST",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
       "kode": "EU_EOS",
@@ -13,7 +13,7 @@
     },
     "behandlingOversikter": [
       {
-        "behandlingID": 1234,
+        "behandlingID": 3,
         "opprettetDato": "2017-10-01T12:31:36.123Z",
         "behandlingstype": {
           "kode": "SOEKNAD",

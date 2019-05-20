@@ -1,0 +1,28 @@
+{
+  "orgnr": "991492704",
+  "navn": "TOP-TOY NORGE AS",
+  "oppstartdato": null,
+  "forretningsadresse": {
+    "gateadresse": {
+      "gatenummer": null,
+      "husbokstav": null,
+      "husnummer": null,
+      "gatenavn": "Klokkergårdveien 32"
+    },
+    "postnr": "1711",
+    "poststed": "SARPSBORG",
+    "land": "NORGE"
+  },
+  "organisasjonsform": "Aksjeselskap",
+  "postadresse": {
+    "gateadresse": {
+      "gatenummer": null,
+      "husbokstav": null,
+      "husnummer": null,
+      "gatenavn": null
+    },
+    "postnr": null,
+    "poststed": null,
+    "land": null
+  }
+}

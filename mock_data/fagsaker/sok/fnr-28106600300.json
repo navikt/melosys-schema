@@ -1,6 +1,6 @@
 [
   {
-    "saksnummer": "25",
+    "saksnummer": "6",
     "sammensattNavn" : "Joe Moe",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
@@ -13,7 +13,7 @@
     },
     "behandlingOversikter": [
       {
-        "behandlingID": 1234,
+        "behandlingID": 6,
         "opprettetDato": "2017-10-01T12:31:36.123Z",
         "behandlingstype": {
           "kode": "SOEKNAD",
