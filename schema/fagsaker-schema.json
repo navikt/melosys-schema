@@ -10,8 +10,7 @@
     "endretDato",
     "gsakSaksnummer",
     "registrertDato",
-    "saksnummer",
-    "behandlingOversikter"
+    "saksnummer"
   ],
   "properties": {
     "saksstatus": {
@@ -53,11 +52,6 @@
         "MEL-1"
       ],
       "pattern": "^(.*)$"
-    },
-    "behandlingOversikter": {
-      "title": "The behandlingOversikter Schema",
-      "$id": "#/properties/behandlingOversikter",
-      "$ref": "http://melosys.nav.no/schemas/behandlingOversikter-definitions.json#/definitions/behandlingOversikter"
     }
   }
 }
