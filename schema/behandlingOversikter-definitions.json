@@ -43,7 +43,7 @@
           },
           "soknadsperiode": {
             "title": "The Soknadsperiode Schema",
-            "$id": "#/definitions/behandlingOversikter#/properties/behandlingOversikter/properties/soknadsperiode",
+            "$id": "#/definitions/behandlingOversikter/properties/behandlingOversikter/properties/soknadsperiode",
             "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
           },
           "land": {
