@@ -619,7 +619,7 @@
               "uniqueItems": true,
               "items": {
                 "$id": "#/definitions/soeknadDokument/properties/juridiskArbeidsgiverNorge/properties/ekstraArbeidsgivere/items",
-                "type": ["string"],
+                "type": "string",
                 "title": "The Items Schema",
                 "default": "",
                 "examples": [

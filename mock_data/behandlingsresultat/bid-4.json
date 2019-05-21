@@ -1,4 +1,4 @@
 {
-  "begrunnelser" : [ "OPPHOLD_UTL_AVLYST" ],
+  "begrunnelseKoder" : [ "OPPHOLD_UTL_AVLYST" ],
   "begrunnelseFritekst" : null
 }

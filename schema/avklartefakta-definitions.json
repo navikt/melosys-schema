@@ -7,27 +7,14 @@
       "type": ["object","null"],
       "additionalProperties": false,
       "required": [
-        "referanse",
         "avklartefaktaKode",
-        "fakta",
-        "subjektID",
+        "begrunnelseFritekst",
         "begrunnelseKoder",
-        "begrunnelseFritekst"
+        "fakta",
+        "referanse",
+        "subjektID"
       ],
       "properties": {
-        "referanse": {
-          "$id": "#/definitions/avklartefakta/properties/referanse",
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "The Referanse Schema",
-          "default": "",
-          "examples": [
-            "BOSTEDSLAND"
-          ],
-          "pattern": "^(.*)$"
-        },
         "avklartefaktaKode": {
           "$id": "#/definitions/avklartefakta/properties/avklartefaktaKode",
           "type": [
@@ -40,37 +27,6 @@
             "BOSTEDSLAND"
           ],
           "pattern": "^(.*)$"
-        },
-        "fakta": {
-          "$id": "#/definitions/avklartefakta/properties/fakta",
-          "type": [
-            "array",
-            "null"
-          ],
-          "title": "The Fakta Schema",
-          "items": {
-            "$id": "#/definitions/avklartefakta/properties/fakta/items",
-            "type": [
-              "string",
-              "null"
-            ],
-            "title": "The Items Schema",
-            "default": "",
-            "examples": [
-              "SOKKEL",
-              "NO"
-            ],
-            "pattern": "^(.*)$"
-          }
-        },
-        "subjektID": {
-          "$id": "#/definitions/avklartefakta/properties/subjektID",
-          "type": ["string","null"],
-          "title": "The Subjektid Schema",
-          "default": null,
-          "examples": [
-            null
-          ]
         },
         "begrunnelseKoder": {
           "$id": "#/definitions/avklartefakta/properties/begrunnelseKoder",
@@ -105,6 +61,50 @@
             "En egen fritekstbegrunnelse som ikke finnes i kodeverket"
           ],
           "pattern": "^(.*)$"
+        },
+        "fakta": {
+          "$id": "#/definitions/avklartefakta/properties/fakta",
+          "type": [
+            "array",
+            "null"
+          ],
+          "title": "The Fakta Schema",
+          "items": {
+            "$id": "#/definitions/avklartefakta/properties/fakta/items",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "SOKKEL",
+              "NO"
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "referanse": {
+          "$id": "#/definitions/avklartefakta/properties/referanse",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Referanse Schema",
+          "default": "",
+          "examples": [
+            "BOSTEDSLAND"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "subjektID": {
+          "$id": "#/definitions/avklartefakta/properties/subjektID",
+          "type": ["string","null"],
+          "title": "The Subjektid Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
         }
       }
     }

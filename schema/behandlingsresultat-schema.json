@@ -6,13 +6,23 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "begrunnelser",
+    "begrunnelseKoder",
     "begrunnelseFritekst"
   ],
   "properties": {
-    "begrunnelser": {
-      "$id": "#/properties/begrunnelser",
-      "type": ["array", "null"]
+    "begrunnelseKoder": {
+      "$id": "#/properties/begrunnelseKoder",
+      "type": "array",
+      "uniqueItems": true,
+      "additionalItems": false,
+      "items": {
+        "$id": "#/properties/begrunnelseKoder/items",
+        "title": "BegrunnelseKode schema",
+        "type": "string",
+        "default": "",
+        "examples": ["ANNET"],
+        "pattern": "^(.*)$"
+      }
     },
     "begrunnelseFritekst": {
       "$id": "#/properties/begrunnelseFritekst",

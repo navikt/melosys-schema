@@ -1,7 +1,7 @@
 [
   {
-    "saksnummer": "26",
-    "sammensattNavn" : "Joe Moe",
+    "saksnummer": "5",
+    "sammensattNavn" : "KAKE ARTIG",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
       "kode": "EU_EOS",
@@ -13,7 +13,7 @@
     },
     "behandlingOversikter": [
       {
-        "behandlingID": 1234,
+        "behandlingID": 5,
         "opprettetDato": "2017-10-01T12:31:36.123Z",
         "behandlingstype": {
           "kode": "SOEKNAD",
@@ -30,8 +30,26 @@
         "land": [
           "GB"
         ]
+      },
+      {
+        "behandlingID": 9,
+        "behandlingsstatus": {
+          "kode": "AVSLUTTET",
+          "term": "Behandlingen er avsluttet"
+        },
+        "behandlingstype": {
+          "kode": "SOEKNAD",
+          "term": "Søknad"
+        },
+        "land": [
+          "NL"
+        ],
+        "opprettetDato": "2019-04-24T06:29:04.559Z",
+        "soknadsperiode": {
+          "fom": "2019-04-04",
+          "tom": "2020-04-04"
+        }
       }
-
     ]
   }
 ]
