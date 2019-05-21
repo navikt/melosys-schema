@@ -1299,6 +1299,128 @@
               "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
             }
           }
+        },
+        "sed": {
+          "$id": "#/properties/saksopplysninger/properties/sed",
+          "type": ["object", "null"],
+          "title": "The Sed Schema",
+          "required": [
+            "rinaSaksnummer",
+            "rinaDokumentId",
+            "fnr",
+            "periode",
+            "lovvalgBestemmelse",
+            "lovvalgsland",
+            "erEndring",
+            "statsborgerskap"
+          ],
+          "properties": {
+            "rinaSaksnummer": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/rinaSaksnummer",
+              "type": "string",
+              "title": "The Rinasaksnummer Schema",
+              "default": "",
+              "examples": [
+                "saksnummer123"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "rinaDokumentId": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/rinaDokumentId",
+              "type": "string",
+              "title": "The Rinadokumentid Schema",
+              "default": "",
+              "examples": [
+                "123"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fnr": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
+              "type": "string",
+              "title": "The Fnr Schema",
+              "default": "",
+              "examples": [
+                "333"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "periode": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/periode",
+              "type": "object",
+              "title": "The Periode Schema",
+              "required": [
+                "fom",
+                "tom"
+              ],
+              "properties": {
+                "fom": {
+                  "$id": "#/properties/saksopplysninger/properties/sed/properties/periode/properties/fom",
+                  "type": "string",
+                  "title": "The Fom Schema",
+                  "default": "",
+                  "examples": [
+                    "12-12-2012"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "tom": {
+                  "$id": "#/properties/saksopplysninger/properties/sed/properties/periode/properties/tom",
+                  "type": "string",
+                  "title": "The Tom Schema",
+                  "default": "",
+                  "examples": [
+                    "12-12-2014"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            },
+            "lovvalgBestemmelse": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgBestemmelse",
+              "type": "string",
+              "title": "The Lovvalgbestemmelse Schema",
+              "default": "",
+              "examples": [
+                "FO_883_2004_ART12_1"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "lovvalgsland": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsland",
+              "type": "string",
+              "title": "The Lovvalgsland Schema",
+              "default": "",
+              "examples": [
+                "DE"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "erEndring": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/erEndring",
+              "type": "boolean",
+              "title": "The Erendring Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "statsborgerskap": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/statsborgerskap",
+              "type": "array",
+              "title": "The Statsborgerskap Schema",
+              "items": {
+                "$id": "#/properties/saksopplysninger/properties/sed/properties/statsborgerskap/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "NO"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
         }
       }
     },

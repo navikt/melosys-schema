@@ -838,6 +838,21 @@
     },
     "sakOgBehandling": {
       "eosBarnetrygd": false
+    },
+    "sed": {
+      "rinaSaksnummer": "saksnummer123",
+      "rinaDokumentId": "123",
+      "fnr": "333",
+      "periode": {
+        "fom": "2012-12-12",
+        "tom": "2014-12-12"
+      },
+      "lovvalgBestemmelse": "FO_883_2004_ART12_1",
+      "lovvalgsland": "DE",
+      "erEndring": false,
+      "statsborgerskap": [
+        "NO"
+      ]
     }
   }
 }
