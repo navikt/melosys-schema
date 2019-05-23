@@ -1,4 +1,5 @@
 {
+  "behandlingID": 4,
   "redigerbart": true,
   "saksopplysninger": {
     "arbeidsforhold": [
@@ -6,7 +7,8 @@
         "Aordning": true,
         "opprettelsestidspunkt": "2018-02-18T07:32:45.797+01:00",
         "opplysningspliktigID": "810072512",
-        "utenlandsopphold": [],
+        "utenlandsopphold": [
+        ],
         "arbeidsforholdIDnav": 44138109,
         "arbeidsavtaler": [
           {
@@ -44,7 +46,8 @@
             }
           }
         ],
-        "permisjonOgPermittering": [],
+        "permisjonOgPermittering": [
+        ],
         "arbeidsgivertype": "Organisasjon",
         "arbeidsgiverID": "910099035",
         "ansettelsesPeriode": {
@@ -55,7 +58,8 @@
         "arbeidstakerID": "19117220349",
         "opplysningspliktigtype": "Organisasjon",
         "sistBekreftet": "2018-02-18T07:32:36+01:00",
-        "timerTimelonnet": [],
+        "timerTimelonnet": [
+        ],
         "arbeidsforholdID": ""
       },
       {
@@ -277,7 +281,7 @@
                 "inntektsperiodetype": "Maaned",
                 "inntektskilde": "A-ordningen",
                 "fordel": "kontantytelse",
-                "beloep": 30000,
+                "beloep": 30000.00,
                 "inntektsstatus": "LoependeInnrapportert",
                 "utloeserArbeidsgiveravgift": true,
                 "opptjeningsland": null,
@@ -665,9 +669,9 @@
     },
     "sakOgBehandling": {
       "eosBarnetrygd": true
-    }
+    },
+    "sed": null
   },
-  "behandlingshistorikk": [],
   "oppsummering": {
     "behandlingsstatus": {
       "kode": "OPPRETTET",

@@ -304,6 +304,69 @@
         { "type": ["null"] }
       ]
     },
+    "gateadresse": {
+      "title": "The Gateadresse Schema",
+      "$id": "#/definitions/gateadresse",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gatenummer",
+        "husbokstav",
+        "husnummer",
+        "gatenavn"
+      ],
+      "properties": {
+        "gatenummer": {
+          "$id": "#/definitions/gateadresse/properties/gatenummer",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "The Gatenummer Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "husbokstav": {
+          "$id": "#/definitions/gateadresse/properties/husbokstav",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Husbokstav Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "husnummer": {
+          "$id": "#/definitions/gateadresse/properties/husnummer",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "title": "The Husnummer Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "gatenavn": {
+          "$id": "#/definitions/gateadresse/properties/gatenavn",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Gatenavn Schema",
+          "default": "",
+          "examples": [
+            "Olav Kyrres gate 9"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
     "registerAdresse": {
       "type": "object",
       "additionalProperties": false,
@@ -315,70 +378,12 @@
       ],
       "properties": {
         "gateadresse": {
-          "$id": "#/properties/registerAdresse/properties/gateadresse",
-          "type": "object",
           "title": "The Gateadresse Schema",
-          "additionalProperties": false,
-          "required": [
-            "gatenummer",
-            "husbokstav",
-            "husnummer",
-            "gatenavn"
-          ],
-          "properties": {
-            "gatenummer": {
-              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/gatenummer",
-              "type": [
-                "integer",
-                "null"
-              ],
-              "title": "The Gatenummer Schema",
-              "default": null,
-              "examples": [
-                null
-              ]
-            },
-            "husbokstav": {
-              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/husbokstav",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Husbokstav Schema",
-              "default": null,
-              "examples": [
-                null
-              ]
-            },
-            "husnummer": {
-              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/husnummer",
-              "type": [
-                "integer",
-                "null"
-              ],
-              "title": "The Husnummer Schema",
-              "default": null,
-              "examples": [
-                null
-              ]
-            },
-            "gatenavn": {
-              "$id": "#/properties/registerAdresse/properties/gateadresse/properties/gatenavn",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Gatenavn Schema",
-              "default": "",
-              "examples": [
-                "Olav Kyrres gate 9"
-              ],
-              "pattern": "^(.*)$"
-            }
-          }
+          "$id": "#/definitions/registerAdresse/properties/gateadresse",
+          "$ref": "#/definitions/gateadresse"
         },
         "postnr": {
-          "$id": "#/properties/registerAdresse/properties/postnr",
+          "$id": "#/definitions/registerAdresse/properties/postnr",
           "type": [
             "string",
             "null"
@@ -391,7 +396,7 @@
           "pattern": "^(.*)$"
         },
         "poststed": {
-          "$id": "#/properties/registerAdresse/properties/poststed",
+          "$id": "#/definitions/registerAdresse/properties/poststed",
           "type": [
             "string",
             "null"
@@ -404,7 +409,7 @@
           "pattern": "^(.*)$"
         },
         "land": {
-          "$id": "#/properties/registerAdresse/properties/land",
+          "$id": "#/definitions/registerAdresse/properties/land",
           "type": [
             "string",
             "object",
