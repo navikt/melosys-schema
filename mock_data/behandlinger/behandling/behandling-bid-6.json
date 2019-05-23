@@ -1,19 +1,6 @@
 {
   "behandlingID": 6,
   "redigerbart": true,
-  "oppsummering": {
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    },
-    "behandlingsstatus": {
-      "kode": "OPPRETTET",
-      "term": "Opprettet"
-    },
-    "registrertDato": "2018-03-12T14:32:37.448Z",
-    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-    "endretDato": "2018-03-15T16:31:35.845Z"
-  },
   "saksopplysninger": {
     "person": {
       "fnr": "28106600300",
@@ -638,6 +625,20 @@
     },
     "sakOgBehandling": {
       "eosBarnetrygd": false
-    }
+    },
+    "sed": null
+  },
+  "oppsummering": {
+    "behandlingstype": {
+      "kode": "SOEKNAD",
+      "term": "Søknad"
+    },
+    "behandlingsstatus": {
+      "kode": "OPPRETTET",
+      "term": "Opprettet"
+    },
+    "registrertDato": "2018-03-12T14:32:37.448Z",
+    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+    "endretDato": "2018-03-15T16:31:35.845Z"
   }
 }

@@ -1,19 +1,6 @@
 {
   "behandlingID": 10,
   "redigerbart": false,
-  "oppsummering": {
-    "behandlingsstatus": {
-      "kode": "AVVENT_DOK_UTL",
-      "term": "Avventer svar fra utenlandsk trygdemyndighet"
-    },
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    },
-    "endretDato": "2019-04-23T10:02:52.031Z",
-    "registrertDato": "2019-04-23T09:58:23.899Z",
-    "sisteOpplysningerHentetDato": "2019-04-23T09:58:39.751Z"
-  },
   "saksopplysninger": {
     "arbeidsforhold": [
       {
@@ -212,10 +199,10 @@
         "postadresse": {
           "postnr": "3936",
           "gateadresse": {
-            "gatenummer": null,
+            "gatenummer": 9,
             "husbokstav": null,
             "husnummer": null,
-            "gatenavn": "Olav Kyrres gate 9"
+            "gatenavn": "Olav Kyrres gate"
           },
           "poststed": "PORSGRUNN",
           "land": "NORGE"
@@ -386,6 +373,20 @@
     },
     "sakOgBehandling": {
       "eosBarnetrygd": false
-    }
+    },
+    "sed": null
+  },
+  "oppsummering": {
+    "behandlingsstatus": {
+      "kode": "AVVENT_DOK_UTL",
+      "term": "Avventer svar fra utenlandsk trygdemyndighet"
+    },
+    "behandlingstype": {
+      "kode": "SOEKNAD",
+      "term": "Søknad"
+    },
+    "endretDato": "2019-04-23T10:02:52.031Z",
+    "registrertDato": "2019-04-23T09:58:23.899Z",
+    "sisteOpplysningerHentetDato": "2019-04-23T09:58:39.751Z"
   }
 }

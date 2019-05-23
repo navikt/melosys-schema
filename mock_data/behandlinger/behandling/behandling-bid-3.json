@@ -1,19 +1,6 @@
 {
   "behandlingID": 3,
   "redigerbart": true,
-  "oppsummering": {
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    },
-    "behandlingsstatus": {
-      "kode": "OPPRETTET",
-      "term": "Opprettet"
-    },
-    "registrertDato": "2017-10-19T14:35:54.000Z",
-    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-    "endretDato": "2017-10-19T14:35:54.000Z"
-  },
   "saksopplysninger": {
     "person": {
       "fnr": "30098000492",
@@ -148,8 +135,7 @@
         ],
         "permisjonOgPermittering": [],
         "timerTimelonnet": [],
-        "utenlandsopphold": [
-        ],
+        "utenlandsopphold": [],
         "arbeidsgivertype": "Organisasjon",
         "arbeidsgiverID": "910253158",
         "arbeidstakerID": "30098000492",
@@ -203,11 +189,9 @@
             }
           }
         ],
-        "permisjonOgPermittering": [
-        ],
+        "permisjonOgPermittering": [],
         "timerTimelonnet": [],
-        "utenlandsopphold": [
-        ],
+        "utenlandsopphold": [],
         "arbeidsgivertype": "Organisasjon",
         "arbeidsgiverID": "982683955",
         "arbeidstakerID": "30098000492",
@@ -261,11 +245,9 @@
             }
           }
         ],
-        "permisjonOgPermittering": [
-        ],
+        "permisjonOgPermittering": [],
         "timerTimelonnet": [],
-        "utenlandsopphold": [
-        ],
+        "utenlandsopphold": [],
         "arbeidsgivertype": "Organisasjon",
         "arbeidsgiverID": "943049467",
         "arbeidstakerID": "30098000492",
@@ -319,11 +301,9 @@
             }
           }
         ],
-        "permisjonOgPermittering": [
-        ],
+        "permisjonOgPermittering": [],
         "timerTimelonnet": [],
-        "utenlandsopphold": [
-        ],
+        "utenlandsopphold": [],
         "arbeidsgivertype": "Organisasjon",
         "arbeidsgiverID": "982683955",
         "arbeidstakerID": "30098000492",
@@ -838,6 +818,34 @@
     },
     "sakOgBehandling": {
       "eosBarnetrygd": false
+    },
+    "sed": {
+      "rinaSaksnummer": "181973",
+      "rinaDokumentID": "ad6335c6a92341f2830a873a331a5ea5",
+      "fnr": "28106600300",
+      "lovvalgsperiode": {
+        "fom": "2012-12-12",
+        "tom": "2014-12-12"
+      },
+      "lovvalgsbestemmelse": "FO_883_2004_ART12_1",
+      "lovvalgslandKode": "DE",
+      "erEnding": false,
+      "statsborgerskapKoder": [
+        "NO"
+      ]
     }
+  },
+  "oppsummering": {
+    "behandlingstype": {
+      "kode": "SOEKNAD",
+      "term": "Søknad"
+    },
+    "behandlingsstatus": {
+      "kode": "OPPRETTET",
+      "term": "Opprettet"
+    },
+    "registrertDato": "2017-10-19T14:35:54.000Z",
+    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+    "endretDato": "2017-10-19T14:35:54.000Z"
   }
 }
