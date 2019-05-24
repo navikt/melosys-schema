@@ -1,21 +1,13 @@
 {
-  "definitions": {},
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/root.json",
-  "type": "object",
-  "title": "The Root Schema",
-  "required": [
-    "ikkeGodkjentBegrunnelseKoder",
-    "begrunnelseFritekst"
-  ],
-  "properties": {
+  "definitions": {
     "ikkeGodkjentBegrunnelseKoder": {
-      "$id": "#/properties/ikkeGodkjentBegrunnelseKoder",
+      "$id": "#/definitions/ikkeGodkjentBegrunnelseKoder",
       "type": "array",
       "title": "The Ikkegodkjentbegrunnelsekoder Schema",
       "items": {
         "$id": "#/properties/ikkeGodkjentBegrunnelseKoder/items",
         "type": "string",
+        "enum": ["UTSENDELSE_OVER_24_MND", "TREDJELANDSBORGER_IKKE_AVTALELAND", "ANNET"],
         "title": "The Items Schema",
         "default": "",
         "examples": [
@@ -25,14 +17,31 @@
         ],
         "pattern": "^(.*)$"
       }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/saksflyt-unntaksperiode-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "ikkeGodkjentBegrunnelseKoder",
+    "begrunnelseFritekst"
+  ],
+  "properties": {
+    "ikkeGodkjentBegrunnelseKoder": {
+      "$ref": "#/definitions/ikkeGodkjentBegrunnelseKoder"
     },
     "begrunnelseFritekst": {
       "$id": "#/properties/begrunnelseFritekst",
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "title": "The Begrunnelsefritekst Schema",
       "default": "",
       "examples": [
-        "tralala"
+        "tralala", null
       ],
       "pattern": "^(.*)$"
     }
