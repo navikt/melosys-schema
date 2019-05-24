@@ -30,6 +30,8 @@
   ],
   "properties": {
     "ikkeGodkjentBegrunnelseKoder": {
+      "$id": "#/properties/ikkeGodkjentBegrunnelsekoder",
+      "title": "The Ikkegodkjentbegrunnelsekoder Schema",
       "$ref": "#/definitions/ikkeGodkjentBegrunnelseKoder"
     },
     "begrunnelseFritekst": {
