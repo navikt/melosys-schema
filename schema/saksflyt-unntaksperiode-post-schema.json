@@ -1,21 +1,15 @@
 {
   "definitions": {
     "ikkeGodkjentBegrunnelseKoder": {
-      "$id": "#/definitions/ikkeGodkjentBegrunnelseKoder",
       "type": "array",
-      "title": "The Ikkegodkjentbegrunnelsekoder Schema",
       "items": {
-        "$id": "#/properties/ikkeGodkjentBegrunnelseKoder/items",
         "type": "string",
         "enum": ["UTSENDELSE_OVER_24_MND", "TREDJELANDSBORGER_IKKE_AVTALELAND", "ANNET"],
-        "title": "The Items Schema",
-        "default": "",
         "examples": [
           "UTSENDELSE_OVER_24_MND",
           "TREDJELANDSBORGER_IKKE_AVTALELAND",
           "ANNET"
-        ],
-        "pattern": "^(.*)$"
+        ]
       }
     }
   },
@@ -30,8 +24,6 @@
   ],
   "properties": {
     "ikkeGodkjentBegrunnelseKoder": {
-      "$id": "#/properties/ikkeGodkjentBegrunnelsekoder",
-      "title": "The Ikkegodkjentbegrunnelsekoder Schema",
       "$ref": "#/definitions/ikkeGodkjentBegrunnelseKoder"
     },
     "begrunnelseFritekst": {
