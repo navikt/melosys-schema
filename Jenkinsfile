@@ -80,6 +80,7 @@ node {
   stage('Deploy to Nexus') {
     def repositoryId
     if (scmVars.GIT_BRANCH.equalsIgnoreCase("develop")) {
+      //denne er foreloepig ikke i bruk. Denne byggejobben bygger bare snapshots
       repositoryId = "m2internal"
     }
     else {
