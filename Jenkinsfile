@@ -59,7 +59,7 @@ node {
   }
 
   stage('Create jar file') {
-    def schemaLibPath = "node_modules/melosys-schema/lib/"
+    def schemaLibPath = "lib/"
     def schemaZipFile = sh(
       script: "find ${schemaLibPath} -type f -name 'melosys-schema*.zip'",
       returnStdout: true).trim()
