@@ -54,6 +54,11 @@
         1000023948
       ]
     },
+    "behandlingstype": {
+      "type": "string",
+      "title": "The Behandlingstype schema",
+      "examples": ["SOEKNAD"]
+    },
     "databaseID": {
       "type": "integer",
       "title": "The DatabaseID Schema",
@@ -234,12 +239,18 @@
       "pattern": "\\d{9}$|^$"
     },
     "oppgaveID": {
+      "title": "The OppgaveID schema",
       "type": "string",
       "default": "",
       "examples": [
         "177057928"
       ],
       "pattern": "^(.*)$"
+    },
+    "oppgavetype": {
+      "title": "The Oppgavetype schema",
+      "type": "string",
+      "examples": ["BEH_SAK_MK", "JFR"]
     },
     "periodeID": {
       "type": "integer",
@@ -423,6 +434,20 @@
           "pattern": "^(.*)$"
         }
       }
+    },
+    "saksnummer": {
+      "type": "string",
+      "title": "The Saksnummer Schema",
+      "examples": ["MEL-1"]
+    },
+    "sakstype": {
+      "type": "string",
+      "title": "The Sakstype Schema",
+      "examples": [
+        "EU_EOS",
+        "Trygdeavtale",
+        "FTLR"
+      ]
     },
     "strukturertAdresse": {
       "type": "object",
