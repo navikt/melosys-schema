@@ -57,7 +57,17 @@
     "behandlingstype": {
       "type": "string",
       "title": "The Behandlingstype schema",
-      "examples": ["SOEKNAD"]
+      "examples": ["SOEKNAD"],
+      "enum": [
+        "SOEKNAD",
+        "KLAGE",
+        "ANKE",
+        "UNNTAK_FRA_MEDLEMSKAP",
+        "NORGE_UTPEKT",
+        "PAASTAND_UTL",
+        "NY_VURDERING",
+        "ENDRET_PERIODE"
+      ]
     },
     "databaseID": {
       "type": "integer",
@@ -250,7 +260,11 @@
     "oppgavetype": {
       "title": "The Oppgavetype schema",
       "type": "string",
-      "examples": ["BEH_SAK_MK", "JFR"]
+      "examples": ["BEH_SAK_MK", "JFR"],
+      "enum": [
+        "BEH_SAK_MK",
+        "JFR"
+      ]
     },
     "periodeID": {
       "type": "integer",
