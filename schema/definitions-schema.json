@@ -453,7 +453,8 @@
       "type": "string",
       "title": "The Saksnummer Schema",
       "examples": ["MEL-1"],
-      "minLength": 1
+      "minLength": 1,
+      "pattern": "^\\S*$"
     },
     "sakstype": {
       "type": "string",
