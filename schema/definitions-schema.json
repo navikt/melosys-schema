@@ -452,7 +452,8 @@
     "saksnummer": {
       "type": "string",
       "title": "The Saksnummer Schema",
-      "examples": ["MEL-1"]
+      "examples": ["MEL-1"],
+      "minLength": 1
     },
     "sakstype": {
       "type": "string",
