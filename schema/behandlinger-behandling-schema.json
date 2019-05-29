@@ -1287,14 +1287,10 @@
               "pattern": "^(.*)$"
             },
             "fnr": {
-              "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
-              "type": "string",
               "title": "The Fnr Schema",
-              "default": "",
-              "examples": [
-                "28106600300"
-              ],
-              "pattern": "^(.*)$"
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+
             },
             "lovvalgsperiode": {
               "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode",
