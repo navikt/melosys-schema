@@ -463,6 +463,11 @@
         "EU_EOS",
         "Trygdeavtale",
         "FTLR"
+      ],
+      "enum": [
+        "EU_EOS",
+        "TRYGDEAVTALE",
+        "FTRL"
       ]
     },
     "strukturertAdresse": {
