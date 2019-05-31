@@ -225,6 +225,14 @@
       ],
       "pattern": "^(.*)$"
     },
+    "nullable-landkode": {
+      "type": ["string", "null"],
+      "minLength": 2,
+      "examples": [
+        "NO"
+      ],
+      "pattern": "^(.*)$"
+    },
     "landkoder": {
       "type": "array",
       "additionalItems": false,
@@ -483,7 +491,7 @@
       ],
       "properties": {
         "gatenavn": {
-          "type": "string",
+          "type": ["string", "null"],
           "minLength": 1,
           "examples": [
             "Waldemar Thranes gate"
@@ -504,21 +512,21 @@
           ]
         },
         "postnummer": {
-          "type": "string",
+          "type": ["string", "null"],
           "minLength": 1,
           "examples": [
             "0175"
           ]
         },
         "poststed": {
-          "type": "string",
+          "type": ["string", "null"],
           "minLength": 1,
           "examples": [
             "OSLO"
           ]
         },
         "landkode": {
-          "$ref": "#/definitions/landkode"
+          "$ref": "#/definitions/nullable-landkode"
         }
       }
     },
