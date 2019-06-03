@@ -1088,7 +1088,7 @@
                       "periode"
                     ],
                     "properties": {
-                      "bostedsadresse": {
+                      "postadresse": {
                         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
                       },
                       "periode": {
@@ -1199,14 +1199,6 @@
                   }
                 }
               }
-            },
-            "postadresse": {
-              "$id": "#/properties/postadresse",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
-            },
-            "midlertidigPostadresse": {
-              "$id": "#/properties/midlertidigPostadresse",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
             }
           }
         },
