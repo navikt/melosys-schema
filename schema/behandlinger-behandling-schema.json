@@ -1100,7 +1100,20 @@
                 "midlertidigAdressePerioder": {
                   "type": "array",
                   "items": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "midlertidigAdresse",
+                      "periode"
+                    ],
+                    "properties": {
+                      "midlertidigAdresse": {
+                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
+                      },
+                      "periode": {
+                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                      }
+                    }
                   }
                 }
               }
