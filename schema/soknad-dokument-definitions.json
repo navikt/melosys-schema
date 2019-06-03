@@ -325,7 +325,7 @@
             },
             "oppgittAdresse": {
               "$id": "#/definitions/soeknadDokument/properties/bosted/properties/oppgittAdresse",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/strukturertAdresse"
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
             }
           }
         },
