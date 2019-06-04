@@ -1,0 +1,14 @@
+[
+  {
+    "rinaUrl": "http://localhost:3000/",
+    "opprettetDato": "2019-05-16",
+    "sedType": "A005",
+    "status": "new"
+  },
+  {
+    "rinaUrl": "http://localhost:3000/",
+    "opprettetDato": "2019-04-11",
+    "sedType": "A008",
+    "status": "new"
+  }
+]

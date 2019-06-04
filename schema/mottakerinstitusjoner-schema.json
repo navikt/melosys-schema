@@ -1,0 +1,48 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/mottakerinstitusjoner-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "uniqueItems": true,
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "navn",
+      "landkode"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "string",
+        "title": "The Id Schema",
+        "examples": [
+          "NO:NAVT002"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "navn": {
+        "$id": "#/items/properties/navn",
+        "type": "string",
+        "title": "The Navn Schema",
+        "examples": [
+          "navn på institusjon"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "landkode": {
+        "$id": "#/items/properties/landkode",
+        "type": "string",
+        "title": "The Landkode Schema",
+        "examples": [
+          "NO"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}
