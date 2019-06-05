@@ -31,12 +31,8 @@
     },
     "mottakerLand": {
       "$id": "#/properties/mottakerLand",
-      "type": "string",
       "title": "The MottakerLand Schema",
-      "examples": [
-        "NO"
-      ],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
     }
   }
 }
