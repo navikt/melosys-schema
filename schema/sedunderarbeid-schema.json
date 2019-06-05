@@ -19,12 +19,8 @@
     "properties": {
       "rinaUrl": {
         "$id": "#/items/properties/rinaUrl",
-        "type": "string",
         "title": "The RinaUrl Schema",
-        "examples": [
-          "http://rina-url.local/"
-        ],
-        "pattern": "^(.*)$"
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/url"
       },
       "opprettetDato": {
         "$id": "#/items/properties/opprettetDato",
@@ -38,7 +34,7 @@
         "examples": [
           "A001"
         ],
-        "pattern": "^(.*)$"
+        "pattern": "^\\S*$"
       },
       "status": {
         "$id": "#/items/properties/status",
@@ -47,7 +43,7 @@
         "examples": [
           "new"
         ],
-        "pattern": "^(.*)$"
+        "pattern": "^\\S*$"
       }
     }
   }
