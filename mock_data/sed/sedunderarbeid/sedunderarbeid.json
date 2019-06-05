@@ -1,0 +1,14 @@
+[
+  {
+    "rinaUrl": "http://rina-url.local/",
+    "opprettetDato": "2019-05-16",
+    "sedType": "A005",
+    "status": "new"
+  },
+  {
+    "rinaUrl": "http://rina-url.local/",
+    "opprettetDato": "2019-04-11",
+    "sedType": "A008",
+    "status": "new"
+  }
+]

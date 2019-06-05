@@ -1,0 +1,50 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/sedunderarbeid-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "uniqueItems": true,
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "additionalProperties": false,
+    "required": [
+      "rinaUrl",
+      "opprettetDato",
+      "sedType",
+      "status"
+    ],
+    "properties": {
+      "rinaUrl": {
+        "$id": "#/items/properties/rinaUrl",
+        "title": "The RinaUrl Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/url"
+      },
+      "opprettetDato": {
+        "$id": "#/items/properties/opprettetDato",
+        "title": "The OpprettetDato Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+      },
+      "sedType": {
+        "$id": "#/items/properties/sedType",
+        "type": "string",
+        "title": "The SedType Schema",
+        "examples": [
+          "A001"
+        ],
+        "pattern": "^\\S*$"
+      },
+      "status": {
+        "$id": "#/items/properties/status",
+        "type": "string",
+        "title": "The Status Schema",
+        "examples": [
+          "new"
+        ],
+        "pattern": "^\\S*$"
+      }
+    }
+  }
+}
