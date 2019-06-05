@@ -38,12 +38,12 @@
       "antallMaanederINorge": 8,
       "adresseIUtlandet": true,
       "oppgittAdresse": {
-        "gatenavn": "Waldemar Thranes gate",
-        "husnummer": "98",
+        "gatenavn": null,
+        "husnummer": null,
         "region": null,
-        "postnummer": "O175",
-        "poststed": "Oslo",
-        "landkode": "NO"
+        "postnummer": null,
+        "poststed": null,
+        "landkode": null
       }
     },
     "arbeidNorge": {
