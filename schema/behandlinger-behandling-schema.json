@@ -66,6 +66,7 @@
         "medlemskap",
         "organisasjoner",
         "person",
+        "personhistorikk",
         "sakOgBehandling",
         "sed"
       ],
@@ -1028,7 +1029,6 @@
           "additionalProperties": false,
           "required": [
             "erEgenAnsatt",
-            "personhistorikk",
             "personStatus",
             "sammensattNavn",
             "kjoenn",
@@ -1049,74 +1049,6 @@
                 false,
                 true
               ]
-            },
-            "personhistorikk": {
-              "type": "object",
-              "additionalProperties": false,
-              "required": [
-                "bostedsadressePerioder",
-                "postadressePerioder",
-                "midlertidigAdressePerioder"
-              ],
-              "properties": {
-                "bostedsadressePerioder": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                      "bostedsadresse",
-                      "periode"
-                    ],
-                    "properties": {
-                      "bostedsadresse": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
-                      },
-                      "periode": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-                      }
-                    }
-                  }
-                },
-                "postadressePerioder": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                      "postadresse",
-                      "periode"
-                    ],
-                    "properties": {
-                      "postadresse": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
-                      },
-                      "periode": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-                      }
-                    }
-                  }
-                },
-                "midlertidigAdressePerioder": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                      "midlertidigAdresse",
-                      "periode"
-                    ],
-                    "properties": {
-                      "midlertidigAdresse": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
-                      },
-                      "periode": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-                      }
-                    }
-                  }
-                }
-              }
             },
             "personStatus": {
               "title": "The Personstatus Schema",
@@ -1196,6 +1128,74 @@
                     "title": "The relasjonstype schema",
                     "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/relasjonstype",
                     "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "personhistorikk": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bostedsadressePerioder",
+            "postadressePerioder",
+            "midlertidigAdressePerioder"
+          ],
+          "properties": {
+            "bostedsadressePerioder": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bostedsadresse",
+                  "periode"
+                ],
+                "properties": {
+                  "bostedsadresse": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+                  },
+                  "periode": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                  }
+                }
+              }
+            },
+            "postadressePerioder": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "postadresse",
+                  "periode"
+                ],
+                "properties": {
+                  "postadresse": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
+                  },
+                  "periode": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                  }
+                }
+              }
+            },
+            "midlertidigAdressePerioder": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "midlertidigAdresse",
+                  "periode"
+                ],
+                "properties": {
+                  "midlertidigAdresse": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
+                  },
+                  "periode": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
                   }
                 }
               }
