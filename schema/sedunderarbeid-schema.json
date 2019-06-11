@@ -11,12 +11,33 @@
     "title": "The Items Schema",
     "additionalProperties": false,
     "required": [
+      "bucId",
+      "sedId",
       "rinaUrl",
       "opprettetDato",
+      "sistOppdatert",
       "sedType",
       "status"
     ],
     "properties": {
+      "bucId": {
+        "$id": "#/items/properties/bucId",
+        "type": "string",
+        "title": "The BucId Schema",
+        "examples": [
+          "30000"
+        ],
+        "pattern": "^\\S*$"
+      },
+      "sedId": {
+        "$id": "#/items/properties/sedId",
+        "type": "string",
+        "title": "The SedId Schema",
+        "examples": [
+          "e25f73dda0b84649899e8ea42cfb25c9"
+        ],
+        "pattern": "^\\S*$"
+      },
       "rinaUrl": {
         "$id": "#/items/properties/rinaUrl",
         "title": "The RinaUrl Schema",
@@ -25,6 +46,11 @@
       "opprettetDato": {
         "$id": "#/items/properties/opprettetDato",
         "title": "The OpprettetDato Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+      },
+      "sistOppdatert": {
+        "$id": "#/items/properties/sistOppdatert",
+        "title": "The SistOppdatert Schema",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
       },
       "sedType": {
