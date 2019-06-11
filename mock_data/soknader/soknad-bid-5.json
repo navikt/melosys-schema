@@ -27,16 +27,12 @@
         "tom": "2018-05-31"
       },
       "ektefelleEllerBarnINorge": null,
-      "forutgaendeBostedINorge": true,
-      "sammeAdresseSomArbeidsgiver": null,
       "studentFinansieringKode": null,
       "studentSemester": null
     },
     "bosted": {
       "intensjonOmRetur": true,
-      "familiesBostedLandkode": null,
       "antallMaanederINorge": 8,
-      "adresseIUtlandet": true,
       "oppgittAdresse": {
         "gatenavn": "Waldemar Thranes gate",
         "husnummer": "98",
