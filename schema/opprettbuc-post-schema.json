@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/opprettbuc-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "bucType",
+    "mottakerId",
+    "mottakerLand"
+  ],
+  "properties": {
+    "bucType": {
+      "title": "The BucType Schema",
+      "$id": "#/properties/bucType",
+      "type": "string",
+      "examples": [
+        "LA_BUC_01"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mottakerId": {
+      "$id": "#/properties/mottakerId",
+      "type": "string",
+      "title": "The MottakerId Schema",
+      "examples": [
+        "NO:NAVT002"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mottakerLand": {
+      "$id": "#/properties/mottakerLand",
+      "title": "The MottakerLand Schema",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+    }
+  }
+}
