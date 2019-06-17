@@ -1,0 +1,20 @@
+[
+  {
+    "bucId": "40000",
+    "sedId": "e25f73dda0b84641231231232cfb25c9",
+    "rinaUrl": "http://rina-url.local/",
+    "opprettetDato": "2019-05-16",
+    "sistOppdatert": "2019-05-16",
+    "sedType": "A005",
+    "status": "new"
+  },
+  {
+    "bucId": "40001",
+    "sedId": "e25f123123b84649899e8ea42cfb25c9",
+    "rinaUrl": "http://rina-url.local/",
+    "opprettetDato": "2019-04-11",
+    "sistOppdatert": "2019-04-12",
+    "sedType": "A008",
+    "status": "new"
+  }
+]

@@ -225,6 +225,14 @@
       ],
       "pattern": "^(.*)$"
     },
+    "nullable-landkode": {
+      "type": ["string", "null"],
+      "minLength": 2,
+      "examples": [
+        "NO"
+      ],
+      "pattern": "^(.*)$"
+    },
     "landkoder": {
       "type": "array",
       "additionalItems": false,
@@ -521,6 +529,65 @@
           "$ref": "#/definitions/landkode"
         }
       }
+    },
+    "nullable-strukturertAdresse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gatenavn",
+        "husnummer",
+        "region",
+        "postnummer",
+        "poststed",
+        "landkode"
+      ],
+      "properties": {
+        "gatenavn": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "Waldemar Thranes gate"
+          ]
+        },
+        "husnummer": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "98"
+          ]
+        },
+        "region": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "Bydel Sagene"
+          ]
+        },
+        "postnummer": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "0175"
+          ]
+        },
+        "poststed": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "OSLO"
+          ]
+        },
+        "landkode": {
+          "$ref": "#/definitions/nullable-landkode"
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "pattern": "(http(s)?:\\/\\/.)?(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+      "examples": [
+        "http://rina-url.local/"
+      ]
     },
     "ustrukturertAdresse": {
       "type": "object",
