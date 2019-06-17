@@ -608,20 +608,6 @@
         "term": "Gift"
       },
       "erEgenAnsatt": false,
-      "bostedsadresse": {
-        "gateadresse": {
-          "gatenavn": "Waldemar Thranses gate",
-          "gatenummer": 98,
-          "husnummer": null,
-          "husbokstav": "C"
-        },
-        "postnr": "0175",
-        "poststed": "OSLO",
-        "land": {
-          "kode": "NO",
-          "term": "Norge"
-        }
-      },
       "personStatus": {
         "kode": "BOSA",
         "term": "Bosatt"
@@ -647,25 +633,165 @@
             "term": "Ektefelle til"
           }
         }
-      ],
-      "postadresse": {
-        "adresselinjer": [
-          "Sannergata 2",
-          "0557 OSLO"
-        ],
-        "landkode": "NO"
-      },
-      "midlertidigPostadresse": {
-        "adressetype": "STRUKTURERT",
-        "strukturertAdresse": {
-          "gatenavn": "Sannergata",
-          "husnummer": "2",
-          "region": null,
-          "postnummer": "0557",
-          "poststed": "OSLO",
-          "landkode": "NO"
+      ]
+    },
+    "personhistorikk": {
+      "bostedsadressePerioder": [
+        {
+          "bostedsadresse": {
+            "gateadresse": {
+              "gatenavn": "Waldemar Thranses gate",
+              "gatenummer": 98,
+              "husnummer": null,
+              "husbokstav": "C"
+            },
+            "postnr": "0175",
+            "poststed": "OSLO",
+            "land": {
+              "kode": "NO",
+              "term": "Norge"
+            }
+          },
+          "periode": {
+            "fom": "2018-03-12",
+            "tom": "2020-03-12"
+          }
+        },
+        {
+          "bostedsadresse": {
+            "gateadresse": {
+              "gatenavn": "Waldemar Thranses gate",
+              "gatenummer": 98,
+              "husnummer": null,
+              "husbokstav": "C"
+            },
+            "postnr": "0175",
+            "poststed": "OSLO",
+            "land": {
+              "kode": "NO",
+              "term": "Norge"
+            }
+          },
+          "periode": {
+            "fom": "2015-03-12",
+            "tom": "2017-03-12"
+          }
+        },
+        {
+          "bostedsadresse": {
+            "gateadresse": {
+              "gatenavn": "Waldemar Thranses gate",
+              "gatenummer": 98,
+              "husnummer": null,
+              "husbokstav": "C"
+            },
+            "postnr": "0175",
+            "poststed": "OSLO",
+            "land": {
+              "kode": "NO",
+              "term": "Norge"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
         }
-      }
+      ],
+      "postadressePerioder": [
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        }
+      ],
+      "midlertidigAdressePerioder": [
+        {
+          "midlertidigAdresse": {
+            "adressetype": "STRUKTURERT",
+            "strukturertAdresse": {
+              "gatenavn": "Sannergata",
+              "husnummer": "2",
+              "region": null,
+              "postnummer": "0557",
+              "poststed": "OSLO",
+              "landkode": "NO"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "midlertidigAdresse": {
+            "adressetype": "STRUKTURERT",
+            "strukturertAdresse": {
+              "gatenavn": "Sannergata",
+              "husnummer": "2",
+              "region": null,
+              "postnummer": "0557",
+              "poststed": "OSLO",
+              "landkode": "NO"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "midlertidigAdresse": {
+            "adressetype": "STRUKTURERT",
+            "strukturertAdresse": {
+              "gatenavn": "Sannergata",
+              "husnummer": "2",
+              "region": null,
+              "postnummer": "0557",
+              "poststed": "OSLO",
+              "landkode": "NO"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        }
+      ]
     },
     "sakOgBehandling": {
       "eosBarnetrygd": true

@@ -22,20 +22,6 @@
         "kode": "K",
         "term": "Kvinne"
       },
-      "bostedsadresse": {
-        "gateadresse": {
-          "gatenummer": null,
-          "husbokstav": null,
-          "husnummer": null,
-          "gatenavn": "Lunderhaugen 1"
-        },
-        "postnr": "3202",
-        "poststed": "SANDEFJORD",
-        "land": {
-          "kode": "NO",
-          "term": "Norge"
-        }
-      },
       "foedselsdato": "1978-11-17",
       "erEgenAnsatt": true,
       "familiemedlemmer": [
@@ -64,6 +50,51 @@
           }
         }
       ]
+    },
+    "personhistorikk": {
+      "bostedsadressePerioder": [],
+      "postadressePerioder": [
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        }
+      ],
+      "midlertidigAdressePerioder": []
     },
     "arbeidsforhold": [
       {
