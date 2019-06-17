@@ -66,7 +66,6 @@
         "medlemskap",
         "organisasjoner",
         "person",
-        "personhistorikk",
         "sakOgBehandling",
         "sed"
       ],
@@ -1029,6 +1028,7 @@
           "additionalProperties": false,
           "required": [
             "erEgenAnsatt",
+            "bostedsadresse",
             "personStatus",
             "sammensattNavn",
             "kjoenn",
@@ -1049,6 +1049,94 @@
                 false,
                 true
               ]
+            },
+            "bostedsadresse": {
+              "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse",
+              "type": "object",
+              "title": "The Bostedsadresse Schema",
+              "additionalProperties": false,
+              "required": [
+                "gateadresse",
+                "postnr",
+                "poststed",
+                "land"
+              ],
+              "properties": {
+                "gateadresse": {
+                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse",
+                  "type": "object",
+                  "title": "The Gateadresse Schema",
+                  "additionalProperties": false,
+                  "required": [
+                    "gatenavn",
+                    "gatenummer",
+                    "husnummer",
+                    "husbokstav"
+                  ],
+                  "properties": {
+                    "gatenavn": {
+                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/gatenavn",
+                      "type": ["string","null"],
+                      "title": "The Gatenavn Schema",
+                      "default": null,
+                      "examples": [
+                        null
+                      ]
+                    },
+                    "gatenummer": {
+                      "title": "The Gatenummer Schema",
+                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/gatenummer",
+                      "type": ["integer","null"],
+                      "default": null,
+                      "examples": [
+                        null
+                      ]
+                    },
+                    "husnummer": {
+                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/husnummer",
+                      "type": ["integer","null"],
+                      "title": "The Husnummer Schema",
+                      "default": null,
+                      "examples": [
+                        null,
+                        "1"
+                      ]
+                    },
+                    "husbokstav": {
+                      "title": "The Husbokstav Schema",
+                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/husbokstav",
+                      "type": ["string","null"],
+                      "default": null,
+                      "examples": [
+                        null
+                      ]
+                    }
+                  }
+                },
+                "postnr": {
+                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/postnr",
+                  "type": ["string","null"],
+                  "title": "The Postnr Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "poststed": {
+                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/poststed",
+                  "type": ["string","null"],
+                  "title": "The poststed Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "land": {
+                  "title": "The Land Schema",
+                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/land",
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                }
+              }
             },
             "personStatus": {
               "title": "The Personstatus Schema",
@@ -1131,74 +1219,14 @@
                   }
                 }
               }
-            }
-          }
-        },
-        "personhistorikk": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "bostedsadressePerioder",
-            "postadressePerioder",
-            "midlertidigAdressePerioder"
-          ],
-          "properties": {
-            "bostedsadressePerioder": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "bostedsadresse",
-                  "periode"
-                ],
-                "properties": {
-                  "bostedsadresse": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
-                  },
-                  "periode": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-                  }
-                }
-              }
             },
-            "postadressePerioder": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "postadresse",
-                  "periode"
-                ],
-                "properties": {
-                  "postadresse": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
-                  },
-                  "periode": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-                  }
-                }
-              }
+            "postadresse": {
+              "$id": "#/properties/postadresse",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
             },
-            "midlertidigAdressePerioder": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "midlertidigAdresse",
-                  "periode"
-                ],
-                "properties": {
-                  "midlertidigAdresse": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
-                  },
-                  "periode": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
-                  }
-                }
-              }
+            "midlertidigPostadresse": {
+              "$id": "#/properties/midlertidigPostadresse",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
             }
           }
         },

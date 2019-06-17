@@ -2,6 +2,7 @@
   "behandlingID" : 4,
   "soeknadDokument" : {
     "bosted" : {
+      "adresseIUtlandet" : true,
       "intensjonOmRetur" : true,
       "antallMaanederINorge" : 8,
       "oppgittAdresse" : {
@@ -11,7 +12,8 @@
         "husnummer": "1",
         "region": null,
         "gatenavn" : "Gateadressen"
-      }
+      },
+      "familiesBostedLandkode" : "SE"
     },
     "foretakUtland" : [
       {
@@ -110,8 +112,10 @@
       "oppholdslandkoder" : [
         "DK"
       ],
+      "sammeAdresseSomArbeidsgiver" : true,
       "studentSemester" : "2018/2019",
       "studentFinansieringKode" : "LAANEKASSEN",
+      "forutgaendeBostedINorge": true,
       "oppholdsPeriode" : {
         "fom" : "2018-01-01",
         "tom" : "2018-06-01"

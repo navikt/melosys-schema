@@ -196,6 +196,8 @@
             "oppholdslandkoder",
             "oppholdsPeriode",
             "ektefelleEllerBarnINorge",
+            "sammeAdresseSomArbeidsgiver",
+            "forutgaendeBostedINorge",
             "studentFinansieringKode",
             "studentSemester"
           ],
@@ -231,6 +233,24 @@
                 true
               ]
             },
+            "sammeAdresseSomArbeidsgiver": {
+              "$id": "#/definitions/soeknadDokument/properties/oppholdUtland/properties/sammeAdresseSomArbeidsgiver",
+              "type": ["boolean","null"],
+              "title": "The Sammeadressesomarbeidsgiver Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "forutgaendeBostedINorge": {
+              "$id": "#/definitions/soeknadDokument/properties/oppholdUtland/properties/forutgaendeBostedINorge",
+              "type": ["boolean","null"],
+              "title": "The ForutgaendeBostedINorge Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
             "studentFinansieringKode": {
               "$id": "#/definitions/soeknadDokument/properties/oppholdUtland/properties/studentFinansieringKode",
               "type": ["string","null"],
@@ -260,7 +280,9 @@
           "additionalProperties": false,
           "required": [
             "intensjonOmRetur",
+            "familiesBostedLandkode",
             "antallMaanederINorge",
+            "adresseIUtlandet",
             "oppgittAdresse"
           ],
           "properties": {
@@ -273,6 +295,16 @@
                 true
               ]
             },
+            "familiesBostedLandkode": {
+              "$id": "#/definitions/soeknadDokument/properties/bosted/properties/familiesBostedLandkode",
+              "type": ["string","null"],
+              "title": "The Familiesbostedlandkode Schema",
+              "default": "",
+              "examples": [
+                "SE"
+              ],
+              "pattern": "^(.*)$"
+            },
             "antallMaanederINorge": {
               "$id": "#/definitions/soeknadDokument/properties/bosted/properties/antallMaanederINorge",
               "type": ["integer","null"],
@@ -280,6 +312,15 @@
               "default": 0,
               "examples": [
                 8
+              ]
+            },
+            "adresseIUtlandet": {
+              "$id": "#/definitions/soeknadDokument/properties/bosted/properties/adresseIUtlandet",
+              "type": ["boolean","null"],
+              "title": "The Adresseiutlandet Schema",
+              "default": false,
+              "examples": [
+                true
               ]
             },
             "oppgittAdresse": {
