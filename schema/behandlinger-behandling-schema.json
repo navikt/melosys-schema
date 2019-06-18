@@ -1232,7 +1232,7 @@
             "rinaDokumentID",
             "fnr",
             "lovvalgsperiode",
-            "lovvalgsbestemmelse",
+            "lovvalgsBestemmelse",
             "lovvalgslandKode",
             "erEnding",
             "statsborgerskapKoder"
@@ -1259,14 +1259,10 @@
               "pattern": "^(.*)$"
             },
             "fnr": {
-              "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
-              "type": "string",
               "title": "The Fnr Schema",
-              "default": "",
-              "examples": [
-                "28106600300"
-              ],
-              "pattern": "^(.*)$"
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+
             },
             "lovvalgsperiode": {
               "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode",
@@ -1300,10 +1296,10 @@
                 }
               }
             },
-            "lovvalgsbestemmelse": {
-              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsbestemmelse",
+            "lovvalgsBestemmelse": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsBestemmelse",
               "type": "string",
-              "title": "The Lovvalgsbestemmelse Schema",
+              "title": "The lovvalgsBestemmelse Schema",
               "default": "",
               "examples": [
                 "FO_883_2004_ART12_1"

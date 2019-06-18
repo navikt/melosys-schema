@@ -57,8 +57,8 @@
       "behandling": {
         "behandlingID": 3,
         "behandlingstype": {
-          "kode": "PAASTAND_UTL",
-          "term": "Melding fra utenlandsk myndighet"
+          "kode": "UNNTAK_FRA_MEDLEMSKAP",
+          "term": "Registrering av unntak"
         },
         "behandlingsstatus": {
           "kode": "OPPRETTET",
