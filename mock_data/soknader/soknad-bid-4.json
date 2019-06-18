@@ -44,17 +44,13 @@
         "fom": "2018-01-01",
         "tom": "2018-06-01"
       },
-      "forutgaendeBostedINorge": true,
       "ektefelleEllerBarnINorge": true,
-      "sammeAdresseSomArbeidsgiver": true,
       "studentFinansieringKode": "LAANEKASSEN",
       "studentSemester": "2018/2019"
     },
     "bosted": {
       "intensjonOmRetur": true,
-      "familiesBostedLandkode": "SE",
       "antallMaanederINorge": 8,
-      "adresseIUtlandet": true,
       "oppgittAdresse": {
         "gatenavn": "Gateadressen",
         "husnummer": "14B",
