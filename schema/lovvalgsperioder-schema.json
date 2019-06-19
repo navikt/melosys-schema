@@ -37,7 +37,7 @@
       "lovvalgsbestemmelse": {
         "$id": "#/items/properties/lovvalgsbestemmelse",
         "type": ["string", "null"],
-        "title": "The LovvalgBestemmelse Schema",
+        "title": "The Lovvalgsbestemmelse Schema",
         "default": "",
         "examples": [
           "ART16_1"
