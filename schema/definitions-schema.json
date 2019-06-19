@@ -55,7 +55,6 @@
         "lovvalgBestemmelse",
         "tilleggBestemmelse",
         "unntakFraBestemmelse",
-        "innvilgelsesResultat",
         "lovvalgsland",
         "unntakFraLovvalgsland",
         "medlemskapsperiodeID"
@@ -86,7 +85,6 @@
           },
           "unntakFraLovvalgsland": {
             "type": ["string", "null"],
-            "title": "The UnntakFraLovvalgsland Schema",
             "pattern": "^(.*)$"
           },
           "medlemskapsperiodeID": {
