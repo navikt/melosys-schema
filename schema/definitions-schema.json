@@ -58,8 +58,6 @@
         "innvilgelsesResultat",
         "lovvalgsland",
         "unntakFraLovvalgsland",
-        "trygdeDekning",
-        "medlemskapstype",
         "medlemskapsperiodeID"
       ],
       "properties": {
@@ -89,14 +87,6 @@
           "unntakFraLovvalgsland": {
             "type": ["string", "null"],
             "title": "The UnntakFraLovvalgsland Schema",
-            "pattern": "^(.*)$"
-          },
-          "trygdeDekning": {
-            "type": ["string", "null"],
-            "pattern": "^(.*)$"
-          },
-          "medlemskapstype": {
-            "type": ["string", "null"],
             "pattern": "^(.*)$"
           },
           "medlemskapsperiodeID": {
