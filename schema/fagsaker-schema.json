@@ -44,14 +44,7 @@
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
     },
     "saksnummer": {
-      "$id": "#/properties/saksnummer",
-      "type": "string",
-      "title": "The Saksnummer Schema",
-      "default": "",
-      "examples": [
-        "MEL-1"
-      ],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/saksnummer"
     }
   }
 }

@@ -1,0 +1,371 @@
+{
+  "behandlingID": 8,
+  "redigerbart": true,
+  "saksopplysninger": {
+    "person": {
+      "fnr": "19018803960",
+      "statsborgerskap": {
+        "kode": "NOR",
+        "term": "NORGE"
+      },
+      "sammensattNavn": "Busk Smekker",
+      "familiemedlemmer": [],
+      "sivilstand": {
+        "kode": "GIFT",
+        "term": "Gift"
+      },
+      "statsborgerskapDato": "2018-10-02",
+      "erEgenAnsatt": false,
+      "kjoenn": {
+        "kode": "M",
+        "term": "Mann"
+      },
+      "foedselsdato": "1988-01-19",
+      "personStatus": {
+        "kode": "BOSA",
+        "term": "Bosatt"
+      }
+    },
+    "personhistorikk": {
+      "bostedsadressePerioder": [
+        {
+          "bostedsadresse": {
+            "gateadresse": {
+              "gatenavn": "Waldemar Thranses gate",
+              "gatenummer": 98,
+              "husnummer": null,
+              "husbokstav": "C"
+            },
+            "postnr": "0175",
+            "poststed": "OSLO",
+            "land": {
+              "kode": "NO",
+              "term": "Norge"
+            }
+          },
+          "periode": {
+            "fom": "2018-03-12",
+            "tom": "2020-03-12"
+          }
+        },
+        {
+          "bostedsadresse": {
+            "gateadresse": {
+              "gatenavn": "Waldemar Thranses gate",
+              "gatenummer": 98,
+              "husnummer": null,
+              "husbokstav": "C"
+            },
+            "postnr": "0175",
+            "poststed": "OSLO",
+            "land": {
+              "kode": "NO",
+              "term": "Norge"
+            }
+          },
+          "periode": {
+            "fom": "2015-03-12",
+            "tom": "2017-03-12"
+          }
+        },
+        {
+          "bostedsadresse": {
+            "gateadresse": {
+              "gatenavn": "Waldemar Thranses gate",
+              "gatenummer": 98,
+              "husnummer": null,
+              "husbokstav": "C"
+            },
+            "postnr": "0175",
+            "poststed": "OSLO",
+            "land": {
+              "kode": "NO",
+              "term": "Norge"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        }
+      ],
+      "postadressePerioder": [
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "postadresse": {
+            "adresselinjer": [
+              "Sannergata 2",
+              "0557 OSLO"
+            ],
+            "landkode": "NO"
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        }
+      ],
+      "midlertidigAdressePerioder": [
+        {
+          "midlertidigAdresse": {
+            "adressetype": "STRUKTURERT",
+            "strukturertAdresse": {
+              "gatenavn": "Sannergata",
+              "husnummer": "2",
+              "region": null,
+              "postnummer": "0557",
+              "poststed": "OSLO",
+              "landkode": "NO"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "midlertidigAdresse": {
+            "adressetype": "STRUKTURERT",
+            "strukturertAdresse": {
+              "gatenavn": "Sannergata",
+              "husnummer": "2",
+              "region": null,
+              "postnummer": "0557",
+              "poststed": "OSLO",
+              "landkode": "NO"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        },
+        {
+          "midlertidigAdresse": {
+            "adressetype": "STRUKTURERT",
+            "strukturertAdresse": {
+              "gatenavn": "Sannergata",
+              "husnummer": "2",
+              "region": null,
+              "postnummer": "0557",
+              "poststed": "OSLO",
+              "landkode": "NO"
+            }
+          },
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          }
+        }
+      ]
+    },
+    "arbeidsforhold": [],
+    "organisasjoner": [
+      {
+        "orgnr": "991779434",
+        "navn": "COLOR LINE CREW AS",
+        "oppstartdato": null,
+        "organisasjonsform": "Aksjeselskap",
+        "forretningsadresse": {
+          "gateadresse": {
+            "gatenavn": "Hjortneskaia",
+            "gatenummer": null,
+            "husnummer": null,
+            "husbokstav": null
+          },
+          "postnr": "0250",
+          "poststed": "OSLO",
+          "land": "NORGE"
+        },
+        "postadresse": {
+          "gateadresse": {
+            "gatenavn": "Postboks 1422 Vika",
+            "gatenummer": null,
+            "husnummer": null,
+            "husbokstav": null
+          },
+          "postnr": "0115",
+          "poststed": "OSLO",
+          "land": "NORGE"
+        }
+      }
+    ],
+    "medlemskap": {
+      "medlemsperiode": []
+    },
+    "inntekt": {
+      "arbeidsInntektMaanedListe": [
+        {
+          "aarMaaned": "2017-12",
+          "arbeidsInntektInformasjon": {
+            "inntektListe": [
+              {
+                "beloep": 21212,
+                "fordel": "kontantytelse",
+                "inntektskilde": "A-ordningen",
+                "inntektsperiodetype": "Maaned",
+                "inntektsstatus": "LoependeInnrapportert",
+                "levereringstidspunkt": "2018-10-02T09:04:39.109",
+                "opptjeningsland": null,
+                "opptjeningsperiode": {
+                  "fom": null,
+                  "tom": null
+                },
+                "utbetaltIPeriode": "2017-12",
+                "opplysningspliktigID": "991779434",
+                "virksomhetID": "991779434",
+                "inntektsmottakerID": "19018803960",
+                "inngaarIGrunnlagForTrekk": true,
+                "utloeserArbeidsgiveravgift": true,
+                "informasjonsstatus": "InngaarAlltid",
+                "beskrivelse": "timeloenn"
+              }
+            ]
+          }
+        },
+        {
+          "aarMaaned": "2017-11",
+          "arbeidsInntektInformasjon": {
+            "inntektListe": [
+              {
+                "beloep": 21111,
+                "fordel": "kontantytelse",
+                "inntektskilde": "A-ordningen",
+                "inntektsperiodetype": "Maaned",
+                "inntektsstatus": "LoependeInnrapportert",
+                "levereringstidspunkt": "2018-10-02T09:04:39.109",
+                "opptjeningsland": null,
+                "opptjeningsperiode": {
+                  "fom": null,
+                  "tom": null
+                },
+                "utbetaltIPeriode": "2017-11",
+                "opplysningspliktigID": "991779434",
+                "virksomhetID": "991779434",
+                "inntektsmottakerID": "19018803960",
+                "inngaarIGrunnlagForTrekk": true,
+                "utloeserArbeidsgiveravgift": true,
+                "informasjonsstatus": "InngaarAlltid",
+                "beskrivelse": "timeloenn"
+              }
+            ]
+          }
+        },
+        {
+          "aarMaaned": "2017-10",
+          "arbeidsInntektInformasjon": {
+            "inntektListe": [
+              {
+                "beloep": 21010,
+                "fordel": "kontantytelse",
+                "inntektskilde": "A-ordningen",
+                "inntektsperiodetype": "Maaned",
+                "inntektsstatus": "LoependeInnrapportert",
+                "levereringstidspunkt": "2018-10-02T09:04:39.109",
+                "opptjeningsland": null,
+                "opptjeningsperiode": {
+                  "fom": null,
+                  "tom": null
+                },
+                "utbetaltIPeriode": "2017-10",
+                "opplysningspliktigID": "991779434",
+                "virksomhetID": "991779434",
+                "inntektsmottakerID": "19018803960",
+                "inngaarIGrunnlagForTrekk": true,
+                "utloeserArbeidsgiveravgift": true,
+                "informasjonsstatus": "InngaarAlltid",
+                "beskrivelse": "timeloenn"
+              }
+            ]
+          }
+        }
+      ],
+      "frilansInntektMaanedListe": [
+        {
+          "aarMaaned": "2017-12",
+          "frilansInntektInformasjon": {
+            "arbeidsforholdFrilanserListe": [
+              {
+                "frilansPeriode": {
+                  "fom": "2017-07-01",
+                  "tom": "2017-12-31"
+                },
+                "yrke": "YrkeMcYrkeface"
+              }
+            ]
+          }
+        },
+        {
+          "aarMaaned": "2017-11",
+          "frilansInntektInformasjon": {
+            "arbeidsforholdFrilanserListe": [
+              {
+                "frilansPeriode": {
+                  "fom": "2017-07-01",
+                  "tom": null
+                },
+                "yrke": ""
+              }
+            ]
+          }
+        },
+        {
+          "aarMaaned": "2017-10",
+          "frilansInntektInformasjon": {
+            "arbeidsforholdFrilanserListe": [
+              {
+                "frilansPeriode": {
+                  "fom": "2017-07-01",
+                  "tom": null
+                },
+                "yrke": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "sakOgBehandling": {
+      "eosBarnetrygd": false
+    },
+    "sed": null
+  },
+  "oppsummering": {
+    "behandlingsstatus": {
+      "kode": "OPPRETTET",
+      "term": "Opprettet"
+    },
+    "behandlingstype": {
+      "kode": "SOEKNAD",
+      "term": "Søknad"
+    },
+    "registrertDato": "2018-10-02T07:04:35.403Z",
+    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+    "endretDato": "2018-10-02T07:04:35.403Z"
+  }
+}

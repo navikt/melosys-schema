@@ -1,0 +1,43 @@
+{
+  "definitions": {
+    "ikkeGodkjentBegrunnelseKoder": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["UTSENDELSE_OVER_24_MD", "TREDJELANDSBORGER_IKKE_AVTALELAND", "ANNET"],
+        "examples": [
+          "UTSENDELSE_OVER_24_MD",
+          "TREDJELANDSBORGER_IKKE_AVTALELAND",
+          "ANNET"
+        ]
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/saksflyt-unntaksperiode-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "ikkeGodkjentBegrunnelseKoder",
+    "begrunnelseFritekst"
+  ],
+  "properties": {
+    "ikkeGodkjentBegrunnelseKoder": {
+      "$ref": "#/definitions/ikkeGodkjentBegrunnelseKoder"
+    },
+    "begrunnelseFritekst": {
+      "$id": "#/properties/begrunnelseFritekst",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Begrunnelsefritekst Schema",
+      "default": "",
+      "examples": [
+        "tralala", null
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

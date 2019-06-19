@@ -1,649 +1,117 @@
 {
-  "definitions": {},
+  "definitions": {
+    "nullable-kodeverk": {
+      "type": "object",
+      "title": "The Kodeverk Schema",
+      "additionalProperties": false,
+      "required": [
+        "kode",
+        "term"
+      ],
+      "properties": {
+        "kode": {
+          "type": ["string", "null"],
+          "title": "The Kode Schema",
+          "default": "",
+          "examples": [
+            "OPPRETTET"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "term": {
+          "type": ["string", "null"],
+          "title": "The Term Schema",
+          "default": "",
+          "examples": [
+            "Opprettet"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/root.json",
+  "$id": "http://melosys.nav.no/schemas/behandlinger-behandling-schema.json",
   "type": "object",
   "title": "The Root Schema",
+  "additionalProperties": false,
   "required": [
+    "behandlingID",
     "redigerbart",
-    "oppsummering",
     "saksopplysninger",
-    "behandlingshistorikk"
+    "oppsummering"
   ],
   "properties": {
+    "behandlingID": {
+      "$id": "#/properties/behandlingID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+    },
     "redigerbart": {
       "$id": "#/properties/redigerbart",
       "type": "boolean",
       "title": "The Redigerbart Schema",
       "default": false,
       "examples": [
-        true
+        true, false
       ]
-    },
-    "oppsummering": {
-      "$id": "#/properties/oppsummering",
-      "type": "object",
-      "title": "The Oppsummering Schema",
-      "required": [
-        "behandlingstype",
-        "behandlingsstatus",
-        "registrertDato",
-        "sisteOpplysningerHentetDato",
-        "endretDato"
-      ],
-      "properties": {
-        "behandlingstype": {
-          "$id": "#/properties/oppsummering/properties/behandlingstype",
-          "type": "object",
-          "title": "The Behandlingstype Schema",
-          "required": [
-            "kode",
-            "term"
-          ],
-          "properties": {
-            "kode": {
-              "$id": "#/properties/oppsummering/properties/behandlingstype/properties/kode",
-              "type": "string",
-              "title": "The Kode Schema",
-              "default": "",
-              "examples": [
-                "SOEKNAD"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "term": {
-              "$id": "#/properties/oppsummering/properties/behandlingstype/properties/term",
-              "type": "string",
-              "title": "The Term Schema",
-              "default": "",
-              "examples": [
-                "Søknad"
-              ],
-              "pattern": "^(.*)$"
-            }
-          }
-        },
-        "behandlingsstatus": {
-          "$id": "#/properties/oppsummering/properties/behandlingsstatus",
-          "type": "object",
-          "title": "The Behandlingsstatus Schema",
-          "required": [
-            "kode",
-            "term"
-          ],
-          "properties": {
-            "kode": {
-              "$id": "#/properties/oppsummering/properties/behandlingsstatus/properties/kode",
-              "type": "string",
-              "title": "The Kode Schema",
-              "default": "",
-              "examples": [
-                "OPPRETTET"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "term": {
-              "$id": "#/properties/oppsummering/properties/behandlingsstatus/properties/term",
-              "type": "string",
-              "title": "The Term Schema",
-              "default": "",
-              "examples": [
-                "Opprettet"
-              ],
-              "pattern": "^(.*)$"
-            }
-          }
-        },
-        "registrertDato": {
-          "$id": "#/properties/oppsummering/properties/registrertDato",
-          "type": "string",
-          "title": "The Registrertdato Schema",
-          "default": "",
-          "examples": [
-            "2017-10-19T14:35:54.000Z"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "sisteOpplysningerHentetDato": {
-          "$id": "#/properties/oppsummering/properties/sisteOpplysningerHentetDato",
-          "type": "string",
-          "title": "The Sisteopplysningerhentetdato Schema",
-          "default": "",
-          "examples": [
-            "2018-08-10T15:00:00.622Z"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "endretDato": {
-          "$id": "#/properties/oppsummering/properties/endretDato",
-          "type": "string",
-          "title": "The Endretdato Schema",
-          "default": "",
-          "examples": [
-            "2017-10-19T14:35:54.000Z"
-          ],
-          "pattern": "^(.*)$"
-        }
-      }
     },
     "saksopplysninger": {
       "$id": "#/properties/saksopplysninger",
       "type": "object",
       "title": "The Saksopplysninger Schema",
+      "additionalProperties": false,
       "required": [
-        "person",
         "arbeidsforhold",
-        "organisasjoner",
-        "medlemskap",
         "inntekt",
-        "sakOgBehandling"
+        "medlemskap",
+        "organisasjoner",
+        "person",
+        "personhistorikk",
+        "sakOgBehandling",
+        "sed"
       ],
       "properties": {
-        "person": {
-          "$id": "#/properties/saksopplysninger/properties/person",
-          "type": "object",
-          "title": "The Person Schema",
-          "required": [
-            "fnr",
-            "sivilstand",
-            "statsborgerskap",
-            "statsborgerskapDato",
-            "sammensattNavn",
-            "personStatus",
-            "kjoenn",
-            "bostedsadresse",
-            "foedselsdato",
-            "erEgenAnsatt",
-            "familiemedlemmer",
-            "postadresse",
-            "midlertidigPostadresse"
-          ],
-          "properties": {
-            "fnr": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/fnr",
-              "type": "string",
-              "title": "The Fnr Schema",
-              "default": "",
-              "examples": [
-                "30098000492"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "sivilstand": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/sivilstand",
-              "type": "object",
-              "title": "The Sivilstand Schema",
-              "required": [
-                "kode",
-                "term"
-              ],
-              "properties": {
-                "kode": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/sivilstand/properties/kode",
-                  "type": "string",
-                  "title": "The Kode Schema",
-                  "default": "",
-                  "examples": [
-                    "UGIF"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "term": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/sivilstand/properties/term",
-                  "type": "string",
-                  "title": "The Term Schema",
-                  "default": "",
-                  "examples": [
-                    "Ugift"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            },
-            "statsborgerskap": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskap",
-              "type": "object",
-              "title": "The Statsborgerskap Schema",
-              "required": [
-                "kode",
-                "term"
-              ],
-              "properties": {
-                "kode": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskap/properties/kode",
-                  "type": "string",
-                  "title": "The Kode Schema",
-                  "default": "",
-                  "examples": [
-                    "NO"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "term": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskap/properties/term",
-                  "type": "string",
-                  "title": "The Term Schema",
-                  "default": "",
-                  "examples": [
-                    "Norge"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            },
-            "statsborgerskapDato": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskapDato",
-              "type": "string",
-              "title": "The Statsborgerskapdato Schema",
-              "default": "",
-              "examples": [
-                "2018-01-01"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "sammensattNavn": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/sammensattNavn",
-              "type": "string",
-              "title": "The Sammensattnavn Schema",
-              "default": "",
-              "examples": [
-                "LILLA HEST"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "personStatus": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/personStatus",
-              "type": "object",
-              "title": "The Personstatus Schema",
-              "required": [
-                "kode",
-                "term"
-              ],
-              "properties": {
-                "kode": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/personStatus/properties/kode",
-                  "type": "string",
-                  "title": "The Kode Schema",
-                  "default": "",
-                  "examples": [
-                    "BOSA"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "term": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/personStatus/properties/term",
-                  "type": "string",
-                  "title": "The Term Schema",
-                  "default": "",
-                  "examples": [
-                    "Bosatt"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            },
-            "kjoenn": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/kjoenn",
-              "type": "object",
-              "title": "The Kjoenn Schema",
-              "required": [
-                "kode",
-                "term"
-              ],
-              "properties": {
-                "kode": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/kjoenn/properties/kode",
-                  "type": "string",
-                  "title": "The Kode Schema",
-                  "default": "",
-                  "examples": [
-                    "M"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "term": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/kjoenn/properties/term",
-                  "type": "string",
-                  "title": "The Term Schema",
-                  "default": "",
-                  "examples": [
-                    "Mann"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            },
-            "bostedsadresse": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse",
-              "type": "object",
-              "title": "The Bostedsadresse Schema",
-              "required": [
-                "gateadresse",
-                "postnr",
-                "poststed",
-                "land"
-              ],
-              "properties": {
-                "gateadresse": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse",
-                  "type": "object",
-                  "title": "The Gateadresse Schema",
-                  "required": [
-                    "gatenummer",
-                    "husbokstav",
-                    "husnummer",
-                    "gatenavn"
-                  ],
-                  "properties": {
-                    "gatenummer": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/gatenummer",
-                      "type": "null",
-                      "title": "The Gatenummer Schema",
-                      "default": null,
-                      "examples": [
-                        null
-                      ]
-                    },
-                    "husbokstav": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/husbokstav",
-                      "type": "null",
-                      "title": "The Husbokstav Schema",
-                      "default": null,
-                      "examples": [
-                        null
-                      ]
-                    },
-                    "husnummer": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/husnummer",
-                      "type": "integer",
-                      "title": "The Husnummer Schema",
-                      "default": 0,
-                      "examples": [
-                        1
-                      ]
-                    },
-                    "gatenavn": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/gateadresse/properties/gatenavn",
-                      "type": "string",
-                      "title": "The Gatenavn Schema",
-                      "default": "",
-                      "examples": [
-                        "Lunderhaugen"
-                      ],
-                      "pattern": "^(.*)$"
-                    }
-                  }
-                },
-                "postnr": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/postnr",
-                  "type": "string",
-                  "title": "The Postnr Schema",
-                  "default": "",
-                  "examples": [
-                    "3202"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "poststed": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/poststed",
-                  "type": "string",
-                  "title": "The Poststed Schema",
-                  "default": "",
-                  "examples": [
-                    "SANDEFJORD"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "land": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/land",
-                  "type": "object",
-                  "title": "The Land Schema",
-                  "required": [
-                    "kode",
-                    "term"
-                  ],
-                  "properties": {
-                    "kode": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/land/properties/kode",
-                      "type": "string",
-                      "title": "The Kode Schema",
-                      "default": "",
-                      "examples": [
-                        "NO"
-                      ],
-                      "pattern": "^(.*)$"
-                    },
-                    "term": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/bostedsadresse/properties/land/properties/term",
-                      "type": "string",
-                      "title": "The Term Schema",
-                      "default": "",
-                      "examples": [
-                        "Norge"
-                      ],
-                      "pattern": "^(.*)$"
-                    }
-                  }
-                }
-              }
-            },
-            "foedselsdato": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/foedselsdato",
-              "type": "string",
-              "title": "The Foedselsdato Schema",
-              "default": "",
-              "examples": [
-                "1972-11-19"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "erEgenAnsatt": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/erEgenAnsatt",
-              "type": "boolean",
-              "title": "The Eregenansatt Schema",
-              "default": false,
-              "examples": [
-                true
-              ]
-            },
-            "familiemedlemmer": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer",
-              "type": "array",
-              "title": "The Familiemedlemmer Schema",
-              "items": {
-                "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items",
-                "type": "object",
-                "title": "The Items Schema",
-                "required": [
-                  "fnr",
-                  "sammensattNavn",
-                  "relasjonstype"
-                ],
-                "properties": {
-                  "fnr": {
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/fnr",
-                    "type": "string",
-                    "title": "The Fnr Schema",
-                    "default": "",
-                    "examples": [
-                      "10100638274"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "sammensattNavn": {
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/sammensattNavn",
-                    "type": "string",
-                    "title": "The Sammensattnavn Schema",
-                    "default": "",
-                    "examples": [
-                      "GIRAFF MAGER"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "relasjonstype": {
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/relasjonstype",
-                    "type": "object",
-                    "title": "The Relasjonstype Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/relasjonstype/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "BARN"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/relasjonstype/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Barn Av"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "postadresse": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/postadresse",
-              "type": "object",
-              "title": "The Postadresse Schema",
-              "required": [
-                "adresselinjer",
-                "landkode"
-              ],
-              "properties": {
-                "adresselinjer": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/postadresse/properties/adresselinjer",
-                  "type": "array",
-                  "title": "The Adresselinjer Schema",
-                  "items": {
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/postadresse/properties/adresselinjer/items",
-                    "type": "string",
-                    "title": "The Items Schema",
-                    "default": "",
-                    "examples": [
-                      "Ardenham Court",
-                      "Oxford Road",
-                      "AYLESBURY",
-                      "BUCKINGHAMSHIRE",
-                      "HP19 3EQ"
-                    ],
-                    "pattern": "^(.*)$"
-                  }
-                },
-                "landkode": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/postadresse/properties/landkode",
-                  "type": "string",
-                  "title": "The Landkode Schema",
-                  "default": "",
-                  "examples": [
-                    "UK"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            },
-            "midlertidigPostadresse": {
-              "$id": "#/properties/saksopplysninger/properties/person/properties/midlertidigPostadresse",
-              "type": "object",
-              "title": "The Midlertidigpostadresse Schema",
-              "required": [
-                "adressetype",
-                "ustrukturertAdresse"
-              ],
-              "properties": {
-                "adressetype": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/midlertidigPostadresse/properties/adressetype",
-                  "type": "string",
-                  "title": "The Adressetype Schema",
-                  "default": "",
-                  "examples": [
-                    "USTRUKTURERT"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "ustrukturertAdresse": {
-                  "$id": "#/properties/saksopplysninger/properties/person/properties/midlertidigPostadresse/properties/ustrukturertAdresse",
-                  "type": "object",
-                  "title": "The Ustrukturertadresse Schema",
-                  "required": [
-                    "adresselinjer",
-                    "landkode"
-                  ],
-                  "properties": {
-                    "adresselinjer": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/midlertidigPostadresse/properties/ustrukturertAdresse/properties/adresselinjer",
-                      "type": "array",
-                      "title": "The Adresselinjer Schema",
-                      "items": {
-                        "$id": "#/properties/saksopplysninger/properties/person/properties/midlertidigPostadresse/properties/ustrukturertAdresse/properties/adresselinjer/items",
-                        "type": "string",
-                        "title": "The Items Schema",
-                        "default": "",
-                        "examples": [
-                          "Ardenham Court",
-                          "Oxford Road",
-                          "AYLESBURY",
-                          "BUCKINGHAMSHIRE",
-                          "HP19 3EQ"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    },
-                    "landkode": {
-                      "$id": "#/properties/saksopplysninger/properties/person/properties/midlertidigPostadresse/properties/ustrukturertAdresse/properties/landkode",
-                      "type": "string",
-                      "title": "The Landkode Schema",
-                      "default": "",
-                      "examples": [
-                        "UK"
-                      ],
-                      "pattern": "^(.*)$"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "arbeidsforhold": {
           "$id": "#/properties/saksopplysninger/properties/arbeidsforhold",
           "type": "array",
           "title": "The Arbeidsforhold Schema",
+          "uniqueItems": true,
           "items": {
             "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items",
             "type": "object",
             "title": "The Items Schema",
+            "additionalProperties": false,
             "required": [
+              "Aordning",
+              "ansettelsesPeriode",
               "arbeidsforholdID",
               "arbeidsforholdIDnav",
-              "ansettelsesPeriode",
-              "arbeidsforholdstype",
               "arbeidsavtaler",
-              "permisjonOgPermittering",
-              "timerTimelonnet",
-              "utenlandsopphold",
               "arbeidsgivertype",
               "arbeidsgiverID",
+              "arbeidsforholdstype",
               "arbeidstakerID",
-              "opplysningspliktigtype",
-              "opplysningspliktigID",
               "opprettelsestidspunkt",
+              "opplysningspliktigID",
+              "permisjonOgPermittering",
+              "opplysningspliktigtype",
               "sistBekreftet",
-              "Aordning"
+              "timerTimelonnet",
+              "utenlandsopphold"
             ],
             "properties": {
+              "Aordning": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/Aordning",
+                "type": "boolean",
+                "title": "The Aordning Schema",
+                "default": false,
+                "examples": [true, false]
+              },
+              "ansettelsesPeriode": {
+                "title": "The Ansettelsesperiode Schema",
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/ansettelsesPeriode",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+              },
               "arbeidsforholdID": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsforholdID",
                 "type": "string",
@@ -660,104 +128,64 @@
                 "title": "The Arbeidsforholdidnav Schema",
                 "default": 0,
                 "examples": [
-                  12498433
+                  12498433, 44138109
                 ]
-              },
-              "ansettelsesPeriode": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/ansettelsesPeriode",
-                "type": "object",
-                "title": "The Ansettelsesperiode Schema",
-                "required": [
-                  "fom",
-                  "tom"
-                ],
-                "properties": {
-                  "fom": {
-                    "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/ansettelsesPeriode/properties/fom",
-                    "type": "string",
-                    "title": "The Fom Schema",
-                    "default": "",
-                    "examples": [
-                      "1978-08-19"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "tom": {
-                    "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/ansettelsesPeriode/properties/tom",
-                    "type": "null",
-                    "title": "The Tom Schema",
-                    "default": null,
-                    "examples": [
-                      null
-                    ]
-                  }
-                }
-              },
-              "arbeidsforholdstype": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsforholdstype",
-                "type": "string",
-                "title": "The Arbeidsforholdstype Schema",
-                "default": "",
-                "examples": [
-                  "Ordinært arbeidsforhold"
-                ],
-                "pattern": "^(.*)$"
               },
               "arbeidsavtaler": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler",
                 "type": "array",
                 "title": "The Arbeidsavtaler Schema",
+                "uniqueItems": true,
                 "items": {
                   "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items",
                   "type": "object",
                   "title": "The Items Schema",
+                  "additionalProperties": false,
                   "required": [
                     "arbeidstidsordning",
-                    "avloenningstype",
-                    "yrke",
-                    "antallTimerGammeltAa",
                     "avtaltArbeidstimerPerUke",
                     "endringsdatoStillingsprosent",
-                    "stillingsprosent",
+                    "maritimArbeidsavtale",
+                    "avloenningstype",
+                    "skipsregister",
+                    "yrke",
+                    "antallTimerGammeltAa",
+                    "fartsomraade",
                     "beregnetStillingsprosent",
                     "beregnetAntallTimerPrUke",
-                    "skipsregister",
+                    "stillingsprosent",
                     "skipstype",
-                    "maritimArbeidsavtale",
-                    "fartsomraade",
                     "gyldighetsperiode"
                   ],
                   "properties": {
                     "arbeidstidsordning": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/arbeidstidsordning",
-                      "type": "object",
                       "title": "The Arbeidstidsordning Schema",
-                      "required": [
-                        "kode",
-                        "term"
-                      ],
-                      "properties": {
-                        "kode": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/arbeidstidsordning/properties/kode",
-                          "type": "string",
-                          "title": "The Kode Schema",
-                          "default": "",
-                          "examples": [
-                            "ikkeSkift"
-                          ],
-                          "pattern": "^(.*)$"
-                        },
-                        "term": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/arbeidstidsordning/properties/term",
-                          "type": "string",
-                          "title": "The Term Schema",
-                          "default": "",
-                          "examples": [
-                            "Ikke skift"
-                          ],
-                          "pattern": "^(.*)$"
-                        }
-                      }
+                      "$ref": "#/definitions/nullable-kodeverk"
+                    },
+                    "avtaltArbeidstimerPerUke": {
+                      "title": "The Avtaltarbeidstimerperuke Schema",
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/avtaltArbeidstimerPerUke",
+                      "type": ["number","null"],
+                      "default": 37.5,
+                      "examples": [
+                        37.5,
+                        null
+                      ]
+                    },
+                    "endringsdatoStillingsprosent": {
+                      "title": "The Endringsdatostillingsprosent Schema",
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/endringsdatoStillingsprosent",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+                    },
+                    "maritimArbeidsavtale": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/maritimArbeidsavtale",
+                      "type": "boolean",
+                      "title": "The Maritimarbeidsavtale Schema",
+                      "default": false,
+                      "examples": [
+                        false
+                      ]
                     },
                     "avloenningstype": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/avloenningstype",
@@ -769,235 +197,143 @@
                       ],
                       "pattern": "^(.*)$"
                     },
+                    "skipsregister": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipsregister",
+                      "title": "The Skipsregister Schema",
+                      "$ref": "#/definitions/nullable-kodeverk"
+                    },
                     "yrke": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/yrke",
-                      "type": "object",
                       "title": "The Yrke Schema",
-                      "required": [
-                        "kode",
-                        "term"
-                      ],
-                      "properties": {
-                        "kode": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/yrke/properties/kode",
-                          "type": "string",
-                          "title": "The Kode Schema",
-                          "default": "",
-                          "examples": [
-                            "0039293"
-                          ],
-                          "pattern": "^(.*)$"
-                        },
-                        "term": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/yrke/properties/term",
-                          "type": "string",
-                          "title": "The Term Schema",
-                          "default": "",
-                          "examples": [
-                            "ALTMULIGMANN (PRIVAT)"
-                          ],
-                          "pattern": "^(.*)$"
-                        }
-                      }
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                     },
                     "antallTimerGammeltAa": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/antallTimerGammeltAa",
-                      "type": "null",
+                      "type": ["number","null"],
                       "title": "The Antalltimergammeltaa Schema",
                       "default": null,
                       "examples": [
+                        0.5,
                         null
                       ]
                     },
-                    "avtaltArbeidstimerPerUke": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/avtaltArbeidstimerPerUke",
-                      "type": "number",
-                      "title": "The Avtaltarbeidstimerperuke Schema",
-                      "default": 0.0,
-                      "examples": [
-                        37.5
-                      ]
-                    },
-                    "endringsdatoStillingsprosent": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/endringsdatoStillingsprosent",
-                      "type": "string",
-                      "title": "The Endringsdatostillingsprosent Schema",
-                      "default": "",
-                      "examples": [
-                        "2016-01-01"
-                      ],
-                      "pattern": "^(.*)$"
-                    },
-                    "stillingsprosent": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/stillingsprosent",
-                      "type": "integer",
-                      "title": "The Stillingsprosent Schema",
-                      "default": 0,
-                      "examples": [
-                        100
-                      ]
-                    },
                     "beregnetStillingsprosent": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/beregnetStillingsprosent",
-                      "type": "integer",
                       "title": "The Beregnetstillingsprosent Schema",
-                      "default": 0,
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/beregnetStillingsprosent",
+                      "type": ["number","null"],
+                      "default": 100.0,
                       "examples": [
-                        100
-                      ]
-                    },
-                    "beregnetAntallTimerPrUke": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/beregnetAntallTimerPrUke",
-                      "type": "integer",
-                      "title": "The Beregnetantalltimerpruke Schema",
-                      "default": 0,
-                      "examples": [
-                        19
-                      ]
-                    },
-                    "skipsregister": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipsregister",
-                      "type": "object",
-                      "title": "The Skipsregister Schema",
-                      "required": [
-                        "kode",
-                        "term"
-                      ],
-                      "properties": {
-                        "kode": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipsregister/properties/kode",
-                          "type": "null",
-                          "title": "The Kode Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        },
-                        "term": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipsregister/properties/term",
-                          "type": "null",
-                          "title": "The Term Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        }
-                      }
-                    },
-                    "skipstype": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipstype",
-                      "type": "object",
-                      "title": "The Skipstype Schema",
-                      "required": [
-                        "kode",
-                        "term"
-                      ],
-                      "properties": {
-                        "kode": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipstype/properties/kode",
-                          "type": "null",
-                          "title": "The Kode Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        },
-                        "term": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipstype/properties/term",
-                          "type": "null",
-                          "title": "The Term Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        }
-                      }
-                    },
-                    "maritimArbeidsavtale": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/maritimArbeidsavtale",
-                      "type": "boolean",
-                      "title": "The Maritimarbeidsavtale Schema",
-                      "default": false,
-                      "examples": [
-                        false
+                        100.0,
+                        null
                       ]
                     },
                     "fartsomraade": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/fartsomraade",
-                      "type": "object",
                       "title": "The Fartsomraade Schema",
-                      "required": [
-                        "kode",
-                        "term"
-                      ],
-                      "properties": {
-                        "kode": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/fartsomraade/properties/kode",
-                          "type": "null",
-                          "title": "The Kode Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        },
-                        "term": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/fartsomraade/properties/term",
-                          "type": "null",
-                          "title": "The Term Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        }
-                      }
+                      "$ref": "#/definitions/nullable-kodeverk"
+                    },
+                    "beregnetAntallTimerPrUke": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/beregnetAntallTimerPrUke",
+                      "type": ["number","null"],
+                      "title": "The Beregnetantalltimerpruke Schema",
+                      "default": 19,
+                      "examples": [
+                        19,
+                        null
+                      ]
+                    },
+                    "stillingsprosent": {
+                      "title": "The Stillingsprosent Schema",
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/stillingsprosent",
+                      "type": ["number","null"],
+                      "default": 100.0,
+                      "examples": [
+                        100.0,
+                        null
+                      ]
+                    },
+                    "skipstype": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/skipstype",
+                      "title": "The Skipstype Schema",
+                      "$ref": "#/definitions/nullable-kodeverk"
                     },
                     "gyldighetsperiode": {
-                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/gyldighetsperiode",
-                      "type": "object",
                       "title": "The Gyldighetsperiode Schema",
-                      "required": [
-                        "fom",
-                        "tom"
-                      ],
-                      "properties": {
-                        "fom": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/gyldighetsperiode/properties/fom",
-                          "type": "string",
-                          "title": "The Fom Schema",
-                          "default": "",
-                          "examples": [
-                            "2018-01-01"
-                          ],
-                          "pattern": "^(.*)$"
-                        },
-                        "tom": {
-                          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/gyldighetsperiode/properties/tom",
-                          "type": "null",
-                          "title": "The Tom Schema",
-                          "default": null,
-                          "examples": [
-                            null
-                          ]
-                        }
-                      }
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/gyldighetsperiode",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
                     }
                   }
                 }
               },
+              "arbeidstakerID": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidstakerID",
+                "type": "string",
+                "title": "The Arbeidstakerid Schema",
+                "default": "",
+                "examples": [
+                  "30098000492"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "opprettelsestidspunkt": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/opprettelsestidspunkt",
+                "type": "string",
+                "format": "date-time",
+                "title": "The Opprettelsestidspunkt Schema",
+                "default": "",
+                "examples": [
+                  "2018-02-18T07:32:45.797Z"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "opplysningspliktigID": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/opplysningspliktigID",
+                "type": "string",
+                "title": "The Opplysningspliktigid Schema",
+                "default": "",
+                "examples": [
+                  "810072512"
+                ],
+                "pattern": "^(.*)$"
+              },
               "permisjonOgPermittering": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering",
                 "type": "array",
-                "title": "The Permisjonogpermittering Schema"
-              },
-              "timerTimelonnet": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet",
-                "type": "array",
-                "title": "The Timertimelonnet Schema"
-              },
-              "utenlandsopphold": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold",
-                "type": "array",
-                "title": "The Utenlandsopphold Schema"
+                "title": "The Permisjonogpermittering Schema",
+                "uniqueItems": true,
+                "items": {
+                  "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items",
+                  "type": "object",
+                  "required": [
+                    "permisjonsId",
+                    "permisjonsPeriode",
+                    "permisjonsprosent",
+                    "permisjonOgPermittering"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "permisjonsId": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items/permisjonsId",
+                      "type": ["string","null"]
+                    },
+                    "permisjonsPeriode": {
+                      "title": "Arbeidsforhold permisjonsPeriode",
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items/permisjonsPeriode",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    },
+                    "permisjonsprosent": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items/permisjonsprosent",
+                      "type": ["number","null"],
+                      "examples": [
+                        "0.33"
+                      ]
+                    },
+                    "permisjonOgPermittering": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items/permisjonOgPermittering",
+                      "type": ["string","null"]
+                    }
+                  }
+                }
               },
               "arbeidsgivertype": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsgivertype",
@@ -1009,23 +345,23 @@
                 ],
                 "pattern": "^(.*)$"
               },
+              "arbeidsforholdstype": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsforholdstype",
+                "type": "string",
+                "title": "The Arbeidsforholdstype Schema",
+                "default": "",
+                "examples": [
+                  "Forenklet oppgjørsordning"
+                ],
+                "pattern": "^(.*)$"
+              },
               "arbeidsgiverID": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsgiverID",
                 "type": "string",
                 "title": "The Arbeidsgiverid Schema",
                 "default": "",
                 "examples": [
-                  "910253158"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "arbeidstakerID": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidstakerID",
-                "type": "string",
-                "title": "The Arbeidstakerid Schema",
-                "default": "",
-                "examples": [
-                  "30098000492"
+                  "910099035"
                 ],
                 "pattern": "^(.*)$"
               },
@@ -1039,44 +375,76 @@
                 ],
                 "pattern": "^(.*)$"
               },
-              "opplysningspliktigID": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/opplysningspliktigID",
-                "type": "string",
-                "title": "The Opplysningspliktigid Schema",
-                "default": "",
-                "examples": [
-                  "910253158"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "opprettelsestidspunkt": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/opprettelsestidspunkt",
-                "type": "string",
-                "title": "The Opprettelsestidspunkt Schema",
-                "default": "",
-                "examples": [
-                  "2014-12-13T15:02:35.399+01:00"
-                ],
-                "pattern": "^(.*)$"
-              },
               "sistBekreftet": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/sistBekreftet",
                 "type": "string",
+                "format": "date-time",
                 "title": "The Sistbekreftet Schema",
                 "default": "",
                 "examples": [
-                  "1979-07-15T00:00:00+01:00"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "Aordning": {
-                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/Aordning",
-                "type": "boolean",
-                "title": "The Aordning Schema",
-                "default": false,
-                "examples": [
-                  false
+                  "2018-02-18T07:32:36.000Z"
                 ]
+              },
+              "timerTimelonnet": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet",
+                "type": "array",
+                "title": "The Timertimelonnet Schema",
+                "uniqueItems": true,
+                "items": {
+                  "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items",
+                  "required": [
+                    "rapporteringsAarMaaned",
+                    "timelonnetPeriode",
+                    "antallTimer"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "rapporteringsAarMaaned": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items/rapporteringsAarMaaned",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                    },
+                    "timelonnetPeriode": {
+                      "title": "Arbeidsforhold timelonnetPeriode",
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items/timelonnetPeriode",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    },
+                    "antallTimer": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items/antallTimer",
+                      "type": ["number","null"]
+                    }
+                  }
+                }
+              },
+              "utenlandsopphold": {
+                "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold",
+                "type": "array",
+                "title": "The Utenlandsopphold Schema",
+                "uniqueItems": true,
+                "items": {
+                  "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items",
+                  "type": "object",
+                  "required": [
+                    "rapporteringsAarMaaned",
+                    "periode",
+                    "land"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "rapporteringsAarMaaned": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/rapporteringsAarMaaned",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                    },
+                    "periode": {
+                      "title": "Utenlandsk opphold periode",
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/periode",
+                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    },
+                    "land": {
+                      "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/land",
+                      "type": ["string","null"]
+                    }
+                  }
+                }
               }
             }
           }
@@ -1085,28 +453,88 @@
           "$id": "#/properties/saksopplysninger/properties/organisasjoner",
           "type": "array",
           "title": "The Organisasjoner Schema",
+          "uniqueItems": true,
           "items": {
             "$id": "#/properties/saksopplysninger/properties/organisasjoner/items",
             "type": "object",
             "title": "The Items Schema",
+            "additionalProperties": false,
             "required": [
               "orgnr",
-              "navn",
               "oppstartdato",
+              "postadresse",
               "organisasjonsform",
-              "forretningsadresse",
-              "postadresse"
+              "navn",
+              "forretningsadresse"
             ],
             "properties": {
               "orgnr": {
-                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
-                "type": "string",
                 "title": "The Orgnr Schema",
-                "default": "",
-                "examples": [
-                  "910253158"
+                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+              },
+              "oppstartdato": {
+                "title": "The Oppstartdato Schema",
+                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/oppstartdato",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+              },
+              "postadresse": {
+                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse",
+                "type": "object",
+                "title": "The Postadresse Schema",
+                "additionalProperties": false,
+                "required": [
+                  "gateadresse",
+                  "postnr",
+                  "poststed",
+                  "land"
                 ],
-                "pattern": "^(.*)$"
+                "properties": {
+                  "gateadresse": {
+                    "title": "The Gateadresse Schema",
+                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/gateadresse"
+                  },
+                  "postnr": {
+                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/postnr",
+                    "type": ["string", "null"],
+                    "title": "The Postnr Schema",
+                    "default": "",
+                    "examples": [
+                      "3936"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "poststed": {
+                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/poststed",
+                    "type": ["string","null"],
+                    "title": "The Poststed Schema",
+                    "default": "",
+                    "examples": [
+                      "PORSGRUNN"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "land": {
+                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/land",
+                    "type": ["string","null"],
+                    "title": "The Land Schema",
+                    "default": "",
+                    "examples": [
+                      "NORGE"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "organisasjonsform": {
+                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/organisasjonsform",
+                "type": ["string","null"],
+                "title": "The Organisasjonsform Schema",
+                "default": null,
+                "examples": [
+                  null
+                ]
               },
               "navn": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/navn",
@@ -1114,27 +542,7 @@
                 "title": "The Navn Schema",
                 "default": "",
                 "examples": [
-                  "MULTICONSULT ASA"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "oppstartdato": {
-                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/oppstartdato",
-                "type": "string",
-                "title": "The Oppstartdato Schema",
-                "default": "",
-                "examples": [
-                  "1977-01-01"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "organisasjonsform": {
-                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/organisasjonsform",
-                "type": "string",
-                "title": "The Organisasjonsform Schema",
-                "default": "",
-                "examples": [
-                  "Allmennaksjeselskap (ASA)"
+                  "SKARSVÅG OG VANSE"
                 ],
                 "pattern": "^(.*)$"
               },
@@ -1142,6 +550,7 @@
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse",
                 "type": "object",
                 "title": "The Forretningsadresse Schema",
+                "additionalProperties": false,
                 "required": [
                   "gateadresse",
                   "postnr",
@@ -1153,6 +562,7 @@
                     "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse",
                     "type": "object",
                     "title": "The Gateadresse Schema",
+                    "additionalProperties": false,
                     "required": [
                       "gatenummer",
                       "husbokstav",
@@ -1162,7 +572,7 @@
                     "properties": {
                       "gatenummer": {
                         "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenummer",
-                        "type": "null",
+                        "type": ["string","null"],
                         "title": "The Gatenummer Schema",
                         "default": null,
                         "examples": [
@@ -1171,7 +581,7 @@
                       },
                       "husbokstav": {
                         "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husbokstav",
-                        "type": "null",
+                        "type": ["string","null"],
                         "title": "The Husbokstav Schema",
                         "default": null,
                         "examples": [
@@ -1180,7 +590,7 @@
                       },
                       "husnummer": {
                         "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husnummer",
-                        "type": "null",
+                        "type": ["string","null"],
                         "title": "The Husnummer Schema",
                         "default": null,
                         "examples": [
@@ -1189,11 +599,11 @@
                       },
                       "gatenavn": {
                         "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenavn",
-                        "type": "string",
+                        "type": ["string","null"],
                         "title": "The Gatenavn Schema",
                         "default": "",
                         "examples": [
-                          "Lunderhaugen 1"
+                          "Olav Kyrres gate 9"
                         ],
                         "pattern": "^(.*)$"
                       }
@@ -1201,126 +611,326 @@
                   },
                   "postnr": {
                     "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/postnr",
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "The Postnr Schema",
                     "default": "",
                     "examples": [
-                      "0276"
+                      "3936"
                     ],
                     "pattern": "^(.*)$"
                   },
                   "poststed": {
                     "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/poststed",
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "The Poststed Schema",
                     "default": "",
                     "examples": [
-                      "OSLO"
+                      "PORSGRUNN"
                     ],
                     "pattern": "^(.*)$"
                   },
                   "land": {
                     "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/land",
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "The Land Schema",
                     "default": "",
                     "examples": [
-                      "NO"
+                      "NORGE"
                     ],
                     "pattern": "^(.*)$"
                   }
                 }
-              },
-              "postadresse": {
-                "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse",
+              }
+            }
+          }
+        },
+        "inntekt": {
+          "$id": "#/properties/saksopplysninger/properties/inntekt",
+          "type": "object",
+          "title": "The Inntekt Schema",
+          "additionalProperties": false,
+          "required": [
+            "arbeidsInntektMaanedListe"
+          ],
+          "properties": {
+            "arbeidsInntektMaanedListe": {
+              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe",
+              "type": "array",
+              "title": "The Arbeidsinntektmaanedliste Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items",
                 "type": "object",
-                "title": "The Postadresse Schema",
+                "title": "The Items Schema",
+                "additionalProperties": false,
                 "required": [
-                  "gateadresse",
-                  "postnr",
-                  "poststed",
-                  "land"
+                  "arbeidsInntektInformasjon",
+                  "aarMaaned"
                 ],
                 "properties": {
-                  "gateadresse": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
+                  "arbeidsInntektInformasjon": {
+                    "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon",
                     "type": "object",
-                    "title": "The Gateadresse Schema",
+                    "title": "The Arbeidsinntektinformasjon Schema",
+                    "additionalProperties": false,
                     "required": [
-                      "gatenummer",
-                      "husbokstav",
-                      "husnummer",
-                      "gatenavn"
+                      "inntektListe"
                     ],
                     "properties": {
-                      "gatenummer": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/gatenummer",
-                        "type": "null",
-                        "title": "The Gatenummer Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "husbokstav": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/husbokstav",
-                        "type": "null",
-                        "title": "The Husbokstav Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "husnummer": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/husnummer",
-                        "type": "null",
-                        "title": "The Husnummer Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "gatenavn": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse/properties/gatenavn",
-                        "type": "string",
-                        "title": "The Gatenavn Schema",
-                        "default": "",
-                        "examples": [
-                          "Lunderhaugen 1"
-                        ],
-                        "pattern": "^(.*)$"
+                      "inntektListe": {
+                        "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe",
+                        "type": "array",
+                        "title": "The Inntektliste Schema",
+                        "uniqueItems": true,
+                        "items": {
+                          "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items",
+                          "type": "object",
+                          "title": "The Items Schema",
+                          "additionalProperties": false,
+                          "required": [
+                            "opplysningspliktigID",
+                            "levereringstidspunkt",
+                            "utbetaltIPeriode",
+                            "inntektsperiodetype",
+                            "inntektskilde",
+                            "fordel",
+                            "beloep",
+                            "inntektsstatus",
+                            "utloeserArbeidsgiveravgift",
+                            "opptjeningsland",
+                            "informasjonsstatus",
+                            "virksomhetID",
+                            "beskrivelse",
+                            "inntektsmottakerID",
+                            "inngaarIGrunnlagForTrekk",
+                            "opptjeningsperiode"
+                          ],
+                          "properties": {
+                            "opplysningspliktigID": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opplysningspliktigID",
+                              "type": "string",
+                              "title": "The Opplysningspliktigid Schema",
+                              "default": "",
+                              "examples": [
+                                "912499693"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "levereringstidspunkt": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/levereringstidspunkt",
+                              "type": "string",
+                              "title": "The Levereringstidspunkt Schema",
+                              "default": "",
+                              "examples": [
+                                "2018-08-27T07:16:07.08"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "utbetaltIPeriode": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/utbetaltIPeriode",
+                              "type": "string",
+                              "title": "The Utbetaltiperiode Schema",
+                              "default": "",
+                              "examples": [
+                                "2017-11"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "inntektsperiodetype": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektsperiodetype",
+                              "type": "string",
+                              "title": "The Inntektsperiodetype Schema",
+                              "default": "",
+                              "examples": [
+                                "Maaned"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "inntektskilde": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektskilde",
+                              "type": "string",
+                              "title": "The Inntektskilde Schema",
+                              "default": "",
+                              "examples": [
+                                "A-ordningen"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "fordel": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/fordel",
+                              "type": "string",
+                              "title": "The Fordel Schema",
+                              "default": "",
+                              "examples": [
+                                "kontantytelse"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "beloep": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/beloep",
+                              "type": "number",
+                              "title": "The Beloep Schema",
+                              "default": 0.0,
+                              "examples": [
+                                30000.00
+                              ]
+                            },
+                            "inntektsstatus": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektsstatus",
+                              "type": "string",
+                              "title": "The Inntektsstatus Schema",
+                              "default": "",
+                              "examples": [
+                                "LoependeInnrapportert"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "utloeserArbeidsgiveravgift": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/utloeserArbeidsgiveravgift",
+                              "type": "boolean",
+                              "title": "The Utloeserarbeidsgiveravgift Schema",
+                              "default": false,
+                              "examples": [
+                                true
+                              ]
+                            },
+                            "opptjeningsland": {
+                              "title": "The Opptjeningsland Schema",
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsland",
+                              "type": ["string","null"],
+                              "default": null,
+                              "examples": [
+                                null
+                              ]
+                            },
+                            "informasjonsstatus": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/informasjonsstatus",
+                              "type": "string",
+                              "title": "The Informasjonsstatus Schema",
+                              "default": "",
+                              "examples": [
+                                "InngaarAlltid"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "virksomhetID": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/virksomhetID",
+                              "type": "string",
+                              "title": "The Virksomhetid Schema",
+                              "default": "",
+                              "examples": [
+                                "912499693"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "beskrivelse": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/beskrivelse",
+                              "type": "string",
+                              "title": "The Beskrivelse Schema",
+                              "default": "",
+                              "examples": [
+                                "fastloenn"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "inntektsmottakerID": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektsmottakerID",
+                              "type": "string",
+                              "title": "The Inntektsmottakerid Schema",
+                              "default": "",
+                              "examples": [
+                                "19117220349"
+                              ],
+                              "pattern": "^(.*)$"
+                            },
+                            "inngaarIGrunnlagForTrekk": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inngaarIGrunnlagForTrekk",
+                              "type": "boolean",
+                              "title": "The Inngaarigrunnlagfortrekk Schema",
+                              "default": false,
+                              "examples": [
+                                true
+                              ]
+                            },
+                            "opptjeningsperiode": {
+                              "title": "The Inntekt Opptjeningsperiode Schema",
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsperiode",
+                              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+                            }
+                          }
+                        }
                       }
                     }
                   },
-                  "postnr": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/postnr",
-                    "type": "string",
-                    "title": "The Postnr Schema",
-                    "default": "",
-                    "examples": [
-                      "0213"
+                  "aarMaaned": {
+                    "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/aarMaaned",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                  }
+                }
+              }
+            },
+            "frilansInntektMaanedListe": {
+              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe",
+              "type": "array",
+              "title": "The Frilansinntektmaanedliste Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "additionalProperties": false,
+                "required": [
+                  "frilansInntektInformasjon",
+                  "aarMaaned"
+                ],
+                "properties": {
+                  "frilansInntektInformasjon": {
+                    "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon",
+                    "type": "object",
+                    "title": "The Frilansinntektinformasjon Schema",
+                    "additionalProperties": false,
+                    "required": [
+                      "arbeidsforholdFrilanserListe"
                     ],
-                    "pattern": "^(.*)$"
+                    "properties": {
+                      "arbeidsforholdFrilanserListe": {
+                        "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon/properties/arbeidsforholdFrilanserListe",
+                        "type": "array",
+                        "title": "The ArbeidsforholdFrilanserListe Schema",
+                        "uniqueItems": true,
+                        "items": {
+                          "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon/properties/arbeidsforholdFrilanserListe/items",
+                          "type": "object",
+                          "title": "The Items Schema",
+                          "additionalProperties": false,
+                          "required": [
+                            "frilansPeriode",
+                            "yrke"
+                          ],
+                          "properties": {
+                            "frilansPeriode": {
+                              "title": "The FrilansPeriode Schema",
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon/properties/arbeidsforholdFrilanserListe/items/properties/frilansPeriode",
+                              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                            },
+                            "yrke": {
+                              "$id": "#/properties/saksopplysninger/properties/inntekt/items/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon/properties/arbeidsforholdFrilanserListe/items/properties/yrke",
+                              "type": "string",
+                              "title": "The Yrke Schema",
+                              "default": "",
+                              "examples": [
+                                "BUTIKKMEDARBEIDER"
+                              ],
+                              "pattern": "^(.*)$"
+                            }
+                          }
+                        }
+                      }
+                    }
                   },
-                  "poststed": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/poststed",
-                    "type": "string",
-                    "title": "The Poststed Schema",
-                    "default": "",
-                    "examples": [
-                      "OSLO"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "land": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/land",
-                    "type": "string",
-                    "title": "The Land Schema",
-                    "default": "",
-                    "examples": [
-                      "NO"
-                    ],
-                    "pattern": "^(.*)$"
+                  "aarMaaned": {
+                    "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/aarMaaned",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
                   }
                 }
               }
@@ -1331,6 +941,7 @@
           "$id": "#/properties/saksopplysninger/properties/medlemskap",
           "type": "object",
           "title": "The Medlemskap Schema",
+          "additionalProperties": false,
           "required": [
             "medlemsperiode"
           ],
@@ -1339,10 +950,10 @@
               "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode",
               "type": "array",
               "title": "The Medlemsperiode Schema",
+              "uniqueItems": true,
               "items": {
                 "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items",
                 "type": "object",
-                "title": "The Items Schema",
                 "required": [
                   "periodeID",
                   "periode",
@@ -1357,552 +968,237 @@
                 ],
                 "properties": {
                   "periodeID": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periodeID",
-                    "type": "integer",
-                    "title": "The Periodeid Schema",
-                    "default": 0,
-                    "examples": [
-                      300110740
-                    ]
+                    "title":"The Medlemskap PeriodeID Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/periode",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periodeID"
                   },
                   "periode": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periode",
-                    "type": "object",
-                    "title": "The Periode Schema",
-                    "required": [
-                      "fom",
-                      "tom"
-                    ],
-                    "properties": {
-                      "fom": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periode/properties/fom",
-                        "type": "string",
-                        "title": "The Fom Schema",
-                        "default": "",
-                        "examples": [
-                          "2007-11-12"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "tom": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periode/properties/tom",
-                        "type": "string",
-                        "title": "The Tom Schema",
-                        "default": "",
-                        "examples": [
-                          "2007-11-25"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The Meldlemskap Periode Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/periode",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
                   },
                   "periodetype": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periodetype",
-                    "type": "object",
-                    "title": "The Periodetype Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periodetype/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "PMMEDSKP"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/periodetype/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Periode med medlemskap"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The periodetype Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/periodetype",
+                    "$ref": "#/definitions/nullable-kodeverk"
                   },
                   "status": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/status",
-                    "type": "object",
-                    "title": "The Status Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/status/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "GYLD"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/status/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Gyldig"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlemskap status Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/status",
+                    "$ref": "#/definitions/nullable-kodeverk"
                   },
                   "grunnlagstype": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/grunnlagstype",
-                    "type": "object",
-                    "title": "The Grunnlagstype Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/grunnlagstype/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "FO_12_1"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/grunnlagstype/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "EØS 883/04 - 12.1"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlem grunnlagstype Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/grunnlagstype",
+                    "$ref": "#/definitions/nullable-kodeverk"
                   },
                   "land": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/land",
-                    "type": "object",
-                    "title": "The Land Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/land/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "NO"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/land/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "NORGE"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlem land Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/land",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                   },
                   "lovvalg": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/lovvalg",
-                    "type": "object",
-                    "title": "The Lovvalg Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/lovvalg/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "ENDL"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/lovvalg/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Endelig"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlem lovvalg Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/lovvalg",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                   },
                   "trygdedekning": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/trygdedekning",
-                    "type": "object",
-                    "title": "The Trygdedekning Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/trygdedekning/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "Full"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/trygdedekning/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Full"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlem trygdedekning Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/trygdedekning",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                   },
                   "kildedokumenttype": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/kildedokumenttype",
-                    "type": "object",
-                    "title": "The Kildedokumenttype Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/kildedokumenttype/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "Henv_Soknad"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/kildedokumenttype/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Henvendelse/søknad"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlem kildedokumenttype Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/kildedokumenttype",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                   },
                   "kilde": {
-                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/kilde",
-                    "type": "object",
-                    "title": "The Kilde Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/kilde/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "FS22"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/properties/kilde/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Gosys"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "title": "The medlem kilde Schema",
+                    "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/kilde",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
                   }
                 }
               }
             }
           }
         },
-        "inntekt": {
-          "$id": "#/properties/saksopplysninger/properties/inntekt",
+        "person": {
+          "$id": "#/properties/saksopplysninger/properties/person",
           "type": "object",
-          "title": "The Inntekt Schema",
+          "title": "The Person Schema",
+          "additionalProperties": false,
           "required": [
-            "arbeidsInntektMaanedListe",
-            "frilansInntektMaanedListe"
+            "erEgenAnsatt",
+            "personStatus",
+            "sammensattNavn",
+            "kjoenn",
+            "fnr",
+            "foedselsdato",
+            "sivilstand",
+            "statsborgerskap",
+            "statsborgerskapDato",
+            "familiemedlemmer"
           ],
           "properties": {
-            "arbeidsInntektMaanedListe": {
-              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe",
+            "erEgenAnsatt": {
+              "$id": "#/properties/saksopplysninger/properties/person/properties/erEgenAnsatt",
+              "type": "boolean",
+              "title": "The Eregenansatt Schema",
+              "default": false,
+              "examples": [
+                false,
+                true
+              ]
+            },
+            "personStatus": {
+              "title": "The Personstatus Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/personStatus",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            },
+            "sammensattNavn": {
+              "$id": "#/properties/saksopplysninger/properties/person/properties/sammensattNavn",
+              "type": "string",
+              "title": "The Sammensattnavn Schema",
+              "default": "",
+              "examples": [
+                "HATT GLITRENDE"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "kjoenn": {
+              "title": "The Kjoenn Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/kjoenn",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            },
+            "fnr": {
+              "title": "The Fnr Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/fnr",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+            },
+            "foedselsdato": {
+              "title": "The Foedselsdato Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/foedselsdato",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+            },
+            "sivilstand": {
+              "$id": "#/properties/tilleggsData/properties/personer/items/properties/sivilstand",
+              "title": "The Sivilstand Schema",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            },
+            "statsborgerskap": {
+              "title": "The Statsborgerskap Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskap",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            },
+            "statsborgerskapDato": {
+              "title": "The Statsborgerskapdato Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskapDato",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+            },
+            "familiemedlemmer": {
+              "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer",
               "type": "array",
-              "title": "The Arbeidsinntektmaanedliste Schema",
+              "title": "The Familiemedlemmer Schema",
+              "uniqueItems": true,
               "items": {
-                "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items",
+                "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items",
                 "type": "object",
-                "title": "The Items Schema",
+                "title": "The Familie medlem Schema",
                 "required": [
-                  "aarMaaned",
-                  "arbeidsInntektInformasjon"
+                  "fnr",
+                  "sammensattNavn",
+                  "relasjonstype"
                 ],
                 "properties": {
-                  "aarMaaned": {
-                    "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/aarMaaned",
-                    "type": "string",
-                    "title": "The Aarmaaned Schema",
-                    "default": "",
-                    "examples": [
-                      "2017-06"
-                    ],
-                    "pattern": "^(.*)$"
+                  "fnr": {
+                    "title": "The Fnr Schema",
+                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/fnr",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
                   },
-                  "arbeidsInntektInformasjon": {
-                    "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon",
-                    "type": "object",
-                    "title": "The Arbeidsinntektinformasjon Schema",
-                    "required": [
-                      "inntektListe"
-                    ],
-                    "properties": {
-                      "inntektListe": {
-                        "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe",
-                        "type": "array",
-                        "title": "The Inntektliste Schema",
-                        "items": {
-                          "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items",
-                          "type": "object",
-                          "title": "The Items Schema",
-                          "required": [
-                            "beloep",
-                            "fordel",
-                            "inntektskilde",
-                            "inntektsperiodetype",
-                            "inntektsstatus",
-                            "levereringstidspunkt",
-                            "utbetaltIPeriode",
-                            "opplysningspliktigID",
-                            "virksomhetID",
-                            "inntektsmottakerID",
-                            "inngaarIGrunnlagForTrekk",
-                            "utloeserArbeidsgiveravgift",
-                            "opptjeningsland",
-                            "opptjeningsperiode",
-                            "informasjonsstatus",
-                            "beskrivelse"
-                          ],
-                          "properties": {
-                            "beloep": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/beloep",
-                              "type": "integer",
-                              "title": "The Beloep Schema",
-                              "default": 0,
-                              "examples": [
-                                45000
-                              ]
-                            },
-                            "fordel": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/fordel",
-                              "type": "string",
-                              "title": "The Fordel Schema",
-                              "default": "",
-                              "examples": [
-                                "kontantytelse"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "inntektskilde": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektskilde",
-                              "type": "string",
-                              "title": "The Inntektskilde Schema",
-                              "default": "",
-                              "examples": [
-                                "A-ordningen"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "inntektsperiodetype": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektsperiodetype",
-                              "type": "string",
-                              "title": "The Inntektsperiodetype Schema",
-                              "default": "",
-                              "examples": [
-                                "Maaned"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "inntektsstatus": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektsstatus",
-                              "type": "string",
-                              "title": "The Inntektsstatus Schema",
-                              "default": "",
-                              "examples": [
-                                "LoependeInnrapportert"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "levereringstidspunkt": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/levereringstidspunkt",
-                              "type": "string",
-                              "title": "The Levereringstidspunkt Schema",
-                              "default": "",
-                              "examples": [
-                                "2017-10-06T12:52:58.993"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "utbetaltIPeriode": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/utbetaltIPeriode",
-                              "type": "string",
-                              "title": "The Utbetaltiperiode Schema",
-                              "default": "",
-                              "examples": [
-                                "2017-06"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "opplysningspliktigID": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opplysningspliktigID",
-                              "type": "string",
-                              "title": "The Opplysningspliktigid Schema",
-                              "default": "",
-                              "examples": [
-                                "910253158"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "virksomhetID": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/virksomhetID",
-                              "type": "string",
-                              "title": "The Virksomhetid Schema",
-                              "default": "",
-                              "examples": [
-                                "910253158"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "inntektsmottakerID": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inntektsmottakerID",
-                              "type": "string",
-                              "title": "The Inntektsmottakerid Schema",
-                              "default": "",
-                              "examples": [
-                                "16016939696"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "inngaarIGrunnlagForTrekk": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/inngaarIGrunnlagForTrekk",
-                              "type": "boolean",
-                              "title": "The Inngaarigrunnlagfortrekk Schema",
-                              "default": false,
-                              "examples": [
-                                true
-                              ]
-                            },
-                            "utloeserArbeidsgiveravgift": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/utloeserArbeidsgiveravgift",
-                              "type": "boolean",
-                              "title": "The Utloeserarbeidsgiveravgift Schema",
-                              "default": false,
-                              "examples": [
-                                true
-                              ]
-                            },
-                            "opptjeningsland": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsland",
-                              "type": "null",
-                              "title": "The Opptjeningsland Schema",
-                              "default": null,
-                              "examples": [
-                                null
-                              ]
-                            },
-                            "opptjeningsperiode": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsperiode",
-                              "type": "object",
-                              "title": "The Opptjeningsperiode Schema",
-                              "required": [
-                                "fom",
-                                "tom"
-                              ],
-                              "properties": {
-                                "fom": {
-                                  "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsperiode/properties/fom",
-                                  "type": "null",
-                                  "title": "The Fom Schema",
-                                  "default": null,
-                                  "examples": [
-                                    null
-                                  ]
-                                },
-                                "tom": {
-                                  "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsperiode/properties/tom",
-                                  "type": "null",
-                                  "title": "The Tom Schema",
-                                  "default": null,
-                                  "examples": [
-                                    null
-                                  ]
-                                }
-                              }
-                            },
-                            "informasjonsstatus": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/informasjonsstatus",
-                              "type": "string",
-                              "title": "The Informasjonsstatus Schema",
-                              "default": "",
-                              "examples": [
-                                "InngaarAlltid"
-                              ],
-                              "pattern": "^(.*)$"
-                            },
-                            "beskrivelse": {
-                              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/beskrivelse",
-                              "type": "string",
-                              "title": "The Beskrivelse Schema",
-                              "default": "",
-                              "examples": [
-                                "fastloenn"
-                              ],
-                              "pattern": "^(.*)$"
-                            }
-                          }
-                        }
-                      }
-                    }
+                  "sammensattNavn": {
+                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/sammensattNavn",
+                    "type": "string",
+                    "title": "The sammensattNavn schema",
+                    "description": "",
+                    "examples": [
+                      "GIRAFF MAGER"
+                    ]
+                  },
+                  "relasjonstype": {
+                    "title": "The relasjonstype schema",
+                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/relasjonstype",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "personhistorikk": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bostedsadressePerioder",
+            "postadressePerioder",
+            "midlertidigAdressePerioder"
+          ],
+          "properties": {
+            "bostedsadressePerioder": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bostedsadresse",
+                  "periode"
+                ],
+                "properties": {
+                  "bostedsadresse": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+                  },
+                  "periode": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
                   }
                 }
               }
             },
-            "frilansInntektMaanedListe": {
-              "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe",
+            "postadressePerioder": {
               "type": "array",
-              "title": "The Frilansinntektmaanedliste Schema"
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "postadresse",
+                  "periode"
+                ],
+                "properties": {
+                  "postadresse": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
+                  },
+                  "periode": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                  }
+                }
+              }
+            },
+            "midlertidigAdressePerioder": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "midlertidigAdresse",
+                  "periode"
+                ],
+                "properties": {
+                  "midlertidigAdresse": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
+                  },
+                  "periode": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                  }
+                }
+              }
             }
           }
         },
@@ -1910,6 +1206,7 @@
           "$id": "#/properties/saksopplysninger/properties/sakOgBehandling",
           "type": "object",
           "title": "The Sakogbehandling Schema",
+          "additionalProperties": false,
           "required": [
             "eosBarnetrygd"
           ],
@@ -1924,75 +1221,167 @@
               ]
             }
           }
+        },
+        "sed": {
+          "$id": "#/properties/saksopplysninger/properties/sed",
+          "type": ["object", "null"],
+          "title": "The Sed Schema",
+          "additionalProperties": false,
+          "required": [
+            "rinaSaksnummer",
+            "rinaDokumentID",
+            "fnr",
+            "lovvalgsperiode",
+            "lovvalgsbestemmelse",
+            "lovvalgslandKode",
+            "erEnding",
+            "statsborgerskapKoder"
+          ],
+          "properties": {
+            "rinaSaksnummer": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/rinaSaksnummer",
+              "type": "string",
+              "title": "The Rinasaksnummer Schema",
+              "default": "",
+              "examples": [
+                "181973"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "rinaDokumentID": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/rinaDokumentID",
+              "type": "string",
+              "title": "The Rinadokumentid Schema",
+              "default": "",
+              "examples": [
+                "ad6335c6a92341f2830a873a331a5ea5"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fnr": {
+              "title": "The Fnr Schema",
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+
+            },
+            "lovvalgsperiode": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode",
+              "type": "object",
+              "title": "The Lovvalgsperiode Schema",
+              "additionalProperties": false,
+              "required": [
+                "fom",
+                "tom"
+              ],
+              "properties": {
+                "fom": {
+                  "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode/properties/fom",
+                  "type": "string",
+                  "title": "The Fom Schema",
+                  "default": "",
+                  "examples": [
+                    "2012-12-12"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "tom": {
+                  "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode/properties/tom",
+                  "type": "string",
+                  "title": "The Tom Schema",
+                  "default": "",
+                  "examples": [
+                    "2014-12-12"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            },
+            "lovvalgsbestemmelse": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsbestemmelse",
+              "type": "string",
+              "title": "The lovvalgsbestemmelse Schema",
+              "default": "",
+              "examples": [
+                "FO_883_2004_ART12_1"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "lovvalgslandKode": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgslandKode",
+              "type": "string",
+              "title": "The Lovvalgslandkode Schema",
+              "default": "",
+              "examples": [
+                "DE"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "erEnding": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/erEnding",
+              "type": "boolean",
+              "title": "The Erending Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "statsborgerskapKoder": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/statsborgerskapKoder",
+              "type": "array",
+              "title": "The Statsborgerskapkoder Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/saksopplysninger/properties/sed/properties/statsborgerskapKoder/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "NO"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
         }
       }
     },
-    "behandlingshistorikk": {
-      "$id": "#/properties/behandlingshistorikk",
-      "type": "array",
-      "title": "The Behandlingshistorikk Schema",
-      "items": {
-        "$id": "#/properties/behandlingshistorikk/items",
-        "type": "object",
-        "title": "The Items Schema",
-        "required": [
-          "dato",
-          "status",
-          "steg",
-          "ident",
-          "kommentar"
-        ],
-        "properties": {
-          "dato": {
-            "$id": "#/properties/behandlingshistorikk/items/properties/dato",
-            "type": "string",
-            "title": "The Dato Schema",
-            "default": "",
-            "examples": [
-              "2017-10-31T13:58:10"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "status": {
-            "$id": "#/properties/behandlingshistorikk/items/properties/status",
-            "type": "string",
-            "title": "The Status Schema",
-            "default": "",
-            "examples": [
-              "UNDER_BEHANDLING"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "steg": {
-            "$id": "#/properties/behandlingshistorikk/items/properties/steg",
-            "type": "string",
-            "title": "The Steg Schema",
-            "default": "",
-            "examples": [
-              "KLARGJORT"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "ident": {
-            "$id": "#/properties/behandlingshistorikk/items/properties/ident",
-            "type": "string",
-            "title": "The Ident Schema",
-            "default": "",
-            "examples": [
-              "A150244"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "kommentar": {
-            "$id": "#/properties/behandlingshistorikk/items/properties/kommentar",
-            "type": "string",
-            "title": "The Kommentar Schema",
-            "default": "",
-            "examples": [
-              "......."
-            ],
-            "pattern": "^(.*)$"
-          }
+    "oppsummering": {
+      "$id": "#/properties/oppsummering",
+      "type": "object",
+      "title": "The Oppsummering Schema",
+      "additionalProperties": false,
+      "required": [
+        "behandlingsstatus",
+        "behandlingstype",
+        "endretDato",
+        "registrertDato",
+        "sisteOpplysningerHentetDato"
+      ],
+      "properties": {
+        "behandlingsstatus": {
+          "title": "The BehandlingsStatus Schema",
+          "$id": "#/properties/oppsummering/properties/behandlingsstatus",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandlingstype": {
+          "title": "The Behandlingsype Schema",
+          "$id": "#/properties/oppsummering/properties/behandlingstype",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "registrertDato": {
+          "title": "The Registrertdato Schema",
+          "$id": "#/properties/oppsummering/properties/registrertDato",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+        },
+        "endretDato": {
+          "title": "The Endretdato Schema",
+          "$id": "#/properties/oppsummering/properties/endretDato",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+        },
+        "sisteOpplysningerHentetDato": {
+          "title": "The SisteOpplysningerHentetDato Schema",
+          "$id": "#/properties/oppsummering/properties/sisteOpplysningerHentetDato",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
         }
       }
     }

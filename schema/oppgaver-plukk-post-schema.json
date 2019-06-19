@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/plukk-post-schema.json",
+  "type": "object",
+  "title": "The Plukk-post Schema",
+  "additionalProperties": false,
+  "required": [
+    "oppgavetype",
+    "sakstyper",
+    "behandlingstyper"
+  ],
+  "properties": {
+    "oppgavetype": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgavetype"
+    },
+    "sakstyper": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/sakstype"
+      }
+    },
+    "behandlingstyper": {
+      "type":"array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstype"
+      }
+    }
+  }
+}

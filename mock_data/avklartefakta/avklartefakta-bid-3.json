@@ -86,5 +86,13 @@
     "subjektID": "47848293838",
     "begrunnelseKoder": [],
     "begrunnelseFritekst": null
+  },
+  {
+    "referanse": "VURDERING_UNNTAK_PERIODE",
+    "avklartefaktaKode": "VURDERING_UNNTAK_PERIODE",
+    "fakta": ["TRUE"],
+    "subjektID": null,
+    "begrunnelseKoder": ["OVERLAPPENDE_MEDL_PERIODER", "PERIODEN_OVER_24_MD", "FEIL_I_PERIODEN"],
+    "begrunnelseFritekst": null
   }
 ]
