@@ -4,9 +4,9 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["UTSENDELSE_OVER_24_MND", "TREDJELANDSBORGER_IKKE_AVTALELAND", "ANNET"],
+        "enum": ["UTSENDELSE_OVER_24_MD", "TREDJELANDSBORGER_IKKE_AVTALELAND", "ANNET"],
         "examples": [
-          "UTSENDELSE_OVER_24_MND",
+          "UTSENDELSE_OVER_24_MD",
           "TREDJELANDSBORGER_IKKE_AVTALELAND",
           "ANNET"
         ]
