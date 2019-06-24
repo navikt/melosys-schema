@@ -13,7 +13,7 @@
     "required": [
       "fomDato",
       "tomDato",
-      "lovvalgBestemmelse",
+      "lovvalgsbestemmelse",
       "tilleggBestemmelse",
       "innvilgelsesResultat",
       "lovvalgsland",
@@ -32,10 +32,10 @@
         "$id": "#/items/properties/tomDato",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
       },
-      "lovvalgBestemmelse": {
-        "$id": "#/items/properties/lovvalgBestemmelse",
+      "lovvalgsbestemmelse": {
+        "$id": "#/items/properties/lovvalgsbestemmelse",
         "type": ["string", "null"],
-        "title": "The LovvalgBestemmelse Schema",
+        "title": "The Lovvalgsbestemmelse Schema",
         "default": "",
         "examples": [
           "ART16_1"

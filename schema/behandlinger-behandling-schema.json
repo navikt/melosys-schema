@@ -1232,7 +1232,7 @@
             "rinaDokumentID",
             "fnr",
             "lovvalgsperiode",
-            "lovvalgBestemmelse",
+            "lovvalgsbestemmelse",
             "lovvalgslandKode",
             "erEnding",
             "statsborgerskapKoder"
@@ -1296,10 +1296,10 @@
                 }
               }
             },
-            "lovvalgBestemmelse": {
-              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgBestemmelse",
+            "lovvalgsbestemmelse": {
+              "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsbestemmelse",
               "type": "string",
-              "title": "The lovvalgBestemmelse Schema",
+              "title": "The lovvalgsbestemmelse Schema",
               "default": "",
               "examples": [
                 "FO_883_2004_ART12_1"

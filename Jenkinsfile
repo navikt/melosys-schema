@@ -63,7 +63,10 @@ node {
       returnStdout: true).trim()
     echo schemaZipFile
 
-    if (prNummer != null) {
+    if (scmVars.GIT_BRANCH.equalsIgnoreCase("master")) {
+      buildVersion = "${semver}-${BUILD_NUMBER}"
+    }
+    else if (prNummer != null) {
       // Hvis det eksisterer et token så betyr det at dette er en pull-request
       buildVersion = "${semver}-PR-${prNummer}-SNAPSHOT"
     }
@@ -77,8 +80,7 @@ node {
 
   stage('Deploy to Nexus') {
     def repositoryId
-    if (scmVars.GIT_BRANCH.equalsIgnoreCase("develop")) {
-      //denne er foreloepig ikke i bruk. Denne byggejobben bygger bare snapshots
+    if (scmVars.GIT_BRANCH.equalsIgnoreCase("master")) {
       repositoryId = "m2internal"
     }
     else {
