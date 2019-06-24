@@ -2,114 +2,125 @@
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/bucerunderarbeid-schema.json",
-  "type": "array",
+  "type": "object",
   "title": "The Root Schema",
   "uniqueItems": true,
-  "items":  {
-    "$id": "#/items",
-    "type": "object",
-    "title": "The Items Schema",
-    "additionalProperties": false,
-    "required": [
-      "id",
-      "bucType",
-      "opprettetDato",
-      "seder"
-    ],
-    "properties": {
-      "id": {
-        "$id": "#/items/properties/id",
-        "type": "string",
-        "title": "The Id Schema",
-        "examples": [
-          "30000"
+  "required": [
+    "bucer"
+  ],
+  "properties": {
+    "bucer": {
+      "id": "#/properties/bucer",
+      "type": "array",
+      "title": "The Bucer Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/bucer/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "bucType",
+          "opprettetDato",
+          "seder"
         ],
-        "pattern": "^\\S*$"
-      },
-      "bucType": {
-        "$id": "#/items/properties/bucType",
-        "type": "string",
-        "title": "The BucType Schema",
-        "examples": [
-          "LA_BUC_01"
-        ],
-        "pattern": "^\\S*$"
-      },
-      "opprettetDato": {
-        "$id": "#/items/properties/opprettetDato",
-        "title": "The OpprettetDato Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
-      },
-      "seder": {
-        "id": "#/items/properties/seder",
-        "type": "array",
-        "title": "The Seder Schema",
-        "uniqueItems": true,
-        "items": {
-          "$id": "#/items",
-          "type": "object",
-          "title": "The Items Schema",
-          "additionalProperties": false,
-          "required": [
-            "bucId",
-            "sedId",
-            "rinaUrl",
-            "opprettetDato",
-            "sistOppdatert",
-            "sedType",
-            "status"
-          ],
-          "properties": {
-            "bucId": {
-              "$id": "#/items/properties/seder/items/properties/bucId",
-              "type": "string",
-              "title": "The BucId Schema",
-              "examples": [
-                "30000"
+        "properties": {
+          "id": {
+            "$id": "#/bucer/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "examples": [
+              "30000"
+            ],
+            "pattern": "^\\S*$"
+          },
+          "bucType": {
+            "$id": "#/bucer/items/properties/bucType",
+            "type": "string",
+            "title": "The BucType Schema",
+            "examples": [
+              "LA_BUC_01"
+            ],
+            "pattern": "^\\S*$"
+          },
+          "opprettetDato": {
+            "$id": "#/bucer/items/properties/opprettetDato",
+            "title": "The OpprettetDato Schema",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+          },
+          "seder": {
+            "id": "#/bucer/items/properties/seder",
+            "type": "array",
+            "title": "The Seder Schema",
+            "uniqueItems": true,
+            "items": {
+              "$id": "#/bucer/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "additionalProperties": false,
+              "required": [
+                "bucId",
+                "sedId",
+                "rinaUrl",
+                "opprettetDato",
+                "sistOppdatert",
+                "sedType",
+                "status"
               ],
-              "pattern": "^\\S*$"
-            },
-            "sedId": {
-              "$id": "#/items/properties/seder/items/properties/sedId",
-              "type": "string",
-              "title": "The SedId Schema",
-              "examples": [
-                "e25f73dda0b84649899e8ea42cfb25c9"
-              ],
-              "pattern": "^\\S*$"
-            },
-            "rinaUrl": {
-              "$id": "#/items/properties/seder/items/properties/rinaUrl",
-              "title": "The RinaUrl Schema",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/url"
-            },
-            "opprettetDato": {
-              "$id": "#/items/properties/seder/items/properties/opprettetDato",
-              "title": "The OpprettetDato Schema",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
-            },
-            "sistOppdatert": {
-              "$id": "#/items/properties/seder/items/properties/sistOppdatert",
-              "title": "The SistOppdatert Schema",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
-            },
-            "sedType": {
-              "$id": "#/items/properties/seder/items/properties/sedType",
-              "type": "string",
-              "title": "The SedType Schema",
-              "examples": [
-                "A001"
-              ],
-              "pattern": "^\\S*$"
-            },
-            "status": {
-              "$id": "#/items/properties/seder/items/properties/status",
-              "type": "string",
-              "title": "The Status Schema",
-              "examples": [
-                "new"
-              ],
-              "pattern": "^\\S*$"
+              "properties": {
+                "bucId": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/bucId",
+                  "type": "string",
+                  "title": "The BucId Schema",
+                  "examples": [
+                    "30000"
+                  ],
+                  "pattern": "^\\S*$"
+                },
+                "sedId": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/sedId",
+                  "type": "string",
+                  "title": "The SedId Schema",
+                  "examples": [
+                    "e25f73dda0b84649899e8ea42cfb25c9"
+                  ],
+                  "pattern": "^\\S*$"
+                },
+                "rinaUrl": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/rinaUrl",
+                  "title": "The RinaUrl Schema",
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/url"
+                },
+                "opprettetDato": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/opprettetDato",
+                  "title": "The OpprettetDato Schema",
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+                },
+                "sistOppdatert": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/sistOppdatert",
+                  "title": "The SistOppdatert Schema",
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+                },
+                "sedType": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/sedType",
+                  "type": "string",
+                  "title": "The SedType Schema",
+                  "examples": [
+                    "A001"
+                  ],
+                  "pattern": "^\\S*$"
+                },
+                "status": {
+                  "$id": "#/bucer/items/properties/seder/items/properties/status",
+                  "type": "string",
+                  "title": "The Status Schema",
+                  "examples": [
+                    "new"
+                  ],
+                  "pattern": "^\\S*$"
+                }
+              }
             }
           }
         }
