@@ -182,7 +182,7 @@
               },
               "adresse": {
                 "$id": "#/definitions/soeknadDokument/properties/foretakUtland/items/properties/adresse",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/strukturertAdresse"
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
               }
             }
           }
