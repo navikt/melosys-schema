@@ -62,11 +62,13 @@
         "SOEKNAD",
         "KLAGE",
         "ANKE",
-        "UNNTAK_FRA_MEDLEMSKAP",
-        "NORGE_UTPEKT",
-        "PAASTAND_UTL",
+        "REGISTRERING_UNNTAK_NORSK_TRYGD",
+        "UTL_MYND_UTPEKT_NORGE",
+        "UTL_MYND_UTPEKT_SEG_SELV",
         "NY_VURDERING",
-        "ENDRET_PERIODE"
+        "ENDRET_PERIODE",
+        "ANMODNING_OM_UNNTAK_HOVEDREGEL",
+        "ØVRIGE_SED"
       ]
     },
     "databaseID": {
@@ -267,11 +269,12 @@
     },
     "oppgavetype": {
       "title": "The Oppgavetype schema",
-      "type": "string",
+      "type": ["string", "null"],
       "examples": ["BEH_SAK_MK", "JFR"],
       "enum": [
         "BEH_SAK_MK",
-        "JFR"
+        "JFR",
+        null
       ]
     },
     "periodeID": {

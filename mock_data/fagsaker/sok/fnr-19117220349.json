@@ -57,8 +57,8 @@
           "term": "Behandlingen er avsluttet"
         },
         "behandlingstype": {
-          "kode": "UNNTAK_FRA_MEDLEMSKAP",
-          "term": "Registrering av unntak"
+          "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD",
+          "term": "Registrering av unntak norsk trygd (A009,A010)"
         },
         "land": [],
         "opprettetDato": "2019-05-08T10:26:45.498Z",
