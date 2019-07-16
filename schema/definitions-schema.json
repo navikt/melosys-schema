@@ -50,6 +50,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "id",
         "fomDato",
         "tomDato",
         "lovvalgBestemmelse",
@@ -60,6 +61,10 @@
         "medlemskapsperiodeID"
       ],
       "properties": {
+        "id": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        },
         "fomDato": {
           "$ref": "#/definitions/dato"
         },
