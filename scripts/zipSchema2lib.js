@@ -1,4 +1,5 @@
 const fs = require('fs');
+// eslint-disable-next-line node/no-unpublished-require
 const zipdir = require('zip-dir');
 
 const SCHEMA_DIR = `${process.cwd()}/schema`;

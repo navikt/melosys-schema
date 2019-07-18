@@ -13,7 +13,13 @@
     "node/prefer-global/process": ["error", "always"],
     "node/prefer-global/url-search-params": ["error", "always"],
     "node/prefer-global/url": ["error", "always"],
-    "node/no-unsupported-features/es-syntax": ["error", "always"],
-    "node/no-deprecated-api": ["error", "always"]
+    "node/no-unsupported-features/es-syntax": ["error", {
+      "ignores": []
+    }],
+    "node/no-deprecated-api": ["error", {
+      "version": ">=8.0.0",
+      "ignoreModuleItems": [],
+      "ignoreGlobalItems": []
+    }]
   }
 }
