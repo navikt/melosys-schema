@@ -1,13 +1,15 @@
-[
-  {
-    "id": "ID",
-    "fomDato": "2019-01-01",
-    "tomDato": "2020-01-01",
-    "lovvalgBestemmelse": "ART12_1",
-    "tilleggBestemmelse": "FO_883_2004_ART13_4",
-    "unntakFraBestemmelse": null,
-    "lovvalgsland": "NO",
-    "unntakFraLovvalgsland": null,
-    "medlemskapsperiodeID": "100111203"
-  }
-]
+{
+  "anmodningsperioder": [
+    {
+      "id": "ID",
+      "fomDato": "2019-01-01",
+      "tomDato": "2020-01-01",
+      "lovvalgBestemmelse": "ART12_1",
+      "tilleggBestemmelse": "FO_883_2004_ART13_4",
+      "unntakFraBestemmelse": null,
+      "lovvalgsland": "NO",
+      "unntakFraLovvalgsland": null,
+      "medlemskapsperiodeID": "100111203"
+    }
+  ]
+}
