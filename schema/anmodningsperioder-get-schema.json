@@ -11,7 +11,7 @@
     "anmodningsperioder": {
       "type": "array",
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/anmodningsperiodeMedSaksflytSendt"
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/anmodningsperiode"
       }
     }
   }
