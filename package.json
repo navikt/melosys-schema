@@ -36,7 +36,8 @@
     "eslint": "eslint scripts --ext .js",
     "zipSchema": "node scripts/zipSchema2lib",
     "zip": "npm-run-all -s clean zipSchema",
-    "json5": "node json5"
+    "json5": "node json5",
+    "schema": "node scripts/schema"
   },
   "homepage": "https://github.com/navikt/melosys-schema#readme",
   "dependencies": {
