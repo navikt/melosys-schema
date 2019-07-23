@@ -46,60 +46,6 @@
         }
       }
     },
-    "anmodningsperiode": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "id",
-        "fomDato",
-        "tomDato",
-        "lovvalgBestemmelse",
-        "tilleggBestemmelse",
-        "unntakFraBestemmelse",
-        "lovvalgsland",
-        "unntakFraLovvalgsland",
-        "medlemskapsperiodeID"
-      ],
-      "properties": {
-        "id": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "fomDato": {
-          "$ref": "#/definitions/dato"
-        },
-        "tomDato": {
-          "$ref": "#/definitions/dato"
-        },
-        "lovvalgBestemmelse": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "tilleggBestemmelse": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "unntakFraBestemmelse": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "lovvalgsland": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "unntakFraLovvalgsland": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "medlemskapsperiodeID": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
-        "anmodningSaksflytSendt": {
-          "type": "boolean"
-        }
-      }
-    },
     "behandlingID": {
       "type": "integer",
       "title": "The BehandlingID Schema",

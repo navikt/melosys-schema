@@ -9,10 +9,7 @@
   ],
   "properties": {
     "anmodningsperioder": {
-      "type": "array",
-      "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/anmodningsperiode"
-      }
+      "$ref": "http://melosys.nav.no/schemas/anmodningsperioder-definitions-schema.json#/definitions/anmodningsperioder"
     }
   }
 }
