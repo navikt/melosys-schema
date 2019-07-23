@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/saksflyt-anmodningsperioder-post-schema.json",
+  "type": "object",
+  "title": "The AnmodningsperioderSvar Schema",
+  "additionalProperties": false,
+  "required": [
+    "anmodningsperiodeSvarType",
+    "endretPeriode",
+    "begrunnelseFritekst"
+  ],
+  "properties": {
+    "anmodningsperiodeSvarType": {
+      "type": "string",
+      "enum": ["INNVILGELSE", "DELVIS_INNVILGELSE", "AVSLAG"]
+    },
+    "endretPeriode": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+    },
+    "begrunnelseFritekst": {
+      "type": "string"
+    }
+  }
+}
