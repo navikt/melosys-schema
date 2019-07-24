@@ -506,7 +506,7 @@
     "soeknadDokument": {
       "title": "The Soeknaddokument Schema",
       "$id": "#/properties/soeknadDokument",
-      "$ref": "http://melosys.nav.no/schemas/soknad-dokument-definitions.json#/definitions/soeknadDokument"
+      "$ref": "http://melosys.nav.no/schemas/soknader-dokument-definitions.json#/definitions/soeknadDokument"
     },
     "tilleggsData": {
       "title": "The Tilleggsdata Schema",

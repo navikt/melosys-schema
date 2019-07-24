@@ -1,6 +1,5 @@
 /* eslint-disable node/no-unpublished-require */
 const Ajv = require('ajv');
-const _ = require('lodash');
 const { JSONPath } = require('jsonpath-plus');
 const glob = require('glob');
 const log4js = require('log4js');
@@ -73,7 +72,7 @@ module.exports.katalogTittel = path => {
   return katalog.charAt(0).toLocaleUpperCase() + katalog.slice(1);
 };
 
-module.exports.lesKatalogSync = dirpath => {
+const lesKatalogSync = dirpath => {
   let catalog = [];
   const files = glob.sync('*.json', {
     cwd: dirpath,
@@ -89,6 +88,7 @@ module.exports.lesKatalogSync = dirpath => {
   });
   return catalog;
 };
+module.exports.lesKatalogSync = lesKatalogSync;
 
 module.exports.lesKatalogElement = path => {
   const document =  Utils.readJsonAndParseSync(path);
@@ -131,7 +131,7 @@ const schemaValidator = schemaNavn => {
 };
 module.exports.schemaValidator = schemaValidator;
 
-module.exports.runTest = (data, validate) => {
+const runTest = (data, validate) => {
   const { navn, document } = data;
   const valid = validate(document);
   if (valid) {
@@ -147,8 +147,28 @@ module.exports.runTest = (data, validate) => {
     });
   }
 };
+module.exports.runTest = runTest;
+
+module.exports.testPostMockFiles = navn => {
+  const POST_DIR = `${MOCK_DATA_DIR}/${navn}/post`;
+  const validate = schemaValidator(`${navn}-post-schema.json`);
+  const catalog = lesKatalogSync(POST_DIR);
+  catalog.forEach((elem) => runTest(elem, validate));
+};
+
+module.exports.testGetMockFiles = navn => {
+  const GET_DIR = `${MOCK_DATA_DIR}/${navn}`;
+  const validate = schemaValidator(`${navn}-schema.json`);
+  const catalog = lesKatalogSync(GET_DIR);
+  catalog.forEach((elem) => runTest(elem, validate));
+};
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+};
 module.exports.printWhiteText = text => {
-  console.log(colors.white(text));
+  const prettyfied = capitalize(text);
+  console.log(colors.white(prettyfied));
 };
 
 module.exports.printGreenText = text => {

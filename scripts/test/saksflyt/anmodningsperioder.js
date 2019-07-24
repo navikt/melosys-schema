@@ -4,11 +4,10 @@ const Schema = require('../../utils/schema-util');
 const testAll = navn => {
   Schema.printWhiteText(navn);
   Schema.testPostMockFiles(navn);
-  Schema.testGetMockFiles(navn);
 };
 
-const tidligereMedlemsPerioder = {
-  testAll,
+const anmodningsperioder = {
+  testAll
 };
-module.exports.tidligereMedlemsPerioder = tidligereMedlemsPerioder;
+module.exports.anmodningsperioder = anmodningsperioder;
 

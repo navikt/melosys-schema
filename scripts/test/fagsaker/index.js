@@ -1,11 +1,11 @@
 const { fagsak } = require('./fagsak');
-const { aktoer} = require('./aktoer');
+const { aktoerer } = require('./aktoerer');
 const { sok } = require('./sok');
 const { kontaktopplysninger } = require('./kontaktopplysninger');
 
 module.exports = {
   fagsak,
-  aktoer,
+  aktoerer,
   sok,
   kontaktopplysninger,
 };

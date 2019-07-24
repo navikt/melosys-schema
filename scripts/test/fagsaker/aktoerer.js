@@ -7,8 +7,7 @@ const testAll = navn => {
   Schema.testGetMockFiles(navn);
 };
 
-const tidligereMedlemsPerioder = {
-  testAll,
+const aktoerer = {
+  testAll
 };
-module.exports.tidligereMedlemsPerioder = tidligereMedlemsPerioder;
-
+module.exports.aktoerer = aktoerer;

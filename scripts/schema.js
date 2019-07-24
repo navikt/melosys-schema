@@ -1,22 +1,25 @@
 /* eslint-disable node/no-unpublished-require */
 const fs = require('fs');
 
-const { demo } = require('./test/demo');
+const Demo = require('./test/demo');
 const Anmodningsperioder = require('./test/anmodningsperioder');
-const { avklartefakta } = require('./test/avklartefakta');
+const Avklartefakta = require('./test/avklartefakta');
 const Behandlinger = require('./test/behandlinger');
-const { dokumenter } = require('./test/dokumenter');
+const Dokumenter = require('./test/dokumenter');
+const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
-const { inngang } = require('./test/inngang');
-const { journalforing } = require('./test/journalforing');
-const { lovvalgsperioder } = require('./test/lovvalgsperioder');
+const Inngang = require('./test/inngang');
+const Journalforing = require('./test/journalforing');
+const Lovvalgsperioder = require('./test/lovvalgsperioder');
 const Oppgaver = require('./test/oppgaver');
-const { organisasjon } = require('./test/organsisasjon');
-const { opprinneligLovvalgsperiode } = require('./test/opprinneligLovvalgsperiode');
-const { person } = require('./test/person');
-const { soknad } = require('./test/soknad');
-const { Saksbehandler } = require('./test/saksbehandler');
-const { vilkar } = require('./test/vilkar');
+const Organisasjon = require('./test/organsisasjon');
+const OpprinneligLovvalgsperiode = require('./test/opprinneligLovvalgsperiode');
+const Personer = require('./test/personer');
+const Soknader = require('./test/soknader');
+const Saksbehandler = require('./test/saksbehandler');
+const Saksflyt = require('./test/saksflyt');
+
+const Vilkar = require('./test/vilkar');
 
 const Schema = require('./utils/schema-util');
 
@@ -32,29 +35,40 @@ log4js.configure({
 });
 
 const katalogMap = new Map([
-  ['Demo', demo],
-  ['Anmodningsperioder', Anmodningsperioder.anmodningsperioder],
-  ['Anmodningsperioder/svar', Anmodningsperioder.svar],
-  ['Avklartefakta', avklartefakta],
-  ['Behandlinger/behandling', Behandlinger.behandling],
-  ['Behandlinger/medlemsperioder', Behandlinger.medlemsperioder],
-  ['Behandlinger/resultat', Behandlinger.resultat],
-  ['Dokumenter', dokumenter],
-  ['Fagsaker', Fagsaker.fagsak],
-  ['Fagsaker/aktoerer', Fagsaker.aktoer],
-  ['Fagsaker/kontaktopplysninger', Fagsaker.kontaktopplysninger],
-  ['Fagsaker/sok', Fagsaker.sok],
-  ['Inngang', inngang],
-  ['Journalforing', journalforing],
-  ['Lovvalgsperioder', lovvalgsperioder],
-  ['Oppgaver', Oppgaver.oppgaver],
-  ['Oppgaver/sok', Oppgaver.sok],
-  ['OpprinneligLovvalgsperiode', opprinneligLovvalgsperiode],
-  ['Organisasjoner', organisasjon],
-  ['Personer', person],
-  ['Saksbehandler', Saksbehandler],
-  ['Soknader', soknad],
-  ['Vilkar', vilkar],
+  ['demo', Demo.demo],
+  ['anmodningsperioder', Anmodningsperioder.anmodningsperioder],
+  ['anmodningsperioder-svar', Anmodningsperioder.svar],
+  ['avklartefakta', Avklartefakta.avklartefakta],
+  ['behandlinger-behandling', Behandlinger.behandling],
+  ['behandlinger-resultat', Behandlinger.resultat],
+  ['behandlinger-status', Behandlinger.status],
+  ['behandlinger-tidligeremedlemsperioder', Behandlinger.tidligereMedlemsPerioder],
+  ['dokumenter', Dokumenter.dokumenter],
+  ['eessi', Eessi.eessi],
+  ['eessi-bucerunderarbeid', Eessi.bucerunderarbeid],
+  ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
+  ['fagsaker', Fagsaker.fagsak],
+  ['fagsaker-aktoerer', Fagsaker.aktoerer],
+  ['fagsaker-kontaktopplysninger', Fagsaker.kontaktopplysninger],
+  ['fagsaker-sok', Fagsaker.sok],
+  ['inngang', Inngang.inngang],
+  ['journalforing', Journalforing.journalforing],
+  ['journalforing-opprett', Journalforing.opprett],
+  ['journalforing-tilordne', Journalforing.tilordne],
+  ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
+  ['oppgaver', Oppgaver.oppgaver],
+  ['oppgaver-plukk', Oppgaver.plukk],
+  ['oppgaver-plukk-response', Oppgaver.plukkResponse],
+  ['oppgaver-sok', Oppgaver.sok],
+  ['opprinneligLovvalgsperiode', OpprinneligLovvalgsperiode.opprinneligLovvalgsperiode],
+  ['organisasjoner', Organisasjon.organisasjon],
+  ['personer', Personer.personer],
+  ['saksbehandler', Saksbehandler.saksbehandler],
+  ['saksflyt-anmodningsperioder', Saksflyt.anmodningsperioder],
+  ['saksflyt-unntaksperioder', Saksflyt.unntaksperioder],
+  ['saksflyt-vedtak', Saksflyt.vedtak],
+  ['soknader', Soknader.soknader],
+  ['vilkar', Vilkar.vilkar],
 ]);
 
 const testAll = () => {
