@@ -4,8 +4,8 @@ const { MOCK_DATA_DIR } = require('../../mock.config');
 const MOCK_DATA_SAKSBEHANDLER_DIR = `${MOCK_DATA_DIR}/saksbehandler`;
 const validate = Schema.schemaValidator('saksbehandler-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Saksbehandler');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(MOCK_DATA_SAKSBEHANDLER_DIR);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };

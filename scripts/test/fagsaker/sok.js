@@ -5,8 +5,8 @@ const MOCK_FAGFSAKER_SOK_DIR = `${MOCK_DATA_DIR}/fagsaker/sok`;
 
 const validate = Schema.schemaValidator('sok-fagsaker-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Fagsaker Sok');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(MOCK_FAGFSAKER_SOK_DIR);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };

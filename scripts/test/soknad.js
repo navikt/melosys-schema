@@ -4,8 +4,8 @@ const MOCK_SOKNAD_DIR = `${MOCK_DATA_DIR}/soknader`;
 
 const validate = Schema.schemaValidator('soknad-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Soknad');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const katalog = Schema.lesKatalogSync(MOCK_SOKNAD_DIR);
   katalog.forEach(elem => Schema.runTest(elem, validate));
 };

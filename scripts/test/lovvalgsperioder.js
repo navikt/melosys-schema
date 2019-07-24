@@ -5,8 +5,8 @@ const LOVVALGSPERIODER_MOCK_DATA_DIR = `${MOCK_DATA_DIR}/lovvalgsperioder`;
 
 const validate = Schema.schemaValidator('lovvalgsperioder-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Lovvalgsperioder');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(LOVVALGSPERIODER_MOCK_DATA_DIR);
   catalog.forEach((elem) => Schema.runTest(elem, validate));
 };

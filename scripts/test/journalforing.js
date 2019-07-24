@@ -16,9 +16,8 @@ const testJournalPost = (postnavn) => {
   Schema.runTest(elem, postValidator);
 };
 */
-
-const testAll = () => {
-  Schema.prettyTittel('Journalforing');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(MOCK_DATA_JOURNALFORING_DIR);
   const validate = Schema.schemaValidator('journalforing-schema.json');
   catalog.forEach(elem => Schema.runTest(elem, validate));

@@ -4,8 +4,8 @@ const { MOCK_DATA_DIR } = require('../../../mock.config');
 
 const MOCK_DATA_OPPGAVER_DIR = `${MOCK_DATA_DIR}/oppgaver`;
 
-const testAll = () => {
-  Schema.prettyTittel('Oppgaver');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(MOCK_DATA_OPPGAVER_DIR);
   catalog.forEach((elem) => {
     const { navn } = elem;

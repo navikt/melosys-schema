@@ -5,10 +5,8 @@ const KONTAKT_OPPLYSNINGER_DATA_DIR = `${MOCK_DATA_DIR}/fagsaker/kontaktopplysni
 
 const validate = Schema.schemaValidator('kontaktopplysninger-schema.json');
 
-const printTitle = () => Schema.prettyTittel('Fagsaker Kontaktopplysninger');
-
-const testAll = () => {
-  printTitle();
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(KONTAKT_OPPLYSNINGER_DATA_DIR);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };

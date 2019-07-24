@@ -5,8 +5,8 @@ const VILKAR_MOCK_DATA_DIR = `${MOCK_DATA_DIR}/vilkar`;
 
 const validate = Schema.schemaValidator('vilkar-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Vilkar');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(VILKAR_MOCK_DATA_DIR);
   catalog.forEach((elem) => Schema.runTest(elem, validate));
 };

@@ -11,9 +11,9 @@ const testAvklaringPost = () => {
   return Schema.runTest(elem, validate);
 };
 */
-const testAll = () => {
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(AVKLARTEFAKTA_MOCK_DIR);
-  Schema.prettyTittel('Avklartefakta');
   catalog.forEach(elem => Schema.runTest(elem, validate));
 
   //testAvklaringPost();

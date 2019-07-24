@@ -7,8 +7,8 @@ const BEHANDLINGSRESULTAT_MOCK_DATA_DIR = `${BEHANDLINGER_MOCK_DIR}/resultat`;
 
 const validate = Schema.schemaValidator('behandlingsresultat-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Behandlingsresultat');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(BEHANDLINGSRESULTAT_MOCK_DATA_DIR);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };

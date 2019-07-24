@@ -5,15 +5,15 @@ const ANMODNINGSPERIODER_SVAR_MOCK_DIR = `${MOCK_DATA_DIR}/anmodningsperioder/sv
 
 const validate = Schema.schemaValidator('anmodningsperiodersvar-schema.json');
 
-const testAll = () => {
+const testAll = navn => {
   const catalog = Schema.lesKatalogSync(ANMODNINGSPERIODER_SVAR_MOCK_DIR);
-  Schema.prettyTittel('Anmodningsperioder/Svar');
+  Schema.printWhiteText(navn);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };
 
 const testOne = (path) => {
   const tittel = Schema.katalogTittel(path);
-  Schema.prettyTittel(tittel);
+  Schema.printWhiteText(tittel);
   const elem = Schema.lesKatalogElement(path);
   return Schema.runTest(elem, validate);
 };

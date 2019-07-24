@@ -5,8 +5,8 @@ const MOCK_DATA_ORG_DIR = `${MOCK_DATA_DIR}/organisasjoner`;
 
 const validate = Schema.schemaValidator('organisasjoner-schema.json');
 
-const testAll = () => {
-  Schema.prettyTittel('Organisasjon');
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   const catalog = Schema.lesKatalogSync(MOCK_DATA_ORG_DIR);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };

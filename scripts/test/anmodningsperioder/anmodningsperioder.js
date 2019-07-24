@@ -4,9 +4,9 @@ const ANMODNINGSPERIODER_MOCK_DIR = `${MOCK_DATA_DIR}/anmodningsperioder`;
 
 const validate = Schema.schemaValidator('anmodningsperioder-get-schema.json');
 
-const testAll = () => {
+const testAll = navn => {
   const catalog = Schema.lesKatalogSync(ANMODNINGSPERIODER_MOCK_DIR);
-  Schema.prettyTittel('Anmodningsperioder');
+  Schema.printWhiteText(navn);
   catalog.forEach(elem => Schema.runTest(elem, validate));
 };
 

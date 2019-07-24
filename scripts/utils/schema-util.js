@@ -1,5 +1,6 @@
 /* eslint-disable node/no-unpublished-require */
 const Ajv = require('ajv');
+const _ = require('lodash');
 const { JSONPath } = require('jsonpath-plus');
 const glob = require('glob');
 const log4js = require('log4js');
@@ -146,6 +147,13 @@ module.exports.runTest = (data, validate) => {
     });
   }
 };
-module.exports.prettyTittel = label => {
-  console.log(colors.white(label));
+module.exports.printWhiteText = text => {
+  console.log(colors.white(text));
+};
+
+module.exports.printGreenText = text => {
+  console.log(colors.green(text));
+};
+module.exports.printRedText = text => {
+  console.log(colors.red(text));
 };

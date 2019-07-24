@@ -3,20 +3,20 @@ const fs = require('fs');
 
 const { demo } = require('./test/demo');
 const Anmodningsperioder = require('./test/anmodningsperioder');
-const { person } = require('./test/person');
-const { soknad } = require('./test/soknad');
-const Fagsaker = require('./test/fagsaker');
-const { Saksbehandler } = require('./test/saksbehandler');
+const { avklartefakta } = require('./test/avklartefakta');
 const Behandlinger = require('./test/behandlinger');
-const { organisasjon } = require('./test/organsisasjon');
-const { lovvalgsperioder } = require('./test/lovvalgsperioder');
-const { opprinneligLovvalgsperiode } = require('./test/opprinneligLovvalgsperiode');
+const { dokumenter } = require('./test/dokumenter');
+const Fagsaker = require('./test/fagsaker');
 const { inngang } = require('./test/inngang');
 const { journalforing } = require('./test/journalforing');
+const { lovvalgsperioder } = require('./test/lovvalgsperioder');
 const Oppgaver = require('./test/oppgaver');
-const { avklartefakta } = require('./test/avklartefakta');
+const { organisasjon } = require('./test/organsisasjon');
+const { opprinneligLovvalgsperiode } = require('./test/opprinneligLovvalgsperiode');
+const { person } = require('./test/person');
+const { soknad } = require('./test/soknad');
+const { Saksbehandler } = require('./test/saksbehandler');
 const { vilkar } = require('./test/vilkar');
-const { dokumenter } = require('./test/dokumenter');
 
 const Schema = require('./utils/schema-util');
 
@@ -32,33 +32,33 @@ log4js.configure({
 });
 
 const katalogMap = new Map([
-  ['demo', demo],
-  ['anmodningsperioder', Anmodningsperioder.anmodningsperioder],
-  ['anmodningsperioder/svar', Anmodningsperioder.svar],
-  ['behandlinger/behandling', Behandlinger.behandling],
-  ['behandlinger/medlemsperioder', Behandlinger.medlemsperioder],
-  ['behandlinger/resultat', Behandlinger.resultat],
-  ['personer', person],
-  ['soknader', soknad],
-  ['fagsaker', Fagsaker.fagsak],
-  ['fagsaker/aktoerer', Fagsaker.aktoer],
-  ['fagsaker/kontaktopplysninger', Fagsaker.kontaktopplysninger],
-  ['sok/fagsaker', Fagsaker.sok],
-  ['saksbehandler', Saksbehandler],
-  ['organisasjoner', organisasjon],
-  ['lovvalgsperioder', lovvalgsperioder],
-  ['opprinneligLovvalgsperiode', opprinneligLovvalgsperiode],
-  ['inngang', inngang],
-  ['journalforing', journalforing],
-  ['oppgaver', Oppgaver.oppgaver],
-  ['oppgaver/sok', Oppgaver.sok],
-  ['avklartefakta', avklartefakta],
-  ['vilkar', vilkar],
-  ['dokumenter', dokumenter],
+  ['Demo', demo],
+  ['Anmodningsperioder', Anmodningsperioder.anmodningsperioder],
+  ['Anmodningsperioder/svar', Anmodningsperioder.svar],
+  ['Avklartefakta', avklartefakta],
+  ['Behandlinger/behandling', Behandlinger.behandling],
+  ['Behandlinger/medlemsperioder', Behandlinger.medlemsperioder],
+  ['Behandlinger/resultat', Behandlinger.resultat],
+  ['Dokumenter', dokumenter],
+  ['Fagsaker', Fagsaker.fagsak],
+  ['Fagsaker/aktoerer', Fagsaker.aktoer],
+  ['Fagsaker/kontaktopplysninger', Fagsaker.kontaktopplysninger],
+  ['Fagsaker/sok', Fagsaker.sok],
+  ['Inngang', inngang],
+  ['Journalforing', journalforing],
+  ['Lovvalgsperioder', lovvalgsperioder],
+  ['Oppgaver', Oppgaver.oppgaver],
+  ['Oppgaver/sok', Oppgaver.sok],
+  ['OpprinneligLovvalgsperiode', opprinneligLovvalgsperiode],
+  ['Organisasjoner', organisasjon],
+  ['Personer', person],
+  ['Saksbehandler', Saksbehandler],
+  ['Soknader', soknad],
+  ['Vilkar', vilkar],
 ]);
 
 const testAll = () => {
-  katalogMap.forEach((katalog) => katalog.testAll());
+  katalogMap.forEach((katalog, navn) => katalog.testAll(navn));
 };
 
 testAll();
