@@ -131,12 +131,18 @@ const schemaValidator = schemaNavn => {
 };
 module.exports.schemaValidator = schemaValidator;
 
-const runTest = (data, validate) => {
+const runTest = (data, validate, color = 'green') => {
+  const textColor = {
+    cyan: colors.cyan,
+    red: colors.red,
+    green: colors.green,
+    blue: colors.blue,
+  };
   const { navn, document } = data;
   const valid = validate(document);
   if (valid) {
     incSuccess();
-    console.log(' ',emoji.get('ballot_box_with_check'),' ',colors.green(navn));
+    console.log(' ',emoji.get('ballot_box_with_check'),' ',textColor[color](navn));
   }
   else {
     incFailure();
@@ -153,7 +159,7 @@ module.exports.testPostMockFiles = navn => {
   const POST_DIR = `${MOCK_DATA_DIR}/${navn}/post`;
   const validate = schemaValidator(`${navn}-post-schema.json`);
   const catalog = lesKatalogSync(POST_DIR);
-  catalog.forEach((elem) => runTest(elem, validate));
+  catalog.forEach((elem) => runTest(elem, validate, 'cyan'));
 };
 
 module.exports.testGetMockFiles = navn => {
@@ -163,8 +169,8 @@ module.exports.testGetMockFiles = navn => {
   catalog.forEach((elem) => runTest(elem, validate));
 };
 const capitalize = (s) => {
-  if (typeof s !== 'string') return ''
-  return s.charAt(0).toUpperCase() + s.slice(1)
+  if (typeof s !== 'string') return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
 };
 module.exports.printWhiteText = text => {
   const prettyfied = capitalize(text);
