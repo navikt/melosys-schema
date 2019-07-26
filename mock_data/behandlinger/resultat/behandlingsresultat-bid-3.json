@@ -1,4 +1,5 @@
 {
   "begrunnelseKoder" : ["ANNET"],
-  "begrunnelseFritekst" : "Brukeren har fått flyskrekk"
+  "begrunnelseFritekst" : "Brukeren har fått flyskrekk",
+  "behandlingsresultattype": "IKKE_FASTSATT"
 }
