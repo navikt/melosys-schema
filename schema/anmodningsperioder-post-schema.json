@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/saksflyt-anmodningsperioder-post-schema.json",
+  "type": "object",
+  "title": "The Anmodningsperioder post schema",
+  "additionalProperties": false,
+  "required": [
+    "anmodningsperioder"
+  ],
+  "properties": {
+    "anmodningsperioder": {
+      "$ref": "http://melosys.nav.no/schemas/anmodningsperioder-definitions-schema.json#/definitions/anmodningsperioder"
+    }
+  }
+}

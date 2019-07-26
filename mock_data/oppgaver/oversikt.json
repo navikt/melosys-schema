@@ -57,8 +57,8 @@
       "behandling": {
         "behandlingID": 3,
         "behandlingstype": {
-          "kode": "UNNTAK_FRA_MEDLEMSKAP",
-          "term": "Registrering av unntak"
+          "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD",
+          "term": "Registrering av unntak norsk trygd (A009,A010)"
         },
         "behandlingsstatus": {
           "kode": "OPPRETTET",
