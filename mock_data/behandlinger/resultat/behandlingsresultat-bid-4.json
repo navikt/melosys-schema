@@ -1,5 +1,5 @@
 {
   "begrunnelseKoder" : [ "OPPHOLD_UTL_AVLYST" ],
   "begrunnelseFritekst" : null,
-  "behandlingsresultattype": "IKKE_FASTSATT"
+  "behandlingsresultatType": "AVSLAG_MANGLENDE_OPPL"
 }

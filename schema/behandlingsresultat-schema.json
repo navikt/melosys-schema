@@ -8,7 +8,7 @@
   "required": [
     "begrunnelseKoder",
     "begrunnelseFritekst",
-    "behandlingsresultattype"
+    "behandlingsresultatType"
   ],
   "properties": {
     "begrunnelseKoder": {
@@ -34,8 +34,8 @@
       ],
       "pattern": "^(.*)$"
     },
-    "behandlingsresultattype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultattype"
+    "behandlingsresultatType": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatType"
     }
   }
 }
