@@ -5,7 +5,7 @@ const { MOCK_DATA_DIR } = require('../../../mock.config');
 const BEHANDLINGER_MOCK_DIR = `${MOCK_DATA_DIR}/behandlinger`;
 const BEHANDLINGSRESULTAT_MOCK_DATA_DIR = `${BEHANDLINGER_MOCK_DIR}/resultat`;
 
-const validate = Schema.schemaValidator('behandlingsresultat-schema.json');
+const validate = Schema.schemaValidator('behandlingsresultater-schema.json');
 
 const testAll = () => {
   Schema.prettyTittel('Behandlingsresultat');

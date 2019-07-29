@@ -71,6 +71,18 @@
         "ØVRIGE_SED"
       ]
     },
+    "behandlingsresultatType": {
+      "type": "string",
+      "enum": [
+        "FASTSATT_LOVVALGSLAND",
+        "FORELOEPIG_FASTSATT_LOVVALGSLAND",
+        "HENLEGGELSE",
+        "ANMODNING_OM_UNNTAK",
+        "IKKE_FASTSATT",
+        "REGISTRERT_UNNTAK",
+        "AVSLAG_MANGLENDE_OPPL"
+      ]
+    },
     "databaseID": {
       "type": "integer",
       "title": "The DatabaseID Schema",
