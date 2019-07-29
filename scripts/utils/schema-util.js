@@ -2,6 +2,7 @@
 const Ajv = require('ajv');
 const { JSONPath } = require('jsonpath-plus');
 const glob = require('glob');
+const _ = require('lodash');
 const log4js = require('log4js');
 const logger = log4js.getLogger('schema');
 const colors = require('colors/safe');
@@ -173,7 +174,7 @@ const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 module.exports.printWhiteText = text => {
-  const prettyfied = capitalize(text);
+  const prettyfied = _.startCase(text);
   console.log(colors.white(prettyfied));
 };
 

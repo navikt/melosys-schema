@@ -79,3 +79,10 @@ testAll();
 console.log();
 console.dir(Schema.oppsummering());
 console.log('\nSchema validation completed.\n');
+
+const test = () => {
+  testAll();
+  const oppsummering = Schema.oppsummering();
+  return oppsummering.failure === 0;
+};
+module.exports.test = test;
