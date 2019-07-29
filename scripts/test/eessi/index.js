@@ -1,9 +1,7 @@
-const { eessi } = require('./eessi');
-const { bucerunderarbeid} = require('./bucerunderarbeid');
+const { bucer } = require('./bucer');
 const { mottakerinstitusjoner } = require('./mottakerinstitusjoner');
 
 module.exports = {
-  bucerunderarbeid,
-  eessi,
+  bucer,
   mottakerinstitusjoner,
 };
