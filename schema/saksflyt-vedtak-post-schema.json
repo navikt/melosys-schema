@@ -5,11 +5,11 @@
   "type": "object",
   "title": "The Root Schema",
   "required": [
-    "behandlingsresultatType"
+    "behandlingsresultatTypeKode"
   ],
   "properties": {
-    "behandlingsresultatType": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatType"
+    "behandlingsresultatTypeKode": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     }
   }
 }

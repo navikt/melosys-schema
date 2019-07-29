@@ -71,7 +71,7 @@
         "ØVRIGE_SED"
       ]
     },
-    "behandlingsresultatType": {
+    "behandlingsresultatTypeKode": {
       "type": "string",
       "enum": [
         "FASTSATT_LOVVALGSLAND",

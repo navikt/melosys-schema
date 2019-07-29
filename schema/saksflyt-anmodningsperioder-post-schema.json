@@ -6,11 +6,11 @@
   "title": "The Saksflyt-anmodningsperioder-post Schema",
   "additionalProperties": false,
   "required": [
-    "behandlingsresultatType"
+    "behandlingsresultatTypeKode"
   ],
   "properties": {
-    "behandlingsresultatType": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatType"
+    "behandlingsresultatTypeKode": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     }
   }
 }
