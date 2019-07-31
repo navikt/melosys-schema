@@ -7,8 +7,8 @@ const testAll = navn => {
   Schema.testGetMockFiles(navn);
 };
 
-const vilkar = {
+const vilkaar = {
   testAll,
 };
-module.exports.vilkar = vilkar;
+module.exports.vilkaar = vilkaar;
 

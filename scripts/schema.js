@@ -19,7 +19,7 @@ const Soknader = require('./test/soknader');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
 
-const Vilkar = require('./test/vilkar');
+const Vilkaar = require('./test/vilkaar');
 
 const Schema = require('./utils/schema-util');
 
@@ -57,7 +57,6 @@ const katalogMap = new Map([
   ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
   ['oppgaver', Oppgaver.oppgaver],
   ['oppgaver-plukk', Oppgaver.plukk],
-  ['oppgaver-plukk-response', Oppgaver.plukkResponse],
   ['oppgaver-sok', Oppgaver.sok],
   ['opprinneligLovvalgsperiode', OpprinneligLovvalgsperiode.opprinneligLovvalgsperiode],
   ['organisasjoner', Organisasjon.organisasjon],
@@ -65,9 +64,10 @@ const katalogMap = new Map([
   ['saksbehandler', Saksbehandler.saksbehandler],
   ['saksflyt-anmodningsperioder', Saksflyt.anmodningsperioder],
   ['saksflyt-unntaksperioder', Saksflyt.unntaksperioder],
-  ['saksflyt-vedtak', Saksflyt.vedtak],
+  ['saksflyt-vedtak-endreperiode', Saksflyt.vedtak],
+  ['saksflyt-vedtak-fatte', Saksflyt.vedtak],
   ['soknader', Soknader.soknader],
-  ['vilkar', Vilkar.vilkar],
+  ['vilkaar', Vilkaar.vilkaar],
 ]);
 
 const testAll = () => {
