@@ -4,9 +4,8 @@ const Schema = require('../../utils/schema-util');
 const testAll = navn => {
   Schema.printWhiteText(navn);
   Schema.testPostMockFiles(navn);
-  Schema.testGetMockFiles(navn);
 };
-const oppgaver = {
+const tilbakelegg = {
   testAll,
 };
-module.exports.oppgaver = oppgaver;
+module.exports.tilbakelegg = tilbakelegg;

@@ -3,10 +3,9 @@ const Schema = require('../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
-  Schema.testPostMockFiles(navn);
-  Schema.testGetMockFiles(navn);  // custom response
+  Schema.testGetMockFiles(navn);
 };
-const plukk = {
+const oversikt = {
   testAll,
 };
-module.exports.plukk = plukk;
+module.exports.oversikt = oversikt;

@@ -13,7 +13,7 @@ const Journalforing = require('./test/journalforing');
 const Lovvalgsperioder = require('./test/lovvalgsperioder');
 const Oppgaver = require('./test/oppgaver');
 const Organisasjon = require('./test/organsisasjon');
-const OpprinneligLovvalgsperiode = require('./test/opprinneligLovvalgsperiode');
+const LovvalgsperioderOpprinnelig = require('./test/lovvalgsperioderOpprinnelig');
 const Personer = require('./test/personer');
 const Soknader = require('./test/soknader');
 const Saksbehandler = require('./test/saksbehandler');
@@ -55,10 +55,11 @@ const katalogMap = new Map([
   ['journalforing-opprett', Journalforing.opprett],
   ['journalforing-tilordne', Journalforing.tilordne],
   ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
-  ['oppgaver', Oppgaver.oppgaver],
+  ['oppgaver-oversikt', Oppgaver.oversikt],
   ['oppgaver-plukk', Oppgaver.plukk],
   ['oppgaver-sok', Oppgaver.sok],
-  ['opprinneligLovvalgsperiode', OpprinneligLovvalgsperiode.opprinneligLovvalgsperiode],
+  ['oppgaver-tilbakelegg', Oppgaver.tilbakelegg],
+  ['lovvalgsperioder-opprinnelig', LovvalgsperioderOpprinnelig.lovvalgsperioderOpprinnelig],
   ['organisasjoner', Organisasjon.organisasjon],
   ['personer', Personer.personer],
   ['saksbehandler', Saksbehandler.saksbehandler],

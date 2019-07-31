@@ -20,7 +20,7 @@ const testAll = navn => {
   Schema.printWhiteText(navn);
   Schema.testGetMockFiles(navn);
 };
-const opprinneligLovvalgsperiode = {
+const lovvalgsperioderOpprinnelig = {
   testAll,
 };
-module.exports.opprinneligLovvalgsperiode = opprinneligLovvalgsperiode;
+module.exports.lovvalgsperioderOpprinnelig = lovvalgsperioderOpprinnelig;
