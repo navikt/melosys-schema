@@ -24,7 +24,8 @@
         "tilleggBestemmelse",
         "unntakFraBestemmelse",
         "lovvalgsland",
-        "unntakFraLovvalgsland"
+        "unntakFraLovvalgsland",
+        "medlemskapsperiodeID"
       ],
       "properties": {
         "id": {
@@ -54,6 +55,10 @@
           "pattern": "^(.*)$"
         },
         "unntakFraLovvalgsland": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        },
+        "medlemskapsperiodeID": {
           "type": ["string", "null"],
           "pattern": "^(.*)$"
         }

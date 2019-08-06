@@ -8,7 +8,8 @@
       "tilleggBestemmelse": "FO_883_2004_ART13_4",
       "unntakFraBestemmelse": null,
       "lovvalgsland": "NO",
-      "unntakFraLovvalgsland": null
+      "unntakFraLovvalgsland": null,
+      "medlemskapsperiodeID": "123"
     }
   ]
 }
