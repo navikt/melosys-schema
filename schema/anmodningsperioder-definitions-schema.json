@@ -52,7 +52,7 @@
           "type": ["string", "null"],
           "pattern": "^(.*)$"
         },
-        "anmodningSaksflytSendt": {
+        "sendtUtland": {
           "type": "boolean"
         }
       }
