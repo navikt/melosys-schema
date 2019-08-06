@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/dokumenter-post-schema.json",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-utkast-pdf-post-schema.json",
   "type": [
     "object",
     "null"
@@ -52,7 +52,16 @@
       "title": "The BegrunnelseKode Schema",
       "default": "",
       "examples": [
-        "IKKE_VESENTLIG_VIRKSOMHET"
+        "ANMODNING_UNNTAK",
+        "AVSLAG_ARBEIDSGIVER",
+        "AVSLAG_YRKESAKTIV",
+        "ATTEST_A1",
+        "INNVILGELSE_ARBEIDSGIVER",
+        "INNVILGELSE_YRKESAKTIV",
+        "MELDING_FORVENTET_SAKSBEHANDLINGSTID",
+        "MELDING_MANGLENDE_OPPLYSNINGER",
+        "MELDING_HENLAGT_SAK",
+        "ORIENTERING_ANMODNING_UNNTAK"
       ],
       "pattern": "^(.*)$"
     }

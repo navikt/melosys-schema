@@ -5,20 +5,11 @@
   "type": "object",
   "title": "The Root Schema",
   "required": [
-    "behandlingsresultattype"
+    "behandlingsresultatTypeKode"
   ],
   "properties": {
-    "behandlingsresultat": {
-      "title": "The Behandlingsresultat Schema",
-      "$id": "#/properties/behandlingsresultattype",
-      "type": "string",
-      "enum": [
-        "FASTSATT_LOVVALGSLAND", "FORELOEPIG_FASTSATT_LOVVALGSLAND", "HENLEGGELSE", "ANMODNING_OM_UNNTAK"
-      ],
-      "default": "FASTSATT_LOVVALGSLAND",
-      "examples": [
-        "FASTSATT_LOVVALGSLAND"
-      ]
+    "behandlingsresultatTypeKode": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     }
   }
 }

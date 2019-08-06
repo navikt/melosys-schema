@@ -6,18 +6,11 @@
   "title": "The Saksflyt-anmodningsperioder-post Schema",
   "additionalProperties": false,
   "required": [
-    "behandlingsresultattype"
+    "behandlingsresultatTypeKode"
   ],
   "properties": {
-    "behandlingsresultattype": {
-      "type": "string",
-      "enum": [
-        "FASTSATT_LOVVALGSLAND", "FORELOEPIG_FASTSATT_LOVVALGSLAND", "HENLEGGELSE", "ANMODNING_OM_UNNTAK"
-      ],
-      "default": "FASTSATT_LOVVALGSLAND",
-      "examples": [
-        "FASTSATT_LOVVALGSLAND"
-      ]
+    "behandlingsresultatTypeKode": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     }
   }
 }
