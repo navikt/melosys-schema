@@ -545,6 +545,10 @@
         }
       }
     },
+    "trygdeDekning": {
+      "type": "string",
+      "enum": ["UTEN_DEKNING", "FULL_DEKNING_EOSFO"]
+    },
     "nullable-strukturertAdresse": {
       "type": "object",
       "additionalProperties": false,

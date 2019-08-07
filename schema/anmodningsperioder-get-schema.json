@@ -26,6 +26,7 @@
         "lovvalgsland",
         "unntakFraLovvalgsland",
         "medlemskapsperiodeID",
+        "trygdeDekning",
         "sendtUtland"
       ],
       "properties": {
@@ -62,6 +63,12 @@
         "medlemskapsperiodeID": {
           "type": ["string", "null"],
           "pattern": "^(.*)$"
+        },
+        "trygdeDekning": {
+          "oneOf": [
+            { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning" },
+            { "type": "null" }
+          ]
         },
         "sendtUtland": {
           "type": "boolean"
