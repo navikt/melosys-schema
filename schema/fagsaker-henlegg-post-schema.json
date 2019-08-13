@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/henlegg-fagsak-schema.json",
+  "$id": "http://melosys.nav.no/schemas/fagsaker-henlegg-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -14,7 +14,7 @@
       "$id": "#/properties/begrunnelseKode",
       "title": "The BegrunnelseKode Schema",
       "type": ["string"],
-      "enum": ["SOEKNADEN_TRUKKET", "OPPHOLD_UTL_AVLYST"]
+      "enum": ["SOEKNADEN_TRUKKET", "OPPHOLD_UTL_AVLYST", "ANNET"]
     },
     "fritekst": {
       "$id": "#/properties/fritekst",
