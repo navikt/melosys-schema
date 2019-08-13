@@ -51,6 +51,7 @@ const katalogMap = new Map([
   ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
   ['fagsaker', Fagsaker.fagsak],
   ['fagsaker-aktoerer', Fagsaker.aktoerer],
+  ['fagsaker-henlegg', Fagsaker.henlegg],
   ['fagsaker-kontaktopplysninger', Fagsaker.kontaktopplysninger],
   ['fagsaker-sok', Fagsaker.sok],
   ['inngangsvilkaar', Inngangsvilkaar.inngangsvilkaar],

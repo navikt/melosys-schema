@@ -3,10 +3,10 @@ const Schema = require('../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
-  Schema.testGetMockFiles(navn);
+  Schema.testPostMockFiles(navn);
 };
-const fagsak = {
+const henlegg = {
   testAll
 };
-module.exports.fagsak = fagsak;
+module.exports.henlegg = henlegg;
 

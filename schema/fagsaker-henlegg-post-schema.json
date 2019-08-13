@@ -14,7 +14,7 @@
       "$id": "#/properties/begrunnelseKode",
       "title": "The BegrunnelseKode Schema",
       "type": ["string"],
-      "enum": ["SOEKNADEN_TRUKKET", "OPPHOLD_UTL_AVLYST"]
+      "enum": ["SOEKNADEN_TRUKKET", "OPPHOLD_UTL_AVLYST", "ANNET"]
     },
     "fritekst": {
       "$id": "#/properties/fritekst",

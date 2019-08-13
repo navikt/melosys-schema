@@ -1,11 +1,13 @@
-const { fagsak } = require('./fagsak');
 const { aktoerer } = require('./aktoerer');
-const { sok } = require('./sok');
+const { fagsak } = require('./fagsak');
+const { henlegg } = require('./henlegg');
 const { kontaktopplysninger } = require('./kontaktopplysninger');
+const { sok } = require('./sok');
 
 module.exports = {
-  fagsak,
   aktoerer,
-  sok,
+  fagsak,
+  henlegg,
   kontaktopplysninger,
+  sok,
 };
