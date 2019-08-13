@@ -8,7 +8,7 @@ const Behandlinger = require('./test/behandlinger');
 const Dokumenter = require('./test/dokumenter');
 const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
-const Inngang = require('./test/inngang');
+const Inngangsvilkaar = require('./test/inngangsvilkaar');
 const Journalforing = require('./test/journalforing');
 const Lovvalgsperioder = require('./test/lovvalgsperioder');
 const Oppgaver = require('./test/oppgaver');
@@ -46,14 +46,14 @@ const katalogMap = new Map([
   ['dokumenter-opprett', Dokumenter.dokument.opprett],
   ['dokumenter-oversikt', Dokumenter.dokument.oversikt],
   ['dokumenter-pdf', Dokumenter.pdf.hent],
-  ['dokumenter-utkast-pdf', Dokumenter.pdf.utkast],
+  ['dokumenter-pdf-utkast', Dokumenter.pdf.utkast],
   ['eessi-bucer', Eessi.bucer],
   ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
   ['fagsaker', Fagsaker.fagsak],
   ['fagsaker-aktoerer', Fagsaker.aktoerer],
   ['fagsaker-kontaktopplysninger', Fagsaker.kontaktopplysninger],
   ['fagsaker-sok', Fagsaker.sok],
-  ['inngang', Inngang.inngang],
+  ['inngangsvilkaar', Inngangsvilkaar.inngangsvilkaar],
   ['journalforing', Journalforing.journalforing],
   ['journalforing-opprett', Journalforing.opprett],
   ['journalforing-tilordne', Journalforing.tilordne],
