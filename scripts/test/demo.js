@@ -2,7 +2,7 @@
 const Ajv = require('ajv');
 const ajv = new Ajv({allErrors: true});
 const colors = require('colors/safe');
-
+const Schema = require('../utils/schema-util');
 // Example from; https://jsonschema.net/
 const jsonJS = {
   sender: {
@@ -107,15 +107,15 @@ const validate = ajv.compile(schemaJS);
 function runTest(data) {
   const valid = validate(data);
   if (valid) {
-    console.log(colors.green('\tValid!'));
+    Schema.printGreenText('\tValid!');
   }
   else {
     console.log(colors.red('\tInvalid: ' + ajv.errorsText(validate.errors)));
   }
 }
 
-const testAll = () => {
-  console.log(colors.white('Demo'));
+const testAll = navn => {
+  Schema.printWhiteText(navn);
   runTest(jsonJS);
 };
 

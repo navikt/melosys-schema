@@ -2,6 +2,7 @@
 const Ajv = require('ajv');
 const { JSONPath } = require('jsonpath-plus');
 const glob = require('glob');
+const _ = require('lodash');
 const log4js = require('log4js');
 const logger = log4js.getLogger('schema');
 const colors = require('colors/safe');
@@ -72,7 +73,7 @@ module.exports.katalogTittel = path => {
   return katalog.charAt(0).toLocaleUpperCase() + katalog.slice(1);
 };
 
-module.exports.lesKatalogSync = dirpath => {
+const lesKatalogSync = dirpath => {
   let catalog = [];
   const files = glob.sync('*.json', {
     cwd: dirpath,
@@ -88,6 +89,7 @@ module.exports.lesKatalogSync = dirpath => {
   });
   return catalog;
 };
+module.exports.lesKatalogSync = lesKatalogSync;
 
 module.exports.lesKatalogElement = path => {
   const document =  Utils.readJsonAndParseSync(path);
@@ -130,12 +132,18 @@ const schemaValidator = schemaNavn => {
 };
 module.exports.schemaValidator = schemaValidator;
 
-module.exports.runTest = (data, validate) => {
+const runTest = (data, validate, color = 'green') => {
+  const textColor = {
+    cyan: colors.cyan,
+    red: colors.red,
+    green: colors.green,
+    blue: colors.blue,
+  };
   const { navn, document } = data;
   const valid = validate(document);
   if (valid) {
     incSuccess();
-    console.log(' ',emoji.get('ballot_box_with_check'),' ',colors.green(navn));
+    console.log(' ',emoji.get('ballot_box_with_check'),' ',textColor[color](navn));
   }
   else {
     incFailure();
@@ -146,6 +154,33 @@ module.exports.runTest = (data, validate) => {
     });
   }
 };
-module.exports.prettyTittel = label => {
-  console.log(colors.white(label));
+module.exports.runTest = runTest;
+
+module.exports.testPostMockFiles = navn => {
+  const POST_DIR = `${MOCK_DATA_DIR}/${navn}/post`;
+  const validate = schemaValidator(`${navn}-post-schema.json`);
+  const catalog = lesKatalogSync(POST_DIR);
+  catalog.forEach((elem) => runTest(elem, validate, 'cyan'));
+};
+
+module.exports.testGetMockFiles = navn => {
+  const GET_DIR = `${MOCK_DATA_DIR}/${navn}`;
+  const validate = schemaValidator(`${navn}-schema.json`);
+  const catalog = lesKatalogSync(GET_DIR);
+  catalog.forEach((elem) => runTest(elem, validate));
+};
+const capitalize = (s) => {
+  if (typeof s !== 'string') return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
+};
+module.exports.printWhiteText = text => {
+  const prettyfied = _.startCase(text);
+  console.log(colors.white(prettyfied));
+};
+
+module.exports.printGreenText = text => {
+  console.log(colors.green(text));
+};
+module.exports.printRedText = text => {
+  console.log(colors.red(text));
 };
