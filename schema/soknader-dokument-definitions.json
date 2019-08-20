@@ -777,6 +777,8 @@
               "navn",
               "fartsomradeKode",
               "flaggLandkode",
+              "foretakNavn",
+              "foretakOrgnr",
               "installasjonsLandkode",
               "territorialfarvann"
             ],
@@ -809,6 +811,14 @@
                 "examples": [
                   "GB"
                 ],
+                "pattern": "^(.*)$"
+              },
+              "foretakNavn": {
+                "type": ["string", "null"],
+                "pattern": "^(.*)$"
+              },
+              "foretakOrgnr": {
+                "type": ["string", "null"],
                 "pattern": "^(.*)$"
               },
               "installasjonsLandkode": {
