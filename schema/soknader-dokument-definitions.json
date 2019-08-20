@@ -162,6 +162,7 @@
             "required": [
               "navn",
               "orgnr",
+              "selvstendigNaeringsvirksomhet",
               "adresse"
             ],
             "properties": {
@@ -179,6 +180,9 @@
                 "title": "The Orgnr Schema",
                 "$id": "#/definitions/soeknadDokument/properties/foretakUtland/items/properties/orgnr",
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+              },
+              "selvstendigNaeringsvirksomhet": {
+                "type": "boolean"
               },
               "adresse": {
                 "$id": "#/definitions/soeknadDokument/properties/foretakUtland/items/properties/adresse",

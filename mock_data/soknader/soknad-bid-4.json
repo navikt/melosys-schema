@@ -28,6 +28,7 @@
       {
         "navn": "EQUINOR DEUTSCHLAND",
         "orgnr": "372384726",
+        "selvstendigNaeringsvirksomhet": true,
         "adresse": {
           "gatenavn": "Deutschlandstrasse",
           "husnummer": "123",
