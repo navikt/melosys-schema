@@ -11,8 +11,15 @@
   ],
   "properties": {
     "anmodningsperiodeSvarType": {
-      "type": "string",
-      "enum": ["INNVILGELSE", "DELVIS_INNVILGELSE", "AVSLAG"]
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["INNVILGELSE", "DELVIS_INNVILGELSE", "AVSLAG"]
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "endretPeriode": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
