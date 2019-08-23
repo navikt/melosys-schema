@@ -162,6 +162,7 @@
             "required": [
               "navn",
               "orgnr",
+              "selvstendigNaeringsvirksomhet",
               "adresse"
             ],
             "properties": {
@@ -179,6 +180,9 @@
                 "title": "The Orgnr Schema",
                 "$id": "#/definitions/soeknadDokument/properties/foretakUtland/items/properties/orgnr",
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+              },
+              "selvstendigNaeringsvirksomhet": {
+                "type": "boolean"
               },
               "adresse": {
                 "$id": "#/definitions/soeknadDokument/properties/foretakUtland/items/properties/adresse",
@@ -770,17 +774,19 @@
             "title": "The Maritimtarbeid Schema",
             "additionalProperties": false,
             "required": [
-              "navn",
+              "enhetNavn",
               "fartsomradeKode",
               "flaggLandkode",
+              "foretakNavn",
+              "foretakOrgnr",
               "installasjonsLandkode",
               "territorialfarvann"
             ],
             "properties": {
-              "navn": {
-                "$id": "#/definitions/soeknadDokument/properties/maritimtArbeid/items/properties/navn",
+              "enhetNavn": {
+                "$id": "#/definitions/soeknadDokument/properties/maritimtArbeid/items/properties/enhetNavn",
                 "type": ["string","null"],
-                "title": "The Navn Schema",
+                "title": "The EnhetNavn Schema",
                 "default": "",
                 "examples": [
                   "Navn på skipet"
@@ -805,6 +811,14 @@
                 "examples": [
                   "GB"
                 ],
+                "pattern": "^(.*)$"
+              },
+              "foretakNavn": {
+                "type": ["string", "null"],
+                "pattern": "^(.*)$"
+              },
+              "foretakOrgnr": {
+                "type": ["string", "null"],
                 "pattern": "^(.*)$"
               },
               "installasjonsLandkode": {
