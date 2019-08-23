@@ -774,7 +774,7 @@
             "title": "The Maritimtarbeid Schema",
             "additionalProperties": false,
             "required": [
-              "navn",
+              "enhetNavn",
               "fartsomradeKode",
               "flaggLandkode",
               "foretakNavn",
@@ -783,10 +783,10 @@
               "territorialfarvann"
             ],
             "properties": {
-              "navn": {
-                "$id": "#/definitions/soeknadDokument/properties/maritimtArbeid/items/properties/navn",
+              "enhetNavn": {
+                "$id": "#/definitions/soeknadDokument/properties/maritimtArbeid/items/properties/enhetNavn",
                 "type": ["string","null"],
-                "title": "The Navn Schema",
+                "title": "The EnhetNavn Schema",
                 "default": "",
                 "examples": [
                   "Navn på skipet"
