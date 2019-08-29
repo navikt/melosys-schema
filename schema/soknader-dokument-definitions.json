@@ -160,12 +160,17 @@
             "title": "The Items Schema",
             "additionalProperties": false,
             "required": [
+              "uuid",
               "navn",
               "orgnr",
               "selvstendigNaeringsvirksomhet",
               "adresse"
             ],
             "properties": {
+              "uuid": {
+                "type": "string",
+                "pattern": "^(.*)$"
+              },
               "navn": {
                 "$id": "#/definitions/soeknadDokument/properties/foretakUtland/items/properties/navn",
                 "type": ["string","null"],
