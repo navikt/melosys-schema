@@ -1,34 +1,45 @@
 {
-  "definitions": {},
+  "definitions": {
+    "endretPeriode": {
+      "title": "Periode med fom tom",
+      "type": ["object", "null"],
+      "required": [
+        "fom",
+        "tom"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "fom": {
+          "type": ["string"],
+          "format": "date",
+          "examples": ["2014-03-12"]
+        },
+        "tom": {
+          "type": ["string","null"],
+          "format": "date",
+          "examples": ["2014-03-12", null]
+        }
+      }
+    }
+  },
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/registrering-anmodningunntak-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "required": [
-    "ikkeGodkjentBegrunnelseKoder",
+    "anmodningsperiodeSvarType",
+    "endretPeriode",
     "begrunnelseFritekst"
   ],
   "properties": {
-    "ikkeGodkjentBegrunnelseKoder": {
-      "$id": "#/properties/ikkeGodkjentBegrunnelseKoder",
-      "type": "array",
-      "title": "The Ikkegodkjentbegrunnelsekoder Schema",
-      "items": {
-        "$id": "#/properties/ikkeGodkjentBegrunnelseKoder/items",
-        "type": "string",
-        "enum": [
-          "UTSENDELSE_OVER_24_MD",
-          "TREDJELANDSBORGER_IKKE_AVTALELAND",
-          "ANNET"
-        ],
-        "title": "The Items Schema",
-        "default": "",
-        "examples": [
-          "UTSENDELSE_OVER_24_MD",
-          "ANNET"
-        ],
-        "pattern": "^(.*)$"
-      }
+    "anmodningsperiodeSvarType": {
+      "$id": "#/properties/anmodningsperiodeSvarType",
+      "type": "string",
+      "enum": ["INNVILGELSE", "DELVIS_INNVILGELSE", "AVSLAG"]
+    },
+    "endretPeriode": {
+      "$id": "#/properties/endretPeriode",
+      "$ref": "#/definitions/endretPeriode"
     },
     "begrunnelseFritekst": {
       "$id": "#/properties/begrunnelseFritekst",
