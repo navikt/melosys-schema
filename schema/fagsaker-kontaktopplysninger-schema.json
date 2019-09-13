@@ -4,7 +4,7 @@
   "$id": "http://melosys.nav.no/schemas/kontaktopplysninger-schema.json",
   "type": ["object", "array"],
   "title": "The Root Schema",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": [
     "kontaktnavn",
     "kontaktorgnr"
