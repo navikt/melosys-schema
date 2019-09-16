@@ -41,7 +41,8 @@
     "hoveddokumentTittel",
     "vedlegg",
     "fagsak",
-    "skalTilordnes"
+    "skalTilordnes",
+    "skalSendesForvaltningsmelding"
   ],
   "properties": {
     "journalpostID": {
@@ -192,6 +193,16 @@
       "examples": [
         true
       ]
+    },
+    "skalSendesForvaltningsmelding": {
+      "$id": "#/items/properties/skalSendesForvaltningsmelding",
+      "type": "boolean",
+      "title": "The SkalSendesForvaltningsmelding Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
     }
+    
   }
 }

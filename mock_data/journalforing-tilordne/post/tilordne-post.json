@@ -15,5 +15,6 @@
       "tittel": "Vedleggstittel 1"
     }
   ],
-  "skalTilordnes": false
+  "skalTilordnes": false,
+  "skalSendesForvaltningsmelding": false
 }
