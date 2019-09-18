@@ -15,8 +15,10 @@
     },
     "foretakUtland" : [
       {
+        "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
         "navn" : "EQUINOR DEUTSCHLAND",
         "orgnr" : "372384726",
+        "selvstendigNaeringsvirksomhet": true,
         "adresse" : {
           "landkode" : "DE",
           "region" : "Brandenburger",
@@ -77,9 +79,11 @@
       {
         "installasjonsLandkode" : "GB",
         "flaggLandkode" : "GB",
-        "navn" : "Snorre Dunfjæder",
+        "enhetNavn" : "Snorre Dunfjæder",
         "fartsomradeKode" : "INNENRIKS",
-        "territorialfarvann": "GB"
+        "territorialfarvann": "GB",
+        "foretakNavn": "SWECO NORGE AS",
+        "foretakOrgnr": "967032271"
       }
     ],
     "arbeidUtland" : [

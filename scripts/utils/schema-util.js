@@ -169,10 +169,7 @@ module.exports.testGetMockFiles = navn => {
   const catalog = lesKatalogSync(GET_DIR);
   catalog.forEach((elem) => runTest(elem, validate));
 };
-const capitalize = (s) => {
-  if (typeof s !== 'string') return '';
-  return s.charAt(0).toUpperCase() + s.slice(1);
-};
+
 module.exports.printWhiteText = text => {
   const prettyfied = _.startCase(text);
   console.log(colors.white(prettyfied));
