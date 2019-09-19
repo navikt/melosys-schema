@@ -46,7 +46,7 @@ const katalogMap = new Map([
   ['dokumenter-opprett', Dokumenter.dokument.opprett],
   ['dokumenter-oversikt', Dokumenter.dokument.oversikt],
   ['dokumenter-pdf', Dokumenter.pdf.hent],
-  ['dokumenter-pdf-utkast', Dokumenter.pdf.utkast],
+  ['dokumenter-pdf-brev-utkast', Dokumenter.pdf.utkast],
   ['eessi-bucer', Eessi.bucer],
   ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
   ['fagsaker', Fagsaker.fagsak],
