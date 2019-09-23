@@ -21,5 +21,6 @@
       "NO"
     ]
   },
-  "skalTilordnes": false
+  "skalTilordnes": false,
+  "skalSendesForvaltningsmelding": false
 }
