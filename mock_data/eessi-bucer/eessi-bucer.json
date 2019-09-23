@@ -7,18 +7,9 @@
       "seder": [
         {
           "bucId": "40000",
-          "sedId": "efaeffdda0b84641231231232cfb25c9",
-          "sedType": "A001",
-          "status": "UTKAST",
-          "opprettetDato": "2019-05-16",
-          "sistOppdatert": "2019-06-17",
-          "rinaUrl": "http://rina-url.local/"
-        },
-        {
-          "bucId": "40000",
           "sedId": "e2312fdda0b8464fdabdabfaecfb25c9",
           "sedType": "A002",
-          "status": "UTKAST",
+          "status": "MOTTATT",
           "opprettetDato": "2019-06-06",
           "sistOppdatert": "2019-06-18",
           "rinaUrl": "http://rina-url.local/"
@@ -27,25 +18,52 @@
           "bucId": "40000",
           "sedId": "e2312fdda0b84641231231232cfb25c9",
           "sedType": "A005",
-          "status": "UTKAST",
+          "status": "SENDT",
           "opprettetDato": "2019-06-12",
           "sistOppdatert": "2019-06-18",
+          "rinaUrl": "http://rina-url.local/"
+        },
+        {
+          "bucId": "40000",
+          "sedId": "efaeffdda0b84641231231232cfb25c9",
+          "sedType": "A001",
+          "status": "UTKAST",
+          "opprettetDato": "2019-05-16",
+          "sistOppdatert": "2019-06-17",
           "rinaUrl": "http://rina-url.local/"
         }
       ]
     },
     {
       "id": "40001",
-      "bucType": "LA_BUC_03",
-      "opprettetDato": "2019-06-17",
+      "bucType": "LA_BUC_06",
+      "opprettetDato": "2019-05-26",
       "seder": [
+        {
+          "bucId": "40001",
+          "sedId": "e25f345da0b84641231231232cfb25c9",
+          "sedType": "A005",
+          "status": "MOTTATT",
+          "opprettetDato": "2019-05-26",
+          "sistOppdatert": "2019-05-26",
+          "rinaUrl": "http://rina-url.local/"
+        },
+        {
+          "bucId": "40001",
+          "sedId": "e256782da0b84641231231232cfb25c9",
+          "sedType": "A006",
+          "status": "UTKAST",
+          "opprettetDato": "2019-06-02",
+          "sistOppdatert": "2019-06-03",
+          "rinaUrl": "http://rina-url.local/"
+        },
         {
           "bucId": "40001",
           "sedId": "e25f73dda0b84641231231232cfb25c9",
           "sedType": "A008",
-          "status": "UTKAST",
+          "status": "AVBRUTT",
           "opprettetDato": "2019-06-01",
-          "sistOppdatert": "2019-06-14",
+          "sistOppdatert": "2019-06-01",
           "rinaUrl": "http://rina-url.local/"
         }
       ]
