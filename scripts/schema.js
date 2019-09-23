@@ -15,7 +15,6 @@ const Oppgaver = require('./test/oppgaver');
 const Organisasjon = require('./test/organsisasjon');
 const LovvalgsperioderOpprinnelig = require('./test/lovvalgsperioderOpprinnelig');
 const Personer = require('./test/personer');
-const Registrering = require('./test/registrering');
 const Soknader = require('./test/soknader');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
@@ -67,8 +66,6 @@ const katalogMap = new Map([
   ['lovvalgsperioder-opprinnelig', LovvalgsperioderOpprinnelig.lovvalgsperioderOpprinnelig],
   ['personer', Personer.personer],
   ['organisasjoner', Organisasjon.organisasjon],
-  ['registrering-anmodningunntak', Registrering.anmodningunntak],
-  ['registrering-unntaksperioder', Registrering.unntaksperioder],
   ['saksbehandler', Saksbehandler.saksbehandler],
   ['saksflyt-anmodningsperioder', Saksflyt.anmodningsperioder],
   ['saksflyt-unntaksperioder-ikkegodkjenn', Saksflyt.unntaksperioder],
