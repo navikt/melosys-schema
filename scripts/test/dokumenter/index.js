@@ -1,15 +1,11 @@
 const { opprett } = require('./opprett');
 const { oversikt } = require('./oversikt');
-const { utkast } = require('./utkast');
-const { pdf: hent } = require('./pdf');
+const { pdf } = require('./pdf');
 
 module.exports = {
   dokument: {
     opprett,
     oversikt,
   },
-  pdf: {
-    utkast,
-    hent,
-  }
+  pdf,
 };

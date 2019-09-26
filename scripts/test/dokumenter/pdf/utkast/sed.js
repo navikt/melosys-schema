@@ -1,13 +1,13 @@
 /* eslint-disable node/no-unpublished-require */
-const Schema = require('../../utils/schema-util');
+const Schema = require('../../../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
   console.log('\tPDF files is not validated');
 };
 
-const pdf = {
+const sed = {
   testAll,
 };
-module.exports.pdf = pdf;
+module.exports.sed = sed;
 
