@@ -46,7 +46,8 @@ const katalogMap = new Map([
   ['dokumenter-opprett', Dokumenter.dokument.opprett],
   ['dokumenter-oversikt', Dokumenter.dokument.oversikt],
   ['dokumenter-pdf', Dokumenter.pdf.hent],
-  ['dokumenter-pdf-utkast', Dokumenter.pdf.utkast],
+  ['dokumenter-pdf-utkast-brev', Dokumenter.pdf.utkast.brev],
+  ['dokumenter-pdf-utkast-sed', Dokumenter.pdf.utkast.sed],
   ['eessi-bucer', Eessi.bucer],
   ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
   ['fagsaker', Fagsaker.fagsak],
@@ -64,8 +65,8 @@ const katalogMap = new Map([
   ['oppgaver-sok', Oppgaver.sok],
   ['oppgaver-tilbakelegg', Oppgaver.tilbakelegg],
   ['lovvalgsperioder-opprinnelig', LovvalgsperioderOpprinnelig.lovvalgsperioderOpprinnelig],
-  ['organisasjoner', Organisasjon.organisasjon],
   ['personer', Personer.personer],
+  ['organisasjoner', Organisasjon.organisasjon],
   ['saksbehandler', Saksbehandler.saksbehandler],
   ['saksflyt-anmodningsperioder', Saksflyt.anmodningsperioder],
   ['saksflyt-unntaksperioder-ikkegodkjenn', Saksflyt.unntaksperioder],
@@ -81,6 +82,7 @@ const testAll = () => {
 
 testAll();
 console.log();
+console.log('Antall endepunkter:', katalogMap.size);
 console.dir(Schema.oppsummering());
 console.log('\nSchema validation completed.\n');
 
