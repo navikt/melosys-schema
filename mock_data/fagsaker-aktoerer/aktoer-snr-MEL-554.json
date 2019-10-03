@@ -1,0 +1,38 @@
+[
+  {
+    "databaseID": 4359587730187753,
+    "aktoerID": "1167540096033",
+    "orgnr": "810072512",
+    "utenlandskPersonID": null,
+    "institusjonsID": "NO:NAVT001",
+    "rolleKode": "BRUKER",
+    "representererKode": "BRUKER"
+  },
+  {
+    "databaseID": 9608823320269226,
+    "aktoerID": "1167540096033",
+    "orgnr": "810072512",
+    "utenlandskPersonID": null,
+    "institusjonsID": "NO:NAVT002",
+    "rolleKode": "ARBEIDSGIVER",
+    "representererKode": "ARBEIDSGIVER"
+  },
+  {
+    "databaseID": 6790336409911313,
+    "aktoerID": "1167540096033",
+    "orgnr": "810072512",
+    "utenlandskPersonID": null,
+    "institusjonsID": "NO:NAVT002",
+    "rolleKode": "REPRESENTANT",
+    "representererKode": "BEGGE"
+  },
+  {
+    "databaseID": 42565923568568054,
+    "aktoerID": null,
+    "orgnr": "810072512",
+    "utenlandskPersonID": null,
+    "institusjonsID": "FR:RG75V00002",
+    "rolleKode": "MYNDIGHET",
+    "representererKode": null
+  }
+]
