@@ -62,13 +62,15 @@
         "SOEKNAD",
         "KLAGE",
         "ANKE",
-        "REGISTRERING_UNNTAK_NORSK_TRYGD",
+        "REGISTRERING_UNNTAK_NORSK_TRYGD_UTSTASJONERING",
+        "REGISTRERING_UNNTAK_NORSK_TRYGD_ØVRIGE",
         "UTL_MYND_UTPEKT_NORGE",
         "UTL_MYND_UTPEKT_SEG_SELV",
         "NY_VURDERING",
         "ENDRET_PERIODE",
         "ANMODNING_OM_UNNTAK_HOVEDREGEL",
-        "ØVRIGE_SED"
+        "ØVRIGE_SED",
+        "VURDER_TRYGDETID"
       ]
     },
     "behandlingsresultatTypeKode": {
