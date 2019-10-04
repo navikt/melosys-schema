@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [
     "oppgaveID",
-    "oppgavetype",
+    "behandlingstype",
     "saksnummer",
     "journalpostID",
     "behandlingID"
@@ -15,8 +15,8 @@
     "oppgaveID": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
     },
-    "oppgavetype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgavetype"
+    "behandlingstype": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstype"
     },
     "saksnummer": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/saksnummer"
