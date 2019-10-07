@@ -23,7 +23,7 @@
           "kode": "OPPRETTET",
           "term": "Opprettet"
         },
-        "soknadsperiode": {
+        "periode": {
           "fom": "2018-08-01",
           "tom": "2018-12-31"
         },
@@ -45,7 +45,7 @@
           "NL"
         ],
         "opprettetDato": "2019-04-24T06:29:04.559Z",
-        "soknadsperiode": {
+        "periode": {
           "fom": "2019-04-04",
           "tom": "2020-04-04"
         }
