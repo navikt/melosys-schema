@@ -18,7 +18,7 @@
           "behandlingsstatus",
           "behandlingstype",
           "opprettetDato",
-          "soknadsperiode",
+          "periode",
           "land"
         ],
         "properties": {
@@ -41,9 +41,9 @@
             "$id": "#/definitions/behandlingOversikter/items/properties/opprettetDato",
             "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
           },
-          "soknadsperiode": {
-            "title": "The Soknadsperiode Schema",
-            "$id": "#/definitions/behandlingOversikter/properties/behandlingOversikter/properties/soknadsperiode",
+          "periode": {
+            "title": "The periode Schema",
+            "$id": "#/definitions/behandlingOversikter/properties/behandlingOversikter/properties/periode",
             "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
           },
           "land": {

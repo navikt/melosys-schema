@@ -36,7 +36,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2018-01-28",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2018-10-01",
         "tom": "2019-08-31"
       },
@@ -69,7 +69,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-22",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2016-05-12",
         "tom": "2018-01-01"
       },
@@ -102,7 +102,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-03",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2016-05-12",
         "tom": "2018-01-01"
       },
@@ -135,7 +135,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-23",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2016-05-12",
         "tom": "2018-01-01"
       },
