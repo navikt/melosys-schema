@@ -57,7 +57,7 @@
       "behandling": {
         "behandlingID": 3,
         "behandlingstype": {
-          "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD",
+          "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD_ØVRIGE",
           "term": "Registrering av unntak norsk trygd (A009,A010)"
         },
         "behandlingsstatus": {
@@ -90,7 +90,7 @@
       "behandling": {
         "behandlingID": 5,
         "behandlingstype": {
-          "kode": "UFM",
+          "kode": "ENDRET_PERIODE",
           "term": "Unntak medlemskap"
         },
         "behandlingsstatus": {
