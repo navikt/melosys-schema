@@ -198,19 +198,16 @@
       "properties": {
         "unntakFraLovvalgsland": {
           "$id": "#/properties/anmodningOmUnntak/properties/unntakFraLovvalgsland",
-          "type": "array",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "The UnntakFraLovvalgsland Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/anmodningOmUnntak/properties/unntakFraLovvalgsland/items",
-            "type": "string",
-            "title": "The Items Schema",
-            "default": "",
-            "examples": [
-              "NO"
-            ],
-            "pattern": "^(.*)$"
-          }
+          "default": "",
+          "examples": [
+            "NO"
+          ],
+          "pattern": "^(.*)$"
         },
         "lovvalgsbestemmelse": {
           "$id": "#/properties/anmodningOmUnntak/properties/lovvalgsbestemmelse",
