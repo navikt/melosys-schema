@@ -1,0 +1,14 @@
+{
+  "saksnummer": "11",
+  "sakstype":{
+    "kode":"EU_EOS",
+    "term":"EU/EØS"
+  },
+  "saksstatus": {
+    "kode" : "OPPRETTET",
+    "term" : "Saken er opprettet"
+  },
+  "registrertDato": "2017-10-19T12:31:36.123Z",
+  "endretDato": "2017-10-19T12:31:36.123Z",
+  "gsakSaksnummer" : 131063977
+}
