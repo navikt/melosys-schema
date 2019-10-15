@@ -17,8 +17,7 @@
     "oppgaveID",
     "saksnummer",
     "vedlegg",
-    "skalTilordnes",
-    "skalSendesForvaltningsmelding"
+    "skalTilordnes"
   ],
   "properties": {
     "avsenderID": {
@@ -109,15 +108,6 @@
       "$id": "#/items/properties/skalTilordnes",
       "type": "boolean",
       "title": "The SkalTilordnes Schema",
-      "default": false,
-      "examples": [
-        true
-      ]
-    },
-    "skalSendesForvaltningsmelding": {
-      "$id": "#/items/properties/skalSendesForvaltningsmelding",
-      "type": "boolean",
-      "title": "The SkalSendesForvaltningsmelding Schema",
       "default": false,
       "examples": [
         true
