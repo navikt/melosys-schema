@@ -70,8 +70,8 @@ const katalogMap = new Map([
   ['saksbehandler', Saksbehandler.saksbehandler],
   ['saksflyt-anmodningsperioder', Saksflyt.anmodningsperioder],
   ['saksflyt-unntaksperioder-ikkegodkjenn', Saksflyt.unntaksperioder],
-  ['saksflyt-vedtak-endre', Saksflyt.vedtak],
-  ['saksflyt-vedtak-fatt', Saksflyt.vedtak],
+  ['saksflyt-vedtak-endre', Saksflyt.vedtak.endre],
+  ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
   ['soknader', Soknader.soknader],
   ['vilkaar', Vilkaar.vilkaar],
 ]);
