@@ -27,5 +27,5 @@
     "unntakFraLovvalgsbestemmelse": "FO_883_2004_ART12_1"
   },
   "skalTilordnes": false,
-  "skalSendesForvaltningsmelding": false
+  "ikkeSendForvaltingsmelding": false
 }
