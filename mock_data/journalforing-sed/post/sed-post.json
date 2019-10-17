@@ -1,0 +1,17 @@
+{
+  "saksnummer": "MELTEST-1",
+  "avsenderID": "30098000492",
+  "avsenderNavn": "PEN FUL",
+  "brukerID": "30098000492",
+  "dokumentID": "Dok_ID",
+  "journalpostID": "DOK_321",
+  "oppgaveID": "177057928",
+  "sakstype": "TRYGDEAVTALE",
+  "behandlingstype": "REGISTRERING_UNNTAK_NORSK_TRYGD_OVRIGE",
+  "vedlegg": [
+    {
+      "dokumentID": null,
+      "tittel": "Vedleggstittel 1"
+    }
+  ]
+}
