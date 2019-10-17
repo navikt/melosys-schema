@@ -43,7 +43,7 @@
     "fagsak",
     "anmodningOmUnntak",
     "skalTilordnes",
-    "skalSendesForvaltningsmelding"
+    "ikkeSendForvaltingsmelding"
   ],
   "properties": {
     "journalpostID": {
@@ -244,10 +244,10 @@
         true
       ]
     },
-    "skalSendesForvaltningsmelding": {
-      "$id": "#/items/properties/skalSendesForvaltningsmelding",
+    "ikkeSendForvaltingsmelding": {
+      "$id": "#/items/properties/ikkeSendForvaltingsmelding",
       "type": "boolean",
-      "title": "The SkalSendesForvaltningsmelding Schema",
+      "title": "The IkkeSendForvaltingsmelding Schema",
       "default": false,
       "examples": [
         true
