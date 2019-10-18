@@ -13,5 +13,11 @@
   }, {
     "tittel": "Søknad om medlemsskap",
     "dokumentID": "321"
-  }]
+  }],
+  "sedBehandling": {
+    "automatisk": true,
+    "sakstype": "EUEOS",
+    "behandlingstype": "REGISTRERING_UNNTAK_NORSK_TRYGD (A009)"
+  }
+
 }
