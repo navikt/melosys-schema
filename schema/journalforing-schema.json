@@ -11,7 +11,8 @@
     "erBrukerAvsender",
     "mottattDato",
     "hoveddokument",
-    "vedlegg"
+    "vedlegg",
+    "sedBehandling"
   ],
   "properties": {
     "brukerID": {
@@ -55,6 +56,35 @@
       "items": {
         "$id": "#/items/properties/vedlegg/items",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+      }
+    },
+    "sedBehandling": {
+      "$id": "#/properties/sedBehandling",
+      "type": "object",
+      "title": "The Sedbehandling Schema",
+      "required": [
+        "automatisk",
+        "sakstype",
+        "behandlingstype"
+      ],
+      "properties": {
+        "automatisk": {
+          "$id": "#/properties/sedBehandling/properties/automatisk",
+          "type": "boolean",
+          "title": "The Automatisk Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "sakstype": {
+          "$id": "#/properties/sedBehandling/properties/sakstype",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandlingstype": {
+          "$id": "#/properties/sedBehandling/properties/behandlingstype",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        }
       }
     }
   }
