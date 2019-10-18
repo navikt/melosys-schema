@@ -1,5 +1,5 @@
 {
-  "saksnummer": "11",
+  "saksnummer": 11,
   "sakstype":{
     "kode":"EU_EOS",
     "term":"EU/EØS"
