@@ -18,7 +18,7 @@
     "saksnummer",
     "vedlegg",
     "skalTilordnes",
-    "skalSendesForvaltningsmelding"
+    "ikkeSendForvaltingsmelding"
   ],
   "properties": {
     "avsenderID": {
@@ -114,10 +114,10 @@
         true
       ]
     },
-    "skalSendesForvaltningsmelding": {
-      "$id": "#/items/properties/skalSendesForvaltningsmelding",
-      "type": "boolean",
-      "title": "The SkalSendesForvaltningsmelding Schema",
+    "ikkeSendForvaltingsmelding": {
+      "$id": "#/items/properties/ikkeSendForvaltingsmelding",
+      "type": ["boolean", "null"],
+      "title": "The IkkeSendForvaltingsmelding Schema",
       "default": false,
       "examples": [
         true
