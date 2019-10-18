@@ -52,12 +52,7 @@
     },
     "brukerID": {
       "$id": "#/properties/brukerID",
-      "type": "string",
-      "title": "The Brukerid Schema ",
-      "default": "",
-      "examples": [
-        "30098000492"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
     },
     "dokumentID": {
       "$id": "#/properties/dokumentID",

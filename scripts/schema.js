@@ -58,6 +58,7 @@ const katalogMap = new Map([
   ['inngangsvilkaar', Inngangsvilkaar.inngangsvilkaar],
   ['journalforing', Journalforing.journalforing],
   ['journalforing-opprett', Journalforing.opprett],
+  ['journalforing-sed', Journalforing.sed],
   ['journalforing-tilordne', Journalforing.tilordne],
   ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
   ['oppgaver-oversikt', Oppgaver.oversikt],
