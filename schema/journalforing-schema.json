@@ -8,6 +8,7 @@
   "required": [
     "brukerID",
     "avsenderID",
+    "avsenderNavn",
     "erBrukerAvsender",
     "mottattDato",
     "hoveddokument",
@@ -27,6 +28,9 @@
       "examples": [
         "30098000492"
       ]
+    },
+    "avsenderNavn": {
+      "type": ["string", "null"]
     },
     "erBrukerAvsender": {
       "$id": "#/properties/erBrukerAvsender",
