@@ -15,7 +15,6 @@
     "dokumentID": "321"
   }],
   "sedBehandling": {
-    "automatisk": true,
     "sakstype": {
       "kode":"EU_EOS",
       "term":"EU/EØS"
