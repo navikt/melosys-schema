@@ -169,11 +169,11 @@
       },
       "aktivTil": "2018-01-28",
       "periode": {
-        "fom": "2018-10-01",
-        "tom": "2019-08-31"
+        "fom": null,
+        "tom": null
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": [],
       "versjon": 1,
       "ansvarligID": "Z991001"
     }
