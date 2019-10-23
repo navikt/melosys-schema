@@ -13,7 +13,7 @@
     "mottattDato",
     "hoveddokument",
     "vedlegg",
-    "sedBehandling"
+    "behandlingsInformasjon"
   ],
   "properties": {
     "brukerID": {
@@ -57,22 +57,22 @@
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
       }
     },
-    "sedBehandling": {
-      "$id": "#/properties/sedBehandling",
+    "behandlingsInformasjon": {
+      "$id": "#/properties/behandlingsInformasjon",
       "type": ["object", "null"],
       "additionalProperties": false,
-      "title": "The Sedbehandling Schema",
+      "title": "The behandlingsInformasjon Schema",
       "required": [
         "sakstype",
         "behandlingstype"
       ],
       "properties": {
         "sakstype": {
-          "$id": "#/properties/sedBehandling/properties/sakstype",
+          "$id": "#/properties/behandlingsInformasjon/properties/sakstype",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         },
         "behandlingstype": {
-          "$id": "#/properties/sedBehandling/properties/behandlingstype",
+          "$id": "#/properties/behandlingsInformasjon/properties/behandlingstype",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         }
       }

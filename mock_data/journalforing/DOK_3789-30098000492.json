@@ -15,7 +15,7 @@
     "tittel": "Søknad om medlemsskap",
     "dokumentID": "321"
   }],
-  "sedBehandling": {
+  "behandlingsInformasjon": {
     "sakstype": {
       "kode":"EU_EOS",
       "term":"EU/EØS"
