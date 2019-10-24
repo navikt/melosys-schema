@@ -4,7 +4,17 @@
       "fnr": "28106600300",
       "sammensattNavn": "KAKE ARTIG",
       "oppgaveID": "174464932",
-      "journalpostID": "DOK_321",
+      "journalpostID": "DOK_3789",
+      "aktivTil": "2016-01-26",
+      "prioritet": "HOY",
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "fnr": "28106600300",
+      "sammensattNavn": "KAKE ARTIG",
+      "oppgaveID": "174464932",
+      "journalpostID": "DOK_9999",
       "aktivTil": "2016-01-26",
       "prioritet": "HOY",
       "versjon": 1,
