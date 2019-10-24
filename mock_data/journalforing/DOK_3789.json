@@ -1,0 +1,28 @@
+{
+  "brukerID": "30098000492",
+  "avsenderID": "30098000492",
+  "avsenderNavn": "GLITRENDE HATT",
+  "erBrukerAvsender": true,
+  "mottattDato": "2018-05-04T15:15:25.622Z",
+  "hoveddokument": {
+    "dokumentID": "73726173",
+    "tittel": "Søknad om A1 -  Avklaring av trygdetilhørighet ved yrkesaktivitet innen EØS/Sveits"
+  },
+  "vedlegg": [{
+    "tittel": "Skjema for arbeidsgiver som sender arbeidstaker elller frilanser på midlertidig oppdrag i EØS/Sveits",
+    "dokumentID": "123"
+  }, {
+    "tittel": "Søknad om medlemsskap",
+    "dokumentID": "321"
+  }],
+  "behandlingsInformasjon": {
+    "sakstype": {
+      "kode":"EU_EOS",
+      "term":"EU/EØS"
+    },
+    "behandlingstype": {
+      "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD_UTSTASJONERING",
+      "term": "Registrering av unntak fra norsk trygd – utstasjonerte (A009)"
+    }
+  }
+}

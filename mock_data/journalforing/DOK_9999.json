@@ -1,6 +1,7 @@
 {
   "brukerID": "30098000492",
   "avsenderID": "30098000492",
+  "avsenderNavn": "GLITRENDE HATT",
   "erBrukerAvsender": true,
   "mottattDato": "2018-05-04T15:15:25.622Z",
   "hoveddokument": {
@@ -13,5 +14,6 @@
   }, {
     "tittel": "Søknad om medlemsskap",
     "dokumentID": "321"
-  }]
+  }],
+  "behandlingsInformasjon": null
 }
