@@ -281,16 +281,6 @@
       ],
       "pattern": "^(.*)$"
     },
-    "oppgavetype": {
-      "title": "The Oppgavetype schema",
-      "type": ["string", "null"],
-      "examples": ["BEH_SAK_MK", "JFR"],
-      "enum": [
-        "BEH_SAK_MK",
-        "JFR",
-        null
-      ]
-    },
     "periodeID": {
       "type": "integer",
       "title": "The PeriodeID Schema",

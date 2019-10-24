@@ -5,14 +5,10 @@
   "title": "The Plukk-post Schema",
   "additionalProperties": false,
   "required": [
-    "oppgavetype",
     "sakstype",
     "behandlingstype"
   ],
   "properties": {
-    "oppgavetype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgavetype"
-    },
     "sakstype": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/sakstype"
     },
