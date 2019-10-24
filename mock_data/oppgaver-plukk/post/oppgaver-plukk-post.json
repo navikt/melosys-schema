@@ -1,5 +1,4 @@
 {
-  "oppgavetype": "BEH_SAK_MK",
-  "sakstyper": ["EU_EOS"],
-  "behandlingstyper": ["SOEKNAD"]
+  "sakstype": "EU_EOS",
+  "behandlingstype": "SOEKNAD"
 }
