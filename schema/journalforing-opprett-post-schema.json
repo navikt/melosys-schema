@@ -48,7 +48,7 @@
   ],
   "properties": {
     "avsenderType": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "journalpostID": {
       "$id": "#/properties/journalpostID",

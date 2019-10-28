@@ -23,7 +23,7 @@
   ],
   "properties": {
     "avsenderType": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
