@@ -6,6 +6,7 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "avsenderType",
     "avsenderID",
     "avsenderNavn",
     "behandlingstypeKode",
@@ -21,6 +22,9 @@
     "ikkeSendForvaltingsmelding"
   ],
   "properties": {
+    "avsenderType": {
+      "type": ["string", "null"]
+    },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
       "type": "string",

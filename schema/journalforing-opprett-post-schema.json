@@ -28,6 +28,7 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "avsenderType",
     "journalpostID",
     "oppgaveID",
     "behandlingstypeKode",
@@ -46,6 +47,9 @@
     "ikkeSendForvaltingsmelding"
   ],
   "properties": {
+    "avsenderType": {
+      "type": ["string", "null"]
+    },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
