@@ -1,5 +1,6 @@
 {
   "begrunnelseKoder" : ["ANNET"],
   "begrunnelseFritekst" : "Brukeren har fått flyskrekk",
-  "behandlingsresultatTypeKode": "IKKE_FASTSATT"
+  "behandlingsresultatTypeKode": "IKKE_FASTSATT",
+  "utfallRegistreringUnntak": "GODKJENT"
 }

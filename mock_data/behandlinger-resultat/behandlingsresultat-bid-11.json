@@ -1,5 +1,6 @@
 {
   "begrunnelseKoder" : [],
   "begrunnelseFritekst" : null,
-  "behandlingsresultatTypeKode": "IKKE_FASTSATT"
+  "behandlingsresultatTypeKode": "IKKE_FASTSATT",
+  "utfallRegistreringUnntak": null
 }
