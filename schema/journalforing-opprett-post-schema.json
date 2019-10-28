@@ -145,7 +145,7 @@
           "uniqueItems": true,
           "items": {
             "$id": "#/properties/fagsak/properties/land/items",
-            "type": ["string", "null"],
+            "type": "string",
             "title": "The Items Schema",
             "default": "",
             "examples": [
