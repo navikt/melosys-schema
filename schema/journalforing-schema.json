@@ -6,6 +6,7 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "avsenderType",
     "brukerID",
     "avsenderID",
     "avsenderNavn",
@@ -16,6 +17,9 @@
     "behandlingsInformasjon"
   ],
   "properties": {
+    "avsenderType": {
+      "type": ["string", "null"]
+    },
     "brukerID": {
       "$id": "#/properties/brukerID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
