@@ -1,27 +1,4 @@
 {
-  "definitions": {
-    "periode": {
-      "title": "Periode med fom tom",
-      "type": "object",
-      "required": [
-        "fom",
-        "tom"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "fom": {
-          "type": ["string"],
-          "format": "date",
-          "examples": ["2014-03-12"]
-        },
-        "tom": {
-          "type": ["string","null"],
-          "format": "date",
-          "examples": ["2014-03-12", null]
-        }
-      }
-    }
-  },
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/journalforing-opprett-schema.json",
   "type": "object",
@@ -163,7 +140,7 @@
         "soknadsperiode": {
           "title": "The Soknadsperiode Schema",
           "$id": "#/properties/fagsak/properties/soknadsperiode",
-          "$ref": "#/definitions/periode"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         },
         "land": {
           "$id": "#/properties/fagsak/properties/land",
