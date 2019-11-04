@@ -1,13 +1,13 @@
 /* eslint-disable node/no-unpublished-require */
-const Schema = require('../../utils/schema-util');
+const Schema = require('../../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
   Schema.testPostMockFiles(navn);
 };
 
-const vedtak = {
+const fatt = {
   testAll
 };
-module.exports.vedtak = vedtak;
+module.exports.fatt = fatt;
 

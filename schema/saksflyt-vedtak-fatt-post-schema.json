@@ -4,12 +4,18 @@
   "$id": "http://nav.no/saksflyt-vedtak-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
+  "additionalProperties": false,
   "required": [
-    "behandlingsresultatTypeKode"
+    "behandlingsresultatTypeKode",
+    "fritekst"
   ],
   "properties": {
     "behandlingsresultatTypeKode": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+    },
+    "fritekst": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
     }
   }
 }
