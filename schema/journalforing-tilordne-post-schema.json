@@ -6,6 +6,7 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "avsenderType",
     "avsenderID",
     "avsenderNavn",
     "behandlingstypeKode",
@@ -18,9 +19,12 @@
     "saksnummer",
     "vedlegg",
     "skalTilordnes",
-    "skalSendesForvaltningsmelding"
+    "ikkeSendForvaltingsmelding"
   ],
   "properties": {
+    "avsenderType": {
+      "type": "string"
+    },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
       "type": "string",
@@ -52,12 +56,7 @@
     },
     "brukerID": {
       "$id": "#/properties/brukerID",
-      "type": "string",
-      "title": "The Brukerid Schema ",
-      "default": "",
-      "examples": [
-        "30098000492"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
     },
     "dokumentID": {
       "$id": "#/properties/dokumentID",
@@ -114,10 +113,10 @@
         true
       ]
     },
-    "skalSendesForvaltningsmelding": {
-      "$id": "#/items/properties/skalSendesForvaltningsmelding",
-      "type": "boolean",
-      "title": "The SkalSendesForvaltningsmelding Schema",
+    "ikkeSendForvaltingsmelding": {
+      "$id": "#/items/properties/ikkeSendForvaltingsmelding",
+      "type": ["boolean", "null"],
+      "title": "The IkkeSendForvaltingsmelding Schema",
       "default": false,
       "examples": [
         true

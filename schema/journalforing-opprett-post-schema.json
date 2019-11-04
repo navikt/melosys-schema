@@ -1,33 +1,11 @@
 {
-  "definitions": {
-    "periode": {
-      "title": "Periode med fom tom",
-      "type": "object",
-      "required": [
-        "fom",
-        "tom"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "fom": {
-          "type": ["string"],
-          "format": "date",
-          "examples": ["2014-03-12"]
-        },
-        "tom": {
-          "type": ["string","null"],
-          "format": "date",
-          "examples": ["2014-03-12", null]
-        }
-      }
-    }
-  },
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/journalforing-opprett-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "avsenderType",
     "journalpostID",
     "oppgaveID",
     "behandlingstypeKode",
@@ -41,10 +19,14 @@
     "hoveddokumentTittel",
     "vedlegg",
     "fagsak",
+    "anmodningOmUnntak",
     "skalTilordnes",
-    "skalSendesForvaltningsmelding"
+    "ikkeSendForvaltingsmelding"
   ],
   "properties": {
+    "avsenderType": {
+      "type": "string"
+    },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
@@ -64,13 +46,7 @@
     },
     "brukerID": {
       "$id": "#/properties/brukerID",
-      "type": "string",
-      "title": "The Brukerid Schema",
-      "default": "",
-      "examples": [
-        "30098000492"
-      ],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
     },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
@@ -164,7 +140,7 @@
         "soknadsperiode": {
           "title": "The Soknadsperiode Schema",
           "$id": "#/properties/fagsak/properties/soknadsperiode",
-          "$ref": "#/definitions/periode"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         },
         "land": {
           "$id": "#/properties/fagsak/properties/land",
@@ -185,6 +161,55 @@
         }
       }
     },
+    "anmodningOmUnntak": {
+      "$id": "#/properties/anmodningOmUnntak",
+      "type": "object",
+      "title": "The Anmodningomunntak Schema",
+      "required": [
+        "unntakFraLovvalgsland",
+        "lovvalgsbestemmelse",
+        "unntakFraLovvalgsbestemmelse"
+      ],
+      "properties": {
+        "unntakFraLovvalgsland": {
+          "$id": "#/properties/anmodningOmUnntak/properties/unntakFraLovvalgsland",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The UnntakFraLovvalgsland Schema",
+          "default": "",
+          "examples": [
+            "NO"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "lovvalgsbestemmelse": {
+          "$id": "#/properties/anmodningOmUnntak/properties/lovvalgsbestemmelse",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Lovvalgsbestemmelse Schema",
+          "default": "",
+          "examples": [
+            "FO_883_2004_ART16_1"
+          ]
+        },
+        "unntakFraLovvalgsbestemmelse": {
+          "$id": "#/properties/anmodningOmUnntak/properties/unntakFraLovvalgsbestemmelse",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The UnntakFraLovvalgsbestemmelse Schema",
+          "default": "",
+          "examples": [
+            "FO_883_2004_ART12_1"
+          ]
+        }
+      }
+    },
     "skalTilordnes": {
       "$id": "#/items/properties/skalTilordnes",
       "type": "boolean",
@@ -194,15 +219,14 @@
         true
       ]
     },
-    "skalSendesForvaltningsmelding": {
-      "$id": "#/items/properties/skalSendesForvaltningsmelding",
+    "ikkeSendForvaltingsmelding": {
+      "$id": "#/items/properties/ikkeSendForvaltingsmelding",
       "type": "boolean",
-      "title": "The SkalSendesForvaltningsmelding Schema",
+      "title": "The IkkeSendForvaltingsmelding Schema",
       "default": false,
       "examples": [
         true
       ]
     }
-    
   }
 }

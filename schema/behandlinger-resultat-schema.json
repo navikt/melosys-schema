@@ -8,7 +8,8 @@
   "required": [
     "begrunnelseKoder",
     "begrunnelseFritekst",
-    "behandlingsresultatTypeKode"
+    "behandlingsresultatTypeKode",
+    "utfallRegistreringUnntak"
   ],
   "properties": {
     "begrunnelseKoder": {
@@ -36,6 +37,15 @@
     },
     "behandlingsresultatTypeKode": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+    },
+    "utfallRegistreringUnntak": {
+      "$id": "#/properties/utfallRegistreringUnntak",
+      "type": ["string", "null"],
+      "title": "The utfallRegistreringUnntak Schema",
+      "examples": [
+        "GODKJENT"
+      ],
+      "pattern": "^(.*)$"
     }
   }
 }

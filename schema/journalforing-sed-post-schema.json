@@ -1,0 +1,26 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/journalforing-sed-post-schema.json",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "brukerID",
+    "journalpostID",
+    "oppgaveID"
+  ],
+  "properties": {
+    "brukerID": {
+      "$id": "#/properties/brukerID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+    },
+    "journalpostID": {
+      "$id": "#/properties/journalpostID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+    },
+    "oppgaveID": {
+      "$id": "#/properties/oppgaveID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+    }
+  }
+}

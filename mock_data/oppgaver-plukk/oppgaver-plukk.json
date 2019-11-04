@@ -1,6 +1,6 @@
 {
   "oppgaveID": "123456789",
-  "oppgavetype": "BEH_SAK_MK",
+  "behandlingstype": "SOEKNAD",
   "saksnummer": "4",
   "journalpostID": "DOK_123",
   "behandlingID": 4

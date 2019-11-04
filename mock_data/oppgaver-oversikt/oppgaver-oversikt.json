@@ -4,7 +4,27 @@
       "fnr": "28106600300",
       "sammensattNavn": "KAKE ARTIG",
       "oppgaveID": "174464932",
-      "journalpostID": "DOK_321",
+      "journalpostID": "DOK_3789",
+      "aktivTil": "2016-01-26",
+      "prioritet": "HOY",
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "fnr": "30098000492",
+      "sammensattNavn": "GLITRENDE HATT",
+      "oppgaveID": "174464932",
+      "journalpostID": "DOK_9998",
+      "aktivTil": "2016-01-26",
+      "prioritet": "HOY",
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "fnr": "28106600300",
+      "sammensattNavn": "KAKE ARTIG",
+      "oppgaveID": "174464932",
+      "journalpostID": "DOK_9999",
       "aktivTil": "2016-01-26",
       "prioritet": "HOY",
       "versjon": 1,
@@ -36,7 +56,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2018-01-28",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2018-10-01",
         "tom": "2019-08-31"
       },
@@ -57,7 +77,7 @@
       "behandling": {
         "behandlingID": 3,
         "behandlingstype": {
-          "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD",
+          "kode": "REGISTRERING_UNNTAK_NORSK_TRYGD_ØVRIGE",
           "term": "Registrering av unntak norsk trygd (A009,A010)"
         },
         "behandlingsstatus": {
@@ -69,7 +89,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-22",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2016-05-12",
         "tom": "2018-01-01"
       },
@@ -90,7 +110,7 @@
       "behandling": {
         "behandlingID": 5,
         "behandlingstype": {
-          "kode": "UFM",
+          "kode": "ENDRET_PERIODE",
           "term": "Unntak medlemskap"
         },
         "behandlingsstatus": {
@@ -102,7 +122,7 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-03",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2016-05-12",
         "tom": "2018-01-01"
       },
@@ -135,12 +155,45 @@
         "registrertDato": "2018-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-23",
-      "soknadsperiode": {
+      "periode": {
         "fom": "2016-05-12",
         "tom": "2018-01-01"
       },
       "prioritet": "HOY",
       "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "174562068",
+      "sammensattNavn": "GLITRENDE HATT",
+      "fnr": "28106600300",
+      "saksnummer": "11",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Trygdeavtale"
+      },
+      "behandling": {
+        "behandlingID": 11,
+        "behandlingstype": {
+          "kode": "VURDER_TRYGDETID",
+          "term": "Behandling av forespørsel om trygdetid"
+        },
+        "behandlingsstatus": {
+          "kode": "UBEH",
+          "term": "Under behandling"
+        },
+        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false,
+        "registrertDato": "2018-12-11T16:30:00.622Z"
+      },
+      "aktivTil": "2018-01-28",
+      "periode": {
+        "fom": null,
+        "tom": null
+      },
+      "prioritet": "HOY",
+      "land": [],
       "versjon": 1,
       "ansvarligID": "Z991001"
     }

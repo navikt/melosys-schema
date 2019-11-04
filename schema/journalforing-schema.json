@@ -6,22 +6,23 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
+    "avsenderType",
     "brukerID",
     "avsenderID",
+    "avsenderNavn",
     "erBrukerAvsender",
     "mottattDato",
     "hoveddokument",
-    "vedlegg"
+    "vedlegg",
+    "behandlingsInformasjon"
   ],
   "properties": {
+    "avsenderType": {
+      "type": ["string", "null"]
+    },
     "brukerID": {
       "$id": "#/properties/brukerID",
-      "type": "string",
-      "title": "The Brukerid Schema",
-      "default": "",
-      "examples": [
-        "30098000492"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
     },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
@@ -31,6 +32,9 @@
       "examples": [
         "30098000492"
       ]
+    },
+    "avsenderNavn": {
+      "type": ["string", "null"]
     },
     "erBrukerAvsender": {
       "$id": "#/properties/erBrukerAvsender",
@@ -55,6 +59,26 @@
       "items": {
         "$id": "#/items/properties/vedlegg/items",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+      }
+    },
+    "behandlingsInformasjon": {
+      "$id": "#/properties/behandlingsInformasjon",
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "title": "The behandlingsInformasjon Schema",
+      "required": [
+        "sakstype",
+        "behandlingstype"
+      ],
+      "properties": {
+        "sakstype": {
+          "$id": "#/properties/behandlingsInformasjon/properties/sakstype",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandlingstype": {
+          "$id": "#/properties/behandlingsInformasjon/properties/behandlingstype",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        }
       }
     }
   }

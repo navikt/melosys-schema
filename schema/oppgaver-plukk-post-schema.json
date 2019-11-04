@@ -5,27 +5,15 @@
   "title": "The Plukk-post Schema",
   "additionalProperties": false,
   "required": [
-    "oppgavetype",
-    "sakstyper",
-    "behandlingstyper"
+    "sakstype",
+    "behandlingstype"
   ],
   "properties": {
-    "oppgavetype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgavetype"
+    "sakstype": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/sakstype"
     },
-    "sakstyper": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/sakstype"
-      }
-    },
-    "behandlingstyper": {
-      "type":"array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstype"
-      }
+    "behandlingstype": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstype"
     }
   }
 }

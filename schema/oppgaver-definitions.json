@@ -70,7 +70,7 @@
         "sakstype",
         "behandling",
         "aktivTil",
-        "soknadsperiode",
+        "periode",
         "prioritet",
         "land",
         "versjon",
@@ -132,7 +132,7 @@
             "2018-01-28"
           ]
         },
-        "soknadsperiode": {
+        "periode": {
           "title": "The Soknadsperiode Schema",
           "$id": "#/definitions/saksbehandlingitem/properties/soknadsperiode",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"

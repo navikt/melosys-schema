@@ -1,4 +1,5 @@
 {
+  "avsenderType": "PERSON",
   "arbeidsgiverID": null,
   "representantID": "",
   "behandlingstypeKode": "SOEKNAD",
@@ -21,6 +22,11 @@
       "NO"
     ]
   },
+  "anmodningOmUnntak": {
+    "unntakFraLovvalgsland": "NO",
+    "lovvalgsbestemmelse": "FO_883_2004_ART16_1",
+    "unntakFraLovvalgsbestemmelse": "FO_883_2004_ART12_1"
+  },
   "skalTilordnes": false,
-  "skalSendesForvaltningsmelding": false
+  "ikkeSendForvaltingsmelding": false
 }
