@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/fagsaker-henleggvideresend-post-schema.json",
+  "type": "object",
+  "title": "The Fagsaker-henleggvideresend-post Schema",
+  "additionalProperties": false,
+  "required": [
+    "fritekst"
+  ],
+  "properties": {
+    "fritekst": {
+      "type": ["string", "null"]
+    }
+  }
+}
