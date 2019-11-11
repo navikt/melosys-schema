@@ -7,13 +7,18 @@
   "additionalProperties": false,
   "required": [
     "behandlingsresultatTypeKode",
-    "fritekst"
+    "fritekst",
+    "mottakerinstitusjon"
   ],
   "properties": {
     "behandlingsresultatTypeKode": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     },
     "fritekst": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
+    },
+    "mottakerinstitusjon": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
     }
