@@ -1,5 +1,6 @@
 {
   "behandlingsresultatTypeKode": "FASTSATT_LOVVALGSLAND",
   "fritekst": "Fritekst",
-  "mottakerinstitusjon": "NO:NAVT003"
+  "mottakerinstitusjon": "NO:NAVT003",
+  "vedtakstype": "KORRIGERT_VEDTAK"
 }

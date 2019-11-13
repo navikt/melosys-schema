@@ -619,6 +619,16 @@
           "$ref": "#/definitions/landkode"
         }
       }
+    },
+    "vedtakstype": {
+      "type": "string",
+      "title": "The Vedtakstype schema",
+      "examples": ["FØRSTEGANGSVEDTAK"],
+      "enum": [
+        "FØRSTEGANGSVEDTAK",
+        "KORRIGERT_VEDTAK",
+        "OMGJØRINGSVEDTAK"
+      ]
     }
   }
 }

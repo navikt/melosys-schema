@@ -8,7 +8,8 @@
   "required": [
     "behandlingsresultatTypeKode",
     "fritekst",
-    "mottakerinstitusjon"
+    "mottakerinstitusjon",
+    "vedtakstype"
   ],
   "properties": {
     "behandlingsresultatTypeKode": {
@@ -21,6 +22,9 @@
     "mottakerinstitusjon": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
+    },
+    "vedtakstype": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
     }
   }
 }
