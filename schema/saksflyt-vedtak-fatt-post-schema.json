@@ -9,6 +9,7 @@
     "behandlingsresultatTypeKode",
     "fritekst",
     "mottakerinstitusjon",
+    "revurderBegrunnelse",
     "vedtakstype"
   ],
   "properties": {
@@ -20,6 +21,10 @@
       "pattern": "^(.*)$"
     },
     "mottakerinstitusjon": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
+    },
+    "revurderBegrunnelse": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
     },
