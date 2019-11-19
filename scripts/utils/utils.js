@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const JSON5 = require('json5');
 
 module.exports.baseName = filename => {
   const ext = path.extname(filename);
@@ -8,7 +9,7 @@ module.exports.baseName = filename => {
 
 module.exports.isJSON = (str) => {
   try {
-    return (JSON.parse(str) && !!str);
+    return (JSON5.parse(str) && !!str);
   } catch (e) {
     return false;
   }
@@ -39,12 +40,12 @@ const readFileSync = (path) => {
 module.exports.readFileSync = readFileSync;
 
 module.exports.readJsonAndParseSync = (path) => {
-  return JSON.parse(readFileSync(path));
+  return JSON5.parse(readFileSync(path));
 };
 
 module.exports.readJsonAndParseAsync = async (path) => {
   const json = await readFileSync(path);
-  return JSON.parse(json);
+  return JSON5.parse(json);
 };
 
 module.exports.existsSync = (path) => fs.existsSync(path);
