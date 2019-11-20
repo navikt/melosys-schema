@@ -75,7 +75,7 @@ module.exports.katalogTittel = path => {
 
 const lesKatalogSync = dirpath => {
   let catalog = [];
-  const files = glob.sync('*.json', {
+  const files = glob.sync('*.json5', {
     cwd: dirpath,
     ignore: 'schema.json$'
   });
