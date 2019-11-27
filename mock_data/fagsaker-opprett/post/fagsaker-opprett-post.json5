@@ -7,7 +7,7 @@
         fom: "2014-03-12",
         tom: "2015-03-12"
       },
-      "land": "NO"
+      "land": ["NO"]
     },
     "skalTilordnes": true
 }
