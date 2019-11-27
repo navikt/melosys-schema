@@ -33,7 +33,11 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         },
         "land": {
-          "type": ["string", "null"]
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
