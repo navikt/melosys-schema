@@ -15,7 +15,8 @@
         "behandlingsstatus",
         "sisteOpplysningerHentetDato",
         "erUnderOppdatering",
-        "registrertDato"
+        "registrertDato",
+        "svarFrist"
       ],
       "properties": {
         "behandlingID": {
@@ -52,6 +53,9 @@
         "registrertDato": {
           "$id": "#/definitions/behandling/properties/registrertDato",
           "title": "The RegistrertDato Schema",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "svarFrist": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
         }
       }
