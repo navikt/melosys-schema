@@ -51,8 +51,6 @@ jobs:
           branch: MELOSYS-3406_actions
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: git push --tags
-
       - name: publish
         run: |
           npm publish
