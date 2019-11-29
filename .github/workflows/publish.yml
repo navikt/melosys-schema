@@ -1,0 +1,60 @@
+name: Publish
+
+on: push
+  # push:
+  #   branches:
+  #     - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.3.1'
+
+      - name: npm install
+        run: npm i
+
+      - name: test
+        run: npm run schema
+
+      - name: Setup node for publishing
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.3.1'
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: prepare for publish
+        run: |
+          git config --global user.email "actions-melosys@nav.no"
+          git config --global user.name "Actions"
+          COMMIT_MESSAGE=`git rev-parse --abbrev-ref HEAD`
+          npm version patch -m "%s, $COMMIT_MESSAGE"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: MELOSYS-3406_actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: git push --tags
+
+      - name: publish
+        run: |
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
