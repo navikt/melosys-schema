@@ -13,7 +13,7 @@
         "behandlingID",
         "behandlingstype",
         "behandlingsstatus",
-        "sisteOpplysningerHentetDato",
+        "endretDato",
         "erUnderOppdatering",
         "registrertDato",
         "svarFrist"
@@ -35,9 +35,9 @@
           "description": "An explanation about the purpose of this instance.",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         },
-        "sisteOpplysningerHentetDato":{
-          "title": "The sisteOpplysningerHentetDato Schema",
-          "$id": "#/definitions/behandling/properties/sisteOpplysningerHentetDato",
+        "endretDato":{
+          "title": "The endretDato Schema",
+          "$id": "#/definitions/behandling/properties/endretDato",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
         },
         "erUnderOppdatering": {
