@@ -1,6 +1,6 @@
 {
-  "behandlingID": 4,
-  "redigerbart": false,
+  "behandlingID": 12,
+  "redigerbart": true,
   "saksopplysninger": {
     "arbeidsforhold": [
       {
@@ -641,8 +641,8 @@
           "bostedsadresse": {
             "gateadresse": {
               "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 98,
-              "husnummer": null,
+              "gatenummer": 101098,
+              "husnummer": 98,
               "husbokstav": "C"
             },
             "postnr": "0175",
@@ -661,8 +661,8 @@
           "bostedsadresse": {
             "gateadresse": {
               "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 98,
-              "husnummer": null,
+              "gatenummer": 101098,
+              "husnummer": 98,
               "husbokstav": "C"
             },
             "postnr": "0175",
@@ -681,8 +681,8 @@
           "bostedsadresse": {
             "gateadresse": {
               "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 98,
-              "husnummer": null,
+              "gatenummer": 101098,
+              "husnummer": 98,
               "husbokstav": "C"
             },
             "postnr": "0175",
@@ -807,7 +807,7 @@
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
     "behandlingstype": {
-      "kode": "UNDER_BEHANDLING",
+      "kode": "NY_VURDERING",
       "term": "Behandle forkortet periode"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "fnr": "28106600300",
+  "fnr": "30098000492",
   "sivilstand": {
     "kode": "GIFT",
     "term" : "Gift"
@@ -8,21 +8,21 @@
     "kode": "NO",
     "term": "Norge"
   },
-  "sammensattNavn": "MASKIN ARTIG",
+  "sammensattNavn": "HEST LILLA",
   "personstatus": {
     "kode": "BOSA",
     "term": "Bosatt"
   },
   "kjoenn": {
-    "kode": "M",
-    "term": "Mann"
+    "kode": "K",
+    "term": "Kvinne"
   },
-  "foedselsdato": "1966-10-28",
+  "foedselsdato": "1963-05-05",
   "bostedsadresse" : {
     "gateadresse": {
       "gatenavn": "Waldemar Thranses gate",
-      "gatenummer": 98,
-      "husnummer": 5,
+      "gatenummer": 101098,
+      "husnummer": 98,
       "husbokstav": "C"
     },
     "postnr": "0175",
