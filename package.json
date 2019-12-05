@@ -1,6 +1,6 @@
 {
-  "name": "melosys-schema",
-  "version": "1.35.0",
+  "name": "@navikt/melosys-schema",
+  "version": "1.35.3",
   "description": "MelosSys Schema Mock data",
   "main": "index.js",
   "files": [
@@ -22,7 +22,8 @@
     "email": "are.bjolseth@nav.no"
   },
   "publishConfig": {
-    "acccess": "public"
+    "acccess": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "ISC",
   "bugs": {
