@@ -57,7 +57,7 @@ node {
   }
 
   stage('Create jar file') {
-    def schemaLibPath = "lib/"
+    def schemaLibPath = "lib/@navikt"
     def schemaZipFile = sh(
       script: "find ${schemaLibPath} -type f -name 'melosys-schema*.zip'",
       returnStdout: true).trim()

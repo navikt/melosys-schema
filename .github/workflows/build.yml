@@ -1,0 +1,38 @@
+name: Build
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.3.1'
+          registry-url: https://npm.pkg.github.com/
+          scope: '@navikt'
+
+      - name: npm install
+        run: npm i
+        env:
+          # NPM krever tydeligvis en token for å hente pakker fra github packages
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: test
+        run: npm run schema
