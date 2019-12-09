@@ -73,6 +73,7 @@ const katalogMap = new Map([
   ['saksflyt-unntaksperioder-ikkegodkjenn', Saksflyt.unntaksperioder],
   ['saksflyt-vedtak-endre', Saksflyt.vedtak.endre],
   ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
+  ['saksflyt-vedtak-revurder', Saksflyt.vedtak.revurder],
   ['soknader', Soknader.soknader],
   ['vilkaar', Vilkaar.vilkaar],
 ]);
