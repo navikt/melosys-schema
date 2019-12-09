@@ -1,0 +1,57 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.3.1'
+          # NPM må vite hvor github packages ligger
+          registry-url: https://npm.pkg.github.com/
+          scope: '@navikt'
+
+      - name: npm install
+        run: npm i
+        env:
+          # NPM krever tydeligvis en token for å hente pakker fra github packages
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: test
+        run: npm run schema
+
+      - name: Bump version
+        run: |
+          git config --global user.email "actions-melosys@nav.no"
+          git config --global user.name "Actions"
+          COMMIT_MESSAGE=`git log -1 --pretty=%B`
+          npm version patch -m "%s, $COMMIT_MESSAGE"
+
+      - name: Push changes to repository
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: publish to GPR
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
