@@ -9,7 +9,8 @@
     "sakstype",
     "behandlingstype",
     "soknadDto",
-    "skalTilordnes"
+    "skalTilordnes",
+    "oppgaveID"
   ],
   "properties": {
     "brukerID": {
@@ -43,6 +44,9 @@
     },
     "skalTilordnes": {
       "type": "boolean"
+    },
+    "oppgaveID": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
     }
   }
 }

@@ -9,5 +9,6 @@
       },
       "land": ["NO"]
     },
-    "skalTilordnes": true
+    "skalTilordnes": true,
+    "oppgaveID": "1234"
 }
