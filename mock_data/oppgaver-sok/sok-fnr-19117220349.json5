@@ -1,0 +1,35 @@
+[
+  {
+    oppgaveID: "999",
+    tema: "Medlemskap",
+    oppgavetype: "BEH_SAK_MK",
+    registrertDato: "2018-12-11T16:30:00.622Z",
+    frist: "2018-01-28",
+    sakID: "1234"
+  },
+  {
+    oppgaveID: "1010",
+    tema: "Unntak fra medlemskap",
+    oppgavetype: "BEH_SED",
+    registrertDato: "2019-12-11T16:30:00.622Z",
+    frist: "2019-01-28",
+    sakID: "4321"
+  },
+  {
+    oppgaveID: "4567",
+    tema: "Medlemskap",
+    oppgavetype: "JFR",
+    registrertDato: "2020-12-11T16:30:00.622Z",
+    frist: "2020-01-28",
+    sakID: "87655"
+  },
+  {
+    oppgaveID: "89807",
+    tema: "Medlemskap",
+    oppgavetype: "VUR",
+    registrertDato: "2022-12-11T16:30:00.622Z",
+    frist: "2025-01-28",
+    sakID: "4536"
+  }
+]
+

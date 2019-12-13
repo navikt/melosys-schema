@@ -65,6 +65,7 @@ const katalogMap = new Map([
   ['oppgaver-oversikt', Oppgaver.oversikt],
   ['oppgaver-plukk', Oppgaver.plukk],
   ['oppgaver-tilbakelegg', Oppgaver.tilbakelegg],
+  ['oppgaver-sok', Oppgaver.sok],
   ['lovvalgsperioder-opprinnelig', LovvalgsperioderOpprinnelig.lovvalgsperioderOpprinnelig],
   ['personer', Personer.personer],
   ['organisasjoner', Organisasjon.organisasjon],
