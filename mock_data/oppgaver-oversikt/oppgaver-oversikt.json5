@@ -51,9 +51,10 @@
           "kode": "UBEH",
           "term": "Under behandling"
         },
-        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "endretDato": "2018-08-10T15:00:00.622Z",
         "erUnderOppdatering": false,
-        "registrertDato": "2018-12-11T16:30:00.622Z"
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
       },
       "aktivTil": "2018-01-28",
       "periode": {
@@ -84,9 +85,10 @@
           "kode": "OPPRETTET",
           "term": "Opprettet"
         },
-        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "endretDato": "2018-08-10T15:00:00.622Z",
         "erUnderOppdatering": false,
-        "registrertDato": "2018-12-11T16:30:00.622Z"
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-22",
       "periode": {
@@ -117,9 +119,10 @@
           "kode": "FORL",
           "term": "Foreløpig lovvalg"
         },
-        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "endretDato": "2018-08-10T15:00:00.622Z",
         "erUnderOppdatering": false,
-        "registrertDato": "2018-12-11T16:30:00.622Z"
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-03",
       "periode": {
@@ -150,9 +153,10 @@
           "kode": "UBEH",
           "term": "Under behandling"
         },
-        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "endretDato": "2018-08-10T15:00:00.622Z",
         "erUnderOppdatering": false,
-        "registrertDato": "2018-12-11T16:30:00.622Z"
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
       },
       "aktivTil": "2016-03-23",
       "periode": {
@@ -183,9 +187,10 @@
           "kode": "UBEH",
           "term": "Under behandling"
         },
-        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "endretDato": "2018-08-10T15:00:00.622Z",
         "erUnderOppdatering": false,
-        "registrertDato": "2018-12-11T16:30:00.622Z"
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
       },
       "aktivTil": "2018-01-28",
       "periode": {

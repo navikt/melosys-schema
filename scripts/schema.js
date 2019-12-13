@@ -53,6 +53,7 @@ const katalogMap = new Map([
   ['fagsaker', Fagsaker.fagsak],
   ['fagsaker-aktoerer', Fagsaker.aktoerer],
   ['fagsaker-henlegg', Fagsaker.henlegg],
+  ['fagsaker-henleggvideresend', Fagsaker.henleggvideresend],
   ['fagsaker-kontaktopplysninger', Fagsaker.kontaktopplysninger],
   ['fagsaker-opprett', Fagsaker.opprett],
   ['fagsaker-sok', Fagsaker.sok],
@@ -74,6 +75,7 @@ const katalogMap = new Map([
   ['saksflyt-unntaksperioder-ikkegodkjenn', Saksflyt.unntaksperioder],
   ['saksflyt-vedtak-endre', Saksflyt.vedtak.endre],
   ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
+  ['saksflyt-vedtak-revurder', Saksflyt.vedtak.revurder],
   ['soknader', Soknader.soknader],
   ['vilkaar', Vilkaar.vilkaar],
 ]);
