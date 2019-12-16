@@ -2,7 +2,7 @@
   {
     oppgaveID: "999",
     tema: "Medlemskap",
-    oppgavetype: "BEH_SAK_MK",
+    oppgavetype: "Behandle sak (Manuell)",
     registrertDato: "2018-12-11T16:30:00.622Z",
     frist: "2018-01-28",
     sakID: "1234"
@@ -10,15 +10,15 @@
   {
     oppgaveID: "1010",
     tema: "Unntak fra medlemskap",
-    oppgavetype: "BEH_SED",
+    oppgavetype: "Behandle SED",
     registrertDato: "2019-12-11T16:30:00.622Z",
     frist: "2019-01-28",
-    sakID: "4321"
+    "sakID": null,
   },
   {
     oppgaveID: "4567",
     tema: "Medlemskap",
-    oppgavetype: "JFR",
+    oppgavetype: "Journalføring",
     registrertDato: "2020-12-11T16:30:00.622Z",
     frist: "2020-01-28",
     sakID: "87655"
@@ -26,7 +26,7 @@
   {
     oppgaveID: "89807",
     tema: "Medlemskap",
-    oppgavetype: "VUR",
+    oppgavetype: "Vurder dokument",
     registrertDato: "2022-12-11T16:30:00.622Z",
     frist: "2025-01-28",
     sakID: "4536"
