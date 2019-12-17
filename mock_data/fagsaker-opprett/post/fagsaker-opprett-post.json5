@@ -1,0 +1,14 @@
+{
+    "brukerID": "17117802280",
+    "sakstype": "EU_EØS",
+    "behandlingstype": "SOEKNAD",
+    "soknadDto": {
+      "periode": {
+        fom: "2014-03-12",
+        tom: "2015-03-12"
+      },
+      "land": ["NO"]
+    },
+    "skalTilordnes": true,
+    "oppgaveID": "1234"
+}

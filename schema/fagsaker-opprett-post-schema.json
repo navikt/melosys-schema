@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/fagsaker-opprett-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "brukerID",
+    "sakstype",
+    "behandlingstype",
+    "soknadDto",
+    "skalTilordnes",
+    "oppgaveID"
+  ],
+  "properties": {
+    "brukerID": {
+      "type": "string"
+    },
+    "sakstype": {
+      "type": "string"
+    },
+    "behandlingstype": {
+      "type": "string"
+    },
+    "soknadDto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "periode",
+        "land"
+      ],
+      "properties": {
+        "periode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+        },
+        "land": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "skalTilordnes": {
+      "type": "boolean"
+    },
+    "oppgaveID": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+    }
+  }
+}

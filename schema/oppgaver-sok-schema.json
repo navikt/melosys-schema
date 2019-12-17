@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/oppgaver-sok-schema.json",
+  "title": "The oppgaver-sok-get Schema",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "$ref": "#/definitions/oppgave"
+  },
+  "definitions": {
+    "oppgave": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "oppgaveID",
+        "tema",
+        "oppgavetype",
+        "registrertDato",
+        "frist",
+        "sakID"
+      ],
+      "properties": {
+        "oppgaveID": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+        },
+        "tema": {
+          "type": "string",
+          "examples": [
+            "Medlemskap",
+            "Unntak fra medlemskap"
+          ]
+        },
+        "oppgavetype": {
+          "type": "string",
+          "examples": [
+            "Behandle sak (Manuell)",
+            "Behandle SED"
+          ]
+        },
+        "registrertDato": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "frist": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+        },
+        "sakID": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}
