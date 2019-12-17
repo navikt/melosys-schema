@@ -34,7 +34,7 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "schema": "node scripts/schema",
+    "schema": "jest",
     "schema:dbg": "node $NODE_DEBUG_OPTION scripts/schema",
     "eslint": "eslint scripts --ext .js",
     "zipSchema": "node scripts/zipSchema2lib",
@@ -52,6 +52,7 @@
     "colors": "^1.3.3",
     "eslint": "^6.3.0",
     "eslint-plugin-node": "^9.2.0",
+    "jest": "^24.9.0",
     "jsonpath-plus": "^0.20.1",
     "lodash": "^4.17.15",
     "log4js": "^4.5.1",
