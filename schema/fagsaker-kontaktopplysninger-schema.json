@@ -23,7 +23,7 @@
     "kontaktorgnr": {
       "$id": "#/properties/kontaktorgnr",
       "title": "The Kontaktorgnr Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     }
   }
 }
