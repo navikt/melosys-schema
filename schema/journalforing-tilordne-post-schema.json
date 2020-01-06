@@ -19,7 +19,8 @@
     "saksnummer",
     "vedlegg",
     "skalTilordnes",
-    "ikkeSendForvaltingsmelding"
+    "ikkeSendForvaltingsmelding",
+    "mottattDato"
   ],
   "properties": {
     "avsenderType": {
@@ -121,6 +122,9 @@
       "examples": [
         true
       ]
+    },
+    "mottattDato": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato",
     }
   }
 }
