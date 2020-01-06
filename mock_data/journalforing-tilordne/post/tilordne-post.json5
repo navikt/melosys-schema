@@ -17,5 +17,6 @@
     }
   ],
   "skalTilordnes": false,
-  "ikkeSendForvaltingsmelding": null
+  "ikkeSendForvaltingsmelding": null,
+  "mottattDato": "2018-01-01"
 }
