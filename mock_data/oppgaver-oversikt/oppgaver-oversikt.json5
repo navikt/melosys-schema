@@ -201,6 +201,39 @@
       "land": [],
       "versjon": 1,
       "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "174562069",
+      "sammensattNavn": "DOVENT DOVENDYR",
+      "fnr": "30098000492",
+      "saksnummer": "13",
+      "sakstype": {
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
+      },
+      "behandling": {
+        "behandlingID": 13,
+        "behandlingstype": {
+          "kode": "SOEKNAD_IKKE_YRKESAKTIV",
+          "term": "Søknad ikke yrkesaktiv"
+        },
+        "behandlingsstatus": {
+          "kode": "UNDER_BEHANDLING",
+          "term": "Under behandling"
+        },
+        "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false,
+        "registrertDato": "2018-12-11T16:30:00.622Z"
+      },
+      "aktivTil": "2018-01-28",
+      "periode": {
+        "fom": "21-12-2020",
+        "tom": "21-12-2021"
+      },
+      "prioritet": "HOY",
+      "land": [],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
     }
   ]
 }

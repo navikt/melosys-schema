@@ -1,0 +1,52 @@
+{
+  "behandlingID": 13,
+  "redigerbart": true,
+  "saksopplysninger": {
+    "person": {
+      "sivilstand": {
+        "kode": "GIFT",
+        "term": "Gift"
+      },
+      "erEgenAnsatt": false,
+      "personStatus": {
+        "kode": "BOSA",
+        "term": "Bosatt"
+      },
+      "sammensattNavn": "DOVENT DOVENDYR",
+      "kjoenn": {
+        "kode": "M",
+        "term": "Mann"
+      },
+      "fnr": "19117220349",
+      "foedselsdato": "1972-11-19",
+      "statsborgerskap": {
+        "kode": "NOR",
+        "term": "NORGE"
+      },
+      "statsborgerskapDato": "2013-01-01",
+      "familiemedlemmer": [
+        {
+          "fnr": "30098000493",
+          "sammensattNavn": "KVIKT DOVENDYR",
+          "relasjonstype": {
+            "kode": "EKTE",
+            "term": "Ektefelle til"
+          }
+        }
+      ]
+    }
+  },
+  "oppsummering": {
+    "behandlingsstatus": {
+      "kode": "UNDER_BEHANDLING",
+      "term": "Under behandling"
+    },
+    "registrertDato": "2018-08-27T07:16:03.273Z",
+    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
+    "endretDato": "2018-08-27T07:16:03.273Z",
+    "behandlingstype": {
+      "kode": "SOEKNAD_IKKE_YRKESAKTIV",
+      "term": "Søknad ikke yrkesaktiv"
+    }
+  }
+}

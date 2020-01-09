@@ -60,6 +60,7 @@
       "examples": ["SOEKNAD"],
       "enum": [
         "SOEKNAD",
+        "SOEKNAD_IKKE_YRKESTAKTIV",
         "KLAGE",
         "ANKE",
         "REGISTRERING_UNNTAK_NORSK_TRYGD_UTSTASJONERING",
