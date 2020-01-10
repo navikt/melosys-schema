@@ -26,8 +26,8 @@
         "tema": {
           "type": "string",
           "examples": [
-            "Medlemskap",
-            "Unntak fra medlemskap"
+            "MED",
+            "UFM"
           ]
         },
         "oppgavetype": {
