@@ -57,6 +57,7 @@ const katalogMap = new Map([
   ['fagsaker-kontaktopplysninger', Fagsaker.kontaktopplysninger],
   ['fagsaker-opprett', Fagsaker.opprett],
   ['fagsaker-sok', Fagsaker.sok],
+  ['fagsaker-utpek', Fagsaker.utpek],
   ['inngangsvilkaar', Inngangsvilkaar.inngangsvilkaar],
   ['journalforing', Journalforing.journalforing],
   ['journalforing-opprett', Journalforing.opprett],

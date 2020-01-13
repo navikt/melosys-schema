@@ -5,6 +5,7 @@ const { henleggvideresend } = require('./henleggvideresend');
 const { kontaktopplysninger } = require('./kontaktopplysninger');
 const { opprett } = require('./opprett');
 const { sok } = require('./sok');
+const { utpek } = require('./utpek');
 
 module.exports = {
   aktoerer,
@@ -14,4 +15,5 @@ module.exports = {
   kontaktopplysninger,
   opprett,
   sok,
+  utpek,
 };
