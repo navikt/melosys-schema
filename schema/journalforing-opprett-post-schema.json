@@ -15,6 +15,7 @@
     "arbeidsgiverID",
     "representantID",
     "representantKontaktPerson",
+    "fullmektigRepresenterer",
     "dokumentID",
     "hoveddokumentTittel",
     "vedlegg",
@@ -94,6 +95,13 @@
       "type": ["string","null"],
       "title": "The RepresentantKontaktPerson Schema",
       "default": ""
+    },
+    "fullmektigRepresenterer": {
+      "title": "The FullmektigRepresenterer Schema",
+      "$id": "#/properties/fullmektigRepresenterer",
+      "type": "string",
+      "default": "",
+      "pattern": "^(.*)$"
     },
     "dokumentID": {
       "$id": "#/properties/dokumentID",
