@@ -38,7 +38,7 @@
     "sammensattNavn":"Joe Moe",
     "opprettetDato":"2017-11-01T12:31:36.123Z",
     "sakstype":{"kode":"EU_EOS","term":"EU/EØS"},
-    "saksstatus":{"kode":"AVSLUTTET","term":"Avsluttet"},
+    "saksstatus":{"kode":"LOVVALG_AVKLART","term":"Lovvalget er avklart"},
     "behandlingOversikter":[
       {
         "behandlingID":6,

@@ -4,7 +4,7 @@
   "representantID": "",
   "behandlingstypeKode": "SOEKNAD",
   "representantKontaktPerson": null,
-  "fullmektigRepresenterer": "BRUKER",
+  "representantRepresenterer": "BRUKER",
   "avsenderID": "30098000492",
   "avsenderNavn": "HEST LILLA",
   "dokumentID": "Dok_ID",
