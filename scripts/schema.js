@@ -18,7 +18,7 @@ const Personer = require('./test/personer');
 const Soknader = require('./test/soknader');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
-
+const Utpekningsperioder = require('./test/utpekningsperioder');
 const Vilkaar = require('./test/vilkaar');
 
 const Schema = require('./utils/schema-util');
@@ -78,6 +78,7 @@ const katalogMap = new Map([
   ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
   ['saksflyt-vedtak-revurder', Saksflyt.vedtak.revurder],
   ['soknader', Soknader.soknader],
+  ['utpekningsperioder', Utpekningsperioder.utpekningsperioder],
   ['vilkaar', Vilkaar.vilkaar],
 ]);
 
