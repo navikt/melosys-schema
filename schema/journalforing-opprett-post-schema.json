@@ -15,6 +15,7 @@
     "arbeidsgiverID",
     "representantID",
     "representantKontaktPerson",
+    "representantRepresenterer",
     "dokumentID",
     "hoveddokumentTittel",
     "vedlegg",
@@ -94,6 +95,13 @@
       "type": ["string","null"],
       "title": "The RepresentantKontaktPerson Schema",
       "default": ""
+    },
+    "representantRepresenterer": {
+      "title": "The RepresentantRepresenterer Schema",
+      "$id": "#/properties/representantRepresenterer",
+      "type": "string",
+      "default": "",
+      "pattern": "^(.*)$"
     },
     "dokumentID": {
       "$id": "#/properties/dokumentID",
