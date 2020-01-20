@@ -11,7 +11,7 @@
         "fomDato",
         "tomDato",
         "lovvalgsbestemmelse",
-        "tilleggBestemmelse",
+        "tilleggsbestemmelse",
         "lovvalgsland"
       ],
       "properties": {
@@ -28,7 +28,7 @@
           ],
           "pattern": "^(.*)$"
         },
-        "tilleggBestemmelse": {
+        "tilleggsbestemmelse": {
           "type": [
             "string",
             "null"
