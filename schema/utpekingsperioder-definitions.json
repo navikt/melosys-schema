@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/utpekningsperioder-definitions.json",
+  "$id": "http://melosys.nav.no/schemas/utpekingsperioder-definitions.json",
   "type": "object",
-  "title": "The Utpekningsperioder definitions schema",
+  "title": "The Utpekingsperioder definitions schema",
   "definitions": {
-    "utpekningsperiode": {
+    "utpekingsperiode": {
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -44,10 +44,10 @@
         }
       }
     },
-    "utpekningsperioder": {
+    "utpekingsperioder": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/utpekningsperiode"
+        "$ref": "#/definitions/utpekingsperiode"
       }
     }
   }
