@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/utpekingsperioder-definitions.json",
+  "type": "object",
+  "title": "The Utpekingsperioder definitions schema",
+  "definitions": {
+    "utpekingsperiode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fomDato",
+        "tomDato",
+        "lovvalgsbestemmelse",
+        "tilleggsbestemmelse",
+        "lovvalgsland"
+      ],
+      "properties": {
+        "fomDato": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+        },
+        "tomDato": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+        },
+        "lovvalgsbestemmelse": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "tilleggsbestemmelse": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "lovvalgsland": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "utpekingsperioder": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/utpekingsperiode"
+      }
+    }
+  }
+}
