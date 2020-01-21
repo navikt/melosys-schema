@@ -81,21 +81,21 @@ node {
   stage('Deploy to Nexus') {
     def repositoryId
     if (scmVars.GIT_BRANCH.equalsIgnoreCase("master")) {
-      repositoryId = "m2internal"
+      repositoryId = "maven-releases"
     }
     else {
-      repositoryId = "m2snapshot"
+      repositoryId = "maven-snapshots"
     }
 
     echo("repositoryId:${repositoryId}")
 
     configFileProvider(
-      [configFile(fileId: 'navMavenSettings', variable: 'MAVEN_SETTINGS')]) {
+      [configFile(fileId: 'navRepoAdeoMavenSettings', variable: 'MAVEN_SETTINGS')]) {
       sh """
      	  	mvn --settings ${MAVEN_SETTINGS} deploy:deploy-file -Dfile=${jarFile} -DartifactId=${application} \
 	            -DgroupId=no.nav.melosys -Dversion=${buildVersion} \
 	 	        -Ddescription='Melosys-web application' \
-		        -DrepositoryId=${repositoryId} -Durl=http://maven.adeo.no/nexus/content/repositories/${repositoryId}
+		        -DrepositoryId=${repositoryId} -Durl=https://repo.adeo.no/repository/${repositoryId}
         """
     }
   }
