@@ -8,7 +8,7 @@
   "required": [
     "behandlingsresultatTypeKode",
     "fritekst",
-    "mottakerinstitusjon",
+    "mottakerinstitusjoner",
     "revurderBegrunnelse",
     "vedtakstype"
   ],
@@ -20,9 +20,11 @@
       "type": ["string", "null"],
       "pattern": "^(.*)$"
     },
-    "mottakerinstitusjon": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
+    "mottakerinstitusjoner": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "revurderBegrunnelse": {
       "type": ["string", "null"],
