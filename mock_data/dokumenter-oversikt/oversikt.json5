@@ -10,12 +10,24 @@
     "journalforingDato": "2017-06-03T15:15:25.622Z",
     "hoveddokument": {
       "dokumentID": "DOK_ID_4",
-      "tittel": "Vedtaksbrev"
+      "tittel": "Vedtaksbrev",
+      "logiskeVedlegg": [
+        {
+          "dokumentID": null,
+          "tittel": "Logisk vedlegg 1"
+        }
+      ]
     },
     "vedlegg": [
       {
         "tittel": "A1",
-        "dokumentID": "DOK_ID_4"
+        "dokumentID": "DOK_ID_4",
+        "logiskeVedlegg": [
+          {
+            "dokumentID": null,
+            "tittel": "Logisk vedlegg 1"
+          }
+        ]
       }
     ]
   },
@@ -30,7 +42,13 @@
     "journalforingDato": null,
     "hoveddokument": {
       "dokumentID": "DOK",
-      "tittel": "Inntektsmelding"
+      "tittel": "Inntektsmelding",
+      "logiskeVedlegg": [
+        {
+          "dokumentID": null,
+          "tittel": "Logisk vedlegg 1"
+        }
+      ]
     },
     "vedlegg": []
   },
@@ -45,7 +63,8 @@
     "journalforingDato": "2018-05-04T15:15:25.622Z",
     "hoveddokument": {
       "dokumentID": "DOK_ID_5",
-      "tittel": "Manglende dokumentasjon"
+      "tittel": "Manglende dokumentasjon",
+      "logiskeVedlegg": []
     },
     "vedlegg": []
   },
@@ -60,11 +79,13 @@
     "journalforingDato": null,
     "hoveddokument": {
       "dokumentID": "DOK",
-      "tittel": "Endring av søknad"
+      "tittel": "Endring av søknad",
+      "logiskeVedlegg": []
     },
     "vedlegg": [{
       "dokumentID": null,
-      "tittel": "Fullmakt"
+      "tittel": "Fullmakt",
+      "logiskeVedlegg": []
     }]
   },
   {
@@ -78,7 +99,8 @@
     "journalforingDato": "2017-05-12T15:15:25.622Z",
     "hoveddokument": {
       "dokumentID": "DOK_ID_4",
-      "tittel": "Forvaltningsmelding"
+      "tittel": "Forvaltningsmelding",
+      "logiskeVedlegg": []
     },
     "vedlegg": []
   },
@@ -93,11 +115,13 @@
     "journalforingDato": null,
     "hoveddokument": {
       "dokumentID": "DOK",
-      "tittel": "Søknad"
+      "tittel": "Søknad",
+      "logiskeVedlegg": []
     },
     "vedlegg": [{
       "dokumentID": null,
-      "tittel": "Fremtidig arbeidskontrakt"
+      "tittel": "Fremtidig arbeidskontrakt",
+      "logiskeVedlegg": []
     }]
   }
 ]

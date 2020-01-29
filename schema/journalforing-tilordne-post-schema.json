@@ -11,8 +11,6 @@
     "avsenderNavn",
     "behandlingstypeKode",
     "brukerID",
-    "dokumentID",
-    "hoveddokumentTittel",
     "ingenVurdering",
     "journalpostID",
     "oppgaveID",
@@ -59,19 +57,6 @@
       "$id": "#/properties/brukerID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
     },
-    "dokumentID": {
-      "$id": "#/properties/dokumentID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
-    },
-    "hoveddokumentTittel": {
-      "$id": "#/properties/hoveddokumentTittel",
-      "type": "string",
-      "title": "The HoveddokumentTittel Schema ",
-      "default": "",
-      "examples": [
-        "Søknad om medlemskap"
-      ]
-    },
     "ingenVurdering": {
       "$id": "#/properties/ingenVurdering",
       "type": "boolean",
@@ -95,6 +80,10 @@
       "examples": [
         44
       ]
+    },
+    "hoveddokument": {
+      "$id": "#/items/properties/hoveddokument",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
     },
     "vedlegg": {
       "$id": "#/items/properties/vedlegg",

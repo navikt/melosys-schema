@@ -16,8 +16,7 @@
     "representantID",
     "representantKontaktPerson",
     "representererKode",
-    "dokumentID",
-    "hoveddokumentTittel",
+    "hoveddokument",
     "vedlegg",
     "fagsak",
     "anmodningOmUnntak",
@@ -103,18 +102,9 @@
       "default": "",
       "pattern": "^(.*)$"
     },
-    "dokumentID": {
-      "$id": "#/properties/dokumentID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
-    },
-    "hoveddokumentTittel": {
-      "$id": "/properties/hoveddokumentTittel",
-      "type": "string",
-      "title": "The HoveddokumentTittel Schema ",
-      "default": "",
-      "examples": [
-        "Søknad om medlemskap"
-      ]
+    "hoveddokument": {
+      "$id": "#/items/properties/hoveddokument",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
     },
     "vedlegg": {
       "$id": "#/items/properties/vedlegg",

@@ -7,11 +7,19 @@
   "representererKode": "BRUKER",
   "avsenderID": "30098000492",
   "avsenderNavn": "HEST LILLA",
-  "dokumentID": "Dok_ID",
   "brukerID": "30098000492",
-  "hoveddokumentTittel": "Søknad om medlemskap",
   "journalpostID": "DOK_321",
   "oppgaveID": "201377338",
+  "hoveddokument": {
+    "dokumentID": "Dok_ID",
+    "tittel": "Søknad om medlemskap",
+    "logiskeVedlegg": [
+      {
+        "dokumentID": null,
+        "tittel": "Logisk vedlegg 1"
+      }
+    ]
+  },
   "vedlegg": [],
   "fagsak": {
     "sakstype": "EU_EOS",

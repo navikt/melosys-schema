@@ -50,7 +50,7 @@
     },
     "hoveddokument": {
       "$id": "#/properties/dokument",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokument"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
     },
     "vedlegg": {
       "$id": "#/items/properties/vedlegg",

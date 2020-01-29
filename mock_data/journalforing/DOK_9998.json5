@@ -7,14 +7,34 @@
   "mottattDato": "2018-05-04T15:15:25.622Z",
   "hoveddokument": {
     "dokumentID": "73726173",
-    "tittel": "Søknad om A1 -  Avklaring av trygdetilhørighet ved yrkesaktivitet innen EØS/Sveits"
+    "tittel": "Søknad om A1 -  Avklaring av trygdetilhørighet ved yrkesaktivitet innen EØS/Sveits",
+    "logiskeVedlegg": [
+      {
+        "dokumentID": "1234532",
+        "tittel": "Logisk vedlegg 1"
+      },
+      {
+        "dokumentID": null,
+        "tittel": "Logisk vedlegg 2"
+      }
+    ]
   },
-  "vedlegg": [{
-    "tittel": "Skjema for arbeidsgiver som sender arbeidstaker elller frilanser på midlertidig oppdrag i EØS/Sveits",
-    "dokumentID": "123"
-  }, {
-    "tittel": "Søknad om medlemsskap",
-    "dokumentID": "321"
-  }],
+  "vedlegg": [
+    {
+      "tittel": "Skjema for arbeidsgiver som sender arbeidstaker elller frilanser på midlertidig oppdrag i EØS/Sveits",
+      "dokumentID": "123",
+      "logiskeVedlegg": [
+        {
+          "dokumentID": null,
+          "tittel": "Logisk vedlegg 1"
+        }
+      ]
+    },
+    {
+      "tittel": "Søknad om medlemsskap",
+      "dokumentID": "321",
+      "logiskeVedlegg": []
+    }
+  ],
   "behandlingsInformasjon": null
 }
