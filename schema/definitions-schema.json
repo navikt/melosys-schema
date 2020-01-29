@@ -628,7 +628,8 @@
       "enum": [
         "FØRSTEGANGSVEDTAK",
         "KORRIGERT_VEDTAK",
-        "OMGJØRINGSVEDTAK"
+        "OMGJØRINGSVEDTAK",
+        "ENDRINGSVEDTAK"
       ]
     }
   }
