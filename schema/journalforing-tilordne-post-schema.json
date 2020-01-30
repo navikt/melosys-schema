@@ -83,7 +83,7 @@
     },
     "hoveddokument": {
       "$id": "#/items/properties/hoveddokument",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokument"
     },
     "vedlegg": {
       "$id": "#/items/properties/vedlegg",
@@ -91,7 +91,7 @@
       "title": "The Vedlegg Schema",
       "items": {
         "$id": "#/items/properties/vedlegg/items",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokument"
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokument"
       }
     },
     "skalTilordnes": {

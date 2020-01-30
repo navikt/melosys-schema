@@ -12,10 +12,8 @@
       "dokumentID": "DOK_ID_4",
       "tittel": "Vedtaksbrev",
       "logiskeVedlegg": [
-        {
-          "dokumentID": null,
-          "tittel": "Logisk vedlegg 1"
-        }
+        "Logisk vedlegg 1",
+        "Logisk vedlegg 2"
       ]
     },
     "vedlegg": [
@@ -23,10 +21,8 @@
         "tittel": "A1",
         "dokumentID": "DOK_ID_4",
         "logiskeVedlegg": [
-          {
-            "dokumentID": null,
-            "tittel": "Logisk vedlegg 1"
-          }
+          "Logisk vedlegg 1",
+          "Logisk vedlegg 2"
         ]
       }
     ]
@@ -44,10 +40,8 @@
       "dokumentID": "DOK",
       "tittel": "Inntektsmelding",
       "logiskeVedlegg": [
-        {
-          "dokumentID": null,
-          "tittel": "Logisk vedlegg 1"
-        }
+        "Logisk vedlegg 1",
+        "Logisk vedlegg 2"
       ]
     },
     "vedlegg": []
@@ -83,7 +77,7 @@
       "logiskeVedlegg": []
     },
     "vedlegg": [{
-      "dokumentID": null,
+      "dokumentID": "12231",
       "tittel": "Fullmakt",
       "logiskeVedlegg": []
     }]
@@ -119,7 +113,7 @@
       "logiskeVedlegg": []
     },
     "vedlegg": [{
-      "dokumentID": null,
+      "dokumentID": "42324",
       "tittel": "Fremtidig arbeidskontrakt",
       "logiskeVedlegg": []
     }]

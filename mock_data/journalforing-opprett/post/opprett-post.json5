@@ -14,10 +14,8 @@
     "dokumentID": "Dok_ID",
     "tittel": "Søknad om medlemskap",
     "logiskeVedlegg": [
-      {
-        "dokumentID": null,
-        "tittel": "Logisk vedlegg 1"
-      }
+      "Logisk vedlegg 1",
+      "Logisk vedlegg 2"
     ]
   },
   "vedlegg": [],
