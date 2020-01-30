@@ -131,7 +131,8 @@
       "additionalProperties": false,
       "required": [
         "dokumentID",
-        "tittel"
+        "tittel",
+        "logiskeVedlegg"
       ],
       "properties": {
         "dokumentID": {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
@@ -140,6 +141,19 @@
           "type": ["string", "null"],
           "title": "Tittel Schema",
           "examples": ["Tittelen her"]
+        },
+        "logiskeVedlegg": {
+          "type": "array",
+          "title": "The Logiskevedlegg Schema",
+          "items": {
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "Søknad om medlemskap"
+            ],
+            "pattern": "^(.*)$"
+          }
         }
       }
     },
@@ -149,16 +163,30 @@
       "additionalProperties": false,
       "required": [
         "dokumentID",
-        "tittel"
+        "tittel",
+        "logiskeVedlegg"
       ],
       "properties": {
         "dokumentID": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokumentID"
         },
         "tittel": {
-          "type": "string",
+          "type": ["string", "null"],
           "title": "Tittel Schema",
           "examples": ["Tittelen her"]
+        },
+        "logiskeVedlegg": {
+          "type": "array",
+          "title": "The Logiskevedlegg Schema",
+          "items": {
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "Søknad om medlemskap"
+            ],
+            "pattern": "^(.*)$"
+          }
         }
       }
     },

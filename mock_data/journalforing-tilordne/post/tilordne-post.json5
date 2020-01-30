@@ -5,15 +5,22 @@
   "avsenderNavn": "PEN FUL",
   "behandlingstypeKode": "KLAGE",
   "brukerID": "30098000492",
-  "dokumentID": "Dok_ID",
-  "hoveddokumentTittel": "Søknad om medlemskap",
   "ingenVurdering": false,
   "journalpostID": "DOK_321",
   "oppgaveID": "177057928",
+  "hoveddokument": {
+    "dokumentID": "Dok_ID",
+    "tittel": "Søknad om medlemskap",
+    "logiskeVedlegg": [
+      "Logisk vedlegg 1",
+      "Logisk vedlegg 2"
+    ]
+  },
   "vedlegg": [
     {
-      "dokumentID": null,
-      "tittel": "Vedleggstittel 1"
+      "dokumentID": "123",
+      "tittel": "Vedleggstittel 1",
+      "logiskeVedlegg": []
     }
   ],
   "skalTilordnes": false,
