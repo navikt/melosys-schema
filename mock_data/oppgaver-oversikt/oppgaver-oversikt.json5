@@ -235,6 +235,40 @@
       "land": [],
       "versjon": 1,
       "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "174562069",
+      "sammensattNavn": "DOVENT DOVENDYR",
+      "fnr": "30098000492",
+      "saksnummer": "14",
+      "sakstype": {
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
+      },
+      "behandling": {
+        "behandlingID": 14,
+        "behandlingstype": {
+          "kode": "UTL_MYND_UTPEKT_NORGE",
+          "term": "Norge er utpekt (A003)"
+        },
+        "behandlingsstatus": {
+          "kode": "UNDER_BEHANDLING",
+          "term": "Behandlingen pågår"
+        },
+        "endretDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false,
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
+      },
+      "aktivTil": "2018-01-28",
+      "periode": {
+        "fom": "2016-05-12",
+        "tom": "2018-01-01"
+      },
+      "prioritet": "HOY",
+      "land": [],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
     }
   ]
 }
