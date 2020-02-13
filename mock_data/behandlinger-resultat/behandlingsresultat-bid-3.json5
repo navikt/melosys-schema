@@ -2,7 +2,7 @@
   "begrunnelseKoder" : ["ANNET"],
   "begrunnelseFritekst" : "Brukeren har fått flyskrekk",
   "behandlingsresultatTypeKode": "IKKE_FASTSATT",
-  "kontrollBegrunnelseKoder": [],
+  "kontrollresultatBegrunnelseKoder": [],
   "utfallRegistreringUnntak": "GODKJENT",
   "vedtakstype": "FØRSTEGANGSVEDTAK"
 }

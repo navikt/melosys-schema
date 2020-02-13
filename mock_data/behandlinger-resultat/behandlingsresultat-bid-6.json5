@@ -2,7 +2,7 @@
   "begrunnelseKoder": [],
   "begrunnelseFritekst": null,
   "behandlingsresultatTypeKode": "IKKE_FASTSATT",
-  "kontrollBegrunnelseKoder": [],
+  "kontrollresultatBegrunnelseKoder": [],
   "utfallRegistreringUnntak": null,
   "vedtakstype": "FØRSTEGANGSVEDTAK"
 }

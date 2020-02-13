@@ -9,7 +9,7 @@
     "begrunnelseKoder",
     "begrunnelseFritekst",
     "behandlingsresultatTypeKode",
-    "kontrollBegrunnelseKoder",
+    "kontrollresultatBegrunnelseKoder",
     "utfallRegistreringUnntak",
     "vedtakstype"
   ],
@@ -37,7 +37,7 @@
       ],
       "pattern": "^(.*)$"
     },
-    "kontrollBegrunnelseKoder": {
+    "kontrollresultatBegrunnelseKoder": {
       "type": "array",
       "uniqueItems": true,
       "items": {
