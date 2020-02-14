@@ -9,6 +9,7 @@
     "begrunnelseKoder",
     "begrunnelseFritekst",
     "behandlingsresultatTypeKode",
+    "kontrollresultatBegrunnelseKoder",
     "utfallRegistreringUnntak",
     "vedtakstype"
   ],
@@ -35,6 +36,13 @@
         "Bruker har fått flyskrekk"
       ],
       "pattern": "^(.*)$"
+    },
+    "kontrollresultatBegrunnelseKoder": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
     },
     "behandlingsresultatTypeKode": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
