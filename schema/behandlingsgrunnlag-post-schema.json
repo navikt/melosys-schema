@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "allOf": [
+        {
+          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/behandlingsgrunnlagData"
+        },
+        {
+          "anyOf": [
+            {
+              "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadData"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

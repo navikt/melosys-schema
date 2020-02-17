@@ -4,8 +4,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "organisasjoner",
-        "personer"
+        "organisasjoner"
       ],
       "properties": {
         "organisasjoner": {
@@ -299,218 +298,39 @@
               }
             }
           }
-        },
-        "personer": {
-          "$id": "#/definitions/tilleggsData/properties/personer",
-          "type": "array",
-          "title": "The Personer Schema",
-          "items": {
-            "$id": "#/definitions/tilleggsData/properties/personer/items",
-            "type": "object",
-            "title": "The Items Schema",
-            "additionalProperties": false,
-            "required": [
-              "fnr",
-              "sivilstand",
-              "statsborgerskap",
-              "sammensattNavn",
-              "personstatus",
-              "kjoenn",
-              "foedselsdato",
-              "bostedsadresse"
-            ],
-            "properties": {
-              "fnr": {
-                "title": "The Fnr Schema",
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/fnr",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
-              },
-              "sivilstand": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/sivilstand",
-                "title": "The Sivilstand Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-              },
-              "statsborgerskap": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/statsborgerskap",
-                "title": "The Statsborgerskap Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-              },
-              "sammensattNavn": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/sammensattNavn",
-                "type": "string",
-                "title": "The Sammensattnavn Schema",
-                "default": "",
-                "examples": [
-                  "MASKIN ARTIG"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "personstatus": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/personstatus",
-                "title": "The Personstatus Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-              },
-              "kjoenn": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/kjoenn",
-                "title": "The Kjoenn Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-              },
-              "foedselsdato": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/foedselsdato",
-                "type": "string",
-                "title": "The Foedselsdato Schema",
-                "default": "",
-                "examples": [
-                  "1966-10-28"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "bostedsadresse": {
-                "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse",
-                "type": "object",
-                "title": "The Bostedsadresse Schema",
-                "additionalProperties": false,
-                "required": [
-                  "gateadresse",
-                  "postnr",
-                  "poststed",
-                  "land"
-                ],
-                "properties": {
-                  "gateadresse": {
-                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse",
-                    "type": "object",
-                    "title": "The Gateadresse Schema",
-                    "additionalProperties": false,
-                    "required": [
-                      "gatenavn",
-                      "gatenummer",
-                      "husnummer",
-                      "husbokstav"
-                    ],
-                    "properties": {
-                      "gatenavn": {
-                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/gatenavn",
-                        "type": "string",
-                        "title": "The Gatenavn Schema",
-                        "default": "",
-                        "examples": [
-                          "Waldemar Thranses gate"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "gatenummer": {
-                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/gatenummer",
-                        "type": ["integer", "null"],
-                        "title": "The Gatenummer Schema",
-                        "default": 0,
-                        "examples": [
-                          98
-                        ]
-                      },
-                      "husnummer": {
-                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/husnummer",
-                        "type": ["integer", "null"],
-                        "title": "The Husnummer Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "husbokstav": {
-                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/gateadresse/properties/husbokstav",
-                        "type": ["string", "null"],
-                        "title": "The Husbokstav Schema",
-                        "default": "",
-                        "examples": [
-                          "C"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
-                  },
-                  "postnr": {
-                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/postnr",
-                    "type": "string",
-                    "title": "The Postnr Schema",
-                    "default": "",
-                    "examples": [
-                      "0175"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "poststed": {
-                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/poststed",
-                    "type": "string",
-                    "title": "The Poststed Schema",
-                    "default": "",
-                    "examples": [
-                      "OSLO"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "land": {
-                    "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land",
-                    "type": "object",
-                    "title": "The Land Schema",
-                    "required": [
-                      "kode",
-                      "term"
-                    ],
-                    "properties": {
-                      "kode": {
-                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land/properties/kode",
-                        "type": "string",
-                        "title": "The Kode Schema",
-                        "default": "",
-                        "examples": [
-                          "NO"
-                        ],
-                        "pattern": "^(.*)$"
-                      },
-                      "term": {
-                        "$id": "#/definitions/tilleggsData/properties/personer/items/properties/bostedsadresse/properties/land/properties/term",
-                        "type": "string",
-                        "title": "The Term Schema",
-                        "default": "",
-                        "examples": [
-                          "Norge"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/soknad-schema.json",
+  "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "behandlingID",
-    "soeknadDokument",
+    "data",
+    "type",
     "tilleggsData"
   ],
   "properties": {
-    "behandlingID": {
-      "$id": "#/properties/behandlingID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+    "data": {
+      "allOf": [
+        {
+          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/behandlingsgrunnlagData"
+        },
+        {
+          "anyOf": [
+            {
+              "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadData"
+            }
+          ]
+        }
+      ]
     },
-    "soeknadDokument": {
-      "title": "The Soeknaddokument Schema",
-      "$id": "#/properties/soeknadDokument",
-      "$ref": "http://melosys.nav.no/schemas/soknader-dokument-definitions.json#/definitions/soeknadDokument"
+    "type": {
+      "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/behandlingsGrunnlagType"
     },
     "tilleggsData": {
-      "title": "The Tilleggsdata Schema",
-      "$id": "#/properties/tilleggsData",
       "$ref": "#/definitions/tilleggsData"
     }
   }

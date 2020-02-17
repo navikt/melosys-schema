@@ -1,8 +1,7 @@
 {
-  "behandlingID": 10,
-  "soeknadDokument": {
+  "data": {
     "personOpplysninger": {
-      "utenlandskIdent": [{"ident": "38288D-A", "landkode": "IT"}],
+      "utenlandskIdent": [],
       "medfolgendeFamilie": [],
       "medfolgendeAndre": null
     },
@@ -17,14 +16,14 @@
       },
       "foretakNavn": "EQUINOR",
       "foretakOrgnr": "372384726",
-      "arbeidUtlandHjemmekontor": true
+      "arbeidUtlandHjemmekontor": false
     }],
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandkoder": ["FR"],
+      "oppholdslandkoder": ["DE"],
       "oppholdsPeriode": {
-        "fom": "2018-01-01",
-        "tom": "2019-05-31"
+        "fom": "2017-01-01",
+        "tom": "2018-05-31"
       },
       "ektefelleEllerBarnINorge": null,
       "studentFinansieringKode": null,
@@ -72,9 +71,9 @@
       "ekstraArbeidsgivere": []
     },
     "arbeidsinntekt": {
-      "inntektNorskIPerioden": 20000,
-      "inntektUtenlandskIPerioden": 32334,
-      "inntektNaeringIPerioden": 0,
+      "inntektNorskIPerioden": null,
+      "inntektUtenlandskIPerioden": null,
+      "inntektNaeringIPerioden": null,
       "inntektNaturalytelser": {
         "friBolig": true,
         "friBil": null,
@@ -84,25 +83,26 @@
       "inntektTrygdeavgiftBlirTrukket": null
     },
     "arbeidsgiversBekreftelse": {
-      "arbeidsgiverBekrefterUtsendelse": true,
-      "arbeidstakerAnsattUnderUtsendelsen": true,
-      "erstatterArbeidstakerenUtsendte": true,
-      "arbeidstakerTidligereUtsendt24Mnd": true,
-      "arbeidsgiverBetalerArbeidsgiveravgift": true,
-      "trygdeavgiftTrukketGjennomSkatt": true,
-      "trygdeavgiftTrukketGjennomSkattDato": "2018-06-01"
+      "arbeidsgiverBekrefterUtsendelse": null,
+      "arbeidstakerAnsattUnderUtsendelsen": null,
+      "erstatterArbeidstakerenUtsendte": null,
+      "arbeidstakerTidligereUtsendt24Mnd": null,
+      "arbeidsgiverBetalerArbeidsgiveravgift": null,
+      "trygdeavgiftTrukketGjennomSkatt": null,
+      "trygdeavgiftTrukketGjennomSkattDato": null
     },
-    "maritimtArbeid": [],
+    "maritimtArbeid": [
+    ],
     "soeknadsland": {
-      "landkoder": ["FR"]
+      "landkoder": ["DE"]
     },
     "periode": {
-      "fom": "2018-01-02",
-      "tom": "2019-05-30"
+      "fom": "2019-04-04",
+      "tom": "2020-05-17"
     }
   },
   "tilleggsData": {
     "organisasjoner": [],
-    "personer": []
-  }
+  },
+  "type": "SØKNAD",
 }

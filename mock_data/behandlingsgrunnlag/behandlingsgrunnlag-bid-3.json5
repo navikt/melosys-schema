@@ -1,27 +1,30 @@
 {
-  "behandlingID": 6,
-  "soeknadDokument": {
+  "data": {
     "personOpplysninger": {
       "utenlandskIdent": [],
       "medfolgendeFamilie": [],
       "medfolgendeAndre": null
     },
-    "arbeidUtland": [{
-      "adresse": {
-        "gatenavn": "Adresseveien 123",
-        "husnummer": null,
-        "region": null,
-        "postnummer": "1234",
-        "poststed": "Poststedet",
-        "landkode": "DE"
-      },
-      "foretakNavn": "EQUINOR",
-      "foretakOrgnr": "372384726",
-      "arbeidUtlandHjemmekontor": false
-    }],
+    "arbeidUtland": [
+      {
+        "adresse": {
+          "gatenavn": "Adresseveien 123",
+          "husnummer": null,
+          "region": null,
+          "postnummer": "1234",
+          "poststed": "Poststedet",
+          "landkode": "DE"
+        },
+        "foretakNavn": "EQUINOR",
+        "foretakOrgnr": "372384726",
+        "arbeidUtlandHjemmekontor": null
+      }
+    ],
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandkoder": ["SE"],
+      "oppholdslandkoder": [
+        "GB"
+      ],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2019-05-31"
@@ -32,7 +35,7 @@
     },
     "bosted": {
       "intensjonOmRetur": true,
-      "antallMaanederINorge": 8,
+      "antallMaanederINorge": null,
       "oppgittAdresse": {
         "gatenavn": "Waldemar Thranes gate",
         "husnummer": "98",
@@ -76,9 +79,9 @@
       "inntektUtenlandskIPerioden": null,
       "inntektNaeringIPerioden": null,
       "inntektNaturalytelser": {
-        "friBolig": false,
-        "friBil": false,
-        "friAnnet": "Fri bruk av bedriftens vaskekluter"
+        "friBolig": null,
+        "friBil": null,
+        "friAnnet": null
       },
       "inntektErInnrapporteringspliktig": null,
       "inntektTrygdeavgiftBlirTrukket": null
@@ -94,15 +97,15 @@
     },
     "maritimtArbeid": [],
     "soeknadsland": {
-      "landkoder": ["SE"]
+      "landkoder": ["DK", "SE"]
     },
     "periode": {
       "fom": "2018-01-02",
       "tom": "2019-05-30"
     }
   },
+  "type": "SØKNAD",
   "tilleggsData": {
     "organisasjoner": [],
-    "personer": []
   }
 }

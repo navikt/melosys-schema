@@ -1,8 +1,7 @@
 {
-  "behandlingID": 5,
-  "soeknadDokument": {
+  "data": {
     "personOpplysninger": {
-      "utenlandskIdent": [],
+      "utenlandskIdent": [{"ident": "38288D-A", "landkode": "IT"}],
       "medfolgendeFamilie": [],
       "medfolgendeAndre": null
     },
@@ -17,14 +16,14 @@
       },
       "foretakNavn": "EQUINOR",
       "foretakOrgnr": "372384726",
-      "arbeidUtlandHjemmekontor": false
+      "arbeidUtlandHjemmekontor": true
     }],
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandkoder": ["DE"],
+      "oppholdslandkoder": ["FR"],
       "oppholdsPeriode": {
-        "fom": "2017-01-01",
-        "tom": "2018-05-31"
+        "fom": "2018-01-01",
+        "tom": "2019-05-31"
       },
       "ektefelleEllerBarnINorge": null,
       "studentFinansieringKode": null,
@@ -34,12 +33,12 @@
       "intensjonOmRetur": true,
       "antallMaanederINorge": 8,
       "oppgittAdresse": {
-        "gatenavn": "Waldemar Thranes gate",
-        "husnummer": "98",
+        "gatenavn": null,
+        "husnummer": null,
         "region": null,
-        "postnummer": "O175",
-        "poststed": "Oslo",
-        "landkode": "NO"
+        "postnummer": null,
+        "poststed": null,
+        "landkode": null
       }
     },
     "arbeidNorge": {
@@ -72,9 +71,9 @@
       "ekstraArbeidsgivere": []
     },
     "arbeidsinntekt": {
-      "inntektNorskIPerioden": null,
-      "inntektUtenlandskIPerioden": null,
-      "inntektNaeringIPerioden": null,
+      "inntektNorskIPerioden": 20000,
+      "inntektUtenlandskIPerioden": 32334,
+      "inntektNaeringIPerioden": 0,
       "inntektNaturalytelser": {
         "friBolig": true,
         "friBil": null,
@@ -84,26 +83,25 @@
       "inntektTrygdeavgiftBlirTrukket": null
     },
     "arbeidsgiversBekreftelse": {
-      "arbeidsgiverBekrefterUtsendelse": null,
-      "arbeidstakerAnsattUnderUtsendelsen": null,
-      "erstatterArbeidstakerenUtsendte": null,
-      "arbeidstakerTidligereUtsendt24Mnd": null,
-      "arbeidsgiverBetalerArbeidsgiveravgift": null,
-      "trygdeavgiftTrukketGjennomSkatt": null,
-      "trygdeavgiftTrukketGjennomSkattDato": null
+      "arbeidsgiverBekrefterUtsendelse": true,
+      "arbeidstakerAnsattUnderUtsendelsen": true,
+      "erstatterArbeidstakerenUtsendte": true,
+      "arbeidstakerTidligereUtsendt24Mnd": true,
+      "arbeidsgiverBetalerArbeidsgiveravgift": true,
+      "trygdeavgiftTrukketGjennomSkatt": true,
+      "trygdeavgiftTrukketGjennomSkattDato": "2018-06-01"
     },
-    "maritimtArbeid": [
-    ],
+    "maritimtArbeid": [],
     "soeknadsland": {
-      "landkoder": ["DE"]
+      "landkoder": ["FR"]
     },
     "periode": {
-      "fom": "2019-04-04",
-      "tom": "2020-05-17"
+      "fom": "2018-01-02",
+      "tom": "2019-05-30"
     }
   },
   "tilleggsData": {
     "organisasjoner": [],
-    "personer": []
-  }
+  },
+  "type": "SØKNAD",
 }

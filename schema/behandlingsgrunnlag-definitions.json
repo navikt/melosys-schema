@@ -1,0 +1,793 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json",
+  "title": "The Behandlingsgrunnlag Definitions Schema",
+  "definitions": {
+    "soeknadData": {
+      "type": "object",
+      "required": [
+        "juridiskArbeidsgiverNorge",
+        "arbeidsinntekt",
+        "arbeidsgiversBekreftelse"
+      ],
+      "properties": {
+        "arbeidsgiversBekreftelse": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "arbeidsgiverBekrefterUtsendelse",
+            "arbeidstakerAnsattUnderUtsendelsen",
+            "erstatterArbeidstakerenUtsendte",
+            "arbeidstakerTidligereUtsendt24Mnd",
+            "arbeidsgiverBetalerArbeidsgiveravgift",
+            "trygdeavgiftTrukketGjennomSkatt",
+            "trygdeavgiftTrukketGjennomSkattDato"
+          ],
+          "properties": {
+            "arbeidsgiverBekrefterUtsendelse": {
+              "type": ["boolean","null"],
+              "title": "The Arbeidsgiverbekrefterutsendelse Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "arbeidstakerAnsattUnderUtsendelsen": {
+              "type": ["boolean","null"],
+              "title": "The Arbeidstakeransattunderutsendelsen Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "erstatterArbeidstakerenUtsendte": {
+              "type": ["boolean","null"],
+              "title": "The Erstatterarbeidstakerenutsendte Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "arbeidstakerTidligereUtsendt24Mnd": {
+              "type": ["boolean","null"],
+              "title": "The Arbeidstakertidligereutsendt24mnd Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "arbeidsgiverBetalerArbeidsgiveravgift": {
+              "type": ["boolean","null"],
+              "title": "The Arbeidsgiverbetalerarbeidsgiveravgift Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "trygdeavgiftTrukketGjennomSkatt": {
+              "type": ["boolean","null"],
+              "title": "The Trygdeavgifttrukketgjennomskatt Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "trygdeavgiftTrukketGjennomSkattDato": {
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+            }
+          }
+        },
+        "arbeidsinntekt": {
+          "type": "object",
+          "title": "The Arbeidsinntekt Schema",
+          "additionalProperties": false,
+          "required": [
+            "inntektNorskIPerioden",
+            "inntektUtenlandskIPerioden",
+            "inntektNaeringIPerioden",
+            "inntektNaturalytelser",
+            "inntektErInnrapporteringspliktig",
+            "inntektTrygdeavgiftBlirTrukket"
+          ],
+          "properties": {
+            "inntektNorskIPerioden": {
+              "type": ["integer","null"],
+              "title": "The Inntektnorskiperioden Schema",
+              "default": 0,
+              "examples": [
+                5500
+              ]
+            },
+            "inntektUtenlandskIPerioden": {
+              "type": ["integer","null"],
+              "title": "The Inntektutenlandskiperioden Schema",
+              "default": 0,
+              "examples": [
+                2000
+              ]
+            },
+            "inntektNaeringIPerioden": {
+              "type": ["integer","null"],
+              "title": "The Inntektnaeringiperioden Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "inntektNaturalytelser": {
+              "type": "object",
+              "title": "The Inntektnaturalytelser Schema",
+              "additionalProperties": false,
+              "required": [
+                "friBil",
+                "friBolig",
+                "friAnnet"
+              ],
+              "properties": {
+                "friBil": {
+                  "type": ["boolean","null"],
+                  "title": "The friBil Schema",
+                  "default": false,
+                  "examples": [true]
+                },
+                "friBolig": {
+                  "type": ["boolean","null"],
+                  "title": "The friBolig Schema",
+                  "default": false,
+                  "examples": [true]
+                },
+                "friAnnet": {
+                  "type": ["string","null"],
+                  "title": "The friAnnet Schema",
+                  "default": false,
+                  "examples": [true]
+                }
+              }
+            },
+            "inntektErInnrapporteringspliktig": {
+              "type": ["boolean","null"],
+              "title": "The Inntekterinnrapporteringspliktig Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "inntektTrygdeavgiftBlirTrukket": {
+              "type": ["boolean","null"],
+              "title": "The Inntekttrygdeavgiftblirtrukket Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
+          }
+        },
+        "juridiskArbeidsgiverNorge": {
+          "type": "object",
+          "title": "The Juridiskarbeidsgivernorge Schema",
+          "additionalProperties": false,
+          "required": [
+            "utsendteNeste12Mnd",
+            "antallAdmAnsatte",
+            "antallAnsatte",
+            "andelOmsetningINorge",
+            "andelOppdragINorge",
+            "andelKontrakterINorge",
+            "arbeidstakereRekruttertILand",
+            "oppdragsKontrakterIHovedsakInngaattILand",
+            "ekstraArbeidsgivere"
+          ],
+          "properties": {
+            "utsendteNeste12Mnd": {
+              "type": ["integer","null"],
+              "title": "The Utsendteneste12mnd Schema",
+              "default": 0,
+              "examples": [
+                10
+              ]
+            },
+            "antallAdmAnsatte": {
+              "type": ["integer","null"],
+              "title": "The Antalladmansatte Schema",
+              "default": 0,
+              "examples": [
+                350
+              ]
+            },
+            "antallAnsatte": {
+              "type": ["integer","null"],
+              "title": "The antallAnsatte Schema",
+              "default": 0,
+              "examples": [
+                75
+              ]
+            },
+            "andelOmsetningINorge": {
+              "type": ["number","null"],
+              "title": "The Andelomsetninginorge Schema",
+              "default": 0.0,
+              "examples": [
+                78.5
+              ]
+            },
+            "andelOppdragINorge": {
+              "type": ["number","null"],
+              "title": "The andelOppdragINorge Schema",
+              "default": 0.0,
+              "examples": [
+                78.5
+              ]
+            },
+            "andelKontrakterINorge": {
+              "type": ["number","null"],
+              "title": "The Andelkontrakterinorge Schema",
+              "default": 0.0,
+              "examples": [
+                50.5
+              ]
+            },
+            "arbeidstakereRekruttertILand": {
+              "type": ["string","null"],
+              "title": "The arbeidstakereRekruttertILand Schema",
+              "default": 0.0,
+              "examples": [
+                50.5
+              ]
+            },
+            "oppdragsKontrakterIHovedsakInngaattILand": {
+              "type": ["string","null"],
+              "title": "The oppdragsKontrakterIHovedsakInngaattILand Schema",
+              "default": 0.0,
+              "examples": [
+                50.5
+              ]
+            },
+            "ekstraArbeidsgivere": {
+              "type": "array",
+              "title": "The EkstraArbeidsgivere Schema",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "910253158"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "behandlingsgrunnlagData": {
+      "type": "object",
+      "required": [
+        "personOpplysninger",
+        "arbeidUtland",
+        "foretakUtland",
+        "oppholdUtland",
+        "bosted",
+        "arbeidNorge",
+        "selvstendigArbeid",
+        "maritimtArbeid",
+        "soeknadsland",
+        "periode"
+      ],
+      "properties": {
+        "personOpplysninger": {
+          "type": "object",
+          "title": "The Personopplysninger Schema",
+          "additionalProperties": false,
+          "required": [
+            "utenlandskIdent",
+            "medfolgendeFamilie",
+            "medfolgendeAndre"
+          ],
+          "properties": {
+            "utenlandskIdent": {
+              "type": "array",
+              "title": "The utenlandskIdent Schema",
+              "uniqueItems": true,
+              "items": {
+                "type": "object",
+                "title": "The Items Schema",
+                "additionalProperties": false,
+                "required": [
+                  "ident",
+                  "landkode"
+                ],
+                "properties": {
+                  "ident": {
+                    "type": ["string","null"],
+                    "title": "The Id Schema",
+                    "default": "",
+                    "examples": [
+                      "123456789"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "landkode": {
+                    "title": "The Landkode Schema",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+                  }
+                }
+              }
+            },
+            "medfolgendeFamilie": {
+              "type": "array",
+              "title": "The Medfolgendefamilie Schema",
+              "uniqueItems": true,
+              "items": {
+                "type": ["string","null"],
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "10100638274"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "medfolgendeAndre": {
+              "type": ["string","null"],
+              "title": "The Medfolgendeandre Schema",
+              "default": "",
+              "examples": [
+                "28106600300"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "arbeidUtland": {
+          "type": "array",
+          "title": "The Arbeidutland Schema",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "title": "The Items Schema",
+            "additionalProperties": false,
+            "required": [
+              "adresse",
+              "foretakNavn",
+              "foretakOrgnr",
+              "arbeidUtlandHjemmekontor"
+            ],
+            "properties": {
+              "adresse": {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/strukturertAdresse"
+              },
+              "foretakNavn": {
+                "type": ["string","null"],
+                "title": "The ForetakNavn Schema",
+                "default": "",
+                "examples": [
+                  "EQUINOR DEUTSCHLAND"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "foretakOrgnr": {
+                "type": ["string","null"],
+                "title": "The ForetakOrgnr Schema",
+                "default": "",
+                "examples": [
+                  ""
+                ],
+                "pattern": "^(.*)$"
+              },
+              "arbeidUtlandHjemmekontor": {
+                "type": ["boolean","null"],
+                "title": "The Arbeidutlandhjemmekontor Schema",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              }
+            }
+          }
+        },
+        "foretakUtland": {
+          "type": "array",
+          "title": "The Foretakutland Schema",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "title": "The Items Schema",
+            "additionalProperties": false,
+            "required": [
+              "uuid",
+              "navn",
+              "orgnr",
+              "selvstendigNaeringsvirksomhet",
+              "adresse"
+            ],
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "pattern": "^(.*)$"
+              },
+              "navn": {
+                "type": ["string","null"],
+                "title": "The Navn Schema",
+                "default": "",
+                "examples": [
+                  "EQUINOR DEUTSCHLAND"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "orgnr": {
+                "title": "The Orgnr Schema",
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+              },
+              "selvstendigNaeringsvirksomhet": {
+                "type": "boolean"
+              },
+              "adresse": {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
+              }
+            }
+          }
+        },
+        "oppholdUtland": {
+          "type": "object",
+          "title": "The Oppholdutland Schema",
+          "additionalProperties": false,
+          "required": [
+            "oppholdslandkoder",
+            "oppholdsPeriode",
+            "ektefelleEllerBarnINorge",
+            "studentFinansieringKode",
+            "studentSemester"
+          ],
+          "properties": {
+            "oppholdslandkoder": {
+              "type": "array",
+              "title": "The Oppholdslandkoder Schema",
+              "uniqueItems": true,
+              "items": {
+                "type": ["string","null"],
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "DE",
+                  "SE"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "oppholdsPeriode": {
+              "title": "The Oppholdsperiode Schema",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+            },
+            "ektefelleEllerBarnINorge": {
+              "type": ["boolean","null"],
+              "title": "The Ektefelleellerbarninorge Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "studentFinansieringKode": {
+              "type": ["string","null"],
+              "title": "The Studentfinansieringkode Schema",
+              "default": "",
+              "examples": [
+                "LAANEKASSEN"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "studentSemester": {
+              "type": ["string","null"],
+              "title": "The Studentsemester Schema",
+              "default": "",
+              "examples": [
+                "2018/2019"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "bosted": {
+          "type": "object",
+          "title": "The Bosted Schema",
+          "additionalProperties": false,
+          "required": [
+            "intensjonOmRetur",
+            "antallMaanederINorge",
+            "oppgittAdresse"
+          ],
+          "properties": {
+            "intensjonOmRetur": {
+              "type": ["boolean","null"],
+              "title": "The Intensjonomretur Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "antallMaanederINorge": {
+              "type": ["integer","null"],
+              "title": "The Antallmaanederinorge Schema",
+              "default": 0,
+              "examples": [
+                8
+              ]
+            },
+            "oppgittAdresse": {
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
+            }
+          }
+        },
+        "arbeidNorge": {
+          "type": "object",
+          "title": "The Arbeidnorge Schema",
+          "additionalProperties": false,
+          "required": [
+            "arbeidsforholdOpprettholdIHelePerioden",
+            "arbeidsforholdVikarNavn",
+            "vikarOrgnr",
+            "flyendePersonellHjemmebase",
+            "kontaktNavn",
+            "kontaktEpost",
+            "fullmektigFirma",
+            "fullmektigGateadresse",
+            "fullmektigPostnr",
+            "fullmektigPoststed",
+            "fullmektigRegion",
+            "fullmektigLandkode"
+          ],
+          "properties": {
+            "arbeidsforholdOpprettholdIHelePerioden": {
+              "type": ["boolean","null"],
+              "title": "The Arbeidsforholdopprettholdiheleperioden Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "arbeidsforholdVikarNavn": {
+              "type": ["string","null"],
+              "title": "The Arbeidsforholdvikarnavn Schema",
+              "default": "",
+              "examples": [
+                "Vikarbyrået AS"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "vikarOrgnr": {
+              "type": ["string","null"],
+              "title": "The Vikarorgnr Schema",
+              "default": "",
+              "examples": [
+                "22334455"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "flyendePersonellHjemmebase": {
+              "type": ["string","null"],
+              "title": "The Flyendepersonellhjemmebase Schema",
+              "default": "",
+              "examples": [
+                "Flybasen Int. Airport, ...."
+              ],
+              "pattern": "^(.*)$"
+            },
+            "kontaktNavn": {
+              "type": ["string","null"],
+              "title": "The Kontaktnavn Schema",
+              "default": "",
+              "examples": [
+                "Ola Nordmann"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "kontaktEpost": {
+              "type": ["string","null"],
+              "title": "The Kontaktepost Schema",
+              "default": "",
+              "examples": [
+                "ola.nordmann@fullmektigfirma.no"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fullmektigFirma": {
+              "type": ["string","null"],
+              "title": "The Fullmektigfirma Schema",
+              "default": "",
+              "examples": [
+                "Advokatfullmektig AS"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fullmektigGateadresse": {
+              "type": ["string","null"],
+              "title": "The Fullmektiggateadresse Schema",
+              "default": "",
+              "examples": [
+                "Adresseveien 123"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fullmektigPostnr": {
+              "type": ["string","null"],
+              "title": "The Fullmektigpostnr Schema",
+              "default": "",
+              "examples": [
+                "1234"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fullmektigPoststed": {
+              "type": ["string","null"],
+              "title": "The Fullmektigpoststed Schema",
+              "default": "",
+              "examples": [
+                "Byensvik"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fullmektigRegion": {
+              "type": ["string","null"],
+              "title": "The Fullmektigregion Schema",
+              "default": "",
+              "examples": [
+                "Østlandsregionen"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fullmektigLandkode": {
+              "type": ["string","null"],
+              "title": "The Fullmektiglandkode Schema",
+              "default": "",
+              "examples": [
+                "NO"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "selvstendigArbeid": {
+          "type": "object",
+          "title": "The Selvstendigarbeid Schema",
+          "additionalProperties": false,
+          "required": [
+            "erSelvstendig",
+            "selvstendigForetak"
+          ],
+          "properties": {
+            "erSelvstendig": {
+              "type": ["boolean","null"],
+              "title": "The Erselvstendig Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "selvstendigForetak": {
+              "type": "array",
+              "title": "The Selvstendigforetak Schema",
+              "uniqueItems": true,
+              "items": {
+                "type": "object",
+                "title": "The Items Schema",
+                "additionalProperties": false,
+                "required": [
+                  "orgnr",
+                  "fortsetterEtterArbeidIUtlandet"
+                ],
+                "properties": {
+                  "orgnr": {
+                    "title": "The Orgnr Schema",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                  },
+                  "fortsetterEtterArbeidIUtlandet": {
+                    "type": ["boolean","null"],
+                    "title": "The Fortsetteretterarbeidiutlandet Schema",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "maritimtArbeid": {
+          "type": "array",
+          "title": "The MaritimtArbeid Schema",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "title": "The Maritimtarbeid Schema",
+            "additionalProperties": false,
+            "required": [
+              "enhetNavn",
+              "fartsomradeKode",
+              "flaggLandkode",
+              "foretakNavn",
+              "foretakOrgnr",
+              "installasjonsLandkode",
+              "territorialfarvann"
+            ],
+            "properties": {
+              "enhetNavn": {
+                "type": ["string","null"],
+                "title": "The EnhetNavn Schema",
+                "default": "",
+                "examples": [
+                  "Navn på skipet"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "fartsomradeKode": {
+                "type": ["string","null"],
+                "title": "The Fartsomradekode Schema",
+                "default": "",
+                "examples": [
+                  "INNENRIKS"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "flaggLandkode": {
+                "type": ["string","null"],
+                "title": "The Flagglandkode Schema",
+                "default": "",
+                "examples": [
+                  "GB"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "foretakNavn": {
+                "type": ["string", "null"],
+                "pattern": "^(.*)$"
+              },
+              "foretakOrgnr": {
+                "type": ["string", "null"],
+                "pattern": "^(.*)$"
+              },
+              "installasjonsLandkode": {
+                "type": ["string","null"],
+                "title": "The Installasjonslandkode Schema",
+                "default": "",
+                "examples": [
+                  "GB"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "territorialfarvann": {
+                "type": ["string","null"],
+                "title": "The Territorialfarvann Schema",
+                "default": "",
+                "examples": [
+                  "GB"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "soeknadsland": {
+          "type": "object",
+          "title": "The Soeknadsland Schema",
+          "additionalProperties": false,
+          "required": [
+            "landkoder"
+          ],
+          "properties": {
+            "landkoder": {
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkoder"
+            }
+          }
+        },
+        "periode": {
+          "title": "The Soknadsperiode Schema",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+        }
+      }
+    },
+    "behandlingsGrunnlagType": {
+      "type": "string"
+    }
+  }
+}

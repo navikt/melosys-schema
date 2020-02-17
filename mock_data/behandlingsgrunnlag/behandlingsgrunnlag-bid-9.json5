@@ -1,6 +1,5 @@
 {
-  "behandlingID": 7,
-  "soeknadDokument": {
+  "data": {
     "personOpplysninger": {
       "utenlandskIdent": [{"ident": "38288D-A", "landkode": "IT"}],
       "medfolgendeFamilie": [],
@@ -103,6 +102,6 @@
   },
   "tilleggsData": {
     "organisasjoner": [],
-    "personer": []
-  }
+  },
+  "type": "SØKNAD",
 }
