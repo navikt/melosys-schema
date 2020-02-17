@@ -3,6 +3,7 @@
   "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
+  "additionalProperties": false,
   "required": [
     "data"
   ],
