@@ -3,6 +3,102 @@
   "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json",
   "title": "The Behandlingsgrunnlag Definitions Schema",
   "definitions": {
+    "juridiskArbeidsgiverNorge": {
+      "type": "object",
+      "title": "The Juridiskarbeidsgivernorge Schema",
+      "additionalProperties": false,
+      "required": [
+        "utsendteNeste12Mnd",
+        "antallAdmAnsatte",
+        "antallAnsatte",
+        "andelOmsetningINorge",
+        "andelOppdragINorge",
+        "andelKontrakterINorge",
+        "arbeidstakereRekruttertILand",
+        "oppdragsKontrakterIHovedsakInngaattILand",
+        "ekstraArbeidsgivere"
+      ],
+      "properties": {
+        "utsendteNeste12Mnd": {
+          "type": ["integer","null"],
+          "title": "The Utsendteneste12mnd Schema",
+          "default": 0,
+          "examples": [
+            10
+          ]
+        },
+        "antallAdmAnsatte": {
+          "type": ["integer","null"],
+          "title": "The Antalladmansatte Schema",
+          "default": 0,
+          "examples": [
+            350
+          ]
+        },
+        "antallAnsatte": {
+          "type": ["integer","null"],
+          "title": "The antallAnsatte Schema",
+          "default": 0,
+          "examples": [
+            75
+          ]
+        },
+        "andelOmsetningINorge": {
+          "type": ["number","null"],
+          "title": "The Andelomsetninginorge Schema",
+          "default": 0.0,
+          "examples": [
+            78.5
+          ]
+        },
+        "andelOppdragINorge": {
+          "type": ["number","null"],
+          "title": "The andelOppdragINorge Schema",
+          "default": 0.0,
+          "examples": [
+            78.5
+          ]
+        },
+        "andelKontrakterINorge": {
+          "type": ["number","null"],
+          "title": "The Andelkontrakterinorge Schema",
+          "default": 0.0,
+          "examples": [
+            50.5
+          ]
+        },
+        "arbeidstakereRekruttertILand": {
+          "type": ["string","null"],
+          "title": "The arbeidstakereRekruttertILand Schema",
+          "default": 0.0,
+          "examples": [
+            50.5
+          ]
+        },
+        "oppdragsKontrakterIHovedsakInngaattILand": {
+          "type": ["string","null"],
+          "title": "The oppdragsKontrakterIHovedsakInngaattILand Schema",
+          "default": 0.0,
+          "examples": [
+            50.5
+          ]
+        },
+        "ekstraArbeidsgivere": {
+          "type": "array",
+          "title": "The EkstraArbeidsgivere Schema",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "910253158"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
     "soeknadData": {
       "type": "object",
       "additionalProperties": false,
@@ -683,100 +779,7 @@
           }
         },
         "juridiskArbeidsgiverNorge": {
-          "type": "object",
-          "title": "The Juridiskarbeidsgivernorge Schema",
-          "additionalProperties": false,
-          "required": [
-            "utsendteNeste12Mnd",
-            "antallAdmAnsatte",
-            "antallAnsatte",
-            "andelOmsetningINorge",
-            "andelOppdragINorge",
-            "andelKontrakterINorge",
-            "arbeidstakereRekruttertILand",
-            "oppdragsKontrakterIHovedsakInngaattILand",
-            "ekstraArbeidsgivere"
-          ],
-          "properties": {
-            "utsendteNeste12Mnd": {
-              "type": ["integer","null"],
-              "title": "The Utsendteneste12mnd Schema",
-              "default": 0,
-              "examples": [
-                10
-              ]
-            },
-            "antallAdmAnsatte": {
-              "type": ["integer","null"],
-              "title": "The Antalladmansatte Schema",
-              "default": 0,
-              "examples": [
-                350
-              ]
-            },
-            "antallAnsatte": {
-              "type": ["integer","null"],
-              "title": "The antallAnsatte Schema",
-              "default": 0,
-              "examples": [
-                75
-              ]
-            },
-            "andelOmsetningINorge": {
-              "type": ["number","null"],
-              "title": "The Andelomsetninginorge Schema",
-              "default": 0.0,
-              "examples": [
-                78.5
-              ]
-            },
-            "andelOppdragINorge": {
-              "type": ["number","null"],
-              "title": "The andelOppdragINorge Schema",
-              "default": 0.0,
-              "examples": [
-                78.5
-              ]
-            },
-            "andelKontrakterINorge": {
-              "type": ["number","null"],
-              "title": "The Andelkontrakterinorge Schema",
-              "default": 0.0,
-              "examples": [
-                50.5
-              ]
-            },
-            "arbeidstakereRekruttertILand": {
-              "type": ["string","null"],
-              "title": "The arbeidstakereRekruttertILand Schema",
-              "default": 0.0,
-              "examples": [
-                50.5
-              ]
-            },
-            "oppdragsKontrakterIHovedsakInngaattILand": {
-              "type": ["string","null"],
-              "title": "The oppdragsKontrakterIHovedsakInngaattILand Schema",
-              "default": 0.0,
-              "examples": [
-                50.5
-              ]
-            },
-            "ekstraArbeidsgivere": {
-              "type": "array",
-              "title": "The EkstraArbeidsgivere Schema",
-              "uniqueItems": true,
-              "items": {
-                "type": "string",
-                "title": "The Items Schema",
-                "default": "",
-                "examples": [
-                  "910253158"
-                ],
-                "pattern": "^(.*)$"
-              }
-            }
-          }
+          "$ref": "#/definitions/juridiskArbeidsgiverNorge"
         }
       }
     },
@@ -784,6 +787,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "juridiskArbeidsgiverNorge",
         "personOpplysninger",
         "arbeidUtland",
         "foretakUtland",
@@ -796,6 +800,9 @@
         "periode"
       ],
       "properties": {
+        "juridiskArbeidsgiverNorge": {
+          "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
         "personOpplysninger": {
           "type": "object",
           "title": "The Personopplysninger Schema",
