@@ -851,7 +851,7 @@
           "$ref": "#/definitions/bosted"
         },
         "arbeidNorge": {
-          "$ref": "#/definitions/bosted"
+          "$ref": "#/definitions/arbeidNorge"
         },
         "selvstendigArbeid": {
           "$ref": "#/definitions/selvstendigArbeid"
