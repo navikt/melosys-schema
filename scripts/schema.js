@@ -5,6 +5,7 @@ const Demo = require('./test/demo');
 const Anmodningsperioder = require('./test/anmodningsperioder');
 const Avklartefakta = require('./test/avklartefakta');
 const Behandlinger = require('./test/behandlinger');
+const Behandlingsgrunnlag = require('./test/behandlingsgrunnlag');
 const Dokumenter = require('./test/dokumenter');
 const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
@@ -15,7 +16,6 @@ const Oppgaver = require('./test/oppgaver');
 const Organisasjon = require('./test/organsisasjon');
 const LovvalgsperioderOpprinnelig = require('./test/lovvalgsperioderOpprinnelig');
 const Personer = require('./test/personer');
-const Soknader = require('./test/soknader');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
 const Utpekingsperioder = require('./test/utpekingsperioder');
@@ -78,7 +78,7 @@ const katalogMap = new Map([
   ['saksflyt-vedtak-endre', Saksflyt.vedtak.endre],
   ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
   ['saksflyt-vedtak-revurder', Saksflyt.vedtak.revurder],
-  ['soknader', Soknader.soknader],
+  ['behandlingsgrunnlag', Behandlingsgrunnlag.behandlingsgrunnlag],
   ['utpekingsperioder', Utpekingsperioder.utpekingsperioder],
   ['vilkaar', Vilkaar.vilkaar],
 ]);

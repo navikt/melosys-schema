@@ -807,8 +807,8 @@
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
     "behandlingstype": {
-      "kode": "UNDER_BEHANDLING",
-      "term": "Behandle forkortet periode"
+      "kode": "SOEKNAD",
+      "term": "Søknad"
     }
   }
 }

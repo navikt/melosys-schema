@@ -1,6 +1,5 @@
 {
-  "behandlingID": 4,
-  "soeknadDokument": {
+  "data": {
     "personOpplysninger": {
       "utenlandskIdent": [
         {
@@ -191,78 +190,7 @@
           "land": "NORGE"
         }
       }
-    ],
-    "personer": [
-      {
-        "fnr": "28106600300",
-        "sivilstand": {
-          "kode": "UGIF",
-          "term": "Ugift"
-        },
-        "statsborgerskap": {
-          "kode": "NO",
-          "term": "Norge"
-        },
-        "sammensattNavn": "MASKIN ARTIG",
-        "personstatus": {
-          "kode": "BOSA",
-          "term": "Bosatt"
-        },
-        "kjoenn": {
-          "kode": "M",
-          "term": "Mann"
-        },
-        "foedselsdato": "1966-10-28",
-        "bostedsadresse" : {
-          "gateadresse": {
-            "gatenavn": "Waldemar Thranses gate",
-            "gatenummer": 101098,
-            "husnummer": null,
-            "husbokstav": "C"
-          },
-          "postnr": "0175",
-          "poststed": "OSLO",
-          "land": {
-            "kode": "NO",
-            "term": "Norge"
-          }
-        }
-      },
-      {
-        "fnr": "30098000492",
-        "sivilstand": {
-          "kode": "GIFT",
-          "term": "Gift"
-        },
-        "statsborgerskap": {
-          "kode": "NO",
-          "term": "Norge"
-        },
-        "sammensattNavn": "HEST LILLA",
-        "personstatus": {
-          "kode": "BOSATT",
-          "term": "Bosatt"
-        },
-        "kjoenn": {
-          "kode": "K",
-          "term": "Kvinne"
-        },
-        "foedselsdato": "1963-05-05",
-        "bostedsadresse" : {
-          "gateadresse": {
-            "gatenavn": "Waldemar Thranses gate",
-            "gatenummer": 101098,
-            "husnummer": 98,
-            "husbokstav": "C"
-          },
-          "postnr": "0175",
-          "poststed": "OSLO",
-          "land": {
-            "kode": "NO",
-            "term": "Norge"
-          }
-        }
-      }
     ]
-  }
+  },
+  "type": "SØKNAD",
 }

@@ -1,6 +1,5 @@
 {
-  "behandlingID" : 4,
-  "soeknadDokument" : {
+  "data" : {
     "bosted" : {
       "intensjonOmRetur" : true,
       "antallMaanederINorge" : 8,
