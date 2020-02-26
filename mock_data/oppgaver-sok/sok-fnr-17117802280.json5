@@ -5,7 +5,8 @@
     oppgavetype: "Behandle sak (Manuell)",
     registrertDato: "2018-12-11T16:30:00.622Z",
     frist: "2018-01-28",
-    sakID: "1234"
+    sakID: "1234",
+    journalpostID: "1234"
   },
   {
     oppgaveID: "1010",
@@ -14,6 +15,7 @@
     registrertDato: "2019-12-11T16:30:00.622Z",
     frist: "2019-01-28",
     "sakID": null,
+    journalpostID: "1234"
   },
   {
     oppgaveID: "4567",
@@ -21,7 +23,8 @@
     oppgavetype: "Journalføring",
     registrertDato: "2020-12-11T16:30:00.622Z",
     frist: "2020-01-28",
-    sakID: "87655"
+    sakID: "87655",
+    journalpostID: "1234"
   },
   {
     oppgaveID: "89807",
@@ -29,7 +32,8 @@
     oppgavetype: "Vurder dokument",
     registrertDato: "2022-12-11T16:30:00.622Z",
     frist: "2025-01-28",
-    sakID: "4536"
+    sakID: "4536",
+    journalpostID: "1234"
   }
 ]
 
