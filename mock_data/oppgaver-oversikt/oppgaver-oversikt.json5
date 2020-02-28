@@ -67,6 +67,74 @@
       "ansvarligID": "Z991001"
     },
     {
+      "oppgaveID": "174562068",
+      "sammensattNavn": "GLITRENDE HATT",
+      "fnr": "28106600300",
+      "saksnummer": "4",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Trygdeavtale"
+      },
+      "behandling": {
+        "behandlingID": 15,
+        "behandlingstype": {
+          "kode": "SOEKNAD_ARBEID_FLERE_LAND",
+          "term": "Søknad arbeid i flere land"
+        },
+        "behandlingsstatus": {
+          "kode": "UBEH",
+          "term": "Under behandling"
+        },
+        "endretDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false,
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
+      },
+      "aktivTil": "2018-01-28",
+      "periode": {
+        "fom": "2018-10-01",
+        "tom": "2019-08-31"
+      },
+      "prioritet": "HOY",
+      "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
+      "oppgaveID": "174562068",
+      "sammensattNavn": "GLITRENDE HATT",
+      "fnr": "28106600300",
+      "saksnummer": "4",
+      "sakstype": {
+        "kode": "TRYGDEAVTALE",
+        "term": "Trygdeavtale"
+      },
+      "behandling": {
+        "behandlingID": 16,
+        "behandlingstype": {
+          "kode": "SOEKNAD_ARBEID_NORGE_BOSATT_ANNET_LAND",
+          "term": "Søknad arbeid i Norge - bosatt i et annet land"
+        },
+        "behandlingsstatus": {
+          "kode": "UBEH",
+          "term": "Under behandling"
+        },
+        "endretDato": "2018-08-10T15:00:00.622Z",
+        "erUnderOppdatering": false,
+        "registrertDato": "2018-12-11T16:30:00.622Z",
+        "svarFrist": "2019-12-11T16:30:00.622Z"
+      },
+      "aktivTil": "2018-01-28",
+      "periode": {
+        "fom": "2018-10-01",
+        "tom": "2019-08-31"
+      },
+      "prioritet": "HOY",
+      "land": ["NO"],
+      "versjon": 1,
+      "ansvarligID": "Z991001"
+    },
+    {
       "oppgaveID": "176701002",
       "sammensattNavn": "LILLA HEST",
       "fnr": "30098000492",
