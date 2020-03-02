@@ -8,10 +8,10 @@ For å verifisere endringene i schema må man benytte et annet prosjekt kalt mel
 melosys-web-mock benytter dette prosjektet som en avhengighet, som må erstattes av en symlink.
 Dette gjøres som følger: 
 ```
-cd ~/projects/melosys-schema    # go into the package directory
-npm link                        # creates global link
-cd ~/projects/melosys-web-mock  # go into some other package directory.
-npm link melosys-schema         # link-install the package
+cd ~/projects/melosys-schema        # go into the package directory
+npm link                            # creates global link
+cd ~/projects/melosys-web-mock      # go into some other package directory.
+npm link @navikt/melosys-schema     # link-install the package
 ```
 
 

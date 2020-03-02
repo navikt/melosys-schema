@@ -248,7 +248,7 @@
       "behandling": {
         "behandlingID": 14,
         "behandlingstype": {
-          "kode": "UTL_MYND_UTPEKT_NORGE",
+          "kode": "BESLUTNING_LOVVALG_NORGE",
           "term": "Norge er utpekt (A003)"
         },
         "behandlingsstatus": {
