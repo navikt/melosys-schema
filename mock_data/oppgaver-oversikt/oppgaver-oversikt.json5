@@ -249,7 +249,7 @@
         "behandlingID": 14,
         "behandlingstype": {
           "kode": "BESLUTNING_LOVVALG_NORGE",
-          "term": "Norge er utpekt (A003)"
+          "term": "Behandling av at utenlandske myndigheter har utpekt Norge som lovvalgsland (A003)"
         },
         "behandlingsstatus": {
           "kode": "UNDER_BEHANDLING",
