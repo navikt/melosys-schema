@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://http://melosys.nav.no/schemas/aktoer",
+  "$id": "http://melosys.nav.no/schemas/aktoer",
   "type": "array",
   "title": "The Root Schema",
   "items": {
