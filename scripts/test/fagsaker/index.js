@@ -3,6 +3,7 @@ const { fagsak } = require('./fagsak');
 const { henlegg } = require('./henlegg');
 const { henleggvideresend } = require('./henleggvideresend');
 const { kontaktopplysninger } = require('./kontaktopplysninger');
+const { notater } = require('./notater');
 const { opprett } = require('./opprett');
 const { sok } = require('./sok');
 const { utpek } = require('./utpek');
@@ -13,6 +14,7 @@ module.exports = {
   henlegg,
   henleggvideresend,
   kontaktopplysninger,
+  notater,
   opprett,
   sok,
   utpek,

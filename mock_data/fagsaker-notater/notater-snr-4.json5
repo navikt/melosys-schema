@@ -1,0 +1,56 @@
+[
+  {
+    "tekst": 'En',
+    "notatId": 1,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "LILLA HEST",
+    "sistEndretAvNavn": "LILLA HEST"
+  },
+  {
+    "tekst": 'To',
+    "notatId": 2,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "HATT GLITRENDE",
+    "sistEndretAvNavn": "HATT GLITRENDE"
+  },
+  {
+    "tekst": 'Tre',
+    "notatId": 3,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "DOVENT DOVENDYR",
+    "sistEndretAvNavn": "DOVENT DOVENDYR"
+  },
+  {
+    "tekst": 'Fire',
+    "notatId": 4,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "GIRAFF MAGER",
+    "sistEndretAvNavn": "GIRAFF MAGER"
+  },
+  {
+    "tekst": 'Fem',
+    "notatId": 5,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "BUKSE LURVETE",
+    "sistEndretAvNavn": "BUKSE LURVETE"
+  },
+  {
+    "tekst": 'Seks',
+    "notatId": 6,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:59.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "UTVIKLER OPTIMISTISK",
+    "sistEndretAvNavn": "UTVIKLER OPTIMISTISK"
+  },
+]

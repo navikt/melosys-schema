@@ -163,6 +163,13 @@ module.exports.testPostMockFiles = navn => {
   catalog.forEach((elem) => runTest(elem, validate, 'cyan'));
 };
 
+module.exports.testPutMockFiles = navn => {
+  const PUT_DIR = `${MOCK_DATA_DIR}/${navn}/put`;
+  const validate = schemaValidator(`${navn}-put-schema.json`);
+  const catalog = lesKatalogSync(PUT_DIR);
+  catalog.forEach((elem) => runTest(elem, validate, 'cyan'));
+};
+
 module.exports.testGetMockFiles = navn => {
   const GET_DIR = `${MOCK_DATA_DIR}/${navn}`;
   const validate = schemaValidator(`${navn}-schema.json`);

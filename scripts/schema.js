@@ -55,6 +55,7 @@ const katalogMap = new Map([
   ['fagsaker-henlegg', Fagsaker.henlegg],
   ['fagsaker-henleggvideresend', Fagsaker.henleggvideresend],
   ['fagsaker-kontaktopplysninger', Fagsaker.kontaktopplysninger],
+  ['fagsaker-notater', Fagsaker.notater],
   ['fagsaker-opprett', Fagsaker.opprett],
   ['fagsaker-sok', Fagsaker.sok],
   ['fagsaker-utpek', Fagsaker.utpek],
