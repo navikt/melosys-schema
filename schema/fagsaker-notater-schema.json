@@ -10,7 +10,8 @@
         "registrertDato",
         "endretDato",
         "registrertAvNavn",
-        "sistEndretAvNavn"
+        "sistEndretAvNavn",
+        "behandlingstypeKode"
       ],
       "properties": {
         "tekst": {
@@ -32,6 +33,9 @@
           "type": "string"
         },
         "sistEndretAvNavn": {
+          "type": "string"
+        },
+        "behandlingstypeKode": {
           "type": "string"
         }
       }

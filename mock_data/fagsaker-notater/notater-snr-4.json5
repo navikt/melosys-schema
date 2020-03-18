@@ -6,7 +6,8 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "LILLA HEST",
-    "sistEndretAvNavn": "LILLA HEST"
+    "sistEndretAvNavn": "LILLA HEST",
+    "behandlingstypeKode": "BESLUTNING_LOVVALG_NORGE"
   },
   {
     "tekst": 'To',
@@ -15,7 +16,8 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "HATT GLITRENDE",
-    "sistEndretAvNavn": "HATT GLITRENDE"
+    "sistEndretAvNavn": "HATT GLITRENDE",
+    "behandlingstypeKode": "SOEKNAD"
   },
   {
     "tekst": 'Tre',
@@ -24,7 +26,8 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "DOVENT DOVENDYR",
-    "sistEndretAvNavn": "DOVENT DOVENDYR"
+    "sistEndretAvNavn": "DOVENT DOVENDYR",
+    "behandlingstypeKode": "SOEKNAD"
   },
   {
     "tekst": 'Fire',
@@ -33,7 +36,8 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "GIRAFF MAGER",
-    "sistEndretAvNavn": "GIRAFF MAGER"
+    "sistEndretAvNavn": "GIRAFF MAGER",
+    "behandlingstypeKode": "SOEKNAD"
   },
   {
     "tekst": 'Fem',
@@ -42,7 +46,8 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "BUKSE LURVETE",
-    "sistEndretAvNavn": "BUKSE LURVETE"
+    "sistEndretAvNavn": "BUKSE LURVETE",
+    "behandlingstypeKode": "SOEKNAD"
   },
   {
     "tekst": 'Seks',
@@ -51,6 +56,7 @@
     "registrertDato": "2019-04-23T10:02:59.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "UTVIKLER OPTIMISTISK",
-    "sistEndretAvNavn": "UTVIKLER OPTIMISTISK"
+    "sistEndretAvNavn": "UTVIKLER OPTIMISTISK",
+    "behandlingstypeKode": "SOEKNAD"
   },
 ]
