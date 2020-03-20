@@ -10,7 +10,6 @@
         "registrertDato",
         "endretDato",
         "registrertAvNavn",
-        "sistEndretAvNavn",
         "behandlingstypeKode"
       ],
       "properties": {
@@ -30,9 +29,6 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
         },
         "registrertAvNavn": {
-          "type": "string"
-        },
-        "sistEndretAvNavn": {
           "type": "string"
         },
         "behandlingstypeKode": {

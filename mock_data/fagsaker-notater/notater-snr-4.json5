@@ -6,7 +6,6 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "LILLA HEST",
-    "sistEndretAvNavn": "LILLA HEST",
     "behandlingstypeKode": "BESLUTNING_LOVVALG_NORGE"
   },
   {
@@ -16,7 +15,6 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "HATT GLITRENDE",
-    "sistEndretAvNavn": "HATT GLITRENDE",
     "behandlingstypeKode": "SOEKNAD"
   },
   {
@@ -26,7 +24,6 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "DOVENT DOVENDYR",
-    "sistEndretAvNavn": "DOVENT DOVENDYR",
     "behandlingstypeKode": "SOEKNAD"
   },
   {
@@ -36,7 +33,6 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "GIRAFF MAGER",
-    "sistEndretAvNavn": "GIRAFF MAGER",
     "behandlingstypeKode": "SOEKNAD"
   },
   {
@@ -46,7 +42,6 @@
     "registrertDato": "2019-04-23T10:02:52.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "BUKSE LURVETE",
-    "sistEndretAvNavn": "BUKSE LURVETE",
     "behandlingstypeKode": "SOEKNAD"
   },
   {
@@ -56,7 +51,6 @@
     "registrertDato": "2019-04-23T10:02:59.031Z",
     "endretDato": "2019-04-23T09:58:23.899Z",
     "registrertAvNavn": "UTVIKLER OPTIMISTISK",
-    "sistEndretAvNavn": "UTVIKLER OPTIMISTISK",
     "behandlingstypeKode": "SOEKNAD"
   },
 ]
