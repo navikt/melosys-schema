@@ -1,0 +1,47 @@
+{
+  "definitions": {
+    "notat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tekst",
+        "notatId",
+        "redigerbar",
+        "registrertDato",
+        "endretDato",
+        "registrertAvNavn",
+        "behandlingstypeKode"
+      ],
+      "properties": {
+        "tekst": {
+          "type": ["string", "null"]
+        },
+        "notatId": {
+          "type": "integer"
+        },
+        "redigerbar": {
+          "type": "boolean"
+        },
+        "registrertDato": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "endretDato": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "registrertAvNavn": {
+          "type": "string"
+        },
+        "behandlingstypeKode": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/fagsaker-notater-schema.json",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "$ref": "#/definitions/notat"
+  }
+}

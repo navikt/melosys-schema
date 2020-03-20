@@ -1,0 +1,56 @@
+[
+  {
+    "tekst": 'En',
+    "notatId": 1,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "LILLA HEST",
+    "behandlingstypeKode": "BESLUTNING_LOVVALG_NORGE"
+  },
+  {
+    "tekst": 'To',
+    "notatId": 2,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "HATT GLITRENDE",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'Tre',
+    "notatId": 3,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "DOVENT DOVENDYR",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'Fire',
+    "notatId": 4,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "GIRAFF MAGER",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'Fem',
+    "notatId": 5,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "BUKSE LURVETE",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'Seks',
+    "notatId": 6,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:59.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "UTVIKLER OPTIMISTISK",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+]
