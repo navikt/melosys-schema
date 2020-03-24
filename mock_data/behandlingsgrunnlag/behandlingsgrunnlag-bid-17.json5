@@ -1,0 +1,179 @@
+{
+  "data": {
+    "personOpplysninger": {
+      "utenlandskIdent": [
+        {
+          "ident": "123456789",
+          "landkode": "DK"
+        }
+      ],
+      "medfolgendeFamilie": ["30098000492"],
+      "medfolgendeAndre": "28106600300"
+    },
+    "arbeidUtland": [{
+      "adresse": {
+        "gatenavn": "Adresseveien 123",
+        "husnummer": "123",
+        "region": "Brandenburger",
+        "postnummer": "1234",
+        "poststed": "Poststedet",
+        "landkode": "DE"
+      },
+      "foretakNavn": "EQUINOR",
+      "foretakOrgnr": "372384726",
+      "arbeidUtlandHjemmekontor": false
+    }],
+    "foretakUtland": [
+      {
+        "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
+        "navn": "EQUINOR DEUTSCHLAND",
+        "orgnr": "372384726",
+        "selvstendigNaeringsvirksomhet": true,
+        "adresse": {
+          "gatenavn": "Deutschlandstrasse",
+          "husnummer": "123",
+          "region": "Brandenburger",
+          "postnummer": "3388",
+          "poststed": "Berlin",
+          "landkode": "DE"
+        }
+      }
+    ],
+    "oppholdUtland": {
+      "oppholdslandkoder": ["DK"],
+      "oppholdsPeriode": {
+        "fom": "2018-01-01",
+        "tom": "2018-06-01"
+      },
+      "ektefelleEllerBarnINorge": true,
+      "studentFinansieringKode": "LAANEKASSEN",
+      "studentSemester": "2018/2019"
+    },
+    "bosted": {
+      "intensjonOmRetur": true,
+      "antallMaanederINorge": 8,
+      "oppgittAdresse": {
+        "gatenavn": "Gateadressen",
+        "husnummer": "14B",
+        "region": "St.Hanshaugen Distrikt",
+        "postnummer": "12345",
+        "poststed": "Poststeder",
+        "landkode": "DE"
+      }
+    },
+    "arbeidNorge": {
+      "arbeidsforholdOpprettholdIHelePerioden": true,
+      "arbeidsforholdVikarNavn": "Vikarbyrået AS",
+      "vikarOrgnr": "22334455",
+      "flyendePersonellHjemmebase": "Flybasen Int. Airport, ....",
+      "kontaktNavn": "Ola Nordmann",
+      "kontaktEpost": "ola.nordmann@fullmektigfirma.no",
+      "fullmektigFirma": "Advokatfullmektig AS",
+      "fullmektigGateadresse": "Adresseveien 123",
+      "fullmektigPostnr": "1234",
+      "fullmektigPoststed": "Byensvik",
+      "fullmektigRegion": "Østlandsregionen",
+      "fullmektigLandkode": "NO"
+    },
+    "selvstendigArbeid": {
+      "erSelvstendig": true,
+      "selvstendigForetak": [
+        { "orgnr": "910253158", "fortsetterEtterArbeidIUtlandet": true }
+      ]
+    },
+    "juridiskArbeidsgiverNorge": {
+      "utsendteNeste12Mnd": 10,
+      "antallAdmAnsatte": 35,
+      "antallAnsatte": 350,
+      "andelOmsetningINorge": 78.5,
+      "andelOppdragINorge": 50.5,
+      "andelKontrakterINorge": 30.5,
+      "arbeidstakereRekruttertILand": "SE",
+      "oppdragsKontrakterIHovedsakInngaattILand": "NO",
+      "ekstraArbeidsgivere": []
+    },
+    "maritimtArbeid": [
+      {
+        "enhetNavn": "Dunfjæder",
+        "fartsomradeKode": "INNENRIKS",
+        "flaggLandkode": "GB",
+        "installasjonsLandkode": "GB",
+        "territorialfarvann": "GB",
+        "foretakNavn": "SWECO NORGE AS",
+        "foretakOrgnr": "967032271"
+      }
+    ],
+    "soeknadsland": {
+      "landkoder": ["DK"]
+    },
+    "periode": {
+      "fom": "2018-01-02",
+      "tom": "2019-01-02"
+    },
+    "overgangsregelbestemmelser": [],
+    "norskeArbeidsgivere": [],
+    "ytterligereInformasjon": null
+  },
+  "tilleggsData": {
+    "organisasjoner": [
+      {
+        "orgnr" : "910099035",
+        "oppstartdato" : null,
+        "postadresse" : {
+          "postnr" : "3936",
+          "gateadresse" : {
+            "gatenummer" : null,
+            "husbokstav" : null,
+            "husnummer" : null,
+            "gatenavn" : "Olav Kyrres gate 9"
+          },
+          "poststed" : "PORSGRUNN",
+          "land" : "NORGE"
+        },
+        "organisasjonsform" : null,
+        "navn" : "SKARSVÅG OG VANSE",
+        "forretningsadresse" : {
+          "postnr" : "3936",
+          "gateadresse" : {
+            "gatenummer" : null,
+            "husbokstav" : null,
+            "husnummer" : null,
+            "gatenavn" : "Olav Kyrres gate 9"
+          },
+          "poststed" : "PORSGRUNN",
+          "land" : "NORGE"
+        }
+      },
+      {
+        "orgnr": "910253158",
+        "navn": "MULTICONSULT ASA",
+        "oppstartdato" : null,
+        "forretningsadresse": {
+          "gateadresse": {
+            "gatenummer" : null,
+            "husbokstav" : null,
+            "husnummer" : null,
+            "gatenavn": "Nedre Skøyen vei 2"
+          },
+          "postnr": "0276",
+          "poststed": "OSLO",
+          "land": "NORGE"
+        },
+        "organisasjonsform" : null,
+        "postadresse": {
+          "gateadresse": {
+            "gatenummer" : null,
+            "husbokstav" : null,
+            "husnummer" : null,
+            "gatenavn": "Postboks 265  Skøyen"
+          },
+          "postnr": "0213",
+          "poststed": "OSLO",
+          "land": "NORGE"
+        }
+      }
+    ]
+  },
+  "type": "SED"
+}
+
