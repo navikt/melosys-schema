@@ -9,5 +9,8 @@ const testAll = navn => {
 const unntaksperioder = {
   testAll
 };
-module.exports.unntaksperioder = unntaksperioder;
 
+module.exports.unntaksperioder = {
+  godkjenn: unntaksperioder,
+  ikkegodkjenn: unntaksperioder,
+};
