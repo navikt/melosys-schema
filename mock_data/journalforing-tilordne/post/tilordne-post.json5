@@ -3,7 +3,7 @@
   "saksnummer": "MELTEST-1",
   "avsenderID": "30098000492",
   "avsenderNavn": "PEN FUL",
-  "behandlingstypeKode": "KLAGE",
+  "behandlingstypeKode": "ENDRET_PERIODE",
   "brukerID": "30098000492",
   "ingenVurdering": false,
   "journalpostID": "DOK_321",

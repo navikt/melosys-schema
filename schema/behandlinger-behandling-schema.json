@@ -1358,6 +1358,11 @@
         "sisteOpplysningerHentetDato"
       ],
       "properties": {
+        "behandlingstema": {
+          "title": "The BehandlingsStatus Schema",
+          "$id": "#/properties/oppsummering/properties/behandlingsstatus",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
         "behandlingsstatus": {
           "title": "The BehandlingsStatus Schema",
           "$id": "#/properties/oppsummering/properties/behandlingsstatus",

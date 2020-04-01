@@ -350,13 +350,17 @@
     "sed": null
   },
   "oppsummering": {
-    "behandlingsstatus": {
-      "kode": "AVVENT_DOK_UTL",
-      "term": "Avventer svar fra utenlandsk trygdemyndighet"
+    "behandlingstema": {
+      "kode": "UTSENDT_ARBEIDSTAKER",
+      "term": "Utsendt arbeidstaker"
     },
     "behandlingstype": {
       "kode": "SOEKNAD",
       "term": "Søknad"
+    },
+    "behandlingsstatus": {
+      "kode": "AVVENT_DOK_UTL",
+      "term": "Avventer svar fra utenlandsk trygdemyndighet"
     },
     "endretDato": "2019-04-23T10:02:52.031Z",
     "registrertDato": "2019-04-23T09:58:23.899Z",

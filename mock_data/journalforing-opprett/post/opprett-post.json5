@@ -2,7 +2,7 @@
   "avsenderType": "PERSON",
   "arbeidsgiverID": null,
   "representantID": "",
-  "behandlingstypeKode": "SOEKNAD",
+  "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
   "representantKontaktPerson": null,
   "representererKode": "BRUKER",
   "avsenderID": "30098000492",

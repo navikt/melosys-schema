@@ -8,7 +8,7 @@
     "avsenderType",
     "journalpostID",
     "oppgaveID",
-    "behandlingstypeKode",
+    "behandlingstemaKode",
     "brukerID",
     "avsenderID",
     "avsenderNavn",
@@ -37,13 +37,10 @@
       "$id": "#/properties/oppgaveID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
     },
-
-    "behandlingstypeKode": {
-      "title": "The Behandlingsype Schema",
-      "$id": "#/properties/behandlingstypeKode",
-      "type": "string",
-      "default": "",
-      "pattern": "^(.*)$"
+    "behandlingstemaKode": {
+      "title": "The Behandlingstema Schema",
+      "$id": "#/properties/behandlingstemaKode",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
     },
     "brukerID": {
       "$id": "#/properties/brukerID",

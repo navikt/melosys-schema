@@ -37,6 +37,14 @@
     }
   },
   "oppsummering": {
+    "behandlingstema": {
+      "kode": "IKKE_YRKESAKTIV",
+      "term": "Ikke yrkesaktiv"
+    },
+    "behandlingstype": {
+      "kode": "SOEKNAD",
+      "term": "Søknad"
+    },
     "behandlingsstatus": {
       "kode": "UNDER_BEHANDLING",
       "term": "Under behandling"
@@ -44,9 +52,5 @@
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
-    "behandlingstype": {
-      "kode": "SOEKNAD_IKKE_YRKESAKTIV",
-      "term": "Søknad ikke yrkesaktiv"
-    }
   }
 }

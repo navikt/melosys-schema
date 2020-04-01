@@ -773,6 +773,10 @@
     "sed": null
   },
   "oppsummering": {
+    "behandlingstema": {
+      "kode": "UTSENDT_ARBEIDSTAKER",
+      "term": "Utsendt arbeidstaker"
+    },
     "behandlingstype": {
       "kode": "SOEKNAD",
       "term": "Søknad"

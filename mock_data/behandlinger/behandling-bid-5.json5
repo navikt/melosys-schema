@@ -710,8 +710,12 @@
     "sed": null
   },
   "oppsummering": {
-    "behandlingstype": {
+    "behandlingstema": {
       "kode": "ENDRET_PERIODE",
+      "term": "Behandle forkortet periode"
+    },
+    "behandlingstype": {
+      "kode": "SOEKNAD",
       "term": "Søknad"
     },
     "behandlingsstatus": {

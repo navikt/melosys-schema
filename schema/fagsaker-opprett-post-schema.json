@@ -6,8 +6,7 @@
   "additionalProperties": false,
   "required": [
     "brukerID",
-    "sakstype",
-    "behandlingstype",
+    "behandlingstema",
     "soknadDto",
     "skalTilordnes",
     "oppgaveID"
@@ -16,10 +15,7 @@
     "brukerID": {
       "type": "string"
     },
-    "sakstype": {
-      "type": "string"
-    },
-    "behandlingstype": {
+    "behandlingstema": {
       "type": "string"
     },
     "soknadDto": {
