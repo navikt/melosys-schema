@@ -19,6 +19,10 @@
           "kode": "SOEKNAD",
           "term": "Søknad"
         },
+        "behandlingstema": {
+          "kode": "UTSENDT_ARBEIDSTAKER",
+          "term": "Utsendt arbeidstaker"
+        },
         "behandlingsstatus": {
           "kode": "OPPRETTET",
           "term": "Opprettet"
@@ -36,6 +40,10 @@
         "behandlingsstatus": {
           "kode": "AVSLUTTET",
           "term": "Behandlingen er avsluttet"
+        },
+        "behandlingstema": {
+          "kode": "UTSENDT_ARBEIDSTAKER",
+          "term": "Utsendt arbeidstaker"
         },
         "behandlingstype": {
           "kode": "SOEKNAD",

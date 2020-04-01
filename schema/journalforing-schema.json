@@ -67,7 +67,7 @@
       "additionalProperties": false,
       "title": "The behandlingsInformasjon Schema",
       "required": [
-        "behandlingstype"
+        "behandlingstema"
       ],
       "properties": {
         "behandlingstema": {

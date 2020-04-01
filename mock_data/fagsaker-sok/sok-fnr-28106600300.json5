@@ -15,6 +15,10 @@
       {
         "behandlingID": 6,
         "opprettetDato": "2017-10-01T12:31:36.123Z",
+        "behandlingstema": {
+          "kode": "UTSENDT_SELVSTENDIG",
+          "term": "Utsendt selvstendig næringsdrivende"
+        },
         "behandlingstype": {
           "kode": "SOEKNAD",
           "term": "Søknad"

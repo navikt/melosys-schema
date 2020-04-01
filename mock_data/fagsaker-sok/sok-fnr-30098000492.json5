@@ -1,23 +1,27 @@
 [
   {
     "saksnummer": "3",
-    "sammensattNavn" : "LILLA HEST",
+    "sammensattNavn": "LILLA HEST",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
       "kode": "EU_EOS",
       "term": "EU/EØS"
     },
-    "saksstatus" : {
-      "kode" : "OPPRETTET",
-      "term" : "Saken er opprettet"
+    "saksstatus": {
+      "kode": "OPPRETTET",
+      "term": "Saken er opprettet"
     },
     "behandlingOversikter": [
       {
         "behandlingID": 3,
         "opprettetDato": "2017-10-01T12:31:36.123Z",
+        "behandlingstema": {
+          "kode": "UTSENDT_ARBEIDSTAKER",
+          "term": "Utsendt arbeidstaker"
+        },
         "behandlingstype": {
           "kode": "SOEKNAD",
-          "term": "Søknad"
+          "term": "Søknad",
         },
         "behandlingsstatus": {
           "kode": "OPPRETTET",
@@ -34,19 +38,40 @@
     ]
   },
   {
-    "saksnummer":"6",
-    "sammensattNavn":"Joe Moe",
-    "opprettetDato":"2017-11-01T12:31:36.123Z",
-    "sakstype":{"kode":"EU_EOS","term":"EU/EØS"},
-    "saksstatus":{"kode":"LOVVALG_AVKLART","term":"Lovvalget er avklart"},
-    "behandlingOversikter":[
+    "saksnummer": "6",
+    "sammensattNavn": "Joe Moe",
+    "opprettetDato": "2017-11-01T12:31:36.123Z",
+    "sakstype": {
+      "kode": "EU_EOS",
+      "term": "EU/EØS"
+    },
+    "saksstatus": {
+      "kode": "LOVVALG_AVKLART",
+      "term": "Lovvalget er avklart"
+    },
+    "behandlingOversikter": [
       {
-        "behandlingID":6,
-        "opprettetDato":"2017-10-01T12:31:36.123Z",
-        "behandlingstype":{"kode":"SOEKNAD","term":"Søknad"},
-        "behandlingsstatus":{"kode":"AVSLUTTET","term":"Avsluttet"},
-        "periode":{"fom":"2018-08-01","tom":"2018-12-31"},
-        "land":["GB"]
+        "behandlingID": 6,
+        "opprettetDato": "2017-10-01T12:31:36.123Z",
+        "behandlingstema": {
+          "kode": "UTSENDT_ARBEIDSTAKER",
+          "term": "Utsendt arbeidstaker"
+        },
+        "behandlingstype": {
+          "kode": "SOEKNAD",
+          "term": "Søknad"
+        },
+        "behandlingsstatus": {
+          "kode": "AVSLUTTET",
+          "term": "Avsluttet"
+        },
+        "periode": {
+          "fom": "2018-08-01",
+          "tom": "2018-12-31"
+        },
+        "land": [
+          "GB"
+        ]
       }
     ]
   }

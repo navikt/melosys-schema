@@ -12,6 +12,7 @@
       "required": [
         "behandlingID",
         "behandlingstype",
+        "behandlingstema",
         "behandlingsstatus",
         "endretDato",
         "erUnderOppdatering",
@@ -26,6 +27,12 @@
         "behandlingstype": {
           "$id": "#/definitions/behandling/properties/behandlingstype",
           "title": "The behandlingstype Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        },
+        "behandlingstema": {
+          "$id": "#/definitions/behandling/properties/behandlingstema",
+          "title": "The behandlingstema Schema",
           "description": "An explanation about the purpose of this instance.",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         },
