@@ -1047,19 +1047,6 @@
         }
       }
     },
-    "overgangsregelbestemmelser": {
-      "type": "array",
-      "title": "The Overgangsregelbestemmelser Schema",
-      "default": [],
-      "items": {
-        "type": "string",
-        "title": "The Items Schema",
-        "default": "",
-        "examples": [
-          "FO_1408_1971_ART14_2_A"
-        ]
-      }
-    },
     "soeknadData": {
       "type": "object",
       "additionalProperties": false,
@@ -1225,7 +1212,10 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
         },
         "overgangsregelbestemmelser": {
-          "$ref": "#/definitions/overgangsregelbestemmelser"
+          "type": "array",
+          "items": {
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          }
         },
         "norskeArbeidsgivere": {
           "$ref": "#/definitions/organisasjoner"
