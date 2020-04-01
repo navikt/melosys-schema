@@ -1,0 +1,146 @@
+{
+  "data": {
+    "overgangsregelbestemmelser": [
+      {
+        "kode": "FO_1408_1971_ART14_2_A",
+        "term": "Rfo. 1408/1971 artikkel 14 nr. 2 bokstav a"
+      },
+      {
+        "kode": "FO_1408_1971_ART14_2_B",
+        "term": "Rfo. 1408/1971 artikkel 14 nr. 2 bokstav b"
+      }
+    ],
+    "norskeArbeidsgivere": [],
+    "ytterligereInformasjon": "fritekst",
+    "soeknadsland": {
+      "landkoder": []
+    },
+    "periode": {
+      "fom": "2019-01-01",
+      "tom": "2020-02-02"
+    },
+    "personOpplysninger": {
+      "utenlandskIdent": [
+        {
+          "ident": "15123421345",
+          "landkode": "BG"
+        }
+      ],
+      "medfolgendeFamilie": [],
+      "medfolgendeAndre": null
+    },
+    "arbeidUtland": [
+      {
+        "foretakNavn": "EQUINOR",
+        "foretakOrgnr": "372384726",
+        "arbeidUtlandHjemmekontor": false,
+        "adresse": {
+          "gatenavn": "Adresseveien 123",
+          "husnummer": "123",
+          "region": "Brandenburger",
+          "postnummer": "1234",
+          "poststed": "Poststedet",
+          "landkode": "DE"
+        }
+      },
+      {
+        "foretakNavn": "Testarbeidsstednavn",
+        "foretakOrgnr": "123321121",
+        "arbeidUtlandHjemmekontor": false,
+        "adresse": {
+          "landkode": "EE",
+          "gatenavn": "Testarbeidsstedgate Testarbeidsstedbygning",
+          "husnummer": null,
+          "region": "Testarbeidsstedregion",
+          "postnummer": "Testarbeidsstedpostkode",
+          "poststed": "Testarbeidsstedby"
+        }
+      },
+      {
+        "foretakNavn": "Testarbeidsstednavn2",
+        "foretakOrgnr": "123345978",
+        "arbeidUtlandHjemmekontor": null,
+        "adresse": {
+          "landkode": "CY",
+          "gatenavn": "Testarbeidsstedgate2 Testarbeidsstedbygning2",
+          "husnummer": null,
+          "region": null,
+          "postnummer": "3212",
+          "poststed": "Testarbeidsstedby2"
+        }
+      }
+    ],
+    "foretakUtland": [
+      {
+        "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
+        "navn": "EQUINOR DEUTSCHLAND",
+        "orgnr": "372384726",
+        "selvstendigNaeringsvirksomhet": true,
+        "adresse": {
+          "gatenavn": "Deutschlandstrasse",
+          "husnummer": "123",
+          "region": "Brandenburger",
+          "postnummer": "3388",
+          "poststed": "Berlin",
+          "landkode": "DE"
+        }
+      }
+    ],
+    "oppholdUtland": {
+      "oppholdslandkoder": ["DK"],
+      "oppholdsPeriode": {
+        "fom": "2018-01-01",
+        "tom": "2018-06-01"
+      },
+      "ektefelleEllerBarnINorge": true,
+      "studentFinansieringKode": "LAANEKASSEN",
+      "studentSemester": "2018/2019"
+    },
+    "arbeidNorge": {
+      "arbeidsforholdOpprettholdIHelePerioden": true,
+      "arbeidsforholdVikarNavn": "Vikarbyrået AS",
+      "vikarOrgnr": "22334455",
+      "flyendePersonellHjemmebase": "Flybasen Int. Airport, ....",
+      "kontaktNavn": "Ola Nordmann",
+      "kontaktEpost": "ola.nordmann@fullmektigfirma.no",
+      "fullmektigFirma": "Advokatfullmektig AS",
+      "fullmektigGateadresse": "Adresseveien 123",
+      "fullmektigPostnr": "1234",
+      "fullmektigPoststed": "Byensvik",
+      "fullmektigRegion": "Østlandsregionen",
+      "fullmektigLandkode": "NO"
+    },
+    "selvstendigArbeid": {
+      "erSelvstendig": null,
+      "selvstendigForetak": []
+    },
+    "juridiskArbeidsgiverNorge": {
+      "utsendteNeste12Mnd": 10,
+      "antallAdmAnsatte": 35,
+      "antallAnsatte": 350,
+      "andelOmsetningINorge": 78.5,
+      "andelOppdragINorge": 50.5,
+      "andelKontrakterINorge": 30.5,
+      "arbeidstakereRekruttertILand": "SE",
+      "oppdragsKontrakterIHovedsakInngaattILand": "NO",
+      "ekstraArbeidsgivere": []
+    },
+    "maritimtArbeid": [],
+    "bosted": {
+      "intensjonOmRetur": null,
+      "antallMaanederINorge": 0,
+      "oppgittAdresse": {
+        "landkode": "BE",
+        "gatenavn": "Testgate Testbyggnavn",
+        "husnummer": null,
+        "region": null,
+        "postnummer": "2121",
+        "poststed": "asd"
+      }
+    }
+  },
+  "type": "SED",
+  "tilleggsData": {
+    "organisasjoner": [],
+  }
+}
