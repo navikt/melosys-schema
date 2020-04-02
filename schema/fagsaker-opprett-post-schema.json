@@ -6,6 +6,7 @@
   "additionalProperties": false,
   "required": [
     "brukerID",
+    "sakstype",
     "behandlingstema",
     "soknadDto",
     "skalTilordnes",
@@ -13,6 +14,9 @@
   ],
   "properties": {
     "brukerID": {
+      "type": "string"
+    },
+    "sakstype": {
       "type": "string"
     },
     "behandlingstema": {
