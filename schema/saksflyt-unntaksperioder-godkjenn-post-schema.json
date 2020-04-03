@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/saksflyt-unntaksperiode-godkjenn-post-schema.json",
+  "type": "object",
+  "title": "The Unntaksperioder godkjenn Schema",
+  "additionalProperties": false,
+  "required": [
+    "varsleUtland"
+  ],
+  "properties": {
+    "varsleUtland": {
+      "type": "boolean"
+    }
+  }
+}
