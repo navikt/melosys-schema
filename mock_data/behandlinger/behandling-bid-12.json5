@@ -800,13 +800,13 @@
   },
   "oppsummering": {
     "behandlingstema": {
+      "kode": "UTSENDT_ARBEIDSTAKER",
+      "term": "Utsendt arbeidstaker"
+    },
+    "behandlingstype": {
       "kode": "NY_VURDERING",
       "term": "Behandle ny vurdering"
     },
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    }
     "behandlingsstatus": {
       "kode": "OPPRETTET",
       "term": "Opprettet"
