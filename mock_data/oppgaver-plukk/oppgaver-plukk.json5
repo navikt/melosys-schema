@@ -1,5 +1,6 @@
 {
   "oppgaveID": "123456789",
+  "behandlingstema": "UTSENDT_ARBEIDSTAKER",
   "behandlingstype": "SOEKNAD",
   "saksnummer": "4",
   "journalpostID": "DOK_123",

@@ -17,6 +17,7 @@
           "behandlingID",
           "behandlingsstatus",
           "behandlingstype",
+          "behandlingstema",
           "opprettetDato",
           "periode",
           "land"
@@ -29,6 +30,11 @@
           "behandlingstype": {
             "$id": "#/definitions/behandlingOversikter/items/properties/behandlingstype",
             "title": "The Behandlingstype Schema",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          },
+          "behandlingstema": {
+            "$id": "#/definitions/behandlingOversikter/items/properties/behandlingstema",
+            "title": "The Behandlingstema Schema",
             "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
           },
           "behandlingsstatus": {

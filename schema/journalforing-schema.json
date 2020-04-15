@@ -67,16 +67,11 @@
       "additionalProperties": false,
       "title": "The behandlingsInformasjon Schema",
       "required": [
-        "sakstype",
-        "behandlingstype"
+        "behandlingstema"
       ],
       "properties": {
-        "sakstype": {
-          "$id": "#/properties/behandlingsInformasjon/properties/sakstype",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-        },
-        "behandlingstype": {
-          "$id": "#/properties/behandlingsInformasjon/properties/behandlingstype",
+        "behandlingstema": {
+          "$id": "#/properties/behandlingsInformasjon/properties/behandlingstema",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         }
       }

@@ -7,7 +7,7 @@
   "required": [
     "brukerID",
     "sakstype",
-    "behandlingstype",
+    "behandlingstema",
     "soknadDto",
     "skalTilordnes",
     "oppgaveID"
@@ -19,7 +19,7 @@
     "sakstype": {
       "type": "string"
     },
-    "behandlingstype": {
+    "behandlingstema": {
       "type": "string"
     },
     "soknadDto": {

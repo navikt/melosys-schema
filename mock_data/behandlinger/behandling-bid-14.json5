@@ -799,6 +799,14 @@
     "sed": null
   },
   "oppsummering": {
+    "behandlingstema": {
+      "kode": "BESLUTNING_LOVVALG_NORGE",
+      "term": "Behandling av at utenlandske myndigheter har utpekt Norge som lovvalgsland (A003)"
+    },
+    "behandlingstype": {
+      "kode": "SED",
+      "term": "SED"
+    },
     "behandlingsstatus": {
       "kode": "UNDER_BEHANDLING",
       "term": "Behandlingen pågår"
@@ -806,9 +814,5 @@
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
-    "behandlingstype": {
-      "kode": "BESLUTNING_LOVVALG_NORGE",
-      "term": "Behandling av at utenlandske myndigheter har utpekt Norge som lovvalgsland (A003)"
-    }
   }
 }

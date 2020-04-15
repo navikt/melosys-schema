@@ -37,16 +37,20 @@
     }
   },
   "oppsummering": {
+    "behandlingstema": {
+      "kode": "SED",
+      "term": "SED"
+    },
+    "behandlingstype": {
+      "kode": "VURDER_TRYGDETID",
+      "term": "Behandling av forespørsel om trygdetid"
+    },
     "behandlingsstatus": {
       "kode": "VURDER_DOKUMENT",
       "term": "Opprettet"
     },
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-    "endretDato": "2018-08-27T07:16:03.273Z",
-    "behandlingstype": {
-      "kode": "VURDER_TRYGDETID",
-      "term": "Behandling av forespørsel om trygdetid"
-    }
+    "endretDato": "2018-08-27T07:16:03.273Z"
   }
 }
