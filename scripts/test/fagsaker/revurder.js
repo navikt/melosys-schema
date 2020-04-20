@@ -1,5 +1,5 @@
 /* eslint-disable node/no-unpublished-require */
-const Schema = require('../../../utils/schema-util');
+const Schema = require('../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
@@ -9,5 +9,5 @@ const testAll = navn => {
 const revurder = {
   testAll
 };
-module.exports.revurder = revurder;
 
+module.exports.revurder = revurder;
