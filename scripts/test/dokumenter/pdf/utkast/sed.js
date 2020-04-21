@@ -3,7 +3,7 @@ const Schema = require('../../../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
-  console.log('\tPDF files is not validated');
+  Schema.testPostMockFiles(navn);
 };
 
 const sed = {
