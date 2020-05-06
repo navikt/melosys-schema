@@ -19,10 +19,10 @@
       "type": ["string", "null"]
     },
     "begrunnelseUtenlandskMyndighet": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "vilSendeAnmodningOmMerInformasjon": {
-      "type": "boolean"
+      "type": ["string", "null"]
     }
   }
 }
