@@ -22,7 +22,7 @@
       "type": ["string", "null"]
     },
     "vilSendeAnmodningOmMerInformasjon": {
-      "type": ["string", "null"]
+      "type": ["boolean", "null"]
     }
   }
 }
