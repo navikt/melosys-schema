@@ -5,7 +5,8 @@
   "title": "The Fagsaker utpek post schema",
   "additionalProperties": false,
   "required": [
-    "mottakerinstitusjoner"
+    "mottakerinstitusjoner",
+    "fritekstSed"
   ],
   "properties": {
     "mottakerinstitusjoner": {
@@ -13,6 +14,10 @@
       "items": {
         "type": "string"
       }
+    },
+    "fritekstSed": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
     }
   }
 }

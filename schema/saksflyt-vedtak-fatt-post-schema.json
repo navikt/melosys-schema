@@ -8,6 +8,7 @@
   "required": [
     "behandlingsresultatTypeKode",
     "fritekst",
+    "fritekstSed",
     "mottakerinstitusjoner",
     "revurderBegrunnelse",
     "vedtakstype"
@@ -17,6 +18,10 @@
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     },
     "fritekst": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
+    },
+    "fritekstSed": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
     },

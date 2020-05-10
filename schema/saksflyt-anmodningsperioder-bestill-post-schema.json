@@ -6,10 +6,15 @@
   "title": "The Saksflyt-anmodningsperioder-post Schema",
   "additionalProperties": false,
   "required": [
-    "mottakerinstitusjon"
+    "mottakerinstitusjon",
+    "fritekstSed"
   ],
   "properties": {
     "mottakerinstitusjon": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
+    },
+    "fritekstSed": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
     }
