@@ -92,6 +92,27 @@
       "oppdragsKontrakterIHovedsakInngaattILand": "NO",
       "ekstraArbeidsgivere": []
     },
+    "arbeidsinntekt": {
+      "inntektNorskIPerioden": 5500,
+      "inntektUtenlandskIPerioden": 2000,
+      "inntektNaeringIPerioden": 1000,
+      "inntektNaturalytelser": {
+        "friBolig": true,
+        "friBil": true,
+        "friAnnet": "Ubegrenset mengde kaffegrut fra bedriftens kaffemaskinen"
+      },
+      "inntektErInnrapporteringspliktig": true,
+      "inntektTrygdeavgiftBlirTrukket": true
+    },
+    "arbeidsgiversBekreftelse": {
+      "arbeidsgiverBekrefterUtsendelse": true,
+      "arbeidstakerAnsattUnderUtsendelsen": true,
+      "erstatterArbeidstakerenUtsendte": false,
+      "arbeidstakerTidligereUtsendt24Mnd": false,
+      "arbeidsgiverBetalerArbeidsgiveravgift": true,
+      "trygdeavgiftTrukketGjennomSkatt": true,
+      "trygdeavgiftTrukketGjennomSkattDato": "2018-01-01"
+    },
     "maritimtArbeid": [
       {
         "enhetNavn": "Dunfjæder",
@@ -109,10 +130,7 @@
     "periode": {
       "fom": "2018-01-02",
       "tom": "2019-01-02"
-    },
-    "overgangsregelbestemmelser": [],
-    "norskeArbeidsgivere": [],
-    "ytterligereInformasjon": null
+    }
   },
   "tilleggsData": {
     "organisasjoner": [
@@ -172,8 +190,7 @@
           "land": "NORGE"
         }
       }
-    ]
+    ],
   },
-  "type": "SED"
+  "type": "SØKNAD",
 }
-
