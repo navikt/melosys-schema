@@ -11,6 +11,7 @@
     "behandlingsresultatTypeKode",
     "kontrollresultatBegrunnelseKoder",
     "utfallRegistreringUnntak",
+    "utfallUtpeking",
     "vedtakstype"
   ],
   "properties": {
@@ -52,7 +53,18 @@
       "type": ["string", "null"],
       "title": "The utfallRegistreringUnntak Schema",
       "examples": [
-        "GODKJENT"
+        "GODKJENT",
+        "IKKE_GODKJENT"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "utfallUtpeking": {
+      "$id": "#/properties/utfallUtpeking",
+      "type": ["string", "null"],
+      "title": "The utfallUtpeking Schema",
+      "examples": [
+        "GODKJENT",
+        "IKKE_GODKJENT"
       ],
       "pattern": "^(.*)$"
     },
