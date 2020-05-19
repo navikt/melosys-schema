@@ -4,5 +4,6 @@
   "behandlingsresultatTypeKode": "IKKE_FASTSATT",
   "kontrollresultatBegrunnelseKoder": [],
   "utfallRegistreringUnntak": null,
+  "utfallUtpeking": null,
   "vedtakstype": "FØRSTEGANGSVEDTAK"
 }
