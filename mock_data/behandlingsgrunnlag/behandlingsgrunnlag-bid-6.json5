@@ -92,6 +92,7 @@
       "trygdeavgiftTrukketGjennomSkattDato": null
     },
     "maritimtArbeid": [],
+    "luftfartBase": [],
     "soeknadsland": {
       "landkoder": ["SE"]
     },

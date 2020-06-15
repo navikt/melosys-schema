@@ -92,6 +92,7 @@
       "trygdeavgiftTrukketGjennomSkattDato": "2018-06-01"
     },
     "maritimtArbeid": [],
+    "luftfartBase": [],
     "soeknadsland": {
       "landkoder": ["FR"]
     },

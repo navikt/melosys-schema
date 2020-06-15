@@ -85,6 +85,13 @@
         "foretakOrgnr": "967032271"
       }
     ],
+    "luftfartBase": [
+      {
+        "hjemmebaseNavn": "Dunfjæder",
+        "hjemmebaseLand": "GB",
+        "typeFlyvninger": "NASJONAL"
+      }
+    ],
     "arbeidUtland" : [
       {
         "foretakNavn" : "BMW AG",

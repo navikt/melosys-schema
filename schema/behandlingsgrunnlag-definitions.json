@@ -495,6 +495,50 @@
         }
       }
     },
+    "luftfartBase": {
+      "type": "array",
+      "title": "The LuftfartBase Schema",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "title": "The LuftfartBase Schema",
+        "additionalProperties": false,
+        "required": [
+          "hjemmebaseNavn",
+          "hjemmebaseLand",
+          "typeFlyvninger"
+        ],
+        "properties": {
+          "hjemmebaseNavn": {
+            "type": "string",
+            "title": "The HjemmebaseNavn Schema",
+            "default": "",
+            "examples": [
+              "Hjemmebasens navn"
+            ],
+            "pattern": "^(.+)$"
+          },
+          "hjemmebaseLand": {
+            "type": "string",
+            "title": "The HjemmebaseLand Schema",
+            "default": "",
+            "examples": [
+              "Hjemmebasens land"
+            ],
+            "pattern": "^(.+)$"
+          },
+          "typeFlyvninger": {
+            "type": "string",
+            "title": "The TypeFlyvninger Schema",
+            "enum": ["NASJONAL", "INTERNASJONAL", "BEGGE"],
+            "examples": [
+              "NASJONAL"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
     "soeknadsland": {
       "type": "object",
       "title": "The Soeknadsland Schema",
@@ -1062,6 +1106,7 @@
         "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
+        "luftfartBase",
         "soeknadsland",
         "periode"
       ],
@@ -1096,6 +1141,9 @@
         "maritimtArbeid": {
           "$ref": "#/definitions/maritimtArbeid"
         },
+        "luftfartBase": {
+          "$ref": "#/definitions/luftfartBase"
+        },
         "soeknadsland": {
           "$ref": "#/definitions/soeknadsland"
         },
@@ -1120,6 +1168,7 @@
         "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
+        "luftfartBase",
         "soeknadsland",
         "periode"
       ],
@@ -1150,6 +1199,9 @@
         },
         "maritimtArbeid": {
           "$ref": "#/definitions/maritimtArbeid"
+        },
+        "luftfartBase": {
+          "$ref": "#/definitions/luftfartBase"
         },
         "soeknadsland": {
           "$ref": "#/definitions/soeknadsland"
