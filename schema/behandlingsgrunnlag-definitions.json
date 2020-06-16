@@ -491,7 +491,7 @@
       "uniqueItems": true,
       "items": {
         "type": "object",
-        "title": "The LuftfartBase Schema",
+        "title": "The LuftfartBaseItem Schema",
         "additionalProperties": false,
         "required": [
           "hjemmebaseNavn",
