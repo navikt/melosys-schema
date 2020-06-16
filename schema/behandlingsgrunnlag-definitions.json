@@ -254,7 +254,6 @@
         "arbeidsforholdOpprettholdIHelePerioden",
         "arbeidsforholdVikarNavn",
         "vikarOrgnr",
-        "flyendePersonellHjemmebase",
         "kontaktNavn",
         "kontaktEpost",
         "fullmektigFirma",
@@ -288,15 +287,6 @@
           "default": "",
           "examples": [
             "22334455"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "flyendePersonellHjemmebase": {
-          "type": ["string","null"],
-          "title": "The Flyendepersonellhjemmebase Schema",
-          "default": "",
-          "examples": [
-            "Flybasen Int. Airport, ...."
           ],
           "pattern": "^(.*)$"
         },
