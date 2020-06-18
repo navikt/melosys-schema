@@ -1213,6 +1213,7 @@
         "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
+        "luftfartBaser",
         "soeknadsland",
         "periode",
         "overgangsregelbestemmelser",
@@ -1246,6 +1247,9 @@
         },
         "maritimtArbeid": {
           "$ref": "#/definitions/maritimtArbeid"
+        },
+        "luftfartBaser": {
+          "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
           "$ref": "#/definitions/soeknadsland"
