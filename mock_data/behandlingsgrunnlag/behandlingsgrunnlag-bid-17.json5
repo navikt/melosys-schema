@@ -65,7 +65,6 @@
       "arbeidsforholdOpprettholdIHelePerioden": true,
       "arbeidsforholdVikarNavn": "Vikarbyrået AS",
       "vikarOrgnr": "22334455",
-      "flyendePersonellHjemmebase": "Flybasen Int. Airport, ....",
       "kontaktNavn": "Ola Nordmann",
       "kontaktEpost": "ola.nordmann@fullmektigfirma.no",
       "fullmektigFirma": "Advokatfullmektig AS",
@@ -124,6 +123,7 @@
         "foretakOrgnr": "967032271"
       }
     ],
+    "luftfartBase": [],
     "soeknadsland": {
       "landkoder": ["DK"]
     },
