@@ -520,7 +520,7 @@
           "typeFlyvninger": {
             "type": ["string", "null"],
             "title": "The TypeFlyvninger Schema",
-            "enum": ["NASJONAL", "INTERNASJONAL", "BEGGE"],
+            "enum": ["NASJONAL", "INTERNASJONAL", "BEGGE", null],
             "examples": [
               "NASJONAL"
             ],
