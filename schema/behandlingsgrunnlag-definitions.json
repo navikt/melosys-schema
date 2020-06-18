@@ -485,13 +485,13 @@
         }
       }
     },
-    "luftfartBase": {
+    "luftfartBaser": {
       "type": "array",
-      "title": "The LuftfartBase Schema",
+      "title": "The LuftfartBaser Schema",
       "uniqueItems": true,
       "items": {
         "type": "object",
-        "title": "The LuftfartBaseItem Schema",
+        "title": "The LuftfartBaserItem Schema",
         "additionalProperties": false,
         "required": [
           "hjemmebaseNavn",
@@ -1096,7 +1096,7 @@
         "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
-        "luftfartBase",
+        "luftfartBaser",
         "soeknadsland",
         "periode"
       ],
@@ -1131,8 +1131,8 @@
         "maritimtArbeid": {
           "$ref": "#/definitions/maritimtArbeid"
         },
-        "luftfartBase": {
-          "$ref": "#/definitions/luftfartBase"
+        "luftfartBaser": {
+          "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
           "$ref": "#/definitions/soeknadsland"
@@ -1158,7 +1158,7 @@
         "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
-        "luftfartBase",
+        "luftfartBaser",
         "soeknadsland",
         "periode"
       ],
@@ -1190,8 +1190,8 @@
         "maritimtArbeid": {
           "$ref": "#/definitions/maritimtArbeid"
         },
-        "luftfartBase": {
-          "$ref": "#/definitions/luftfartBase"
+        "luftfartBaser": {
+          "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
           "$ref": "#/definitions/soeknadsland"
