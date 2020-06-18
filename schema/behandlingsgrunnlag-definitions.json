@@ -500,7 +500,7 @@
         ],
         "properties": {
           "hjemmebaseNavn": {
-            "type": "string",
+            "type": ["string", "null"],
             "title": "The HjemmebaseNavn Schema",
             "default": "",
             "examples": [
@@ -509,7 +509,7 @@
             "pattern": "^(.+)$"
           },
           "hjemmebaseLand": {
-            "type": "string",
+            "type": ["string", "null"],
             "title": "The HjemmebaseLand Schema",
             "default": "",
             "examples": [
@@ -518,7 +518,7 @@
             "pattern": "^(.+)$"
           },
           "typeFlyvninger": {
-            "type": "string",
+            "type": ["string", "null"],
             "title": "The TypeFlyvninger Schema",
             "enum": ["NASJONAL", "INTERNASJONAL", "BEGGE"],
             "examples": [
@@ -1213,6 +1213,7 @@
         "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
+        "luftfartBaser",
         "soeknadsland",
         "periode",
         "overgangsregelbestemmelser",
@@ -1246,6 +1247,9 @@
         },
         "maritimtArbeid": {
           "$ref": "#/definitions/maritimtArbeid"
+        },
+        "luftfartBaser": {
+          "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
           "$ref": "#/definitions/soeknadsland"
