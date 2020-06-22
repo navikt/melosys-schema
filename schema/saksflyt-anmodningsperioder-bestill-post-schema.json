@@ -7,7 +7,8 @@
   "additionalProperties": false,
   "required": [
     "mottakerinstitusjon",
-    "fritekstSed"
+    "fritekstSed",
+    "fritekstBrev"
   ],
   "properties": {
     "mottakerinstitusjon": {
@@ -15,6 +16,10 @@
       "pattern": "^(.*)$"
     },
     "fritekstSed": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
+    },
+    "fritekstBrev": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
     }
