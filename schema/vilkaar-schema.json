@@ -12,7 +12,8 @@
       "vilkaar",
       "oppfylt",
       "begrunnelseKoder",
-      "begrunnelseFritekst"
+      "begrunnelseFritekst",
+      "begrunnelseFritekstEngelsk"
     ],
     "properties": {
       "vilkaar": {
@@ -57,6 +58,11 @@
         "examples": [
           "En begrunnelsestekst"
         ],
+        "pattern": "^(.*)$"
+      },
+      "begrunnelseFritekstEngelsk": {
+        "type": ["string", "null"],
+        "title": "The BegrunnelsefritekstEngelsk Schema",
         "pattern": "^(.*)$"
       }
     }
