@@ -28,19 +28,6 @@
         }
       }
     ],
-    "arbeidNorge" : {
-      "fullmektigFirma" : "Advokatfullmektig AS",
-      "kontaktEpost" : "ola.nordmann@fullmektigfirma.no",
-      "arbeidsforholdVikarNavn" : "Vikarbyrået AS",
-      "fullmektigGateadresse" : "Adresseveien 123",
-      "arbeidsforholdOpprettholdIHelePerioden" : true,
-      "vikarOrgnr" : "22334455",
-      "fullmektigPostnr" : "1234",
-      "kontaktNavn" : "Ola Nordmann",
-      "fullmektigPoststed" : "Byensvik",
-      "fullmektigRegion" : "Østlandsregionen",
-      "fullmektigLandkode" : "NO"
-    },
     "juridiskArbeidsgiverNorge" : {
       "utsendteNeste12Mnd": 10,
       "antallAdmAnsatte": 35,

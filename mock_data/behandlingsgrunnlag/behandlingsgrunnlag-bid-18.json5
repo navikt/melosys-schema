@@ -96,19 +96,6 @@
       "studentFinansieringKode": "LAANEKASSEN",
       "studentSemester": "2018/2019"
     },
-    "arbeidNorge": {
-      "arbeidsforholdOpprettholdIHelePerioden": true,
-      "arbeidsforholdVikarNavn": "Vikarbyrået AS",
-      "vikarOrgnr": "22334455",
-      "kontaktNavn": "Ola Nordmann",
-      "kontaktEpost": "ola.nordmann@fullmektigfirma.no",
-      "fullmektigFirma": "Advokatfullmektig AS",
-      "fullmektigGateadresse": "Adresseveien 123",
-      "fullmektigPostnr": "1234",
-      "fullmektigPoststed": "Byensvik",
-      "fullmektigRegion": "Østlandsregionen",
-      "fullmektigLandkode": "NO"
-    },
     "selvstendigArbeid": {
       "erSelvstendig": null,
       "selvstendigForetak": []

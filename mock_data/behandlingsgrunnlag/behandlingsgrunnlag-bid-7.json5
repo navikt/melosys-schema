@@ -41,19 +41,6 @@
         "landkode": null
       }
     },
-    "arbeidNorge": {
-      "arbeidsforholdOpprettholdIHelePerioden": null,
-      "arbeidsforholdVikarNavn": null,
-      "vikarOrgnr": null,
-      "kontaktNavn": null,
-      "kontaktEpost": null,
-      "fullmektigFirma": null,
-      "fullmektigGateadresse": null,
-      "fullmektigPostnr": null,
-      "fullmektigPoststed": null,
-      "fullmektigRegion": null,
-      "fullmektigLandkode": null
-    },
     "selvstendigArbeid": {
       "erSelvstendig": false,
       "selvstendigForetak": []

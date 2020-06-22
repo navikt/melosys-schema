@@ -246,124 +246,6 @@
         }
       }
     },
-    "arbeidNorge": {
-      "type": "object",
-      "title": "The Arbeidnorge Schema",
-      "additionalProperties": false,
-      "required": [
-        "arbeidsforholdOpprettholdIHelePerioden",
-        "arbeidsforholdVikarNavn",
-        "vikarOrgnr",
-        "kontaktNavn",
-        "kontaktEpost",
-        "fullmektigFirma",
-        "fullmektigGateadresse",
-        "fullmektigPostnr",
-        "fullmektigPoststed",
-        "fullmektigRegion",
-        "fullmektigLandkode"
-      ],
-      "properties": {
-        "arbeidsforholdOpprettholdIHelePerioden": {
-          "type": ["boolean","null"],
-          "title": "The Arbeidsforholdopprettholdiheleperioden Schema",
-          "default": false,
-          "examples": [
-            true
-          ]
-        },
-        "arbeidsforholdVikarNavn": {
-          "type": ["string","null"],
-          "title": "The Arbeidsforholdvikarnavn Schema",
-          "default": "",
-          "examples": [
-            "Vikarbyrået AS"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "vikarOrgnr": {
-          "type": ["string","null"],
-          "title": "The Vikarorgnr Schema",
-          "default": "",
-          "examples": [
-            "22334455"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "kontaktNavn": {
-          "type": ["string","null"],
-          "title": "The Kontaktnavn Schema",
-          "default": "",
-          "examples": [
-            "Ola Nordmann"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "kontaktEpost": {
-          "type": ["string","null"],
-          "title": "The Kontaktepost Schema",
-          "default": "",
-          "examples": [
-            "ola.nordmann@fullmektigfirma.no"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "fullmektigFirma": {
-          "type": ["string","null"],
-          "title": "The Fullmektigfirma Schema",
-          "default": "",
-          "examples": [
-            "Advokatfullmektig AS"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "fullmektigGateadresse": {
-          "type": ["string","null"],
-          "title": "The Fullmektiggateadresse Schema",
-          "default": "",
-          "examples": [
-            "Adresseveien 123"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "fullmektigPostnr": {
-          "type": ["string","null"],
-          "title": "The Fullmektigpostnr Schema",
-          "default": "",
-          "examples": [
-            "1234"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "fullmektigPoststed": {
-          "type": ["string","null"],
-          "title": "The Fullmektigpoststed Schema",
-          "default": "",
-          "examples": [
-            "Byensvik"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "fullmektigRegion": {
-          "type": ["string","null"],
-          "title": "The Fullmektigregion Schema",
-          "default": "",
-          "examples": [
-            "Østlandsregionen"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "fullmektigLandkode": {
-          "type": ["string","null"],
-          "title": "The Fullmektiglandkode Schema",
-          "default": "",
-          "examples": [
-            "NO"
-          ],
-          "pattern": "^(.*)$"
-        }
-      }
-    },
     "selvstendigArbeid": {
       "type": "object",
       "title": "The Selvstendigarbeid Schema",
@@ -1093,7 +975,6 @@
         "foretakUtland",
         "oppholdUtland",
         "bosted",
-        "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
         "luftfartBaser",
@@ -1121,9 +1002,6 @@
         },
         "bosted": {
           "$ref": "#/definitions/bosted"
-        },
-        "arbeidNorge": {
-          "$ref": "#/definitions/arbeidNorge"
         },
         "selvstendigArbeid": {
           "$ref": "#/definitions/selvstendigArbeid"
@@ -1155,7 +1033,6 @@
         "foretakUtland",
         "oppholdUtland",
         "bosted",
-        "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
         "luftfartBaser",
@@ -1180,9 +1057,6 @@
         },
         "bosted": {
           "$ref": "#/definitions/bosted"
-        },
-        "arbeidNorge": {
-          "$ref": "#/definitions/arbeidNorge"
         },
         "selvstendigArbeid": {
           "$ref": "#/definitions/selvstendigArbeid"
@@ -1210,7 +1084,6 @@
         "foretakUtland",
         "oppholdUtland",
         "bosted",
-        "arbeidNorge",
         "selvstendigArbeid",
         "maritimtArbeid",
         "luftfartBaser",
@@ -1238,9 +1111,6 @@
         },
         "bosted": {
           "$ref": "#/definitions/bosted"
-        },
-        "arbeidNorge": {
-          "$ref": "#/definitions/arbeidNorge"
         },
         "selvstendigArbeid": {
           "$ref": "#/definitions/selvstendigArbeid"
