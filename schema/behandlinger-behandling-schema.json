@@ -480,52 +480,8 @@
               },
               "postadresse": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse",
-                "type": "object",
                 "title": "The Postadresse Schema",
-                "additionalProperties": false,
-                "required": [
-                  "gateadresse",
-                  "postnr",
-                  "poststed",
-                  "land"
-                ],
-                "properties": {
-                  "gateadresse": {
-                    "title": "The Gateadresse Schema",
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/gateadresse"
-                  },
-                  "postnr": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/postnr",
-                    "type": ["string", "null"],
-                    "title": "The Postnr Schema",
-                    "default": "",
-                    "examples": [
-                      "3936"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "poststed": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/poststed",
-                    "type": ["string","null"],
-                    "title": "The Poststed Schema",
-                    "default": "",
-                    "examples": [
-                      "PORSGRUNN"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "land": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/land",
-                    "type": ["string","null"],
-                    "title": "The Land Schema",
-                    "default": "",
-                    "examples": [
-                      "NORGE"
-                    ],
-                    "pattern": "^(.*)$"
-                  }
-                }
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
               },
               "organisasjonsform": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/organisasjonsform",
@@ -548,52 +504,8 @@
               },
               "forretningsadresse": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse",
-                "type": "object",
                 "title": "The Forretningsadresse Schema",
-                "additionalProperties": false,
-                "required": [
-                  "gateadresse",
-                  "postnr",
-                  "poststed",
-                  "land"
-                ],
-                "properties": {
-                  "gateadresse": {
-                    "title": "The Gateadresse Schema",
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/gateadresse"
-                  },
-                  "postnr": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/postnr",
-                    "type": ["string", "null"],
-                    "title": "The Postnr Schema",
-                    "default": "",
-                    "examples": [
-                      "3936"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "poststed": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/poststed",
-                    "type": ["string", "null"],
-                    "title": "The Poststed Schema",
-                    "default": "",
-                    "examples": [
-                      "PORSGRUNN"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "land": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/land",
-                    "type": ["string", "null"],
-                    "title": "The Land Schema",
-                    "default": "",
-                    "examples": [
-                      "NORGE"
-                    ],
-                    "pattern": "^(.*)$"
-                  }
-                }
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
               }
             }
           }
@@ -922,7 +834,7 @@
                 ],
                 "properties": {
                   "periodeID": {
-                    "title":"The Medlemskap PeriodeID Schema",
+                    "title": "The Medlemskap PeriodeID Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/periode",
                     "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periodeID"
                   },
@@ -1216,7 +1128,6 @@
               "title": "The Fnr Schema",
               "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
               "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
-
             },
             "lovvalgsperiode": {
               "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode",
