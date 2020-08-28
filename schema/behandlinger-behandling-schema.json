@@ -559,55 +559,9 @@
                 ],
                 "properties": {
                   "gateadresse": {
-                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse",
-                    "type": "object",
                     "title": "The Gateadresse Schema",
-                    "additionalProperties": false,
-                    "required": [
-                      "gatenummer",
-                      "husbokstav",
-                      "husnummer",
-                      "gatenavn"
-                    ],
-                    "properties": {
-                      "gatenummer": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenummer",
-                        "type": ["string","null"],
-                        "title": "The Gatenummer Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "husbokstav": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husbokstav",
-                        "type": ["string","null"],
-                        "title": "The Husbokstav Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "husnummer": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/husnummer",
-                        "type": ["string","null"],
-                        "title": "The Husnummer Schema",
-                        "default": null,
-                        "examples": [
-                          null
-                        ]
-                      },
-                      "gatenavn": {
-                        "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/gateadresse/properties/gatenavn",
-                        "type": ["string","null"],
-                        "title": "The Gatenavn Schema",
-                        "default": "",
-                        "examples": [
-                          "Olav Kyrres gate 9"
-                        ],
-                        "pattern": "^(.*)$"
-                      }
-                    }
+                    "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse/properties/gateadresse",
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/gateadresse"
                   },
                   "postnr": {
                     "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse/properties/postnr",
