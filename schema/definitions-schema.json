@@ -83,7 +83,8 @@
         "BESLUTNING_LOVVALG_NORGE",
         "BESLUTNING_LOVVALG_ANNET_LAND",
         "ANMODNING_OM_UNNTAK_HOVEDREGEL",
-        "ØVRIGE_SED",
+        "ØVRIGE_SED_MED",
+        "ØVRIGE_SED_UFM",
         "TRYGDETID"
       ]
     },

@@ -18,6 +18,7 @@ const LovvalgsperioderOpprinnelig = require('./test/lovvalgsperioderOpprinnelig'
 const Personer = require('./test/personer');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
+const Statistikk = require('./test/statistikk');
 const Utpekingsperioder = require('./test/utpekingsperioder');
 const Vilkaar = require('./test/vilkaar');
 
@@ -80,6 +81,7 @@ const katalogMap = new Map([
   ['saksflyt-unntaksperioder-ikkegodkjenn', Saksflyt.unntaksperioder.ikkegodkjenn],
   ['saksflyt-vedtak-endre', Saksflyt.vedtak.endre],
   ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
+  ['statistikk', Statistikk.statistikk],
   ['behandlingsgrunnlag', Behandlingsgrunnlag.behandlingsgrunnlag],
   ['utpekingsperioder', Utpekingsperioder.utpekingsperioder],
   ['vilkaar', Vilkaar.vilkaar],
