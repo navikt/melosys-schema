@@ -1,0 +1,27 @@
+{
+  "definitions": {
+    "behandlingStatistikk": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/statistikk-schema.json",
+  "type": "object",
+  "title": "The Statistikk Schema",
+  "additionalProperties": false,
+  "required": [
+    "aapneBehandlinger"
+  ],
+  "properties": {
+    "aapneBehandlinger": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/behandlingStatistikk"
+      },
+      "propertyNames": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+      }
+    }
+  }
+}
