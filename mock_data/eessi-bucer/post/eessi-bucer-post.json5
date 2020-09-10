@@ -1,5 +1,15 @@
 {
   "bucType": "LA_BUC_01",
   "mottakerLand": "NO",
-  "mottakerId": "NAVT002"
+  "mottakerId": "NAVT002",
+  "vedlegg": [
+    {
+      "journalpostID": "4",
+      "dokumentID": "42324"
+    },
+    {
+      "journalpostID": "4",
+      "dokumentID": "DOK_ID_4"
+    }
+  ],
 }
