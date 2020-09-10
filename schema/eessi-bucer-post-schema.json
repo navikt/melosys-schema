@@ -8,7 +8,8 @@
   "required": [
     "bucType",
     "mottakerId",
-    "mottakerLand"
+    "mottakerLand",
+    "vedlegg"
   ],
   "properties": {
     "bucType": {
@@ -33,6 +34,39 @@
       "$id": "#/properties/mottakerLand",
       "title": "The MottakerLand Schema",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+    },
+    "vedlegg": {
+      "title": "The Vedlegg Schema",
+      "$id": "#/properties/vedlegg",
+      "type": "array",
+      "examples": [
+        {
+          "journalpostID": "12345",
+          "dokumentID": "54321"
+        }
+      ],
+      "items": {
+        "$id": "#/properties/vedlegg/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "additionalProperties": false,
+        "required": [
+          "journalpostID",
+          "dokumentID"
+        ],
+        "properties": {
+          "journalpostID": {
+            "$id": "#/properties/vedlegg/items/journalpostID",
+            "type": "string",
+            "title": "The JournalpostID Schema"
+          },
+          "dokumentID": {
+            "$id": "#/properties/vedlegg/items/dokumentID",
+            "type": "string",
+            "title": "The DokumentID Schema"
+          }
+        }
+      }
     }
   }
 }
