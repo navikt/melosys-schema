@@ -1220,6 +1220,7 @@
         "behandlingsstatus",
         "behandlingstype",
         "endretDato",
+        "endretAvNavn",
         "registrertDato",
         "sisteOpplysningerHentetDato"
       ],
@@ -1248,6 +1249,9 @@
           "title": "The Endretdato Schema",
           "$id": "#/properties/oppsummering/properties/endretDato",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+        },
+        "endretAvNavn": {
+          "type": "string"
         },
         "sisteOpplysningerHentetDato": {
           "title": "The SisteOpplysningerHentetDato Schema",
