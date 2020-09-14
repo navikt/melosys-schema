@@ -19,7 +19,7 @@
     "vedlegg": [
       {
         "tittel": "A1",
-        "dokumentID": "DOK_ID_4",
+        "dokumentID": "DOK_ID_5",
         "logiskeVedlegg": [
           "Logisk vedlegg 1",
           "Logisk vedlegg 2"
@@ -52,7 +52,7 @@
       "term": "Utgående dokument"
     },
     "avsenderEllerMottaker": "Clemens Bonifacius",
-    "journalpostID": "4",
+    "journalpostID": "6",
     "mottattDato": null,
     "journalforingDato": "2018-05-04T15:15:25.622Z",
     "hoveddokument": {
@@ -68,7 +68,7 @@
       "term": "Inngående dokument"
     },
     "avsenderEllerMottaker": "Thorine Elisabeth Bruun",
-    "journalpostID": "5",
+    "journalpostID": "7",
     "mottattDato": "2017-05-24T15:15:25.622Z",
     "journalforingDato": null,
     "hoveddokument": {
@@ -88,7 +88,7 @@
       "term": "Utgående dokument"
     },
     "avsenderEllerMottaker": "Peter Christen Asbjørnsen",
-    "journalpostID": "4",
+    "journalpostID": "8",
     "mottattDato": null,
     "journalforingDato": "2017-05-12T15:15:25.622Z",
     "hoveddokument": {
@@ -104,7 +104,7 @@
       "term": "Inngående dokument"
     },
     "avsenderEllerMottaker": "Peter Christen Asbjørnsen",
-    "journalpostID": "5",
+    "journalpostID": "9",
     "mottattDato": "2017-05-24T15:15:25.622Z",
     "journalforingDato": null,
     "hoveddokument": {
