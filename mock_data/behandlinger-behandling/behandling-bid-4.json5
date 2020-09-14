@@ -800,12 +800,8 @@
   },
   "oppsummering": {
     "behandlingstema": {
-      "kode": "ARBEID_FLERE_LAND",
-      "term": "Arbeid i flere land"
-    },
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
+      "kode": "UTSENDT_ARBEIDSTAKER",
+      "term": "Utsendt arbeidstaker"
     },
     "behandlingsstatus": {
       "kode": "OPPRETTET",
@@ -814,5 +810,10 @@
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
+    "endretAvNavn": "HATT GLITRENDE",
+    "behandlingstype": {
+      "kode": "SOEKNAD",
+      "term": "Søknad"
+    }
   }
 }

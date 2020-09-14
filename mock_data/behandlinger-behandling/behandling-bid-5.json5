@@ -1,5 +1,5 @@
 {
-  "behandlingID": 9,
+  "behandlingID": 5,
   "redigerbart": true,
   "saksopplysninger": {
     "person": {
@@ -52,68 +52,7 @@
       ]
     },
     "personhistorikk": {
-      "bostedsadressePerioder": [
-        {
-          "bostedsadresse": {
-            "gateadresse": {
-              "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 101098,
-              "husnummer": 98,
-              "husbokstav": "C"
-            },
-            "postnr": "0175",
-            "poststed": "OSLO",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
-          },
-          "periode": {
-            "fom": "2018-03-12",
-            "tom": "2020-03-12"
-          }
-        },
-        {
-          "bostedsadresse": {
-            "gateadresse": {
-              "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 101098,
-              "husnummer": 98,
-              "husbokstav": "C"
-            },
-            "postnr": "0175",
-            "poststed": "OSLO",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
-          },
-          "periode": {
-            "fom": "2015-03-12",
-            "tom": "2017-03-12"
-          }
-        },
-        {
-          "bostedsadresse": {
-            "gateadresse": {
-              "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 101098,
-              "husnummer": 98,
-              "husbokstav": "C"
-            },
-            "postnr": "0175",
-            "poststed": "OSLO",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        }
-      ],
+      "bostedsadressePerioder": [],
       "postadressePerioder": [
         {
           "postadresse": {
@@ -155,59 +94,7 @@
           }
         }
       ],
-      "midlertidigAdressePerioder": [
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        }
-      ]
+      "midlertidigAdressePerioder": []
     },
     "arbeidsforhold": [
       {
@@ -824,8 +711,8 @@
   },
   "oppsummering": {
     "behandlingstema": {
-      "kode": "UTSENDT_ARBEIDSTAKER",
-      "term": "Utsendt arbeidstaker"
+      "kode": "ENDRET_PERIODE",
+      "term": "Behandle forkortet periode"
     },
     "behandlingstype": {
       "kode": "SOEKNAD",
@@ -837,6 +724,7 @@
     },
     "registrertDato": "2018-03-06T12:05:59.031Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-    "endretDato": "2018-03-15T16:31:35.845Z"
+    "endretDato": "2018-03-15T16:31:35.845Z",
+    "endretAvNavn": "HATT GLITRENDE"
   }
 }

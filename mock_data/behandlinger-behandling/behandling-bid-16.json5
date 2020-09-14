@@ -800,8 +800,12 @@
   },
   "oppsummering": {
     "behandlingstema": {
-      "kode": "UTSENDT_ARBEIDSTAKER",
-      "term": "Utsendt arbeidstaker"
+      "kode": "ARBEID_NORGE_BOSATT_ANNET_LAND",
+      "term": "Arbeid i Norge - bosatt i et annet land"
+    },
+    "behandlingstype": {
+      "kode": "SOEKNAD_ARBEID_NORGE_BOSATT_ANNET_LAND",
+      "term": "Søknad arbeid i Norge - bosatt i et annet land"
     },
     "behandlingsstatus": {
       "kode": "OPPRETTET",
@@ -810,9 +814,6 @@
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    }
+    "endretAvNavn": "HATT GLITRENDE"
   }
 }
