@@ -1,5 +1,5 @@
 {
-  "behandlingID": 17,
+  "behandlingID": 14,
   "redigerbart": true,
   "saksopplysninger": {
     "arbeidsforhold": [
@@ -800,19 +800,20 @@
   },
   "oppsummering": {
     "behandlingstema": {
-      "kode": "ARBEID_ETT_LAND_ØVRIG",
-      "term": "Øvrig arbeid og næring"
+      "kode": "BESLUTNING_LOVVALG_NORGE",
+      "term": "Behandling av at utenlandske myndigheter har utpekt Norge som lovvalgsland (A003)"
+    },
+    "behandlingstype": {
+      "kode": "SED",
+      "term": "SED"
     },
     "behandlingsstatus": {
-      "kode": "OPPRETTET",
-      "term": "Opprettet"
+      "kode": "UNDER_BEHANDLING",
+      "term": "Behandlingen pågår"
     },
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    }
+    "endretAvNavn": "HATT GLITRENDE"
   }
 }

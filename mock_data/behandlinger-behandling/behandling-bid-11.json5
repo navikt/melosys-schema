@@ -1,5 +1,5 @@
 {
-  "behandlingID": 14,
+  "behandlingID": 11,
   "redigerbart": true,
   "saksopplysninger": {
     "arbeidsforhold": [
@@ -756,40 +756,6 @@
             "fom": "2010-03-12",
             "tom": "2014-03-12"
           }
-        },
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
         }
       ]
     },
@@ -800,19 +766,20 @@
   },
   "oppsummering": {
     "behandlingstema": {
-      "kode": "BESLUTNING_LOVVALG_NORGE",
-      "term": "Behandling av at utenlandske myndigheter har utpekt Norge som lovvalgsland (A003)"
-    },
-    "behandlingstype": {
       "kode": "SED",
       "term": "SED"
     },
+    "behandlingstype": {
+      "kode": "VURDER_TRYGDETID",
+      "term": "Behandling av forespørsel om trygdetid"
+    },
     "behandlingsstatus": {
-      "kode": "UNDER_BEHANDLING",
-      "term": "Behandlingen pågår"
+      "kode": "VURDER_DOKUMENT",
+      "term": "Opprettet"
     },
     "registrertDato": "2018-08-27T07:16:03.273Z",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-08-27T07:16:03.273Z",
+    "endretAvNavn": "HATT GLITRENDE"
   }
 }
