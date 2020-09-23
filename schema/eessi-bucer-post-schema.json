@@ -37,8 +37,13 @@
     },
     "mottakerLand": {
       "$id": "#/properties/mottakerLand",
+      "type": "array",
       "title": "The MottakerLand Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+      "items": {
+        "$id": "#/properties/mottakerLand/items",
+        "title": "The MottakerLand Item Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+      }
     },
     "vedlegg": {
       "title": "The Vedlegg Schema",

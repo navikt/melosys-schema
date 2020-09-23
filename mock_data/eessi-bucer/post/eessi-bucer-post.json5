@@ -1,6 +1,8 @@
 {
   "bucType": "LA_BUC_01",
-  "mottakerLand": "NO",
+  "mottakerLand": [
+    "NO"
+  ],
   "mottakerIder": [
     "NAVT002"
   ],
