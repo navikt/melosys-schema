@@ -1,7 +1,11 @@
 {
   "bucType": "LA_BUC_01",
-  "mottakerLand": "NO",
-  "mottakerId": "NAVT002",
+  "mottakerLand": [
+    "NO"
+  ],
+  "mottakerIder": [
+    "NAVT002"
+  ],
   "vedlegg": [
     {
       "journalpostID": "4",
