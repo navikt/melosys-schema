@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [
     "bucType",
-    "mottakerIder",
+    "mottakerInstitusjoner",
     "mottakerLand",
     "vedlegg"
   ],
@@ -21,14 +21,14 @@
       ],
       "pattern": "^(.*)$"
     },
-    "mottakerIder": {
-      "$id": "#/properties/mottakerIder",
+    "mottakerInstitusjoner": {
+      "$id": "#/properties/mottakerInstitusjoner",
       "type": "array",
-      "title": "The MottakerIder Schema",
+      "title": "The MottakerInstitusjoner Schema",
       "items": {
-        "$id": "#/properties/mottakerIder/items",
+        "$id": "#/properties/mottakerInstitusjoner/items",
         "type": "string",
-        "title": "The MottakerIder Item Schema",
+        "title": "The MottakerInstitusjoner Item Schema",
         "examples": [
           "NO:NAVT002"
         ],
