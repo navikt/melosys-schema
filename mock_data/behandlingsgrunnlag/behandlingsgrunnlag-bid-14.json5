@@ -91,14 +91,74 @@
     ],
     "luftfartBaser": [],
     "soeknadsland": {
-      "landkoder": ["DK"]
+      "landkoder": [
+        "DK",
+        "NO",
+      ]
     },
     "periode": {
       "fom": "2018-01-02",
       "tom": "2019-01-02"
     },
     "overgangsregelbestemmelser": [],
-    "norskeArbeidsgivere": [],
+    "norskeArbeidsgivere": [
+      {
+        "orgnr": "873152362",
+        "navn": "Norsk organisasjon med gyldig orgnr",
+        "oppstartdato": null,
+        "organisasjonsform": null,
+        "forretningsadresse": {
+          "postnr": "3936",
+          "gateadresse": {
+            "gatenummer": null,
+            "husbokstav": null,
+            "husnummer": null,
+            "gatenavn": "Olav Kyrres gate 9"
+          },
+          "poststed": "PORSGRUNN",
+          "land": "NORGE"
+        },
+        "postadresse": {
+          "postnr": "3936",
+          "gateadresse": {
+            "gatenummer": null,
+            "husbokstav": null,
+            "husnummer": null,
+            "gatenavn": "Olav Kyrres gate 9"
+          },
+          "poststed": "PORSGRUNN",
+          "land": "NORGE"
+        },
+      },
+      {
+        "orgnr": "111111111",
+        "navn": "Norsk organisasjon uten gyldig orgnr",
+        "oppstartdato": null,
+        "organisasjonsform": null,
+        "forretningsadresse": {
+          "postnr": "0463",
+          "gateadresse": {
+            "gatenummer": null,
+            "husbokstav": null,
+            "husnummer": null,
+            "gatenavn": "Stavangergata 14B"
+          },
+          "poststed": "OSLO",
+          "land": "NORGE"
+        },
+        "postadresse": {
+          "postnr": "0463",
+          "gateadresse": {
+            "gatenummer": null,
+            "husbokstav": null,
+            "husnummer": null,
+            "gatenavn": "Stavangergata 14B"
+          },
+          "poststed": "OSLO",
+          "land": "NORGE"
+        },
+      },
+    ],
     "ytterligereInformasjon": null
   },
   "tilleggsData": {
@@ -161,5 +221,5 @@
       }
     ]
   },
-  "type": "SØKNAD",
+  "type": "SED",
 }
