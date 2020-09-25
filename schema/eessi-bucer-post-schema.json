@@ -8,7 +8,6 @@
   "required": [
     "bucType",
     "mottakerInstitusjoner",
-    "mottakerLand",
     "vedlegg"
   ],
   "properties": {
@@ -33,16 +32,6 @@
           "NO:NAVT002"
         ],
         "pattern": "^(.*)$"
-      }
-    },
-    "mottakerLand": {
-      "$id": "#/properties/mottakerLand",
-      "type": "array",
-      "title": "The MottakerLand Schema",
-      "items": {
-        "$id": "#/properties/mottakerLand/items",
-        "title": "The MottakerLand Item Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
       }
     },
     "vedlegg": {
