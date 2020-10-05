@@ -11,7 +11,8 @@
   "required": [
     "mottaker",
     "begrunnelseKode",
-    "fritekst"
+    "fritekst",
+    "ytterligereInformasjon"
   ],
   "properties": {
     "mottaker": {
@@ -64,6 +65,12 @@
         "ORIENTERING_ANMODNING_UNNTAK"
       ],
       "pattern": "^(.*)$"
+    },
+    "ytterligereInformasjon": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }
