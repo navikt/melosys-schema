@@ -1,9 +1,6 @@
 {
   "bucType": "LA_BUC_01",
-  "mottakerLand": [
-    "NO"
-  ],
-  "mottakerIder": [
+  "mottakerInstitusjoner": [
     "NAVT002"
   ],
   "vedlegg": [

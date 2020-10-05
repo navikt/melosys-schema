@@ -7,8 +7,7 @@
   "additionalProperties": false,
   "required": [
     "bucType",
-    "mottakerIder",
-    "mottakerLand",
+    "mottakerInstitusjoner",
     "vedlegg"
   ],
   "properties": {
@@ -21,28 +20,18 @@
       ],
       "pattern": "^(.*)$"
     },
-    "mottakerIder": {
-      "$id": "#/properties/mottakerIder",
+    "mottakerInstitusjoner": {
+      "$id": "#/properties/mottakerInstitusjoner",
       "type": "array",
-      "title": "The MottakerIder Schema",
+      "title": "The MottakerInstitusjoner Schema",
       "items": {
-        "$id": "#/properties/mottakerIder/items",
+        "$id": "#/properties/mottakerInstitusjoner/items",
         "type": "string",
-        "title": "The MottakerIder Item Schema",
+        "title": "The MottakerInstitusjoner Item Schema",
         "examples": [
           "NO:NAVT002"
         ],
         "pattern": "^(.*)$"
-      }
-    },
-    "mottakerLand": {
-      "$id": "#/properties/mottakerLand",
-      "type": "array",
-      "title": "The MottakerLand Schema",
-      "items": {
-        "$id": "#/properties/mottakerLand/items",
-        "title": "The MottakerLand Item Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
       }
     },
     "vedlegg": {
