@@ -1,0 +1,22 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/behandlinger-endrebehandlingstema-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "uniqueItems": true,
+  "items": {
+    "type": "string",
+    "enum": [
+      "UTSENDT_ARBEIDSTAKER",
+      "UTSENDT_SELVSTENDIG",
+      "ARBEID_ETT_LAND_ØVRIG",
+      "IKKE_YRKESAKTIV",
+      "ARBEID_FLERE_LAND",
+      "ARBEID_NORGE_BOSATT_ANNET_LAND",
+      "ØVRIGE_SED_MED",
+      "ØVRIGE_SED_UFM",
+      "TRYGDETID"
+    ]
+  }
+}

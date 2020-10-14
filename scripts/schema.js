@@ -41,6 +41,7 @@ const katalogMap = new Map([
   ['anmodningsperioder-svar', Anmodningsperioder.svar],
   ['avklartefakta', Avklartefakta.avklartefakta],
   ['behandlinger-behandling', Behandlinger.behandling],
+  ['behandlinger-endrebehandlingstema', Behandlinger.endreBehandlingstema],
   ['behandlinger-resultat', Behandlinger.resultat],
   ['behandlinger-status', Behandlinger.status],
   ['behandlinger-tidligeremedlemsperioder', Behandlinger.tidligereMedlemsPerioder],
