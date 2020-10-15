@@ -7,16 +7,6 @@
   "uniqueItems": true,
   "items": {
     "type": "string",
-    "enum": [
-      "UTSENDT_ARBEIDSTAKER",
-      "UTSENDT_SELVSTENDIG",
-      "ARBEID_ETT_LAND_ØVRIG",
-      "IKKE_YRKESAKTIV",
-      "ARBEID_FLERE_LAND",
-      "ARBEID_NORGE_BOSATT_ANNET_LAND",
-      "ØVRIGE_SED_MED",
-      "ØVRIGE_SED_UFM",
-      "TRYGDETID"
-    ]
+    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
   }
 }

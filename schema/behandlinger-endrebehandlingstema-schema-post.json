@@ -10,9 +10,9 @@
   ],
   "properties": {
     "behandlingstema": {
-      "title": "The BehandlingsStatus Schema",
+      "title": "The Behandlingstema Schema",
       "$id": "#/properties/oppsummering/properties/behandlingstema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
     }
   }
 }
