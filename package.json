@@ -1,6 +1,6 @@
 {
   "name": "@navikt/melosys-schema",
-  "version": "1.35.62",
+  "version": "1.35.63",
   "description": "MelosSys Schema Mock data",
   "main": "index.js",
   "files": [
