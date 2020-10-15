@@ -6,6 +6,13 @@
   "title": "The Root Schema",
   "uniqueItems": true,
   "items": {
-    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+    "allOf": [
+      {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"},
+      {"properties": {
+        "kode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+        }
+      }}
+    ]
   }
 }
