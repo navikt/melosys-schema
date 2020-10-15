@@ -1,5 +1,10 @@
-[
-  "ØVRIGE_SED_MED",
-  "ØVRIGE_SED_UFM",
-  "TRYGDETID"
-]
+[ {
+  "kode" : "ØVRIGE_SED_MED",
+  "term" : "MED: Henvendelse eller forespørsel"
+}, {
+  "kode" : "ØVRIGE_SED_UFM",
+  "term" : "UFM: Henvendelse eller forespørsel"
+}, {
+  "kode" : "TRYGDETID",
+  "term" : "MED: Forespørsel om trygdetid"
+} ]
