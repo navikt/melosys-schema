@@ -6,7 +6,6 @@
   "title": "The Root Schema",
   "uniqueItems": true,
   "items": {
-    "type": "string",
     "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
   }
 }
