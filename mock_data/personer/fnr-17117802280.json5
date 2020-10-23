@@ -49,7 +49,11 @@
         "kode": "BARN",
         "term": "Barn Av"
       },
-      "borMedBruker": true
+      "alder": 14,
+      "borMedBruker": false,
+      "sivilstand": null,
+      "sivilstandGyldighetsperiodeFom": null,
+      "fnrAnnenForelder": "17028920377",
     },
     {
       "fnr": "26030537263",
@@ -58,7 +62,11 @@
         "kode": "BARN",
         "term": "Barn Av"
       },
-      "borMedBruker": true
+      "alder": 15,
+      "borMedBruker": true,
+      "sivilstand": null,
+      "sivilstandGyldighetsperiodeFom": null,
+      "fnrAnnenForelder": "08029828362"
     },
     {
       "fnr": "08029828362",
@@ -67,7 +75,14 @@
         "kode": "EKTE",
         "term": "Ektefelle"
       },
-      "borMedBruker": true
+      "alder": null,
+      "borMedBruker": true,
+      "sivilstand": {
+        "kode": "GIFT",
+        "term": "Gift"
+      },
+      "sivilstandGyldighetsperiodeFom": "1999-12-31",
+      "fnrAnnenForelder": null
     }
   ]
 }
