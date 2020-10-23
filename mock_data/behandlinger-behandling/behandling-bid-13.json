@@ -31,7 +31,8 @@
           "relasjonstype": {
             "kode": "EKTE",
             "term": "Ektefelle til"
-          }
+          },
+          "borMedBruker": true
         }
       ]
     }

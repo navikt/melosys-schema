@@ -40,5 +40,34 @@
       ],
       "landkode": "UK"
     }
-  }
+  },
+  "familiemedlemmer": [
+    {
+      "fnr": "10100638274",
+      "sammensattNavn": "GIRAFF MAGER",
+      "relasjonstype": {
+        "kode": "BARN",
+        "term": "Barn Av"
+      },
+      "borMedBruker": true
+    },
+    {
+      "fnr": "26030537263",
+      "sammensattNavn": "BUKSE LURVETE",
+      "relasjonstype": {
+        "kode": "BARN",
+        "term": "Barn Av"
+      },
+      "borMedBruker": true
+    },
+    {
+      "fnr": "08029828362",
+      "sammensattNavn": "UTVIKLER OPTIMISTISK",
+      "relasjonstype": {
+        "kode": "EKTE",
+        "term": "Ektefelle"
+      },
+      "borMedBruker": true
+    }
+  ]
 }

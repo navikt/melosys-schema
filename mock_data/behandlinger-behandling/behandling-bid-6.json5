@@ -31,7 +31,9 @@
           "relasjonstype": {
             "kode": "BARN",
             "term": "Barn Av"
-          }
+          },
+          "borMedBruker": true,
+          "fnrAnnenForelder": "08029828362"
         },
         {
           "fnr": "26030537263",
@@ -39,7 +41,9 @@
           "relasjonstype": {
             "kode": "BARN",
             "term": "Barn Av"
-          }
+          },
+          "borMedBruker": true,
+          "fnrAnnenForelder": "08029828362"
         },
         {
           "fnr": "08029828362",
@@ -47,7 +51,8 @@
           "relasjonstype": {
             "kode": "EKTE",
             "term": "Ektefelle"
-          }
+          },
+          "borMedBruker": true
         }
       ]
     },

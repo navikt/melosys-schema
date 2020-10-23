@@ -963,40 +963,8 @@
             },
             "familiemedlemmer": {
               "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer",
-              "type": "array",
               "title": "The Familiemedlemmer Schema",
-              "uniqueItems": true,
-              "items": {
-                "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items",
-                "type": "object",
-                "title": "The Familie medlem Schema",
-                "required": [
-                  "fnr",
-                  "sammensattNavn",
-                  "relasjonstype"
-                ],
-                "properties": {
-                  "fnr": {
-                    "title": "The Fnr Schema",
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/fnr",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
-                  },
-                  "sammensattNavn": {
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/sammensattNavn",
-                    "type": "string",
-                    "title": "The sammensattNavn schema",
-                    "description": "",
-                    "examples": [
-                      "GIRAFF MAGER"
-                    ]
-                  },
-                  "relasjonstype": {
-                    "title": "The relasjonstype schema",
-                    "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer/items/properties/relasjonstype",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
-                  }
-                }
-              }
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/familiemedlemmer"
             }
           }
         },

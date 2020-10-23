@@ -35,5 +35,16 @@
       "poststed": "OSLO",
       "landkode": "NO"
     }
-  }
+  },
+  "familiemedlemmer": [
+    {
+      "fnr": "30098000492",
+      "sammensattNavn": "LILLA HEST",
+      "relasjonstype": {
+        "kode": "EKTE",
+        "term": "Ektefelle til"
+      },
+      "borMedBruker": true
+    }
+  ]
 }
