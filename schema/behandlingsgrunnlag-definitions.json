@@ -837,7 +837,14 @@
         "overgangsregelbestemmelser": {
           "type": "array",
           "items": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            "oneOf": [
+              {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+              },
+              {
+                "type": "string"
+              }
+            ]
           }
         },
         "ytterligereInformasjon": {
