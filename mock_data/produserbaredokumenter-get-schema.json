@@ -1,0 +1,56 @@
+{
+  "tilgjengeligeBrev": [
+    {
+      "type": "MELDING_MANGLENDE_OPPLYSNINGER",
+      "beskrivelse": "Melding om manglende opplysninger",
+      "felter": [
+        {
+          "kode": "INNLEDNING_TEKST",
+          "beskrivelse": "Innledningstekst",
+          "valg": [
+            {
+              "inputType": "FAST_TEKST",
+              "kode": "SØKNAD",
+              "beskrivelse": "Søknad",
+              "hjelpetekst": null
+            },
+            {
+              "inputType": "FRITEKST",
+              "kode": "FRITEKST",
+              "beskrivelse": "Fritekst",
+              "hjelpetekst": "For eksempel \"vi har mottatt opplysninger om..\""
+            }
+          ]
+        },
+        {
+          "kode": "HVA_SKAL_SENDES_INN",
+          "beskrivelse": "Hva skal mottakeren sende inn?",
+          "valg": [
+            {
+              "inputType": "FRITEKST",
+              "kode": "FRITEKST",
+              "beskrivelse": "Fritekst",
+              "hjelpetekst": "F.eks. \"opplysninger om antall utsendte ansatte i perioden\"....e.l. :)"
+            }
+          ]
+        }
+      ],
+      "muligeMottakere": [
+        {
+          "mottakerType": "BRUKER",
+          "adresseKanOverstyres": false,
+          "adresse": {
+            "linje1": "Gatevei 1",
+            "linje2": "1221 Oslo",
+            "linje3": "Norge"
+          }
+        },
+        {
+          "mottakerType": "ARBEIDSGIVER_ELLER_TREDJEPART",
+          "adresseKanOverstyres": true,
+          "adresse": null
+        }
+      ]
+    }
+  ]
+}
