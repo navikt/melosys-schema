@@ -1,0 +1,14 @@
+{
+  "saksnummer": "2",
+  "sakstype": {
+    "kode":"FTRL",
+    "term":"Folketrygdloven"
+  },
+  "saksstatus" : {
+    "kode" : "OPPRETTET",
+    "term" : "Saken er opprettet"
+  },
+  "registrertDato" : "2020-08-27T07:16:03.273Z",
+  "endretDato" : "2020-08-27T07:16:03.273Z",
+  "gsakSaksnummer" : 131063977
+}
