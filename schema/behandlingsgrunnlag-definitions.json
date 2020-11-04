@@ -10,6 +10,7 @@
       "required": [
         "utenlandskIdent",
         "medfolgendeFamilie",
+        "medfolgendeBarn",
         "medfolgendeAndre"
       ],
       "properties": {
@@ -54,6 +55,14 @@
               "10100638274"
             ],
             "pattern": "^(.*)$"
+          }
+        },
+        "medfolgendeBarn": {
+          "type": "array",
+          "title": "The MedfolgendeBarn Schema",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
           }
         },
         "medfolgendeAndre": {

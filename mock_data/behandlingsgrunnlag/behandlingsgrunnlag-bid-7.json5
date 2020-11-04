@@ -3,6 +3,7 @@
     "personOpplysninger": {
       "utenlandskIdent": [{"ident": "38288D-A", "landkode": "IT"}],
       "medfolgendeFamilie": [],
+      "medfolgendeBarn": [],
       "medfolgendeAndre": null
     },
     "arbeidUtland": [{
