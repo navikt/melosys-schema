@@ -2,9 +2,7 @@
   "data": {
     "personOpplysninger": {
       "utenlandskIdent": [],
-      "medfolgendeFamilie": [],
-      "medfolgendeBarn": [],
-      "medfolgendeAndre": null
+      "medfolgendeBarn": []
     },
     "arbeidUtland": [
       {

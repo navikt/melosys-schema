@@ -121,11 +121,7 @@
           "landkode" : "DK"
         }
       ],
-      "medfolgendeFamilie" : [
-        "30098000492"
-      ],
-      "medfolgendeBarn": [],
-      "medfolgendeAndre" : "28106600300"
+      "medfolgendeBarn": []
     },
     "soeknadsland": {
       "landkoder": ["DK"]
