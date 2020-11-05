@@ -80,14 +80,7 @@
         "pattern": "^(.*)$"
       },
       "trygdeDekning": {
-        "$id": "#/items/properties/trygdeDekning",
-        "type": ["string", "null"],
-        "title": "The TrygdeDekning Schema",
-        "default": "",
-        "examples": [
-          "FULL"
-        ],
-        "pattern": "^(.*)$"
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
       },
       "medlemskapstype": {
         "$id": "#/items/properties/medlemskapstype",

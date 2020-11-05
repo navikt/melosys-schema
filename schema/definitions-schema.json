@@ -582,8 +582,17 @@
       }
     },
     "trygdeDekning": {
-      "type": "string",
-      "enum": ["UTEN_DEKNING", "FULL_DEKNING_EOSFO"]
+      "type": ["string", "null"],
+      "enum": [
+        "UTEN_DEKNING",
+        "FULL_DEKNING_EOSFO",
+        "HELSEDEL",
+        "HELSEDEL_MED_SYKE_OG_FORELDREPENGER",
+        "PENSJONSDEL",
+        "HELSE_OG_PENSJONSDEL",
+        "HELSE_OG_PENSJONSDEL_MED_SYKE_OG_FORELDREPENGER",
+        "FULL_DEKNING_FTRL"
+      ]
     },
     "nullable-strukturertAdresse": {
       "type": "object",

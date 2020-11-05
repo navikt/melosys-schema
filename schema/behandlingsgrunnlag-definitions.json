@@ -731,6 +731,70 @@
         }
       }
     },
+    "soeknadFtrlData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "juridiskArbeidsgiverNorge",
+        "arbeidsinntekt",
+        "arbeidsgiversBekreftelse",
+        "personOpplysninger",
+        "arbeidUtland",
+        "foretakUtland",
+        "oppholdUtland",
+        "bosted",
+        "selvstendigArbeid",
+        "maritimtArbeid",
+        "luftfartBaser",
+        "soeknadsland",
+        "periode",
+        "trygdedekning"
+      ],
+      "properties": {
+        "arbeidsgiversBekreftelse": {
+          "$ref": "#/definitions/arbeidsgiversBekreftelse"
+        },
+        "arbeidsinntekt": {
+          "$ref": "#/definitions/arbeidsinntekt"
+        },
+        "personOpplysninger": {
+          "$ref": "#/definitions/personOpplysninger"
+        },
+        "arbeidUtland": {
+          "$ref": "#/definitions/arbeidUtland"
+        },
+        "foretakUtland": {
+          "$ref": "#/definitions/foretakUtland"
+        },
+        "oppholdUtland": {
+          "$ref": "#/definitions/oppholdUtland"
+        },
+        "bosted": {
+          "$ref": "#/definitions/bosted"
+        },
+        "selvstendigArbeid": {
+          "$ref": "#/definitions/selvstendigArbeid"
+        },
+        "maritimtArbeid": {
+          "$ref": "#/definitions/maritimtArbeid"
+        },
+        "luftfartBaser": {
+          "$ref": "#/definitions/luftfartBaser"
+        },
+        "soeknadsland": {
+          "$ref": "#/definitions/soeknadsland"
+        },
+        "periode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+        },
+        "juridiskArbeidsgiverNorge": {
+          "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
+        "trygdedekning": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+        }
+      }
+    },
     "behandlingsgrunnlagData": {
       "type": "object",
       "additionalProperties": false,
