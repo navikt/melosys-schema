@@ -12,13 +12,13 @@
     "data": {
       "oneOf": [
         {
-          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/behandlingsgrunnlagData"
-        },
-        {
           "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadData"
         },
         {
           "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/sedGrunnlag"
+        },
+        {
+          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadFtrlData"
         }
       ]
     },
