@@ -9,7 +9,7 @@
       "additionalProperties": false,
       "required": [
         "utenlandskIdent",
-        "medfolgendeBarn"
+        "medfolgendeFamilie"
       ],
       "properties": {
         "utenlandskIdent": {
@@ -41,7 +41,7 @@
             }
           }
         },
-        "medfolgendeBarn": {
+        "medfolgendeFamilie": {
           "type": "array",
           "title": "The MedfolgendeBarn Schema",
           "uniqueItems": true,
@@ -50,7 +50,8 @@
             "additionalProperties": false,
             "required": [
               "fnr",
-              "navn"
+              "navn",
+              "relasjon"
             ],
             "properties": {
               "fnr": {
@@ -58,6 +59,10 @@
               },
               "navn": {
                 "type": ["string", "null"]
+              },
+              "relasjon": {
+                "type": "string",
+                "enum": ["BARN"]
               }
             }
           }

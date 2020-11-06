@@ -7,10 +7,11 @@
           "landkode": "DK"
         }
       ],
-      "medfolgendeBarn": [
+      "medfolgendeFamilie": [
         {
           "fnr": null,
-          "navn": "BRÅKETE GYNGEHEST"
+          "navn": "BRÅKETE GYNGEHEST",
+          "relasjon": "BARN"
         }
       ]
     },
