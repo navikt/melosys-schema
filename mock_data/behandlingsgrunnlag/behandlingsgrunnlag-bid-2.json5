@@ -7,8 +7,12 @@
           "landkode": "DK"
         }
       ],
-      "medfolgendeFamilie": ["30098000492"],
-      "medfolgendeAndre": "28106600300"
+      "medfolgendeBarn": [
+        {
+          "fnr": "31031779459",
+          "navn": null
+        }
+      ]
     },
     "arbeidUtland": [{
       "adresse": {

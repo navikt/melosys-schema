@@ -9,8 +9,7 @@
       "additionalProperties": false,
       "required": [
         "utenlandskIdent",
-        "medfolgendeFamilie",
-        "medfolgendeAndre"
+        "medfolgendeBarn"
       ],
       "properties": {
         "utenlandskIdent": {
@@ -42,28 +41,26 @@
             }
           }
         },
-        "medfolgendeFamilie": {
+        "medfolgendeBarn": {
           "type": "array",
-          "title": "The Medfolgendefamilie Schema",
+          "title": "The MedfolgendeBarn Schema",
           "uniqueItems": true,
           "items": {
-            "type": ["string","null"],
-            "title": "The Items Schema",
-            "default": "",
-            "examples": [
-              "10100638274"
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "fnr",
+              "navn"
             ],
-            "pattern": "^(.*)$"
+            "properties": {
+              "fnr": {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
+              },
+              "navn": {
+                "type": ["string", "null"]
+              }
+            }
           }
-        },
-        "medfolgendeAndre": {
-          "type": ["string","null"],
-          "title": "The Medfolgendeandre Schema",
-          "default": "",
-          "examples": [
-            "28106600300"
-          ],
-          "pattern": "^(.*)$"
         }
       }
     },
