@@ -31,7 +31,12 @@
           "relasjonstype": {
             "kode": "BARN",
             "term": "Barn Av"
-          }
+          },
+          "alder": 14,
+          "borMedBruker": false,
+          "sivilstand": null,
+          "sivilstandGyldighetsperiodeFom": null,
+          "fnrAnnenForelder": "17028920377"
         },
         {
           "fnr": "26030537263",
@@ -39,7 +44,12 @@
           "relasjonstype": {
             "kode": "BARN",
             "term": "Barn Av"
-          }
+          },
+          "alder": 15,
+          "borMedBruker": true,
+          "sivilstand": null,
+          "sivilstandGyldighetsperiodeFom": null,
+          "fnrAnnenForelder": "08029828362"
         },
         {
           "fnr": "08029828362",
@@ -47,7 +57,15 @@
           "relasjonstype": {
             "kode": "EKTE",
             "term": "Ektefelle"
-          }
+          },
+          "alder": null,
+          "borMedBruker": true,
+          "sivilstand": {
+            "kode": "GIFT",
+            "term": "Gift"
+          },
+          "sivilstandGyldighetsperiodeFom": "1999-12-31",
+          "fnrAnnenForelder": null
         }
       ]
     },

@@ -277,6 +277,13 @@
         }
       }
     },
+    "nullable-kodeverk": {
+      "title": "The Nullable Kodeverk Schema",
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"}
+      ]
+    },
     "landkode": {
       "type": "string",
       "minLength": 2,
@@ -683,6 +690,73 @@
         "OMGJØRINGSVEDTAK",
         "ENDRINGSVEDTAK"
       ]
+    },
+    "familiemedlemmer": {
+      "$id": "#/definitions/familiemedlemmer",
+      "type": "array",
+      "title": "The Familiemedlemmer Schema",
+      "uniqueItems": true,
+      "items": {
+        "$id": "#/definitions/familiemedlemmer/items",
+        "type": "object",
+        "title": "The Familiemedlem Schema",
+        "required": [
+          "fnr",
+          "sammensattNavn",
+          "relasjonstype",
+          "alder",
+          "borMedBruker",
+          "sivilstand",
+          "sivilstandGyldighetsperiodeFom",
+          "fnrAnnenForelder"
+        ],
+        "properties": {
+          "fnr": {
+            "title": "The Fnr Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/fnr",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+          },
+          "sammensattNavn": {
+            "$id": "#/definitions/familiemedlemmer/items/properties/sammensattNavn",
+            "type": "string",
+            "title": "The SammensattNavn Schema",
+            "description": "",
+            "examples": [
+              "GIRAFF MAGER"
+            ]
+          },
+          "relasjonstype": {
+            "title": "The Relasjonstype Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/relasjonstype",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          },
+          "alder": {
+            "title": "The Alder Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/alder",
+            "type": ["integer", "null"]
+          },
+          "borMedBruker": {
+            "title": "The BorMedBruker Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/borMedBruker",
+            "type": "boolean"
+          },
+          "sivilstand": {
+            "title": "The Sivilstand Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/sivilstand",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-kodeverk"
+          },
+          "sivilstandGyldighetsperiodeFom": {
+            "title": "The SivilstandGyldighetsperiodeFom Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/sivilstandGyldighetsperiodeFom",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+          },
+          "fnrAnnenForelder": {
+            "title": "The FnrAnnenForelder Schema",
+            "$id": "#/definitions/familiemedlemmer/items/properties/fnrAnnenForelder",
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
+          }
+        }
+      }
     }
   }
 }

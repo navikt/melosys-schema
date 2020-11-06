@@ -335,7 +335,15 @@
           "relasjonstype": {
             "kode": "EKTE",
             "term": "Ektefelle til"
-          }
+          },
+          "alder": null,
+          "borMedBruker": false,
+          "sivilstand": {
+            "kode": "GLAD",
+            "term": "Gift, lever adskilt"
+          },
+          "sivilstandGyldighetsperiodeFom": "1999-12-31",
+          "fnrAnnenForelder": null
         }
       ]
     },
