@@ -51,7 +51,7 @@
             "required": [
               "fnr",
               "navn",
-              "relasjon"
+              "relasjonsrolle"
             ],
             "properties": {
               "fnr": {
@@ -60,7 +60,7 @@
               "navn": {
                 "type": ["string", "null"]
               },
-              "relasjon": {
+              "relasjonsrolle": {
                 "type": "string",
                 "enum": ["BARN"]
               }
