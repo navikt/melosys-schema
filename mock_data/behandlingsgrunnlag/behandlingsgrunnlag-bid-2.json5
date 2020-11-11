@@ -7,10 +7,11 @@
           "landkode": "DK"
         }
       ],
-      "medfolgendeBarn": [
+      "medfolgendeFamilie": [
         {
           "fnr": "31031779459",
-          "navn": null
+          "navn": null,
+          "relasjonsrolle": "BARN"
         }
       ]
     },
