@@ -11,6 +11,7 @@ const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
 const Inngangsvilkaar = require('./test/inngangsvilkaar');
 const Journalforing = require('./test/journalforing');
+const Kodeverk = require('./test/kodeverk');
 const Lovvalgsperioder = require('./test/lovvalgsperioder');
 const Oppgaver = require('./test/oppgaver');
 const Organisasjon = require('./test/organsisasjon');
@@ -67,6 +68,8 @@ const katalogMap = new Map([
   ['journalforing-opprett', Journalforing.opprett],
   ['journalforing-sed', Journalforing.sed],
   ['journalforing-tilordne', Journalforing.tilordne],
+  ['kodeverk-nav-felles-hentkodeverk', Kodeverk.hentkodeverk],
+  ['kodeverk-melosys-internt-folketrygden', Kodeverk.folketrygden],
   ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
   ['oppgaver-oversikt', Oppgaver.oversikt],
   ['oppgaver-plukk', Oppgaver.plukk],
