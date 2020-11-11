@@ -1,0 +1,30 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/kodeverk-melosys-internt-folketrygden-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalItems": true,
+  "required": [
+    "trygdedekninger"
+  ],
+  "properties": {
+    "trygdedekninger": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          },
+          {
+            "properties": {
+              "kode": {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
