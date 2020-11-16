@@ -1,0 +1,35 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://meloosys.nav.no/medlemskapsperioder-put-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "An explanation about the purpose of this instance.",
+  "additionalProperties": false,
+  "required": [
+    "fomDato",
+    "tomDato",
+    "innvilgelsesResultat",
+    "trygdeDekning"
+  ],
+  "properties": {
+    "fomDato": {
+      "title": "The FomDato Schema",
+      "$id": "#/items/properties/fomDato",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+    },
+    "tomDato": {
+      "title": "The TomDato Schema",
+      "$id": "#/items/properties/tomDato",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+    },
+    "trygdeDekning": {
+      "$id": "#/items/properties/trygdeDekning",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+    },
+    "innvilgelsesResultat": {
+      "$id": "#/items/properties/innvilgelsesResultat",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/innvilgelsesresultat"
+    }
+  }
+}

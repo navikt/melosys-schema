@@ -1,0 +1,73 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://meloosys.nav.no/medlemskapsperioder-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "description": "An explanation about the purpose of this instance.",
+  "additionalProperties": false,
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "id",
+      "fomDato",
+      "tomDato",
+      "bestemmelse",
+      "innvilgelsesResultat",
+      "arbeidsland",
+      "trygdeDekning",
+      "medlemskapstype"
+    ],
+    "properties": {
+      "fomDato": {
+        "title": "The FomDato Schema",
+        "$id": "#/items/properties/fomDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+      },
+      "tomDato": {
+        "title": "The TomDato Schema",
+        "$id": "#/items/properties/tomDato",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+      },
+      "bestemmelse": {
+        "$id": "#/items/properties/lovvalgsbestemmelse",
+        "type": "string",
+        "title": "The Lovvalgsbestemmelse Schema",
+        "default": "",
+        "examples": [
+          "ART16_1"
+        ]
+      },
+      "innvilgelsesResultat": {
+        "$id": "#/items/properties/innvilgelsesResultat",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/innvilgelsesresultat"
+      },
+      "arbeidsland": {
+        "$id": "#/items/properties/arbeidsland",
+        "type": "string",
+        "title": "The Lovvalgsland Schema",
+        "default": "",
+        "examples": [
+          "NO"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "trygdeDekning": {
+        "$id": "#/items/properties/trygdeDekning",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+      },
+      "medlemskapstype": {
+        "$id": "#/items/properties/medlemskapstype",
+        "type": "string",
+        "title": "The Medlemskapstype Schema",
+        "default": "",
+        "examples": [
+          "PLIKTIG"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}

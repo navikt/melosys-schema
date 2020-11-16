@@ -601,6 +601,14 @@
         "FULL_DEKNING_FTRL"
       ]
     },
+    "innvilgelsesresultat": {
+      "type": "string",
+      "enum": [
+        "INNVILGET",
+        "DELVIS_INNVILGET",
+        "AVSLAATT"
+      ]
+    },
     "nullable-strukturertAdresse": {
       "type": "object",
       "additionalProperties": false,
