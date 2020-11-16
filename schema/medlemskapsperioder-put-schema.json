@@ -10,7 +10,7 @@
     "fomDato",
     "tomDato",
     "innvilgelsesResultat",
-    "trygdeDekning"
+    "trygdedekning"
   ],
   "properties": {
     "fomDato": {
@@ -23,7 +23,7 @@
       "$id": "#/items/properties/tomDato",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
     },
-    "trygdeDekning": {
+    "trygdedekning": {
       "$id": "#/items/properties/trygdeDekning",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
     },

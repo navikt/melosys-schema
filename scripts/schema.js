@@ -13,6 +13,7 @@ const Inngangsvilkaar = require('./test/inngangsvilkaar');
 const Journalforing = require('./test/journalforing');
 const Kodeverk = require('./test/kodeverk');
 const Lovvalgsperioder = require('./test/lovvalgsperioder');
+const Medlemskapsperioder = require('./test/medlemskapsperioder');
 const Oppgaver = require('./test/oppgaver');
 const Organisasjon = require('./test/organsisasjon');
 const LovvalgsperioderOpprinnelig = require('./test/lovvalgsperioderOpprinnelig');
@@ -71,6 +72,7 @@ const katalogMap = new Map([
   ['kodeverk-nav-felles-hentkodeverk', Kodeverk.hentkodeverk],
   ['kodeverk-melosys-internt-folketrygden', Kodeverk.folketrygden],
   ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
+  ['medlemskapsperioder', Medlemskapsperioder.medlemskapsperioder],
   ['oppgaver-oversikt', Oppgaver.oversikt],
   ['oppgaver-plukk', Oppgaver.plukk],
   ['oppgaver-tilbakelegg', Oppgaver.tilbakelegg],

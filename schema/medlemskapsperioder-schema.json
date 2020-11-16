@@ -17,7 +17,7 @@
       "bestemmelse",
       "innvilgelsesResultat",
       "arbeidsland",
-      "trygdeDekning",
+      "trygdedekning",
       "medlemskapstype"
     ],
     "properties": {
@@ -54,7 +54,7 @@
         ],
         "pattern": "^(.*)$"
       },
-      "trygdeDekning": {
+      "trygdedekning": {
         "$id": "#/items/properties/trygdeDekning",
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
       },
