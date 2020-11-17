@@ -76,9 +76,11 @@
       "utsendteNeste12Mnd": 10,
       "antallAdmAnsatte": 35,
       "antallAnsatte": 350,
+      "antallUtsendte": 35,
       "andelOmsetningINorge": 78.5,
       "andelOppdragINorge": 50.5,
       "andelKontrakterINorge": 30.5,
+      "andelRekruttertINorge": 80.0,
       "arbeidstakereRekruttertILand": "SE",
       "oppdragsKontrakterIHovedsakInngaattILand": "NO",
       "ekstraArbeidsgivere": [

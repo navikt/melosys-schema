@@ -585,9 +585,11 @@
         "utsendteNeste12Mnd",
         "antallAdmAnsatte",
         "antallAnsatte",
+        "antallUtsendte",
         "andelOmsetningINorge",
         "andelOppdragINorge",
         "andelKontrakterINorge",
+        "andelRekruttertINorge",
         "arbeidstakereRekruttertILand",
         "oppdragsKontrakterIHovedsakInngaattILand",
         "ekstraArbeidsgivere"
@@ -617,6 +619,14 @@
             75
           ]
         },
+        "antallUtsendte": {
+          "type": ["integer","null"],
+          "title": "The AntallUtsendte Schema",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
         "andelOmsetningINorge": {
           "type": ["number","null"],
           "title": "The Andelomsetninginorge Schema",
@@ -639,6 +649,14 @@
           "default": 0.0,
           "examples": [
             50.5
+          ]
+        },
+        "andelRekruttertINorge": {
+          "type": ["number","null"],
+          "title": "The AndelRekruttertINorge Schema",
+          "default": 0.0,
+          "examples": [
+            77.7
           ]
         },
         "arbeidstakereRekruttertILand": {
