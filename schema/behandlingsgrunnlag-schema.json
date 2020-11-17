@@ -6,9 +6,13 @@
   "additionalProperties": false,
   "required": [
     "data",
+    "mottaksdato",
     "type"
   ],
   "properties": {
+    "mottaksdato": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+    },
     "data": {
       "oneOf": [
         {
