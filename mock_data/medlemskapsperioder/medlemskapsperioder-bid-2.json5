@@ -1,0 +1,22 @@
+[
+  {
+    "id": 4,
+    "arbeidsland": "US",
+    "fomDato": "2018-01-01",
+    "tomDato": "2019-12-31",
+    "bestemmelse": "FTRL_KAP2_2_8_FØRSTE_LEDD_A",
+    "innvilgelsesResultat": "AVSLAATT",
+    "trygdedekning": "HELSE_OG_PENSJONSDEL",
+    "medlemskapstype": "FRIVILLIG"
+  },
+  {
+    "id": 4,
+    "arbeidsland": "US",
+    "fomDato": "2020-01-01",
+    "tomDato": "2020-10-01",
+    "bestemmelse": "FTRL_KAP2_2_8_FØRSTE_LEDD_A",
+    "innvilgelsesResultat": "INNVILGET",
+    "trygdedekning": "HELSE_OG_PENSJONSDEL",
+    "medlemskapstype": "FRIVILLIG"
+  }
+]
