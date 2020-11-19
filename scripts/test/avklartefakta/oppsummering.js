@@ -5,8 +5,8 @@ const testAll = navn => {
   Schema.printWhiteText(navn);
   Schema.testGetMockFiles(navn);
 };
-const oppsummert = {
+const oppsummering = {
   testAll,
 };
-module.exports.oppsummert = oppsummert;
+module.exports.oppsummering = oppsummering;
 

@@ -1,10 +1,10 @@
 const { avklartefakta } = require('./avklartefakta');
-const { oppsummert } = require('./oppsummert');
+const { oppsummering } = require('./oppsummering');
 const { virksomheter } = require('./virksomheter');
 
 
 module.exports = {
   avklartefakta,
-  oppsummert,
+  oppsummering,
   virksomheter,
 };
