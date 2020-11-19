@@ -10,8 +10,10 @@
   ],
   "properties": {
     "virksomheter" : {
-      "$id": "#/properties/avklartefakta-oppsummering/properties/virksomheter",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomheter"
+      "orgnummer" : {
+        "$id": "#/properties/avklartefakta-virksomheter/properties/virksomheter",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomheter"
+      }
     }
   }
 }
