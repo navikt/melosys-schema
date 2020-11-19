@@ -691,6 +691,7 @@
     "orgnummer" : {
       "title": "The Orgnummer Schema",
       "type": "array",
+      "$id": "#/definitions/orgnummer",
       "uniqueItems": true,
       "items": {
         "type": "string"
