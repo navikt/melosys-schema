@@ -688,8 +688,8 @@
         }
       }
     },
-    "virksomheter" : {
-      "title": "The Virksomheter Schema",
+    "orgnummer" : {
+      "title": "The Orgnummer Schema",
       "type": "array",
       "uniqueItems": true,
       "items": {

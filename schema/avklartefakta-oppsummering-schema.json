@@ -12,7 +12,7 @@
     "virksomheter" : {
       "orgnummer" : {
         "$id": "#/properties/avklartefakta-virksomheter/properties/virksomheter",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomheter"
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnummer"
       }
     }
   }
