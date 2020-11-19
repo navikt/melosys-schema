@@ -73,14 +73,13 @@
       ]
     },
     "juridiskArbeidsgiverNorge": {
-      "utsendteNeste12Mnd": 10,
       "antallAdmAnsatte": 35,
       "antallAnsatte": 350,
+      "antallUtsendte": 35,
       "andelOmsetningINorge": 78.5,
       "andelOppdragINorge": 50.5,
       "andelKontrakterINorge": 30.5,
-      "arbeidstakereRekruttertILand": "SE",
-      "oppdragsKontrakterIHovedsakInngaattILand": "NO",
+      "andelRekruttertINorge": 80.0,
       "ekstraArbeidsgivere": [
         "123123123",
         "943049467"

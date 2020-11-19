@@ -45,14 +45,13 @@
       "selvstendigForetak": []
     },
     "juridiskArbeidsgiverNorge": {
-      "utsendteNeste12Mnd": null,
       "antallAdmAnsatte": null,
       "antallAnsatte": null,
+      "antallUtsendte": null,
       "andelOmsetningINorge": null,
       "andelOppdragINorge": null,
       "andelKontrakterINorge": null,
-      "arbeidstakereRekruttertILand": null,
-      "oppdragsKontrakterIHovedsakInngaattILand": null,
+      "andelRekruttertINorge": null,
       "ekstraArbeidsgivere": []
     },
     "arbeidsinntekt": {

@@ -582,25 +582,16 @@
       "title": "The Juridiskarbeidsgivernorge Schema",
       "additionalProperties": false,
       "required": [
-        "utsendteNeste12Mnd",
         "antallAdmAnsatte",
         "antallAnsatte",
+        "antallUtsendte",
         "andelOmsetningINorge",
         "andelOppdragINorge",
         "andelKontrakterINorge",
-        "arbeidstakereRekruttertILand",
-        "oppdragsKontrakterIHovedsakInngaattILand",
+        "andelRekruttertINorge",
         "ekstraArbeidsgivere"
       ],
       "properties": {
-        "utsendteNeste12Mnd": {
-          "type": ["integer","null"],
-          "title": "The Utsendteneste12mnd Schema",
-          "default": 0,
-          "examples": [
-            10
-          ]
-        },
         "antallAdmAnsatte": {
           "type": ["integer","null"],
           "title": "The Antalladmansatte Schema",
@@ -615,6 +606,14 @@
           "default": 0,
           "examples": [
             75
+          ]
+        },
+        "antallUtsendte": {
+          "type": ["integer","null"],
+          "title": "The AntallUtsendte Schema",
+          "default": 0,
+          "examples": [
+            5
           ]
         },
         "andelOmsetningINorge": {
@@ -641,20 +640,12 @@
             50.5
           ]
         },
-        "arbeidstakereRekruttertILand": {
-          "type": ["string","null"],
-          "title": "The arbeidstakereRekruttertILand Schema",
+        "andelRekruttertINorge": {
+          "type": ["number","null"],
+          "title": "The AndelRekruttertINorge Schema",
           "default": 0.0,
           "examples": [
-            50.5
-          ]
-        },
-        "oppdragsKontrakterIHovedsakInngaattILand": {
-          "type": ["string","null"],
-          "title": "The oppdragsKontrakterIHovedsakInngaattILand Schema",
-          "default": 0.0,
-          "examples": [
-            50.5
+            77.7
           ]
         },
         "ekstraArbeidsgivere": {
