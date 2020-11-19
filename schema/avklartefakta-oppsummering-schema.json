@@ -1,0 +1,19 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/avklartefakta-oppsummering-schema.json",
+  "title": "The Avklartefakta Oppsummering Schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "virksomheter"
+  ],
+  "properties": {
+    "virksomheter" : {
+      "$id": "#/properties/virksomheter",
+      "orgnummer" : {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnummer"
+      }
+    }
+  }
+}
