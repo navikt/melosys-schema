@@ -688,10 +688,10 @@
         }
       }
     },
-    "orgnummer" : {
-      "title": "The Orgnummer Schema",
+    "virksomhetIDer" : {
+      "title": "The VirksomhetIDer Schema",
       "type": "array",
-      "$id": "#/definitions/orgnummer",
+      "$id": "#/definitions/virksomhetIDer",
       "uniqueItems": true,
       "items": {
         "type": "string"

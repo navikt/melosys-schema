@@ -11,8 +11,8 @@
   "properties": {
     "virksomheter" : {
       "$id": "#/properties/virksomheter",
-      "orgnummer" : {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnummer"
+      "virksomhetIDer" : {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomhetIDer"
       }
     }
   }
