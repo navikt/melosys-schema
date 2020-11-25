@@ -1,7 +1,7 @@
 const { medlemskapsperioder } = require('./medlemskapsperioder');
-const { opprettFraBestemmelse } = require('./medlemskapsperioderOpprettFraBestemmelse');
+const { bestemmelse } = require('./medlemskapsperioderBestemmelse');
 
 module.exports = {
   medlemskapsperioder,
-  opprettFraBestemmelse
+  bestemmelse
 };

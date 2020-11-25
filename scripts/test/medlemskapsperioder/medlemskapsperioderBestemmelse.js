@@ -4,9 +4,10 @@ const Schema = require('../../utils/schema-util');
 const testAll = navn => {
   Schema.printWhiteText(navn);
   Schema.testPostMockFiles(navn);
+  Schema.testGetMockFiles(navn);
 };
 
-const opprettFraBestemmelse = {
+const bestemmelse = {
   testAll,
 };
-module.exports.opprettFraBestemmelse = opprettFraBestemmelse;
+module.exports.bestemmelse = bestemmelse;
