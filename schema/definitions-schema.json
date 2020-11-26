@@ -267,7 +267,7 @@
           "pattern": "^(.*)$"
         },
         "term": {
-          "type": "string",
+          "type": ["string", "null"],
           "title": "The Term Schema",
           "default": "",
           "examples": [
