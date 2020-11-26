@@ -1,24 +1,120 @@
 {
-  "trygdedekninger": [
+  "Trygdedekninger": [
     {
-      "kode":"HELSEDEL",
-      "term":"Helsedel",
+      "kode": "PENSJONSDEL",
+      "term": "Pensjonsdel"
     },
     {
-      "kode":"HELSEDEL_MED_SYKE_OG_FORELDREPENGER",
-      "term":"Helsedel med rett til syke-/foreldrepenger",
+      "kode": "HELSEDEL",
+      "term": "Helsedel"
     },
     {
-      "kode":"PENSJONSDEL",
-      "term":"Pensjonsdel",
+      "kode": "HELSEDEL_MED_SYKE_OG_FORELDREPENGER",
+      "term": "Helsedel med rett til syke-/foreldrepenger"
     },
     {
-      "kode":"HELSE_OG_PENSJONSDEL",
-      "term":"Helse- og pensjonsdel",
+      "kode": "HELSE_OG_PENSJONSDEL_MED_SYKE_OG_FORELDREPENGER",
+      "term": "Helse- og pensjonsdel med rett til syke-/foreldrepenger"
     },
     {
-      "kode":"HELSE_OG_PENSJONSDEL_MED_SYKE_OG_FORELDREPENGER",
-      "term":"Helse- og pensjonsdel med rett til syke-/foreldrepenger",
+      "kode": "HELSE_OG_PENSJONSDEL",
+      "term": "Helse- og pensjonsdel"
     }
-  ]
+  ],
+  "Vilkaar": [
+    {
+      "kode": "FO_883_2004_ART11_3A",
+      "term": null
+    },
+    {
+      "kode": "FO_883_2004_ART11_4_2",
+      "term": null
+    },
+    {
+      "kode": "FTRL_2_8_FORUTGÅENDE_TRYGDETID",
+      "term": "Medlem i minst tre av de fem siste kalenderårene"
+    },
+    {
+      "kode": "FO_883_2004_ART12_2",
+      "term": null
+    },
+    {
+      "kode": "FO_883_2004_ART16_1",
+      "term": null
+    },
+    {
+      "kode": "ART12_2_NORMALT_DRIVER_VIRKSOMHET",
+      "term": null
+    },
+    {
+      "kode": "FTRL_2_8_NÆR_TILKNYTNING_NORGE",
+      "term": "Nær tilknytning til det norske samfunnet"
+    },
+    {
+      "kode": "ART12_1_VESENTLIG_VIRKSOMHET",
+      "term": null
+    },
+    {
+      "kode": "FTRL_2_12_UNNTAK_TURISTSKIP",
+      "term": null
+    },
+    {
+      "kode": "FO_883_2004_INNGANGSVILKAAR",
+      "term": null
+    },
+    {
+      "kode": "FO_883_2004_ART12_1",
+      "term": null
+    },
+    {
+      "kode": "ART12_1_FORUTGAAENDE_MEDLEMSKAP",
+      "term": null
+    },
+    {
+      "kode": "FO_883_2004_ART11_4_1",
+      "term": null
+    },
+    {
+      "kode": "FO_883_2004_ART87A",
+      "term": null
+    },
+    {
+      "kode": "BOSATT_I_NORGE",
+      "term": null
+    }
+  ],
+  "begrunnelser": {
+    "Ftrl_2_8_forutgaaende_trygdetid_begrunnelser": [
+      {
+        "kode": "ANSATT_I_VIRKSOMHET_MED_HOVEDSETE_I_NORGE",
+        "term": "Utsendt av norsk arbeidsgiver"
+      }
+    ],
+    "Ftrl_2_8_naer_tilknytning_norge_begrunnelser": [
+      {
+        "kode": "ANSATT_I_INTERNASJONAL_ORGANISASJON",
+        "term": "Arbeider i internasjonal organisasjon"
+      },
+      {
+        "kode": "ANSATT_I_UTENLANDSK_SELSKAP",
+        "term": "Arbeider i utenlandsk selskap"
+      },
+      {
+        "kode": "ANSATT_I_NORSK_VIRKSOMHET_IKKE_UTSENDT",
+        "term": "Arbeider i norsk virksomhet, men ikke utsendt"
+      },
+      {
+        "kode": "MEDFOLGENDE_SOM_ARBEIDER_FRA_HJEMMEKONTOR",
+        "term": "Medfølgende som arbeider på hjemmekontor"
+      },
+      {
+        "kode": "SJOFOLK_SOM_ER_BOSATT_I_UTLANDET",
+        "term": "Arbeider på utenlandskregistrert skip"
+      },
+      {
+        "kode": "ANSATT_I_MULTINASJONALT_SELSKAP",
+        "term": "Arbeider i multinasjonalt selskap"
+      }
+    ]
+  }
 }
