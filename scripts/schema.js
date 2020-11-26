@@ -75,6 +75,7 @@ const katalogMap = new Map([
   ['kodeverk-melosys-internt-folketrygden', Kodeverk.folketrygden],
   ['lovvalgsperioder', Lovvalgsperioder.lovvalgsperioder],
   ['medlemskapsperioder', Medlemskapsperioder.medlemskapsperioder],
+  ['medlemskapsperioder-bestemmelse', Medlemskapsperioder.bestemmelse],
   ['oppgaver-oversikt', Oppgaver.oversikt],
   ['oppgaver-plukk', Oppgaver.plukk],
   ['oppgaver-tilbakelegg', Oppgaver.tilbakelegg],

@@ -1,0 +1,22 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/medlemskapsperioder-opprettFraBestemmelse-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "bestemmelse"
+  ],
+  "properties": {
+    "bestemmelse": {
+      "$id": "#/items/properties/bestemmelse",
+      "type": "string",
+      "title": "The Bestemmelse Schema",
+      "default": "",
+      "examples": [
+        "FTRL_KAP2_2_8_FØRSTE_LEDD_A"
+      ]
+    }
+  }
+}

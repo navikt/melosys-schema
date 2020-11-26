@@ -1,0 +1,58 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/medlemskapsperioder-bestemmelse-schema.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "bestemmelse",
+      "vilkårOgBegrunnelser"
+    ],
+    "properties": {
+      "bestemmelse": {
+        "$id": "#/items/properties/bestemmelse",
+        "type": "string",
+        "title": "The Bestemmelse Schema",
+        "default": "",
+        "examples": [
+          "FTRL_KAP2_2_8_FØRSTE_LEDD_A"
+        ]
+      },
+      "vilkårOgBegrunnelser": {
+        "$id": "#/items/properties/vilkårOgBegrunnelser",
+        "type": "array",
+        "title": "The VilkårOgBegrunnelser Schema",
+        "items": {
+          "$id": "#/items",
+          "type": "object",
+          "title": "The Items Schema",
+          "required": [
+            "vilkaar",
+            "muligeBegrunnelser"
+          ],
+          "properties": {
+            "vilkaar": {
+              "$id": "#/items/properties/vilkaar",
+              "title": "The Vilkaar Schema",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vilkaar"
+            },
+            "muligeBegrunnelser": {
+              "$id": "#/items/properties/muligeBegrunnelser",
+              "title": "The MuligeBegrunnelser Schema",
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

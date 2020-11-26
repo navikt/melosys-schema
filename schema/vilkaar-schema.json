@@ -17,14 +17,9 @@
     ],
     "properties": {
       "vilkaar": {
-        "$id": "#/items/properties/vilkaar",
-        "type": "string",
         "title": "The Vilkaar Schema",
-        "default": "",
-        "examples": [
-          "BOSATTINORGE"
-        ],
-        "pattern": "^(.*)$"
+        "$id": "#/items/properties/vilkaar",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vilkaar"
       },
       "oppfylt": {
         "$id": "#/items/properties/oppfylt",

@@ -712,6 +712,28 @@
         "ENDRINGSVEDTAK"
       ]
     },
+    "vilkaar": {
+      "title": "The Vilkaar Schema",
+      "$id": "#/definitions/vilkaar",
+      "type": "string",
+      "enum": [
+        "FO_883_2004_INNGANGSVILKAAR",
+        "FO_883_2004_ART12_1",
+        "FO_883_2004_ART12_2",
+        "FO_883_2004_ART16_1",
+        "FO_883_2004_ART11_3A",
+        "FO_883_2004_ART11_4_1",
+        "FO_883_2004_ART11_4_2",
+        "ART12_1_VESENTLIG_VIRKSOMHET",
+        "ART12_1_FORUTGAAENDE_MEDLEMSKAP",
+        "ART12_2_NORMALT_DRIVER_VIRKSOMHET",
+        "BOSATT_I_NORGE",
+        "FTRL_2_12_UNNTAK_TURISTSKIP",
+        "FTRL_2_8_FORUTGÅENDE_TRYGDETID",
+        "FTRL_2_8_NÆR_TILKNYTNING_NORGE"
+      ],
+      "default": "FO_883_2004_INNGANGSVILKAAR"
+    },
     "familiemedlemmer": {
       "$id": "#/definitions/familiemedlemmer",
       "type": "array",
