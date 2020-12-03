@@ -116,5 +116,19 @@
         "term": "Arbeider i multinasjonalt selskap"
       }
     ]
-  }
+  },
+  "InnvilgelsesResultat": [
+    {
+      "kode": "DELVIS_INNVILGET",
+      "term": "Delvis innvilget"
+    },
+    {
+      "kode": "AVSLAATT",
+      "term": "Avslått"
+    },
+    {
+      "kode": "INNVILGET",
+      "term": "Innvilget"
+    }
+  ]
 }

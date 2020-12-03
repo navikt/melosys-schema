@@ -8,7 +8,8 @@
   "required": [
     "Trygdedekninger",
     "Vilkaar",
-    "begrunnelser"
+    "begrunnelser",
+    "InnvilgelsesResultat"
   ],
   "properties": {
     "Trygdedekninger": {
@@ -40,6 +41,12 @@
         "items": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         }
+      }
+    },
+    "InnvilgelsesResultat": {
+      "type": "array",
+      "items": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
       }
     }
   }
