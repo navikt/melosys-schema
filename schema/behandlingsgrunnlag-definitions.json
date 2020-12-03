@@ -49,11 +49,16 @@
             "type": "object",
             "additionalProperties": false,
             "required": [
+              "uuid",
               "fnr",
               "navn",
               "relasjonsrolle"
             ],
             "properties": {
+              "uuid": {
+                "type": "string",
+                "pattern": "^(.*)$"
+              },
               "fnr": {
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
               },
