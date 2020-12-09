@@ -1,0 +1,22 @@
+{
+  "avgiftspliktigLønnNorge": 123321,
+  "avgiftsperioderNorge": [
+    {
+      "fom": "2020-01-01",
+      "tom": "2020-02-01",
+      "trygdedekning": "PENSJONSDEL",
+      "avgiftssats": 13.1,
+      "avgiftPerMd": 1313
+    }
+  ],
+  "avgiftspliktigLønnUtland": -1,
+  "avgiftsperioderUtland": [
+    {
+      "fom": "2020-02-01",
+      "tom": "2020-03-01",
+      "trygdedekning": "PENSJONSDEL",
+      "avgiftssats": 4.1,
+      "avgiftPerMd": 4000
+    }
+  ]
+}

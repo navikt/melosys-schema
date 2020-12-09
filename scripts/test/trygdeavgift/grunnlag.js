@@ -1,4 +1,4 @@
-const Schema = require('../utils/schema-util');
+const Schema = require('../../utils/schema-util');
 
 const testAll = navn => {
   Schema.printWhiteText(navn);
@@ -6,7 +6,7 @@ const testAll = navn => {
   Schema.testPutMockFiles(navn);
 
 };
-const trygdeavgift = {
+const grunnlag = {
   testAll,
 };
-module.exports.trygdeavgift = trygdeavgift;
+module.exports.grunnlag = grunnlag;

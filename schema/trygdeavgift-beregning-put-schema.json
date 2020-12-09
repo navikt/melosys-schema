@@ -1,0 +1,24 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/trygdeavgift-beregning-put-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "avgiftspliktigLønnNorge",
+    "avgiftspliktigLønnUtland"
+  ],
+  "properties": {
+    "avgiftspliktigLønnNorge": {
+      "$id": "#/properties/avgiftspliktigLønnNorge",
+      "title": "The AvgiftspliktigLønnNorge Schema",
+      "type": "number"
+    },
+    "avgiftspliktigLønnUtland": {
+      "$id": "#/properties/avgiftspliktigLønnUtland",
+      "title": "The AvgiftspliktigLønnUtland Schema",
+      "type": "number"
+    }
+  }
+}
