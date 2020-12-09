@@ -1,0 +1,13 @@
+{
+  "lønnsforhold": "DELT_LØNN",
+  "inntektsinformasjonNorge": {
+    "erSkattepliktig": false,
+    "betalerArbeidsgiverAvgift": true,
+    "særligAvgiftsgruppe": "ARBEIDSTAKER_MALAYSIA",
+  },
+  "inntektsinformasjonUtland": {
+    "erSkattepliktig": true,
+    "betalerArbeidsgiverAvgift": false,
+    "særligAvgiftsgruppe": null,
+  },
+}

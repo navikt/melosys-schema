@@ -21,6 +21,7 @@ const Personer = require('./test/personer');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
 const Statistikk = require('./test/statistikk');
+const Trygdeavgift = require('./test/trygdeavgift');
 const Utpekingsperioder = require('./test/utpekingsperioder');
 const Vilkaar = require('./test/vilkaar');
 
@@ -91,6 +92,7 @@ const katalogMap = new Map([
   ['saksflyt-vedtak-endre', Saksflyt.vedtak.endre],
   ['saksflyt-vedtak-fatt', Saksflyt.vedtak.fatt],
   ['statistikk', Statistikk.statistikk],
+  ['trygdeavgift-grunnlag', Trygdeavgift.trygdeavgift],
   ['behandlingsgrunnlag', Behandlingsgrunnlag.behandlingsgrunnlag],
   ['utpekingsperioder', Utpekingsperioder.utpekingsperioder],
   ['vilkaar', Vilkaar.vilkaar],

@@ -1,0 +1,32 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/trygdeavgift-grunnlag-put-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "lønnsforhold",
+    "inntektsinformasjonNorge",
+    "inntektsinformasjonUtland"
+  ],
+  "properties": {
+    "lønnsforhold": {
+      "$id": "#/properties/lønnsforhold",
+      "title": "The Lønnsforhold Schema",
+      "type": ["string", "null"],
+      "enum": [
+        null,
+        "LØNN_FRA_NORGE",
+        "LØNN_FRA_UTLANDET",
+        "DELT_LØNN"
+      ]
+    },
+    "inntektsinformasjonNorge": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/inntektsinformasjon"
+    },
+    "inntektsinformasjonUtland": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/inntektsinformasjon"
+    }
+  }
+}

@@ -239,6 +239,40 @@
       ],
       "pattern": "^\\d{11}$|^$"
     },
+    "inntektsinformasjon":  {
+      "$id": "#/definitions/inntektsinformasjon",
+      "type": "object",
+      "title": "The Inntektsinformasjon Schema",
+      "additionalProperties": false,
+      "required": [
+        "erSkattepliktig",
+        "betalerArbeidsgiverAvgift",
+        "særligAvgiftsgruppe"
+      ],
+      "properties": {
+        "erSkattepliktig": {
+          "type": "boolean",
+          "title": "The ErSkattepliktig Schema",
+          "$id": "#/definitions/inntektsinformasjon/properties/erSkattepliktig"
+        },
+        "betalerArbeidsgiverAvgift": {
+          "type": "boolean",
+          "title": "The BetalerArbeidsgiverAvgift Schema",
+          "$id": "#/definitions/inntektsinformasjon/properties/betalerArbeidsgiverAvgift"
+        },
+        "særligAvgiftsgruppe": {
+          "type": ["string","null"],
+          "title": "The SærligAvgiftsgruppe Schema",
+          "$id": "#/definitions/inntektsinformasjon/properties/særligAvgiftsgruppe",
+          "enum": [
+            null,
+            "FN",
+            "MISJONÆR",
+            "ARBEIDSTAKER_MALAYSIA"
+          ]
+        }
+      }
+    },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
       "type": "string",

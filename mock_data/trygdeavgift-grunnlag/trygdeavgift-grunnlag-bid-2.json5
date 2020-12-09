@@ -1,0 +1,15 @@
+{
+  "lønnsforhold": "DELT_LØNN",
+  "inntektsinformasjonNorge": {
+    "erSkattepliktig": false,
+    "betalerArbeidsgiverAvgift": true,
+    "særligAvgiftsgruppe": "ARBEIDSTAKER_MALAYSIA",
+  },
+  "inntektsinformasjonUtland": {
+    "erSkattepliktig": true,
+    "betalerArbeidsgiverAvgift": false,
+    "særligAvgiftsgruppe": null,
+  },
+  "vurderingTrygdeavgiftNorskInntekt": "NORSK_INNTEKT_INGEN_TRYGDEAVGIFT_NAV",
+  "vurderingTrygdeavgiftUtenlandskInntekt": "UTENLANDSK_INNTEKT_TRYGDEAVGIFT_NAV",
+}
