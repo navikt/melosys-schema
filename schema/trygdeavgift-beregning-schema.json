@@ -15,7 +15,7 @@
     "avgiftspliktigLønnNorge": {
       "$id": "#/properties/avgiftspliktigLønnNorge",
       "title": "The AvgiftspliktigLønnNorge Schema",
-      "type": "number"
+      "type": ["number", "null"]
     },
     "avgiftsperioderNorge": {
       "$id": "#/properties/avgiftsperioderNorge",
@@ -25,7 +25,7 @@
     "avgiftspliktigLønnUtland": {
       "$id": "#/properties/avgiftspliktigLønnUtland",
       "title": "The AvgiftspliktigLønnUtland Schema",
-      "type": "number"
+      "type": ["number", "null"]
     },
     "avgiftsperioderUtland": {
       "$id": "#/properties/avgiftsperioderUtland",

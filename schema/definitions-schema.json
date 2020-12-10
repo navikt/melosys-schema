@@ -293,12 +293,12 @@
       ],
       "properties": {
         "erSkattepliktig": {
-          "type": "boolean",
+          "type": ["boolean", "null"],
           "title": "The ErSkattepliktig Schema",
           "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/erSkattepliktig"
         },
         "betalerArbeidsgiverAvgift": {
-          "type": "boolean",
+          "type": ["boolean", "null"],
           "title": "The BetalerArbeidsgiverAvgift Schema",
           "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/betalerArbeidsgiverAvgift"
         },

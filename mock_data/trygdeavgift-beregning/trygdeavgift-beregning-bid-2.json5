@@ -2,21 +2,34 @@
   "avgiftspliktigLønnNorge": 123321,
   "avgiftsperioderNorge": [
     {
-      "fom": "2020-01-01",
-      "tom": "2020-02-01",
+      "fom": "2019-01-01",
+      "tom": "2019-02-01",
       "trygdedekning": "PENSJONSDEL",
       "avgiftssats": 13.1,
       "avgiftPerMd": 1313
+    },
+    {
+      "fom": "2019-02-02",
+      "tom": "2020-02-01",
+      "trygdedekning": "HELSE_OG_PENSJONSDEL_MED_SYKE_OG_FORELDREPENGER",
+      "avgiftssats": 13.8,
+      "avgiftPerMd": 4567
+    },
+    {
+      "fom": "2020-02-02",
+      "tom": "2020-05-01",
+      "trygdedekning": "HELSEDEL",
+      "avgiftssats": 5.1,
+      "avgiftPerMd": 12080
+    },
+    {
+      "fom": "2020-05-02",
+      "tom": null,
+      "trygdedekning": "HELSEDEL_MED_SYKE_OG_FORELDREPENGER",
+      "avgiftssats": 8.1,
+      "avgiftPerMd": 871
     }
   ],
-  "avgiftspliktigLønnUtland": -1,
-  "avgiftsperioderUtland": [
-    {
-      "fom": "2020-02-01",
-      "tom": "2020-03-01",
-      "trygdedekning": "PENSJONSDEL",
-      "avgiftssats": 4.1,
-      "avgiftPerMd": 4000
-    }
-  ]
+  "avgiftspliktigLønnUtland": null,
+  "avgiftsperioderUtland": []
 }
