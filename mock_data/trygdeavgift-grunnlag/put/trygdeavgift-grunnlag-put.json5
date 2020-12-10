@@ -1,11 +1,11 @@
 {
   "lønnsforhold": "DELT_LØNN",
-  "inntektsinformasjonNorge": {
+  "trygdeavgiftsgrunnlagNorge": {
     "erSkattepliktig": false,
     "betalerArbeidsgiverAvgift": true,
     "særligAvgiftsgruppe": "ARBEIDSTAKER_MALAYSIA",
   },
-  "inntektsinformasjonUtland": {
+  "trygdeavgiftsgrunnlagUtland": {
     "erSkattepliktig": true,
     "betalerArbeidsgiverAvgift": false,
     "særligAvgiftsgruppe": null,

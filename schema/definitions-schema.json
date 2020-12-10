@@ -281,10 +281,10 @@
       ],
       "pattern": "^\\d{11}$|^$"
     },
-    "inntektsinformasjon":  {
-      "$id": "#/definitions/inntektsinformasjon",
+    "trygdeavgiftsgrunnlag":  {
+      "$id": "#/definitions/trygdeavgiftsgrunnlag",
       "type": "object",
-      "title": "The Inntektsinformasjon Schema",
+      "title": "The Trygdeavgiftsgrunnlag Schema",
       "additionalProperties": false,
       "required": [
         "erSkattepliktig",
@@ -295,17 +295,17 @@
         "erSkattepliktig": {
           "type": "boolean",
           "title": "The ErSkattepliktig Schema",
-          "$id": "#/definitions/inntektsinformasjon/properties/erSkattepliktig"
+          "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/erSkattepliktig"
         },
         "betalerArbeidsgiverAvgift": {
           "type": "boolean",
           "title": "The BetalerArbeidsgiverAvgift Schema",
-          "$id": "#/definitions/inntektsinformasjon/properties/betalerArbeidsgiverAvgift"
+          "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/betalerArbeidsgiverAvgift"
         },
         "særligAvgiftsgruppe": {
           "type": ["string","null"],
           "title": "The SærligAvgiftsgruppe Schema",
-          "$id": "#/definitions/inntektsinformasjon/properties/særligAvgiftsgruppe",
+          "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/særligAvgiftsgruppe",
           "enum": [
             null,
             "FN",

@@ -7,8 +7,8 @@
   "additionalProperties": false,
   "required": [
     "lønnsforhold",
-    "inntektsinformasjonNorge",
-    "inntektsinformasjonUtland"
+    "trygdeavgiftsgrunnlagNorge",
+    "trygdeavgiftsgrunnlagUtland"
   ],
   "properties": {
     "lønnsforhold": {
@@ -22,11 +22,11 @@
         "DELT_LØNN"
       ]
     },
-    "inntektsinformasjonNorge": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/inntektsinformasjon"
+    "trygdeavgiftsgrunnlagNorge": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
     },
-    "inntektsinformasjonUtland": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/inntektsinformasjon"
+    "trygdeavgiftsgrunnlagUtland": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
     }
   }
 }
