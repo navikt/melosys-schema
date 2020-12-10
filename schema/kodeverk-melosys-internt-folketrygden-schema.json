@@ -9,7 +9,8 @@
     "Trygdedekninger",
     "Vilkaar",
     "begrunnelser",
-    "InnvilgelsesResultat"
+    "InnvilgelsesResultat",
+    "Saerligeavgiftsgrupper"
   ],
   "properties": {
     "Trygdedekninger": {
@@ -44,6 +45,12 @@
       }
     },
     "InnvilgelsesResultat": {
+      "type": "array",
+      "items": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      }
+    },
+    "Saerligeavgiftsgrupper": {
       "type": "array",
       "items": {
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
