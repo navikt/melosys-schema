@@ -1,0 +1,36 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/trygdeavgift-beregning-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "avgiftspliktigLønnNorge",
+    "avgiftsperioderNorge",
+    "avgiftspliktigLønnUtland",
+    "avgiftsperioderUtland"
+  ],
+  "properties": {
+    "avgiftspliktigLønnNorge": {
+      "$id": "#/properties/avgiftspliktigLønnNorge",
+      "title": "The AvgiftspliktigLønnNorge Schema",
+      "type": ["number", "null"]
+    },
+    "avgiftsperioderNorge": {
+      "$id": "#/properties/avgiftsperioderNorge",
+      "title": "The AvgiftsperioderNorge Schema",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avgiftsperioder"
+    },
+    "avgiftspliktigLønnUtland": {
+      "$id": "#/properties/avgiftspliktigLønnUtland",
+      "title": "The AvgiftspliktigLønnUtland Schema",
+      "type": ["number", "null"]
+    },
+    "avgiftsperioderUtland": {
+      "$id": "#/properties/avgiftsperioderUtland",
+      "title": "The AvgiftsperioderUtland Schema",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avgiftsperioder"
+    }
+  }
+}

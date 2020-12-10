@@ -46,6 +46,48 @@
         }
       }
     },
+    "avgiftsperioder":  {
+      "$id": "#/definitions/avgiftsperioder",
+      "type": "array",
+      "title": "The Avgiftsperioder Schema",
+      "items": {
+        "additionalProperties": false,
+        "required": [
+          "fom",
+          "tom",
+          "trygdedekning",
+          "avgiftssats",
+          "avgiftPerMd"
+        ],
+        "properties": {
+          "fom": {
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato",
+            "title": "The Fom Schema",
+            "$id": "#/definitions/avgiftsperioder/properties/fom"
+          },
+          "tom": {
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato",
+            "title": "The Tom Schema",
+            "$id": "#/definitions/avgiftsperioder/properties/tom"
+          },
+          "trygdedekning": {
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning",
+            "title": "The Trygdedekning Schema",
+            "$id": "#/definitions/avgiftsperioder/properties/trygdedekning"
+          },
+          "avgiftssats": {
+            "type": "number",
+            "title": "The Avgiftssats Schema",
+            "$id": "#/definitions/avgiftsperioder/properties/avgiftssats"
+          },
+          "avgiftPerMd": {
+            "type": "number",
+            "title": "The AvgiftPerMd Schema",
+            "$id": "#/definitions/avgiftsperioder/properties/avgiftPerMd"
+          }
+        }
+      }
+    },
     "behandlingID": {
       "type": "integer",
       "title": "The BehandlingID Schema",
@@ -238,6 +280,40 @@
         "81007251212"
       ],
       "pattern": "^\\d{11}$|^$"
+    },
+    "trygdeavgiftsgrunnlag":  {
+      "$id": "#/definitions/trygdeavgiftsgrunnlag",
+      "type": "object",
+      "title": "The Trygdeavgiftsgrunnlag Schema",
+      "additionalProperties": false,
+      "required": [
+        "erSkattepliktig",
+        "betalerArbeidsgiverAvgift",
+        "særligAvgiftsgruppe"
+      ],
+      "properties": {
+        "erSkattepliktig": {
+          "type": ["boolean", "null"],
+          "title": "The ErSkattepliktig Schema",
+          "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/erSkattepliktig"
+        },
+        "betalerArbeidsgiverAvgift": {
+          "type": ["boolean", "null"],
+          "title": "The BetalerArbeidsgiverAvgift Schema",
+          "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/betalerArbeidsgiverAvgift"
+        },
+        "særligAvgiftsgruppe": {
+          "type": ["string","null"],
+          "title": "The SærligAvgiftsgruppe Schema",
+          "$id": "#/definitions/trygdeavgiftsgrunnlag/properties/særligAvgiftsgruppe",
+          "enum": [
+            null,
+            "FN",
+            "MISJONÆR",
+            "ARBEIDSTAKER_MALAYSIA"
+          ]
+        }
+      }
     },
     "journalpostID": {
       "$id": "#/properties/journalpostID",
