@@ -35,7 +35,7 @@
     "vurderingTrygdeavgiftNorskInntekt": {
       "$id": "#/properties/vurderingTrygdeavgiftNorskInntekt",
       "title": "The VurderingTrygdeavgiftNorskInntekt Schema",
-      "type": "string",
+      "type": ["string", "null"],
       "enum": [
         "NORSK_INNTEKT_INGEN_TRYGDEAVGIFT_NAV",
         "NORSK_INNTEKT_TRYGDEAVGIFT_NAV"
@@ -44,7 +44,7 @@
     "vurderingTrygdeavgiftUtenlandskInntekt": {
       "$id": "#/properties/vurderingTrygdeavgiftUtenlandskInntekt",
       "title": "The VurderingTrygdeavgiftUtenlandskInntekt Schema",
-      "type": "string",
+      "type": ["string", "null"],
       "enum": [
         "UTENLANDSK_INNTEKT_INGEN_TRYGDEAVGIFT_NAV",
         "UTENLANDSK_INNTEKT_TRYGDEAVGIFT_NAV"

@@ -48,7 +48,7 @@
     },
     "avgiftsperioder":  {
       "$id": "#/definitions/avgiftsperioder",
-      "type": "array",
+      "type": ["array", "null"],
       "title": "The Avgiftsperioder Schema",
       "items": {
         "additionalProperties": false,
@@ -283,7 +283,7 @@
     },
     "trygdeavgiftsgrunnlag":  {
       "$id": "#/definitions/trygdeavgiftsgrunnlag",
-      "type": "object",
+      "type": ["object", "null"],
       "title": "The Trygdeavgiftsgrunnlag Schema",
       "additionalProperties": false,
       "required": [
