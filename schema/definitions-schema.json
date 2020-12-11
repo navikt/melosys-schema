@@ -48,7 +48,7 @@
     },
     "avgiftsperioder":  {
       "$id": "#/definitions/avgiftsperioder",
-      "type": ["array", "null"],
+      "type": "array",
       "title": "The Avgiftsperioder Schema",
       "items": {
         "additionalProperties": false,
