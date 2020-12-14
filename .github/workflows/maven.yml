@@ -1,0 +1,81 @@
+name: Maven
+
+on:
+  push:
+    branches:
+      - master
+      - github-actions # FIXME: Fjern
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '11.12.0'
+      - name: Debug
+        run: node -v && npm -v && npm config ls
+      - name: Set version
+        run: node -pe "require('./package.json').version" > version.txt
+      - name: Package zip
+        run: |
+          npm install
+          npm run zip
+      - uses: actions/upload-artifact@v2
+        with:
+          name: schema-zip
+          path: |
+            version.txt
+            maven-settings.xml
+            lib/@navikt/melosys-schema-*.zip
+          retention-days: 1
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: package
+    steps:
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+      - uses: actions/download-artifact@v2
+        with:
+          name: schema-zip
+      - name: Set release version
+        if: github.ref == 'refs/heads/master'
+        run: echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
+      - name: Set temp snapshot version # FIXME: Fjern steg
+        if: github.ref != 'refs/heads/master' && github.event.pull_request.number == ''
+        run: |
+          echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
+          echo "SNAPSHOT_VERSION=$(cat version.txt)-SNAPSHOT" >> $GITHUB_ENV
+      - name: Set snapshot version
+        if: github.ref != 'refs/heads/master' && github.event.pull_request.number != '' # FIXME: Fjern sjekk på pr_number
+        run: |
+          echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
+          echo "SNAPSHOT_VERSION=$(cat version.txt)-PR-${PR_NUMBER}-SNAPSHOT" >> $GITHUB_ENV
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+      - name: Publish to Maven
+        run: |
+          cp "lib/@navikt/melosys-schema-${VERSION}.zip" "melosys-schema-${SNAPSHOT_VERSION:-$VERSION}.jar"
+          mvn --settings maven-settings.xml deploy:deploy-file \
+            -Dfile="melosys-schema-${SNAPSHOT_VERSION:-$VERSION}.jar" \
+            -DartifactId=melosys-schema \
+            -DgroupId=no.nav.melosys \
+            -Dversion=${SNAPSHOT_VERSION:-$VERSION} \
+            -Ddescription="Melosys JSON-schema" \
+            -DrepositoryId=github \
+            -Durl="https://maven.pkg.github.com/${GITHUB_REPOSITORY}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
