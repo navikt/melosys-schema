@@ -47,11 +47,6 @@ jobs:
       - name: test
         run: npm run schema
 
-      - name: Prepare Maven package
-        run: |
-          node -pe "require('./package.json').version" > version.txt
-          npm run zip
-
       - name: Bump version
         run: |
           git config --global user.email "actions-melosys@nav.no"
@@ -69,6 +64,11 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare Maven package
+        run: |
+          node -pe "require('./package.json').version" > version.txt
+          npm run zip
 
       - name: Upload Maven dependencies
         uses: actions/upload-artifact@v2
