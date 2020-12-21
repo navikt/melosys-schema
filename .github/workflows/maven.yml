@@ -5,9 +5,9 @@ on:
     branches:
       - master
       - github-actions # FIXME: Fjern
-  pull_request:
-    branches:
-      - master
+#  pull_request:
+#    branches:
+#      - master
 
 jobs:
   package:
@@ -52,28 +52,16 @@ jobs:
         with:
           name: schema-zip
       - name: Set release version
-        if: github.ref == 'refs/heads/master'
+#        if: github.ref == 'refs/heads/master'
         run: echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
-      - name: Set temp snapshot version # FIXME: Fjern steg
-        if: github.ref != 'refs/heads/master' && github.event.pull_request.number == ''
-        run: |
-          echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
-          echo "SNAPSHOT_VERSION=$(cat version.txt)-SNAPSHOT" >> $GITHUB_ENV
-      - name: Set snapshot version
-        if: github.ref != 'refs/heads/master' && github.event.pull_request.number != '' # FIXME: Fjern sjekk på pr_number
-        run: |
-          echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
-          echo "SNAPSHOT_VERSION=$(cat version.txt)-PR-${PR_NUMBER}-SNAPSHOT" >> $GITHUB_ENV
-        env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
       - name: Publish to Maven
         run: |
-          cp "lib/@navikt/melosys-schema-${VERSION}.zip" "melosys-schema-${SNAPSHOT_VERSION:-$VERSION}.jar"
+          cp "lib/@navikt/melosys-schema-${VERSION}.zip" "melosys-schema-${VERSION}.jar"
           mvn --settings maven-settings.xml deploy:deploy-file \
-            -Dfile="melosys-schema-${SNAPSHOT_VERSION:-$VERSION}.jar" \
+            -Dfile="melosys-schema-${VERSION}.jar" \
             -DartifactId=melosys-schema \
             -DgroupId=no.nav.melosys \
-            -Dversion=${SNAPSHOT_VERSION:-$VERSION} \
+            -Dversion=${VERSION} \
             -Ddescription="Melosys JSON-schema" \
             -DrepositoryId=github \
             -Durl="https://maven.pkg.github.com/${GITHUB_REPOSITORY}"
