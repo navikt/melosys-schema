@@ -1,0 +1,112 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  empty-job:
+    # if no jobs run, github action considers it a test failure -- which seems like a bug
+    # this makes it so the top-level if statement for the job does not give status failure.
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - name: Meep
+        run: |
+          echo "This job will always succeed. If no jobs run, we still want the workflow to give status success."
+
+  build:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.3.1'
+          registry-url: https://npm.pkg.github.com/
+          scope: '@navikt'
+
+      - name: npm install
+        run: npm i
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: test
+        run: npm run schema
+
+      - name: Prepare Maven package
+        run: |
+          node -pe "require('./package.json').version" > version.txt
+          npm run zip
+
+      - name: Bump version
+        run: |
+          git config --global user.email "actions-melosys@nav.no"
+          git config --global user.name "Actions"
+          COMMIT_MESSAGE=`git log -1 --pretty=%B`
+          npm version patch -m "%s, $COMMIT_MESSAGE, [skip ci]"
+
+      - name: Push changes to repository
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          branch: master
+          github_token: ${{ secrets.MELOSYS_CI_TOKEN }}
+
+      - name: publish to GPR
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Maven dependencies
+        uses: actions/upload-artifact@v2
+        with:
+          name: schema-zip
+          path: |
+            version.txt
+            maven-settings.xml
+            lib/@navikt/melosys-schema-*.zip
+          retention-days: 1
+
+  maven:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+
+      - name: Download Maven dependencies
+        uses: actions/download-artifact@v2
+        with:
+          name: schema-zip
+
+      - name: Set release version
+        run: echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
+
+      - name: Publish to Maven
+        run: |
+          cp "lib/@navikt/melosys-schema-${VERSION}.zip" "melosys-schema-${VERSION}.jar"
+          mvn --settings maven-settings.xml deploy:deploy-file \
+            -Dfile="melosys-schema-${VERSION}.jar" \
+            -DartifactId=melosys-schema \
+            -DgroupId=no.nav.melosys \
+            -Dversion=${VERSION} \
+            -Ddescription="Melosys JSON-schema" \
+            -DrepositoryId=github \
+            -Durl="https://maven.pkg.github.com/${GITHUB_REPOSITORY}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
