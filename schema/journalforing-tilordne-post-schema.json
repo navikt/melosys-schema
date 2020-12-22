@@ -113,7 +113,7 @@
       ]
     },
     "mottattDato": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
     }
   }
 }

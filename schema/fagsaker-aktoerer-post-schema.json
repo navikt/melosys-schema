@@ -22,7 +22,7 @@
     },
     "databaseID": {
       "title": "The DatabaseID schema",
-      "id": "#/items/properties/aktoerID",
+      "$id": "#/items/properties/aktoerID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-databaseID"
     },
     "orgnr": {
