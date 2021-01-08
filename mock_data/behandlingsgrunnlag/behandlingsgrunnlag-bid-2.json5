@@ -14,6 +14,18 @@
           "fnr": "31031779459",
           "navn": null,
           "relasjonsrolle": "BARN"
+        },
+        {
+          "uuid": "2519c5fc-5e27-425c-a1d4-eb7a5fc0021d",
+          "fnr": "19117220349",
+          "navn": "HATT GLITRENDE",
+          "relasjonsrolle": "BARN"
+        },
+        {
+          "uuid": "aaa68167-05e8-4f5e-b0fc-75e3de52025a",
+          "fnr": "08029828362",
+          "navn": "UTVIKLER OPTIMISTISK",
+          "relasjonsrolle": "EKTEFELLE_SAMBOER"
         }
       ]
     },
