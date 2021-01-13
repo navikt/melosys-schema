@@ -115,6 +115,38 @@
         "kode": "ANSATT_I_MULTINASJONALT_SELSKAP",
         "term": "Arbeider i multinasjonalt selskap"
       }
+    ],
+    "Medfolgende_barn_begrunnelser_ftrl": [
+      {
+        kode: "OVER_18_AR",
+        term: "Personen det søkes for er over 18 år"
+      },
+      {
+        kode: "IKKE_SOEKERS_BARN",
+        term: "Barnet er ikke søkerens eget"
+      },
+      {
+        kode: "MANGLER_OPPLYSNINGER",
+        term: "Mangler opplysninger for å vurdere barnets trygdetilhørighet"
+      }
+    ],
+    "Medfolgende_ektefelle_samboer_begrunnelser_ftrl": [
+      {
+        "kode": "SAMBOER_UTEN_FELLES_BARN",
+        "term": "Samboer uten felles barn"
+      },
+      {
+        "kode": "EGEN_INNTEKT",
+        "term": "Ektefelle/samboer har egen inntekt"
+      },
+      {
+        "kode": "IKKE_TRE_AV_FEM",
+        "term": "Ektefelle/samboer har ikke vært medlem i tre av de siste fem kalenderårene"
+      },
+      {
+        "kode": "MANGLER_OPPLYSNINGER",
+        "term": "Mangler opplysninger for å vurdere ektefelle/samboers trygdetilhørighet"
+      }
     ]
   },
   "InnvilgelsesResultat": [
