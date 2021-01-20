@@ -1,9 +1,1 @@
-[
-  {
-    vilkaar: 'FO_883_2004_INNGANGSVILKAAR',
-    oppfylt: true,
-    begrunnelseKoder: [],
-    begrunnelseFritekst: null,
-    begrunnelseFritekstEngelsk: null,
-  }
-]
+[{"vilkaar":"ART12_1_FORUTGAAENDE_MEDLEMSKAP","oppfylt":true,"begrunnelseKoder":[],"begrunnelseFritekst":null,"begrunnelseFritekstEngelsk":null},{"vilkaar":"ART12_1_VESENTLIG_VIRKSOMHET","oppfylt":true,"begrunnelseKoder":[],"begrunnelseFritekst":null,"begrunnelseFritekstEngelsk":null},{"vilkaar":"FO_883_2004_ART12_1","oppfylt":false,"begrunnelseKoder":["ERSTATTER_ANNEN"],"begrunnelseFritekst":null,"begrunnelseFritekstEngelsk":null},{"vilkaar":"FO_883_2004_ART16_1","oppfylt":true,"begrunnelseKoder":["UTSENDELSE_MELLOM_24_MN_OG_5_AAR"],"begrunnelseFritekst":null,"begrunnelseFritekstEngelsk":null},{"vilkaar":"FO_883_2004_INNGANGSVILKAAR","oppfylt":true,"begrunnelseKoder":[],"begrunnelseFritekst":null,"begrunnelseFritekstEngelsk":null}]
