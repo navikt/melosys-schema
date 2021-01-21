@@ -1,12 +1,7 @@
 [
   {
-    "id": "NAVT002",
-    "navn": "Nav test 004",
-    "landkode": "NO"
+    id: "ES:6020",
+    navn: "GENERAL TREASURY OF THE SOCIAL SECURITY. GENERAL DIRECTORATE",
+    landkode: "ES",
   },
-  {
-    "id": "NAVT003",
-    "navn": "Nav test 005",
-    "landkode": "NO"
-  }
 ]

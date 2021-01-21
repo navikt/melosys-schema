@@ -1,17 +1,17 @@
 {
-  "anmodningsperioder": [
+  anmodningsperioder: [
     {
-      "id": "ID",
-      "fomDato": "2019-01-01",
-      "tomDato": "2020-01-01",
-      "lovvalgBestemmelse": "ART12_1",
-      "lovvalgsland": "NO",
-      "medlemskapsperiodeID": "100111203",
-      "sendtUtland": false,
-      "tilleggBestemmelse": "FO_883_2004_ART13_4",
-      "trygdeDekning": "FULL_DEKNING_EOSFO",
-      "unntakFraBestemmelse": null,
-      "unntakFraLovvalgsland": null
-    }
-  ]
+      id: "4396",
+      fomDato: "2020-08-30",
+      tomDato: "2025-08-30",
+      lovvalgBestemmelse: "FO_883_2004_ART16_1",
+      tilleggBestemmelse: null,
+      lovvalgsland: "NO",
+      unntakFraBestemmelse: "FO_883_2004_ART11_3A",
+      unntakFraLovvalgsland: "ES",
+      trygdeDekning: "FULL_DEKNING_EOSFO",
+      medlemskapsperiodeID: null,
+      sendtUtland: true,
+    },
+  ],
 }

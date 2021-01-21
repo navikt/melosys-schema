@@ -1,1 +1,26 @@
-[]
+[
+  {
+    fakta: ["TRUE"],
+    referanse: "VIRKSOMHET",
+    subjektID: "938555222",
+    begrunnelseKoder: [],
+    begrunnelseFritekst: null,
+    avklartefaktaKode: "VIRKSOMHET",
+  },
+  {
+    fakta: ["TRUE"],
+    referanse: "SOKNADSLAND",
+    subjektID: "ES",
+    begrunnelseKoder: [],
+    begrunnelseFritekst: null,
+    avklartefaktaKode: null,
+  },
+  {
+    fakta: ["ORDINAER_UTEN_ART12"],
+    referanse: "YRKESGRUPPE",
+    subjektID: null,
+    begrunnelseKoder: [],
+    begrunnelseFritekst: null,
+    avklartefaktaKode: "YRKESGRUPPE",
+  },
+]

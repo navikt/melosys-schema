@@ -1,9 +1,9 @@
 {
-  "begrunnelseKoder" : [ "OPPHOLD_UTL_AVLYST" ],
-  "begrunnelseFritekst" : null,
-  "behandlingsresultatTypeKode": "IKKE_FASTSATT",
-  "kontrollresultatBegrunnelseKoder": [],
-  "utfallRegistreringUnntak": null,
-  "utfallUtpeking": null,
-  "vedtakstype": "FØRSTEGANGSVEDTAK"
+  behandlingsresultatTypeKode: "FASTSATT_LOVVALGSLAND",
+  begrunnelseKoder: [],
+  begrunnelseFritekst: null,
+  utfallRegistreringUnntak: null,
+  utfallUtpeking: null,
+  vedtakstype: "FØRSTEGANGSVEDTAK",
+  kontrollresultatBegrunnelseKoder: [],
 }

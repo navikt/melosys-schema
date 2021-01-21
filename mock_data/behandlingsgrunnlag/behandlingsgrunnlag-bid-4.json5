@@ -1,135 +1,74 @@
 {
-  "mottaksdato": "2020-03-10",
-  "data": {
-    "personOpplysninger": {
-      "utenlandskIdent": [
-        {
-          "ident": "123456789",
-          "landkode": "DK"
-        }
-      ],
-      "medfolgendeFamilie": [
-        {
-          "uuid": "416c97d5-fd1d-4eff-952c-edc42aeb40a0",
-          "fnr": "31031779459",
-          "navn": "BRÅKETE GYNGEHEST",
-          "relasjonsrolle": "BARN"
-        }
-      ]
-    },
-    "arbeidUtland": [{
-      "adresse": {
-        "gatenavn": "Adresseveien 123",
-        "husnummer": "123",
-        "region": "Brandenburger",
-        "postnummer": "1234",
-        "poststed": "Poststedet",
-        "landkode": "DE"
-      },
-      "foretakNavn": "EQUINOR",
-      "foretakOrgnr": "372384726",
-      "arbeidUtlandHjemmekontor": false
-    }],
-    "foretakUtland": [
+  data: {
+    soeknadsland: { landkoder: ["ES"] },
+    periode: { fom: "2020-08-30", tom: "2025-08-30" },
+    personOpplysninger: { utenlandskIdent: [], medfolgendeFamilie: [] },
+    arbeidUtland: [
       {
-        "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
-        "navn": "EQUINOR DEUTSCHLAND",
-        "orgnr": "372384726",
-        "selvstendigNaeringsvirksomhet": true,
-        "adresse": {
-          "gatenavn": "Deutschlandstrasse",
-          "husnummer": "123",
-          "region": "Brandenburger",
-          "postnummer": "3388",
-          "poststed": "Berlin",
-          "landkode": "DE"
-        }
-      }
-    ],
-    "oppholdUtland": {
-      "oppholdslandkoder": ["DK"],
-      "oppholdsPeriode": {
-        "fom": "2018-01-01",
-        "tom": "2018-06-01"
+        foretakNavn: "SJØMANNSKIRKEN - NORSK KIRKE I UTLANDET",
+        foretakOrgnr: null,
+        arbeidUtlandHjemmekontor: null,
+        adresse: {
+          landkode: "ES",
+          gatenavn: "C. Mart 8, El Albir",
+          husnummer: null,
+          region: null,
+          postnummer: "03851",
+          poststed: "Alfaz del Pi",
+        },
       },
-      "ektefelleEllerBarnINorge": true,
-      "studentFinansieringKode": "LAANEKASSEN",
-      "studentSemester": "2018/2019"
+    ],
+    foretakUtland: [],
+    oppholdUtland: {
+      oppholdslandkoder: [],
+      oppholdsPeriode: { fom: null, tom: null },
+      studentFinansieringKode: null,
+      studentSemester: null,
+      ektefelleEllerBarnINorge: null,
     },
-    "bosted": {
-      "intensjonOmRetur": true,
-      "antallMaanederINorge": 8,
-      "oppgittAdresse": {
-        "gatenavn": "Gateadressen",
-        "husnummer": "14B",
-        "region": "St.Hanshaugen Distrikt",
-        "postnummer": "12345",
-        "poststed": "Poststeder",
-        "landkode": "DE"
-      }
+    selvstendigArbeid: { erSelvstendig: null, selvstendigForetak: [] },
+    juridiskArbeidsgiverNorge: {
+      antallAdmAnsatte: null,
+      antallAnsatte: null,
+      antallUtsendte: null,
+      andelOmsetningINorge: null,
+      andelOppdragINorge: null,
+      andelKontrakterINorge: null,
+      andelRekruttertINorge: null,
+      ekstraArbeidsgivere: ["938555222"],
     },
-    "selvstendigArbeid": {
-      "erSelvstendig": true,
-      "selvstendigForetak": [
-        { "orgnr": "910253158", "fortsetterEtterArbeidIUtlandet": true }
-      ]
-    },
-    "juridiskArbeidsgiverNorge": {
-      "antallAdmAnsatte": 35,
-      "antallAnsatte": 350,
-      "antallUtsendte": 35,
-      "andelOmsetningINorge": 78.5,
-      "andelOppdragINorge": 50.5,
-      "andelKontrakterINorge": 30.5,
-      "andelRekruttertINorge": 80.0,
-      "ekstraArbeidsgivere": []
-    },
-    "arbeidsinntekt": {
-      "inntektNorskIPerioden": 5500,
-      "inntektUtenlandskIPerioden": 2000,
-      "inntektNaeringIPerioden": 1000,
-      "inntektNaturalytelser": {
-        "friBolig": true,
-        "friBil": true,
-        "friAnnet": "Ubegrenset mengde kaffegrut fra bedriftens kaffemaskinen"
+    maritimtArbeid: [],
+    luftfartBaser: [],
+    bosted: {
+      intensjonOmRetur: null,
+      antallMaanederINorge: 0,
+      oppgittAdresse: {
+        landkode: null,
+        gatenavn: null,
+        husnummer: null,
+        region: null,
+        postnummer: null,
+        poststed: null,
       },
-      "inntektErInnrapporteringspliktig": true,
-      "inntektTrygdeavgiftBlirTrukket": true
     },
-    "arbeidsgiversBekreftelse": {
-      "arbeidsgiverBekrefterUtsendelse": true,
-      "arbeidstakerAnsattUnderUtsendelsen": true,
-      "erstatterArbeidstakerenUtsendte": false,
-      "arbeidstakerTidligereUtsendt24Mnd": false,
-      "arbeidsgiverBetalerArbeidsgiveravgift": true,
-      "trygdeavgiftTrukketGjennomSkatt": true,
-      "trygdeavgiftTrukketGjennomSkattDato": "2018-01-01"
+    arbeidsinntekt: {
+      inntektNorskIPerioden: null,
+      inntektUtenlandskIPerioden: null,
+      inntektNaeringIPerioden: null,
+      inntektNaturalytelser: { friBil: null, friBolig: null, friAnnet: null },
+      inntektErInnrapporteringspliktig: null,
+      inntektTrygdeavgiftBlirTrukket: null,
     },
-    "maritimtArbeid": [
-      {
-        "enhetNavn": "Dunfjæder",
-        "fartsomradeKode": "INNENRIKS",
-        "flaggLandkode": "GB",
-        "installasjonsLandkode": "GB",
-        "territorialfarvann": "GB",
-        "foretakNavn": "SWECO NORGE AS",
-        "foretakOrgnr": "967032271"
-      }
-    ],
-    "luftfartBaser": [
-      {
-        "hjemmebaseNavn": "Dunfjæder",
-        "hjemmebaseLand": "GB",
-        "typeFlyvninger": "NASJONAL"
-      }
-    ],
-    "soeknadsland": {
-      "landkoder": ["DK"]
+    arbeidsgiversBekreftelse: {
+      arbeidsgiverBekrefterUtsendelse: null,
+      arbeidstakerAnsattUnderUtsendelsen: null,
+      erstatterArbeidstakerenUtsendte: null,
+      arbeidstakerTidligereUtsendt24Mnd: null,
+      arbeidsgiverBetalerArbeidsgiveravgift: null,
+      trygdeavgiftTrukketGjennomSkatt: null,
+      trygdeavgiftTrukketGjennomSkattDato: null,
     },
-    "periode": {
-      "fom": "2018-01-02",
-      "tom": "2019-01-02"
-    }
   },
-  "type": "SØKNAD_A1_YRKESAKTIVE_EØS",
+  type: "SØKNAD_A1_YRKESAKTIVE_EØS",
+  mottaksdato: null,
 }

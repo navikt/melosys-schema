@@ -1,0 +1,28 @@
+{
+  orgnr: "938555222",
+  navn: "SJØMANNSKIRKEN - NORSK KIRKE I UTLANDET",
+  oppstartdato: null,
+  organisasjonsform: "Forening/lag/innretning",
+  forretningsadresse: {
+    gateadresse: {
+      gatenavn: "Nordnes Strandgaten 198",
+      gatenummer: null,
+      husnummer: null,
+      husbokstav: null,
+    },
+    postnr: "5004",
+    poststed: "BERGEN",
+    land: "NORGE",
+  },
+  postadresse: {
+    gateadresse: {
+      gatenavn: "Postboks 2007 Nordnes",
+      gatenummer: null,
+      husnummer: null,
+      husbokstav: null,
+    },
+    postnr: "5817",
+    poststed: "BERGEN",
+    land: "NORGE",
+  },
+}

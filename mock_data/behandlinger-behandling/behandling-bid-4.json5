@@ -1,827 +1,985 @@
 {
-  "behandlingID": 4,
-  "redigerbart": true,
-  "saksopplysninger": {
-    "arbeidsforhold": [
-      {
-        "Aordning": true,
-        "opprettelsestidspunkt": "2018-02-18T07:32:45.797+01:00",
-        "opplysningspliktigID": "810072512",
-        "utenlandsopphold": [
-        ],
-        "arbeidsforholdIDnav": 44138109,
-        "arbeidsavtaler": [
-          {
-            "arbeidstidsordning": {
-              "kode": null,
-              "term": null
-            },
-            "avtaltArbeidstimerPerUke": null,
-            "endringsdatoStillingsprosent": null,
-            "maritimArbeidsavtale": false,
-            "avloenningstype": "",
-            "skipsregister": {
-              "kode": null,
-              "term": null
-            },
-            "yrke": {
-              "kode": "9120105",
-              "term": "ALTMULIGMANN (PRIVATHJEM)"
-            },
-            "antallTimerGammeltAa": null,
-            "beregnetStillingsprosent": null,
-            "fartsomraade": {
-              "kode": null,
-              "term": null
-            },
-            "beregnetAntallTimerPrUke": 0,
-            "stillingsprosent": null,
-            "skipstype": {
-              "kode": null,
-              "term": null
-            },
-            "gyldighetsperiode": {
-              "fom": "2016-03-01",
-              "tom": null
-            }
-          }
-        ],
-        "permisjonOgPermittering": [
-        ],
-        "arbeidsgivertype": "Organisasjon",
-        "arbeidsgiverID": "910099035",
-        "ansettelsesPeriode": {
-          "fom": "2016-03-01",
-          "tom": null
-        },
-        "arbeidsforholdstype": "Forenklet oppgjørsordning",
-        "arbeidstakerID": "19117220349",
-        "opplysningspliktigtype": "Organisasjon",
-        "sistBekreftet": "2018-02-18T07:32:36+01:00",
-        "timerTimelonnet": [
-        ],
-        "arbeidsforholdID": ""
-      },
-      {
-        "Aordning": true,
-        "opprettelsestidspunkt": "2018-03-01T09:13:00.621+01:00",
-        "opplysningspliktigID": "991492704",
-        "utenlandsopphold": [
-          {
-            "periode": {
-              "fom": "2017-02-01",
-              "tom": "2017-02-28"
-            },
-            "land": "STORBRITANNIA",
-            "rapporteringsAarMaaned": "2017-01"
-          }
-        ],
-        "arbeidsforholdIDnav": 44138119,
-        "arbeidsavtaler": [
-          {
-            "arbeidstidsordning": {
-              "kode": "ikkeSkift",
-              "term": "Ikke skift"
-            },
-            "avtaltArbeidstimerPerUke": 37.5,
-            "endringsdatoStillingsprosent": null,
-            "maritimArbeidsavtale": false,
-            "avloenningstype": "Fastlønn",
-            "skipsregister": {
-              "kode": null,
-              "term": null
-            },
-            "yrke": {
-              "kode": "3423102",
-              "term": "VIKARBYRÅKONSULENT"
-            },
-            "antallTimerGammeltAa": null,
-            "beregnetStillingsprosent": null,
-            "fartsomraade": {
-              "kode": null,
-              "term": null
-            },
-            "beregnetAntallTimerPrUke": 37.5,
-            "stillingsprosent": 100,
-            "skipstype": {
-              "kode": null,
-              "term": null
-            },
-            "gyldighetsperiode": {
-              "fom": "2017-01-01",
-              "tom": null
-            }
-          }
-        ],
-        "permisjonOgPermittering": [
-          {
-            "permisjonsprosent": 100,
-            "permisjonOgPermittering": "Permisjon",
-            "permisjonsPeriode": {
-              "fom": "2017-05-01",
-              "tom": "2017-05-31"
-            },
-            "permisjonsId": "1"
-          }
-        ],
-        "arbeidsgivertype": "Organisasjon",
-        "arbeidsgiverID": "912499693",
-        "ansettelsesPeriode": {
-          "fom": "2017-01-01",
-          "tom": "2017-12-31"
-        },
-        "arbeidsforholdstype": "Ordinært arbeidsforhold",
-        "arbeidstakerID": "19117220349",
-        "opplysningspliktigtype": "Organisasjon",
-        "sistBekreftet": "2018-03-01T09:13:00+01:00",
-        "timerTimelonnet": [
-          {
-            "rapporteringsAarMaaned": "2017-01",
-            "antallTimer": 75,
-            "timelonnetPeriode": {
-              "fom": "2017-01-01",
-              "tom": "2017-01-31"
-            }
-          },
-          {
-            "rapporteringsAarMaaned": "2017-01",
-            "antallTimer": 75,
-            "timelonnetPeriode": {
-              "fom": "2017-02-01",
-              "tom": "2017-02-28"
-            }
-          }
-        ],
-        "arbeidsforholdID": "2"
-      }
-    ],
-    "organisasjoner": [
-      {
-        "orgnr": "910099035",
-        "oppstartdato": null,
-        "postadresse": {
-          "postnr": "3936",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Olav Kyrres gate 9"
-          },
-          "poststed": "PORSGRUNN",
-          "land": "NORGE"
-        },
-        "organisasjonsform": null,
-        "navn": "SKARSVÅG OG VANSE",
-        "forretningsadresse": {
-          "postnr": "3936",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Olav Kyrres gate 9"
-          },
-          "poststed": "PORSGRUNN",
-          "land": "NORGE"
-        }
-      },
-      {
-        "orgnr": "912499693",
-        "oppstartdato": "2013-07-09",
-        "postadresse": {
-          "postnr": "3202",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Postboks 2044"
-          },
-          "poststed": "SANDEFJORD",
-          "land": "NORGE"
-        },
-        "organisasjonsform": null,
-        "navn": "TOP-TOY NORGE AS AVD HOVEDKONTOR",
-        "forretningsadresse": {
-          "postnr": "3221",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Pindsleveien 1C"
-          },
-          "poststed": "SANDEFJORD",
-          "land": "NORGE"
-        }
-      },
-      {
-        "orgnr": "991492704",
-        "oppstartdato": null,
-        "postadresse": {
-          "postnr": null,
-          "gateadresse": {
-            "gatenavn": null,
-            "gatenummer": null,
-            "husnummer": null,
-            "husbokstav": null
-          },
-          "poststed": null,
-          "land": null
-        },
-        "organisasjonsform": "Aksjeselskap",
-        "navn": "TOP-TOY NORGE AS",
-        "forretningsadresse": {
-          "postnr": "1711",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Klokkergårdveien 32"
-          },
-          "poststed": "SARPSBORG",
-          "land": "NORGE"
-        }
-      },
-      {
-        "orgnr": "810072512",
-        "oppstartdato": null,
-        "postadresse": {
-          "postnr": "7081",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Lunderhaugen 1"
-          },
-          "poststed": "SJETNEMARKA",
-          "land": "NORGE"
-        },
-        "organisasjonsform": "Aksjeselskap",
-        "navn": "EIKEN OG TORSKEN",
-        "forretningsadresse": {
-          "postnr": "7081",
-          "gateadresse": {
-            "gatenummer": null,
-            "husbokstav": null,
-            "husnummer": null,
-            "gatenavn": "Lunderhaugen 1"
-          },
-          "poststed": "SJETNEMARKA",
-          "land": "NORGE"
-        }
-      }
-    ],
-    "inntekt": {
-      "arbeidsInntektMaanedListe": [
-        {
-          "arbeidsInntektInformasjon": {
-            "inntektListe": [
-              {
-                "opplysningspliktigID": "912499693",
-                "levereringstidspunkt": "2018-08-27T07:16:07.08",
-                "utbetaltIPeriode": "2017-11",
-                "inntektsperiodetype": "Maaned",
-                "inntektskilde": "A-ordningen",
-                "fordel": "kontantytelse",
-                "beloep": 30000.00,
-                "inntektsstatus": "LoependeInnrapportert",
-                "utloeserArbeidsgiveravgift": true,
-                "opptjeningsland": null,
-                "informasjonsstatus": "InngaarAlltid",
-                "virksomhetID": "912499693",
-                "beskrivelse": "fastloenn",
-                "inntektsmottakerID": "19117220349",
-                "inngaarIGrunnlagForTrekk": true,
-                "opptjeningsperiode": {
-                  "fom": null,
-                  "tom": null
-                }
-              }
-            ]
-          },
-          "aarMaaned": "2017-11"
-        },
-        {
-          "arbeidsInntektInformasjon": {
-            "inntektListe": [
-              {
-                "opplysningspliktigID": "912499693",
-                "levereringstidspunkt": "2018-08-27T07:16:07.08",
-                "utbetaltIPeriode": "2017-12",
-                "inntektsperiodetype": "Maaned",
-                "inntektskilde": "A-ordningen",
-                "fordel": "kontantytelse",
-                "beloep": 25000,
-                "inntektsstatus": "LoependeInnrapportert",
-                "utloeserArbeidsgiveravgift": true,
-                "opptjeningsland": null,
-                "informasjonsstatus": "InngaarAlltid",
-                "virksomhetID": "912499693",
-                "beskrivelse": "fastloenn",
-                "inntektsmottakerID": "19117220349",
-                "inngaarIGrunnlagForTrekk": true,
-                "opptjeningsperiode": {
-                  "fom": null,
-                  "tom": null
-                }
-              }
-            ]
-          },
-          "aarMaaned": "2017-12"
-        },
-        {
-          "arbeidsInntektInformasjon": {
-            "inntektListe": [
-              {
-                "opplysningspliktigID": "810072512",
-                "levereringstidspunkt": "2018-08-27T07:16:07.08",
-                "utbetaltIPeriode": "2018-01",
-                "inntektsperiodetype": "Maaned",
-                "inntektskilde": "A-ordningen",
-                "fordel": "kontantytelse",
-                "beloep": 25000,
-                "inntektsstatus": "LoependeInnrapportert",
-                "utloeserArbeidsgiveravgift": true,
-                "opptjeningsland": null,
-                "informasjonsstatus": "InngaarAlltid",
-                "virksomhetID": "810072512",
-                "beskrivelse": "fastloenn",
-                "inntektsmottakerID": "19117220349",
-                "inngaarIGrunnlagForTrekk": true,
-                "opptjeningsperiode": {
-                  "fom": null,
-                  "tom": null
-                }
-              }
-            ]
-          },
-          "aarMaaned": "2018-01"
-        },
-        {
-          "arbeidsInntektInformasjon": {
-            "inntektListe": [
-              {
-                "opplysningspliktigID": "912499693",
-                "levereringstidspunkt": "2018-08-27T07:16:07.08",
-                "utbetaltIPeriode": "2017-08",
-                "inntektsperiodetype": "Maaned",
-                "inntektskilde": "A-ordningen",
-                "fordel": "kontantytelse",
-                "beloep": 25000,
-                "inntektsstatus": "LoependeInnrapportert",
-                "utloeserArbeidsgiveravgift": true,
-                "opptjeningsland": null,
-                "informasjonsstatus": "InngaarAlltid",
-                "virksomhetID": "912499693",
-                "beskrivelse": "fastloenn",
-                "inntektsmottakerID": "19117220349",
-                "inngaarIGrunnlagForTrekk": true,
-                "opptjeningsperiode": {
-                  "fom": null,
-                  "tom": null
-                }
-              }
-            ]
-          },
-          "aarMaaned": "2017-08"
-        },
-        {
-          "arbeidsInntektInformasjon": {
-            "inntektListe": [
-              {
-                "opplysningspliktigID": "912499693",
-                "levereringstidspunkt": "2018-08-27T07:16:07.08",
-                "utbetaltIPeriode": "2017-10",
-                "inntektsperiodetype": "Maaned",
-                "inntektskilde": "A-ordningen",
-                "fordel": "kontantytelse",
-                "beloep": 28000,
-                "inntektsstatus": "LoependeInnrapportert",
-                "utloeserArbeidsgiveravgift": true,
-                "opptjeningsland": null,
-                "informasjonsstatus": "InngaarAlltid",
-                "virksomhetID": "912499693",
-                "beskrivelse": "fastloenn",
-                "inntektsmottakerID": "19117220349",
-                "inngaarIGrunnlagForTrekk": true,
-                "opptjeningsperiode": {
-                  "fom": null,
-                  "tom": null
-                }
-              }
-            ]
-          },
-          "aarMaaned": "2017-10"
-        },
-        {
-          "arbeidsInntektInformasjon": {
-            "inntektListe": [
-              {
-                "opplysningspliktigID": "912499693",
-                "levereringstidspunkt": "2018-08-27T07:16:07.08",
-                "utbetaltIPeriode": "2017-09",
-                "inntektsperiodetype": "Maaned",
-                "inntektskilde": "A-ordningen",
-                "fordel": "kontantytelse",
-                "beloep": 25000,
-                "inntektsstatus": "LoependeInnrapportert",
-                "utloeserArbeidsgiveravgift": true,
-                "opptjeningsland": null,
-                "informasjonsstatus": "InngaarAlltid",
-                "virksomhetID": "912499693",
-                "beskrivelse": "fastloenn",
-                "inntektsmottakerID": "19117220349",
-                "inngaarIGrunnlagForTrekk": true,
-                "opptjeningsperiode": {
-                  "fom": null,
-                  "tom": null
-                }
-              }
-            ]
-          },
-          "aarMaaned": "2017-09"
-        }
-      ],
-      "frilansInntektMaanedListe": []
+  behandlingID: 4,
+  oppsummering: {
+    behandlingsstatus: { kode: "AVSLUTTET", term: "Behandlingen er avsluttet" },
+    behandlingstype: { kode: "SOEKNAD", term: "Søknad" },
+    behandlingstema: {
+      kode: "UTSENDT_ARBEIDSTAKER",
+      term: "MED: Utsendt arbeidstaker / skip / direkte til artikkel 16",
     },
-    "medlemskap": {
-      "medlemsperiode": [
-        {
-          "periodeID": 400110740,
-          "periode": {
-            "fom": "2018-02-01",
-            "tom": "2018-12-31"
-          },
-          "periodetype": {
-            "kode": "PMMEDSKP",
-            "term": "Periode med medlemskap"
-          },
-          "status": {
-            "kode": "GYLD",
-            "term": "Gyldig"
-          },
-          "grunnlagstype": {
-            "kode": "FO_12_1",
-            "term": "EØS 883/04 - 12.1"
-          },
-          "land": {
-            "kode": "NO",
-            "term": "NORGE"
-          },
-          "lovvalg": {
-            "kode": "ENDL",
-            "term": "Endelig"
-          },
-          "trygdedekning": {
-            "kode": "Full",
-            "term": "Full"
-          },
-          "kildedokumenttype": {
-            "kode": "Henv_Soknad",
-            "term": "Henvendelse/søknad"
-          },
-          "kilde": {
-            "kode": "FS22",
-            "term": "Gosys"
-          }
-        },
-        {
-          "periodeID": 400110741,
-          "periode": {
-            "fom": "2016-02-01",
-            "tom": "2016-12-31"
-          },
-          "periodetype": {
-            "kode": "PMMEDSKP",
-            "term": "Periode med medlemskap"
-          },
-          "status": {
-            "kode": "GYLD",
-            "term": "Gyldig"
-          },
-          "grunnlagstype": {
-            "kode": "FO_12_1",
-            "term": "EØS 883/04 - 12.1"
-          },
-          "land": {
-            "kode": "NO",
-            "term": "NORGE"
-          },
-          "lovvalg": {
-            "kode": "ENDL",
-            "term": "Endelig"
-          },
-          "trygdedekning": {
-            "kode": "Full",
-            "term": "Full"
-          },
-          "kildedokumenttype": {
-            "kode": "Henv_Soknad",
-            "term": "Henvendelse/søknad"
-          },
-          "kilde": {
-            "kode": "FS22",
-            "term": "Gosys"
-          }
-        },
-        {
-          "periodeID": 400110742,
-          "periode": {
-            "fom": "2018-01-01",
-            "tom": "2018-01-31"
-          },
-          "periodetype": {
-            "kode": "PUMEDSKP",
-            "term": "Periode uten medlemskap"
-          },
-          "status": {
-            "kode": "GYLD",
-            "term": "Gyldig"
-          },
-          "grunnlagstype": {
-            "kode": "FO_12_1",
-            "term": "EØS 883/04 - 12.1"
-          },
-          "land": {
-            "kode": "NO",
-            "term": "NORGE"
-          },
-          "lovvalg": {
-            "kode": "ENDL",
-            "term": "Endelig"
-          },
-          "trygdedekning": {
-            "kode": "Full",
-            "term": "Full"
-          },
-          "kildedokumenttype": {
-            "kode": "Henv_Soknad",
-            "term": "Henvendelse/søknad"
-          },
-          "kilde": {
-            "kode": "FS22",
-            "term": "Gosys"
-          }
-        },
-        {
-          "periodeID": 400110743,
-          "periode": {
-            "fom": "2017-12-01",
-            "tom": "2017-12-31"
-          },
-          "periodetype": {
-            "kode": "PMMEDSKP",
-            "term": "Periode med medlemskap"
-          },
-          "status": {
-            "kode": "GYLD",
-            "term": "Gyldig"
-          },
-          "grunnlagstype": {
-            "kode": "FO_12_1",
-            "term": "EØS 883/04 - 12.1"
-          },
-          "land": {
-            "kode": "NO",
-            "term": "NORGE"
-          },
-          "lovvalg": {
-            "kode": "ENDL",
-            "term": "Endelig"
-          },
-          "trygdedekning": {
-            "kode": "Full",
-            "term": "Full"
-          },
-          "kildedokumenttype": {
-            "kode": "Henv_Soknad",
-            "term": "Henvendelse/søknad"
-          },
-          "kilde": {
-            "kode": "FS22",
-            "term": "Gosys"
-          }
-        }
-      ]
-    },
-    "person": {
-      "sivilstand": {
-        "kode": "GIFT",
-        "term": "Gift"
-      },
-      "erEgenAnsatt": false,
-      "personStatus": {
-        "kode": "BOSA",
-        "term": "Bosatt"
-      },
-      "sammensattNavn": "HATT GLITRENDE",
-      "kjoenn": {
-        "kode": "M",
-        "term": "Mann"
-      },
-      "fnr": "19117220349",
-      "foedselsdato": "1972-11-19",
-      "statsborgerskap": {
-        "kode": "NOR",
-        "term": "NORGE"
-      },
-      "statsborgerskapDato": "2013-01-01",
-      "familiemedlemmer": [
-        {
-          "fnr": "30098000492",
-          "sammensattNavn": "LILLA HEST",
-          "relasjonstype": {
-            "kode": "EKTE",
-            "term": "Ektefelle til"
-          },
-          "alder": null,
-          "borMedBruker": false,
-          "sivilstand": {
-            "kode": "GLAD",
-            "term": "Gift, lever adskilt"
-          },
-          "sivilstandGyldighetsperiodeFom": "1999-12-31",
-          "fnrAnnenForelder": null
-        }
-      ]
-    },
-    "personhistorikk": {
-      "bostedsadressePerioder": [
-        {
-          "bostedsadresse": {
-            "gateadresse": {
-              "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 101098,
-              "husnummer": 98,
-              "husbokstav": "C"
-            },
-            "postnr": "0175",
-            "poststed": "OSLO",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
-          },
-          "periode": {
-            "fom": "2018-03-12",
-            "tom": "2020-03-12"
-          }
-        },
-        {
-          "bostedsadresse": {
-            "gateadresse": {
-              "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 101098,
-              "husnummer": 98,
-              "husbokstav": "C"
-            },
-            "postnr": "0175",
-            "poststed": "OSLO",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
-          },
-          "periode": {
-            "fom": "2015-03-12",
-            "tom": "2017-03-12"
-          }
-        },
-        {
-          "bostedsadresse": {
-            "gateadresse": {
-              "gatenavn": "Waldemar Thranses gate",
-              "gatenummer": 101098,
-              "husnummer": 98,
-              "husbokstav": "C"
-            },
-            "postnr": "0175",
-            "poststed": "OSLO",
-            "land": {
-              "kode": "NO",
-              "term": "Norge"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        }
-      ],
-      "postadressePerioder": [
-        {
-          "postadresse": {
-            "adresselinjer": [
-              "Sannergata 2",
-              "0557 OSLO"
-            ],
-            "landkode": "NO"
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "postadresse": {
-            "adresselinjer": [
-              "Sannergata 2",
-              "0557 OSLO"
-            ],
-            "landkode": "NO"
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "postadresse": {
-            "adresselinjer": [
-              "Sannergata 2",
-              "0557 OSLO"
-            ],
-            "landkode": "NO"
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        }
-      ],
-      "midlertidigAdressePerioder": [
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        },
-        {
-          "midlertidigAdresse": {
-            "adressetype": "STRUKTURERT",
-            "strukturertAdresse": {
-              "gatenavn": "Sannergata",
-              "husnummer": "2",
-              "region": null,
-              "postnummer": "0557",
-              "poststed": "OSLO",
-              "landkode": "NO"
-            }
-          },
-          "periode": {
-            "fom": "2010-03-12",
-            "tom": "2014-03-12"
-          }
-        }
-      ]
-    },
-    "sakOgBehandling": {
-      "eosBarnetrygd": true
-    },
-    "sed": null
+    registrertDato: "2020-08-11T11:27:27.181251Z",
+    endretDato: "2021-01-13T06:42:06.343186Z",
+    endretAvNavn: "Bjedov, Sandra",
+    sisteOpplysningerHentetDato: "2020-08-11T11:27:50.896112Z",
   },
-  "oppsummering": {
-    "behandlingstema": {
-      "kode": "UTSENDT_ARBEIDSTAKER",
-      "term": "Utsendt arbeidstaker"
+  saksopplysninger: {
+    person: {
+      fnr: "08127146013",
+      statsborgerskap: { kode: "NOR", term: "NORGE" },
+      statsborgerskapDato: "2020-08-11",
+      sivilstand: { kode: "GIFT", term: "Gift" },
+      sammensattNavn: "KJUUS JANNIKE HEITUN",
+      familiemedlemmer: [],
+      personStatus: { kode: "BOSA", term: "Bosatt" },
+      kjoenn: { kode: "K", term: "Kvinne" },
+      foedselsdato: "1971-12-08",
+      erEgenAnsatt: false,
     },
-    "behandlingsstatus": {
-      "kode": "OPPRETTET",
-      "term": "Opprettet"
+    arbeidsforhold: [
+      {
+        arbeidsforholdID: "26-20140901-1",
+        arbeidsforholdIDnav: 35148920,
+        ansettelsesPeriode: { fom: "2014-10-01", tom: null },
+        arbeidsforholdstype: "Ordinært arbeidsforhold",
+        arbeidsavtaler: [
+          {
+            arbeidstidsordning: { kode: "ikkeSkift", term: "Ikke skift" },
+            avloenningstype: "",
+            yrke: {
+              kode: "1210205",
+              term: "NESTLEDER (I BEDRIFT MED OVER 9 ANSATTE)",
+            },
+            gyldighetsperiode: { fom: "2020-01-01", tom: null },
+            avtaltArbeidstimerPerUke: 37.5,
+            stillingsprosent: 80.0,
+            beregnetAntallTimerPrUke: 30.0,
+            endringsdatoStillingsprosent: null,
+            skipsregister: { kode: null, term: null },
+            skipstype: { kode: null, term: null },
+            maritimArbeidsavtale: false,
+            beregnetStillingsprosent: null,
+            antallTimerGammeltAa: null,
+            fartsomraade: null,
+          },
+        ],
+        permisjonOgPermittering: [],
+        utenlandsopphold: [],
+        arbeidsgivertype: "ORGANISASJON",
+        arbeidsgiverID: "991498931",
+        arbeidstakerID: "08127146013",
+        opplysningspliktigtype: "ORGANISASJON",
+        opplysningspliktigID: "991435417",
+        opprettelsestidspunkt: "2015-02-04T08:54:23.148Z",
+        sistBekreftet: "2020-08-04T11:59:04Z",
+        Aordning: true,
+        timerTimelonnet: [
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-01-01", tom: "2015-01-31" },
+            rapporteringsAarMaaned: "2015-01",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-02-01", tom: "2015-02-28" },
+            rapporteringsAarMaaned: "2015-02",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-05-01", tom: "2015-05-31" },
+            rapporteringsAarMaaned: "2015-05",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2016-01-01", tom: "2016-01-31" },
+            rapporteringsAarMaaned: "2016-01",
+          },
+          {
+            antallTimer: 122.0,
+            timelonnetPeriode: { fom: "2016-09-01", tom: "2016-09-30" },
+            rapporteringsAarMaaned: "2016-09",
+          },
+          {
+            antallTimer: 102.0,
+            timelonnetPeriode: { fom: "2016-12-01", tom: "2016-12-31" },
+            rapporteringsAarMaaned: "2016-12",
+          },
+          {
+            antallTimer: 109.5,
+            timelonnetPeriode: { fom: "2017-01-01", tom: "2017-01-31" },
+            rapporteringsAarMaaned: "2017-01",
+          },
+          {
+            antallTimer: 99.5,
+            timelonnetPeriode: { fom: "2017-06-01", tom: "2017-06-30" },
+            rapporteringsAarMaaned: "2017-06",
+          },
+          {
+            antallTimer: 78.0,
+            timelonnetPeriode: { fom: "2018-05-01", tom: "2018-05-31" },
+            rapporteringsAarMaaned: "2018-05",
+          },
+          {
+            antallTimer: 50.5,
+            timelonnetPeriode: { fom: "2018-06-01", tom: "2018-06-30" },
+            rapporteringsAarMaaned: "2018-06",
+          },
+          {
+            antallTimer: 102.25,
+            timelonnetPeriode: { fom: "2018-08-01", tom: "2018-08-31" },
+            rapporteringsAarMaaned: "2018-08",
+          },
+          {
+            antallTimer: 68.0,
+            timelonnetPeriode: { fom: "2019-09-01", tom: "2019-09-30" },
+            rapporteringsAarMaaned: "2019-09",
+          },
+          {
+            antallTimer: 80.25,
+            timelonnetPeriode: { fom: "2019-10-01", tom: "2019-10-31" },
+            rapporteringsAarMaaned: "2019-10",
+          },
+          {
+            antallTimer: 56.0,
+            timelonnetPeriode: { fom: "2020-02-01", tom: "2020-02-29" },
+            rapporteringsAarMaaned: "2020-02",
+          },
+          {
+            antallTimer: 72.25,
+            timelonnetPeriode: { fom: "2020-06-01", tom: "2020-06-30" },
+            rapporteringsAarMaaned: "2020-06",
+          },
+          {
+            antallTimer: 12.0,
+            timelonnetPeriode: { fom: "2020-07-01", tom: "2020-07-31" },
+            rapporteringsAarMaaned: "2020-07",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-03-01", tom: "2015-03-31" },
+            rapporteringsAarMaaned: "2015-03",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-04-01", tom: "2015-04-30" },
+            rapporteringsAarMaaned: "2015-04",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-06-01", tom: "2015-06-30" },
+            rapporteringsAarMaaned: "2015-06",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-08-01", tom: "2015-08-31" },
+            rapporteringsAarMaaned: "2015-08",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-09-01", tom: "2015-09-30" },
+            rapporteringsAarMaaned: "2015-09",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-10-01", tom: "2015-10-31" },
+            rapporteringsAarMaaned: "2015-10",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-11-01", tom: "2015-11-30" },
+            rapporteringsAarMaaned: "2015-11",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2015-12-01", tom: "2015-12-31" },
+            rapporteringsAarMaaned: "2015-12",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2016-02-01", tom: "2016-02-29" },
+            rapporteringsAarMaaned: "2016-02",
+          },
+          {
+            antallTimer: 128.0,
+            timelonnetPeriode: { fom: "2016-03-01", tom: "2016-03-31" },
+            rapporteringsAarMaaned: "2016-03",
+          },
+          {
+            antallTimer: 100.0,
+            timelonnetPeriode: { fom: "2016-04-01", tom: "2016-04-30" },
+            rapporteringsAarMaaned: "2016-04",
+          },
+          {
+            antallTimer: 101.5,
+            timelonnetPeriode: { fom: "2016-05-01", tom: "2016-05-31" },
+            rapporteringsAarMaaned: "2016-05",
+          },
+          {
+            antallTimer: 99.25,
+            timelonnetPeriode: { fom: "2016-06-01", tom: "2016-06-30" },
+            rapporteringsAarMaaned: "2016-06",
+          },
+          {
+            antallTimer: 130.5,
+            timelonnetPeriode: { fom: "2016-08-01", tom: "2016-08-31" },
+            rapporteringsAarMaaned: "2016-08",
+          },
+          {
+            antallTimer: 91.5,
+            timelonnetPeriode: { fom: "2016-10-01", tom: "2016-10-31" },
+            rapporteringsAarMaaned: "2016-10",
+          },
+          {
+            antallTimer: 113.75,
+            timelonnetPeriode: { fom: "2016-11-01", tom: "2016-11-30" },
+            rapporteringsAarMaaned: "2016-11",
+          },
+          {
+            antallTimer: 101.0,
+            timelonnetPeriode: { fom: "2017-02-01", tom: "2017-02-28" },
+            rapporteringsAarMaaned: "2017-02",
+          },
+          {
+            antallTimer: 109.5,
+            timelonnetPeriode: { fom: "2017-03-01", tom: "2017-03-31" },
+            rapporteringsAarMaaned: "2017-03",
+          },
+          {
+            antallTimer: 78.75,
+            timelonnetPeriode: { fom: "2017-04-01", tom: "2017-04-30" },
+            rapporteringsAarMaaned: "2017-04",
+          },
+          {
+            antallTimer: 92.75,
+            timelonnetPeriode: { fom: "2017-05-01", tom: "2017-05-31" },
+            rapporteringsAarMaaned: "2017-05",
+          },
+          {
+            antallTimer: 121.5,
+            timelonnetPeriode: { fom: "2017-08-01", tom: "2017-08-31" },
+            rapporteringsAarMaaned: "2017-08",
+          },
+          {
+            antallTimer: 107.5,
+            timelonnetPeriode: { fom: "2017-09-01", tom: "2017-09-30" },
+            rapporteringsAarMaaned: "2017-09",
+          },
+          {
+            antallTimer: 121.25,
+            timelonnetPeriode: { fom: "2017-10-01", tom: "2017-10-31" },
+            rapporteringsAarMaaned: "2017-10",
+          },
+          {
+            antallTimer: 95.5,
+            timelonnetPeriode: { fom: "2017-11-01", tom: "2017-11-30" },
+            rapporteringsAarMaaned: "2017-11",
+          },
+          {
+            antallTimer: 58.75,
+            timelonnetPeriode: { fom: "2017-12-01", tom: "2017-12-31" },
+            rapporteringsAarMaaned: "2017-12",
+          },
+          {
+            antallTimer: 73.25,
+            timelonnetPeriode: { fom: "2018-01-01", tom: "2018-01-31" },
+            rapporteringsAarMaaned: "2018-01",
+          },
+          {
+            antallTimer: 55.0,
+            timelonnetPeriode: { fom: "2018-02-01", tom: "2018-02-28" },
+            rapporteringsAarMaaned: "2018-02",
+          },
+          {
+            antallTimer: 69.25,
+            timelonnetPeriode: { fom: "2018-03-01", tom: "2018-03-31" },
+            rapporteringsAarMaaned: "2018-03",
+          },
+          {
+            antallTimer: 71.25,
+            timelonnetPeriode: { fom: "2018-04-01", tom: "2018-04-30" },
+            rapporteringsAarMaaned: "2018-04",
+          },
+          {
+            antallTimer: 60.0,
+            timelonnetPeriode: { fom: "2018-09-01", tom: "2018-09-30" },
+            rapporteringsAarMaaned: "2018-09",
+          },
+          {
+            antallTimer: 96.25,
+            timelonnetPeriode: { fom: "2018-10-01", tom: "2018-10-31" },
+            rapporteringsAarMaaned: "2018-10",
+          },
+          {
+            antallTimer: 78.25,
+            timelonnetPeriode: { fom: "2018-11-01", tom: "2018-11-30" },
+            rapporteringsAarMaaned: "2018-11",
+          },
+          {
+            antallTimer: 56.0,
+            timelonnetPeriode: { fom: "2018-12-01", tom: "2018-12-31" },
+            rapporteringsAarMaaned: "2018-12",
+          },
+          {
+            antallTimer: 94.5,
+            timelonnetPeriode: { fom: "2019-01-01", tom: "2019-01-31" },
+            rapporteringsAarMaaned: "2019-01",
+          },
+          {
+            antallTimer: 59.0,
+            timelonnetPeriode: { fom: "2019-02-01", tom: "2019-02-28" },
+            rapporteringsAarMaaned: "2019-02",
+          },
+          {
+            antallTimer: 23.75,
+            timelonnetPeriode: { fom: "2019-04-01", tom: "2019-04-30" },
+            rapporteringsAarMaaned: "2019-04",
+          },
+          {
+            antallTimer: 82.0,
+            timelonnetPeriode: { fom: "2019-05-01", tom: "2019-05-31" },
+            rapporteringsAarMaaned: "2019-05",
+          },
+          {
+            antallTimer: 76.25,
+            timelonnetPeriode: { fom: "2019-06-01", tom: "2019-06-30" },
+            rapporteringsAarMaaned: "2019-06",
+          },
+          {
+            antallTimer: 103.5,
+            timelonnetPeriode: { fom: "2019-08-01", tom: "2019-08-31" },
+            rapporteringsAarMaaned: "2019-08",
+          },
+          {
+            antallTimer: 96.0,
+            timelonnetPeriode: { fom: "2019-11-01", tom: "2019-11-30" },
+            rapporteringsAarMaaned: "2019-11",
+          },
+          {
+            antallTimer: 87.5,
+            timelonnetPeriode: { fom: "2019-12-01", tom: "2019-12-31" },
+            rapporteringsAarMaaned: "2019-12",
+          },
+          {
+            antallTimer: 50.0,
+            timelonnetPeriode: { fom: "2020-01-01", tom: "2020-01-31" },
+            rapporteringsAarMaaned: "2020-01",
+          },
+          {
+            antallTimer: 27.0,
+            timelonnetPeriode: { fom: "2020-03-01", tom: "2020-03-31" },
+            rapporteringsAarMaaned: "2020-03",
+          },
+          {
+            antallTimer: 98.5,
+            timelonnetPeriode: { fom: "2020-04-01", tom: "2020-04-30" },
+            rapporteringsAarMaaned: "2020-04",
+          },
+          {
+            antallTimer: 64.75,
+            timelonnetPeriode: { fom: "2020-05-01", tom: "2020-05-31" },
+            rapporteringsAarMaaned: "2020-05",
+          },
+        ],
+      },
+    ],
+    organisasjoner: [
+      {
+        orgnr: "974071525",
+        navn: "ALLER MEDIA AS",
+        oppstartdato: "1965-12-31",
+        organisasjonsform: null,
+        forretningsadresse: {
+          gateadresse: {
+            gatenavn: "Karvesvingen 1",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "0579",
+          poststed: "OSLO",
+          land: "NORGE",
+        },
+        postadresse: {
+          gateadresse: {
+            gatenavn: "Postboks 1169 Sentrum",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "0107",
+          poststed: "OSLO",
+          land: "NORGE",
+        },
+      },
+      {
+        orgnr: "991498931",
+        navn: "KÅRNER",
+        oppstartdato: "2007-07-13",
+        organisasjonsform: null,
+        forretningsadresse: {
+          gateadresse: {
+            gatenavn: "Torvveien 5",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "1383",
+          poststed: "ASKER",
+          land: "NORGE",
+        },
+        postadresse: {
+          gateadresse: {
+            gatenavn: null,
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: null,
+          poststed: null,
+          land: null,
+        },
+      },
+      {
+        orgnr: "994748351",
+        navn: "IOANNA TJØME AS",
+        oppstartdato: "2009-09-09",
+        organisasjonsform: null,
+        forretningsadresse: {
+          gateadresse: {
+            gatenavn: "Østveien 665",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "3145",
+          poststed: "TJØME",
+          land: "NORGE",
+        },
+        postadresse: {
+          gateadresse: {
+            gatenavn: "Postboks 36",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "3165",
+          poststed: "TJØME",
+          land: "NORGE",
+        },
+      },
+      {
+        orgnr: "991435417",
+        navn: "KÅRNER",
+        oppstartdato: null,
+        organisasjonsform: "Norskregistrert utenlandsk foretak",
+        forretningsadresse: {
+          gateadresse: {
+            gatenavn: "Torvveien 5",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "1383",
+          poststed: "ASKER",
+          land: "NORGE",
+        },
+        postadresse: {
+          gateadresse: {
+            gatenavn: null,
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: null,
+          poststed: null,
+          land: null,
+        },
+      },
+      {
+        orgnr: "995277670",
+        navn: "NAV ØKONOMILINJEN",
+        oppstartdato: null,
+        organisasjonsform: null,
+        forretningsadresse: {
+          gateadresse: {
+            gatenavn: "Sannergata 2",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "0557",
+          poststed: "OSLO",
+          land: "NORGE",
+        },
+        postadresse: {
+          gateadresse: {
+            gatenavn: "Postboks 5 St Olavs plass",
+            gatenummer: null,
+            husnummer: null,
+            husbokstav: null,
+          },
+          postnr: "0130",
+          poststed: "OSLO",
+          land: "NORGE",
+        },
+      },
+    ],
+    medlemskap: {
+      medlemsperiode: [
+        {
+          periodeID: 100696445,
+          periode: { fom: "2020-08-30", tom: "2025-08-30" },
+          periodetype: { kode: "PMMEDSKP", term: "Periode med medlemskap" },
+          status: { kode: "AVST", term: "Avvist" },
+          grunnlagstype: { kode: "FO_16", term: "EØS 883/04 - 16" },
+          land: { kode: "NOR", term: "NORGE" },
+          lovvalg: { kode: "ENDL", term: "Endelig" },
+          trygdedekning: { kode: "Full", term: "Full" },
+          kildedokumenttype: {
+            kode: "Henv_Soknad",
+            term: "Henvendelse/søknad",
+          },
+          kilde: { kode: "srvmelosys", term: "srvmelosys" },
+        },
+        {
+          periodeID: 3247173,
+          periode: { fom: "2012-09-01", tom: "2017-08-31" },
+          periodetype: { kode: "PMMEDSKP", term: "Periode med medlemskap" },
+          status: { kode: "GYLD", term: "Gyldig" },
+          grunnlagstype: { kode: "FO_16", term: "EØS 883/04 - 16" },
+          land: { kode: "NOR", term: "NORGE" },
+          lovvalg: { kode: "ENDL", term: "Endelig" },
+          trygdedekning: { kode: "Full", term: "Full" },
+          kildedokumenttype: {
+            kode: "Henv_Soknad",
+            term: "Henvendelse/søknad",
+          },
+          kilde: { kode: "srvgosys", term: "srvgosys" },
+        },
+      ],
     },
-    "registrertDato": "2018-08-27T07:16:03.273Z",
-    "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
-    "endretDato": "2018-08-27T07:16:03.273Z",
-    "endretAvNavn": "HATT GLITRENDE",
-    "behandlingstype": {
-      "kode": "SOEKNAD",
-      "term": "Søknad"
-    }
-  }
+    inntekt: {
+      arbeidsInntektMaanedListe: [
+        {
+          aarMaaned: "2020-03",
+          arbeidsInntektInformasjon: {
+            inntektListe: [
+              {
+                beloep: 6480.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-03-01", tom: "2020-03-31" },
+                utbetaltIPeriode: "2020-03",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "timeloenn",
+              },
+              {
+                beloep: 2555,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-03",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 5110,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-03",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+            ],
+          },
+        },
+        {
+          aarMaaned: "2020-02",
+          arbeidsInntektInformasjon: {
+            inntektListe: [
+              {
+                beloep: 5110,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-02",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 9198,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-02",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 13440.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-02-01", tom: "2020-02-29" },
+                utbetaltIPeriode: "2020-02",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "timeloenn",
+              },
+            ],
+          },
+        },
+        {
+          aarMaaned: "2020-04",
+          arbeidsInntektInformasjon: {
+            inntektListe: [
+              {
+                beloep: 8687,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-04",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 1533,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-04",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 23640.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-04-01", tom: "2020-04-30" },
+                utbetaltIPeriode: "2020-04",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "timeloenn",
+              },
+            ],
+          },
+        },
+        {
+          aarMaaned: "2020-05",
+          arbeidsInntektInformasjon: {
+            inntektListe: [
+              {
+                beloep: 15540.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-05-01", tom: "2020-05-31" },
+                utbetaltIPeriode: "2020-05",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "timeloenn",
+              },
+              {
+                beloep: 4401,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-05",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 9709,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-05",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+            ],
+          },
+        },
+        {
+          aarMaaned: "2020-07",
+          arbeidsInntektInformasjon: {
+            inntektListe: [
+              {
+                beloep: 11242,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-07",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 2880.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-07-01", tom: "2020-07-31" },
+                utbetaltIPeriode: "2020-07",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "timeloenn",
+              },
+            ],
+          },
+        },
+        {
+          aarMaaned: "2020-06",
+          arbeidsInntektInformasjon: {
+            inntektListe: [
+              {
+                beloep: 10731,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-06",
+                opplysningspliktigID: "995277670",
+                virksomhetID: "995277670",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: false,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "sykepenger",
+              },
+              {
+                beloep: 19887.96,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-06-01", tom: "2020-06-30" },
+                utbetaltIPeriode: "2020-06",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "feriepenger",
+              },
+              {
+                beloep: 17340.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-06-01", tom: "2020-06-30" },
+                utbetaltIPeriode: "2020-06",
+                opplysningspliktigID: "991435417",
+                virksomhetID: "991498931",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "timeloenn",
+              },
+              {
+                beloep: 567.0,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: null, tom: null },
+                utbetaltIPeriode: "2020-06",
+                opplysningspliktigID: "998597145",
+                virksomhetID: "994748351",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "feriepenger",
+              },
+              {
+                beloep: 21213,
+                fordel: "kontantytelse",
+                inntektskilde: "A-ordningen",
+                inntektsperiodetype: "Maaned",
+                inntektsstatus: "LoependeInnrapportert",
+                levereringstidspunkt: "2020-08-11T13:27:42.15",
+                opptjeningsland: null,
+                opptjeningsperiode: { fom: "2020-06-16", tom: "2020-06-16" },
+                utbetaltIPeriode: "2020-06",
+                opplysningspliktigID: "910119877",
+                virksomhetID: "974071525",
+                inntektsmottakerID: "08127146013",
+                inngaarIGrunnlagForTrekk: true,
+                utloeserArbeidsgiveravgift: true,
+                informasjonsstatus: "InngaarAlltid",
+                beskrivelse: "uregelmessigeTilleggKnyttetTilIkkeArbeidetTid",
+              },
+            ],
+          },
+        },
+      ],
+      frilansInntektMaanedListe: [
+        {
+          aarMaaned: "2020-06",
+          frilansInntektInformasjon: {
+            arbeidsforholdFrilanserListe: [
+              {
+                frilansPeriode: { fom: "2017-12-12", tom: null },
+                yrke: "3491112",
+              },
+            ],
+          },
+        },
+      ],
+    },
+    sakOgBehandling: { eosBarnetrygd: false },
+    sed: {
+      rinaSaksnummer: null,
+      rinaDokumentID: null,
+      fnr: null,
+      lovvalgsperiode: null,
+      lovvalgsbestemmelse: null,
+      lovvalgslandKode: null,
+      erEndring: false,
+      sedType: null,
+      bucType: null,
+    },
+    personhistorikk: {
+      bostedsadressePerioder: [
+        {
+          bostedsadresse: {
+            gateadresse: {
+              gatenavn: "NEDRE BÅSTAD VEI",
+              gatenummer: 1251,
+              husnummer: 53,
+              husbokstav: "",
+            },
+            postnr: "1387",
+            poststed: "ASKER",
+            land: { kode: "NOR", term: "NORGE" },
+          },
+          periode: { fom: "2014-06-24", tom: null },
+        },
+      ],
+      postadressePerioder: [],
+      midlertidigAdressePerioder: [],
+    },
+  },
+  redigerbart: false,
 }

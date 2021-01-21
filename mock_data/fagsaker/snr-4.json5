@@ -1,14 +1,8 @@
 {
-  "saksnummer": "4",
-  "sakstype": {
-    "kode":"EU_EOS",
-    "term":"EU/EØS"
-  },
-  "saksstatus" : {
-    "kode" : "OPPRETTET",
-    "term" : "Saken er opprettet"
-  },
-  "registrertDato" : "2018-08-27T07:16:03.273Z",
-  "endretDato" : "2018-08-27T07:16:03.273Z",
-  "gsakSaksnummer" : 131063977
+  saksnummer: "4",
+  gsakSaksnummer: 146663020,
+  sakstype: { kode: "EU_EOS", term: "EU/EØS" },
+  saksstatus: { kode: "LOVVALG_AVKLART", term: "Lovvalget er avklart" },
+  registrertDato: "2020-08-11T11:27:27.177005Z",
+  endretDato: "2021-01-13T06:42:06.343295Z",
 }

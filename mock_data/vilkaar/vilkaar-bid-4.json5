@@ -1,9 +1,16 @@
 [
   {
-    vilkaar: 'FO_883_2004_INNGANGSVILKAAR',
+    vilkaar: "FO_883_2004_INNGANGSVILKAAR",
     oppfylt: true,
     begrunnelseKoder: [],
     begrunnelseFritekst: null,
     begrunnelseFritekstEngelsk: null,
-  }
+  },
+  {
+    vilkaar: "FO_883_2004_ART16_1",
+    oppfylt: true,
+    begrunnelseKoder: ["SJOEMANNSKIRKEN"],
+    begrunnelseFritekst: null,
+    begrunnelseFritekstEngelsk: null,
+  },
 ]
