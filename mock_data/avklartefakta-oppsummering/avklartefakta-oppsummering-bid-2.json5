@@ -1,5 +1,38 @@
 {
   "virksomheter": {
     "virksomhetIDer": ["910099035", "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d", "910253158"]
+  },
+  "medfolgendeFamilie": {
+    "avklarteMedfolgendeBarn": {
+      "familieOmfattetAvNorskTrygd": [
+        {
+          "uuid": "2519c5fc-5e27-425c-a1d4-eb7a5fc0021d",
+          "sammensattNavn": "",
+        }
+      ],
+      "familieIkkeOmfattetAvNorskTrygd": [
+        {
+          "uuid": "416c97d5-fd1d-4eff-952c-edc42aeb40a0",
+          "begrunnelse": {
+            "kode": "IKKE_SOEKERS_BARN",
+            "term": "Barnet er ikke søkerens eget"
+          },
+          "begrunnelseFritekst": "<p>Ble mye drama når det nylig ble utført en DNA-test på spøk som returnerte negativ.</p>",
+        }
+      ]
+    },
+    "avklarteMedfolgendeEktefelleSamboer": {
+      "familieOmfattetAvNorskTrygd": [],
+      "familieIkkeOmfattetAvNorskTrygd": [
+        {
+          "uuid": "aaa68167-05e8-4f5e-b0fc-75e3de52025a",
+          "begrunnelse": {
+            "kode": "EGEN_INNTEKT",
+            "term": "Ektefelle/samboer har egen inntekt"
+          },
+          "begrunnelseFritekst": "<p>På grunn av at samboer har egen inntekt, vil hen <b>ikke</b> bli innvilget</p>"
+        }
+      ]
+    }
   }
 }

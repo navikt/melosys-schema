@@ -6,7 +6,8 @@
   "type": "object",
   "additionalProperties": true,
   "required": [
-    "virksomheter"
+    "virksomheter",
+    "medfolgendeFamilie"
   ],
   "properties": {
     "virksomheter" : {
@@ -14,6 +15,16 @@
       "virksomhetIDer" : {
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomhetIDer"
       }
-    }
+    },
+    "medfolgendeFamilie" : {
+      "$id": "#/properties/medfolgendeFamilie",
+      "avklarteMedfolgendeBarn": {
+        "title": "The AvklarteMedfolgendeBarn Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avklarteMedfolgendeFamilie"
+      },
+      "avklarteMedfolgendeEktefelleSamboer": {
+        "title": "The AvklarteMedfolgendeEktefelleSamboer Schema",
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avklarteMedfolgendeFamilie"
+      }    }
   }
 }
