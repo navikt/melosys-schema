@@ -304,8 +304,6 @@
           "enhetNavn",
           "fartsomradeKode",
           "flaggLandkode",
-          "foretakNavn",
-          "foretakOrgnr",
           "innretningLandkode",
           "territorialfarvann",
           "innretningstype"
@@ -336,14 +334,6 @@
             "examples": [
               "GB"
             ],
-            "pattern": "^(.*)$"
-          },
-          "foretakNavn": {
-            "type": ["string", "null"],
-            "pattern": "^(.*)$"
-          },
-          "foretakOrgnr": {
-            "type": ["string", "null"],
             "pattern": "^(.*)$"
           },
           "innretningLandkode": {
