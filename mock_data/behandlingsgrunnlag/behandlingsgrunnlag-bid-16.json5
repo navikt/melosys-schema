@@ -17,19 +17,23 @@
         }
       ]
     },
-    "arbeidUtland": [{
-      "adresse": {
-        "gatenavn": "Adresseveien 123",
-        "husnummer": "123",
-        "region": "Brandenburger",
-        "postnummer": "1234",
-        "poststed": "Poststedet",
-        "landkode": "DE"
-      },
-      "foretakNavn": "EQUINOR",
-      "foretakOrgnr": "372384726",
-      "arbeidUtlandHjemmekontor": false
-    }],
+    "arbeidPaaLand": {
+      "fysiskeArbeidssteder": [
+        {
+          "adresse": {
+            "gatenavn": "Adresseveien 123",
+            "husnummer": "123",
+            "region": "Brandenburger",
+            "postnummer": "1234",
+            "poststed": "Poststedet",
+            "landkode": "DE",
+          },
+          "virksomhetNavn": "EQUINOR",
+        },
+      ],
+      "erHjemmekontor": false,
+      "erFastArbeidssted": null
+    },
     "foretakUtland": [
       {
         "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
@@ -110,10 +114,11 @@
         "enhetNavn": "Dunfjæder",
         "fartsomradeKode": "INNENRIKS",
         "flaggLandkode": "GB",
-        "installasjonsLandkode": "GB",
+        "innretningLandkode": null,
         "territorialfarvann": "GB",
         "foretakNavn": "SWECO NORGE AS",
-        "foretakOrgnr": "967032271"
+        "foretakOrgnr": "967032271",
+        "innretningstype": null
       }
     ],
     "luftfartBaser": [],
