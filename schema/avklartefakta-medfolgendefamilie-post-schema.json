@@ -6,19 +6,18 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "avklarteMedfolgendeBarn",
-    "avklarteMedfolgendeEktefelleSamboer"
+    "medfolgendeFamilie"
   ],
   "properties": {
-    "avklarteMedfolgendeBarn": {
-      "title": "The AvklarteMedfolgendeBarn Schema",
-      "$id": "#/properties/avklarteMedfolgendeBarn",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avklarteMedfolgendeFamilie"
-    },
-    "avklarteMedfolgendeEktefelleSamboer": {
-      "title": "The AvklarteMedfolgendeEktefelleSamboer Schema",
-      "$id": "#/properties/avklarteMedfolgendeEktefelleSamboer",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avklarteMedfolgendeFamilie"
+    "medfolgendeFamilie": {
+      "title": "The MedfolgendeFamilie Schema",
+      "$id": "#/properties/medfolgendeFamilie",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/medfolgendeFamilieObjekt"
+      },
+      "default": []
     }
   }
 }

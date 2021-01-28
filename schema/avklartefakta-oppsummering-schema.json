@@ -16,15 +16,14 @@
         "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomhetIDer"
       }
     },
-    "medfolgendeFamilie" : {
+    "medfolgendeFamilie": {
       "$id": "#/properties/medfolgendeFamilie",
-      "avklarteMedfolgendeBarn": {
-        "title": "The AvklarteMedfolgendeBarn Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avklarteMedfolgendeFamilie"
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/medfolgendeFamilieObjekt"
       },
-      "avklarteMedfolgendeEktefelleSamboer": {
-        "title": "The AvklarteMedfolgendeEktefelleSamboer Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avklarteMedfolgendeFamilie"
-      }    }
+      "default": []
+    }
   }
 }

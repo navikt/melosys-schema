@@ -383,64 +383,27 @@
         "$ref": "#/definitions/landkode"
       }
     },
-    "avklarteMedfolgendeFamilie": {
-      "title": "The AvklarteMedfolgendeFamilie Schema",
+    "medfolgendeFamilieObjekt": {
+      "title": "The MedfolgendeFamilieObjekt Schema",
       "type": "object",
-      "$id": "#/definitions/avklarteMedfolgendeFamilie",
+      "$id": "#/definitions/medfolgendeFamilieObjekt",
       "additionalProperties": false,
       "required": [
-        "familieOmfattetAvNorskTrygd",
-        "familieIkkeOmfattetAvNorskTrygd"
+        "uuid",
+        "omfattet"
       ],
       "properties": {
-        "familieOmfattetAvNorskTrygd": {
-          "title": "The FamilieOmfattetAvNorskTrygd Schema",
-          "type": "array",
-          "$id": "#/definitions/avklarteMedfolgendeFamilie/properties/familieOmfattetAvNorskTrygd",
-          "uniqueItems": true,
-          "items": {
-            "type": "object",
-            "additionalProperties": true,
-            "required": [
-              "uuid"
-            ],
-            "properties": {
-              "uuid": {
-                "$ref": "#/definitions/uuid"
-              },
-              "sammensattNavn": {
-                "type": ["string", "null"]
-              }
-            }
-          },
-          "default": []
+        "uuid": {
+          "$ref": "#/definitions/uuid"
         },
-        "familieIkkeOmfattetAvNorskTrygd": {
-          "title": "The FamilieIkkeOmfattetAvNorskTrygd Schema",
-          "type": "array",
-          "$id": "#/definitions/avklarteMedfolgendeFamilie/properties/familieIkkeOmfattetAvNorskTrygd",
-          "uniqueItems": true,
-          "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "uuid",
-              "begrunnelse",
-              "begrunnelseFritekst"
-            ],
-            "properties": {
-              "uuid": {
-                "$ref": "#/definitions/uuid"
-              },
-              "begrunnelse": {
-                "$ref": "#/definitions/kodeverk"
-              },
-              "begrunnelseFritekst": {
-                "type": ["string", "null"]
-              }
-            }
-          },
-          "default": []
+        "omfattet": {
+          "type": "boolean"
+        },
+        "begrunnelseKode": {
+          "type": "string"
+        },
+        "begrunnelseFritekst": {
+          "type": "string"
         }
       }
     },
