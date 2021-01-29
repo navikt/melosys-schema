@@ -45,6 +45,7 @@ const katalogMap = new Map([
   ['avklartefakta', Avklartefakta.avklartefakta],
   ['avklartefakta-oppsummering', Avklartefakta.oppsummering],
   ['avklartefakta-virksomheter', Avklartefakta.virksomheter],
+  ['avklartefakta-medfolgendefamilie', Avklartefakta.medfolgendefamilie],
   ['behandlinger-behandling', Behandlinger.behandling],
   ['behandlinger-endrebehandlingstema', Behandlinger.endreBehandlingstema],
   ['behandlinger-resultat', Behandlinger.resultat],
