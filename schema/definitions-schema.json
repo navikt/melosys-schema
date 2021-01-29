@@ -390,7 +390,9 @@
       "additionalProperties": false,
       "required": [
         "uuid",
-        "omfattet"
+        "omfattet",
+        "begrunnelseKode",
+        "begrunnelseFritekst"
       ],
       "properties": {
         "uuid": {
@@ -400,10 +402,10 @@
           "type": "boolean"
         },
         "begrunnelseKode": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "begrunnelseFritekst": {
-          "type": "string"
+          "type": ["string", "null"]
         }
       }
     },
