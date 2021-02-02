@@ -149,8 +149,7 @@
             "pattern": "^(.*)$"
           },
           "orgnr": {
-            "title": "The Orgnr Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+            "type": ["string", "null"]
           },
           "selvstendigNaeringsvirksomhet": {
             "type": "boolean"
