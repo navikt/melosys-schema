@@ -1,4 +1,10 @@
 {
   "mottakerinstitusjon": "NO:NAVT002",
-  "fritekst": "tittei på deg"
+  "fritekst": "tittei på deg",
+  "vedlegg": [
+    {
+      "journalpostID": "1234",
+      "dokumentID": "4321"
+    },
+  ],
 }
