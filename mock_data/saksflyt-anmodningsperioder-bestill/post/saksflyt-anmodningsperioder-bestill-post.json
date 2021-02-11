@@ -1,4 +1,10 @@
 {
   "mottakerinstitusjon": "NO:NAVT003",
-  "fritekstSed": "fritekst til SED"
+  "fritekstSed": "fritekst til SED",
+  "vedlegg": [
+    {
+      "journalpostID": "1234",
+      "dokumentID": "4321"
+    }
+  ]
 }
