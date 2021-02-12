@@ -61,13 +61,12 @@
     },
     "maritimtArbeid" : [
       {
-        "installasjonsLandkode" : "GB",
+        "innretningLandkode" : null,
+        "innretningstype": null,
         "flaggLandkode" : "GB",
         "enhetNavn" : "Snorre Dunfjæder",
         "fartsomradeKode" : "INNENRIKS",
-        "territorialfarvann": "GB",
-        "foretakNavn": "SWECO NORGE AS",
-        "foretakOrgnr": "967032271"
+        "territorialfarvann": null,
       }
     ],
     "luftfartBaser": [
@@ -77,21 +76,23 @@
         "typeFlyvninger": "NASJONAL"
       }
     ],
-    "arbeidUtland" : [
-      {
-        "foretakNavn" : "BMW AG",
-        "foretakOrgnr": "123456789",
-        "adresse" : {
-          "landkode" : "DE",
-          "region" : "Brandenburger",
-          "husnummer" : "123",
-          "postnummer" : "1234",
-          "poststed" : "Poststedet",
-          "gatenavn" : "Adresseveien 123"
+    "arbeidPaaLand": {
+      "fysiskeArbeidssteder": [
+        {
+          "adresse": {
+            "gatenavn": "Adresseveien 123",
+            "husnummer": "123",
+            "region": "Brandenburger",
+            "postnummer": "1234",
+            "poststed": "Poststedet",
+            "landkode": "DE",
+          },
+          "virksomhetNavn": "EQUINOR",
         },
-        "arbeidUtlandHjemmekontor" : false
-      }
-    ],
+      ],
+      "erHjemmekontor": false,
+      "erFastArbeidssted": null
+    },
     "selvstendigArbeid" : {
       "selvstendigForetak" : [
         {
