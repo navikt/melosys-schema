@@ -18,6 +18,7 @@ const Oppgaver = require('./test/oppgaver');
 const Organisasjon = require('./test/organsisasjon');
 const LovvalgsperioderOpprinnelig = require('./test/lovvalgsperioderOpprinnelig');
 const Personer = require('./test/personer');
+const Representant = require('./test/representant');
 const Saksbehandler = require('./test/saksbehandler');
 const Saksflyt = require('./test/saksflyt');
 const Statistikk = require('./test/statistikk');
@@ -84,6 +85,9 @@ const katalogMap = new Map([
   ['oppgaver-sok', Oppgaver.sok],
   ['lovvalgsperioder-opprinnelig', LovvalgsperioderOpprinnelig.lovvalgsperioderOpprinnelig],
   ['personer', Personer.personer],
+  ['representant-liste', Representant.liste],
+  ['representant-representant', Representant.representant],
+  ['representant-valgt', Representant.valgt],
   ['organisasjoner', Organisasjon.organisasjon],
   ['saksbehandler', Saksbehandler.saksbehandler],
   ['saksflyt-anmodningsperioder-bestill', Saksflyt.anmodningsperioder],

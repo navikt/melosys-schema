@@ -1,0 +1,56 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/representant-representant-schema.json",
+  "title": "The Representant Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "navn",
+    "adresselinjer",
+    "postnummer",
+    "telefon",
+    "orgnr",
+    "endretAv",
+    "endretDato"
+  ],
+  "properties": {
+    "id" : {
+      "$id": "#/properties/id",
+      "type": "string"
+    },
+    "navn": {
+      "$id": "#/properties/navn",
+      "type": "string"
+    },
+    "adresselinjer" : {
+      "$id": "#/properties/adresselinjer",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "postnummer" : {
+      "$id": "#/properties/telefon",
+      "type": ["string", "null"]
+    },
+    "telefon" : {
+      "$id": "#/properties/telefon",
+      "type": ["string", "null"]
+    },
+    "orgnr" : {
+      "$id": "#/properties/orgnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+    },
+    "endretAv" : {
+      "$id": "#/properties/endretAv",
+      "type": ["string", "null"]
+    },
+    "endretDato" : {
+      "$id": "#/properties/endretDato",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/representant-liste-schema.json",
+  "title": "The Representant Liste Schema",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "navn"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#/items/id",
+        "type": "string"
+      },
+      "navn": {
+        "$id": "#/items/navn",
+        "type": "string"
+      }
+    }
+  }
+}
