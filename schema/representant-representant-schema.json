@@ -6,7 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "id",
+    "nummer",
     "navn",
     "adresselinjer",
     "postnummer",
@@ -16,8 +16,8 @@
     "endretDato"
   ],
   "properties": {
-    "id" : {
-      "$id": "#/properties/id",
+    "nummer" : {
+      "$id": "#/properties/nummer",
       "type": "string"
     },
     "navn": {

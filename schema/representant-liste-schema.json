@@ -8,12 +8,12 @@
   "items": {
     "type": "object",
     "required": [
-      "id",
+      "nummer",
       "navn"
     ],
     "properties": {
-      "id": {
-        "$id": "#/items/id",
+      "nummer": {
+        "$id": "#/items/nummer",
         "type": "string"
       },
       "navn": {
