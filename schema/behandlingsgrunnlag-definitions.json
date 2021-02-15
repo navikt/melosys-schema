@@ -73,50 +73,44 @@
         }
       }
     },
-    "arbeidUtland": {
-      "type": "array",
-      "title": "The Arbeidutland Schema",
-      "uniqueItems": true,
-      "items": {
-        "type": "object",
-        "title": "The Items Schema",
-        "additionalProperties": false,
-        "required": [
-          "adresse",
-          "foretakNavn",
-          "foretakOrgnr",
-          "arbeidUtlandHjemmekontor"
-        ],
-        "properties": {
-          "adresse": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
-          },
-          "foretakNavn": {
-            "type": ["string","null"],
-            "title": "The ForetakNavn Schema",
-            "default": "",
-            "examples": [
-              "EQUINOR DEUTSCHLAND"
+    "arbeidPaaLand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fysiskeArbeidssteder",
+        "erHjemmekontor",
+        "erFastArbeidssted"
+      ],
+      "properties": {
+        "fysiskeArbeidssteder": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "adresse",
+              "virksomhetNavn"
             ],
-            "pattern": "^(.*)$"
-          },
-          "foretakOrgnr": {
-            "type": ["string","null"],
-            "title": "The ForetakOrgnr Schema",
-            "default": "",
-            "examples": [
-              ""
-            ],
-            "pattern": "^(.*)$"
-          },
-          "arbeidUtlandHjemmekontor": {
-            "type": ["boolean","null"],
-            "title": "The Arbeidutlandhjemmekontor Schema",
-            "default": false,
-            "examples": [
-              false
-            ]
+            "properties": {
+              "adresse": {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
+              },
+              "virksomhetNavn": {
+                "type": ["string","null"],
+                "examples": [
+                  "EQUINOR DEUTSCHLAND"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
           }
+        },
+        "erHjemmekontor": {
+          "type": ["boolean","null"]
+        },
+        "erFastArbeidssted": {
+          "type": ["boolean","null"]
         }
       }
     },
@@ -309,10 +303,9 @@
           "enhetNavn",
           "fartsomradeKode",
           "flaggLandkode",
-          "foretakNavn",
-          "foretakOrgnr",
-          "installasjonsLandkode",
-          "territorialfarvann"
+          "innretningLandkode",
+          "territorialfarvann",
+          "innretningstype"
         ],
         "properties": {
           "enhetNavn": {
@@ -342,17 +335,8 @@
             ],
             "pattern": "^(.*)$"
           },
-          "foretakNavn": {
-            "type": ["string", "null"],
-            "pattern": "^(.*)$"
-          },
-          "foretakOrgnr": {
-            "type": ["string", "null"],
-            "pattern": "^(.*)$"
-          },
-          "installasjonsLandkode": {
+          "innretningLandkode": {
             "type": ["string","null"],
-            "title": "The Installasjonslandkode Schema",
             "default": "",
             "examples": [
               "GB"
@@ -365,6 +349,15 @@
             "default": "",
             "examples": [
               "GB"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "innretningstype": {
+            "type": ["string","null"],
+            "title": "The Innretningstype Schema",
+            "examples": [
+              "PLATTFORM",
+              "BORESKIP"
             ],
             "pattern": "^(.*)$"
           }
@@ -674,7 +667,7 @@
         "arbeidsinntekt",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
-        "arbeidUtland",
+        "arbeidPaaLand",
         "foretakUtland",
         "oppholdUtland",
         "bosted",
@@ -694,8 +687,8 @@
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"
         },
-        "arbeidUtland": {
-          "$ref": "#/definitions/arbeidUtland"
+        "arbeidPaaLand": {
+          "$ref": "#/definitions/arbeidPaaLand"
         },
         "foretakUtland": {
           "$ref": "#/definitions/foretakUtland"
@@ -734,7 +727,7 @@
         "arbeidsinntekt",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
-        "arbeidUtland",
+        "arbeidPaaLand",
         "foretakUtland",
         "oppholdUtland",
         "bosted",
@@ -755,8 +748,8 @@
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"
         },
-        "arbeidUtland": {
-          "$ref": "#/definitions/arbeidUtland"
+        "arbeidPaaLand": {
+          "$ref": "#/definitions/arbeidPaaLand"
         },
         "foretakUtland": {
           "$ref": "#/definitions/foretakUtland"
@@ -796,7 +789,7 @@
       "required": [
         "juridiskArbeidsgiverNorge",
         "personOpplysninger",
-        "arbeidUtland",
+        "arbeidPaaLand",
         "foretakUtland",
         "oppholdUtland",
         "bosted",
@@ -813,8 +806,8 @@
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"
         },
-        "arbeidUtland": {
-          "$ref": "#/definitions/arbeidUtland"
+        "arbeidPaaLand": {
+          "$ref": "#/definitions/arbeidPaaLand"
         },
         "foretakUtland": {
           "$ref": "#/definitions/foretakUtland"
@@ -847,7 +840,7 @@
       "required": [
         "juridiskArbeidsgiverNorge",
         "personOpplysninger",
-        "arbeidUtland",
+        "arbeidPaaLand",
         "foretakUtland",
         "oppholdUtland",
         "bosted",
@@ -866,8 +859,8 @@
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"
         },
-        "arbeidUtland": {
-          "$ref": "#/definitions/arbeidUtland"
+        "arbeidPaaLand": {
+          "$ref": "#/definitions/arbeidPaaLand"
         },
         "foretakUtland": {
           "$ref": "#/definitions/foretakUtland"
