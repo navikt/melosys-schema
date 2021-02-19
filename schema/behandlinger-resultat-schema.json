@@ -69,7 +69,14 @@
       "pattern": "^(.*)$"
     },
     "vedtakstype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+      "oneOf": [
+        {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   }
 }
