@@ -71,6 +71,30 @@
         "string",
         "null"
       ]
+    },
+    "orgNr": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "innledningFritekst": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manglerFritekst": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fullmektigNavn": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }
