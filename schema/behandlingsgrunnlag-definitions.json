@@ -572,6 +572,105 @@
         }
       }
     },
+    "loennOgGodtgjoerelse": {
+      "type": "object",
+      "title": "The loennOgGodtgjoerelse schema",
+      "additionalProperties": false,
+      "required": [
+        "norskArbgUtbetalerLoenn",
+        "erArbeidstakerAnsattHelePerioden",
+        "utlArbgUtbetalerLoenn",
+        "bruttoLoennPerMnd",
+        "bruttoLoennUtlandPerMnd",
+        "mottarNaturalytelser",
+        "samletVerdiNaturalytelser",
+        "erArbeidsgiveravgiftHelePerioden",
+        "erTrukketTrygdeavgift",
+        "utlArbTilhoererSammeKonsern"
+      ],
+      "properties": {
+        "norskArbgUtbetalerLoenn": {
+          "type": ["boolean", "null"],
+          "title": "The norskArbgUtbetalerLoenn schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "erArbeidstakerAnsattHelePerioden": {
+          "type": ["boolean", "null"],
+          "title": "The erArbeidstakerAnsattHelePerioden schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "utlArbgUtbetalerLoenn": {
+          "type": ["boolean", "null"],
+          "title": "The utlArbgUtbetalerLoenn schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "bruttoLoennPerMnd": {
+          "type": ["number", "null"],
+          "title": "The bruttoLoennPerMnd schema",
+          "default": 0.0,
+          "examples": [
+            7000.12
+          ]
+        },
+        "bruttoLoennUtlandPerMnd": {
+          "type": ["number", "null"],
+          "title": "The bruttoLoennUtlandPerMnd schema",
+          "default": 0.0,
+          "examples": [
+            14000.23
+          ]
+        },
+        "mottarNaturalytelser": {
+          "type": ["boolean", "null"],
+          "title": "The mottarNaturalytelser schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "samletVerdiNaturalytelser": {
+          "type": ["number", "null"],
+          "title": "The samletVerdiNaturalytelser schema",
+          "default": 0.0,
+          "examples": [
+            99000.57
+          ]
+        },
+        "erArbeidsgiveravgiftHelePerioden": {
+          "type": ["boolean", "null"],
+          "title": "The erArbeidsgiveravgiftHelePerioden schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "erTrukketTrygdeavgift": {
+          "type": ["boolean", "null"],
+          "title": "The erTrukketTrygdeavgift schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "utlArbTilhoererSammeKonsern": {
+          "type": ["boolean", "null"],
+          "title": "The utlArbTilhoererSammeKonsern schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      }
+    },
     "juridiskArbeidsgiverNorge": {
       "type": "object",
       "title": "The Juridiskarbeidsgivernorge Schema",
@@ -724,6 +823,7 @@
       "additionalProperties": false,
       "required": [
         "juridiskArbeidsgiverNorge",
+        "loennOgGodtgjoerelse",
         "arbeidsinntekt",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
@@ -744,6 +844,9 @@
         },
         "arbeidsinntekt": {
           "$ref": "#/definitions/arbeidsinntekt"
+        },
+        "loennOgGodtgjoerelse": {
+          "$ref": "#/definitions/loennOgGodtgjoerelse"
         },
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"
