@@ -6,6 +6,7 @@ const Anmodningsperioder = require('./test/anmodningsperioder');
 const Avklartefakta = require('./test/avklartefakta');
 const Behandlinger = require('./test/behandlinger');
 const Behandlingsgrunnlag = require('./test/behandlingsgrunnlag');
+const Brev = require('./test/brev');
 const Dokumenter = require('./test/dokumenter');
 const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
@@ -51,6 +52,7 @@ const katalogMap = new Map([
   ['behandlinger-resultat', Behandlinger.resultat],
   ['behandlinger-status', Behandlinger.status],
   ['behandlinger-tidligeremedlemsperioder', Behandlinger.tidligereMedlemsPerioder],
+  ['brev-post', Brev.post],
   ['dokumenter-opprett', Dokumenter.dokument.opprett],
   ['dokumenter-oversikt', Dokumenter.dokument.oversikt],
   ['dokumenter-pdf', Dokumenter.pdf.hent],
