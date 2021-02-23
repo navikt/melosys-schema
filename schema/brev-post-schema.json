@@ -1,0 +1,106 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-utkast-pdf-post-schema.json",
+  "type": [
+    "object",
+    "null"
+  ],
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "required": [
+    "mottaker"
+  ],
+  "properties": {
+    "mottaker": {
+      "$id": "#/properties/mottaker",
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Mottaker",
+      "description": "",
+      "default": "",
+      "examples": [
+        "ARBEIDSGIVER",
+        "BRUKER",
+        "REPRESENTANT",
+        "MYNDIGHET"
+      ],
+      "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"],
+      "pattern": "^(.*)$"
+    },
+    "fritekst": {
+      "$id": "#/properties/fritekst",
+      "title": "Deprecated",
+      "deprecated": true,
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "The Fritekst Schema",
+      "default": "",
+      "examples": ["Fritekst"],
+      "pattern": "^(.*)$"
+    },
+    "begrunnelseKode": {
+      "$id": "#/properties/begrunnelseKode",
+      "deprecated": true,
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Deprecated",
+      "default": "",
+      "examples": [
+        "ANMODNING_UNNTAK",
+        "AVSLAG_ARBEIDSGIVER",
+        "AVSLAG_YRKESAKTIV",
+        "ATTEST_A1",
+        "INNVILGELSE_ARBEIDSGIVER",
+        "INNVILGELSE_YRKESAKTIV",
+        "MELDING_FORVENTET_SAKSBEHANDLINGSTID",
+        "MELDING_MANGLENDE_OPPLYSNINGER",
+        "MELDING_HENLAGT_SAK",
+        "ORIENTERING_ANMODNING_UNNTAK"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ytterligereInformasjon": {
+      "deprecated": true,
+      "title": "Deprecated",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "orgNr": {
+      "title": "Manuell overstyring av mottaker",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "innledningFritekst": {
+      "title": "Innledningstekst for mangelbrev",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manglerFritekst": {
+      "title": "Mangelinfo for mangelbrev",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fullmektigNavn": {
+      "title": "Manuell overstyring av navn på fullmektig",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
