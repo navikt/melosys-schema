@@ -53,6 +53,7 @@ const katalogMap = new Map([
   ['behandlinger-status', Behandlinger.status],
   ['behandlinger-tidligeremedlemsperioder', Behandlinger.tidligereMedlemsPerioder],
   ['brev-post', Brev.post],
+  ['brev-tilgjengeligemaler', Brev.tilgjengeligemaler],
   ['dokumenter-opprett', Dokumenter.dokument.opprett],
   ['dokumenter-oversikt', Dokumenter.dokument.oversikt],
   ['dokumenter-pdf', Dokumenter.pdf.hent],

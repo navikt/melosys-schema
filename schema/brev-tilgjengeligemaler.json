@@ -1,0 +1,119 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/brev-tilgjengeligemaler.json",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "type",
+      "beskrivelse",
+      "felter",
+      "muligeMottakere"
+    ],
+    "properties": {
+      "type": {
+        "$id": "#root/items/type",
+        "title": "Type",
+        "type": "object",
+        "required": [
+          "kode",
+          "term"
+        ],
+        "properties": {
+          "kode": {
+            "title": "Kode",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD"
+            ],
+            "pattern": "^.*$"
+          },
+          "term": {
+            "title": "Term",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Melding om forventet saksbehandlingstid av søknad"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+    ,
+      "beskrivelse": {
+        "title": "Beskrivelse",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Melding om forventet saksbehandlingstid av søknad"
+        ],
+        "pattern": "^.*$"
+      },
+      "felter": {
+        "title": "Felter",
+        "type": "array",
+        "default": []
+      },
+      "muligeMottakere": {
+        "title": "Muligemottakere",
+        "type": "array",
+        "default": [],
+        "items":{
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "type",
+            "rolle",
+            "orgnr",
+            "kanOverstyres",
+            "adresselinjer"
+          ],
+          "properties": {
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Bruker eller brukers fullmektig"
+              ],
+              "pattern": "^.*$"
+            },
+            "rolle": {
+              "title": "Rolle",
+              "type": "string",
+              "examples": [
+                "BRUKER",
+                "ARBEIDSGIVER"
+              ],
+              "pattern": "^.*$"
+            },
+            "orgnr": {
+              "title": "Orgnr",
+              "type": "string",
+              "default": null
+            },
+            "kanOverstyres": {
+              "title": "Kanoverstyres",
+              "type": "boolean",
+              "default": false
+            },
+            "adresselinjer": {
+              "title": "Adresselinjer",
+              "type": "array",
+              "default": []
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

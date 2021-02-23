@@ -1,0 +1,50 @@
+[
+  {
+    "type": {
+      "kode": "MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD",
+      "term": "Melding om forventet saksbehandlingstid av søknad"
+    },
+    "beskrivelse": "Melding om forventet saksbehandlingstid av søknad",
+    "felter": null,
+    "muligeMottakere": [
+      {
+        "type": "Bruker eller brukers fullmektig",
+        "rolle": "BRUKER"
+      }
+    ]
+  },
+  {
+    "type": {
+      "kode": "MANGELBREV_BRUKER",
+      "term": "Melding om manglende opplysninger"
+    },
+    "beskrivelse": "Melding om manglende opplysninger",
+    "felter": [
+      {
+        "kode": "INNLEDNING_FRITEKST",
+        "beskrivelse": "Fritekst til innledning",
+        "feltType": "FRITEKST",
+        "hjelpetekst": "",
+        "valg": null
+      },
+      {
+        "kode": "MANGLER_FRITEKST",
+        "beskrivelse": "Fritekst om manglende dokumentasjon",
+        "feltType": "FRITEKST",
+        "hjelpetekst": "",
+        "paakrevd": true,
+        "valg": null
+      }
+    ],
+    "muligeMottakere": [
+      {
+        "type": "Bruker eller brukers fullmektig",
+        "rolle": "BRUKER"
+      },
+      {
+        "type": "Arbeidsgiver eller arbeidsgivers fullmektig",
+        "rolle": "ARBEIDSGIVER"
+      }
+    ]
+  }
+]
