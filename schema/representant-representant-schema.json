@@ -10,10 +10,7 @@
     "navn",
     "adresselinjer",
     "postnummer",
-    "telefon",
-    "orgnr",
-    "endretAv",
-    "endretDato"
+    "orgnr"
   ],
   "properties": {
     "nummer" : {
@@ -36,21 +33,9 @@
       "$id": "#/properties/telefon",
       "type": ["string", "null"]
     },
-    "telefon" : {
-      "$id": "#/properties/telefon",
-      "type": ["string", "null"]
-    },
     "orgnr" : {
       "$id": "#/properties/orgnr",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
-    },
-    "endretAv" : {
-      "$id": "#/properties/endretAv",
-      "type": ["string", "null"]
-    },
-    "endretDato" : {
-      "$id": "#/properties/endretDato",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
     }
   }
 }
