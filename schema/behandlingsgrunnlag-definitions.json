@@ -828,6 +828,7 @@
       "required": [
         "juridiskArbeidsgiverNorge",
         "arbeidsinntekt",
+        "loennOgGodtgjoerelse",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
         "arbeidPaaLand",
@@ -847,6 +848,9 @@
         },
         "arbeidsinntekt": {
           "$ref": "#/definitions/arbeidsinntekt"
+        },
+        "loennOgGodtgjoerelse": {
+          "$ref": "#/definitions/loennOgGodtgjoerelse"
         },
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"

@@ -88,6 +88,18 @@
       "andelRekruttertINorge": 80.0,
       "ekstraArbeidsgivere": []
     },
+    "loennOgGodtgjoerelse": {
+      "norskArbgUtbetalerLoenn": false,
+      "erArbeidstakerAnsattHelePerioden": true,
+      "utlArbgUtbetalerLoenn": true,
+      "bruttoLoennPerMnd": 7000.12,
+      "bruttoLoennUtlandPerMnd": 14000,
+      "mottarNaturalytelser": true,
+      "samletVerdiNaturalytelser": null,
+      "erArbeidsgiveravgiftHelePerioden": true,
+      "erTrukketTrygdeavgift": false,
+      "utlArbTilhoererSammeKonsern": null
+    },
     "arbeidsinntekt": {
       "inntektNorskIPerioden": 5500,
       "inntektUtenlandskIPerioden": 2000,
