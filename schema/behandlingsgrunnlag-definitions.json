@@ -487,91 +487,6 @@
         }
       }
     },
-    "arbeidsinntekt": {
-      "type": "object",
-      "title": "The Arbeidsinntekt Schema",
-      "additionalProperties": false,
-      "required": [
-        "inntektNorskIPerioden",
-        "inntektUtenlandskIPerioden",
-        "inntektNaeringIPerioden",
-        "inntektNaturalytelser",
-        "inntektErInnrapporteringspliktig",
-        "inntektTrygdeavgiftBlirTrukket"
-      ],
-      "properties": {
-        "inntektNorskIPerioden": {
-          "type": ["integer","null"],
-          "title": "The Inntektnorskiperioden Schema",
-          "default": 0,
-          "examples": [
-            5500
-          ]
-        },
-        "inntektUtenlandskIPerioden": {
-          "type": ["integer","null"],
-          "title": "The Inntektutenlandskiperioden Schema",
-          "default": 0,
-          "examples": [
-            2000
-          ]
-        },
-        "inntektNaeringIPerioden": {
-          "type": ["integer","null"],
-          "title": "The Inntektnaeringiperioden Schema",
-          "default": 0,
-          "examples": [
-            0
-          ]
-        },
-        "inntektNaturalytelser": {
-          "type": "object",
-          "title": "The Inntektnaturalytelser Schema",
-          "additionalProperties": false,
-          "required": [
-            "friBil",
-            "friBolig",
-            "friAnnet"
-          ],
-          "properties": {
-            "friBil": {
-              "type": ["boolean","null"],
-              "title": "The friBil Schema",
-              "default": false,
-              "examples": [true]
-            },
-            "friBolig": {
-              "type": ["boolean","null"],
-              "title": "The friBolig Schema",
-              "default": false,
-              "examples": [true]
-            },
-            "friAnnet": {
-              "type": ["string","null"],
-              "title": "The friAnnet Schema",
-              "default": false,
-              "examples": [true]
-            }
-          }
-        },
-        "inntektErInnrapporteringspliktig": {
-          "type": ["boolean","null"],
-          "title": "The Inntekterinnrapporteringspliktig Schema",
-          "default": false,
-          "examples": [
-            true
-          ]
-        },
-        "inntektTrygdeavgiftBlirTrukket": {
-          "type": ["boolean","null"],
-          "title": "The Inntekttrygdeavgiftblirtrukket Schema",
-          "default": false,
-          "examples": [
-            true
-          ]
-        }
-      }
-    },
     "loennOgGodtgjoerelse": {
       "type": "object",
       "title": "The loennOgGodtgjoerelse schema",
@@ -763,7 +678,6 @@
       "additionalProperties": false,
       "required": [
         "juridiskArbeidsgiverNorge",
-        "arbeidsinntekt",
         "loennOgGodtgjoerelse",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
@@ -780,9 +694,6 @@
       "properties": {
         "arbeidsgiversBekreftelse": {
           "$ref": "#/definitions/arbeidsgiversBekreftelse"
-        },
-        "arbeidsinntekt": {
-          "$ref": "#/definitions/arbeidsinntekt"
         },
         "loennOgGodtgjoerelse": {
           "$ref": "#/definitions/loennOgGodtgjoerelse"
@@ -827,7 +738,6 @@
       "additionalProperties": false,
       "required": [
         "juridiskArbeidsgiverNorge",
-        "arbeidsinntekt",
         "loennOgGodtgjoerelse",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
@@ -845,9 +755,6 @@
       "properties": {
         "arbeidsgiversBekreftelse": {
           "$ref": "#/definitions/arbeidsgiversBekreftelse"
-        },
-        "arbeidsinntekt": {
-          "$ref": "#/definitions/arbeidsinntekt"
         },
         "loennOgGodtgjoerelse": {
           "$ref": "#/definitions/loennOgGodtgjoerelse"

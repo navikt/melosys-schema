@@ -88,18 +88,6 @@
       "andelRekruttertINorge": 80.0,
       "ekstraArbeidsgivere": []
     },
-    "arbeidsinntekt": {
-      "inntektNorskIPerioden": 5500,
-      "inntektUtenlandskIPerioden": 2000,
-      "inntektNaeringIPerioden": 1000,
-      "inntektNaturalytelser": {
-        "friBolig": true,
-        "friBil": true,
-        "friAnnet": "Ubegrenset mengde kaffegrut fra bedriftens kaffemaskinen"
-      },
-      "inntektErInnrapporteringspliktig": true,
-      "inntektTrygdeavgiftBlirTrukket": true
-    },
     "loennOgGodtgjoerelse": {
       "norskArbgUtbetalerLoenn": false,
       "erArbeidstakerAnsattHelePerioden": true,

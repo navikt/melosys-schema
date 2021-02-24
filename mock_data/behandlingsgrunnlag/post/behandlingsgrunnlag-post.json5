@@ -38,18 +38,6 @@
       "andelRekruttertINorge": 80.0,
       "ekstraArbeidsgivere": []
     },
-    "arbeidsinntekt" : {
-      "inntektNaeringIPerioden" : 0,
-      "inntektTrygdeavgiftBlirTrukket" : true,
-      "inntektUtenlandskIPerioden" : 2000,
-      "inntektNaturalytelser": {
-        "friBolig": true,
-        "friBil": null,
-        "friAnnet": null
-      },
-      "inntektErInnrapporteringspliktig" : true,
-      "inntektNorskIPerioden" : 5500
-    },
     "loennOgGodtgjoerelse": {
       "norskArbgUtbetalerLoenn": null,
       "erArbeidstakerAnsattHelePerioden": null,

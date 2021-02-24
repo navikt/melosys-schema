@@ -71,18 +71,6 @@
       "erTrukketTrygdeavgift": null,
       "utlArbTilhoererSammeKonsern": null
     },
-    "arbeidsinntekt": {
-      "inntektNorskIPerioden": null,
-      "inntektUtenlandskIPerioden": null,
-      "inntektNaeringIPerioden": null,
-      "inntektNaturalytelser": {
-        "friBolig": true,
-        "friBil": null,
-        "friAnnet": null
-      },
-      "inntektErInnrapporteringspliktig": null,
-      "inntektTrygdeavgiftBlirTrukket": null
-    },
     "arbeidsgiversBekreftelse": {
       "arbeidsgiverBekrefterUtsendelse": null,
       "arbeidstakerAnsattUnderUtsendelsen": null,
