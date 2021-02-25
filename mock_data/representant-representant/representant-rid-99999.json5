@@ -1,0 +1,12 @@
+{
+  "nummer":"99999",
+  "navn":"99DUMMYNAVN",
+  "adresselinjer":
+  [
+    "DUMMYADR1",
+    "DUMMYADR2",
+    "DUMMYADR3"
+  ],
+  "postnummer":"3601",
+  "orgnr":null
+}
