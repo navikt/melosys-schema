@@ -383,6 +383,32 @@
         "$ref": "#/definitions/landkode"
       }
     },
+    "medfolgendeFamilieObjekt": {
+      "title": "The MedfolgendeFamilieObjekt Schema",
+      "type": "object",
+      "$id": "#/definitions/medfolgendeFamilieObjekt",
+      "additionalProperties": false,
+      "required": [
+        "uuid",
+        "omfattet",
+        "begrunnelseKode",
+        "begrunnelseFritekst"
+      ],
+      "properties": {
+        "uuid": {
+          "$ref": "#/definitions/uuid"
+        },
+        "omfattet": {
+          "type": "boolean"
+        },
+        "begrunnelseKode": {
+          "type": ["string", "null"]
+        },
+        "begrunnelseFritekst": {
+          "type": ["string", "null"]
+        }
+      }
+    },
     "orgnr": {
       "type": "string",
       "default": "123456789",

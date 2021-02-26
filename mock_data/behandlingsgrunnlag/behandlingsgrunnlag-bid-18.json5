@@ -28,47 +28,45 @@
       ],
       "medfolgendeFamilie": [],
     },
-    "arbeidUtland": [
-      {
-        "foretakNavn": "EQUINOR",
-        "foretakOrgnr": "372384726",
-        "arbeidUtlandHjemmekontor": false,
-        "adresse": {
-          "gatenavn": "Adresseveien 123",
-          "husnummer": "123",
-          "region": "Brandenburger",
-          "postnummer": "1234",
-          "poststed": "Poststedet",
-          "landkode": "DE"
+    "arbeidPaaLand": {
+      "fysiskeArbeidssteder": [
+        {
+          "adresse": {
+            "gatenavn": "Adresseveien 123",
+            "husnummer": "123",
+            "region": "Brandenburger",
+            "postnummer": "1234",
+            "poststed": "Poststedet",
+            "landkode": "DE",
+          },
+          "virksomhetNavn": "EQUINOR",
+        },
+        {
+          "adresse": {
+            "landkode": "EE",
+            "gatenavn": "Testarbeidsstedgate Testarbeidsstedbygning",
+            "husnummer": null,
+            "region": "Testarbeidsstedregion",
+            "postnummer": "Testarbeidsstedpostkode",
+            "poststed": "Testarbeidsstedby"
+          },
+          "virksomhetNavn": "Testarbeidsstednavn"
+        },
+        {
+          "virksomhetNavn": "Testarbeidsstednavn2",
+          "adresse": {
+            "landkode": "CY",
+            "gatenavn": "Testarbeidsstedgate2 Testarbeidsstedbygning2",
+            "husnummer": null,
+            "region": null,
+            "postnummer": "3212",
+            "poststed": "Testarbeidsstedby2"
+          }
         }
-      },
-      {
-        "foretakNavn": "Testarbeidsstednavn",
-        "foretakOrgnr": "123321121",
-        "arbeidUtlandHjemmekontor": false,
-        "adresse": {
-          "landkode": "EE",
-          "gatenavn": "Testarbeidsstedgate Testarbeidsstedbygning",
-          "husnummer": null,
-          "region": "Testarbeidsstedregion",
-          "postnummer": "Testarbeidsstedpostkode",
-          "poststed": "Testarbeidsstedby"
-        }
-      },
-      {
-        "foretakNavn": "Testarbeidsstednavn2",
-        "foretakOrgnr": "123345978",
-        "arbeidUtlandHjemmekontor": null,
-        "adresse": {
-          "landkode": "CY",
-          "gatenavn": "Testarbeidsstedgate2 Testarbeidsstedbygning2",
-          "husnummer": null,
-          "region": null,
-          "postnummer": "3212",
-          "poststed": "Testarbeidsstedby2"
-        }
-      }
-    ],
+      ],
+      "erHjemmekontor": false,
+      "erFastArbeidssted": null
+    },
     "foretakUtland": [
       {
         "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",

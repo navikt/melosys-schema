@@ -7,7 +7,8 @@
   "additionalProperties": false,
   "required": [
     "mottakerinstitusjon",
-    "fritekstSed"
+    "fritekstSed",
+    "vedlegg"
   ],
   "properties": {
     "mottakerinstitusjon": {
@@ -17,6 +18,25 @@
     "fritekstSed": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
+    },
+    "vedlegg": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "journalpostID",
+          "dokumentID"
+        ],
+        "properties": {
+          "journalpostID": {
+            "type": "string"
+          },
+          "dokumentID": {
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }

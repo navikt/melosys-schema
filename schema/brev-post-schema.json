@@ -9,10 +9,7 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "mottaker",
-    "begrunnelseKode",
-    "fritekst",
-    "ytterligereInformasjon"
+    "mottaker"
   ],
   "properties": {
     "mottaker": {
@@ -21,7 +18,7 @@
         "string",
         "null"
       ],
-      "title": "The Mottaker Schema",
+      "title": "Mottaker",
       "description": "",
       "default": "",
       "examples": [
@@ -35,6 +32,8 @@
     },
     "fritekst": {
       "$id": "#/properties/fritekst",
+      "title": "Deprecated",
+      "deprecated": true,
       "type": [
         "string",
         "null"
@@ -46,11 +45,12 @@
     },
     "begrunnelseKode": {
       "$id": "#/properties/begrunnelseKode",
+      "deprecated": true,
       "type": [
         "string",
         "null"
       ],
-      "title": "The BegrunnelseKode Schema",
+      "title": "Deprecated",
       "default": "",
       "examples": [
         "ANMODNING_UNNTAK",
@@ -67,30 +67,36 @@
       "pattern": "^(.*)$"
     },
     "ytterligereInformasjon": {
+      "deprecated": true,
+      "title": "Deprecated",
       "type": [
         "string",
         "null"
       ]
     },
     "orgNr": {
+      "title": "Manuell overstyring av mottaker",
       "type": [
         "string",
         "null"
       ]
     },
     "innledningFritekst": {
+      "title": "Innledningstekst for mangelbrev",
       "type": [
         "string",
         "null"
       ]
     },
     "manglerFritekst": {
+      "title": "Mangelinfo for mangelbrev",
       "type": [
         "string",
         "null"
       ]
     },
     "fullmektigNavn": {
+      "title": "Manuell overstyring av navn på fullmektig",
       "type": [
         "string",
         "null"

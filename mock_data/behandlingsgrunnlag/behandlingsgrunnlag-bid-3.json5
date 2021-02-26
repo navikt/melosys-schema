@@ -5,21 +5,23 @@
       "utenlandskIdent": [],
       "medfolgendeFamilie": []
     },
-    "arbeidUtland": [
-      {
-        "adresse": {
-          "gatenavn": "Adresseveien 123",
-          "husnummer": null,
-          "region": null,
-          "postnummer": "1234",
-          "poststed": "Poststedet",
-          "landkode": "DE"
+    "arbeidPaaLand": {
+      "fysiskeArbeidssteder": [
+        {
+          "adresse": {
+            "gatenavn": "Adresseveien 123",
+            "husnummer": "123",
+            "region": "Brandenburger",
+            "postnummer": "1234",
+            "poststed": "Poststedet",
+            "landkode": "DE",
+          },
+          "virksomhetNavn": "EQUINOR",
         },
-        "foretakNavn": "EQUINOR",
-        "foretakOrgnr": "372384726",
-        "arbeidUtlandHjemmekontor": null
-      }
-    ],
+      ],
+      "erHjemmekontor": false,
+      "erFastArbeidssted": null
+    },
     "foretakUtland": [],
     "oppholdUtland": {
       "oppholdslandkoder": [

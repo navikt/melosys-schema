@@ -1,6 +1,6 @@
 {
-  "mottakerinstitusjon": "NO:NAVT002",
-  "fritekst": "tittei på deg",
+  "mottakerinstitusjon": "NO:NAVT003",
+  "fritekstSed": "fritekst til SED",
   "vedlegg": [
     {
       "journalpostID": "1234",
