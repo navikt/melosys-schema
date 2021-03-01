@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/brev-post-schema.json",
+  "$id": "http://melosys.nav.no/schemas/brev-utkast-post-schema.json",
   "type": [
     "object",
     "null"
@@ -32,13 +32,12 @@
     },
     "fritekst": {
       "$id": "#/properties/fritekst",
-      "title": "Deprecated",
       "deprecated": true,
       "type": [
         "string",
         "null"
       ],
-      "title": "The Fritekst Schema",
+      "title": "Deprecated",
       "default": "",
       "examples": ["Fritekst"],
       "pattern": "^(.*)$"

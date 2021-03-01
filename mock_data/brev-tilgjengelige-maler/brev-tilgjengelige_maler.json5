@@ -25,6 +25,7 @@
         "beskrivelse": "Fritekst til innledning",
         "feltType": "FRITEKST",
         "hjelpetekst": "",
+        "paakrevd": false,
         "valg": null
       },
       {

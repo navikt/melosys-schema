@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/brev-tilgjengeligemaler.json",
+  "$id": "http://melosys.nav.no/schemas/brev-tilgjengelige-maler.json",
   "title": "The Root Schema",
   "additionalProperties": false,
   "type": "array",
@@ -45,8 +45,7 @@
             "pattern": "^.*$"
           }
         }
-      }
-    ,
+      },
       "beskrivelse": {
         "title": "Beskrivelse",
         "type": "string",
@@ -58,8 +57,58 @@
       },
       "felter": {
         "title": "Felter",
-        "type": "array",
-        "default": []
+        "type": ["array", "null"],
+        "default": [],
+        "items":{
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "kode",
+            "beskrivelse",
+            "feltType",
+            "hjelpetekst",
+            "paakrevd",
+            "valg"
+          ],
+          "properties": {
+            "kode": {
+              "title": "Kode",
+              "type": "string",
+              "examples": [
+                "INNLEDNING_FRITEKST",
+                "MANGLER_FRITEKST"
+              ],
+              "pattern": "^.*$"
+            },
+            "beskrivelse": {
+              "title": "Beskrivelse",
+              "type": "string",
+              "pattern": "^.*$"
+            },
+            "feltType": {
+              "title": "feltType",
+              "type": "string",
+              "pattern": "^.*$",
+              "examples": [
+                "FRITEKST"
+              ]
+            },
+            "hjelpetekst": {
+              "title": "Hjelpetekst",
+              "type": "string",
+              "pattern": "^.*$"
+            },
+            "paakrevd": {
+              "title": "Paakrevd",
+              "type": "boolean"
+            },
+            "valg": {
+              "title": "valg",
+              "type": ["array", "null"],
+              "default": []
+            }
+          }
+        }
       },
       "muligeMottakere": {
         "title": "Muligemottakere",
@@ -70,10 +119,7 @@
           "type": "object",
           "required": [
             "type",
-            "rolle",
-            "orgnr",
-            "kanOverstyres",
-            "adresselinjer"
+            "rolle"
           ],
           "properties": {
             "type": {
@@ -93,25 +139,9 @@
                 "ARBEIDSGIVER"
               ],
               "pattern": "^.*$"
-            },
-            "orgnr": {
-              "title": "Orgnr",
-              "type": "string",
-              "default": null
-            },
-            "kanOverstyres": {
-              "title": "Kanoverstyres",
-              "type": "boolean",
-              "default": false
-            },
-            "adresselinjer": {
-              "title": "Adresselinjer",
-              "type": "array",
-              "default": []
             }
           }
         }
-
       }
     }
   }

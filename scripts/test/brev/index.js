@@ -1,7 +1,9 @@
-const { post } = require('./post')
+const { utkast } = require('./utkast')
+const { opprett } = require('./opprett')
 const { tilgjengeligemaler } = require('./tilgjengeligemaler')
 
 module.exports = {
-  post,
+  utkast,
+  opprett,
   tilgjengeligemaler
 };
