@@ -488,7 +488,7 @@
       }
     },
     "loennOgGodtgjoerelse": {
-      "type": "object",
+      "type": ["object", "null"],
       "title": "The loennOgGodtgjoerelse schema",
       "additionalProperties": false,
       "required": [

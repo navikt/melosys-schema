@@ -61,18 +61,7 @@
       "andelRekruttertINorge": null,
       "ekstraArbeidsgivere": []
     },
-    "loennOgGodtgjoerelse": {
-      "norskArbgUtbetalerLoenn": null,
-      "erArbeidstakerAnsattHelePerioden": null,
-      "utlArbgUtbetalerLoenn": null,
-      "bruttoLoennPerMnd": null,
-      "bruttoLoennUtlandPerMnd": null,
-      "mottarNaturalytelser": null,
-      "samletVerdiNaturalytelser": null,
-      "erArbeidsgiveravgiftHelePerioden": null,
-      "erTrukketTrygdeavgift": null,
-      "utlArbTilhoererSammeKonsern": null
-    },
+    "loennOgGodtgjoerelse": null,
     "arbeidsgiversBekreftelse": {
       "arbeidsgiverBekrefterUtsendelse": null,
       "arbeidstakerAnsattUnderUtsendelsen": null,
