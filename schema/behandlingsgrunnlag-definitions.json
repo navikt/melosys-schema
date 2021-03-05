@@ -487,87 +487,101 @@
         }
       }
     },
-    "arbeidsinntekt": {
-      "type": "object",
-      "title": "The Arbeidsinntekt Schema",
+    "loennOgGodtgjoerelse": {
+      "type": ["object", "null"],
+      "title": "The loennOgGodtgjoerelse schema",
       "additionalProperties": false,
       "required": [
-        "inntektNorskIPerioden",
-        "inntektUtenlandskIPerioden",
-        "inntektNaeringIPerioden",
-        "inntektNaturalytelser",
-        "inntektErInnrapporteringspliktig",
-        "inntektTrygdeavgiftBlirTrukket"
+        "norskArbgUtbetalerLoenn",
+        "erArbeidstakerAnsattHelePerioden",
+        "utlArbgUtbetalerLoenn",
+        "bruttoLoennPerMnd",
+        "bruttoLoennUtlandPerMnd",
+        "mottarNaturalytelser",
+        "samletVerdiNaturalytelser",
+        "erArbeidsgiveravgiftHelePerioden",
+        "erTrukketTrygdeavgift",
+        "utlArbTilhoererSammeKonsern"
       ],
       "properties": {
-        "inntektNorskIPerioden": {
-          "type": ["integer","null"],
-          "title": "The Inntektnorskiperioden Schema",
-          "default": 0,
+        "norskArbgUtbetalerLoenn": {
+          "type": ["boolean", "null"],
+          "title": "The norskArbgUtbetalerLoenn schema",
+          "default": false,
           "examples": [
-            5500
+            false
           ]
         },
-        "inntektUtenlandskIPerioden": {
-          "type": ["integer","null"],
-          "title": "The Inntektutenlandskiperioden Schema",
-          "default": 0,
-          "examples": [
-            2000
-          ]
-        },
-        "inntektNaeringIPerioden": {
-          "type": ["integer","null"],
-          "title": "The Inntektnaeringiperioden Schema",
-          "default": 0,
-          "examples": [
-            0
-          ]
-        },
-        "inntektNaturalytelser": {
-          "type": "object",
-          "title": "The Inntektnaturalytelser Schema",
-          "additionalProperties": false,
-          "required": [
-            "friBil",
-            "friBolig",
-            "friAnnet"
-          ],
-          "properties": {
-            "friBil": {
-              "type": ["boolean","null"],
-              "title": "The friBil Schema",
-              "default": false,
-              "examples": [true]
-            },
-            "friBolig": {
-              "type": ["boolean","null"],
-              "title": "The friBolig Schema",
-              "default": false,
-              "examples": [true]
-            },
-            "friAnnet": {
-              "type": ["string","null"],
-              "title": "The friAnnet Schema",
-              "default": false,
-              "examples": [true]
-            }
-          }
-        },
-        "inntektErInnrapporteringspliktig": {
-          "type": ["boolean","null"],
-          "title": "The Inntekterinnrapporteringspliktig Schema",
+        "erArbeidstakerAnsattHelePerioden": {
+          "type": ["boolean", "null"],
+          "title": "The erArbeidstakerAnsattHelePerioden schema",
           "default": false,
           "examples": [
             true
           ]
         },
-        "inntektTrygdeavgiftBlirTrukket": {
-          "type": ["boolean","null"],
-          "title": "The Inntekttrygdeavgiftblirtrukket Schema",
+        "utlArbgUtbetalerLoenn": {
+          "type": ["boolean", "null"],
+          "title": "The utlArbgUtbetalerLoenn schema",
           "default": false,
           "examples": [
             true
+          ]
+        },
+        "bruttoLoennPerMnd": {
+          "type": ["number", "null"],
+          "title": "The bruttoLoennPerMnd schema",
+          "default": 0.0,
+          "examples": [
+            7000.12
+          ]
+        },
+        "bruttoLoennUtlandPerMnd": {
+          "type": ["number", "null"],
+          "title": "The bruttoLoennUtlandPerMnd schema",
+          "default": 0.0,
+          "examples": [
+            14000.23
+          ]
+        },
+        "mottarNaturalytelser": {
+          "type": ["boolean", "null"],
+          "title": "The mottarNaturalytelser schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "samletVerdiNaturalytelser": {
+          "type": ["number", "null"],
+          "title": "The samletVerdiNaturalytelser schema",
+          "default": 0.0,
+          "examples": [
+            99000.57
+          ]
+        },
+        "erArbeidsgiveravgiftHelePerioden": {
+          "type": ["boolean", "null"],
+          "title": "The erArbeidsgiveravgiftHelePerioden schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "erTrukketTrygdeavgift": {
+          "type": ["boolean", "null"],
+          "title": "The erTrukketTrygdeavgift schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "utlArbTilhoererSammeKonsern": {
+          "type": ["boolean", "null"],
+          "title": "The utlArbTilhoererSammeKonsern schema",
+          "default": false,
+          "examples": [
+            false
           ]
         }
       }
@@ -664,7 +678,7 @@
       "additionalProperties": false,
       "required": [
         "juridiskArbeidsgiverNorge",
-        "arbeidsinntekt",
+        "loennOgGodtgjoerelse",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
         "arbeidPaaLand",
@@ -681,8 +695,8 @@
         "arbeidsgiversBekreftelse": {
           "$ref": "#/definitions/arbeidsgiversBekreftelse"
         },
-        "arbeidsinntekt": {
-          "$ref": "#/definitions/arbeidsinntekt"
+        "loennOgGodtgjoerelse": {
+          "$ref": "#/definitions/loennOgGodtgjoerelse"
         },
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"
@@ -724,7 +738,7 @@
       "additionalProperties": false,
       "required": [
         "juridiskArbeidsgiverNorge",
-        "arbeidsinntekt",
+        "loennOgGodtgjoerelse",
         "arbeidsgiversBekreftelse",
         "personOpplysninger",
         "arbeidPaaLand",
@@ -742,8 +756,8 @@
         "arbeidsgiversBekreftelse": {
           "$ref": "#/definitions/arbeidsgiversBekreftelse"
         },
-        "arbeidsinntekt": {
-          "$ref": "#/definitions/arbeidsinntekt"
+        "loennOgGodtgjoerelse": {
+          "$ref": "#/definitions/loennOgGodtgjoerelse"
         },
         "personOpplysninger": {
           "$ref": "#/definitions/personOpplysninger"

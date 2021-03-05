@@ -61,18 +61,7 @@
       "andelRekruttertINorge": null,
       "ekstraArbeidsgivere": []
     },
-    "arbeidsinntekt": {
-      "inntektNorskIPerioden": null,
-      "inntektUtenlandskIPerioden": null,
-      "inntektNaeringIPerioden": null,
-      "inntektNaturalytelser": {
-        "friBolig": null,
-        "friBil": null,
-        "friAnnet": null
-      },
-      "inntektErInnrapporteringspliktig": null,
-      "inntektTrygdeavgiftBlirTrukket": null
-    },
+    "loennOgGodtgjoerelse": null,
     "arbeidsgiversBekreftelse": {
       "arbeidsgiverBekrefterUtsendelse": null,
       "arbeidstakerAnsattUnderUtsendelsen": null,
