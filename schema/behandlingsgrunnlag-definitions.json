@@ -679,7 +679,7 @@
       "required": [
         "erUtsendelseForOppdragIUtlandet",
         "erAnsattForOppdragIUtlandet",
-        "erArbeidstakerAnsattHelePerioden",
+        "erFortsattAnsattEtterOppdraget",
         "erDrattPaaEgetInitiativ",
         "erErstatningTidligereUtsendte",
         "samletUtsendingsperiode"
@@ -691,7 +691,7 @@
         "erAnsattForOppdragIUtlandet": {
           "type": ["boolean","null"]
         },
-        "erArbeidstakerAnsattHelePerioden": {
+        "erFortsattAnsattEtterOppdraget": {
           "type": ["boolean","null"]
         },
         "erDrattPaaEgetInitiativ": {
