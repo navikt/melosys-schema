@@ -681,7 +681,8 @@
         "erAnsattForOppdragIUtlandet",
         "erArbeidstakerAnsattHelePerioden",
         "erDrattPaaEgetInitiativ",
-        "erErstatningTidligereUtsendte"
+        "erErstatningTidligereUtsendte",
+        "samletUtsendingsperiode"
       ],
       "properties": {
         "erUtsendelseForOppdragIUtlandet": {
@@ -698,6 +699,9 @@
         },
         "erErstatningTidligereUtsendte": {
           "type": ["boolean","null"]
+        },
+        "samletUtsendingsperiode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         }
       }
     },
