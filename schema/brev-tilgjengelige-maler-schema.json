@@ -14,7 +14,8 @@
       "type",
       "beskrivelse",
       "felter",
-      "muligeMottakere"
+      "muligeMottakere",
+      "mottakereHjelpetekst"
     ],
     "properties": {
       "type": {
@@ -86,7 +87,7 @@
               "pattern": "^.*$"
             },
             "feltType": {
-              "title": "feltType",
+              "title": "FeltType",
               "type": "string",
               "pattern": "^.*$",
               "examples": [
@@ -95,7 +96,7 @@
             },
             "hjelpetekst": {
               "title": "Hjelpetekst",
-              "type": "string",
+              "type": ["string", "null"],
               "pattern": "^.*$"
             },
             "paakrevd": {
@@ -103,9 +104,29 @@
               "type": "boolean"
             },
             "valg": {
-              "title": "valg",
+              "title": "Valg",
               "type": ["array", "null"],
-              "default": []
+              "default": [],
+              "items": {
+                "required": [
+                  "kode",
+                  "beskrivelse"
+                ],
+                "properties": {
+                  "kode": {
+                    "title": "Kode",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "beskrivelse": {
+                    "title": "Beskrivelse",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  }
+                }
+              }
             }
           }
         }
@@ -142,6 +163,11 @@
             }
           }
         }
+      },
+      "mottakereHjelpetekst": {
+        "title": "MottakerHjelpetekst",
+        "type": ["string", "null"],
+        "default": null
       }
     }
   }

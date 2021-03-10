@@ -11,7 +11,8 @@
         "type": "Bruker eller brukers fullmektig",
         "rolle": "BRUKER"
       }
-    ]
+    ],
+    "mottakereHjelpetekst": null,
   },
   {
     "type": {
@@ -22,17 +23,26 @@
     "felter": [
       {
         "kode": "INNLEDNING_FRITEKST",
-        "beskrivelse": "Fritekst til innledning",
+        "beskrivelse": "Innledningstekst",
         "feltType": "FRITEKST",
         "hjelpetekst": "",
-        "paakrevd": false,
-        "valg": null
+        "paakrevd": true,
+        "valg": [
+          {
+            "kode": "STANDARD",
+            "beskrivelse": "Standardtekst søknad/klage",
+          },
+          {
+            "kode": "FRITEKST",
+            "beskrivelse": "Fritekst (erstatter standardtekst)",
+          }
+        ]
       },
       {
         "kode": "MANGLER_FRITEKST",
-        "beskrivelse": "Fritekst om manglende dokumentasjon",
+        "beskrivelse": "Hva skal mottaker sende inn?",
         "feltType": "FRITEKST",
-        "hjelpetekst": "",
+        "hjelpetekst": null,
         "paakrevd": true,
         "valg": null
       }
@@ -40,12 +50,20 @@
     "muligeMottakere": [
       {
         "type": "Bruker eller brukers fullmektig",
-        "rolle": "BRUKER"
+        "rolle": "BRUKER",
+        "frittValg": true,
       },
       {
         "type": "Arbeidsgiver eller arbeidsgivers fullmektig",
-        "rolle": "ARBEIDSGIVER"
+        "rolle": "ARBEIDSGIVER",
+        "frittValg": false,
+      },
+      {
+        "type": "Annen organisasjon",
+        "rolle": "ARBEIDSGIVER",
+        "frittValg": true,
       }
-    ]
+    ],
+    "mottakereHjelpetekst": "Hvis bruker eller arbeidsgiver har fullmektig som er lagt inn i sidemenyen, vil brevet automatisk bli sendt til denne."
   }
 ]
