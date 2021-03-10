@@ -1,5 +1,26 @@
 {
-  "definitions": {},
+  "definitions": {
+    "kopiMottaker": {
+      "type": "object",
+      "properties": {
+        "rolle": {
+          "type": "string",
+          "enum": [
+            "ARBEIDSGIVER",
+            "BRUKER",
+            "REPRESENTANT",
+            "MYNDIGHET"
+          ]
+        },
+        "orgnr": {
+          "type": "string"
+        },
+        "aktørId": {
+          "type": "string"
+        }
+      }
+    }
+  },
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/brev-opprett-post-schema.json",
   "type": [
@@ -27,7 +48,12 @@
         "REPRESENTANT",
         "MYNDIGHET"
       ],
-      "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"],
+      "enum": [
+        "ARBEIDSGIVER",
+        "BRUKER",
+        "REPRESENTANT",
+        "MYNDIGHET"
+      ],
       "pattern": "^(.*)$"
     },
     "fritekst": {
@@ -39,7 +65,9 @@
       ],
       "title": "Deprecated",
       "default": "",
-      "examples": ["Fritekst"],
+      "examples": [
+        "Fritekst"
+      ],
       "pattern": "^(.*)$"
     },
     "begrunnelseKode": {
@@ -94,12 +122,16 @@
         "null"
       ]
     },
-    "fullmektigNavn": {
-      "title": "Manuell overstyring av navn på fullmektig",
+    "kontaktperson": {
+      "title": "Manuell overstyring av navn på kontaktperson",
       "type": [
         "string",
         "null"
       ]
+    },
+    "kopiMottakere": {
+        "type": "array",
+        "items": { "$ref": "#/definitions/kopiMottaker" }
     }
   }
 }
