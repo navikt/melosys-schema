@@ -131,6 +131,27 @@
         "ARBEID_I_UTLANDET"
       ]
     },
+    "behandlingsstatus": {
+      "type": "string",
+      "title": "The Behandlingsstatus schema",
+      "examples": ["OPPRETTET"],
+      "enum": [
+        "OPPRETTET",
+        "UNDER_BEHANDLING",
+        "AVSLUTTET",
+        "AVVENT_DOK_UTL",
+        "AVVENT_DOK_PART",
+        "ANMODNING_UNNTAK_SENDT",
+        "VURDER_DOKUMENT",
+        "TIDSFRIST_UTLOEPT",
+        "FORELOEPIG_LOVVALG",
+        "IVERKSETTER_VEDTAK",
+        "SVAR_ANMODNING_MOTTATT",
+        "UTPEKING_SENDT",
+        "SVAR_UTPEKING_MOTTATT",
+        "MIDLERTIDIG_LOVVALGSBESLUTNING"
+      ]
+    },
     "behandlingsresultatTypeKode": {
       "type": "string",
       "enum": [
