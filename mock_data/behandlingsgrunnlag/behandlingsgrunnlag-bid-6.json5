@@ -59,18 +59,7 @@
       "andelRekruttertINorge": null,
       "ekstraArbeidsgivere": []
     },
-    "arbeidsinntekt": {
-      "inntektNorskIPerioden": null,
-      "inntektUtenlandskIPerioden": null,
-      "inntektNaeringIPerioden": null,
-      "inntektNaturalytelser": {
-        "friBolig": false,
-        "friBil": false,
-        "friAnnet": "Fri bruk av bedriftens vaskekluter"
-      },
-      "inntektErInnrapporteringspliktig": null,
-      "inntektTrygdeavgiftBlirTrukket": null
-    },
+    "loennOgGodtgjoerelse": null,
     "arbeidsgiversBekreftelse": {
       "arbeidsgiverBekrefterUtsendelse": null,
       "arbeidstakerAnsattUnderUtsendelsen": null,
