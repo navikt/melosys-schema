@@ -1,0 +1,18 @@
+[
+  {
+    "kode": "AVVENT_DOK_UTL",
+    "term": "Avventer svar fra utenlandsk trygdemyndighet"
+  },
+  {
+    "kode": "AVVENT_DOK_PART",
+    "term": "Avventer svar fra part i saken"
+  },
+  {
+    "kode": "UNDER_BEHANDLING",
+    "term": "Behandlingen pågår"
+  },
+  {
+    "kode": "AVSLUTTET",
+    "term": "Behandlingen er avsluttet"
+  }
+]
