@@ -85,6 +85,7 @@ const katalogMap = new Map([
   ['oppgaver-sok', Oppgaver.sok],
   ['lovvalgsperioder-opprinnelig', LovvalgsperioderOpprinnelig.lovvalgsperioderOpprinnelig],
   ['personer', Personer.personer],
+  ['personer-gjeldendeadresse', Personer.gjeldendeadresse],
   ['representant-liste', Representant.liste],
   ['representant-representant', Representant.representant],
   ['representant-valgt', Representant.valgt],
