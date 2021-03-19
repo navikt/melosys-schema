@@ -12,7 +12,6 @@
     "type": "object",
     "required": [
       "type",
-      "beskrivelse",
       "felter",
       "muligeMottakere",
       "mottakereHjelpetekst"
@@ -47,19 +46,10 @@
           }
         }
       },
-      "beskrivelse": {
-        "title": "Beskrivelse",
-        "type": "string",
-        "default": "",
-        "examples": [
-          "Melding om forventet saksbehandlingstid av søknad"
-        ],
-        "pattern": "^.*$"
-      },
       "felter": {
         "title": "Felter",
         "type": ["array", "null"],
-        "default": [],
+        "default": null,
         "items":{
           "title": "Items",
           "type": "object",
@@ -140,7 +130,10 @@
           "type": "object",
           "required": [
             "type",
-            "rolle"
+            "rolle",
+            "frittValg",
+            "adresser",
+            "feilmelding"
           ],
           "properties": {
             "type": {
@@ -160,6 +153,51 @@
                 "ARBEIDSGIVER"
               ],
               "pattern": "^.*$"
+            },
+            "frittValg": {
+              "title": "FrittValg",
+              "type": "boolean",
+              "default": false
+            },
+            "adresser": {
+              "title": "Adresser",
+              "type": ["array", "null"],
+              "default": null,
+              "items": {
+                "required": [
+                  "mottakerNavn",
+                  "orgnr",
+                  "adresselinjer",
+                  "postnr",
+                  "poststed",
+                  "land"
+                ],
+                "properties": {
+                  "mottakerNavn": {
+                    "title": "MottakerNavn",
+                    "type": "string"
+                  },
+                  "orgnr": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                  },
+                  "adresselinjer": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
+                  },
+                  "postnr": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/postnr"
+                  },
+                  "poststed": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/poststed"
+                  },
+                  "land": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/land"
+                  }
+                }
+              }
+            },
+            "feilmelding": {
+              "title": "Feilmelding",
+              "type": ["string", "null"]
             }
           }
         }

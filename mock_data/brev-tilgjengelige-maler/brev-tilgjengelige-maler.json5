@@ -2,45 +2,46 @@
   {
     "type": {
       "kode": "MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD",
-      "term": "Melding om forventet saksbehandlingstid av søknad"
+      "term": "Melding om forventet saksbehandlingstid"
     },
-    "beskrivelse": "Melding om forventet saksbehandlingstid av søknad",
     "felter": null,
     "muligeMottakere": [
       {
         "type": "Bruker eller brukers fullmektig",
-        "rolle": "BRUKER"
+        "rolle": "BRUKER",
+        "frittValg": false,
+        "adresser": null,
+        "feilmelding": "Bruker har ingen registrert adresse"
       }
     ],
-    "mottakereHjelpetekst": null,
+    "mottakereHjelpetekst": null
   },
   {
     "type": {
       "kode": "MANGELBREV_BRUKER",
-      "term": "Melding om manglende opplysninger"
+      "term": "Melding om manglende opplysninger til bruker"
     },
-    "beskrivelse": "Melding om manglende opplysninger",
     "felter": [
       {
         "kode": "INNLEDNING_FRITEKST",
         "beskrivelse": "Innledningstekst",
         "feltType": "FRITEKST",
-        "hjelpetekst": "",
+        "hjelpetekst": null,
         "paakrevd": true,
         "valg": [
           {
             "kode": "STANDARD",
-            "beskrivelse": "Standardtekst søknad/klage",
+            "beskrivelse": "Standardtekst søknad/klage"
           },
           {
             "kode": "FRITEKST",
-            "beskrivelse": "Fritekst (erstatter standardtekst)",
+            "beskrivelse": "Fritekst (erstatter standardtekst)"
           }
         ]
       },
       {
         "kode": "MANGLER_FRITEKST",
-        "beskrivelse": "Hva skal mottaker sende inn?",
+        "beskrivelse": "Hva skal mottakeren sende inn?",
         "feltType": "FRITEKST",
         "hjelpetekst": null,
         "paakrevd": true,
@@ -51,17 +52,72 @@
       {
         "type": "Bruker eller brukers fullmektig",
         "rolle": "BRUKER",
-        "frittValg": true,
+        "frittValg": false,
+        "adresser": [
+          {
+            "mottakerNavn": "Ståles Stål AS",
+            "orgnr": "999999999",
+            "adresselinjer": [
+              "Att: Ola Nordmann",
+              "Adresselinje1",
+              "Adresselinje 2"
+            ],
+            "postnr": "0010",
+            "poststed": "Oslo",
+            "land": "NO"
+          }
+        ],
+        "feilmelding": null
+      }
+    ],
+    "mottakereHjelpetekst": "Hvis bruker eller arbeidsgiver har fullmektig som er lagt inn i sidemenyen, vil brevet automatisk bli sendt til denne."
+  },
+  {
+    "type": {
+      "kode": "MANGELBREV_ARBEIDSGIVER",
+      "term": "Melding om manglende opplysninger til virksomhet"
+    },
+    "felter": [
+      {
+        "kode": "INNLEDNING_FRITEKST",
+        "beskrivelse": "Innledningstekst",
+        "feltType": "FRITEKST",
+        "hjelpetekst": null,
+        "paakrevd": true,
+        "valg": [
+          {
+            "kode": "STANDARD",
+            "beskrivelse": "Standardtekst søknad/klage"
+          },
+          {
+            "kode": "FRITEKST",
+            "beskrivelse": "Fritekst (erstatter standardtekst)"
+          }
+        ]
       },
+      {
+        "kode": "MANGLER_FRITEKST",
+        "beskrivelse": "Hva skal mottakeren sende inn?",
+        "feltType": "FRITEKST",
+        "hjelpetekst": null,
+        "paakrevd": true,
+        "valg": null
+      }
+    ],
+    "muligeMottakere": [
       {
         "type": "Arbeidsgiver eller arbeidsgivers fullmektig",
         "rolle": "ARBEIDSGIVER",
         "frittValg": false,
+        "adresser": null,
+        "feilmelding": "Finner ingen arbeidsgivere. Hent registeropplysninger."
       },
       {
         "type": "Annen organisasjon",
         "rolle": "ARBEIDSGIVER",
         "frittValg": true,
+        "adresser": null,
+        "feilmelding": null
       }
     ],
     "mottakereHjelpetekst": "Hvis bruker eller arbeidsgiver har fullmektig som er lagt inn i sidemenyen, vil brevet automatisk bli sendt til denne."
