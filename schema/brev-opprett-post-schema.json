@@ -13,7 +13,7 @@
           ]
         },
         "orgnr": {
-          "type": "string"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
         },
         "aktørId": {
           "type": "string"
@@ -35,10 +35,7 @@
   "properties": {
     "mottaker": {
       "$id": "#/properties/mottaker",
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": "string",
       "title": "Mottaker",
       "description": "",
       "default": "",
@@ -48,12 +45,7 @@
         "REPRESENTANT",
         "MYNDIGHET"
       ],
-      "enum": [
-        "ARBEIDSGIVER",
-        "BRUKER",
-        "REPRESENTANT",
-        "MYNDIGHET"
-      ],
+      "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"],
       "pattern": "^(.*)$"
     },
     "fritekst": {
@@ -65,9 +57,7 @@
       ],
       "title": "Deprecated",
       "default": "",
-      "examples": [
-        "Fritekst"
-      ],
+      "examples": ["Fritekst"],
       "pattern": "^(.*)$"
     },
     "begrunnelseKode": {
@@ -103,10 +93,7 @@
     },
     "orgNr": {
       "title": "Manuell overstyring av mottaker",
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
     "innledningFritekst": {
       "title": "Innledningstekst for mangelbrev",
@@ -124,14 +111,11 @@
     },
     "kontaktperson": {
       "title": "Manuell overstyring av navn på kontaktperson",
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": ["string", "null"]
     },
     "kopiMottakere": {
-        "type": "array",
-        "items": { "$ref": "#/definitions/kopiMottaker" }
+      "type": ["array", "null"],
+      "items": { "$ref": "#/definitions/kopiMottaker" }
     }
   }
 }
