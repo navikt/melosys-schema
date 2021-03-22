@@ -6,7 +6,7 @@ const Anmodningsperioder = require('./test/anmodningsperioder');
 const Avklartefakta = require('./test/avklartefakta');
 const Behandlinger = require('./test/behandlinger');
 const Behandlingsgrunnlag = require('./test/behandlingsgrunnlag');
-const Brev = require('./test/brev');
+const DokumenterV2 = require('./test/dokumenter-v2');
 const Dokumenter = require('./test/dokumenter');
 const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
@@ -53,14 +53,14 @@ const katalogMap = new Map([
   ['behandlinger-resultat', Behandlinger.resultat],
   ['behandlinger-status', Behandlinger.status],
   ['behandlinger-tidligeremedlemsperioder', Behandlinger.tidligereMedlemsPerioder],
-  ['brev-utkast', Brev.utkast],
-  ['brev-opprett', Brev.opprett],
-  ['brev-tilgjengelige-maler', Brev.tilgjengeligemaler],
   ['dokumenter-opprett', Dokumenter.dokument.opprett],
   ['dokumenter-oversikt', Dokumenter.dokument.oversikt],
   ['dokumenter-pdf', Dokumenter.pdf.hent],
   ['dokumenter-pdf-utkast-brev', Dokumenter.pdf.utkast.brev],
   ['dokumenter-pdf-utkast-sed', Dokumenter.pdf.utkast.sed],
+  ['dokumenter-v2-utkast', DokumenterV2.utkast],
+  ['dokumenter-v2-opprett', DokumenterV2.opprett],
+  ['dokumenter-v2-tilgjengelige-maler', DokumenterV2.tilgjengeligemaler],
   ['eessi-bucer', Eessi.bucer],
   ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
   ['fagsaker', Fagsaker.fagsak],

@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/brev-tilgjengelige-maler.json",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-v2-tilgjengelige-maler.json",
   "title": "The Root Schema",
   "additionalProperties": false,
   "type": "array",

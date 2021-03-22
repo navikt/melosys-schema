@@ -22,7 +22,7 @@
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/brev-opprett-post-schema.json",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-v2-opprett-post-schema.json",
   "type": [
     "object",
     "null"
