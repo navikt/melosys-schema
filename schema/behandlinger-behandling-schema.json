@@ -1229,7 +1229,7 @@
         },
         "svarFrist": {
           "title": "The SvarFrist Schema",
-          "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/dato",
+          "$id": "#/properties/oppsummering/properties/svarFrist",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
         }
       }
