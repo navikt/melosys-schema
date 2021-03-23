@@ -13,7 +13,7 @@
           ]
         },
         "orgnr": {
-          "type": "string"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
         },
         "aktørId": {
           "type": "string"
@@ -94,10 +94,7 @@
       ]
     },
     "orgNr": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
     "innledningFritekst": {
       "type": [
@@ -119,7 +116,7 @@
       ]
     },
     "kopiMottakere": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": { "$ref": "#/definitions/kopiMottaker" }
     }
   }
