@@ -1190,7 +1190,8 @@
         "endretDato",
         "endretAvNavn",
         "registrertDato",
-        "sisteOpplysningerHentetDato"
+        "sisteOpplysningerHentetDato",
+        "svarFrist"
       ],
       "properties": {
         "behandlingstema": {
@@ -1225,6 +1226,11 @@
           "title": "The SisteOpplysningerHentetDato Schema",
           "$id": "#/properties/oppsummering/properties/sisteOpplysningerHentetDato",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+        },
+        "svarFrist": {
+          "title": "The SvarFrist Schema",
+          "$id": "#/properties/oppsummering/properties/svarFrist",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
         }
       }
     }
