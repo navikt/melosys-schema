@@ -6,6 +6,7 @@ const Anmodningsperioder = require('./test/anmodningsperioder');
 const Avklartefakta = require('./test/avklartefakta');
 const Behandlinger = require('./test/behandlinger');
 const Behandlingsgrunnlag = require('./test/behandlingsgrunnlag');
+const DokumenterV2 = require('./test/dokumenter-v2');
 const Dokumenter = require('./test/dokumenter');
 const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
@@ -57,6 +58,9 @@ const katalogMap = new Map([
   ['dokumenter-pdf', Dokumenter.pdf.hent],
   ['dokumenter-pdf-utkast-brev', Dokumenter.pdf.utkast.brev],
   ['dokumenter-pdf-utkast-sed', Dokumenter.pdf.utkast.sed],
+  ['dokumenter-v2-utkast', DokumenterV2.utkast],
+  ['dokumenter-v2-opprett', DokumenterV2.opprett],
+  ['dokumenter-v2-tilgjengelige-maler', DokumenterV2.tilgjengeligemaler],
   ['eessi-bucer', Eessi.bucer],
   ['eessi-mottakerinstitusjoner', Eessi.mottakerinstitusjoner],
   ['fagsaker', Fagsaker.fagsak],

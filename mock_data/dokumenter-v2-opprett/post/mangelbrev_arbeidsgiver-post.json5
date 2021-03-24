@@ -1,0 +1,15 @@
+{
+  "produserbardokument": "MANGELBREV_ARBEIDSGIVER",
+  "mottaker": "ARBEIDSGIVER",
+  "orgNr": "999999999",
+  "innledningFritekst": "Fritekst til bruk i innledningen til brevet.",
+  "manglerFritekst": "Fritekst som forklarer grunnen til at mangelbrevet blir sendt.",
+  "kontaktperson": "Ola Nordmann",
+  "kopiMottakere": [
+    {
+      "rolle": "BRUKER",
+      "orgnr": null,
+      "aktørId": "1167540096033"
+    }
+  ]
+}

@@ -799,6 +799,7 @@
       ],
       "properties": {
         "adresselinjer": {
+          "$id": "#/definitions/ustrukturertAdresse/adresselinjer",
           "type": "array",
           "additionalItems": false,
           "maxItems": 5,

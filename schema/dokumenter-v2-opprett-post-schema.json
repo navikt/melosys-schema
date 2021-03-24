@@ -22,7 +22,7 @@
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/dokumenter-utkast-pdf-post-schema.json",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-v2-opprett-post-schema.json",
   "type": [
     "object",
     "null"
@@ -30,19 +30,20 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "mottaker",
-    "begrunnelseKode",
-    "fritekst",
-    "ytterligereInformasjon"
+    "produserbardokument",
+    "mottaker"
   ],
   "properties": {
+    "produserbardokument": {
+      "$id": "#/properties/dokument",
+      "type": "string",
+      "title": "Produkserbardokument",
+      "examples": ["MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD","MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE","MANGELBREV_BRUKER","MANGELBREV_ARBEIDSGIVER"]
+    },
     "mottaker": {
       "$id": "#/properties/mottaker",
-      "type": [
-        "string",
-        "null"
-      ],
-      "title": "The Mottaker Schema",
+      "type": "string",
+      "title": "Mottaker",
       "description": "",
       "default": "",
       "examples": [
@@ -56,22 +57,24 @@
     },
     "fritekst": {
       "$id": "#/properties/fritekst",
+      "deprecated": true,
       "type": [
         "string",
         "null"
       ],
-      "title": "The Fritekst Schema",
+      "title": "Deprecated",
       "default": "",
       "examples": ["Fritekst"],
       "pattern": "^(.*)$"
     },
     "begrunnelseKode": {
       "$id": "#/properties/begrunnelseKode",
+      "deprecated": true,
       "type": [
         "string",
         "null"
       ],
-      "title": "The BegrunnelseKode Schema",
+      "title": "Deprecated",
       "default": "",
       "examples": [
         "ANMODNING_UNNTAK",
@@ -88,21 +91,26 @@
       "pattern": "^(.*)$"
     },
     "ytterligereInformasjon": {
+      "deprecated": true,
+      "title": "Deprecated",
       "type": [
         "string",
         "null"
       ]
     },
     "orgNr": {
+      "title": "Manuell overstyring av mottaker",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
     "innledningFritekst": {
+      "title": "Innledningstekst for mangelbrev",
       "type": [
         "string",
         "null"
       ]
     },
     "manglerFritekst": {
+      "title": "Mangelinfo for mangelbrev",
       "type": [
         "string",
         "null"
@@ -110,20 +118,11 @@
     },
     "kontaktperson": {
       "title": "Manuell overstyring av navn på kontaktperson",
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": ["string", "null"]
     },
     "kopiMottakere": {
       "type": ["array", "null"],
       "items": { "$ref": "#/definitions/kopiMottaker" }
-    },
-    "produserbardokument": {
-      "$id": "#/properties/dokument",
-      "type": "string",
-      "title": "Produkserbardokument",
-      "examples": ["MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD","MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE","MANGELBREV_BRUKER","MANGELBREV_ARBEIDSGIVER"]
     }
   }
 }

@@ -1,0 +1,213 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-v2-tilgjengelige-maler.json",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "type",
+      "felter",
+      "muligeMottakere",
+      "mottakereHjelpetekst"
+    ],
+    "properties": {
+      "type": {
+        "$id": "#root/items/type",
+        "title": "Type",
+        "type": "object",
+        "required": [
+          "kode",
+          "term"
+        ],
+        "properties": {
+          "kode": {
+            "title": "Kode",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD"
+            ],
+            "pattern": "^.*$"
+          },
+          "term": {
+            "title": "Term",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Melding om forventet saksbehandlingstid av søknad"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      },
+      "felter": {
+        "title": "Felter",
+        "type": ["array", "null"],
+        "default": null,
+        "items":{
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "kode",
+            "beskrivelse",
+            "feltType",
+            "hjelpetekst",
+            "paakrevd",
+            "valg"
+          ],
+          "properties": {
+            "kode": {
+              "title": "Kode",
+              "type": "string",
+              "examples": [
+                "INNLEDNING_FRITEKST",
+                "MANGLER_FRITEKST"
+              ],
+              "pattern": "^.*$"
+            },
+            "beskrivelse": {
+              "title": "Beskrivelse",
+              "type": "string",
+              "pattern": "^.*$"
+            },
+            "feltType": {
+              "title": "FeltType",
+              "type": "string",
+              "pattern": "^.*$",
+              "examples": [
+                "FRITEKST"
+              ]
+            },
+            "hjelpetekst": {
+              "title": "Hjelpetekst",
+              "type": ["string", "null"],
+              "pattern": "^.*$"
+            },
+            "paakrevd": {
+              "title": "Paakrevd",
+              "type": "boolean"
+            },
+            "valg": {
+              "title": "Valg",
+              "type": ["array", "null"],
+              "default": [],
+              "items": {
+                "required": [
+                  "kode",
+                  "beskrivelse"
+                ],
+                "properties": {
+                  "kode": {
+                    "title": "Kode",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "beskrivelse": {
+                    "title": "Beskrivelse",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "muligeMottakere": {
+        "title": "Muligemottakere",
+        "type": "array",
+        "default": [],
+        "items":{
+          "title": "Items",
+          "type": "object",
+          "required": [
+            "type",
+            "rolle",
+            "frittValg",
+            "adresser",
+            "feilmelding"
+          ],
+          "properties": {
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Bruker eller brukers fullmektig"
+              ],
+              "pattern": "^.*$"
+            },
+            "rolle": {
+              "title": "Rolle",
+              "type": "string",
+              "examples": [
+                "BRUKER",
+                "ARBEIDSGIVER"
+              ],
+              "pattern": "^.*$"
+            },
+            "frittValg": {
+              "title": "FrittValg",
+              "type": "boolean",
+              "default": false
+            },
+            "adresser": {
+              "title": "Adresser",
+              "type": ["array", "null"],
+              "default": null,
+              "items": {
+                "required": [
+                  "mottakerNavn",
+                  "orgnr",
+                  "adresselinjer",
+                  "postnr",
+                  "poststed",
+                  "land"
+                ],
+                "properties": {
+                  "mottakerNavn": {
+                    "title": "MottakerNavn",
+                    "type": "string"
+                  },
+                  "orgnr": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                  },
+                  "adresselinjer": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
+                  },
+                  "postnr": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/postnr"
+                  },
+                  "poststed": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/poststed"
+                  },
+                  "land": {
+                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/land"
+                  }
+                }
+              }
+            },
+            "feilmelding": {
+              "title": "Feilmelding",
+              "type": ["string", "null"]
+            }
+          }
+        }
+      },
+      "mottakereHjelpetekst": {
+        "title": "MottakerHjelpetekst",
+        "type": ["string", "null"],
+        "default": null
+      }
+    }
+  }
+
+}
