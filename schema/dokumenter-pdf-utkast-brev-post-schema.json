@@ -118,6 +118,12 @@
     "kopiMottakere": {
       "type": ["array", "null"],
       "items": { "$ref": "#/definitions/kopiMottaker" }
+    },
+    "produserbardokument": {
+      "$id": "#/properties/dokument",
+      "type": "string",
+      "title": "Produkserbardokument",
+      "examples": ["MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD","MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE","MANGELBREV_BRUKER","MANGELBREV_ARBEIDSGIVER"]
     }
   }
 }
