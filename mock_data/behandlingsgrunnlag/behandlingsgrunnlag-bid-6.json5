@@ -57,7 +57,8 @@
       "andelOppdragINorge": null,
       "andelKontrakterINorge": null,
       "andelRekruttertINorge": null,
-      "ekstraArbeidsgivere": []
+      "ekstraArbeidsgivere": [],
+      "erOffentligVirksomhet": false,
     },
     "loennOgGodtgjoerelse": null,
     "arbeidsgiversBekreftelse": {
