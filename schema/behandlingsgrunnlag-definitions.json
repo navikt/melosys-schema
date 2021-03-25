@@ -673,7 +673,7 @@
           }
         },
         "erOffentligVirksomhet": {
-          "type": ["boolean"]
+          "type": ["boolean", "null"]
         }
       }
     },
