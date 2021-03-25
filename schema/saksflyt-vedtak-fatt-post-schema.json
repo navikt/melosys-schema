@@ -6,37 +6,18 @@
   "title": "The Root Schema",
   "additionalProperties": false,
   "required": [
-    "behandlingsresultatTypeKode",
-    "fritekst",
-    "fritekstSed",
-    "mottakerinstitusjoner",
-    "revurderBegrunnelse",
-    "vedtakstype"
+    "data"
   ],
   "properties": {
-    "behandlingsresultatTypeKode": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
-    },
-    "fritekst": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
-    },
-    "fritekstSed": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
-    },
-    "mottakerinstitusjoner": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "revurderBegrunnelse": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
-    },
-    "vedtakstype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+    "data": {
+      "oneOf": [
+        {
+          "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/eosData"
+        },
+        {
+          "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/ftrldata"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json",
+  "title": "Saksflyt fatt vedtak definitions",
+  "definitions": {
+    "eosData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "behandlingsresultatTypeKode",
+        "fritekst",
+        "fritekstSed",
+        "mottakerinstitusjoner",
+        "revurderBegrunnelse",
+        "vedtakstype"
+      ],
+      "properties": {
+        "behandlingsresultatTypeKode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+        },
+        "vedtakstype": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+        },
+        "fritekst": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        },
+        "fritekstSed": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        },
+        "mottakerinstitusjoner": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "revurderBegrunnelse": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "ftrldata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "behandlingsresultatTypeKode",
+        "vedtakstype"
+      ],
+      "properties": {
+        "behandlingsresultatTypeKode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+        },
+        "vedtakstype": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+        },
+        "fritekstInnledning": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        },
+        "fritekstBegrunnelse": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}
