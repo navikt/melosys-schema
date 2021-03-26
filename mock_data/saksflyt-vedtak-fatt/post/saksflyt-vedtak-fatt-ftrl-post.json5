@@ -1,8 +1,6 @@
 {
-  "data": {
-    "behandlingsresultatTypeKode": "FASTSATT_LOVVALGSLAND",
-    "fritekstInnledning": "Fritekst innledning",
-    "fritekstBegrunnelse": "Fritekst begrunnelse",
-    "vedtakstype": "FØRSTEGANGSVEDTAK"
-  }
+  "behandlingsresultatTypeKode": "FASTSATT_LOVVALGSLAND",
+  "fritekstInnledning": "Fritekst innledning",
+  "fritekstBegrunnelse": "Fritekst begrunnelse",
+  "vedtakstype": "FØRSTEGANGSVEDTAK"
 }
