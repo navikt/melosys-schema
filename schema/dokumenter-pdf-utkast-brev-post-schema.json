@@ -108,7 +108,7 @@
         "null"
       ]
     },
-    "kontaktperson": {
+    "kontaktpersonNavn": {
       "title": "Manuell overstyring av navn på kontaktperson",
       "type": [
         "string",
