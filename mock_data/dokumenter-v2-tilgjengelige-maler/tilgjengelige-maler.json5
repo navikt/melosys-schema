@@ -9,7 +9,7 @@
       {
         "type": "Bruker eller brukers fullmektig",
         "rolle": "BRUKER",
-        "frittValg": false,
+        "egendefinert": false,
         "adresser": null,
         "feilmelding": "Bruker har ingen registrert adresse"
       }
@@ -52,7 +52,7 @@
       {
         "type": "Bruker eller brukers fullmektig",
         "rolle": "BRUKER",
-        "frittValg": false,
+        "egendefinert": false,
         "adresser": [
           {
             "mottakerNavn": "Ståles Stål AS",
@@ -108,14 +108,14 @@
       {
         "type": "Arbeidsgiver eller arbeidsgivers fullmektig",
         "rolle": "ARBEIDSGIVER",
-        "frittValg": false,
+        "egendefinert": false,
         "adresser": null,
         "feilmelding": "Finner ingen arbeidsgivere. Hent registeropplysninger."
       },
       {
         "type": "Annen organisasjon",
         "rolle": "ARBEIDSGIVER",
-        "frittValg": true,
+        "egendefinert": true,
         "adresser": null,
         "feilmelding": null
       }

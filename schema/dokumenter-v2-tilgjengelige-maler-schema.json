@@ -131,7 +131,7 @@
           "required": [
             "type",
             "rolle",
-            "frittValg",
+            "egendefinert",
             "adresser",
             "feilmelding"
           ],
@@ -154,8 +154,8 @@
               ],
               "pattern": "^.*$"
             },
-            "frittValg": {
-              "title": "FrittValg",
+            "egendefinert": {
+              "title": "Egendefinert",
               "type": "boolean",
               "default": false
             },
