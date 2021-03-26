@@ -1231,6 +1231,11 @@
           "title": "The SvarFrist Schema",
           "$id": "#/properties/oppsummering/properties/svarFrist",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+        },
+        "behandlingsfrist": {
+          "title": "The Behandlingsfrist Schema",
+          "$id": "#/properties/oppsummering/properties/behandlingsfrist",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
         }
       }
     }
