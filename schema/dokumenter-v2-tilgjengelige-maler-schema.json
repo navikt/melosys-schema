@@ -131,7 +131,7 @@
           "required": [
             "type",
             "rolle",
-            "egendefinert",
+            "orgnrSettesAvSaksbehandler",
             "adresser",
             "feilmelding"
           ],
@@ -154,8 +154,8 @@
               ],
               "pattern": "^.*$"
             },
-            "egendefinert": {
-              "title": "Egendefinert",
+            "orgnrSettesAvSaksbehandler": {
+              "title": "OrgnrSettesAvSaksbehandler",
               "type": "boolean",
               "default": false
             },
