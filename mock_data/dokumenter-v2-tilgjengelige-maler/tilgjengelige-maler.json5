@@ -55,8 +55,10 @@
         "orgnrSettesAvSaksbehandler": false,
         "adresser": [
           {
-            "mottakerNavn": "Ståles Stål AS",
-            "orgnr": "999999999",
+            "tittel": {
+              "mottakerNavn": "Ståles Stål AS",
+              "orgnr": "999999999"
+            },
             "adresselinjer": [
               "Att: Ola Nordmann",
               "Adresselinje1",
@@ -111,8 +113,10 @@
         "orgnrSettesAvSaksbehandler": false,
         "adresser": [
           {
-            "mottakerNavn": "Ståles Stål AS",
-            "orgnr": "999999999",
+            "tittel": {
+              "mottakerNavn": "Ståles Stål AS",
+              "orgnr": "999999999"
+            },
             "adresselinjer": [
               "Att: Ola Nordmann",
               "Adresselinje1",
