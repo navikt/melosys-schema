@@ -1,0 +1,19 @@
+{
+  "hovedMottaker": {
+    "mottakerNavn": "EIKEN OG TORSKEN AS",
+    "dokumentNavn": "Melding om manglende opplysninger til virksomhet",
+    "aktoerrolle": "ARBEIDSGIVER",
+    "orgnr": null,
+    "aktørId": null,
+  },
+  "kopiMottakere": [
+    {
+      "mottakerNavn": "Ola Nordmann",
+      "dokumentNavn": "Kopi til bruker",
+      "aktoerrolle": "BRUKER",
+      "orgnr": null,
+      "aktørId": "1167540096033",
+    }
+  ],
+  "fasteMottakere": []
+}

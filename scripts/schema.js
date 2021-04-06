@@ -58,6 +58,7 @@ const katalogMap = new Map([
   ['dokumenter-pdf', Dokumenter.pdf.hent],
   ['dokumenter-pdf-utkast-brev', Dokumenter.pdf.utkast.brev],
   ['dokumenter-pdf-utkast-sed', Dokumenter.pdf.utkast.sed],
+  ['dokumenter-v2-mulige-mottakere', DokumenterV2.muligemottakere],
   ['dokumenter-v2-utkast', DokumenterV2.utkast],
   ['dokumenter-v2-opprett', DokumenterV2.opprett],
   ['dokumenter-v2-tilgjengelige-maler', DokumenterV2.tilgjengeligemaler],

@@ -1,0 +1,23 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://melosys.nav.no/schemas/dokumenter-v2-mulige-mottakere-post-schema.json",
+  "title": "The Root Schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "produserbartdokument",
+    "orgnr"
+  ],
+  "properties": {
+    "produserbartdokument": {
+      "$id": "#/properties/dokument",
+      "type": "string",
+      "title": "Produkserbardokument",
+      "examples": ["MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD","MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE","MANGELBREV_BRUKER","MANGELBREV_ARBEIDSGIVER"]
+    },
+    "orgnr": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+    }
+  }
+}
