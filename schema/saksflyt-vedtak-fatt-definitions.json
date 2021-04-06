@@ -46,7 +46,9 @@
       "additionalProperties": false,
       "required": [
         "behandlingsresultatTypeKode",
-        "vedtakstype"
+        "vedtakstype",
+        "fritekstInnledning",
+        "fritekstBegrunnelse"
       ],
       "properties": {
         "behandlingsresultatTypeKode": {
