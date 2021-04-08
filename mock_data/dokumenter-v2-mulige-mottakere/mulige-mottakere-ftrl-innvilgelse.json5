@@ -2,7 +2,7 @@
   "hovedMottaker": {
     "mottakerNavn": "Fullmektig virksomhet",
     "dokumentNavn": "Vedtak om frivillig medlemskap",
-    "aktoerrolle": "BRUKER",
+    "rolle": "BRUKER",
     "orgnr": null,
     "aktørId": null,
   },
@@ -10,21 +10,21 @@
     {
       "mottakerNavn": "Ola Nordmann",
       "dokumentNavn": "Kopi til bruker",
-      "aktoerrolle": "BRUKER",
+      "rolle": "BRUKER",
       "orgnr": null,
       "aktørId": null
     },
     {
       "mottakerNavn": "EIKEN OG TORSKEN",
       "dokumentNavn": "Kopi til arbeidsgiver",
-      "aktoerrolle": "ARBEIDSGIVER",
+      "rolle": "ARBEIDSGIVER",
       "orgnr": "810072512",
       "aktørId": null
     },
     {
       "mottakerNavn": "EQUINOR",
       "dokumentNavn": "Kopi til arbeidsgiver",
-      "aktoerrolle": "ARBEIDSGIVER",
+      "rolle": "ARBEIDSGIVER",
       "orgnr": "810072512",
       "aktørId": null
     }
@@ -33,7 +33,7 @@
     {
       "mottakerNavn": "Skatteetaten",
       "dokumentNavn": "Kopi til Skatteetaten",
-      "aktoerrolle": "MYNDIGHET",
+      "rolle": "MYNDIGHET",
       "orgnr": null,
       "aktørId": null
     }

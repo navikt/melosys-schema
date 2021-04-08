@@ -2,7 +2,7 @@
   "hovedMottaker": {
     "mottakerNavn": "Ola Nordmann",
     "dokumentNavn": "Melding om manglende opplysninger til bruker",
-    "aktoerrolle": "BRUKER",
+    "rolle": "BRUKER",
     "orgnr": null,
     "aktørId": null,
   },

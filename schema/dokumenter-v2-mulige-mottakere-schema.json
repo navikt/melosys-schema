@@ -5,7 +5,7 @@
       "required": [
         "mottakerNavn",
         "dokumentNavn",
-        "aktoerrolle"
+        "rolle"
       ],
       "properties": {
         "mottakerNavn": {
@@ -14,7 +14,7 @@
         "dokumentNavn": {
           "type": "string"
         },
-        "aktoerrolle": {
+        "rolle": {
           "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"]
         },
         "orgnr": {

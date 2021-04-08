@@ -2,7 +2,7 @@
   "hovedMottaker": {
     "mottakerNavn": "Ola Nordmann",
     "dokumentNavn": "Melding om forventet saksbehandlingstid",
-    "aktoerrolle": "BRUKER",
+    "rolle": "BRUKER",
     "orgnr": null,
     "aktørId": null,
   },
