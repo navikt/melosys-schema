@@ -50,6 +50,7 @@ const katalogMap = new Map([
   ['avklartefakta-medfolgendefamilie', Avklartefakta.medfolgendefamilie],
   ['behandlinger-behandling', Behandlinger.behandling],
   ['behandlinger-endrebehandlingstema', Behandlinger.endreBehandlingstema],
+  ['behandlinger-endrebehandlingsfrist', Behandlinger.endreBehandlingsfrist],
   ['behandlinger-resultat', Behandlinger.resultat],
   ['behandlinger-status', Behandlinger.status],
   ['behandlinger-tidligeremedlemsperioder', Behandlinger.tidligereMedlemsPerioder],
