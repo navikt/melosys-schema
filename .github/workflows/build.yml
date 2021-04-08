@@ -40,7 +40,7 @@ jobs:
 
       - name: Versioning
         if: github.event_name == 'workflow_dispatch'
-        run: echo "VERSION=$(node -pe "require('./package.json').version")-${{ github.sha }}-SNAPSHOT" >> $GITHUB_ENV
+        run: echo "VERSION=$(node -pe "require('./package.json').version")-${{ github.sha }}" >> $GITHUB_ENV
 
       - name: Zip
         if: github.event_name == 'workflow_dispatch'
