@@ -88,6 +88,15 @@
       "andelRekruttertINorge": 80.0,
       "ekstraArbeidsgivere": []
     },
+    "oevrigOmArbeidstaker": {
+      "harLoennetArbeidMinstEnMndFoerUtsending": true,
+      "beskrivelseArbeidSisteMnd": "Kjøring av oppvaskmaskin, rengjøring av gulv",
+      "harAndreArbeidsgivereIUtsendingsperioden": false,
+      "beskrivelseAnnetArbeid": null,
+      "erSkattepliktig": true,
+      "mottarYtelserNorge": false,
+      "mottarYtelserUtlandet": false,
+    },
     "loennOgGodtgjoerelse": {
       "norskArbgUtbetalerLoenn": false,
       "erArbeidstakerAnsattHelePerioden": true,

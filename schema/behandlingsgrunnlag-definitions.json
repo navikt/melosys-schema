@@ -673,6 +673,42 @@
         }
       }
     },
+    "oevrigOmArbeidstaker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "harLoennetArbeidMinstEnMndFoerUtsending",
+        "beskrivelseArbeidSisteMnd",
+        "harAndreArbeidsgivereIUtsendingsperioden",
+        "beskrivelseAnnetArbeid",
+        "erSkattepliktig",
+        "mottarYtelserNorge",
+        "mottarYtelserUtlandet"
+      ],
+      "properties": {
+        "harLoennetArbeidMinstEnMndFoerUtsending": {
+          "type": ["boolean", "null"]
+        },
+        "beskrivelseArbeidSisteMnd": {
+          "type": ["string", "null"]
+        },
+        "harAndreArbeidsgivereIUtsendingsperioden": {
+          "type": ["boolean", "null"]
+        },
+        "beskrivelseAnnetArbeid": {
+          "type": ["string", "null"]
+        },
+        "erSkattepliktig": {
+          "type": ["boolean", "null"]
+        },
+        "mottarYtelserNorge": {
+          "type": ["boolean", "null"]
+        },
+        "mottarYtelserUtlandet": {
+          "type": ["boolean", "null"]
+        }
+      }
+    },
     "soeknadData": {
       "type": "object",
       "additionalProperties": false,
@@ -689,7 +725,8 @@
         "maritimtArbeid",
         "luftfartBaser",
         "soeknadsland",
-        "periode"
+        "periode",
+        "oevrigOmArbeidstaker"
       ],
       "properties": {
         "arbeidsgiversBekreftelse": {
@@ -730,6 +767,9 @@
         },
         "juridiskArbeidsgiverNorge": {
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
+        "oevrigOmArbeidstaker": {
+          "$reg": "#/definitions/oevrigOmArbeidstaker"
         }
       }
     },
