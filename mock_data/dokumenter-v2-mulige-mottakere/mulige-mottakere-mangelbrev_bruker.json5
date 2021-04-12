@@ -1,0 +1,11 @@
+{
+  "hovedMottaker": {
+    "mottakerNavn": "Ola Nordmann",
+    "dokumentNavn": "Melding om manglende opplysninger til bruker",
+    "rolle": "BRUKER",
+    "orgnr": null,
+    "aktørId": null,
+  },
+  "kopiMottakere": [],
+  "fasteMottakere": []
+}
