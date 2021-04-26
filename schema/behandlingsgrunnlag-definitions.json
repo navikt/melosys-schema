@@ -673,7 +673,7 @@
         }
       }
     },
-    "oevrigOmArbeidstaker": {
+    "arbeidssituasjonOgOevrig": {
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -726,7 +726,7 @@
         "luftfartBaser",
         "soeknadsland",
         "periode",
-        "oevrigOmArbeidstaker"
+        "arbeidssituasjonOgOevrig"
       ],
       "properties": {
         "arbeidsgiversBekreftelse": {
@@ -768,8 +768,8 @@
         "juridiskArbeidsgiverNorge": {
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
         },
-        "oevrigOmArbeidstaker": {
-          "$reg": "#/definitions/oevrigOmArbeidstaker"
+        "arbeidssituasjonOgOevrig": {
+          "$reg": "#/definitions/arbeidssituasjonOgOevrig"
         }
       }
     },
