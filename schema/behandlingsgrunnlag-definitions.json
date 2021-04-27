@@ -769,7 +769,7 @@
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
         },
         "arbeidssituasjonOgOevrig": {
-          "$reg": "#/definitions/arbeidssituasjonOgOevrig"
+          "$ref": "#/definitions/arbeidssituasjonOgOevrig"
         }
       }
     },
