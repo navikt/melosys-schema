@@ -9,7 +9,7 @@
       {
         "type": "Bruker eller brukers fullmektig",
         "rolle": "BRUKER",
-        "frittValg": false,
+        "orgnrSettesAvSaksbehandler": false,
         "adresser": null,
         "feilmelding": "Bruker har ingen registrert adresse"
       }
@@ -52,11 +52,13 @@
       {
         "type": "Bruker eller brukers fullmektig",
         "rolle": "BRUKER",
-        "frittValg": false,
+        "orgnrSettesAvSaksbehandler": false,
         "adresser": [
           {
-            "mottakerNavn": "Ståles Stål AS",
-            "orgnr": "999999999",
+            "tittel": {
+              "mottakerNavn": "Ståles Stål AS",
+              "orgnr": "999999999"
+            },
             "adresselinjer": [
               "Att: Ola Nordmann",
               "Adresselinje1",
@@ -108,14 +110,29 @@
       {
         "type": "Arbeidsgiver eller arbeidsgivers fullmektig",
         "rolle": "ARBEIDSGIVER",
-        "frittValg": false,
-        "adresser": null,
-        "feilmelding": "Finner ingen arbeidsgivere. Hent registeropplysninger."
+        "orgnrSettesAvSaksbehandler": false,
+        "adresser": [
+          {
+            "tittel": {
+              "mottakerNavn": "Ståles Stål AS",
+              "orgnr": "999999999"
+            },
+            "adresselinjer": [
+              "Att: Ola Nordmann",
+              "Adresselinje1",
+              "Adresselinje 2"
+            ],
+            "postnr": "0010",
+            "poststed": "Oslo",
+            "land": "NO"
+          }
+        ],
+        "feilmelding": null
       },
       {
         "type": "Annen organisasjon",
         "rolle": "ARBEIDSGIVER",
-        "frittValg": true,
+        "orgnrSettesAvSaksbehandler": true,
         "adresser": null,
         "feilmelding": null
       }

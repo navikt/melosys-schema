@@ -1,0 +1,20 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/behandlinger-endrebehandlingsfrist-post-schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "behandlingsfrist"
+  ],
+  "properties": {
+    "behandlingsfrist": {
+      "$id": "#/properties/behandlingsfrist",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato",
+      "title": "The Behandlingsfrist Schema",
+      "examples": [
+        "2021-09-23"
+      ]
+    }
+  }
+}
