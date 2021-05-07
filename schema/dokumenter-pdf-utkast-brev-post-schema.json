@@ -108,13 +108,6 @@
         "null"
       ]
     },
-    "begrunnelseFritekst": {
-      "title": "Begrunnelse for innvilgelsesbrev",
-      "type": [
-        "string",
-        "null"
-      ]
-    },
     "kontaktpersonNavn": {
       "title": "Manuell overstyring av navn på kontaktperson",
       "type": [
