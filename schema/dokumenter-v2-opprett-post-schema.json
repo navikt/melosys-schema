@@ -37,7 +37,7 @@
     "produserbardokument": {
       "$id": "#/properties/dokument",
       "type": "string",
-      "title": "Produkserbardokument",
+      "title": "Produserbartdokument",
       "examples": ["MELDING_FORVENTET_SAKSBEHANDLINGSTID_SOKNAD","MELDING_FORVENTET_SAKSBEHANDLINGSTID_KLAGE","MANGELBREV_BRUKER","MANGELBREV_ARBEIDSGIVER"]
     },
     "mottaker": {
@@ -103,7 +103,7 @@
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
     "innledningFritekst": {
-      "title": "Innledningstekst for mangelbrev",
+      "title": "Innledningstekst for brev",
       "type": [
         "string",
         "null"
@@ -111,6 +111,13 @@
     },
     "manglerFritekst": {
       "title": "Mangelinfo for mangelbrev",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "begrunnelseFritekst": {
+      "title": "Begrunnelse for innvilgelsesbrev",
       "type": [
         "string",
         "null"

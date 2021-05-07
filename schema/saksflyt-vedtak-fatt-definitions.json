@@ -47,7 +47,6 @@
       "required": [
         "behandlingsresultatTypeKode",
         "vedtakstype",
-        "fritekstInnledning",
         "fritekstBegrunnelse"
       ],
       "properties": {
@@ -57,13 +56,8 @@
         "vedtakstype": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
         },
-        "fritekstInnledning": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
-        },
         "fritekstBegrunnelse": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
+          "type": ["string", "null"]
         }
       }
     }
