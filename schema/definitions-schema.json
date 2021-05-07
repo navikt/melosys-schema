@@ -161,7 +161,8 @@
         "ANMODNING_OM_UNNTAK",
         "IKKE_FASTSATT",
         "REGISTRERT_UNNTAK",
-        "AVSLAG_MANGLENDE_OPPL"
+        "AVSLAG_MANGLENDE_OPPL",
+        "MEDLEM_I_FOLKETRYGDEN"
       ]
     },
     "databaseID": {
