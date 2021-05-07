@@ -57,8 +57,7 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
         },
         "fritekstBegrunnelse": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
+          "type": ["string", "null"]
         }
       }
     }
