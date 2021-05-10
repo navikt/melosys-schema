@@ -673,6 +673,38 @@
         }
       }
     },
+    "utenlandsoppdraget": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "erUtsendelseForOppdragIUtlandet",
+        "erAnsattForOppdragIUtlandet",
+        "erFortsattAnsattEtterOppdraget",
+        "erDrattPaaEgetInitiativ",
+        "erErstatningTidligereUtsendte",
+        "samletUtsendingsperiode"
+      ],
+      "properties": {
+        "erUtsendelseForOppdragIUtlandet": {
+          "type": ["boolean","null"]
+        },
+        "erAnsattForOppdragIUtlandet": {
+          "type": ["boolean","null"]
+        },
+        "erFortsattAnsattEtterOppdraget": {
+          "type": ["boolean","null"]
+        },
+        "erDrattPaaEgetInitiativ": {
+          "type": ["boolean","null"]
+        },
+        "erErstatningTidligereUtsendte": {
+          "type": ["boolean","null"]
+        },
+        "samletUtsendingsperiode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+        }
+      }
+    },
     "soeknadData": {
       "type": "object",
       "additionalProperties": false,
@@ -689,7 +721,8 @@
         "maritimtArbeid",
         "luftfartBaser",
         "soeknadsland",
-        "periode"
+        "periode",
+        "utenlandsoppdraget"
       ],
       "properties": {
         "arbeidsgiversBekreftelse": {
@@ -730,6 +763,9 @@
         },
         "juridiskArbeidsgiverNorge": {
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
+        "utenlandsoppdraget": {
+          "$ref": "#/definitions/utenlandsoppdraget"
         }
       }
     },
