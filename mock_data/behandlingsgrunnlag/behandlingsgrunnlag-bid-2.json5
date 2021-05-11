@@ -98,7 +98,8 @@
       "andelOppdragINorge": 50.5,
       "andelKontrakterINorge": 30.5,
       "andelRekruttertINorge": 80.0,
-      "ekstraArbeidsgivere": []
+      "ekstraArbeidsgivere": [],
+      "erOffentligVirksomhet": false,
     },
     "loennOgGodtgjoerelse": null,
     "arbeidsgiversBekreftelse": {

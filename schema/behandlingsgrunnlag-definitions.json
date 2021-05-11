@@ -598,7 +598,8 @@
         "andelOppdragINorge",
         "andelKontrakterINorge",
         "andelRekruttertINorge",
-        "ekstraArbeidsgivere"
+        "ekstraArbeidsgivere",
+        "erOffentligVirksomhet"
       ],
       "properties": {
         "antallAdmAnsatte": {
@@ -670,6 +671,9 @@
             ],
             "pattern": "^(.*)$"
           }
+        },
+        "erOffentligVirksomhet": {
+          "type": ["boolean", "null"]
         }
       }
     },
