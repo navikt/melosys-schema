@@ -131,7 +131,7 @@
           "required": [
             "type",
             "rolle",
-            "frittValg",
+            "orgnrSettesAvSaksbehandler",
             "adresser",
             "feilmelding"
           ],
@@ -154,8 +154,8 @@
               ],
               "pattern": "^.*$"
             },
-            "frittValg": {
-              "title": "FrittValg",
+            "orgnrSettesAvSaksbehandler": {
+              "title": "OrgnrSettesAvSaksbehandler",
               "type": "boolean",
               "default": false
             },
@@ -165,20 +165,27 @@
               "default": null,
               "items": {
                 "required": [
-                  "mottakerNavn",
-                  "orgnr",
+                  "tittel",
                   "adresselinjer",
                   "postnr",
                   "poststed",
                   "land"
                 ],
                 "properties": {
-                  "mottakerNavn": {
-                    "title": "MottakerNavn",
-                    "type": "string"
-                  },
-                  "orgnr": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                  "tittel": {
+                    "required": [
+                      "mottakerNavn",
+                      "orgnr"
+                    ],
+                    "properties": {
+                      "mottakerNavn": {
+                        "title": "MottakerNavn",
+                        "type": "string"
+                      },
+                      "orgnr": {
+                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                      }
+                    }
                   },
                   "adresselinjer": {
                     "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"

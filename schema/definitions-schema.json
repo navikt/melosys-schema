@@ -149,7 +149,8 @@
         "SVAR_ANMODNING_MOTTATT",
         "UTPEKING_SENDT",
         "SVAR_UTPEKING_MOTTATT",
-        "MIDLERTIDIG_LOVVALGSBESLUTNING"
+        "MIDLERTIDIG_LOVVALGSBESLUTNING",
+        "AVVENT_FAGLIG_AVKLARING"
       ]
     },
     "behandlingsresultatTypeKode": {
@@ -161,7 +162,8 @@
         "ANMODNING_OM_UNNTAK",
         "IKKE_FASTSATT",
         "REGISTRERT_UNNTAK",
-        "AVSLAG_MANGLENDE_OPPL"
+        "AVSLAG_MANGLENDE_OPPL",
+        "MEDLEM_I_FOLKETRYGDEN"
       ]
     },
     "databaseID": {

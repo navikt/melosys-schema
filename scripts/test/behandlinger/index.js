@@ -1,3 +1,4 @@
+const {endreBehandlingsfrist} = require("./endreBehandlingsfrist");
 const { behandling } = require('./behandling');
 const { behandlingsresultat } = require('./behandlingsresultat');
 const { status } = require('./status');
@@ -10,4 +11,5 @@ module.exports = {
   status,
   tidligereMedlemsPerioder,
   endreBehandlingstema,
+  endreBehandlingsfrist,
 };

@@ -12,6 +12,10 @@
     "term": "Behandlingen pågår"
   },
   {
+    kode: "AVVENT_FAGLIG_AVKLARING",
+    term: "Avventer en faglig avklaring"
+  },
+  {
     "kode": "AVSLUTTET",
     "term": "Behandlingen er avsluttet"
   }

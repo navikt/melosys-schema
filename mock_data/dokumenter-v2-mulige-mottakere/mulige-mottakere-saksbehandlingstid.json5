@@ -1,0 +1,11 @@
+{
+  "hovedMottaker": {
+    "mottakerNavn": "Ola Nordmann",
+    "dokumentNavn": "Melding om forventet saksbehandlingstid",
+    "rolle": "BRUKER",
+    "orgnr": null,
+    "aktørId": null,
+  },
+  "kopiMottakere": [],
+  "fasteMottakere": []
+}

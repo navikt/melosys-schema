@@ -130,6 +130,14 @@
     "periode": {
       "fom": "2018-01-02",
       "tom": "2019-05-30"
+    },
+    "utenlandsoppdraget": {
+        "erUtsendelseForOppdragIUtlandet": null,
+        "erAnsattForOppdragIUtlandet": null,
+        "erFortsattAnsattEtterOppdraget": null,
+        "erDrattPaaEgetInitiativ": null,
+        "erErstatningTidligereUtsendte": null,
+        "samletUtsendingsperiode": { "fom": "2019-02-01", "tom": "2020-02-01" }
     }
   }
 }
