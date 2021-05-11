@@ -149,7 +149,8 @@
         "SVAR_ANMODNING_MOTTATT",
         "UTPEKING_SENDT",
         "SVAR_UTPEKING_MOTTATT",
-        "MIDLERTIDIG_LOVVALGSBESLUTNING"
+        "MIDLERTIDIG_LOVVALGSBESLUTNING",
+        "AVVENT_FAGLIG_AVKLARING"
       ]
     },
     "behandlingsresultatTypeKode": {

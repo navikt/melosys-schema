@@ -12,7 +12,7 @@
       "$id": "#/properties/behandlingsstatus",
       "type": "string",
       "enum": [
-        "OPPRETTET", "UNDER_BEHANDLING", "AVSLUTTET", "AVVENT_DOK_UTL", "AVVENT_DOK_PART"
+        "OPPRETTET", "UNDER_BEHANDLING", "AVSLUTTET", "AVVENT_DOK_UTL", "AVVENT_DOK_PART", "AVVENT_FAGLIG_AVKLARING"
       ],
       "title": "The Behandlingsstatus Schema",
       "default": "AVVENT_DOK_UTL",
