@@ -5,11 +5,15 @@
   "title": "The Unntaksperioder godkjenn Schema",
   "additionalProperties": false,
   "required": [
-    "varsleUtland"
+    "varsleUtland",
+    "fritekst"
   ],
   "properties": {
     "varsleUtland": {
       "type": "boolean"
+    },
+    "fritekst": {
+      "type": ["string", "null"]
     }
   }
 }

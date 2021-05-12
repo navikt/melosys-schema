@@ -19,7 +19,6 @@
     "hoveddokument",
     "vedlegg",
     "fagsak",
-    "anmodningOmUnntak",
     "skalTilordnes",
     "ikkeSendForvaltingsmelding",
     "mottattDato"
@@ -154,55 +153,6 @@
             ],
             "pattern": "^(.*)$"
           }
-        }
-      }
-    },
-    "anmodningOmUnntak": {
-      "$id": "#/properties/anmodningOmUnntak",
-      "type": "object",
-      "title": "The Anmodningomunntak Schema",
-      "required": [
-        "unntakFraLovvalgsland",
-        "lovvalgsbestemmelse",
-        "unntakFraLovvalgsbestemmelse"
-      ],
-      "properties": {
-        "unntakFraLovvalgsland": {
-          "$id": "#/properties/anmodningOmUnntak/properties/unntakFraLovvalgsland",
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "The UnntakFraLovvalgsland Schema",
-          "default": "",
-          "examples": [
-            "NO"
-          ],
-          "pattern": "^(.*)$"
-        },
-        "lovvalgsbestemmelse": {
-          "$id": "#/properties/anmodningOmUnntak/properties/lovvalgsbestemmelse",
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "The Lovvalgsbestemmelse Schema",
-          "default": "",
-          "examples": [
-            "FO_883_2004_ART16_1"
-          ]
-        },
-        "unntakFraLovvalgsbestemmelse": {
-          "$id": "#/properties/anmodningOmUnntak/properties/unntakFraLovvalgsbestemmelse",
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "The UnntakFraLovvalgsbestemmelse Schema",
-          "default": "",
-          "examples": [
-            "FO_883_2004_ART12_1"
-          ]
         }
       }
     },

@@ -10,5 +10,9 @@
   {
     "kode": "UNDER_BEHANDLING",
     "term": "Behandlingen pågår"
+  },
+  {
+    kode: "AVVENT_FAGLIG_AVKLARING",
+    term: "Avventer en faglig avklaring"
   }
 ]

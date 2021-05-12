@@ -9,17 +9,9 @@
   ],
   "properties": {
     "behandlingsstatus": {
-      "$id": "#/properties/behandlingsstatus",
-      "type": "string",
-      "enum": [
-        "OPPRETTET", "UNDER_BEHANDLING", "AVSLUTTET", "AVVENT_DOK_UTL", "AVVENT_DOK_PART"
-      ],
       "title": "The Behandlingsstatus Schema",
-      "default": "AVVENT_DOK_UTL",
-      "examples": [
-        "FASTSATT_LOVVALGSLAND"
-      ],
-      "pattern": "^(.*)$"
+      "$id": "#/properties/behandlingsstatus",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsstatus"
     }
   }
 }

@@ -598,7 +598,8 @@
         "andelOppdragINorge",
         "andelKontrakterINorge",
         "andelRekruttertINorge",
-        "ekstraArbeidsgivere"
+        "ekstraArbeidsgivere",
+        "erOffentligVirksomhet"
       ],
       "properties": {
         "antallAdmAnsatte": {
@@ -670,6 +671,41 @@
             ],
             "pattern": "^(.*)$"
           }
+        },
+        "erOffentligVirksomhet": {
+          "type": ["boolean", "null"]
+        }
+      }
+    },
+    "utenlandsoppdraget": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "erUtsendelseForOppdragIUtlandet",
+        "erAnsattForOppdragIUtlandet",
+        "erFortsattAnsattEtterOppdraget",
+        "erDrattPaaEgetInitiativ",
+        "erErstatningTidligereUtsendte",
+        "samletUtsendingsperiode"
+      ],
+      "properties": {
+        "erUtsendelseForOppdragIUtlandet": {
+          "type": ["boolean","null"]
+        },
+        "erAnsattForOppdragIUtlandet": {
+          "type": ["boolean","null"]
+        },
+        "erFortsattAnsattEtterOppdraget": {
+          "type": ["boolean","null"]
+        },
+        "erDrattPaaEgetInitiativ": {
+          "type": ["boolean","null"]
+        },
+        "erErstatningTidligereUtsendte": {
+          "type": ["boolean","null"]
+        },
+        "samletUtsendingsperiode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         }
       }
     },
@@ -726,7 +762,8 @@
         "luftfartBaser",
         "soeknadsland",
         "periode",
-        "arbeidssituasjonOgOevrig"
+        "arbeidssituasjonOgOevrig",
+        "utenlandsoppdraget"
       ],
       "properties": {
         "arbeidsgiversBekreftelse": {
@@ -770,6 +807,9 @@
         },
         "arbeidssituasjonOgOevrig": {
           "$ref": "#/definitions/arbeidssituasjonOgOevrig"
+        },
+        "utenlandsoppdraget": {
+          "$ref": "#/definitions/utenlandsoppdraget"
         }
       }
     },
