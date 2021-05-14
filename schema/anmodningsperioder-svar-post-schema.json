@@ -7,7 +7,8 @@
   "required": [
     "anmodningsperiodeSvarType",
     "endretPeriode",
-    "begrunnelseFritekst"
+    "begrunnelseFritekst",
+    "ytterligereInformasjon"
   ],
   "properties": {
     "anmodningsperiodeSvarType": {
@@ -18,6 +19,9 @@
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
     },
     "begrunnelseFritekst": {
+      "type": ["string", "null"]
+    },
+    "ytterligereInformasjon": {
       "type": ["string", "null"]
     }
   }
