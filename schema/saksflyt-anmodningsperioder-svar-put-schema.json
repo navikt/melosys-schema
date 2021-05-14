@@ -1,0 +1,22 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://nav.no/saksflyt-anmodningsperioder-svar-put-schema.json",
+  "type": "object",
+  "title": "The Saksflyt-anmodningsperioder-svar-put Schema",
+  "additionalProperties": false,
+  "required": [
+    "behandlingID",
+    "ytterligereInfo"
+  ],
+  "properties": {
+    "behandlingID": {
+      "$id": "#/properties/behandlingID",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+    },
+    "ytterligereInfo": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
+    }
+  }
+}
