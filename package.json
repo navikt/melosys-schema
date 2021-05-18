@@ -1,6 +1,6 @@
 {
   "name": "@navikt/melosys-schema",
-  "version": "1.35.125",
+  "version": "1.35.127",
   "description": "MelosSys Schema Mock data",
   "main": "index.js",
   "files": [
@@ -34,13 +34,11 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "schema": "jest",
-    "schema:dbg": "node $NODE_DEBUG_OPTION scripts/schema",
+    "test": "jest",
     "eslint": "eslint scripts --ext .js",
     "zipSchema": "node scripts/zipSchema2lib",
     "zip": "npm-run-all -s clean zipSchema",
-    "json5": "node json5",
-    "test": "mocha --reporter spec"
+    "json5": "node json5"
   },
   "homepage": "https://github.com/navikt/melosys-schema#readme",
   "dependencies": {
@@ -48,7 +46,6 @@
   },
   "devDependencies": {
     "ajv": "^6.10.2",
-    "chai": "^4.2.0",
     "colors": "^1.3.3",
     "eslint": "^6.3.0",
     "eslint-plugin-node": "^9.2.0",
@@ -56,7 +53,6 @@
     "jsonpath-plus": "^0.20.1",
     "lodash": "^4.17.19",
     "log4js": "^4.5.1",
-    "mocha": "^8.2.1",
     "node-emoji": "^1.10.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^2.7.1",
