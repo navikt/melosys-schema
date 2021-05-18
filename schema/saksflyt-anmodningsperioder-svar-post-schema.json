@@ -6,14 +6,9 @@
   "title": "The Saksflyt-anmodningsperioder-svar-put Schema",
   "additionalProperties": false,
   "required": [
-    "behandlingID",
     "ytterligereInfo"
   ],
   "properties": {
-    "behandlingID": {
-      "$id": "#/properties/behandlingID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
-    },
     "ytterligereInfo": {
       "type": ["string", "null"],
       "pattern": "^(.*)$"
