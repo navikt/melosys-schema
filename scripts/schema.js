@@ -10,7 +10,6 @@ const DokumenterV2 = require('./test/dokumenter-v2');
 const Dokumenter = require('./test/dokumenter');
 const Eessi = require('./test/eessi');
 const Fagsaker = require('./test/fagsaker');
-const Inngangsvilkaar = require('./test/inngangsvilkaar');
 const Journalforing = require('./test/journalforing');
 const Kodeverk = require('./test/kodeverk');
 const Lovvalgsperioder = require('./test/lovvalgsperioder');
@@ -75,7 +74,6 @@ const katalogMap = new Map([
   ['fagsaker-revurder', Fagsaker.revurder],
   ['fagsaker-sok', Fagsaker.sok],
   ['fagsaker-utpek', Fagsaker.utpek],
-  ['inngangsvilkaar', Inngangsvilkaar.inngangsvilkaar],
   ['journalforing', Journalforing.journalforing],
   ['journalforing-opprett', Journalforing.opprett],
   ['journalforing-sed', Journalforing.sed],
