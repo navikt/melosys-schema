@@ -709,6 +709,42 @@
         }
       }
     },
+    "arbeidssituasjonOgOevrig": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "harLoennetArbeidMinstEnMndFoerUtsending",
+        "beskrivelseArbeidSisteMnd",
+        "harAndreArbeidsgivereIUtsendingsperioden",
+        "beskrivelseAnnetArbeid",
+        "erSkattepliktig",
+        "mottarYtelserNorge",
+        "mottarYtelserUtlandet"
+      ],
+      "properties": {
+        "harLoennetArbeidMinstEnMndFoerUtsending": {
+          "type": ["boolean", "null"]
+        },
+        "beskrivelseArbeidSisteMnd": {
+          "type": ["string", "null"]
+        },
+        "harAndreArbeidsgivereIUtsendingsperioden": {
+          "type": ["boolean", "null"]
+        },
+        "beskrivelseAnnetArbeid": {
+          "type": ["string", "null"]
+        },
+        "erSkattepliktig": {
+          "type": ["boolean", "null"]
+        },
+        "mottarYtelserNorge": {
+          "type": ["boolean", "null"]
+        },
+        "mottarYtelserUtlandet": {
+          "type": ["boolean", "null"]
+        }
+      }
+    },
     "soeknadData": {
       "type": "object",
       "additionalProperties": false,
@@ -726,6 +762,7 @@
         "luftfartBaser",
         "soeknadsland",
         "periode",
+        "arbeidssituasjonOgOevrig",
         "utenlandsoppdraget"
       ],
       "properties": {
@@ -767,6 +804,9 @@
         },
         "juridiskArbeidsgiverNorge": {
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
+        "arbeidssituasjonOgOevrig": {
+          "$ref": "#/definitions/arbeidssituasjonOgOevrig"
         },
         "utenlandsoppdraget": {
           "$ref": "#/definitions/utenlandsoppdraget"
