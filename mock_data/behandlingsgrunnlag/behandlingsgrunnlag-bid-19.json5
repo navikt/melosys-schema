@@ -1,0 +1,141 @@
+{
+  "mottaksdato": "2020-03-10",
+  "data": {
+    "personOpplysninger": {
+      "utenlandskIdent": [
+        {
+          "ident": "123456789",
+          "landkode": "DK"
+        }
+      ],
+      "medfolgendeFamilie": [
+        {
+          "uuid": "416c97d5-fd1d-4eff-952c-edc42aeb40a0",
+          "fnr": "31031779459",
+          "navn": "PERNILLE JOHNSSON",
+          "relasjonsrolle": "BARN"
+        },
+        {
+          "uuid": "2519c5fc-5e27-425c-a1d4-eb7a5fc0021d",
+          "fnr": "19117220349",
+          "navn": "HATT GLITRENDE",
+          "relasjonsrolle": "BARN"
+        },
+        {
+          "uuid": "aaa68167-05e8-4f5e-b0fc-75e3de52025a",
+          "fnr": "08029828362",
+          "navn": "UTVIKLER OPTIMISTISK",
+          "relasjonsrolle": "EKTEFELLE_SAMBOER"
+        }
+      ]
+    },
+    "arbeidPaaLand": {
+      "fysiskeArbeidssteder": [
+        {
+          "adresse": {
+            "gatenavn": "Adresseveien 123",
+            "husnummer": "123",
+            "region": "Brandenburger",
+            "postnummer": "1234",
+            "poststed": "Poststedet",
+            "landkode": "DE",
+          },
+          "virksomhetNavn": "EQUINOR",
+        },
+      ],
+      "erHjemmekontor": false,
+      "erFastArbeidssted": null
+    },
+    "foretakUtland": [
+      {
+        "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
+        "navn": "EQUINOR DEUTSCHLAND",
+        "orgnr": "372384726",
+        "selvstendigNaeringsvirksomhet": true,
+        "adresse": {
+          "gatenavn": "Deutschlandstrasse",
+          "husnummer": "123",
+          "region": "Brandenburger",
+          "postnummer": "3388",
+          "poststed": "Berlin",
+          "landkode": "DE"
+        }
+      }
+    ],
+    "oppholdUtland": {
+      "oppholdslandkoder": ["DK"],
+      "oppholdsPeriode": {
+        "fom": "2018-01-01",
+        "tom": "2018-06-01"
+      },
+      "ektefelleEllerBarnINorge": true,
+      "studentFinansieringKode": "LAANEKASSEN",
+      "studentSemester": "2018/2019"
+    },
+    "bosted": {
+      "intensjonOmRetur": true,
+      "antallMaanederINorge": 8,
+      "oppgittAdresse": {
+        "gatenavn": "Gateadressen",
+        "husnummer": "14B",
+        "region": "St.Hanshaugen Distrikt",
+        "postnummer": "12345",
+        "poststed": "Poststeder",
+        "landkode": "DE"
+      }
+    },
+    "selvstendigArbeid": {
+      "erSelvstendig": true,
+      "selvstendigForetak": [
+        { "orgnr": "910253158", "fortsetterEtterArbeidIUtlandet": true }
+      ]
+    },
+    "juridiskArbeidsgiverNorge": {
+      "antallAdmAnsatte": 35,
+      "antallAnsatte": 350,
+      "antallUtsendte": 35,
+      "andelOmsetningINorge": 78.5,
+      "andelOppdragINorge": 50.5,
+      "andelKontrakterINorge": 30.5,
+      "andelRekruttertINorge": 80.0,
+      "ekstraArbeidsgivere": [],
+      "erOffentligVirksomhet": false,
+    },
+    "loennOgGodtgjoerelse": null,
+    "arbeidsgiversBekreftelse": {
+      "arbeidsgiverBekrefterUtsendelse": true,
+      "arbeidstakerAnsattUnderUtsendelsen": true,
+      "erstatterArbeidstakerenUtsendte": false,
+      "arbeidstakerTidligereUtsendt24Mnd": false,
+      "arbeidsgiverBetalerArbeidsgiveravgift": true,
+      "trygdeavgiftTrukketGjennomSkatt": true,
+      "trygdeavgiftTrukketGjennomSkattDato": "2018-01-01"
+    },
+    "maritimtArbeid": [
+      {
+        "enhetNavn": "Dunfjæder",
+        "fartsomradeKode": "INNENRIKS",
+        "flaggLandkode": "GB",
+        "innretningLandkode": null,
+        "territorialfarvann": null,
+        "innretningstype": null
+      }
+    ],
+    "luftfartBaser": [
+      {
+        "hjemmebaseNavn": "Dunfjæder",
+        "hjemmebaseLand": "GB",
+        "typeFlyvninger": "NASJONAL"
+      }
+    ],
+    "soeknadsland": {
+      "landkoder": ["GB"]
+    },
+    "periode": {
+      "fom": "2018-01-01",
+      "tom": "2020-10-01"
+    },
+    "trygdedekning": "HELSEDEL",
+  },
+  "type": "SØKNAD_FOLKETRYGDEN",
+}
