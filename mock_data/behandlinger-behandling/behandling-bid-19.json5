@@ -794,7 +794,10 @@
               "landkode": "NO"
             }
           },
-          "periode": null,
+          "periode": {
+            "fom": "2010-03-12",
+            "tom": "2014-03-12"
+          },
         }
       ]
     },
