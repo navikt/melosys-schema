@@ -9,9 +9,11 @@
       "fysiskeArbeidssteder": [
         {
           "adresse": {
+            "tilleggsnavn": null,
             "gatenavn": "Adresseveien 123",
-            "husnummer": "123",
+            "husnummerEtasjeLeilighet": "123",
             "region": "Brandenburger",
+            "postboks": null,
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
@@ -24,7 +26,9 @@
     },
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandkoder": ["SE"],
+      "oppholdslandkoder": [
+        "SE"
+      ],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2019-05-31"
@@ -37,9 +41,11 @@
       "intensjonOmRetur": true,
       "antallMaanederINorge": 8,
       "oppgittAdresse": {
+        "tilleggsnavn": null,
         "gatenavn": "Waldemar Thranes gate",
-        "husnummer": "98",
+        "husnummerEtasjeLeilighet": "98",
         "region": null,
+        "postboks": null,
         "postnummer": "O175",
         "poststed": "Oslo",
         "landkode": "NO"
@@ -82,7 +88,9 @@
     "maritimtArbeid": [],
     "luftfartBaser": [],
     "soeknadsland": {
-      "landkoder": ["SE"]
+      "landkoder": [
+        "SE"
+      ]
     },
     "periode": {
       "fom": "2018-01-02",
@@ -94,7 +102,10 @@
       "erFortsattAnsattEtterOppdraget": null,
       "erDrattPaaEgetInitiativ": null,
       "erErstatningTidligereUtsendte": null,
-      "samletUtsendingsperiode": { "fom": "2019-02-01", "tom": "2020-02-01" }
+      "samletUtsendingsperiode": {
+        "fom": "2019-02-01",
+        "tom": "2020-02-01"
+      }
     }
   },
   "type": "SØKNAD_A1_YRKESAKTIVE_EØS",

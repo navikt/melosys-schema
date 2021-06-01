@@ -33,9 +33,11 @@
       "fysiskeArbeidssteder": [
         {
           "adresse": {
+            "tilleggsnavn": null,
             "gatenavn": "Adresseveien 123",
-            "husnummer": "123",
+            "husnummerEtasjeLeilighet": "123",
             "region": "Brandenburger",
+            "postboks": null,
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
@@ -53,9 +55,11 @@
         "orgnr": "372384726",
         "selvstendigNaeringsvirksomhet": true,
         "adresse": {
+          "tilleggsnavn": null,
           "gatenavn": "Deutschlandstrasse",
-          "husnummer": "123",
+          "husnummerEtasjeLeilighet": "123",
           "region": "Brandenburger",
+          "postboks": null,
           "postnummer": "3388",
           "poststed": "Berlin",
           "landkode": "DE"
@@ -63,7 +67,9 @@
       }
     ],
     "oppholdUtland": {
-      "oppholdslandkoder": ["DK"],
+      "oppholdslandkoder": [
+        "DK"
+      ],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2018-06-01"
@@ -76,9 +82,11 @@
       "intensjonOmRetur": true,
       "antallMaanederINorge": 8,
       "oppgittAdresse": {
+        "tilleggsnavn": "Storgården",
         "gatenavn": "Gateadressen",
-        "husnummer": "14B",
+        "husnummerEtasjeLeilighet": "14B",
         "region": "St.Hanshaugen Distrikt",
+        "postboks": "Postboks PB-012",
         "postnummer": "12345",
         "poststed": "Poststeder",
         "landkode": "DE"
@@ -87,7 +95,10 @@
     "selvstendigArbeid": {
       "erSelvstendig": true,
       "selvstendigForetak": [
-        { "orgnr": "910253158", "fortsetterEtterArbeidIUtlandet": true }
+        {
+          "orgnr": "910253158",
+          "fortsetterEtterArbeidIUtlandet": true
+        }
       ]
     },
     "juridiskArbeidsgiverNorge": {
@@ -129,7 +140,9 @@
       }
     ],
     "soeknadsland": {
-      "landkoder": ["DK"]
+      "landkoder": [
+        "DK"
+      ]
     },
     "periode": {
       "fom": "2018-01-02",

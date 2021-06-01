@@ -2,16 +2,23 @@
   "mottaksdato": "2020-03-10",
   "data": {
     "personOpplysninger": {
-      "utenlandskIdent": [{"ident": "38288D-A", "landkode": "IT"}],
+      "utenlandskIdent": [
+        {
+          "ident": "38288D-A",
+          "landkode": "IT"
+        }
+      ],
       "medfolgendeFamilie": []
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [
         {
           "adresse": {
+            "tilleggsnavn": null,
             "gatenavn": "Adresseveien 123",
-            "husnummer": "123",
+            "husnummerEtasjeLeilighet": "123",
             "region": "Brandenburger",
+            "postboks": null,
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
@@ -24,7 +31,9 @@
     },
     "foretakUtland": [],
     "oppholdUtland": {
-      "oppholdslandkoder": ["FR"],
+      "oppholdslandkoder": [
+        "FR"
+      ],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2019-05-31"
@@ -37,9 +46,11 @@
       "intensjonOmRetur": true,
       "antallMaanederINorge": 8,
       "oppgittAdresse": {
+        "tilleggsnavn": null,
         "gatenavn": null,
-        "husnummer": null,
+        "husnummerEtasjeLeilighet": null,
         "region": null,
+        "postboks": null,
         "postnummer": null,
         "poststed": null,
         "landkode": null
@@ -93,7 +104,9 @@
     "maritimtArbeid": [],
     "luftfartBaser": [],
     "soeknadsland": {
-      "landkoder": ["FR"]
+      "landkoder": [
+        "FR"
+      ]
     },
     "periode": {
       "fom": "2018-01-02",
@@ -105,7 +118,10 @@
       "erFortsattAnsattEtterOppdraget": null,
       "erDrattPaaEgetInitiativ": null,
       "erErstatningTidligereUtsendte": null,
-      "samletUtsendingsperiode": { "fom": "2019-02-01", "tom": "2020-02-01" }
+      "samletUtsendingsperiode": {
+        "fom": "2019-02-01",
+        "tom": "2020-02-01"
+      }
     }
   },
   "type": "SØKNAD_A1_YRKESAKTIVE_EØS",
