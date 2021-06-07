@@ -132,8 +132,8 @@
       "landkoder": ["DK"]
     },
     "periode": {
-      "fom": "2018-01-02",
-      "tom": "2019-01-02"
+      "fom": "2018-01-00",
+      "tom": "2020-10-01"
     },
     "trygdedekning": "HELSEDEL",
   },
