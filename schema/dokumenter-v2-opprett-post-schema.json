@@ -123,6 +123,12 @@
         "null"
       ]
     },
+    "ektefelleFritekst": {
+      "type": ["string", "null"]
+    },
+    "barnFritekst": {
+      "type": ["string", "null"]
+    },
     "kontaktpersonNavn": {
       "title": "Manuell overstyring av navn på kontaktperson",
       "type": ["string", "null"]
