@@ -123,10 +123,10 @@
         "null"
       ]
     },
-    "fritekstEktefelle": {
+    "ektefelleFritekst": {
       "type": ["string", "null"]
     },
-    "fritekstBarn": {
+    "barnFritekst": {
       "type": ["string", "null"]
     },
     "kontaktpersonNavn": {
