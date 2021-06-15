@@ -32,9 +32,11 @@
       "fysiskeArbeidssteder": [
         {
           "adresse": {
+            "tilleggsnavn": null,
             "gatenavn": "Adresseveien 123",
-            "husnummer": "123",
+            "husnummerEtasjeLeilighet": "123",
             "region": "Brandenburger",
+            "postboks": null,
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
@@ -43,10 +45,12 @@
         },
         {
           "adresse": {
+            "tilleggsnavn": null,
             "landkode": "EE",
             "gatenavn": "Testarbeidsstedgate Testarbeidsstedbygning",
-            "husnummer": null,
+            "husnummerEtasjeLeilighet": null,
             "region": "Testarbeidsstedregion",
+            "postboks": null,
             "postnummer": "Testarbeidsstedpostkode",
             "poststed": "Testarbeidsstedby"
           },
@@ -55,10 +59,12 @@
         {
           "virksomhetNavn": "Testarbeidsstednavn2",
           "adresse": {
+            "tilleggsnavn": null,
             "landkode": "CY",
             "gatenavn": "Testarbeidsstedgate2 Testarbeidsstedbygning2",
-            "husnummer": null,
+            "husnummerEtasjeLeilighet": null,
             "region": null,
+            "postboks": null,
             "postnummer": "3212",
             "poststed": "Testarbeidsstedby2"
           }
@@ -74,9 +80,11 @@
         "orgnr": "372384726",
         "selvstendigNaeringsvirksomhet": true,
         "adresse": {
+          "tilleggsnavn": null,
           "gatenavn": "Deutschlandstrasse",
-          "husnummer": "123",
+          "husnummerEtasjeLeilighet": "123",
           "region": "Brandenburger",
+          "postboks": null,
           "postnummer": "3388",
           "poststed": "Berlin",
           "landkode": "DE"
@@ -84,7 +92,9 @@
       }
     ],
     "oppholdUtland": {
-      "oppholdslandkoder": ["DK"],
+      "oppholdslandkoder": [
+        "DK"
+      ],
       "oppholdsPeriode": {
         "fom": "2018-01-01",
         "tom": "2018-06-01"
@@ -114,10 +124,12 @@
       "intensjonOmRetur": null,
       "antallMaanederINorge": 0,
       "oppgittAdresse": {
+        "tilleggsnavn": null,
         "landkode": "BE",
         "gatenavn": "Testgate Testbyggnavn",
-        "husnummer": null,
+        "husnummerEtasjeLeilighet": null,
         "region": null,
+        "postboks": null,
         "postnummer": "2121",
         "poststed": "asd"
       }
