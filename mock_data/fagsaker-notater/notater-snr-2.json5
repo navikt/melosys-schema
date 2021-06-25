@@ -1,0 +1,62 @@
+[
+  {
+    "tekst": 'En',
+    "notatId": 1,
+    "redigerbar": false,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "LILLA HEST",
+    "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'To',
+    "notatId": 2,
+    "redigerbar": false,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "HATT GLITRENDE",
+    "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'Tre',
+    "notatId": 3,
+    "redigerbar": false,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "DOVENT DOVENDYR",
+    "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
+    "behandlingstypeKode": "SOEKNAD"
+  },
+  {
+    "tekst": 'Fire',
+    "notatId": 4,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "GIRAFF MAGER",
+    "behandlingstemaKode": "UTSENDT_SELVSTENDIG",
+    "behandlingstypeKode": "NY_VURDERING"
+  },
+  {
+    "tekst": 'Fem',
+    "notatId": 5,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:52.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "BUKSE LURVETE",
+    "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
+    "behandlingstypeKode": "NY_VURDERING"
+  },
+  {
+    "tekst": 'Seks',
+    "notatId": 6,
+    "redigerbar": true,
+    "registrertDato": "2019-04-23T10:02:59.031Z",
+    "endretDato": "2019-04-23T09:58:23.899Z",
+    "registrertAvNavn": "UTVIKLER OPTIMISTISK",
+    "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
+    "behandlingstypeKode": "NY_VURDERING"
+  },
+]
