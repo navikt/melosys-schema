@@ -160,19 +160,31 @@
         },
         "land": {
           "$id": "#/definitions/saksbehandlingitem/properties/land",
-          "type": "array",
+          "type": "object",
           "title": "The Land Schema",
-          "uniqueItems": true,
-          "additionalItems": false,
-          "items": {
-            "$id": "",
-            "type": "string",
-            "title": "The Landkode item Schema",
-            "default": "",
-            "examples": [
-              "NO"
-            ],
-            "pattern": "^(.*)$"
+          "additionalProperties": false,
+          "required": [
+            "landkoder",
+            "erUkjenteEllerAlleEosLand"
+          ],
+          "properties": {
+            "landkoder": {
+              "uniqueItems": true,
+              "additionalItems": false,
+              "items": {
+                "$id": "",
+                "type": "string",
+                "title": "The Landkode item Schema",
+                "default": "",
+                "examples": [
+                  "NO"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "erUkjenteEllerAlleEosLand": {
+              "type": "boolean"
+            }
           }
         },
         "versjon": {

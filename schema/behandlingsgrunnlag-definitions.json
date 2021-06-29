@@ -413,11 +413,15 @@
       "title": "The Soeknadsland Schema",
       "additionalProperties": false,
       "required": [
-        "landkoder"
+        "landkoder",
+        "erUkjenteEllerAlleEosLand"
       ],
       "properties": {
         "landkoder": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkoder"
+        },
+        "erUkjenteEllerAlleEosLand": {
+          "type": ["boolean"]
         }
       }
     },

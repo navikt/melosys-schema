@@ -54,18 +54,30 @@
           },
           "land": {
             "$id": "#/definitions/behandlingOversikter/items/properties/land",
-            "type": "array",
+            "type": "object",
             "title": "The Land Schema",
-            "uniqueItems": true,
-            "items": {
-              "$id": "#/definitions/behandlingOversikter/items/properties/land/items",
-              "type": "string",
-              "title": "The Items Schema",
-              "default": "",
-              "examples": [
-                "GB"
-              ],
-              "pattern": "^(.*)$"
+            "additionalProperties": false,
+            "required": [
+              "landkoder",
+              "erUkjenteEllerAlleEosLand"
+            ],
+            "properties": {
+              "landkoder": {
+                "uniqueItems": true,
+                "items": {
+                  "$id": "#/definitions/behandlingOversikter/items/properties/land/items",
+                  "type": "string",
+                  "title": "The Items Schema",
+                  "default": "",
+                  "examples": [
+                    "GB"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            },
+            "erUkjenteEllerAlleEosLand": {
+              "type": "boolean"
             }
           }
         }
