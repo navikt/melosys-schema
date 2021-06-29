@@ -130,6 +130,10 @@
     "kopiMottakere": {
       "type": ["array", "null"],
       "items": { "$ref": "#/definitions/kopiMottaker" }
+    },
+    "bestillersId": {
+      "type": ["string", "null"],
+      "title": "Ident til bestillende bruker"
     }
   }
 }
