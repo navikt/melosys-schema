@@ -159,33 +159,7 @@
           "pattern": "^(.*)$"
         },
         "land": {
-          "$id": "#/definitions/saksbehandlingitem/properties/land",
-          "type": "object",
-          "title": "The Land Schema",
-          "additionalProperties": false,
-          "required": [
-            "landkoder",
-            "erUkjenteEllerAlleEosLand"
-          ],
-          "properties": {
-            "landkoder": {
-              "uniqueItems": true,
-              "additionalItems": false,
-              "items": {
-                "$id": "",
-                "type": "string",
-                "title": "The Landkode item Schema",
-                "default": "",
-                "examples": [
-                  "NO"
-                ],
-                "pattern": "^(.*)$"
-              }
-            },
-            "erUkjenteEllerAlleEosLand": {
-              "type": "boolean"
-            }
-          }
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
         },
         "versjon": {
           "$id": "#/definitions/saksbehandlingitem/properties/versjon",

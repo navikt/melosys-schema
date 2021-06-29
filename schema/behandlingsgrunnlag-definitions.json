@@ -408,23 +408,6 @@
         }
       }
     },
-    "soeknadsland": {
-      "type": "object",
-      "title": "The Soeknadsland Schema",
-      "additionalProperties": false,
-      "required": [
-        "landkoder",
-        "erUkjenteEllerAlleEosLand"
-      ],
-      "properties": {
-        "landkoder": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkoder"
-        },
-        "erUkjenteEllerAlleEosLand": {
-          "type": ["boolean"]
-        }
-      }
-    },
     "arbeidsgiversBekreftelse": {
       "type": "object",
       "additionalProperties": false,
@@ -801,7 +784,7 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "#/definitions/soeknadsland"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
@@ -868,7 +851,7 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "#/definitions/soeknadsland"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
@@ -926,7 +909,7 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "#/definitions/soeknadsland"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
@@ -979,7 +962,7 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "#/definitions/soeknadsland"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"

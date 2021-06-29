@@ -53,32 +53,7 @@
             "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
           },
           "land": {
-            "$id": "#/definitions/behandlingOversikter/items/properties/land",
-            "type": "object",
-            "title": "The Land Schema",
-            "additionalProperties": false,
-            "required": [
-              "landkoder",
-              "erUkjenteEllerAlleEosLand"
-            ],
-            "properties": {
-              "landkoder": {
-                "uniqueItems": true,
-                "items": {
-                  "$id": "#/definitions/behandlingOversikter/items/properties/land/items",
-                  "type": "string",
-                  "title": "The Items Schema",
-                  "default": "",
-                  "examples": [
-                    "GB"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            },
-            "erUkjenteEllerAlleEosLand": {
-              "type": "boolean"
-            }
+            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
           }
         }
       }
