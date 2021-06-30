@@ -31,9 +31,10 @@
           "fom": "2018-08-01",
           "tom": "2018-12-31"
         },
-        "land": [
-          "GB"
-        ]
+        "land": {
+          "landkoder": ["GB"],
+          "erUkjenteEllerAlleEosLand": false
+        },
       }
     ]
   },
@@ -69,9 +70,10 @@
           "fom": "2018-08-01",
           "tom": "2018-12-31"
         },
-        "land": [
-          "GB"
-        ]
+        "land": {
+          "landkoder": ["GB"],
+          "erUkjenteEllerAlleEosLand": false
+        },
       }
     ]
   }

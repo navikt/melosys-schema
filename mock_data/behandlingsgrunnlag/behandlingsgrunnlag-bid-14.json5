@@ -118,7 +118,8 @@
       "landkoder": [
         "DK",
         "NO",
-      ]
+      ],
+      "erUkjenteEllerAlleEosLand": false
     },
     "periode": {
       "fom": "2018-01-02",
