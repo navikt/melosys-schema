@@ -29,3 +29,12 @@ For å laste opp schema til lokalt .m2-repository, kan man gjøre følgende:
 # 'v2' er en lokal (eksisterende) versjon av melosys-schema som du ønsker å overskrive 
 npm run zip && mv lib/\@navikt/melosys-schema-{v1}.zip ~/.m2/repository/no/nav/melosys/melosys-schema/{v2}/melosys-schema-{v2}.jar
 ```
+
+## Midlertidig løsning for generering av ts-typer
+
+For å spare litt tid ved utvikling av melosys-web, kan man generere ts-typer fra melosys-schema.
+Tanken er at de kopieres over til melosys-web, så unngå å sjekke type-filene inn i dette repoet.
+```
+cd schema
+npx json-schema-to-typescript schemanavn-schema.json schemanavn-schema.types.ts
+```
