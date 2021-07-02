@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/fagsaker-utpek-post-schema.json",
+  "$id": "./fagsaker-utpek-post-schema.json",
   "type": "object",
   "title": "The Fagsaker utpek post schema",
   "additionalProperties": false,

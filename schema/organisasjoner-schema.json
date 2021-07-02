@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/organisasjoner-schema.json",
+  "$id": "./organisasjoner-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -17,17 +17,17 @@
     "orgnr": {
       "title": "The Orgnr Schema",
       "$id": "#/properties/orgnr",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+      "$ref": "./definitions-schema.json#/definitions/orgnr"
     },
     "oppstartdato": {
       "$id": "#/properties/oppstartdato",
       "title": "The Oppstartdato Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+      "$ref": "./definitions-schema.json#/definitions/nullable-dato"
     },
     "postadresse": {
       "$id": "#/properties/postadresse",
       "title": "The Postadresse Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+      "$ref": "./definitions-schema.json#/definitions/registerAdresse"
     },
     "organisasjonsform": {
       "$id": "#/properties/organisasjonsform",
@@ -54,7 +54,7 @@
     "forretningsadresse": {
       "$id": "#/properties/forretningsadresse",
       "title": "The Forretningsadresse Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+      "$ref": "./definitions-schema.json#/definitions/registerAdresse"
     }
   }
 }

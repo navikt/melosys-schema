@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/bucerunderarbeid-schema.json",
+  "$id": "./bucerunderarbeid-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "uniqueItems": true,
@@ -47,7 +47,7 @@
           "opprettetDato": {
             "$id": "#/bucer/items/properties/opprettetDato",
             "title": "The OpprettetDato Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+            "$ref": "./definitions-schema.json#/definitions/dato"
           },
           "seder": {
             "$id": "#/bucer/items/properties/seder",
@@ -90,17 +90,17 @@
                 "rinaUrl": {
                   "$id": "#/bucer/items/properties/seder/items/properties/rinaUrl",
                   "title": "The RinaUrl Schema",
-                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/url"
+                  "$ref": "./definitions-schema.json#/definitions/url"
                 },
                 "opprettetDato": {
                   "$id": "#/bucer/items/properties/seder/items/properties/opprettetDato",
                   "title": "The OpprettetDato Schema",
-                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+                  "$ref": "./definitions-schema.json#/definitions/dato"
                 },
                 "sistOppdatert": {
                   "$id": "#/bucer/items/properties/seder/items/properties/sistOppdatert",
                   "title": "The SistOppdatert Schema",
-                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+                  "$ref": "./definitions-schema.json#/definitions/dato"
                 },
                 "sedType": {
                   "$id": "#/bucer/items/properties/seder/items/properties/sedType",

@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/avklartefakta-medfolgendefamilie-post-schema.json",
+  "$id": "./avklartefakta-medfolgendefamilie-post-schema.json",
   "title": "The Avklartefakta MedfolgendeFamilie Post Schema",
   "type": "object",
   "additionalProperties": false,
@@ -15,7 +15,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/medfolgendeFamilieObjekt"
+        "$ref": "./definitions-schema.json#/definitions/medfolgendeFamilieObjekt"
       },
       "default": []
     }

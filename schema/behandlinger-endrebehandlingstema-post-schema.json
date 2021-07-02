@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/behandlinger-endrebehandlingstema-post-schema.json",
+  "$id": "./behandlinger-endrebehandlingstema-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -12,7 +12,7 @@
     "behandlingstema": {
       "title": "The Behandlingstema Schema",
       "$id": "#/properties/oppsummering/properties/behandlingstema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+      "$ref": "./definitions-schema.json#/definitions/behandlingstema"
     }
   }
 }

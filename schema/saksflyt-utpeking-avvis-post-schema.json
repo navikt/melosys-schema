@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/saksflyt-utpeking-avvis-post-schema.json",
+  "$id": "./saksflyt-utpeking-avvis-post-schema.json",
   "type": "object",
   "title": "The Utpeking avvis Schema",
   "additionalProperties": false,

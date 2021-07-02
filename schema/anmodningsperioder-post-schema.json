@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/anmodningsperioder-post-schema.json",
+  "$id": "./anmodningsperioder-post-schema.json",
   "type": "object",
   "title": "The Anmodningsperioder post schema",
   "additionalProperties": false,
@@ -37,10 +37,10 @@
           "pattern": "^(.*)$"
         },
         "fomDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+          "$ref": "./definitions-schema.json#/definitions/dato"
         },
         "tomDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato"
         },
         "lovvalgBestemmelse": {
           "type": [
@@ -87,7 +87,7 @@
         "trygdeDekning": {
           "oneOf": [
             {
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+              "$ref": "./definitions-schema.json#/definitions/trygdeDekning"
             },
             {
               "type": "null"

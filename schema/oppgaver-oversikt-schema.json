@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/oppgaver-oversikt-schema.json",
+  "$id": "./oppgaver-oversikt-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "description": "An explanation about the purpose of this instance.",
@@ -38,7 +38,7 @@
           "fnr": {
             "title": "The Fnr Schema",
             "$id": "#/properties/journalforing/items/properties/fnr",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+            "$ref": "./definitions-schema.json#/definitions/fnr"
           },
           "sammensattNavn": {
             "$id": "#/properties/journalforing/items/properties/sammensattNavn",
@@ -53,16 +53,16 @@
           "oppgaveID": {
             "title": "The Oppgaveid Schema",
             "$id": "#/properties/journalforing/items/properties/oppgaveID",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+            "$ref": "./definitions-schema.json#/definitions/oppgaveID"
           },
           "journalpostID": {
             "$id": "#/properties/journalforing/items/properties/journalpostID",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+            "$ref": "./definitions-schema.json#/definitions/journalpostID"
           },
           "aktivTil": {
             "$id": "#/properties/journalforing/items/properties/aktivTil",
             "title": "The Aktivtil Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+            "$ref": "./definitions-schema.json#/definitions/dato"
           },
           "prioritet": {
             "$id": "#/properties/journalforing/items/properties/prioritet",
@@ -109,7 +109,7 @@
       "items": {
         "$id": "#/properties/saksbehandling/items",
         "title": "The Saksbehandlingitem Schema",
-        "$ref": "http://melosys.nav.no/schemas/oppgaver-definitions.json#/definitions/saksbehandlingitem"
+        "$ref": "./oppgaver-definitions.json#/definitions/saksbehandlingitem"
       }
     }
   }

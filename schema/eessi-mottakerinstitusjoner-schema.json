@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/mottakerinstitusjoner-schema.json",
+  "$id": "./mottakerinstitusjoner-schema.json",
   "type": "array",
   "title": "The Root Schema",
   "uniqueItems": true,
@@ -37,7 +37,7 @@
       "landkode": {
         "$id": "#/items/properties/landkode",
         "title": "The Landkode Schema",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+        "$ref": "./definitions-schema.json#/definitions/landkode"
       }
     }
   }

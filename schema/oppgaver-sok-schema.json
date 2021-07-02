@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/oppgaver-sok-schema.json",
+  "$id": "./oppgaver-sok-schema.json",
   "title": "The oppgaver-sok-get Schema",
   "type": "array",
   "uniqueItems": true,
@@ -22,10 +22,10 @@
       ],
       "properties": {
         "journalpostID": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+          "$ref": "./definitions-schema.json#/definitions/journalpostID"
         },
         "oppgaveID": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+          "$ref": "./definitions-schema.json#/definitions/oppgaveID"
         },
         "tema": {
           "type": "string",
@@ -42,10 +42,10 @@
           ]
         },
         "registrertDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         },
         "frist": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+          "$ref": "./definitions-schema.json#/definitions/dato"
         },
         "sakID": {
           "type": ["string", "null"]

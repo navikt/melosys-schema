@@ -20,7 +20,7 @@
     "avgiftsperioderNorge": {
       "$id": "#/properties/avgiftsperioderNorge",
       "title": "The AvgiftsperioderNorge Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avgiftsperioder"
+      "$ref": "./definitions-schema.json#/definitions/avgiftsperioder"
     },
     "avgiftspliktigLønnUtland": {
       "$id": "#/properties/avgiftspliktigLønnUtland",
@@ -30,7 +30,7 @@
     "avgiftsperioderUtland": {
       "$id": "#/properties/avgiftsperioderUtland",
       "title": "The AvgiftsperioderUtland Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/avgiftsperioder"
+      "$ref": "./definitions-schema.json#/definitions/avgiftsperioder"
     }
   }
 }

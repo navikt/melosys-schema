@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json",
+  "$id": "./saksflyt-vedtak-fatt-definitions.json",
   "title": "Saksflyt fatt vedtak definitions",
   "definitions": {
     "eosData": {
@@ -16,10 +16,10 @@
       ],
       "properties": {
         "behandlingsresultatTypeKode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+          "$ref": "./definitions-schema.json#/definitions/behandlingsresultatTypeKode"
         },
         "vedtakstype": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+          "$ref": "./definitions-schema.json#/definitions/vedtakstype"
         },
         "fritekst": {
           "type": ["string", "null"],
@@ -51,10 +51,10 @@
       ],
       "properties": {
         "behandlingsresultatTypeKode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+          "$ref": "./definitions-schema.json#/definitions/behandlingsresultatTypeKode"
         },
         "vedtakstype": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+          "$ref": "./definitions-schema.json#/definitions/vedtakstype"
         },
         "fritekstBegrunnelse": {
           "type": ["string", "null"]

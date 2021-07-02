@@ -20,7 +20,7 @@
         "$ref": "#/definitions/behandlingStatistikk"
       },
       "propertyNames": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+        "$ref": "./definitions-schema.json#/definitions/behandlingstema"
       }
     }
   }

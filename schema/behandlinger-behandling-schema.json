@@ -31,7 +31,7 @@
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/behandlinger-behandling-schema.json",
+  "$id": "./behandlinger-behandling-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -44,7 +44,7 @@
   "properties": {
     "behandlingID": {
       "$id": "#/properties/behandlingID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+      "$ref": "./definitions-schema.json#/definitions/behandlingID"
     },
     "redigerbart": {
       "$id": "#/properties/redigerbart",
@@ -110,7 +110,7 @@
               "ansettelsesPeriode": {
                 "title": "The Ansettelsesperiode Schema",
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/ansettelsesPeriode",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                "$ref": "./definitions-schema.json#/definitions/periode"
               },
               "arbeidsforholdID": {
                 "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsforholdID",
@@ -176,7 +176,7 @@
                     "endringsdatoStillingsprosent": {
                       "title": "The Endringsdatostillingsprosent Schema",
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/endringsdatoStillingsprosent",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+                      "$ref": "./definitions-schema.json#/definitions/nullable-dato"
                     },
                     "maritimArbeidsavtale": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/maritimArbeidsavtale",
@@ -205,7 +205,7 @@
                     "yrke": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/yrke",
                       "title": "The Yrke Schema",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                      "$ref": "./definitions-schema.json#/definitions/kodeverk"
                     },
                     "antallTimerGammeltAa": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/antallTimerGammeltAa",
@@ -260,7 +260,7 @@
                     "gyldighetsperiode": {
                       "title": "The Gyldighetsperiode Schema",
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/arbeidsavtaler/items/properties/gyldighetsperiode",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                      "$ref": "./definitions-schema.json#/definitions/periode"
                     }
                   }
                 }
@@ -319,7 +319,7 @@
                     "permisjonsPeriode": {
                       "title": "Arbeidsforhold permisjonsPeriode",
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items/permisjonsPeriode",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                      "$ref": "./definitions-schema.json#/definitions/periode"
                     },
                     "permisjonsprosent": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/permisjonOgPermittering/items/permisjonsprosent",
@@ -401,12 +401,12 @@
                   "properties": {
                     "rapporteringsAarMaaned": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items/rapporteringsAarMaaned",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                      "$ref": "./definitions-schema.json#/definitions/aarmaaned"
                     },
                     "timelonnetPeriode": {
                       "title": "Arbeidsforhold timelonnetPeriode",
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items/timelonnetPeriode",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                      "$ref": "./definitions-schema.json#/definitions/periode"
                     },
                     "antallTimer": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/timerTimelonnet/items/antallTimer",
@@ -432,12 +432,12 @@
                   "properties": {
                     "rapporteringsAarMaaned": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/rapporteringsAarMaaned",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                      "$ref": "./definitions-schema.json#/definitions/aarmaaned"
                     },
                     "periode": {
                       "title": "Utenlandsk opphold periode",
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/periode",
-                      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                      "$ref": "./definitions-schema.json#/definitions/periode"
                     },
                     "land": {
                       "$id": "#/properties/saksopplysninger/properties/arbeidsforhold/items/properties/utenlandsopphold/items/land",
@@ -471,17 +471,17 @@
               "orgnr": {
                 "title": "The Orgnr Schema",
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/orgnr",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+                "$ref": "./definitions-schema.json#/definitions/orgnr"
               },
               "oppstartdato": {
                 "title": "The Oppstartdato Schema",
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/oppstartdato",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+                "$ref": "./definitions-schema.json#/definitions/nullable-dato"
               },
               "postadresse": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/postadresse",
                 "title": "The Postadresse Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+                "$ref": "./definitions-schema.json#/definitions/registerAdresse"
               },
               "organisasjonsform": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/organisasjonsform",
@@ -505,7 +505,7 @@
               "forretningsadresse": {
                 "$id": "#/properties/saksopplysninger/properties/organisasjoner/items/properties/forretningsadresse",
                 "title": "The Forretningsadresse Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+                "$ref": "./definitions-schema.json#/definitions/registerAdresse"
               }
             }
           }
@@ -721,7 +721,7 @@
                             "opptjeningsperiode": {
                               "title": "The Inntekt Opptjeningsperiode Schema",
                               "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/arbeidsInntektInformasjon/properties/inntektListe/items/properties/opptjeningsperiode",
-                              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+                              "$ref": "./definitions-schema.json#/definitions/nullable-periode"
                             }
                           }
                         }
@@ -730,7 +730,7 @@
                   },
                   "aarMaaned": {
                     "$id": "#/properties/saksopplysninger/properties/inntekt/properties/arbeidsInntektMaanedListe/items/properties/aarMaaned",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                    "$ref": "./definitions-schema.json#/definitions/aarmaaned"
                   }
                 }
               }
@@ -777,7 +777,7 @@
                             "frilansPeriode": {
                               "title": "The FrilansPeriode Schema",
                               "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon/properties/arbeidsforholdFrilanserListe/items/properties/frilansPeriode",
-                              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                              "$ref": "./definitions-schema.json#/definitions/periode"
                             },
                             "yrke": {
                               "$id": "#/properties/saksopplysninger/properties/inntekt/items/properties/frilansInntektMaanedListe/items/properties/frilansInntektInformasjon/properties/arbeidsforholdFrilanserListe/items/properties/yrke",
@@ -796,7 +796,7 @@
                   },
                   "aarMaaned": {
                     "$id": "#/properties/saksopplysninger/properties/inntekt/properties/frilansInntektMaanedListe/items/properties/aarMaaned",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aarmaaned"
+                    "$ref": "./definitions-schema.json#/definitions/aarmaaned"
                   }
                 }
               }
@@ -836,12 +836,12 @@
                   "periodeID": {
                     "title": "The Medlemskap PeriodeID Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/periode",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periodeID"
+                    "$ref": "./definitions-schema.json#/definitions/periodeID"
                   },
                   "periode": {
                     "title": "The Meldlemskap Periode Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/periode",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    "$ref": "./definitions-schema.json#/definitions/periode"
                   },
                   "periodetype": {
                     "title": "The periodetype Schema",
@@ -861,27 +861,27 @@
                   "land": {
                     "title": "The medlem land Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/land",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                    "$ref": "./definitions-schema.json#/definitions/kodeverk"
                   },
                   "lovvalg": {
                     "title": "The medlem lovvalg Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/lovvalg",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                    "$ref": "./definitions-schema.json#/definitions/kodeverk"
                   },
                   "trygdedekning": {
                     "title": "The medlem trygdedekning Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/trygdedekning",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                    "$ref": "./definitions-schema.json#/definitions/kodeverk"
                   },
                   "kildedokumenttype": {
                     "title": "The medlem kildedokumenttype Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/kildedokumenttype",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                    "$ref": "./definitions-schema.json#/definitions/kodeverk"
                   },
                   "kilde": {
                     "title": "The medlem kilde Schema",
                     "$id": "#/properties/saksopplysninger/properties/medlemskap/properties/medlemsperiode/items/kilde",
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                    "$ref": "./definitions-schema.json#/definitions/kodeverk"
                   }
                 }
               }
@@ -919,7 +919,7 @@
             "personStatus": {
               "title": "The Personstatus Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/personStatus",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+              "$ref": "./definitions-schema.json#/definitions/kodeverk"
             },
             "sammensattNavn": {
               "$id": "#/properties/saksopplysninger/properties/person/properties/sammensattNavn",
@@ -934,37 +934,37 @@
             "kjoenn": {
               "title": "The Kjoenn Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/kjoenn",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+              "$ref": "./definitions-schema.json#/definitions/kodeverk"
             },
             "fnr": {
               "title": "The Fnr Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/fnr",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+              "$ref": "./definitions-schema.json#/definitions/fnr"
             },
             "foedselsdato": {
               "title": "The Foedselsdato Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/foedselsdato",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+              "$ref": "./definitions-schema.json#/definitions/dato"
             },
             "sivilstand": {
               "$id": "#/properties/tilleggsData/properties/personer/items/properties/sivilstand",
               "title": "The Sivilstand Schema",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+              "$ref": "./definitions-schema.json#/definitions/kodeverk"
             },
             "statsborgerskap": {
               "title": "The Statsborgerskap Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskap",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+              "$ref": "./definitions-schema.json#/definitions/kodeverk"
             },
             "statsborgerskapDato": {
               "title": "The Statsborgerskapdato Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/statsborgerskapDato",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+              "$ref": "./definitions-schema.json#/definitions/dato"
             },
             "familiemedlemmer": {
               "$id": "#/properties/saksopplysninger/properties/person/properties/familiemedlemmer",
               "title": "The Familiemedlemmer Schema",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/familiemedlemmer"
+              "$ref": "./definitions-schema.json#/definitions/familiemedlemmer"
             }
           }
         },
@@ -988,10 +988,10 @@
                 ],
                 "properties": {
                   "bostedsadresse": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+                    "$ref": "./definitions-schema.json#/definitions/registerAdresse"
                   },
                   "periode": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    "$ref": "./definitions-schema.json#/definitions/periode"
                   }
                 }
               }
@@ -1007,10 +1007,10 @@
                 ],
                 "properties": {
                   "postadresse": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
+                    "$ref": "./definitions-schema.json#/definitions/ustrukturertAdresse"
                   },
                   "periode": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    "$ref": "./definitions-schema.json#/definitions/periode"
                   }
                 }
               }
@@ -1026,10 +1026,10 @@
                 ],
                 "properties": {
                   "midlertidigAdresse": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
+                    "$ref": "./definitions-schema.json#/definitions/adresse"
                   },
                   "periode": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+                    "$ref": "./definitions-schema.json#/definitions/periode"
                   }
                 }
               }
@@ -1095,7 +1095,7 @@
             "fnr": {
               "title": "The Fnr Schema",
               "$id": "#/properties/saksopplysninger/properties/sed/properties/fnr",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+              "$ref": "./definitions-schema.json#/definitions/fnr"
             },
             "lovvalgsperiode": {
               "$id": "#/properties/saksopplysninger/properties/sed/properties/lovvalgsperiode",
@@ -1197,27 +1197,27 @@
         "behandlingstema": {
           "title": "The BehandlingsStatus Schema",
           "$id": "#/properties/oppsummering/properties/behandlingstema",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "behandlingsstatus": {
           "title": "The BehandlingsStatus Schema",
           "$id": "#/properties/oppsummering/properties/behandlingsstatus",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "behandlingstype": {
           "title": "The Behandlingsype Schema",
           "$id": "#/properties/oppsummering/properties/behandlingstype",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "registrertDato": {
           "title": "The Registrertdato Schema",
           "$id": "#/properties/oppsummering/properties/registrertDato",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato-tid"
         },
         "endretDato": {
           "title": "The Endretdato Schema",
           "$id": "#/properties/oppsummering/properties/endretDato",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato-tid"
         },
         "endretAvNavn": {
           "type": "string"
@@ -1225,17 +1225,17 @@
         "sisteOpplysningerHentetDato": {
           "title": "The SisteOpplysningerHentetDato Schema",
           "$id": "#/properties/oppsummering/properties/sisteOpplysningerHentetDato",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         },
         "svarFrist": {
           "title": "The SvarFrist Schema",
           "$id": "#/properties/oppsummering/properties/svarFrist",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato-tid"
         },
         "behandlingsfrist": {
           "title": "The Behandlingsfrist Schema",
           "$id": "#/properties/oppsummering/properties/behandlingsfrist",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato"
         }
       }
     }

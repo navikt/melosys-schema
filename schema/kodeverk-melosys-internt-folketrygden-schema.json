@@ -16,13 +16,13 @@
     "Trygdedekninger": {
       "type": "array",
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        "$ref": "./definitions-schema.json#/definitions/kodeverk"
       }
     },
     "Vilkaar": {
       "type": "array",
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        "$ref": "./definitions-schema.json#/definitions/kodeverk"
       }
     },
     "begrunnelser": {
@@ -36,38 +36,38 @@
       "Ftrl_2_8_naer_tilknytning_norge_begrunnelser": {
         "type": "array",
         "items": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         }
       },
       "Ftrl_2_8_forutgaaende_trygdetid_begrunnelser": {
         "type": "array",
         "items": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         }
       },
       "Medfolgende_barn_begrunnelser_ftrl": {
         "type": "array",
         "items": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         }
       },
       "Medfolgende_ektefelle_samboer_begrunnelser_ftrl": {
         "type": "array",
         "items": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         }
       }
     },
     "InnvilgelsesResultat": {
       "type": "array",
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        "$ref": "./definitions-schema.json#/definitions/kodeverk"
       }
     },
     "Saerligeavgiftsgrupper": {
       "type": "array",
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+        "$ref": "./definitions-schema.json#/definitions/kodeverk"
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/aktoer-post",
+  "$id": "./aktoer-post",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -18,17 +18,17 @@
     "aktoerID": {
       "title": "The Aktoerid Schema",
       "$id": "#/items/properties/aktoerID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-aktoerID"
+      "$ref": "./definitions-schema.json#/definitions/nullable-aktoerID"
     },
     "databaseID": {
       "title": "The DatabaseID schema",
       "$id": "#/items/properties/aktoerID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-databaseID"
+      "$ref": "./definitions-schema.json#/definitions/nullable-databaseID"
     },
     "orgnr": {
       "title": "The Orgnr Schema",
       "$id": "#/items/properties/orgnr",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+      "$ref": "./definitions-schema.json#/definitions/nullable-orgnr"
     },
     "institusjonsID": {
       "$id": "#/items/properties/institusjonsID",
@@ -65,7 +65,7 @@
       "title": "The Representerer Schema",
       "default": null,
       "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE", null],
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/representererKode"
+      "$ref": "./definitions-schema.json#/definitions/representererKode"
     }
   }
 }

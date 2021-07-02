@@ -11,7 +11,7 @@
     "behandlingsstatus": {
       "title": "The Behandlingsstatus Schema",
       "$id": "#/properties/behandlingsstatus",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsstatus"
+      "$ref": "./definitions-schema.json#/definitions/behandlingsstatus"
     }
   }
 }

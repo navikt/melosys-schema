@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/behandlingOversikter-definitions.json",
+  "$id": "./behandlingOversikter-definitions.json",
   "title": "The behandlingOversikter Schema",
   "definitions": {
     "behandlingOversikter": {
@@ -25,35 +25,35 @@
         "properties": {
           "behandlingID": {
             "$id": "#/definitions/behandlingOversikter/items/properties/behandlingID",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+            "$ref": "./definitions-schema.json#/definitions/behandlingID"
           },
           "behandlingstype": {
             "$id": "#/definitions/behandlingOversikter/items/properties/behandlingstype",
             "title": "The Behandlingstype Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            "$ref": "./definitions-schema.json#/definitions/kodeverk"
           },
           "behandlingstema": {
             "$id": "#/definitions/behandlingOversikter/items/properties/behandlingstema",
             "title": "The Behandlingstema Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            "$ref": "./definitions-schema.json#/definitions/kodeverk"
           },
           "behandlingsstatus": {
             "$id": "#/definitions/behandlingOversikter/items/properties/behandlingsstatus",
             "title": "The Behandlingsstatus Schema",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            "$ref": "./definitions-schema.json#/definitions/kodeverk"
           },
           "opprettetDato": {
             "title": "The opprettetDato Schema",
             "$id": "#/definitions/behandlingOversikter/items/properties/opprettetDato",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+            "$ref": "./definitions-schema.json#/definitions/dato-tid"
           },
           "periode": {
             "title": "The periode Schema",
             "$id": "#/definitions/behandlingOversikter/properties/behandlingOversikter/properties/periode",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+            "$ref": "./definitions-schema.json#/definitions/periode"
           },
           "land": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+            "$ref": "./definitions-schema.json#/definitions/soeknadsland"
           }
         }
       }

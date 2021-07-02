@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/avklartefakta-oppsummering-schema.json",
+  "$id": "./avklartefakta-oppsummering-schema.json",
   "title": "The Avklartefakta Oppsummering Schema",
   "type": "object",
   "additionalProperties": true,
@@ -13,7 +13,7 @@
     "virksomheter" : {
       "$id": "#/properties/virksomheter",
       "virksomhetIDer" : {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomhetIDer"
+        "$ref": "./definitions-schema.json#/definitions/virksomhetIDer"
       }
     },
     "medfolgendeFamilie": {
@@ -21,7 +21,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/medfolgendeFamilieObjekt"
+        "$ref": "./definitions-schema.json#/definitions/medfolgendeFamilieObjekt"
       },
       "default": []
     }

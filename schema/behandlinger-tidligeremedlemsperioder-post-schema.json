@@ -14,7 +14,7 @@
       "title": "The Tidligere_medlemsperiode_ids Schema",
       "items": {
         "$id": "#/properties/tidligere_medlemsperiode_ids/items",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periodeID"
+        "$ref": "./definitions-schema.json#/definitions/periodeID"
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/aktoer",
+  "$id": "./aktoer",
   "type": "array",
   "title": "The Root Schema",
   "items": {
@@ -22,7 +22,7 @@
       "databaseID": {
         "title": "The databaseID Schema",
         "$id": "#/items/properties/databaseID",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/databaseID"
+        "$ref": "./definitions-schema.json#/definitions/databaseID"
       },
       "aktoerID": {
         "$id": "#/items/properties/aktoerID",
@@ -37,7 +37,7 @@
       "orgnr": {
         "title": "The Orgnr Schema",
         "$id": "#/items/properties/orgnr",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+        "$ref": "./definitions-schema.json#/definitions/nullable-orgnr"
       },
       "institusjonsID": {
         "$id": "#/items/properties/institusjonsID",
@@ -73,7 +73,7 @@
         "title": "The Representerer Schema",
         "$id": "#/items/properties/representerer",
         "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE", null],
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/representererKode"
+        "$ref": "./definitions-schema.json#/definitions/representererKode"
       }
     }
   }

@@ -1,14 +1,14 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-post-schema.json",
+  "$id": "./saksflyt-vedtak-fatt-post-schema.json",
   "title": "The Root Schema",
   "oneOf": [
     {
-      "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/eosData"
+      "$ref": "./saksflyt-vedtak-fatt-definitions.json#/definitions/eosData"
     },
     {
-      "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/ftrldata"
+      "$ref": "./saksflyt-vedtak-fatt-definitions.json#/definitions/ftrldata"
     }
   ]
 }

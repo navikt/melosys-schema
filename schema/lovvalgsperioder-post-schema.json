@@ -25,12 +25,12 @@
       "fomDato": {
         "title": "The FomDato Schema",
         "$id": "#/items/properties/fomDato",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+        "$ref": "./definitions-schema.json#/definitions/dato"
       },
       "tomDato": {
         "title": "The TomDato Schema",
         "$id": "#/items/properties/tomDato",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+        "$ref": "./definitions-schema.json#/definitions/nullable-dato"
       },
       "lovvalgsbestemmelse": {
         "$id": "#/items/properties/lovvalgsbestemmelse",
@@ -80,7 +80,7 @@
         "pattern": "^(.*)$"
       },
       "trygdeDekning": {
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+        "$ref": "./definitions-schema.json#/definitions/trygdeDekning"
       },
       "medlemskapstype": {
         "$id": "#/items/properties/medlemskapstype",

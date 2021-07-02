@@ -46,7 +46,7 @@
       }
     },
     "behandlingsresultatTypeKode": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingsresultatTypeKode"
+      "$ref": "./definitions-schema.json#/definitions/behandlingsresultatTypeKode"
     },
     "utfallRegistreringUnntak": {
       "$id": "#/properties/utfallRegistreringUnntak",
@@ -71,7 +71,7 @@
     "vedtakstype": {
       "oneOf": [
         {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
+          "$ref": "./definitions-schema.json#/definitions/vedtakstype"
         },
         {
           "type": "null"

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/fagsaker-opprett-post-schema.json",
+  "$id": "./fagsaker-opprett-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -31,7 +31,7 @@
       ],
       "properties": {
         "periode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+          "$ref": "./definitions-schema.json#/definitions/nullable-periode"
         },
         "land": {
           "type": "array",
@@ -46,7 +46,7 @@
       "type": "boolean"
     },
     "oppgaveID": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+      "$ref": "./definitions-schema.json#/definitions/oppgaveID"
     }
   }
 }

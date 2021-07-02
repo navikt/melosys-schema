@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/avklartefakta-virksomheter-post-schema.json",
+  "$id": "./avklartefakta-virksomheter-post-schema.json",
   "title": "The Avklartefakta Virksomheter Post Schema",
   "type": "object",
   "additionalProperties": false,
@@ -10,7 +10,7 @@
   ],
   "properties": {
     "virksomhetIDer" : {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/virksomhetIDer"
+      "$ref": "./definitions-schema.json#/definitions/virksomhetIDer"
     }
   }
 }

@@ -21,7 +21,7 @@
       "vilkaar": {
         "title": "The Vilkaar Schema",
         "$id": "#/items/properties/vilkaar",
-        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vilkaar"
+        "$ref": "./definitions-schema.json#/definitions/vilkaar"
       },
       "oppfylt": {
         "$id": "#/items/properties/oppfylt",

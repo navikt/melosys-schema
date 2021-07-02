@@ -23,10 +23,10 @@
       ]
     },
     "trygdeavgiftsgrunnlagNorge": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
+      "$ref": "./definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
     },
     "trygdeavgiftsgrunnlagUtland": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
+      "$ref": "./definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
     }
   }
 }

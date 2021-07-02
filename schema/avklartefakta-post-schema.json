@@ -1,11 +1,11 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/avklartefakta-post-schema.json",
+  "$id": "./avklartefakta-post-schema.json",
   "title": "The Avklartefakta Post Schema",
   "type": "array",
   "items": {
     "$id": "#/items",
-    "$ref": "http://melosys.nav.no/schemas/avklartefakta-definitions.json#/definitions/avklartefakta"
+    "$ref": "./avklartefakta-definitions.json#/definitions/avklartefakta"
   }
 }

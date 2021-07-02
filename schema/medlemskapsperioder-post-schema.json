@@ -16,20 +16,20 @@
     "fomDato": {
       "title": "The FomDato Schema",
       "$id": "#/items/properties/fomDato",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+      "$ref": "./definitions-schema.json#/definitions/dato"
     },
     "tomDato": {
       "title": "The TomDato Schema",
       "$id": "#/items/properties/tomDato",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+      "$ref": "./definitions-schema.json#/definitions/nullable-dato"
     },
     "trygdedekning": {
       "$id": "#/items/properties/trygdeDekning",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+      "$ref": "./definitions-schema.json#/definitions/trygdeDekning"
     },
     "innvilgelsesResultat": {
       "$id": "#/items/properties/innvilgelsesResultat",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/innvilgelsesresultat"
+      "$ref": "./definitions-schema.json#/definitions/innvilgelsesresultat"
     }
   }
 }

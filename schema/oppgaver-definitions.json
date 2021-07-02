@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/oppgaver-definitions.json",
+  "$id": "./oppgaver-definitions.json",
   "title": "The Definitions Schema",
   "definitions": {
     "behandling": {
@@ -22,30 +22,30 @@
       "properties": {
         "behandlingID": {
           "$id": "#/definitions/behandling/properties/behandlingID",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+          "$ref": "./definitions-schema.json#/definitions/behandlingID"
         },
         "behandlingstype": {
           "$id": "#/definitions/behandling/properties/behandlingstype",
           "title": "The behandlingstype Schema",
           "description": "An explanation about the purpose of this instance.",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "behandlingstema": {
           "$id": "#/definitions/behandling/properties/behandlingstema",
           "title": "The behandlingstema Schema",
           "description": "An explanation about the purpose of this instance.",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "behandlingsstatus": {
           "$id": "#/definitions/behandling/properties/behandlingsstatus",
           "title": "The behandlingsstatus Schema",
           "description": "An explanation about the purpose of this instance.",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "endretDato":{
           "title": "The endretDato Schema",
           "$id": "#/definitions/behandling/properties/endretDato",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         },
         "erUnderOppdatering": {
           "$id": "#/definitions/behandling/properties/erUnderOppdatering",
@@ -60,10 +60,10 @@
         "registrertDato": {
           "$id": "#/definitions/behandling/properties/registrertDato",
           "title": "The RegistrertDato Schema",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         },
         "svarFrist": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         }
       }
     },
@@ -111,7 +111,7 @@
         "fnr": {
           "title": "The Fnr Schema",
           "$id": "#/definitions/saksbehandlingitem/properties/fnr",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+          "$ref": "./definitions-schema.json#/definitions/fnr"
         },
         "saksnummer": {
           "$id": "#/definitions/saksbehandlingitem/properties/saksnummer",
@@ -126,7 +126,7 @@
         "sakstype": {
           "$id": "#/definitions/saksbehandlingitem/properties/sakstype",
           "title": "The Sakstypekode Schema",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+          "$ref": "./definitions-schema.json#/definitions/kodeverk"
         },
         "behandling": {
           "$id": "#/definitions/saksbehandlingitem/properties/behandling",
@@ -146,7 +146,7 @@
         "periode": {
           "title": "The Soknadsperiode Schema",
           "$id": "#/definitions/saksbehandlingitem/properties/soknadsperiode",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+          "$ref": "./definitions-schema.json#/definitions/nullable-periode"
         },
         "prioritet": {
           "$id": "#/definitions/saksbehandlingitem/properties/prioritet",
@@ -159,7 +159,7 @@
           "pattern": "^(.*)$"
         },
         "land": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+          "$ref": "./definitions-schema.json#/definitions/soeknadsland"
         },
         "versjon": {
           "$id": "#/definitions/saksbehandlingitem/properties/versjon",

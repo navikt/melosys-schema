@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/fagsaker-notater-post-schema.json",
+  "$id": "./fagsaker-notater-post-schema.json",
   "type": "object",
   "additionalProperties": false,
   "required": [

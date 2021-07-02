@@ -101,7 +101,7 @@ module.exports.lesKatalogElement = path => {
   };
 };
 const lesEmbeddedSchemas = schema => {
-  const SCHEMA_URI = 'http://melosys.nav.no/schemas/';
+  const SCHEMA_URI = './';
   const refs = JSONPath({ path: '$..$ref', json: schema });
   const defs = refs.filter(item => item.startsWith(SCHEMA_URI));
   const embeddedSchemas = [];

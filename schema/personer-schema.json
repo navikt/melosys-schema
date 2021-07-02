@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/person-schema.json",
+  "$id": "./person-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -18,17 +18,17 @@
     "fnr": {
       "title": "The Fnr Schema",
       "$id": "#/properties/fnr",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+      "$ref": "./definitions-schema.json#/definitions/fnr"
     },
     "sivilstand": {
       "$id": "#/properties/sivilstand",
       "title": "The Sivilstand Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      "$ref": "./definitions-schema.json#/definitions/kodeverk"
     },
     "statsborgerskap": {
       "$id": "#/properties/statsborgerskap",
       "title": "The Statsborgerskap Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      "$ref": "./definitions-schema.json#/definitions/kodeverk"
     },
     "sammensattNavn": {
       "$id": "#/properties/sammensattNavn",
@@ -43,33 +43,33 @@
     "personstatus": {
       "$id": "#/properties/personstatus",
       "title": "The Personstatus Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      "$ref": "./definitions-schema.json#/definitions/kodeverk"
     },
     "kjoenn": {
       "$id": "#/properties/kjoenn",
       "title": "The Kjoenn Schema",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+      "$ref": "./definitions-schema.json#/definitions/kodeverk"
     },
     "foedselsdato": {
       "title": "The Foedselsdato Schema",
       "$id": "#/properties/foedselsdato",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+      "$ref": "./definitions-schema.json#/definitions/dato"
     },
     "bostedsadresse": {
       "$id": "#/properties/postadresse",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse"
+      "$ref": "./definitions-schema.json#/definitions/registerAdresse"
     },
     "postadresse": {
       "$id": "#/properties/postadresse",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse"
+      "$ref": "./definitions-schema.json#/definitions/ustrukturertAdresse"
     },
     "midlertidigPostadresse": {
       "$id": "#/properties/midlertidigPostadresse",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/adresse"
+      "$ref": "./definitions-schema.json#/definitions/adresse"
     },
     "familiemedlemmer": {
       "$id": "#/properties/familiemedlemmer",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/familiemedlemmer"
+      "$ref": "./definitions-schema.json#/definitions/familiemedlemmer"
     }
   }
 }

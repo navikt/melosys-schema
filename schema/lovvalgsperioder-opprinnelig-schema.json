@@ -13,7 +13,7 @@
     "opprinneligLovvalgsperiode": {
       "title": "The OpprinneligLovvalgsperiode Schema",
       "$id": "#/properties/opprinneligLovvalgsperiode",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+      "$ref": "./definitions-schema.json#/definitions/periode"
     }
   }
 }

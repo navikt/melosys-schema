@@ -26,11 +26,11 @@
     },
     "trygdeavgiftsgrunnlagNorge": {
       "$id": "#/properties/inntektsinformasjonNorge",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
+      "$ref": "./definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
     },
     "trygdeavgiftsgrunnlagUtland": {
       "$id": "#/properties/inntektsinformasjonUtland",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
+      "$ref": "./definitions-schema.json#/definitions/trygdeavgiftsgrunnlag"
     },
     "vurderingTrygdeavgiftNorskInntekt": {
       "$id": "#/properties/vurderingTrygdeavgiftNorskInntekt",

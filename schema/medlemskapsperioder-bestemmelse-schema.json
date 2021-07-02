@@ -39,7 +39,7 @@
             "vilkaar": {
               "$id": "#/items/properties/vilkaar",
               "title": "The Vilkaar Schema",
-              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vilkaar"
+              "$ref": "./definitions-schema.json#/definitions/vilkaar"
             },
             "muligeBegrunnelser": {
               "$id": "#/items/properties/muligeBegrunnelser",

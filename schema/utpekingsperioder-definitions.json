@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/utpekingsperioder-definitions.json",
+  "$id": "./utpekingsperioder-definitions.json",
   "type": "object",
   "title": "The Utpekingsperioder definitions schema",
   "definitions": {
@@ -16,10 +16,10 @@
       ],
       "properties": {
         "fomDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+          "$ref": "./definitions-schema.json#/definitions/dato"
         },
         "tomDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato"
         },
         "lovvalgsbestemmelse": {
           "type": [

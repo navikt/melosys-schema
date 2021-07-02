@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/dokumenter-v2-tilgjengelige-maler.json",
+  "$id": "./dokumenter-v2-tilgjengelige-maler.json",
   "title": "The Root Schema",
   "additionalProperties": false,
   "type": "array",
@@ -183,21 +183,21 @@
                         "type": "string"
                       },
                       "orgnr": {
-                        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                        "$ref": "./definitions-schema.json#/definitions/nullable-orgnr"
                       }
                     }
                   },
                   "adresselinjer": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
+                    "$ref": "./definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
                   },
                   "postnr": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/postnr"
+                    "$ref": "./definitions-schema.json#/definitions/registerAdresse/properties/postnr"
                   },
                   "poststed": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/poststed"
+                    "$ref": "./definitions-schema.json#/definitions/registerAdresse/properties/poststed"
                   },
                   "land": {
-                    "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/registerAdresse/properties/land"
+                    "$ref": "./definitions-schema.json#/definitions/registerAdresse/properties/land"
                   }
                 }
               }

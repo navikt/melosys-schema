@@ -24,10 +24,10 @@
           "type": "boolean"
         },
         "registrertDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         },
         "endretDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
+          "$ref": "./definitions-schema.json#/definitions/dato-tid"
         },
         "registrertAvNavn": {
           "type": "string"
@@ -42,7 +42,7 @@
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/fagsaker-notater-schema.json",
+  "$id": "./fagsaker-notater-schema.json",
   "type": "array",
   "uniqueItems": true,
   "items": {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/definitions-schema.json",
+  "$id": "./definitions-schema.json",
   "title": "The Definitions Schema",
   "definitions": {
     "nullable-aktoerID": {
@@ -61,17 +61,17 @@
         ],
         "properties": {
           "fom": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato",
+            "$ref": "./definitions-schema.json#/definitions/dato",
             "title": "The Fom Schema",
             "$id": "#/definitions/avgiftsperioder/properties/fom"
           },
           "tom": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato",
+            "$ref": "./definitions-schema.json#/definitions/nullable-dato",
             "title": "The Tom Schema",
             "$id": "#/definitions/avgiftsperioder/properties/tom"
           },
           "trygdedekning": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning",
+            "$ref": "./definitions-schema.json#/definitions/trygdeDekning",
             "title": "The Trygdedekning Schema",
             "$id": "#/definitions/avgiftsperioder/properties/trygdedekning"
           },
@@ -215,7 +215,7 @@
         "logiskeVedlegg"
       ],
       "properties": {
-        "dokumentID": {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dokumentID"
+        "dokumentID": {"$ref": "./definitions-schema.json#/definitions/dokumentID"
         },
         "tittel": {
           "type": ["string", "null"],
@@ -248,7 +248,7 @@
       ],
       "properties": {
         "dokumentID": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dokumentID"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dokumentID"
         },
         "tittel": {
           "type": ["string", "null"],
@@ -380,7 +380,7 @@
       "title": "The Nullable Kodeverk Schema",
       "oneOf": [
         {"type": "null"},
-        {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"}
+        {"$ref": "./definitions-schema.json#/definitions/kodeverk"}
       ]
     },
     "landkode": {
@@ -516,7 +516,7 @@
       "default": null,
       "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE", null],
       "oneOf": [
-        { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/enum-representerer"},
+        { "$ref": "./definitions-schema.json#/definitions/enum-representerer"},
         { "type": ["null"] }
       ]
     },
@@ -916,7 +916,7 @@
           "fnr": {
             "title": "The Fnr Schema",
             "$id": "#/definitions/familiemedlemmer/items/properties/fnr",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+            "$ref": "./definitions-schema.json#/definitions/fnr"
           },
           "sammensattNavn": {
             "$id": "#/definitions/familiemedlemmer/items/properties/sammensattNavn",
@@ -930,7 +930,7 @@
           "relasjonstype": {
             "title": "The Relasjonstype Schema",
             "$id": "#/definitions/familiemedlemmer/items/properties/relasjonstype",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+            "$ref": "./definitions-schema.json#/definitions/kodeverk"
           },
           "alder": {
             "title": "The Alder Schema",
@@ -945,17 +945,17 @@
           "sivilstand": {
             "title": "The Sivilstand Schema",
             "$id": "#/definitions/familiemedlemmer/items/properties/sivilstand",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-kodeverk"
+            "$ref": "./definitions-schema.json#/definitions/nullable-kodeverk"
           },
           "sivilstandGyldighetsperiodeFom": {
             "title": "The SivilstandGyldighetsperiodeFom Schema",
             "$id": "#/definitions/familiemedlemmer/items/properties/sivilstandGyldighetsperiodeFom",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+            "$ref": "./definitions-schema.json#/definitions/nullable-dato"
           },
           "fnrAnnenForelder": {
             "title": "The FnrAnnenForelder Schema",
             "$id": "#/definitions/familiemedlemmer/items/properties/fnrAnnenForelder",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
+            "$ref": "./definitions-schema.json#/definitions/nullable-fnr"
           }
         }
       }

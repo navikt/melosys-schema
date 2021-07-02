@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json",
+  "$id": "./behandlingsgrunnlag-definitions.json",
   "title": "The Behandlingsgrunnlag Definitions Schema",
   "definitions": {
     "personOpplysninger": {
@@ -36,7 +36,7 @@
               },
               "landkode": {
                 "title": "The Landkode Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+                "$ref": "./definitions-schema.json#/definitions/landkode"
               }
             }
           }
@@ -56,10 +56,10 @@
             ],
             "properties": {
               "uuid": {
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/uuid"
+                "$ref": "./definitions-schema.json#/definitions/uuid"
               },
               "fnr": {
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
+                "$ref": "./definitions-schema.json#/definitions/nullable-fnr"
               },
               "navn": {
                 "type": ["string", "null"]
@@ -94,7 +94,7 @@
             ],
             "properties": {
               "adresse": {
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
+                "$ref": "./definitions-schema.json#/definitions/nullable-strukturertAdresse"
               },
               "virksomhetNavn": {
                 "type": ["string","null"],
@@ -131,7 +131,7 @@
         ],
         "properties": {
           "uuid": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/uuid"
+            "$ref": "./definitions-schema.json#/definitions/uuid"
           },
           "navn": {
             "type": ["string","null"],
@@ -149,7 +149,7 @@
             "type": "boolean"
           },
           "adresse": {
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
+            "$ref": "./definitions-schema.json#/definitions/nullable-strukturertAdresse"
           }
         }
       }
@@ -183,7 +183,7 @@
         },
         "oppholdsPeriode": {
           "title": "The Oppholdsperiode Schema",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+          "$ref": "./definitions-schema.json#/definitions/periode"
         },
         "ektefelleEllerBarnINorge": {
           "type": ["boolean","null"],
@@ -240,7 +240,7 @@
           ]
         },
         "oppgittAdresse": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
+          "$ref": "./definitions-schema.json#/definitions/nullable-strukturertAdresse"
         }
       }
     },
@@ -276,7 +276,7 @@
             "properties": {
               "orgnr": {
                 "title": "The Orgnr Schema",
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+                "$ref": "./definitions-schema.json#/definitions/nullable-orgnr"
               },
               "fortsetterEtterArbeidIUtlandet": {
                 "type": ["boolean","null"],
@@ -470,7 +470,7 @@
           ]
         },
         "trygdeavgiftTrukketGjennomSkattDato": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+          "$ref": "./definitions-schema.json#/definitions/nullable-dato"
         }
       }
     },
@@ -692,7 +692,7 @@
           "type": ["boolean","null"]
         },
         "samletUtsendingsperiode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+          "$ref": "./definitions-schema.json#/definitions/nullable-periode"
         }
       }
     },
@@ -784,10 +784,10 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+          "$ref": "./definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+          "$ref": "./definitions-schema.json#/definitions/periode"
         },
         "juridiskArbeidsgiverNorge": {
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
@@ -851,16 +851,16 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+          "$ref": "./definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+          "$ref": "./definitions-schema.json#/definitions/periode"
         },
         "juridiskArbeidsgiverNorge": {
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
         },
         "trygdedekning": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+          "$ref": "./definitions-schema.json#/definitions/trygdeDekning"
         }
       }
     },
@@ -909,10 +909,10 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+          "$ref": "./definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+          "$ref": "./definitions-schema.json#/definitions/periode"
         }
       }
     },
@@ -962,17 +962,17 @@
           "$ref": "#/definitions/luftfartBaser"
         },
         "soeknadsland": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+          "$ref": "./definitions-schema.json#/definitions/soeknadsland"
         },
         "periode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+          "$ref": "./definitions-schema.json#/definitions/periode"
         },
         "overgangsregelbestemmelser": {
           "type": "array",
           "items": {
             "oneOf": [
               {
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
+                "$ref": "./definitions-schema.json#/definitions/kodeverk"
               },
               {
                 "type": "string"

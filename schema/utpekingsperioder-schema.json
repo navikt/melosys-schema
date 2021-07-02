@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/utpekingsperioder-schema.json",
+  "$id": "./utpekingsperioder-schema.json",
   "type": "object",
   "title": "The Utpekingsperioder schema",
   "additionalProperties": false,
@@ -9,7 +9,7 @@
   ],
   "properties": {
     "utpekingsperioder": {
-      "$ref": "http://melosys.nav.no/schemas/utpekingsperioder-definitions.json#/definitions/utpekingsperioder"
+      "$ref": "./utpekingsperioder-definitions.json#/definitions/utpekingsperioder"
     }
   }
 }

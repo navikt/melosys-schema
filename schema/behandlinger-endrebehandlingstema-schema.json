@@ -1,16 +1,16 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/behandlinger-endrebehandlingstema-schema.json",
+  "$id": "./behandlinger-endrebehandlingstema-schema.json",
   "type": "array",
   "title": "The Root Schema",
   "uniqueItems": true,
   "items": {
     "allOf": [
-      {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"},
+      {"$ref": "./definitions-schema.json#/definitions/kodeverk"},
       {"properties": {
         "kode": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+          "$ref": "./definitions-schema.json#/definitions/behandlingstema"
         }
       }}
     ]

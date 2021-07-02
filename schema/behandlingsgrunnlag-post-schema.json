@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/behandlingsgrunnlag-post-schema.json",
+  "$id": "./behandlingsgrunnlag-post-schema.json",
   "type": "object",
   "title": "The Root Schema",
   "additionalProperties": false,
@@ -11,16 +11,16 @@
     "data": {
       "oneOf": [
         {
-          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/behandlingsgrunnlagData"
+          "$ref": "./behandlingsgrunnlag-definitions.json#/definitions/behandlingsgrunnlagData"
         },
         {
-          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadData"
+          "$ref": "./behandlingsgrunnlag-definitions.json#/definitions/soeknadData"
         },
         {
-          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/sedGrunnlag"
+          "$ref": "./behandlingsgrunnlag-definitions.json#/definitions/sedGrunnlag"
         },
         {
-          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadFtrlData"
+          "$ref": "./behandlingsgrunnlag-definitions.json#/definitions/soeknadFtrlData"
         }
       ]
     }

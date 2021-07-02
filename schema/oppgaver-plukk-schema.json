@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://melosys.nav.no/schemas/oppgabver-plukk-response-schema.json",
+  "$id": "./oppgabver-plukk-response-schema.json",
   "type": "object",
   "title": "The Plukk-get Schema",
   "additionalProperties": false,
@@ -14,22 +14,22 @@
   ],
   "properties": {
     "oppgaveID": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/oppgaveID"
+      "$ref": "./definitions-schema.json#/definitions/oppgaveID"
     },
     "behandlingstype": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstype"
+      "$ref": "./definitions-schema.json#/definitions/behandlingstype"
     },
     "behandlingstema": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingstema"
+      "$ref": "./definitions-schema.json#/definitions/behandlingstema"
     },
     "saksnummer": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/saksnummer"
+      "$ref": "./definitions-schema.json#/definitions/saksnummer"
     },
     "journalpostID": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/journalpostID"
+      "$ref": "./definitions-schema.json#/definitions/journalpostID"
     },
     "behandlingID": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/behandlingID"
+      "$ref": "./definitions-schema.json#/definitions/behandlingID"
     }
   }
 }
