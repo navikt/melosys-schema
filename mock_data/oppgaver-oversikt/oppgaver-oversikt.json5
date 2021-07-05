@@ -462,8 +462,8 @@
       "behandling": {
         "behandlingID": 19,
         "behandlingstema": {
-          "kode": "TRYGDEAVTALE",
-          "term": "Trygdeavtale"
+          "kode": "TRYGDEAVTALE_UK",
+          "term": "Yrkesaktiv i Storbritannia"
         },
         "behandlingstype": {
           "kode": "SOEKNAD",

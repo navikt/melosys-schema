@@ -808,8 +808,8 @@
   },
   "oppsummering": {
     "behandlingstema": {
-      "kode": "TRYGDEAVTALE",
-      "term": "trygdeavtale"
+      "kode": "TRYGDEAVTALE_UK",
+      "term": "Yrkesaktiv i Storbritannia"
     },
     "behandlingsstatus": {
       "kode": "OPPRETTET",
