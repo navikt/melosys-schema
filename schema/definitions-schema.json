@@ -128,7 +128,8 @@
         "ØVRIGE_SED_MED",
         "ØVRIGE_SED_UFM",
         "TRYGDETID",
-        "ARBEID_I_UTLANDET"
+        "ARBEID_I_UTLANDET",
+        "TRYGDEAVTALE_UK"
       ]
     },
     "behandlingsstatus": {
