@@ -662,6 +662,23 @@
         "FTRL"
       ]
     },
+    "soeknadsland": {
+      "type": "object",
+      "title": "The Soeknadsland Schema",
+      "additionalProperties": false,
+      "required": [
+        "landkoder",
+        "erUkjenteEllerAlleEosLand"
+      ],
+      "properties": {
+        "landkoder": {
+          "$ref": "#/definitions/landkoder"
+        },
+        "erUkjenteEllerAlleEosLand": {
+          "type": ["boolean"]
+        }
+      }
+    },
     "strukturertAdresse": {
       "type": "object",
       "additionalProperties": false,

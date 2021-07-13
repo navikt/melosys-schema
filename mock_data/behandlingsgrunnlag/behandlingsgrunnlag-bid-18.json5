@@ -13,7 +13,8 @@
     ],
     "ytterligereInformasjon": "fritekst",
     "soeknadsland": {
-      "landkoder": []
+      "landkoder": [],
+      "erUkjenteEllerAlleEosLand": false
     },
     "periode": {
       "fom": "2019-01-01",
