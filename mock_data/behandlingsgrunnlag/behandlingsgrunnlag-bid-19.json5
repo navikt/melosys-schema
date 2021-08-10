@@ -12,8 +12,20 @@
         {
           "uuid": "416c97d5-fd1d-4eff-952c-edc42aeb40a0",
           "fnr": "31031779459",
-          "navn": "BRÅKETE GYNGEHEST",
+          "navn": "PERNILLE JOHNSSON",
           "relasjonsrolle": "BARN"
+        },
+        {
+          "uuid": "2519c5fc-5e27-425c-a1d4-eb7a5fc0021d",
+          "fnr": "19117220349",
+          "navn": "HATT GLITRENDE",
+          "relasjonsrolle": "BARN"
+        },
+        {
+          "uuid": "aaa68167-05e8-4f5e-b0fc-75e3de52025a",
+          "fnr": "08029828362",
+          "navn": "UTVIKLER OPTIMISTISK",
+          "relasjonsrolle": "EKTEFELLE_SAMBOER"
         }
       ]
     },
@@ -70,11 +82,11 @@
       "intensjonOmRetur": true,
       "antallMaanederINorge": 8,
       "oppgittAdresse": {
-        "tilleggsnavn": null,
+        "tilleggsnavn": "Storgården",
         "gatenavn": "Gateadressen",
         "husnummerEtasjeLeilighet": "14B",
-        "postboks": null,
         "region": "St.Hanshaugen Distrikt",
+        "postboks": "Postboks PB-012",
         "postnummer": "12345",
         "poststed": "Poststeder",
         "landkode": "DE"
@@ -100,27 +112,7 @@
       "ekstraArbeidsgivere": [],
       "erOffentligVirksomhet": false,
     },
-    "arbeidssituasjonOgOevrig": {
-      "harLoennetArbeidMinstEnMndFoerUtsending": true,
-      "beskrivelseArbeidSisteMnd": "Kjøring av oppvaskmaskin, rengjøring av gulv",
-      "harAndreArbeidsgivereIUtsendingsperioden": false,
-      "beskrivelseAnnetArbeid": null,
-      "erSkattepliktig": true,
-      "mottarYtelserNorge": false,
-      "mottarYtelserUtlandet": false,
-    },
-    "loennOgGodtgjoerelse": {
-      "norskArbgUtbetalerLoenn": false,
-      "erArbeidstakerAnsattHelePerioden": true,
-      "utlArbgUtbetalerLoenn": true,
-      "bruttoLoennPerMnd": 7000.12,
-      "bruttoLoennUtlandPerMnd": 14000,
-      "mottarNaturalytelser": true,
-      "samletVerdiNaturalytelser": null,
-      "erArbeidsgiveravgiftHelePerioden": true,
-      "erTrukketTrygdeavgift": false,
-      "utlArbTilhoererSammeKonsern": null
-    },
+    "loennOgGodtgjoerelse": null,
     "arbeidsgiversBekreftelse": {
       "arbeidsgiverBekrefterUtsendelse": true,
       "arbeidstakerAnsattUnderUtsendelsen": true,
@@ -137,7 +129,7 @@
         "flaggLandkode": "GB",
         "innretningLandkode": null,
         "territorialfarvann": null,
-        "innretningstype": null,
+        "innretningstype": null
       }
     ],
     "luftfartBaser": [
@@ -149,24 +141,14 @@
     ],
     "soeknadsland": {
       "landkoder": [
-        "DK"
+        "UK"
       ]
     },
     "periode": {
-      "fom": "2018-01-02",
-      "tom": "2019-01-02"
+      "fom": "2018-01-00",
+      "tom": "2020-10-01"
     },
-    "utenlandsoppdraget": {
-      "erUtsendelseForOppdragIUtlandet": null,
-      "erAnsattForOppdragIUtlandet": null,
-      "erFortsattAnsattEtterOppdraget": null,
-      "erDrattPaaEgetInitiativ": null,
-      "erErstatningTidligereUtsendte": null,
-      "samletUtsendingsperiode": {
-        "fom": "2019-02-01",
-        "tom": "2020-02-01"
-      }
-    }
+    "trygdedekning": "HELSEDEL",
   },
-  "type": "SØKNAD_A1_YRKESAKTIVE_EØS",
+  "type": "SØKNAD_FOLKETRYGDEN",
 }

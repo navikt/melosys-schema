@@ -1,0 +1,14 @@
+{
+  "saksnummer": "19",
+  "sakstype": {
+    "kode":"TRYGDEAVTALE",
+    "term":"Trygdeavtale"
+  },
+  "saksstatus" : {
+    "kode" : "OPPRETTET",
+    "term" : "Saken er opprettet"
+  },
+  "registrertDato" : "2018-08-27T07:16:03.273Z",
+  "endretDato" : "2018-08-27T07:16:03.273Z",
+  "gsakSaksnummer" : 131063977
+}

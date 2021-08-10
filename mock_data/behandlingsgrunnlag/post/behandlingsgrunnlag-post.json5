@@ -1,34 +1,38 @@
 {
-  "data" : {
-    "bosted" : {
-      "intensjonOmRetur" : true,
-      "antallMaanederINorge" : 8,
-      "oppgittAdresse" : {
-        "poststed" : "Poststeder",
-        "postnummer" : "12345",
-        "landkode" : "DE",
-        "husnummer": "1",
+  "data": {
+    "bosted": {
+      "intensjonOmRetur": true,
+      "antallMaanederINorge": 8,
+      "oppgittAdresse": {
+        "tilleggsnavn": null,
+        "postboks": "P.O.Box 1234 Place",
+        "poststed": "Poststeder",
+        "postnummer": "12345",
+        "landkode": "DE",
+        "husnummerEtasjeLeilighet": "1",
         "region": null,
-        "gatenavn" : "Gateadressen"
+        "gatenavn": "Gateadressen"
       }
     },
-    "foretakUtland" : [
+    "foretakUtland": [
       {
         "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
-        "navn" : "EQUINOR DEUTSCHLAND",
-        "orgnr" : "372384726",
+        "navn": "EQUINOR DEUTSCHLAND",
+        "orgnr": "372384726",
         "selvstendigNaeringsvirksomhet": true,
-        "adresse" : {
-          "landkode" : "DE",
-          "region" : "Brandenburger",
-          "husnummer" : "123",
-          "postnummer" : "3388",
-          "poststed" : "Berlin",
-          "gatenavn" : "Deutschlandstrasse"
+        "adresse": {
+          "tilleggsnavn": null,
+          "landkode": "DE",
+          "region": "Brandenburger",
+          "husnummerEtasjeLeilighet": "123",
+          "postboks": null,
+          "postnummer": "3388",
+          "poststed": "Berlin",
+          "gatenavn": "Deutschlandstrasse"
         }
       }
     ],
-    "juridiskArbeidsgiverNorge" : {
+    "juridiskArbeidsgiverNorge": {
       "antallAdmAnsatte": 35,
       "antallAnsatte": 350,
       "antallUtsendte": 35,
@@ -60,22 +64,22 @@
       "erTrukketTrygdeavgift": null,
       "utlArbTilhoererSammeKonsern": null
     },
-    "arbeidsgiversBekreftelse" : {
-      "arbeidsgiverBetalerArbeidsgiveravgift" : true,
-      "arbeidstakerAnsattUnderUtsendelsen" : true,
-      "arbeidsgiverBekrefterUtsendelse" : true,
-      "erstatterArbeidstakerenUtsendte" : false,
-      "trygdeavgiftTrukketGjennomSkatt" : true,
-      "arbeidstakerTidligereUtsendt24Mnd" : false,
-      "trygdeavgiftTrukketGjennomSkattDato" : "2018-01-01"
+    "arbeidsgiversBekreftelse": {
+      "arbeidsgiverBetalerArbeidsgiveravgift": true,
+      "arbeidstakerAnsattUnderUtsendelsen": true,
+      "arbeidsgiverBekrefterUtsendelse": true,
+      "erstatterArbeidstakerenUtsendte": false,
+      "trygdeavgiftTrukketGjennomSkatt": true,
+      "arbeidstakerTidligereUtsendt24Mnd": false,
+      "trygdeavgiftTrukketGjennomSkattDato": "2018-01-01"
     },
-    "maritimtArbeid" : [
+    "maritimtArbeid": [
       {
-        "innretningLandkode" : null,
+        "innretningLandkode": null,
         "innretningstype": null,
-        "flaggLandkode" : "GB",
-        "enhetNavn" : "Snorre Dunfjæder",
-        "fartsomradeKode" : "INNENRIKS",
+        "flaggLandkode": "GB",
+        "enhetNavn": "Snorre Dunfjæder",
+        "fartsomradeKode": "INNENRIKS",
         "territorialfarvann": null,
       }
     ],
@@ -90,9 +94,11 @@
       "fysiskeArbeidssteder": [
         {
           "adresse": {
+            "tilleggsnavn": null,
             "gatenavn": "Adresseveien 123",
-            "husnummer": "123",
+            "husnummerEtasjeLeilighet": "123",
             "region": "Brandenburger",
+            "postboks": null,
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
@@ -103,50 +109,55 @@
       "erHjemmekontor": false,
       "erFastArbeidssted": null
     },
-    "selvstendigArbeid" : {
-      "selvstendigForetak" : [
+    "selvstendigArbeid": {
+      "selvstendigForetak": [
         {
-          "orgnr" : "910253158",
-          "fortsetterEtterArbeidIUtlandet" : true
+          "orgnr": "910253158",
+          "fortsetterEtterArbeidIUtlandet": true
         }
       ],
-      "erSelvstendig" : true
+      "erSelvstendig": true
     },
-    "oppholdUtland" : {
-      "oppholdslandkoder" : [
+    "oppholdUtland": {
+      "oppholdslandkoder": [
         "DK"
       ],
-      "studentSemester" : "2018/2019",
-      "studentFinansieringKode" : "LAANEKASSEN",
-      "oppholdsPeriode" : {
-        "fom" : "2018-01-01",
-        "tom" : "2018-06-01"
+      "studentSemester": "2018/2019",
+      "studentFinansieringKode": "LAANEKASSEN",
+      "oppholdsPeriode": {
+        "fom": "2018-01-01",
+        "tom": "2018-06-01"
       },
-      "ektefelleEllerBarnINorge" : true
+      "ektefelleEllerBarnINorge": true
     },
-    "personOpplysninger" : {
-      "utenlandskIdent" : [
+    "personOpplysninger": {
+      "utenlandskIdent": [
         {
-          "ident" : "123456789",
-          "landkode" : "DK"
+          "ident": "123456789",
+          "landkode": "DK"
         }
       ],
       "medfolgendeFamilie": []
     },
     "soeknadsland": {
-      "landkoder": ["DK"]
+      "landkoder": [
+        "DK"
+      ]
     },
     "periode": {
       "fom": "2018-01-02",
       "tom": "2019-05-30"
     },
     "utenlandsoppdraget": {
-        "erUtsendelseForOppdragIUtlandet": null,
-        "erAnsattForOppdragIUtlandet": null,
-        "erFortsattAnsattEtterOppdraget": null,
-        "erDrattPaaEgetInitiativ": null,
-        "erErstatningTidligereUtsendte": null,
-        "samletUtsendingsperiode": { "fom": "2019-02-01", "tom": "2020-02-01" }
+      "erUtsendelseForOppdragIUtlandet": null,
+      "erAnsattForOppdragIUtlandet": null,
+      "erFortsattAnsattEtterOppdraget": null,
+      "erDrattPaaEgetInitiativ": null,
+      "erErstatningTidligereUtsendte": null,
+      "samletUtsendingsperiode": {
+        "fom": "2019-02-01",
+        "tom": "2020-02-01"
+      }
     }
   }
 }

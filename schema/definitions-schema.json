@@ -128,7 +128,8 @@
         "ØVRIGE_SED_MED",
         "ØVRIGE_SED_UFM",
         "TRYGDETID",
-        "ARBEID_I_UTLANDET"
+        "ARBEID_I_UTLANDET",
+        "TRYGDEAVTALE_UK"
       ]
     },
     "behandlingsstatus": {
@@ -738,14 +739,23 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "tilleggsnavn",
         "gatenavn",
-        "husnummer",
-        "region",
+        "husnummerEtasjeLeilighet",
+        "postboks",
         "postnummer",
         "poststed",
+        "region",
         "landkode"
       ],
       "properties": {
+        "tilleggsnavn": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "Storgården"
+          ]
+        },
         "gatenavn": {
           "type": ["string", "null"],
           "minLength": 1,
@@ -753,11 +763,18 @@
             "Waldemar Thranes gate"
           ]
         },
-        "husnummer": {
+        "husnummerEtasjeLeilighet": {
           "type": ["string", "null"],
           "minLength": 1,
           "examples": [
             "98"
+          ]
+        },
+        "postboks": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "P.O.Box 1234 Place"
           ]
         },
         "region": {
