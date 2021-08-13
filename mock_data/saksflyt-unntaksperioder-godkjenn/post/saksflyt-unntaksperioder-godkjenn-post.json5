@@ -1,4 +1,8 @@
 {
   varsleUtland: true,
-  fritekst: "Fritekst"
+  fritekst: "Fritekst",
+  endretPeriode: {
+    fom: "2014-03-12",
+    tom: "2016-03-12"
+  }
 }
