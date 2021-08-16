@@ -517,7 +517,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     }
