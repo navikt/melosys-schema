@@ -159,21 +159,7 @@
           "pattern": "^(.*)$"
         },
         "land": {
-          "$id": "#/definitions/saksbehandlingitem/properties/land",
-          "type": "array",
-          "title": "The Land Schema",
-          "uniqueItems": true,
-          "additionalItems": false,
-          "items": {
-            "$id": "",
-            "type": "string",
-            "title": "The Landkode item Schema",
-            "default": "",
-            "examples": [
-              "NO"
-            ],
-            "pattern": "^(.*)$"
-          }
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
         },
         "versjon": {
           "$id": "#/definitions/saksbehandlingitem/properties/versjon",

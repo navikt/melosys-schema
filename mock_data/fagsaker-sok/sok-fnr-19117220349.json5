@@ -31,9 +31,10 @@
           "fom": "2018-08-01",
           "tom": "2018-12-31"
         },
-        "land": [
-          "GB"
-        ]
+        "land": {
+          "landkoder": ["GB"],
+          "erUkjenteEllerAlleEosLand": false
+        },
       },
       {
         "behandlingID": 10,
@@ -49,9 +50,10 @@
           "kode": "SOEKNAD",
           "term": "Søknad"
         },
-        "land": [
-          "PL"
-        ],
+        "land": {
+          "landkoder": ["PL"],
+          "erUkjenteEllerAlleEosLand": false
+        },
         "opprettetDato": "2019-04-23T07:48:04.676Z",
         "periode": {
           "fom": "2019-02-01",
@@ -72,7 +74,10 @@
           "kode": "SED",
           "term": "SED"
         },
-        "land": [],
+        "land": {
+          "landkoder": [],
+          "erUkjenteEllerAlleEosLand": false
+        },
         "opprettetDato": "2019-05-08T10:26:45.498Z",
         "periode": {
           "fom": "2018-02-01",
