@@ -34,10 +34,25 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
         },
         "land": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string"
+          "type": "object",
+          "title": "The Land Schema",
+          "additionalProperties": false,
+          "required": [
+            "landkoder",
+            "erUkjenteEllerAlleEosLand"
+          ],
+          "properties": {
+            "landkoder": {
+              "type": "array",
+              "title": "The Landkoder Schema",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "erUkjenteEllerAlleEosLand": {
+              "type": "boolean"
+            }
           }
         }
       }

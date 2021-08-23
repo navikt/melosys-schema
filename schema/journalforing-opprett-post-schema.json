@@ -139,19 +139,40 @@
         },
         "land": {
           "$id": "#/properties/fagsak/properties/land",
-          "type": "array",
+          "type": "object",
           "title": "The Land Schema",
-          "uniqueItems": true,
-          "items": {
-            "$id": "#/properties/fagsak/properties/land/items",
-            "type": "string",
-            "title": "The Items Schema",
-            "default": "",
-            "examples": [
-              "NO",
-              "ES"
-            ],
-            "pattern": "^(.*)$"
+          "additionalProperties": false,
+          "required": [
+            "landkoder",
+            "erUkjenteEllerAlleEosLand"
+          ],
+          "properties": {
+            "landkoder": {
+              "$id": "#/properties/fagsak/properties/land/properties/landkoder",
+              "type": "array",
+              "title": "The Landkoder Schema",
+              "uniqueItems": true,
+              "items": {
+                "$id": "#/properties/fagsak/properties/land/properties/landkoder/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "NO",
+                  "ES"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "erUkjenteEllerAlleEosLand": {
+              "$id": "#/properties/fagsak/properties/land/properties/erUkjenteEllerAlleEosLand",
+              "type": "boolean",
+              "title": "The ErUkjenteEllerAlleEosLand Schema",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
           }
         }
       }
