@@ -142,7 +142,8 @@
     "soeknadsland": {
       "landkoder": [
         "DK"
-      ]
+      ],
+      "erUkjenteEllerAlleEosLand": false
     },
     "periode": {
       "fom": "2018-01-00",

@@ -66,7 +66,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -104,7 +107,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -142,7 +148,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -180,7 +189,10 @@
         "tom": "2018-01-01"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -218,7 +230,10 @@
         "tom": "2018-01-01"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -256,7 +271,10 @@
         "tom": "2018-01-01"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -294,7 +312,10 @@
         "tom": null
       },
       "prioritet": "HOY",
-      "land": [],
+      "land": {
+        "landkoder": [],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -332,7 +353,10 @@
         "tom": "2018-01-01"
       },
       "prioritet": "HOY",
-      "land": [],
+      "land": {
+        "landkoder": [],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -370,7 +394,10 @@
         "tom": "2018-01-01"
       },
       "prioritet": "HOY",
-      "land": [],
+      "land": {
+        "landkoder": [],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -408,7 +435,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -446,7 +476,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     },
@@ -484,7 +517,10 @@
         "tom": "2019-08-31"
       },
       "prioritet": "HOY",
-      "land": ["NO"],
+      "land": {
+        "landkoder": ["NO"],
+        "erUkjenteEllerAlleEosLand": false
+      },
       "versjon": 1,
       "ansvarligID": "Z991001"
     }
