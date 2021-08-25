@@ -1,5 +1,8 @@
 {
   "behandlingsresultatTypeKode": "FASTSATT_LOVVALGSLAND",
+  "fritekstInnledning": "Fritekst innledning",
   "fritekstBegrunnelse": "Fritekst begrunnelse",
+  "fritekstEktefelle": "Fritekst ektefelle",
+  "fritekstBarn": "Fritekst barn",
   "vedtakstype": "FØRSTEGANGSVEDTAK"
 }
