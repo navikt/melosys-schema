@@ -18,6 +18,7 @@
     "term": "Kvinne"
   },
   "foedselsdato": "1963-05-05",
+  "doedsdato": null,
   "bostedsadresse" : {
     "gateadresse": {
       "gatenavn": "Waldemar Thranses gate",

@@ -900,6 +900,7 @@
             "kjoenn",
             "fnr",
             "foedselsdato",
+            "doedsdato",
             "sivilstand",
             "statsborgerskap",
             "statsborgerskapDato",
@@ -945,6 +946,11 @@
               "title": "The Foedselsdato Schema",
               "$id": "#/properties/saksopplysninger/properties/person/properties/foedselsdato",
               "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+            },
+            "doedsdato": {
+              "title": "The Doedsdato Schema",
+              "$id": "#/properties/saksopplysninger/properties/person/properties/doedsdato",
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
             },
             "sivilstand": {
               "$id": "#/properties/tilleggsData/properties/personer/items/properties/sivilstand",

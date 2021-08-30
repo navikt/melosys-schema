@@ -18,6 +18,7 @@
     "term": "Mann"
   },
   "foedselsdato": "1966-10-28",
+  "doedsdato": null,
   "bostedsadresse" : {
     "gateadresse": {
       "gatenavn": "Waldemar Thranses gate",

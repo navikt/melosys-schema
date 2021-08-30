@@ -18,6 +18,7 @@
     "term": "Kvinne"
   },
   "foedselsdato": "2017-03-31",
+  "doedsdato": null,
   "bostedsadresse" : {
     "gateadresse": {
       "gatenavn": "Waldemar Thranses gate",

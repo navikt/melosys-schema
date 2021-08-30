@@ -12,6 +12,7 @@
     "personstatus",
     "kjoenn",
     "foedselsdato",
+    "doedsdato",
     "familiemedlemmer"
   ],
   "properties": {
@@ -54,6 +55,11 @@
       "title": "The Foedselsdato Schema",
       "$id": "#/properties/foedselsdato",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato"
+    },
+    "doedsdato": {
+      "title": "The Doedsdato Schema",
+      "$id": "#/properties/doedsdato",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
     },
     "bostedsadresse": {
       "$id": "#/properties/postadresse",

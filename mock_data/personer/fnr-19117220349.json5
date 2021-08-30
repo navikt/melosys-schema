@@ -18,6 +18,7 @@
     "term": "Mann"
   },
   "foedselsdato": "1972-11-19",
+  "doedsdato": null,
   "postadresse": {
     "adresselinjer": [
       "Sannergata 2",
