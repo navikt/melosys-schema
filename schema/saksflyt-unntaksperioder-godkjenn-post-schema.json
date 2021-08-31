@@ -18,7 +18,14 @@
       "type": ["string", "null"]
     },
     "endretPeriode": {
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
+      "oneOf": [
+        {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "lovvalgsbestemmelse": {
       "type": "string"
