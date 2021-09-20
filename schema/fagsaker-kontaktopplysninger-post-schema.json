@@ -8,7 +8,7 @@
   "required": [
     "kontaktnavn",
     "kontaktorgnr",
-    "kontakttlf"
+    "kontakttelefon"
   ],
   "properties": {
     "kontaktnavn": {
@@ -26,10 +26,10 @@
       "$id": "#/properties/kontaktorgnr",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
-    "kontakttlf": {
-      "$id": "#/properties/kontakttlf",
+    "kontakttelefon": {
+      "$id": "#/properties/kontakttelefon",
       "type": ["string", "null"],
-      "title": "The Kontakttlf Schema",
+      "title": "The kontakttelefon Schema",
       "default": "",
       "examples": [
         "910099035"
