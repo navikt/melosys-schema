@@ -15,7 +15,11 @@
           "navn": "BRÅKETE GYNGEHEST",
           "relasjonsrolle": "BARN"
         }
-      ]
+      ],
+      "foedestedOgLand": {
+        "foedested": "Drammen",
+        "foedeland": "NO"
+      },
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [
