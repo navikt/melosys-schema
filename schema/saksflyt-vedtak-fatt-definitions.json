@@ -3,6 +3,26 @@
   "$id": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json",
   "title": "Saksflyt fatt vedtak definitions",
   "definitions": {
+    "kopiMottaker": {
+      "type": "object",
+      "properties": {
+        "rolle": {
+          "type": "string",
+          "enum": [
+            "ARBEIDSGIVER",
+            "BRUKER",
+            "REPRESENTANT",
+            "MYNDIGHET"
+          ]
+        },
+        "orgnr": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+        },
+        "aktørId": {
+          "type": "string"
+        }
+      }
+    },
     "eosData": {
       "type": "object",
       "additionalProperties": false,
@@ -50,7 +70,8 @@
         "fritekstInnledning",
         "fritekstBegrunnelse",
         "fritekstEktefelle",
-        "fritekstBarn"
+        "fritekstBarn",
+        "kopiMottakere"
       ],
       "properties": {
         "behandlingsresultatTypeKode": {
@@ -70,6 +91,10 @@
         },
         "fritekstBarn": {
           "type": ["string", "null"]
+        },
+        "kopiMottakere": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/definitions/kopiMottaker" }
         }
       }
     }
