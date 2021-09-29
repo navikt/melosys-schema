@@ -3,7 +3,8 @@
   "data": {
     "personOpplysninger": {
       "utenlandskIdent": [],
-      "medfolgendeFamilie": []
+      "medfolgendeFamilie": [],
+      "foedestedOgLand": null,
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [

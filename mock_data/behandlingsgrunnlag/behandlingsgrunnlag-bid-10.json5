@@ -8,7 +8,11 @@
           "landkode": "IT"
         }
       ],
-      "medfolgendeFamilie": []
+      "medfolgendeFamilie": [],
+      "foedestedOgLand": {
+        "foedested": "Drammen",
+        "foedeland": "NO"
+      }
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [

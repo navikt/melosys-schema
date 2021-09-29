@@ -9,7 +9,8 @@
       "additionalProperties": false,
       "required": [
         "utenlandskIdent",
-        "medfolgendeFamilie"
+        "medfolgendeFamilie",
+        "foedestedOgLand"
       ],
       "properties": {
         "utenlandskIdent": {
@@ -26,7 +27,10 @@
             ],
             "properties": {
               "ident": {
-                "type": ["string","null"],
+                "type": [
+                  "string",
+                  "null"
+                ],
                 "title": "The Id Schema",
                 "default": "",
                 "examples": [
@@ -62,14 +66,44 @@
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
               },
               "navn": {
-                "type": ["string", "null"]
+                "type": [
+                  "string",
+                  "null"
+                ]
               },
               "relasjonsrolle": {
                 "type": "string",
-                "enum": ["BARN", "EKTEFELLE_SAMBOER"]
+                "enum": [
+                  "BARN",
+                  "EKTEFELLE_SAMBOER"
+                ]
               }
             }
           }
+        },
+        "foedestedOgLand": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "title": "The FoedestedOgLand Schema",
+              "additionalProperties": false,
+              "required": [
+                "foedested",
+                "foedeland"
+              ],
+              "properties": {
+                "foedested": {
+                  "type": "string"
+                },
+                "foedeland": {
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+                }
+              }
+            }
+          ]
         }
       }
     },
@@ -97,7 +131,10 @@
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-strukturertAdresse"
               },
               "virksomhetNavn": {
-                "type": ["string","null"],
+                "type": [
+                  "string",
+                  "null"
+                ],
                 "examples": [
                   "EQUINOR DEUTSCHLAND"
                 ],
@@ -107,10 +144,16 @@
           }
         },
         "erHjemmekontor": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "erFastArbeidssted": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         }
       }
     },
@@ -134,7 +177,10 @@
             "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/uuid"
           },
           "navn": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The Navn Schema",
             "default": "",
             "examples": [
@@ -143,7 +189,10 @@
             "pattern": "^(.*)$"
           },
           "orgnr": {
-            "type": ["string", "null"]
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "selvstendigNaeringsvirksomhet": {
             "type": "boolean"
@@ -171,7 +220,10 @@
           "title": "The Oppholdslandkoder Schema",
           "uniqueItems": true,
           "items": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The Items Schema",
             "default": "",
             "examples": [
@@ -186,7 +238,10 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
         },
         "ektefelleEllerBarnINorge": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Ektefelleellerbarninorge Schema",
           "default": false,
           "examples": [
@@ -194,7 +249,10 @@
           ]
         },
         "studentFinansieringKode": {
-          "type": ["string","null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "The Studentfinansieringkode Schema",
           "default": "",
           "examples": [
@@ -203,7 +261,10 @@
           "pattern": "^(.*)$"
         },
         "studentSemester": {
-          "type": ["string","null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "The Studentsemester Schema",
           "default": "",
           "examples": [
@@ -224,7 +285,10 @@
       ],
       "properties": {
         "intensjonOmRetur": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Intensjonomretur Schema",
           "default": false,
           "examples": [
@@ -232,7 +296,10 @@
           ]
         },
         "antallMaanederINorge": {
-          "type": ["integer","null"],
+          "type": [
+            "integer",
+            "null"
+          ],
           "title": "The Antallmaanederinorge Schema",
           "default": 0,
           "examples": [
@@ -254,7 +321,10 @@
       ],
       "properties": {
         "erSelvstendig": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Erselvstendig Schema",
           "default": false,
           "examples": [
@@ -279,7 +349,10 @@
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
               },
               "fortsetterEtterArbeidIUtlandet": {
-                "type": ["boolean","null"],
+                "type": [
+                  "boolean",
+                  "null"
+                ],
                 "title": "The Fortsetteretterarbeidiutlandet Schema",
                 "default": false,
                 "examples": [
@@ -309,7 +382,10 @@
         ],
         "properties": {
           "enhetNavn": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The EnhetNavn Schema",
             "default": "",
             "examples": [
@@ -318,7 +394,10 @@
             "pattern": "^(.*)$"
           },
           "fartsomradeKode": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The Fartsomradekode Schema",
             "default": "",
             "examples": [
@@ -327,7 +406,10 @@
             "pattern": "^(.*)$"
           },
           "flaggLandkode": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The Flagglandkode Schema",
             "default": "",
             "examples": [
@@ -336,7 +418,10 @@
             "pattern": "^(.*)$"
           },
           "innretningLandkode": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "default": "",
             "examples": [
               "GB"
@@ -344,7 +429,10 @@
             "pattern": "^(.*)$"
           },
           "territorialfarvann": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The Territorialfarvann Schema",
             "default": "",
             "examples": [
@@ -353,7 +441,10 @@
             "pattern": "^(.*)$"
           },
           "innretningstype": {
-            "type": ["string","null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The Innretningstype Schema",
             "examples": [
               "PLATTFORM",
@@ -379,7 +470,10 @@
         ],
         "properties": {
           "hjemmebaseNavn": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The HjemmebaseNavn Schema",
             "default": "",
             "examples": [
@@ -388,7 +482,10 @@
             "pattern": "^(.+)$"
           },
           "hjemmebaseLand": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The HjemmebaseLand Schema",
             "default": "",
             "examples": [
@@ -397,9 +494,17 @@
             "pattern": "^(.+)$"
           },
           "typeFlyvninger": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "title": "The TypeFlyvninger Schema",
-            "enum": ["NASJONAL", "INTERNASJONAL", "BEGGE", null],
+            "enum": [
+              "NASJONAL",
+              "INTERNASJONAL",
+              "BEGGE",
+              null
+            ],
             "examples": [
               "NASJONAL"
             ],
@@ -422,7 +527,10 @@
       ],
       "properties": {
         "arbeidsgiverBekrefterUtsendelse": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Arbeidsgiverbekrefterutsendelse Schema",
           "default": false,
           "examples": [
@@ -430,7 +538,10 @@
           ]
         },
         "arbeidstakerAnsattUnderUtsendelsen": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Arbeidstakeransattunderutsendelsen Schema",
           "default": false,
           "examples": [
@@ -438,7 +549,10 @@
           ]
         },
         "erstatterArbeidstakerenUtsendte": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Erstatterarbeidstakerenutsendte Schema",
           "default": false,
           "examples": [
@@ -446,7 +560,10 @@
           ]
         },
         "arbeidstakerTidligereUtsendt24Mnd": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Arbeidstakertidligereutsendt24mnd Schema",
           "default": false,
           "examples": [
@@ -454,7 +571,10 @@
           ]
         },
         "arbeidsgiverBetalerArbeidsgiveravgift": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Arbeidsgiverbetalerarbeidsgiveravgift Schema",
           "default": false,
           "examples": [
@@ -462,7 +582,10 @@
           ]
         },
         "trygdeavgiftTrukketGjennomSkatt": {
-          "type": ["boolean","null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The Trygdeavgifttrukketgjennomskatt Schema",
           "default": false,
           "examples": [
@@ -475,7 +598,10 @@
       }
     },
     "loennOgGodtgjoerelse": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "title": "The loennOgGodtgjoerelse schema",
       "additionalProperties": false,
       "required": [
@@ -492,7 +618,10 @@
       ],
       "properties": {
         "norskArbgUtbetalerLoenn": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The norskArbgUtbetalerLoenn schema",
           "default": false,
           "examples": [
@@ -500,7 +629,10 @@
           ]
         },
         "erArbeidstakerAnsattHelePerioden": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The erArbeidstakerAnsattHelePerioden schema",
           "default": false,
           "examples": [
@@ -508,7 +640,10 @@
           ]
         },
         "utlArbgUtbetalerLoenn": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The utlArbgUtbetalerLoenn schema",
           "default": false,
           "examples": [
@@ -516,7 +651,10 @@
           ]
         },
         "bruttoLoennPerMnd": {
-          "type": ["number", "null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The bruttoLoennPerMnd schema",
           "default": 0.0,
           "examples": [
@@ -524,7 +662,10 @@
           ]
         },
         "bruttoLoennUtlandPerMnd": {
-          "type": ["number", "null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The bruttoLoennUtlandPerMnd schema",
           "default": 0.0,
           "examples": [
@@ -532,7 +673,10 @@
           ]
         },
         "mottarNaturalytelser": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The mottarNaturalytelser schema",
           "default": false,
           "examples": [
@@ -540,7 +684,10 @@
           ]
         },
         "samletVerdiNaturalytelser": {
-          "type": ["number", "null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The samletVerdiNaturalytelser schema",
           "default": 0.0,
           "examples": [
@@ -548,7 +695,10 @@
           ]
         },
         "erArbeidsgiveravgiftHelePerioden": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The erArbeidsgiveravgiftHelePerioden schema",
           "default": false,
           "examples": [
@@ -556,7 +706,10 @@
           ]
         },
         "erTrukketTrygdeavgift": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The erTrukketTrygdeavgift schema",
           "default": false,
           "examples": [
@@ -564,7 +717,10 @@
           ]
         },
         "utlArbTilhoererSammeKonsern": {
-          "type": ["boolean", "null"],
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "The utlArbTilhoererSammeKonsern schema",
           "default": false,
           "examples": [
@@ -590,7 +746,10 @@
       ],
       "properties": {
         "antallAdmAnsatte": {
-          "type": ["integer","null"],
+          "type": [
+            "integer",
+            "null"
+          ],
           "title": "The Antalladmansatte Schema",
           "default": 0,
           "examples": [
@@ -598,7 +757,10 @@
           ]
         },
         "antallAnsatte": {
-          "type": ["integer","null"],
+          "type": [
+            "integer",
+            "null"
+          ],
           "title": "The antallAnsatte Schema",
           "default": 0,
           "examples": [
@@ -606,7 +768,10 @@
           ]
         },
         "antallUtsendte": {
-          "type": ["integer","null"],
+          "type": [
+            "integer",
+            "null"
+          ],
           "title": "The AntallUtsendte Schema",
           "default": 0,
           "examples": [
@@ -614,7 +779,10 @@
           ]
         },
         "andelOmsetningINorge": {
-          "type": ["number","null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The Andelomsetninginorge Schema",
           "default": 0.0,
           "examples": [
@@ -622,7 +790,10 @@
           ]
         },
         "andelOppdragINorge": {
-          "type": ["number","null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The andelOppdragINorge Schema",
           "default": 0.0,
           "examples": [
@@ -630,7 +801,10 @@
           ]
         },
         "andelKontrakterINorge": {
-          "type": ["number","null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The Andelkontrakterinorge Schema",
           "default": 0.0,
           "examples": [
@@ -638,7 +812,10 @@
           ]
         },
         "andelRekruttertINorge": {
-          "type": ["number","null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "title": "The AndelRekruttertINorge Schema",
           "default": 0.0,
           "examples": [
@@ -660,12 +837,18 @@
           }
         },
         "erOffentligVirksomhet": {
-          "type": ["boolean", "null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         }
       }
     },
     "utenlandsoppdraget": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "additionalProperties": false,
       "required": [
         "erUtsendelseForOppdragIUtlandet",
@@ -677,19 +860,34 @@
       ],
       "properties": {
         "erUtsendelseForOppdragIUtlandet": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "erAnsattForOppdragIUtlandet": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "erFortsattAnsattEtterOppdraget": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "erDrattPaaEgetInitiativ": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "erErstatningTidligereUtsendte": {
-          "type": ["boolean","null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "samletUtsendingsperiode": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-periode"
@@ -710,25 +908,46 @@
       ],
       "properties": {
         "harLoennetArbeidMinstEnMndFoerUtsending": {
-          "type": ["boolean", "null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "beskrivelseArbeidSisteMnd": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "harAndreArbeidsgivereIUtsendingsperioden": {
-          "type": ["boolean", "null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "beskrivelseAnnetArbeid": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "erSkattepliktig": {
-          "type": ["boolean", "null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "mottarYtelserNorge": {
-          "type": ["boolean", "null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "mottarYtelserUtlandet": {
-          "type": ["boolean", "null"]
+          "type": [
+            "boolean",
+            "null"
+          ]
         }
       }
     },
@@ -981,7 +1200,10 @@
           }
         },
         "ytterligereInformasjon": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     },

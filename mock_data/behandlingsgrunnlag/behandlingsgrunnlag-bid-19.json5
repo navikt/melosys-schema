@@ -27,7 +27,11 @@
           "navn": "UTVIKLER OPTIMISTISK",
           "relasjonsrolle": "EKTEFELLE_SAMBOER"
         }
-      ]
+      ],
+      "foedestedOgLand": {
+        "foedested": "Drammen",
+        "foedeland": "NO"
+      }
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [

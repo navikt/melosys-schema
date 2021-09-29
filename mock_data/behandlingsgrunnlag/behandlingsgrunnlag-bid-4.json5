@@ -15,7 +15,8 @@
           "navn": "BRÅKETE GYNGEHEST",
           "relasjonsrolle": "BARN"
         }
-      ]
+      ],
+      "foedestedOgLand": null,
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [
