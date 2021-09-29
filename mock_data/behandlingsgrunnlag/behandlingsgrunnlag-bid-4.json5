@@ -16,10 +16,7 @@
           "relasjonsrolle": "BARN"
         }
       ],
-      "foedestedOgLand": {
-        "foedested": "Drammen",
-        "foedeland": "NO"
-      },
+      "foedestedOgLand": null,
     },
     "arbeidPaaLand": {
       "fysiskeArbeidssteder": [

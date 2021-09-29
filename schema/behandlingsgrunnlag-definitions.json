@@ -82,31 +82,28 @@
           }
         },
         "foedestedOgLand": {
-          "type":"object",
-          "title": "The FoedestedOgLand Schema",
-          "additionalProperties": false,
-          "required": [
-            "foedested",
-            "foedeland"
-          ],
-          "properties": {
-            "foedested": {
-              "type": [
-                "string",
-                "null"
-              ]
+          "oneOf": [
+            {
+              "type": "null"
             },
-            "foedeland": {
-              "oneOf": [
-                {
-                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
+            {
+              "type": "object",
+              "title": "The FoedestedOgLand Schema",
+              "additionalProperties": false,
+              "required": [
+                "foedested",
+                "foedeland"
+              ],
+              "properties": {
+                "foedested": {
+                  "type": "string"
                 },
-                {
-                  "type": "null"
+                "foedeland": {
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/landkode"
                 }
-              ]
+              }
             }
-          }
+          ]
         }
       }
     },
