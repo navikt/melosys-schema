@@ -4,5 +4,6 @@
   "fritekstBegrunnelse": "Fritekst begrunnelse",
   "fritekstEktefelle": "Fritekst ektefelle",
   "fritekstBarn": "Fritekst barn",
-  "vedtakstype": "FØRSTEGANGSVEDTAK"
+  "vedtakstype": "FØRSTEGANGSVEDTAK",
+  "kopiMottakere": null
 }

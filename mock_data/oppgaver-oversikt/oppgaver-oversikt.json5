@@ -38,8 +38,8 @@
       "fnr": "28106600300",
       "saksnummer": "4",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Trygdeavtale"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 4,
@@ -79,8 +79,8 @@
       "fnr": "28106600300",
       "saksnummer": "4",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Trygdeavtale"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 15,
@@ -120,8 +120,8 @@
       "fnr": "28106600300",
       "saksnummer": "4",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Trygdeavtale"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 16,
@@ -161,8 +161,8 @@
       "fnr": "30098000492",
       "saksnummer": "3",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Trygdeavtale"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 3,
@@ -202,8 +202,8 @@
       "fnr": "28106600300",
       "saksnummer": "5",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Folketrygd"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 5,
@@ -243,8 +243,8 @@
       "fnr": "17117802280",
       "saksnummer": "4",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Folketrygd"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 4,
@@ -284,8 +284,8 @@
       "fnr": "28106600300",
       "saksnummer": "11",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Trygdeavtale"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 11,
@@ -407,8 +407,8 @@
       "fnr": "28106600300",
       "saksnummer": "17",
       "sakstype": {
-        "kode": "TRYGDEAVTALE",
-        "term": "Trygdeavtale"
+        "kode": "EU_EOS",
+        "term": "EU/EØS"
       },
       "behandling": {
         "behandlingID": 17,
