@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [
     "varsleUtland",
-    "fritekst"
+    "fritekst",
+    "endretPeriode",
+    "lovvalgsbestemmelse"
   ],
   "properties": {
     "varsleUtland": {
@@ -14,6 +16,19 @@
     },
     "fritekst": {
       "type": ["string", "null"]
+    },
+    "endretPeriode": {
+      "oneOf": [
+        {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "lovvalgsbestemmelse": {
+      "type": "string"
     }
   }
 }

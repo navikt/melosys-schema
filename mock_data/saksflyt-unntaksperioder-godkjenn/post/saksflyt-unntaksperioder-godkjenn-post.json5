@@ -1,4 +1,9 @@
 {
   varsleUtland: true,
-  fritekst: "Fritekst"
+  fritekst: "Fritekst",
+  endretPeriode: {
+    fom: "2014-03-12",
+    tom: "2016-03-12"
+  },
+  lovvalgsbestemmelse: "FO_883_2004_ART13_1A"
 }
