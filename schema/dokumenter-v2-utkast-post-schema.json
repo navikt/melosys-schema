@@ -146,7 +146,7 @@
       "pattern": "^(.*)$"
     },
     "kontaktopplysninger": {
-      "type": "boolean",
+      "type": ["boolean", "null"],
       "default": true
     }
   }
