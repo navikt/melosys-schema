@@ -55,18 +55,6 @@
       "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"],
       "pattern": "^(.*)$"
     },
-    "fritekst": {
-      "$id": "#/properties/fritekst",
-      "deprecated": true,
-      "type": [
-        "string",
-        "null"
-      ],
-      "title": "Deprecated",
-      "default": "",
-      "examples": ["Fritekst"],
-      "pattern": "^(.*)$"
-    },
     "begrunnelseKode": {
       "$id": "#/properties/begrunnelseKode",
       "deprecated": true,
@@ -136,6 +124,29 @@
     "kopiMottakere": {
       "type": ["array", "null"],
       "items": { "$ref": "#/definitions/kopiMottaker" }
+    },
+    "fritekstTittel": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "",
+      "examples": ["Friteksttittel"],
+      "pattern": "^(.*)$"
+    },
+    "fritekst": {
+      "$id": "#/properties/fritekst",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "",
+      "examples": ["Fritekst"],
+      "pattern": "^(.*)$"
+    },
+    "kontaktopplysninger": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
