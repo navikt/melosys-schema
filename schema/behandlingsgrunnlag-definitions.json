@@ -729,6 +729,22 @@
         }
       }
     },
+    "representantIUtlandet": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["representantNavn", "adresselinjer", "representantLand"],
+      "properties": {
+        "representantNavn": {
+          "type": "string"
+        },
+        "adresselinjer": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
+        },
+        "representantLand": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-landkode"
+        }
+      }
+    },
     "juridiskArbeidsgiverNorge": {
       "type": "object",
       "title": "The Juridiskarbeidsgivernorge Schema",
@@ -1131,7 +1147,7 @@
           "$ref": "#/definitions/juridiskArbeidsgiverNorge"
         },
         "representantIUtlandet": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/representantIUtlandet"
+          "$ref": "#/definitions/representantIUtlandet"
         }
       }
     },
