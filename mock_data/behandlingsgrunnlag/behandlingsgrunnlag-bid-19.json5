@@ -153,7 +153,11 @@
       "fom": "2018-01-00",
       "tom": "2020-10-01"
     },
-    "trygdedekning": "HELSEDEL",
+    "representantIUtlandet": {
+      "representantNavn": "Höegh Autoline Belgium",
+      "adresselinjer": ["Rue du Pont Simon 174", "Appelterre-eichem", "9400 East Flanders"],
+      "representantLand": "GB"
+    },
   },
   "type": "SØKNAD_FOLKETRYGDEN",
 }

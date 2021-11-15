@@ -1083,6 +1083,70 @@
         }
       }
     },
+    "soeknadTrygdeavtaleData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "juridiskArbeidsgiverNorge",
+        "loennOgGodtgjoerelse",
+        "arbeidsgiversBekreftelse",
+        "personOpplysninger",
+        "arbeidPaaLand",
+        "foretakUtland",
+        "oppholdUtland",
+        "bosted",
+        "selvstendigArbeid",
+        "maritimtArbeid",
+        "luftfartBaser",
+        "soeknadsland",
+        "periode",
+        "representantIUtlandet"
+      ],
+      "properties": {
+        "arbeidsgiversBekreftelse": {
+          "$ref": "#/definitions/arbeidsgiversBekreftelse"
+        },
+        "loennOgGodtgjoerelse": {
+          "$ref": "#/definitions/loennOgGodtgjoerelse"
+        },
+        "personOpplysninger": {
+          "$ref": "#/definitions/personOpplysninger"
+        },
+        "arbeidPaaLand": {
+          "$ref": "#/definitions/arbeidPaaLand"
+        },
+        "foretakUtland": {
+          "$ref": "#/definitions/foretakUtland"
+        },
+        "oppholdUtland": {
+          "$ref": "#/definitions/oppholdUtland"
+        },
+        "bosted": {
+          "$ref": "#/definitions/bosted"
+        },
+        "selvstendigArbeid": {
+          "$ref": "#/definitions/selvstendigArbeid"
+        },
+        "maritimtArbeid": {
+          "$ref": "#/definitions/maritimtArbeid"
+        },
+        "luftfartBaser": {
+          "$ref": "#/definitions/luftfartBaser"
+        },
+        "soeknadsland": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+        },
+        "periode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+        },
+        "juridiskArbeidsgiverNorge": {
+          "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
+        "representantIUtlandet": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/representantIUtlandet"
+        }
+      }
+    },
     "behandlingsgrunnlagData": {
       "type": "object",
       "additionalProperties": false,

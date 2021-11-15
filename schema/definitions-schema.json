@@ -744,6 +744,22 @@
         "FULL_DEKNING_FTRL"
       ]
     },
+    "representantIUtlandet": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["representantNavn", "adresselinjer", "representantLand"],
+      "properties": {
+        "representantNavn": {
+          "type": "string"
+        },
+        "adresselinjer": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
+        },
+        "representantLand": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-landkode"
+        }
+      }
+    },
     "innvilgelsesresultat": {
       "type": "string",
       "enum": [
