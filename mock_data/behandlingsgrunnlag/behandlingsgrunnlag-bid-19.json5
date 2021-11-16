@@ -33,25 +33,6 @@
         "foedeland": "NO"
       }
     },
-    "arbeidPaaLand": {
-      "fysiskeArbeidssteder": [
-        {
-          "adresse": {
-            "tilleggsnavn": null,
-            "gatenavn": "Adresseveien 123",
-            "husnummerEtasjeLeilighet": "123",
-            "region": "Brandenburger",
-            "postboks": null,
-            "postnummer": "1234",
-            "poststed": "Poststedet",
-            "landkode": "DE",
-          },
-          "virksomhetNavn": "EQUINOR",
-        },
-      ],
-      "erHjemmekontor": false,
-      "erFastArbeidssted": null
-    },
     "foretakUtland": [
       {
         "uuid": "2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d",
@@ -126,23 +107,6 @@
       "trygdeavgiftTrukketGjennomSkatt": true,
       "trygdeavgiftTrukketGjennomSkattDato": "2018-01-01"
     },
-    "maritimtArbeid": [
-      {
-        "enhetNavn": "Dunfjæder",
-        "fartsomradeKode": "INNENRIKS",
-        "flaggLandkode": "GB",
-        "innretningLandkode": null,
-        "territorialfarvann": null,
-        "innretningstype": null
-      }
-    ],
-    "luftfartBaser": [
-      {
-        "hjemmebaseNavn": "Dunfjæder",
-        "hjemmebaseLand": "GB",
-        "typeFlyvninger": "NASJONAL"
-      }
-    ],
     "soeknadsland": {
       "landkoder": [
         "UK"
@@ -153,7 +117,11 @@
       "fom": "2018-01-00",
       "tom": "2020-10-01"
     },
-    "trygdedekning": "HELSEDEL",
+    "representantIUtlandet": {
+      "representantNavn": "Höegh Autoline Belgium",
+      "adresselinjer": ["Rue du Pont Simon 174", "Appelterre-eichem", "9400 East Flanders"],
+      "representantLand": "GB"
+    },
   },
   "type": "SØKNAD_FOLKETRYGDEN",
 }

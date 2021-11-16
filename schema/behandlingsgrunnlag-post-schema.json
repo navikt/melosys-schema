@@ -21,6 +21,9 @@
         },
         {
           "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadFtrlData"
+        },
+        {
+          "$ref": "http://melosys.nav.no/schemas/behandlingsgrunnlag-definitions.json#/definitions/soeknadTrygdeavtaleData"
         }
       ]
     }

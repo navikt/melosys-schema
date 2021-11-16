@@ -729,6 +729,22 @@
         }
       }
     },
+    "representantIUtlandet": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["representantNavn", "adresselinjer", "representantLand"],
+      "properties": {
+        "representantNavn": {
+          "type": "string"
+        },
+        "adresselinjer": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/ustrukturertAdresse/adresselinjer"
+        },
+        "representantLand": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-landkode"
+        }
+      }
+    },
     "juridiskArbeidsgiverNorge": {
       "type": "object",
       "title": "The Juridiskarbeidsgivernorge Schema",
@@ -1080,6 +1096,58 @@
         },
         "trygdedekning": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/trygdeDekning"
+        }
+      }
+    },
+    "soeknadTrygdeavtaleData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "juridiskArbeidsgiverNorge",
+        "loennOgGodtgjoerelse",
+        "arbeidsgiversBekreftelse",
+        "personOpplysninger",
+        "foretakUtland",
+        "oppholdUtland",
+        "bosted",
+        "selvstendigArbeid",
+        "soeknadsland",
+        "periode",
+        "representantIUtlandet"
+      ],
+      "properties": {
+        "arbeidsgiversBekreftelse": {
+          "$ref": "#/definitions/arbeidsgiversBekreftelse"
+        },
+        "loennOgGodtgjoerelse": {
+          "$ref": "#/definitions/loennOgGodtgjoerelse"
+        },
+        "personOpplysninger": {
+          "$ref": "#/definitions/personOpplysninger"
+        },
+        "foretakUtland": {
+          "$ref": "#/definitions/foretakUtland"
+        },
+        "oppholdUtland": {
+          "$ref": "#/definitions/oppholdUtland"
+        },
+        "bosted": {
+          "$ref": "#/definitions/bosted"
+        },
+        "selvstendigArbeid": {
+          "$ref": "#/definitions/selvstendigArbeid"
+        },
+        "soeknadsland": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/soeknadsland"
+        },
+        "periode": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/periode"
+        },
+        "juridiskArbeidsgiverNorge": {
+          "$ref": "#/definitions/juridiskArbeidsgiverNorge"
+        },
+        "representantIUtlandet": {
+          "$ref": "#/definitions/representantIUtlandet"
         }
       }
     },
