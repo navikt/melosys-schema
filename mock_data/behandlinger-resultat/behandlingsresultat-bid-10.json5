@@ -1,6 +1,7 @@
 {
   "begrunnelseKoder": ["OPPHOLD_UTL_AVLYST"],
   "begrunnelseFritekst": null,
+  "innledningFritekst" : null,
   "behandlingsresultatTypeKode": "IKKE_FASTSATT",
   "kontrollresultatBegrunnelseKoder": [],
   "utfallRegistreringUnntak": null,
