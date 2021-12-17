@@ -63,7 +63,13 @@
                 "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/uuid"
               },
               "fnr": {
-                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
+                "oneOf": [{
+                  "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+                }, {
+                  "type": "string",
+                  "pattern": "^\\d{2}.\\d{2}.\\d{4}$",
+                  "examples": ["14.07.2020"]
+                }]
               },
               "navn": {
                 "type": [
