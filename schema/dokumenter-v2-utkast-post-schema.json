@@ -15,6 +15,12 @@
         "orgnr": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
         },
+        "institusjonskode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "aktørId": {
           "type": "string"
         }
@@ -89,7 +95,13 @@
     "orgNr": {
       "title": "Manuell overstyring av mottaker",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
-
+    },
+    "institusjonskode": {
+      "title": "Institusjonskode for utenlandsk myndighet",
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "innledningFritekst": {
       "title": "Innledningstekst for mangelbrev",
