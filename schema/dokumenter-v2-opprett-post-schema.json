@@ -15,7 +15,7 @@
         "orgnr": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
         },
-        "institusjonskode": {
+        "institusjonId": {
           "type": [
             "string",
             "null"
@@ -96,8 +96,8 @@
       "title": "Manuell overstyring av mottaker",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
-    "institusjonskode": {
-      "title": "Institusjonskode for utenlandsk myndighet",
+    "institusjonId": {
+      "title": "InstitusjonId for utenlandsk myndighet",
       "type": [
         "string",
         "null"
