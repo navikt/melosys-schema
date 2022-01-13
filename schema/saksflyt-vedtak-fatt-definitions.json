@@ -67,10 +67,10 @@
       "required": [
         "behandlingsresultatTypeKode",
         "vedtakstype",
-        "fritekstInnledning",
-        "fritekstBegrunnelse",
-        "fritekstEktefelle",
-        "fritekstBarn",
+        "innledningFritekst",
+        "begrunnelseFritekst",
+        "ektefelleFritekst",
+        "barnFritekst",
         "kopiMottakere"
       ],
       "properties": {
@@ -80,16 +80,16 @@
         "vedtakstype": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
         },
-        "fritekstInnledning": {
+        "innledningFritekst": {
           "type": ["string", "null"]
         },
-        "fritekstBegrunnelse": {
+        "begrunnelseFritekst": {
           "type": ["string", "null"]
         },
-        "fritekstEktefelle": {
+        "ektefelleFritekst": {
           "type": ["string", "null"]
         },
-        "fritekstBarn": {
+        "barnFritekst": {
           "type": ["string", "null"]
         },
         "kopiMottakere": {
