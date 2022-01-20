@@ -15,7 +15,7 @@
           "type": "string"
         },
         "rolle": {
-          "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"]
+          "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","TRYGDEMYNDIGHET"]
         },
         "orgnr": {
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"

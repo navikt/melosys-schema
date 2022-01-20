@@ -9,7 +9,7 @@
             "ARBEIDSGIVER",
             "BRUKER",
             "REPRESENTANT",
-            "MYNDIGHET"
+            "TRYGDEMYNDIGHET"
           ]
         },
         "orgnr": {
@@ -49,9 +49,9 @@
         "ARBEIDSGIVER",
         "BRUKER",
         "REPRESENTANT",
-        "MYNDIGHET"
+        "TRYGDEMYNDIGHET"
       ],
-      "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","MYNDIGHET"],
+      "enum": ["ARBEIDSGIVER","BRUKER","REPRESENTANT","TRYGDEMYNDIGHET"],
       "pattern": "^(.*)$"
     },
     "fritekst": {
