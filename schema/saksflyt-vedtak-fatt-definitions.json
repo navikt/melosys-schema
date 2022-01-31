@@ -61,7 +61,7 @@
         }
       }
     },
-    "ftrldata": {
+    "ftrlTrygdeavtaleData": {
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -71,7 +71,8 @@
         "begrunnelseFritekst",
         "ektefelleFritekst",
         "barnFritekst",
-        "kopiMottakere"
+        "kopiMottakere",
+        "revurderBegrunnelse"
       ],
       "properties": {
         "behandlingsresultatTypeKode": {
@@ -95,6 +96,10 @@
         "kopiMottakere": {
           "type": ["array", "null"],
           "items": { "$ref": "#/definitions/kopiMottaker" }
+        },
+        "revurderBegrunnelse": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
         }
       }
     }
