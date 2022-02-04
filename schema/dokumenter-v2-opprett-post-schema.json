@@ -160,6 +160,10 @@
     "kontaktopplysninger": {
       "type": "boolean",
       "default": true
+    },
+    "nyVurderingBakgrunn": {
+      "type": ["string", "null"],
+      "pattern": "^(.*)$"
     }
   }
 }
