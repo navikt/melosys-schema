@@ -31,7 +31,7 @@
         "fritekst",
         "fritekstSed",
         "mottakerinstitusjoner",
-        "revurderBegrunnelse",
+        "nyVurderingBakgrunn",
         "vedtakstype"
       ],
       "properties": {
@@ -55,13 +55,13 @@
             "type": "string"
           }
         },
-        "revurderBegrunnelse": {
+        "nyVurderingBakgrunn": {
           "type": ["string", "null"],
           "pattern": "^(.*)$"
         }
       }
     },
-    "ftrldata": {
+    "ftrlTrygdeavtaleData": {
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -71,7 +71,8 @@
         "begrunnelseFritekst",
         "ektefelleFritekst",
         "barnFritekst",
-        "kopiMottakere"
+        "kopiMottakere",
+        "nyVurderingBakgrunn"
       ],
       "properties": {
         "behandlingsresultatTypeKode": {
@@ -95,6 +96,10 @@
         "kopiMottakere": {
           "type": ["array", "null"],
           "items": { "$ref": "#/definitions/kopiMottaker" }
+        },
+        "nyVurderingBakgrunn": {
+          "type": ["string", "null"],
+          "pattern": "^(.*)$"
         }
       }
     }

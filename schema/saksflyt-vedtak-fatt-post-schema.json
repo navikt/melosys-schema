@@ -8,7 +8,7 @@
       "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/eosData"
     },
     {
-      "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/ftrldata"
+      "$ref": "http://melosys.nav.no/schemas/saksflyt-vedtak-fatt-definitions.json#/definitions/ftrlTrygdeavtaleData"
     }
   ]
 }
