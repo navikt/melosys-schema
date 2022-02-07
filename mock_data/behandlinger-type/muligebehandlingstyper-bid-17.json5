@@ -1,0 +1,14 @@
+[
+  {
+    "kode": "NY_VURDERING",
+    "term": "Ny vurdering"
+  },
+  {
+    "kode": "SOEKNAD",
+    "term": "Søknad"
+  },
+  {
+    "kode": "ENDRET_PERIODE",
+    "term": "Behandle forkortet periode"
+  }
+]
