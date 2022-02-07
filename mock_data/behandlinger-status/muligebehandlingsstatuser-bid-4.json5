@@ -1,5 +1,9 @@
 [
   {
+    "kode": "OPPRETTET",
+    "term": "Behandlingen er opprettet"
+  },
+  {
     "kode": "AVVENT_DOK_UTL",
     "term": "Avventer svar fra utenlandsk trygdemyndighet"
   },
