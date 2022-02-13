@@ -45,6 +45,7 @@
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
+            "coAdressenavn": "C/O Ole Duck"
           },
           "virksomhetNavn": "EQUINOR",
         },
@@ -57,7 +58,8 @@
             "region": "Testarbeidsstedregion",
             "postboks": null,
             "postnummer": "Testarbeidsstedpostkode",
-            "poststed": "Testarbeidsstedby"
+            "poststed": "Testarbeidsstedby",
+            "coAdressenavn": "C/O Ole Duck"
           },
           "virksomhetNavn": "Testarbeidsstednavn"
         },
@@ -71,7 +73,8 @@
             "region": null,
             "postboks": null,
             "postnummer": "3212",
-            "poststed": "Testarbeidsstedby2"
+            "poststed": "Testarbeidsstedby2",
+            "coAdressenavn": "C/O Ole Duck"
           }
         }
       ],
@@ -92,7 +95,8 @@
           "postboks": null,
           "postnummer": "3388",
           "poststed": "Berlin",
-          "landkode": "DE"
+          "landkode": "DE",
+          "coAdressenavn": "C/O Ole Duck"
         }
       }
     ],
@@ -136,7 +140,8 @@
         "region": null,
         "postboks": null,
         "postnummer": "2121",
-        "poststed": "asd"
+        "poststed": "asd",
+        "coAdressenavn": "C/O Ole Duck"
       }
     }
   },

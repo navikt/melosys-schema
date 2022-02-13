@@ -47,7 +47,8 @@
           "postboks": null,
           "postnummer": "3388",
           "poststed": "Berlin",
-          "landkode": "DE"
+          "landkode": "DE",
+          "coAdressenavn": "C/O Ole Duck"
         }
       }
     ],
@@ -74,7 +75,8 @@
         "postboks": "Postboks PB-012",
         "postnummer": "12345",
         "poststed": "Poststeder",
-        "landkode": "DE"
+        "landkode": "DE",
+        "coAdressenavn": "C/O Ole Duck"
       }
     },
     "selvstendigArbeid": {

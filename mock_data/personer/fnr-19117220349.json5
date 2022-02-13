@@ -20,6 +20,7 @@
   "foedselsdato": "1972-11-19",
   "postadresse": {
     "adresselinjer": [
+      "C/O Ole Duck",
       "Sannergata 2",
       "0557 OSLO"
     ],
@@ -33,7 +34,8 @@
       "region": null,
       "postnummer": "0557",
       "poststed": "OSLO",
-      "landkode": "NO"
+      "landkode": "NO",
+      "coAdressenavn": "C/O Ole Duck"
     }
   },
   "familiemedlemmer": [

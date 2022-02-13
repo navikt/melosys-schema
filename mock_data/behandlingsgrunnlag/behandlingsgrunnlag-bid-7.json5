@@ -26,6 +26,7 @@
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
+            "coAdressenavn": "C/O Ole Duck"
           },
           "virksomhetNavn": "EQUINOR",
         },
@@ -57,7 +58,8 @@
         "postboks": null,
         "postnummer": null,
         "poststed": null,
-        "landkode": null
+        "landkode": null,
+        "coAdressenavn": null
       }
     },
     "selvstendigArbeid": {
