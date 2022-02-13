@@ -688,7 +688,8 @@
         "region",
         "postnummer",
         "poststed",
-        "landkode"
+        "landkode",
+        "coAdressenavn"
       ],
       "properties": {
         "gatenavn": {
@@ -728,6 +729,13 @@
         },
         "landkode": {
           "$ref": "#/definitions/landkode"
+        },
+        "coAdressenavn": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "C/O Ole Duck"
+          ]
         }
       }
     },
@@ -763,7 +771,8 @@
         "postnummer",
         "poststed",
         "region",
-        "landkode"
+        "landkode",
+        "coAdressenavn"
       ],
       "properties": {
         "tilleggsnavn": {
@@ -817,6 +826,13 @@
         },
         "landkode": {
           "$ref": "#/definitions/nullable-landkode"
+        },
+        "coAdressenavn": {
+          "type": ["string", "null"],
+          "minLength": 1,
+          "examples": [
+            "C/O Ole Duck"
+          ]
         }
       }
     },
