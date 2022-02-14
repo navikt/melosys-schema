@@ -375,6 +375,10 @@
     "registrertDato": "2019-04-23T09:58:23.899Z",
     "svarFrist": "2020-08-27T07:16:00.000Z",
     "behandlingsfrist": "2018-09-27",
-    "sisteOpplysningerHentetDato": "2019-04-23T09:58:39.751Z"
+    "sisteOpplysningerHentetDato": "2019-04-23T09:58:39.751Z",
+    "behandlingsresultattype": {
+      "kode": "IKKE_FASTSATT",
+      "term": "Ikke fastsatt"
+    }
   }
 }

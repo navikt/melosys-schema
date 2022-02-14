@@ -992,6 +992,10 @@
     "behandlingsfrist": "2017-11-27",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2017-10-19T14:35:54.000Z",
-    "endretAvNavn": "HATT GLITRENDE"
+    "endretAvNavn": "HATT GLITRENDE",
+    "behandlingsresultattype": {
+      kode: "HENLEGGELSE_BORTFALT",
+      term: "Kan ikke behandles i Melosys"
+    }
   }
 }

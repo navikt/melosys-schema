@@ -1191,11 +1191,12 @@
         "endretAvNavn",
         "registrertDato",
         "sisteOpplysningerHentetDato",
-        "svarFrist"
+        "svarFrist",
+        "behandlingsresultattype"
       ],
       "properties": {
         "behandlingstema": {
-          "title": "The BehandlingsStatus Schema",
+          "title": "The Behandlingstema Schema",
           "$id": "#/properties/oppsummering/properties/behandlingstema",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         },
@@ -1236,6 +1237,11 @@
           "title": "The Behandlingsfrist Schema",
           "$id": "#/properties/oppsummering/properties/behandlingsfrist",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-dato"
+        },
+        "behandlingsresultattype": {
+          "title": "The Behandlingsresultattype Schema",
+          "$id": "#/properties/oppsummering/properties/behandlingsresultatTypeKode",
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         }
       }
     }

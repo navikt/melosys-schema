@@ -156,6 +156,7 @@
     },
     "behandlingsresultatTypeKode": {
       "type": "string",
+      "examples": ["HENLEGGELSE"],
       "enum": [
         "FASTSATT_LOVVALGSLAND",
         "FORELOEPIG_FASTSATT_LOVVALGSLAND",
@@ -164,7 +165,9 @@
         "IKKE_FASTSATT",
         "REGISTRERT_UNNTAK",
         "AVSLAG_MANGLENDE_OPPL",
-        "MEDLEM_I_FOLKETRYGDEN"
+        "MEDLEM_I_FOLKETRYGDEN",
+        "FERDIGBEHANDLET",
+        "HENLEGGELSE_BORTFALT"
       ]
     },
     "databaseID": {

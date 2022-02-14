@@ -824,6 +824,10 @@
     "behandlingstype": {
       "kode": "SOEKNAD",
       "term": "Søknad"
-    }
+    },
+    "behandlingsresultattype": {
+      kode: "FERDIGBEHANDLET",
+      term: "Ferdigbehandlet"
+    },
   }
 }
