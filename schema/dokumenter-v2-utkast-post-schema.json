@@ -105,30 +105,21 @@
     },
     "innledningFritekst": {
       "title": "Innledningstekst for mangelbrev",
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "manglerFritekst": {
       "title": "Mangelinfo for mangelbrev",
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "begrunnelseFritekst": {
       "title": "Begrunnelse for innvilgelsesbrev",
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "ektefelleFritekst": {
-      "type": ["string", "null"]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "barnFritekst": {
-      "type": ["string", "null"]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "kontaktpersonNavn": {
       "title": "Manuell overstyring av navn på kontaktperson",
@@ -149,13 +140,9 @@
     },
     "fritekst": {
       "$id": "#/properties/fritekst",
-      "type": [
-        "string",
-        "null"
-      ],
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
       "default": "",
-      "examples": ["Fritekst"],
-      "pattern": "^(.*)$"
+      "examples": ["Fritekst"]
     },
     "kontaktopplysninger": {
       "type": ["boolean", "null"],

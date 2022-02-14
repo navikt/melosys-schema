@@ -22,10 +22,7 @@
     "fritekst": {
       "$id": "#/properties/fritekst",
       "title": "The fritekst Schema",
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "vedlegg": {
       "type": "array",

@@ -32,21 +32,19 @@
     },
     "begrunnelseFritekst": {
       "$id": "#/properties/begrunnelseFritekst",
-      "type": ["string", "null"],
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
       "title": "The begrunnelseFritekst Schema",
       "examples": [
         "Bruker har fått flyskrekk"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "innledningFritekst": {
       "$id": "#/properties/innledningFritekst",
-      "type": ["string", "null"],
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
       "title": "The innledningFritekst Schema",
       "examples": [
         "Bruker har fått flyskrekk"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "kontrollresultatBegrunnelseKoder": {
       "type": "array",

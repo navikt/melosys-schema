@@ -17,12 +17,10 @@
       "type": "string"
     },
     "fritekst": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "fritekstSed": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     }
   }
 }

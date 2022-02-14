@@ -34,14 +34,10 @@
     },
     "fritekst": {
       "$id": "#/properties/fritekst",
-      "type": [
-        "string",
-        "null"
-      ],
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
       "title": "The Fritekst Schema",
       "default": "",
-      "examples": ["Fritekst"],
-      "pattern": "^(.*)$"
+      "examples": ["Fritekst"]
     },
     "begrunnelseKode": {
       "$id": "#/properties/begrunnelseKode",
