@@ -858,6 +858,10 @@
     "behandlingsfrist": "2018-09-27",
     "sisteOpplysningerHentetDato": "2018-08-10T15:00:00.622Z",
     "endretDato": "2018-03-15T16:31:35.845Z",
-    "endretAvNavn": "HATT GLITRENDE"
+    "endretAvNavn": "HATT GLITRENDE",
+    "behandlingsresultattype": {
+      "kode": "IKKE_FASTSATT",
+      "term": "Ikke fastsatt"
+    }
   }
 }
