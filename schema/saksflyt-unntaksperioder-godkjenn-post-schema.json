@@ -15,7 +15,7 @@
       "type": "boolean"
     },
     "fritekst": {
-      "type": ["string", "null"]
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "endretPeriode": {
       "oneOf": [

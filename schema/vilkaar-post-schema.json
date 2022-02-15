@@ -50,18 +50,16 @@
       },
       "begrunnelseFritekst": {
         "$id": "#/items/properties/begrunnelseFritekst",
-        "type": ["string", "null"],
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
         "title": "The Begrunnelsefritekst Schema",
         "default": "",
         "examples": [
           "En begrunnelsestekst"
-        ],
-        "pattern": "^(.*)$"
+        ]
       },
       "begrunnelseFritekstEngelsk": {
-        "type": ["string", "null"],
-        "title": "The BegrunnelsefritekstEngelsk Schema",
-        "pattern": "^(.*)$"
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
+        "title": "The BegrunnelsefritekstEngelsk Schema"
       }
     }
   }

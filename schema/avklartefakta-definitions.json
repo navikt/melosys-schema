@@ -51,16 +51,12 @@
         },
         "begrunnelseFritekst": {
           "$id": "#/definitions/avklartefakta/properties/begrunnelseFritekst",
-          "type": [
-            "string",
-            "null"
-          ],
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst",
           "title": "The Begrunnelsefritekst Schema",
           "default": "",
           "examples": [
             "En egen fritekstbegrunnelse som ikke finnes i kodeverket"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "fakta": {
           "$id": "#/definitions/avklartefakta/properties/fakta",

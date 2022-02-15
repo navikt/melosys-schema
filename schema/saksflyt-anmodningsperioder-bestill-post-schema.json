@@ -16,8 +16,7 @@
       "pattern": "^(.*)$"
     },
     "fritekstSed": {
-      "type": ["string", "null"],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "vedlegg": {
       "type": "array",

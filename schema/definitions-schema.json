@@ -308,6 +308,20 @@
       ],
       "pattern": "^\\d{11}$|^$"
     },
+    "fritekst": {
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Dette er en fritekst", "Dette \n er \n fritekst \n på \n flere \n linjer!"
+      ],
+      "pattern": "^[\\s|\\S]*$"
+    },
+    "nullable-fritekst": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fritekst"}
+      ]
+    },
     "trygdeavgiftsgrunnlag":  {
       "$id": "#/definitions/trygdeavgiftsgrunnlag",
       "type": ["object", "null"],

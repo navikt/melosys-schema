@@ -42,12 +42,10 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
         },
         "fritekst": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         },
         "fritekstSed": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         },
         "mottakerinstitusjoner": {
           "type": "array",
@@ -82,24 +80,23 @@
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/vedtakstype"
         },
         "innledningFritekst": {
-          "type": ["string", "null"]
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         },
         "begrunnelseFritekst": {
-          "type": ["string", "null"]
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         },
         "ektefelleFritekst": {
-          "type": ["string", "null"]
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         },
         "barnFritekst": {
-          "type": ["string", "null"]
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         },
         "kopiMottakere": {
           "type": ["array", "null"],
           "items": { "$ref": "#/definitions/kopiMottaker" }
         },
         "nyVurderingBakgrunn": {
-          "type": ["string", "null"],
-          "pattern": "^(.*)$"
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
         }
       }
     }
