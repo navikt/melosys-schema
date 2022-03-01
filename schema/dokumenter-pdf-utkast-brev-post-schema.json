@@ -1,26 +1,5 @@
 {
-  "definitions": {
-    "kopiMottaker": {
-      "type": "object",
-      "properties": {
-        "rolle": {
-          "type": "string",
-          "enum": [
-            "ARBEIDSGIVER",
-            "BRUKER",
-            "REPRESENTANT",
-            "TRYGDEMYNDIGHET"
-          ]
-        },
-        "orgnr": {
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
-        },
-        "aktørId": {
-          "type": "string"
-        }
-      }
-    }
-  },
+  "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://melosys.nav.no/schemas/dokumenter-utkast-pdf-post-schema.json",
   "type": [
@@ -113,7 +92,7 @@
     },
     "kopiMottakere": {
       "type": ["array", "null"],
-      "items": { "$ref": "#/definitions/kopiMottaker" }
+      "items": { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kopiMottaker" }
     },
     "produserbardokument": {
       "$id": "#/properties/dokument",

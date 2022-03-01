@@ -981,6 +981,32 @@
     "uuid": {
       "type": "string",
       "pattern": "[\\da-fA-F]{8}\\-[\\da-fA-F]{4}\\-[\\da-fA-F]{4}\\-[\\da-fA-F]{4}\\-[\\da-fA-F]{12}"
+    },
+    "kopiMottaker": {
+      "type": "object",
+      "properties": {
+        "rolle": {
+          "type": "string",
+          "enum": [
+            "ARBEIDSGIVER",
+            "BRUKER",
+            "REPRESENTANT",
+            "TRYGDEMYNDIGHET"
+          ]
+        },
+        "orgnr": {
+          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
+        },
+        "institusjonId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "aktørId": {
+          "type": "string"
+        }
+      }
     }
   }
 }
