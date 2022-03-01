@@ -29,11 +29,7 @@
       }
     },
     "nyVurderingBakgrunn": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "pattern": "^(.*)$"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
     },
     "innledningFritekst": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fritekst"
@@ -49,7 +45,7 @@
     },
     "kopiMottakere": {
       "type": ["array", "null"],
-      "items": { "$ref": "#/definitions/kopiMottaker" }
+      "items": { "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kopiMottaker" }
     }
   }
 }
