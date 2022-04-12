@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/navikt/melosys-schema#readme",
   "dependencies": {
-    "json5": "^2.2.0"
+    "json5": "^2.2.1"
   },
   "devDependencies": {
     "ajv": "^6.12.3",
