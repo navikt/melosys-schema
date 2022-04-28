@@ -58,7 +58,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           branch: master
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_GITHUB }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: publish to GPR
         run: npm publish
