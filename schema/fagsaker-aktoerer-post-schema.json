@@ -66,6 +66,11 @@
       "default": null,
       "examples": ["BRUKER", "ARBEIDSGIVER", "BEGGE", null],
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/representererKode"
+    },
+    "personIdent":{
+      "$id": "#/items/properties/personIdent",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr",
+      "title": "The personIdent Schema"
     }
   }
 }

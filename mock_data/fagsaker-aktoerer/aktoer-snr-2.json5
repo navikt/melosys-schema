@@ -34,5 +34,15 @@
     "institusjonsID": "FR:RG75V00002",
     "rolleKode": "TRYGDEMYNDIGHET",
     "representererKode": "BRUKER"
+  },
+  {
+    "databaseID": 12276642372506053,
+    "aktoerID": "1167540096033",
+    "orgnr": null,
+    "utenlandskPersonID": null,
+    "institusjonsID": "NO:NAVT001",
+    "rolleKode": "BRUKER",
+    "representererKode": "BRUKER",
+    "personIdent": "30056928150"
   }
 ]
