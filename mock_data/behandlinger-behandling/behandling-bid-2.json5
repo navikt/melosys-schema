@@ -757,7 +757,8 @@
               "region": null,
               "postnummer": "0557",
               "poststed": "OSLO",
-              "landkode": "NO"
+              "landkode": "NO",
+              "coAdressenavn": "C/O Ole Duck",
             }
           },
           "periode": {
@@ -774,7 +775,8 @@
               "region": null,
               "postnummer": "0557",
               "poststed": "OSLO",
-              "landkode": "NO"
+              "landkode": "NO",
+              "coAdressenavn": "C/O Ole Duck",
             }
           },
           "periode": {
@@ -791,7 +793,8 @@
               "region": null,
               "postnummer": "0557",
               "poststed": "OSLO",
-              "landkode": "NO"
+              "landkode": "NO",
+              "coAdressenavn": "C/O Ole Duck",
             }
           },
           "periode": {

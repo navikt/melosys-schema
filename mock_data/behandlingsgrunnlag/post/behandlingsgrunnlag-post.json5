@@ -11,7 +11,8 @@
         "landkode": "DE",
         "husnummerEtasjeLeilighet": "1",
         "region": null,
-        "gatenavn": "Gateadressen"
+        "gatenavn": "Gateadressen",
+        "coAdressenavn": "C/O Ole Duck"
       }
     },
     "foretakUtland": [
@@ -28,7 +29,8 @@
           "postboks": null,
           "postnummer": "3388",
           "poststed": "Berlin",
-          "gatenavn": "Deutschlandstrasse"
+          "gatenavn": "Deutschlandstrasse",
+          "coAdressenavn": "C/O Ole Duck"
         }
       }
     ],
@@ -102,6 +104,7 @@
             "postnummer": "1234",
             "poststed": "Poststedet",
             "landkode": "DE",
+            "coAdressenavn": "C/O Ole Duck"
           },
           "virksomhetNavn": "EQUINOR",
         },
