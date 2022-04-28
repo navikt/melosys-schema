@@ -55,7 +55,7 @@ jobs:
           npm version patch -m "%s, $COMMIT_MESSAGE, [skip ci]"
 
       - name: Push changes to repository
-        uses: ad-m/github-push-action@vmaster
+        uses: ad-m/github-push-action@master
         with:
           branch: master
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_GITHUB }}
