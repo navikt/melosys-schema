@@ -306,52 +306,6 @@
         }
       }
     ],
-    "person": {
-      "sivilstand": {
-        "kode": "GIFT",
-        "term": "Gift"
-      },
-      "erEgenAnsatt": false,
-      "personStatus": {
-        "kode": "BOSA",
-        "term": "Bosatt"
-      },
-      "sammensattNavn": "HATT GLITRENDE",
-      "kjoenn": {
-        "kode": "M",
-        "term": "Mann"
-      },
-      "fnr": "19117220349",
-      "foedselsdato": "1972-11-19",
-      "statsborgerskap": {
-        "kode": "NOR",
-        "term": "NORGE"
-      },
-      "statsborgerskapDato": "2013-01-01",
-      "familiemedlemmer": [
-        {
-          "fnr": "30098000492",
-          "sammensattNavn": "LILLA HEST",
-          "relasjonstype": {
-            "kode": "EKTE",
-            "term": "Ektefelle til"
-          },
-          "alder": null,
-          "borMedBruker": false,
-          "sivilstand": {
-            "kode": "GLAD",
-            "term": "Gift, lever adskilt"
-          },
-          "sivilstandGyldighetsperiodeFom": "1999-12-31",
-          "fnrAnnenForelder": null
-        }
-      ]
-    },
-    "personhistorikk": {
-      "bostedsadressePerioder": [],
-      "postadressePerioder": [],
-      "midlertidigAdressePerioder": []
-    },
     "sakOgBehandling": {
       "eosBarnetrygd": false
     },

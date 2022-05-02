@@ -1,41 +1,7 @@
 {
   "behandlingID": 13,
   "redigerbart": true,
-  "saksopplysninger": {
-    "person": {
-      "sivilstand": {
-        "kode": "GIFT",
-        "term": "Gift"
-      },
-      "erEgenAnsatt": false,
-      "personStatus": {
-        "kode": "BOSA",
-        "term": "Bosatt"
-      },
-      "sammensattNavn": "DOVENT DOVENDYR",
-      "kjoenn": {
-        "kode": "M",
-        "term": "Mann"
-      },
-      "fnr": "19117220349",
-      "foedselsdato": "1972-11-19",
-      "statsborgerskap": {
-        "kode": "NOR",
-        "term": "NORGE"
-      },
-      "statsborgerskapDato": "2013-01-01",
-      "familiemedlemmer": [
-        {
-          "fnr": "30098000493",
-          "sammensattNavn": "KVIKT DOVENDYR",
-          "relasjonstype": {
-            "kode": "EKTE",
-            "term": "Ektefelle til"
-          }
-        }
-      ]
-    }
-  },
+  "saksopplysninger": {},
   "oppsummering": {
     "behandlingstema": {
       "kode": "IKKE_YRKESAKTIV",
