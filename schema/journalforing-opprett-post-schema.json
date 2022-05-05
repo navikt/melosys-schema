@@ -9,7 +9,6 @@
     "journalpostID",
     "oppgaveID",
     "behandlingstemaKode",
-    "brukerID",
     "avsenderID",
     "avsenderNavn",
     "arbeidsgiverID",
@@ -44,6 +43,10 @@
     "brukerID": {
       "$id": "#/properties/brukerID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+    },
+    "virksomhetOrgnr": {
+      "$id": "#/properties/virksomhetOrgnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
     },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
@@ -94,7 +97,7 @@
     "representererKode": {
       "title": "The RepresentererKode Schema",
       "$id": "#/properties/representererKode",
-      "type": "string",
+      "type": ["string", "null"],
       "default": "",
       "pattern": "^(.*)$"
     },

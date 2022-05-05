@@ -1,0 +1,36 @@
+{
+  "avsenderType": "ORGANISASJON",
+  "arbeidsgiverID": null,
+  "representantID": null,
+  "behandlingstemaKode": "UTSENDT_ARBEIDSTAKER",
+  "representantKontaktPerson": null,
+  "representererKode": null,
+  "avsenderID": "111111111",
+  "avsenderNavn": "ORGANISASJON BLÅ",
+  "virksomhetOrgnr": "111111111",
+  "journalpostID": "DOK_321",
+  "oppgaveID": "201377338",
+  "hoveddokument": {
+    "dokumentID": "Dok_ID",
+    "tittel": "Søknad om medlemskap",
+    "logiskeVedlegg": [
+      "Logisk vedlegg 1",
+      "Logisk vedlegg 2"
+    ]
+  },
+  "vedlegg": [],
+  "fagsak": {
+    "sakstype": "EU_EOS",
+    "soknadsperiode": {
+      "fom": "2018-01-01",
+      "tom": "2019-03-02"
+    },
+    "land": {
+      "landkoder": ["NO"],
+      "erUkjenteEllerAlleEosLand": false
+    }
+  },
+  "skalTilordnes": false,
+  "ikkeSendForvaltingsmelding": false,
+  "mottattDato": "2018-01-01"
+}
