@@ -1,0 +1,29 @@
+{
+  "avsenderType": "ORGANISASJON",
+  "saksnummer": "MELTEST-1",
+  "avsenderID": "111111111",
+  "avsenderNavn": "ORGANISASJON BLÅ",
+  "behandlingstypeKode": "ENDRET_PERIODE",
+  "virksomhetOrgnr": "111111111",
+  "ingenVurdering": false,
+  "journalpostID": "DOK_321",
+  "oppgaveID": "177057928",
+  "hoveddokument": {
+    "dokumentID": "Dok_ID",
+    "tittel": "Søknad om medlemskap",
+    "logiskeVedlegg": [
+      "Logisk vedlegg 1",
+      "Logisk vedlegg 2"
+    ]
+  },
+  "vedlegg": [
+    {
+      "dokumentID": "123",
+      "tittel": "Vedleggstittel 1",
+      "logiskeVedlegg": []
+    }
+  ],
+  "skalTilordnes": false,
+  "ikkeSendForvaltingsmelding": null,
+  "mottattDato": "2018-01-01"
+}

@@ -10,7 +10,6 @@
     "avsenderID",
     "avsenderNavn",
     "behandlingstypeKode",
-    "brukerID",
     "ingenVurdering",
     "journalpostID",
     "oppgaveID",
@@ -56,6 +55,10 @@
     "brukerID": {
       "$id": "#/properties/brukerID",
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+    },
+    "virksomhetOrgnr": {
+      "$id": "#/properties/virksomhetOrgnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
     },
     "ingenVurdering": {
       "$id": "#/properties/ingenVurdering",
