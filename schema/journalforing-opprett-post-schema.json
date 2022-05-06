@@ -42,11 +42,11 @@
     },
     "brukerID": {
       "$id": "#/properties/brukerID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
     },
     "virksomhetOrgnr": {
       "$id": "#/properties/virksomhetOrgnr",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
