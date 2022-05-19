@@ -8,7 +8,7 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
-[{*.java, *.kt}]
+[{*.java, *.kt, *.kts}]
 ij_java_class_count_to_use_import_on_demand = 5
 ij_java_names_count_to_use_import_on_demand = 3
 ij_continuation_indent_size = 4
