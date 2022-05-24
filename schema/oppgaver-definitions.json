@@ -42,7 +42,7 @@
           "description": "An explanation about the purpose of this instance.",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/kodeverk"
         },
-        "endretDato":{
+        "endretDato": {
           "title": "The endretDato Schema",
           "$id": "#/definitions/behandling/properties/endretDato",
           "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/dato-tid"
@@ -75,8 +75,8 @@
       "additionalProperties": false,
       "required": [
         "oppgaveID",
-        "sammensattNavn",
-        "fnr",
+        "navn",
+        "hovedpartIdent",
         "saksnummer",
         "sakstype",
         "behandling",
@@ -98,20 +98,27 @@
           ],
           "pattern": "^(.*)$"
         },
-        "sammensattNavn": {
-          "$id": "#/definitions/saksbehandlingitem/properties/sammensattNavn",
+        "navn": {
+          "$id": "#/definitions/saksbehandlingitem/properties/navn",
           "type": "string",
-          "title": "The Sammensattnavn Schema",
+          "title": "The Navn Schema",
           "default": "",
           "examples": [
             "GLITRENDE HATT"
           ],
           "pattern": "^(.*)$"
         },
-        "fnr": {
-          "title": "The Fnr Schema",
-          "$id": "#/definitions/saksbehandlingitem/properties/fnr",
-          "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+        "hovedpartIdent": {
+          "title": "The HovedpartIdent Schema",
+          "$id": "#/definitions/saksbehandlingitem/properties/hovedpartIdent",
+          "oneOf": [
+            {
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+            },
+            {
+              "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+            }
+          ]
         },
         "saksnummer": {
           "$id": "#/definitions/saksbehandlingitem/properties/saksnummer",
