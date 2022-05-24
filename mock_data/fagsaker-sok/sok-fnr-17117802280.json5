@@ -1,7 +1,7 @@
 [
   {
     "saksnummer": "5",
-    "sammensattNavn" : "KAKE ARTIG",
+    "navn" : "KAKE ARTIG",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
       "kode": "EU_EOS",
@@ -60,6 +60,7 @@
           "tom": "2020-04-04"
         }
       }
-    ]
+    ],
+    "hovedpartRolle": "BRUKER"
   }
 ]
