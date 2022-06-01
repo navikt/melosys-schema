@@ -25,8 +25,8 @@
         "description": "An explanation about the purpose of this instance.",
         "additionalProperties": false,
         "required": [
-          "fnr",
-          "sammensattNavn",
+          "hovedpartIdent",
+          "navn",
           "oppgaveID",
           "journalpostID",
           "aktivTil",
@@ -35,15 +35,22 @@
           "ansvarligID"
         ],
         "properties": {
-          "fnr": {
-            "title": "The Fnr Schema",
-            "$id": "#/properties/journalforing/items/properties/fnr",
-            "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+          "hovedpartIdent": {
+            "title": "The HovedpartIdent Schema",
+            "$id": "#/properties/journalforing/items/properties/hovedpartIdent",
+            "oneOf": [
+              {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+              },
+              {
+                "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/orgnr"
+              }
+            ]
           },
-          "sammensattNavn": {
-            "$id": "#/properties/journalforing/items/properties/sammensattNavn",
+          "navn": {
+            "$id": "#/properties/journalforing/items/properties/navn",
             "type": "string",
-            "title": "The Sammensattnavn Schema",
+            "title": "The Navn Schema",
             "default": "",
             "examples": [
               "GLITRENDE HATT"
