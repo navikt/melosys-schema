@@ -11,11 +11,12 @@
     "additionalProperties": false,
     "required": [
       "saksnummer",
-      "sammensattNavn",
+      "navn",
       "saksstatus",
       "sakstype",
       "opprettetDato",
-      "behandlingOversikter"
+      "behandlingOversikter",
+      "hovedpartRolle"
     ],
     "properties": {
       "saksnummer": {
@@ -28,10 +29,10 @@
         ],
         "pattern": "^(.*)$"
       },
-      "sammensattNavn": {
-        "$id": "#/items/properties/sammensattNavn",
+      "navn": {
+        "$id": "#/items/properties/navn",
         "type": "string",
-        "title": "The sammensattNavn Schema",
+        "title": "The navn Schema",
         "default": "",
         "examples": [
           "FørstNavn EtterNavn"
@@ -56,6 +57,9 @@
         "title": "The behandlingOversikter Schema",
         "$id": "#/items/properties/behandlingOversikter",
         "$ref": "http://melosys.nav.no/schemas/behandlingOversikter-definitions.json#/definitions/behandlingOversikter"
+      },
+      "hovedpartRolle": {
+        "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aktoersrolle"
       }
     }
   }

@@ -10,7 +10,8 @@
     "endretDato",
     "gsakSaksnummer",
     "registrertDato",
-    "saksnummer"
+    "saksnummer",
+    "hovedpartRolle"
   ],
   "properties": {
     "saksstatus": {
@@ -45,6 +46,9 @@
     },
     "saksnummer": {
       "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/saksnummer"
+    },
+    "hovedpartRolle": {
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/aktoersrolle"
     }
   }
 }

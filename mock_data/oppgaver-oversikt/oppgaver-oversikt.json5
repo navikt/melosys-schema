@@ -34,8 +34,8 @@
   "saksbehandling": [
     {
       "oppgaveID": "174562068",
-      "sammensattNavn": "GLITRENDE HATT",
-      "fnr": "28106600300",
+      "navn": "GLITRENDE HATT",
+      "hovedpartIdent": "28106600300",
       "saksnummer": "4",
       "sakstype": {
         "kode": "EU_EOS",
@@ -75,8 +75,8 @@
     },
     {
       "oppgaveID": "174562068",
-      "sammensattNavn": "GLITRENDE HATT",
-      "fnr": "28106600300",
+      "navn": "GLITRENDE HATT",
+      "hovedpartIdent": "999999999",
       "saksnummer": "4",
       "sakstype": {
         "kode": "EU_EOS",
@@ -116,8 +116,8 @@
     },
     {
       "oppgaveID": "174562068",
-      "sammensattNavn": "GLITRENDE HATT",
-      "fnr": "28106600300",
+      "navn": "GLITRENDE HATT",
+      "hovedpartIdent": "28106600300",
       "saksnummer": "4",
       "sakstype": {
         "kode": "EU_EOS",
@@ -157,8 +157,8 @@
     },
     {
       "oppgaveID": "176701002",
-      "sammensattNavn": "LILLA HEST",
-      "fnr": "30098000492",
+      "navn": "LILLA HEST",
+      "hovedpartIdent": "30098000492",
       "saksnummer": "3",
       "sakstype": {
         "kode": "EU_EOS",
@@ -198,8 +198,8 @@
     },
     {
       "oppgaveID": "176314229",
-      "sammensattNavn": "KAKE ARTIG",
-      "fnr": "28106600300",
+      "navn": "KAKE ARTIG",
+      "hovedpartIdent": "28106600300",
       "saksnummer": "5",
       "sakstype": {
         "kode": "EU_EOS",
@@ -239,8 +239,8 @@
     },
     {
       "oppgaveID": "176741739",
-      "sammensattNavn": "MASKIN ARTIG",
-      "fnr": "17117802280",
+      "navn": "MASKIN ARTIG",
+      "hovedpartIdent": "17117802280",
       "saksnummer": "4",
       "sakstype": {
         "kode": "EU_EOS",
@@ -280,8 +280,8 @@
     },
     {
       "oppgaveID": "174562068",
-      "sammensattNavn": "GLITRENDE HATT",
-      "fnr": "28106600300",
+      "navn": "GLITRENDE HATT",
+      "hovedpartIdent": "28106600300",
       "saksnummer": "11",
       "sakstype": {
         "kode": "EU_EOS",
@@ -321,8 +321,8 @@
     },
     {
       "oppgaveID": "174562069",
-      "sammensattNavn": "DOVENT DOVENDYR",
-      "fnr": "30098000492",
+      "navn": "DOVENT DOVENDYR",
+      "hovedpartIdent": "30098000492",
       "saksnummer": "13",
       "sakstype": {
         "kode": "EU_EOS",
@@ -362,8 +362,8 @@
     },
     {
       "oppgaveID": "174562069",
-      "sammensattNavn": "DOVENT DOVENDYR",
-      "fnr": "30098000492",
+      "navn": "DOVENT DOVENDYR",
+      "hovedpartIdent": "30098000492",
       "saksnummer": "14",
       "sakstype": {
         "kode": "EU_EOS",
@@ -403,8 +403,8 @@
     },
     {
       "oppgaveID": "174562068",
-      "sammensattNavn": "GLITRENDE HATT",
-      "fnr": "28106600300",
+      "navn": "GLITRENDE HATT",
+      "hovedpartIdent": "28106600300",
       "saksnummer": "17",
       "sakstype": {
         "kode": "EU_EOS",
@@ -444,8 +444,8 @@
     },
     {
       "oppgaveID": "174562067",
-      "sammensattNavn": "VAKKER GAPAHUK",
-      "fnr": "26096522249",
+      "navn": "VAKKER GAPAHUK",
+      "hovedpartIdent": "26096522249",
       "saksnummer": "2",
       "sakstype": {
         "kode": "FTRL",
@@ -485,8 +485,8 @@
     },
     {
       "oppgaveID": "174562067",
-      "sammensattNavn": "GUL BANAN",
-      "fnr": "26096522249",
+      "navn": "GUL BANAN",
+      "hovedpartIdent": "26096522249",
       "saksnummer": "19",
       "sakstype": {
         "kode": "TRYGDEAVTALE",

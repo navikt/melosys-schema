@@ -1,7 +1,7 @@
 [
   {
     "saksnummer": "3",
-    "sammensattNavn": "LILLA HEST",
+    "navn": "LILLA HEST",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
       "kode": "EU_EOS",
@@ -36,11 +36,12 @@
           "erUkjenteEllerAlleEosLand": false
         },
       }
-    ]
+    ],
+    "hovedpartRolle": "BRUKER"
   },
   {
     "saksnummer": "6",
-    "sammensattNavn": "Joe Moe",
+    "navn": "Joe Moe",
     "opprettetDato": "2017-11-01T12:31:36.123Z",
     "sakstype": {
       "kode": "EU_EOS",
@@ -75,6 +76,7 @@
           "erUkjenteEllerAlleEosLand": false
         },
       }
-    ]
+    ],
+    "hovedpartRolle": "BRUKER"
   }
 ]

@@ -5,7 +5,8 @@
   "title": "The Fagsaker sok post schema",
   "required": [
     "ident",
-    "saksnummer"
+    "saksnummer",
+    "orgnr"
   ],
   "properties": {
     "ident": {
@@ -33,6 +34,10 @@
         "MEL-4"
       ],
       "pattern": "^(.*)$"
+    },
+    "orgnr": {
+      "$id": "#/items/properties/orgnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     }
   }
 }
