@@ -8,9 +8,10 @@
   "required": [
     "avsenderType",
     "brukerID",
+    "virksomhetOrgnr",
     "avsenderID",
     "avsenderNavn",
-    "erBrukerAvsender",
+    "erHovedpartAvsender",
     "mottattDato",
     "hoveddokument",
     "vedlegg",
@@ -22,7 +23,11 @@
     },
     "brukerID": {
       "$id": "#/properties/brukerID",
-      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/fnr"
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-fnr"
+    },
+    "virksomhetOrgnr": {
+      "$id": "#/properties/virksomhetOrgnr",
+      "$ref": "http://melosys.nav.no/schemas/definitions-schema.json#/definitions/nullable-orgnr"
     },
     "avsenderID": {
       "$id": "#/properties/avsenderID",
@@ -36,10 +41,10 @@
     "avsenderNavn": {
       "type": ["string", "null"]
     },
-    "erBrukerAvsender": {
-      "$id": "#/properties/erBrukerAvsender",
+    "erHovedpartAvsender": {
+      "$id": "#/properties/erHovedpartAvsender",
       "type": "boolean",
-      "title": "The Erbrukeravsender Schema",
+      "title": "The erHovedpartAvsender Schema",
       "default": false,
       "examples": [
         true
